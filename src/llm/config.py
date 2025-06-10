@@ -17,12 +17,17 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "max_tokens": 1000,
     },
+    "deepseek-r1:8b": {
+        "provider": "ollama",
+        "model_name": "deepseek-r1:8b",
+        "max_tokens": 1000,
+    }
 }
 
 # Prompt templates
 PROMPTS = {
     "plan2nl": {
-        "template": """Convert the following plan into a natural language description:
+        "template": """You are an non-expert in planning, retell the plan into a natural language description, return only the description without formatting or any other text:
             {plan}""",
         "parameters": ["plan"]
     },
@@ -52,3 +57,5 @@ EVALUATION_METRICS = [
     "token_count",
     # Add more metrics as needed
 ] 
+
+TEMPERATURE = 0.7
