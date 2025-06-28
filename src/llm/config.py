@@ -9,31 +9,29 @@ MODELS = {
         "provider": "openai",
         "model_name": "gpt-4",
         "api_key": os.getenv("OPENAI_API_KEY"),
-        "max_tokens": 1000,
     },
     "gpt-3.5-turbo": {
         "provider": "openai",
         "model_name": "gpt-3.5-turbo",
         "api_key": os.getenv("OPENAI_API_KEY"),
-        "max_tokens": 1000,
     },
     "deepseek-r1:8b": {
         "provider": "ollama",
         "model_name": "deepseek-r1:8b",
-        "max_tokens": 1000,
     }
 }
 
 # Prompt templates
 PROMPTS = {
     "plan2nl": {
-        "template": """You are an non-expert in planning, retell the plan into a natural language description, return only the description without formatting or any other text:
-            {plan}""",
+        "template": """You are an non-expert in planning, describe the following plan as how people tell instructions/processes, return only the description in a single paragraph, without formatting or any other text.
+        A plan is a sequence of actions, each action is represented as a verb and its arguments, in the form of (action_name arg1?arg1_type arg2?arg2_type ...).
+            Plan: {plan}""",
         "parameters": ["plan"]
     },
     "plan2nl_correction": {
-        "template": """Correct the following natural language description of a plan:
-            {nl}
+        "template": """Correct the following natural language description generated from the following Plan, return only the description without formatting or any other text.
+            NL: {nl}
             Plan: {plan}""",
         "parameters": ["nl", "plan"]
     },
