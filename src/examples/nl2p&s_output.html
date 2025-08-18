@@ -1,0 +1,609 @@
+
+    <style>
+        table { border-collapse: collapse; width: 100%; font-family: sans-serif; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; width: 25%; }
+        th { background-color: #f2f2f2; }
+        td pre { white-space: pre-wrap; word-break: break-word; }
+    </style>
+    <table>
+        <tr><th>Problem ID</th><th>Original Plan</th><th>NL Description</th><th>New Plan</th></tr>
+    <tr><td>p01.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>First, pick up the vehicle v1 from the location l1 and the package p1, which has sizes c0 and c1. Next, drive the vehicle v1 from location l1 to location l2. Finally, drop the vehicle v1 at location l2 along with the package p1, which has sizes c0 and c1.</pre></td><td><pre>Plan: (pick_up v1?vehicle l1?location p1?package c0?size c1?size), (drive v1?vehicle l1?location l2?location), (drop v1?vehicle l2?location p1?package c0?size c1?size)
+
+States: 
+1. Before: (at l1?location v1?vehicle), (at l1?location p1?package), (has_size p1?package c0?size), (has_size p1?package c1?size) 
+   After: (at l1?location p1?package), (holding v1?vehicle), (holding p1?package)
+2. Before: (holding v1?vehicle), (holding p1?package), (at l1?location) 
+   After: (at l2?location v1?vehicle), (holding p1?package)
+3. Before: (at l2?location v1?vehicle), (holding p1?package) 
+   After: (at l2?location v1?vehicle), (at l2?location p1?package), (has_size p1?package c0?size), (has_size p1?package c1?size)</pre></td></tr><tr><td>p02.pddl</td><td><pre>(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>First, take the vehicle (v1) and drive from location l2 to location l1. Next, pick up the package (p1) at location l1, making sure the package is of size c0 and c1. After that, drive again with the vehicle (v1) from location l1 to location l2. Finally, drop off the package (p1) at location l2, ensuring it is still the same size c0 and c1.</pre></td><td><pre>Plan: (take v1?vehicle l2?location), (drive v1?vehicle l2?location l1?location), (pick_up p1?package l1?location c0?size c1?size), (drive v1?vehicle l1?location l2?location), (drop_off p1?package l2?location c0?size c1?size)
+
+States: 
+1. Before: (at v1?vehicle l2?location), (not_holding p1?package), (size p1?package c0?size c1?size)
+   After: (holding v1?vehicle), (not_holding p1?package), (size p1?package c0?size c1?size)
+   
+2. Before: (holding v1?vehicle), (not_holding p1?package), (size p1?package c0?size c1?size)
+   After: (at v1?vehicle l1?location), (not_holding p1?package), (size p1?package c0?size c1?size)
+
+3. Before: (at v1?vehicle l1?location), (not_holding p1?package), (size p1?package c0?size c1?size)
+   After: (at v1?vehicle l1?location), (holding p1?package), (size p1?package c0?size c1?size)
+
+4. Before: (at v1?vehicle l1?location), (holding p1?package), (size p1?package c0?size c1?size)
+   After: (at v1?vehicle l2?location), (holding p1?package), (size p1?package c0?size c1?size)
+
+5. Before: (at v1?vehicle l2?location), (holding p1?package), (size p1?package c0?size c1?size)
+   After: (at v1?vehicle l2?location), (not_holding p1?package), (size p1?package c0?size c1?size)</pre></td></tr><tr><td>p03.pddl</td><td><pre>(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle v1 from location l1 to location l2. Next, drive the vehicle v1 from location l2 to location l3. After that, pick up the package p1 at location l3, which has size c0 and size c1. Then, drive the vehicle v1 from location l3 back to location l2. Following that, drive the vehicle v1 from location l2 back to location l1. Finally, drop off the package p1 at location l1, which has size c0 and size c1.</pre></td><td><pre>Plan: (drive v1?vehicle l1?location l2?location), (drive v1?vehicle l2?location l3?location), (pick_up p1?package l3?location c0?size c1?size), (drive v1?vehicle l3?location l2?location), (drive v1?vehicle l2?location l1?location), (drop_off p1?package l1?location c0?size c1?size)
+
+States: 
+1. Before: (at v1?vehicle l1?location), (not at p1?package l3?location) 
+   After: (at v1?vehicle l2?location), (not at p1?package l3?location)
+
+2. Before: (at v1?vehicle l2?location), (not at p1?package l3?location) 
+   After: (at v1?vehicle l3?location), (not at p1?package l3?location)
+
+3. Before: (at v1?vehicle l3?location), (not at p1?package l3?location) 
+   After: (at v1?vehicle l3?location), (at p1?package l3?location), (size p1?package c0?size c1?size)
+
+4. Before: (at v1?vehicle l3?location), (at p1?package l3?location), (size p1?package c0?size c1?size) 
+   After: (at v1?vehicle l2?location), (at p1?package l3?location), (size p1?package c0?size c1?size)
+
+5. Before: (at v1?vehicle l2?location), (at p1?package l3?location), (size p1?package c0?size c1?size) 
+   After: (at v1?vehicle l1?location), (at p1?package l3?location), (size p1?package c0?size c1?size)
+
+6. Before: (at v1?vehicle l1?location), (at p1?package l3?location), (size p1?package c0?size c1?size) 
+   After: (at v1?vehicle l1?location), (not at p1?package l1?location), (size p1?package c0?size c1?size)</pre></td></tr><tr><td>p04.pddl</td><td><pre>(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l3 to location l2. Next, drive the vehicle from location l2 to location l1. After that, pick up the package at location l1 with the vehicle, noting the package's size c0 and size c1. Then, drive the vehicle again from location l1 to location l2. Finally, drop off the package at location l2 with the vehicle, ensuring the package's size c0 and size c1 are accounted for.</pre></td><td><pre>Plan: (drive l3?location l2?location), (drive l2?location l1?location), (pick_up l1?location vehicle?vehicle package?package c0?size c1?size), (drive l1?location l2?location), (drop_off l2?location vehicle?vehicle package?package c0?size c1?size)
+
+States: 
+1. Before: (at vehicle?vehicle l3?location), (at package?package l1?location) 
+   After: (at vehicle?vehicle l2?location), (at package?package l1?location) 
+
+2. Before: (at vehicle?vehicle l2?location), (at package?package l1?location) 
+   After: (at vehicle?vehicle l1?location), (at package?package l1?location) 
+
+3. Before: (at vehicle?vehicle l1?location), (at package?package l1?location) 
+   After: (has package?package c0?size c1?size), (at vehicle?vehicle l1?location) 
+
+4. Before: (has package?package c0?size c1?size), (at vehicle?vehicle l1?location) 
+   After: (at vehicle?vehicle l2?location), (has package?package c0?size c1?size) 
+
+5. Before: (at vehicle?vehicle l2?location), (has package?package c0?size c1?size) 
+   After: (at vehicle?vehicle l2?location), (at package?package l2?location) </pre></td></tr><tr><td>p05.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size)</pre></td><td><pre>First, pick up the vehicle v1 from location l1 and take the package p1, which has size c1 and size c2. Next, drive the vehicle v1 from location l1 to location l2. After that, drop off the package p1 at location l2 using the vehicle v1. Then, drive the vehicle v1 back from location l2 to location l1. Once you arrive at location l1, pick up the package p2, which also has size c1 and size c2, using the vehicle v1. Drive the vehicle v1 again from location l1 to location l2. Finally, drop off the package p2 at location l2 using the vehicle v1.</pre></td><td><pre>Plan: (pick_up v1?vehicle l1?location), (take p1?package c1?size c2?size), (drive v1?vehicle l1?location l2?location), (drop_off p1?package l2?location v1?vehicle), (drive v1?vehicle l2?location l1?location), (pick_up p2?package c1?size c2?size v1?vehicle), (drive v1?vehicle l1?location l2?location), (drop_off p2?package l2?location v1?vehicle)
+
+States: 
+1. Before: (at v1?vehicle l1?location), (has p1?package), (size p1?package c1?size), (size p1?package c2?size)
+   After: (not at p1?package l1?location), (at v1?vehicle l1?location), (has p1?package), (size p1?package c1?size), (size p1?package c2?size)
+
+2. Before: (at v1?vehicle l1?location), (has p1?package), (size p1?package c1?size), (size p1?package c2?size)
+   After: (at v1?vehicle l2?location), (has p1?package), (size p1?package c1?size), (size p1?package c2?size)
+
+3. Before: (at v1?vehicle l2?location), (has p1?package), (size p1?package c1?size), (size p1?package c2?size)
+   After: (not has p1?package), (at p1?package l2?location), (at v1?vehicle l2?location)
+
+4. Before: (not has p1?package), (at p1?package l2?location), (at v1?vehicle l2?location)
+   After: (at v1?vehicle l1?location), (not at p1?package l2?location)
+
+5. Before: (at v1?vehicle l1?location), (not has p1?package), (at p2?package l1?location), (size p2?package c1?size), (size p2?package c2?size)
+   After: (not at p2?package l1?location), (at v1?vehicle l1?location), (has p2?package), (size p2?package c1?size), (size p2?package c2?size)
+
+6. Before: (at v1?vehicle l1?location), (has p2?package), (size p2?package c1?size), (size p2?package c2?size)
+   After: (at v1?vehicle l2?location), (has p2?package), (size p2?package c1?size), (size p2?package c2?size)
+
+7. Before: (at v1?vehicle l2?location), (has p2?package), (size p2?package c1?size), (size p2?package c2?size)
+   After: (not has p2?package), (at p2?package l2?location), (at v1?vehicle l2?location)</pre></td></tr><tr><td>p06.pddl</td><td><pre>(drive v1?vehicle l1?location l2?location),(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(pick-up v1?vehicle l2?location p2?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p2?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l1 to location l2. Next, pick up the package p1, which has size c1 and size c2, at location l2 while still in the vehicle. Then, drive the vehicle back from location l2 to location l1. After arriving at location l1, drop off the package p1 there. Now, drive the vehicle again from location l1 to location l2. Once at location l2, pick up the second package p2, which also has size c1 and size c2. Drive the vehicle back from location l2 to location l1 once more. Finally, drop off the package p2 at location l1.</pre></td><td><pre>Plan: (drive l1?location l2?location), (pick_up p1?package l2?location c1?size c2?size), (drive l2?location l1?location), (drop_off p1?package l1?location), (drive l1?location l2?location), (pick_up p2?package l2?location c1?size c2?size), (drive l2?location l1?location), (drop_off p2?package l1?location)
+
+States: 
+1. Before: (at vehicle l1?location), (at package p1?package l2?location) 
+   After: (at vehicle l2?location), (at package p1?package l2?location)
+
+2. Before: (at vehicle l2?location), (at package p1?package l2?location) 
+   After: (at vehicle l2?location), (holding package p1?package)
+
+3. Before: (at vehicle l2?location), (holding package p1?package) 
+   After: (at vehicle l1?location), (holding package p1?package)
+
+4. Before: (at vehicle l1?location), (holding package p1?package) 
+   After: (at vehicle l1?location), (at package p1?package l1?location)
+
+5. Before: (at vehicle l1?location) 
+   After: (at vehicle l2?location)
+
+6. Before: (at vehicle l2?location), (at package p2?package l2?location) 
+   After: (at vehicle l2?location), (holding package p2?package)
+
+7. Before: (at vehicle l2?location), (holding package p2?package) 
+   After: (at vehicle l1?location), (holding package p2?package)
+
+8. Before: (at vehicle l1?location), (holding package p2?package) 
+   After: (at vehicle l1?location), (at package p2?package l1?location)</pre></td></tr><tr><td>p07.pddl</td><td><pre>(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size)</pre></td><td><pre>First, pick up the vehicle v1 at location l2 and retrieve package p1 of size c1 and c2. Next, drive the vehicle v1 from location l2 to location l1. After reaching location l1, drop off package p1 with the vehicle v1. Then, pick up the vehicle v1 again at location l1 and get package p2 of size c1 and c2. Drive the vehicle v1 from location l1 to location l2. Finally, drop off package p2 at location l2 with the vehicle v1.</pre></td><td><pre>Plan: (pick_up v1?vehicle l2?location), (retrieve p1?package c1?size c2?size), (drive v1?vehicle l2?location l1?location), (drop_off p1?package v1?vehicle), (pick_up v1?vehicle l1?location), (retrieve p2?package c1?size c2?size), (drive v1?vehicle l1?location l2?location), (drop_off p2?package v1?vehicle l2?location)
+
+States: 
+1. Before: (at v1?vehicle l2?location), (has p1?package), (size p1?package c1?size c2?size)
+   After: (not at v1?vehicle l2?location), (not has p1?package), (size p1?package c1?size c2?size)
+2. Before: (not at v1?vehicle l2?location), (not has p1?package), (size p1?package c1?size c2?size)
+   After: (at v1?vehicle l2?location), (has p1?package), (size p1?package c1?size c2?size)
+3. Before: (at v1?vehicle l2?location), (has p1?package), (size p1?package c1?size c2?size)
+   After: (at v1?vehicle l1?location), (has p1?package)
+4. Before: (at v1?vehicle l1?location), (has p1?package)
+   After: (at v1?vehicle l1?location), (not has p1?package)
+5. Before: (not at v1?vehicle l1?location)
+   After: (at v1?vehicle l1?location)
+6. Before: (at v1?vehicle l1?location), (not has p2?package)
+   After: (at v1?vehicle l1?location), (has p2?package)
+7. Before: (at v1?vehicle l1?location), (has p2?package)
+   After: (at v1?vehicle l2?location), (has p2?package)
+8. Before: (at v1?vehicle l2?location), (has p2?package)
+   After: (at v1?vehicle l2?location), (not has p2?package)</pre></td></tr><tr><td>p08.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p1?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l2. Next, pick up the package p1 at location l2, ensuring the package is of size c1 and c2. After that, drive the vehicle from location l2 to location l3. Finally, drop off the package p1 at location l3.</pre></td><td><pre>Plan: (drive_from l4?location l2?location), (pick_up p1?package l2?location c1?size c2?size), (drive_from l2?location l3?location), (drop_off p1?package l3?location)
+
+States: 
+- Before action 1: (at_vehicle l4?location), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- After action 1: (at_vehicle l2?location), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- Before action 2: (at_vehicle l2?location), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- After action 2: (at_vehicle l2?location), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size), (holding p1?package)
+- Before action 3: (at_vehicle l2?location), (holding p1?package), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- After action 3: (at_vehicle l3?location), (holding p1?package), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- Before action 4: (at_vehicle l3?location), (holding p1?package), (at_package p1?package l2?location), (size_of p1?package c1?size c2?size)
+- After action 4: (at_vehicle l3?location), (at_package p1?package l3?location), (size_of p1?package c1?size c2?size)</pre></td></tr><tr><td>p09.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c1?size c2?size)</pre></td><td><pre>First, pick up the vehicle at location l1 and take the package p1 of size c1 and c2. Next, drive the vehicle from location l1 to location l2. After that, drive the vehicle from location l2 to location l4. Then, drop off the vehicle at location l4 and leave the package p1 of size c1 and c2. Now, drive the vehicle from location l4 back to location l2. Drive again from location l2 to location l1. Once you arrive at location l1, pick up the vehicle and take the package p2 of size c1 and c2. Drive the vehicle from location l1 to location l2. Next, drive from location l2 to location l3. Finally, drop off the vehicle at location l3 and leave the package p2 of size c1 and c2.</pre></td><td><pre>Plan: (pick_up_vehicle l1?location), (take_package p1?package c1?size c2?size), (drive_vehicle l1?location l2?location), (drive_vehicle l2?location l4?location), (drop_off_vehicle l4?location), (leave_package p1?package c1?size c2?size), (drive_vehicle l4?location l2?location), (drive_vehicle l2?location l1?location), (pick_up_vehicle l1?location), (take_package p2?package c1?size c2?size), (drive_vehicle l1?location l2?location), (drive_vehicle l2?location l3?location), (drop_off_vehicle l3?location), (leave_package p2?package c1?size c2?size)
+
+States: 
+1. Before: (vehicle_at l1?location), (package_at l1?location p1?package c1?size c2?size) 
+   After: (vehicle_at l1?location), (package_in_vehicle p1?package) 
+2. Before: (vehicle_in_hand), (package_in_vehicle p1?package) 
+   After: (vehicle_in_hand), (package_in_vehicle p1?package) 
+3. Before: (vehicle_in_hand), (at_vehicle l1?location) 
+   After: (vehicle_in_hand), (at_vehicle l2?location) 
+4. Before: (vehicle_in_hand), (at_vehicle l2?location) 
+   After: (vehicle_in_hand), (at_vehicle l4?location) 
+5. Before: (vehicle_in_hand), (at_vehicle l4?location) 
+   After: (vehicle_at l4?location) 
+6. Before: (vehicle_at l4?location), (package_in_vehicle p1?package c1?size c2?size) 
+   After: (vehicle_at l4?location), (package_at l4?location p1?package c1?size c2?size) 
+7. Before: (vehicle_at l4?location) 
+   After: (vehicle_in_hand), (at_vehicle l2?location) 
+8. Before: (vehicle_in_hand), (at_vehicle l2?location) 
+   After: (vehicle_in_hand), (at_vehicle l1?location) 
+9. Before: (vehicle_in_hand), (at_vehicle l1?location) 
+   After: (vehicle_in_hand), (package_in_vehicle p2?package) 
+10. Before: (vehicle_in_hand), (package_in_vehicle p2?package) 
+    After: (vehicle_in_hand), (at_vehicle l2?location) 
+11. Before: (vehicle_in_hand), (at_vehicle l2?location) 
+    After: (vehicle_in_hand), (at_vehicle l3?location) 
+12. Before: (vehicle_in_hand), (at_vehicle l3?location) 
+    After: (vehicle_at l3?location) 
+13. Before: (vehicle_at l3?location), (package_in_vehicle p2?package c1?size c2?size) 
+    After: (vehicle_at l3?location), (package_at l3?location p2?package c1?size c2?size)</pre></td></tr><tr><td>p10.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size),(pick-up v1?vehicle l2?location p3?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p3?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(drive v1?vehicle l4?location l1?location),(pick-up v1?vehicle l1?location p4?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(drop v1?vehicle l4?location p4?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l2. Next, drive the vehicle from location l2 to location l3. Then, pick up package p1 of size c1 and size c2 at location l3 while in the vehicle. After that, drive the vehicle from location l3 to location l2. Continue by driving the vehicle from location l2 to location l4. Drop off package p1 of size c1 and size c2 at location l4 while in the vehicle. Next, drive the vehicle from location l4 back to location l2. Then, drive the vehicle from location l2 to location l3. Pick up package p2 of size c1 and size c2 at location l3 while in the vehicle. Drive the vehicle from location l3 to location l2 again. Drop off package p2 of size c1 and size c2 at location l2 while in the vehicle. Next, pick up package p3 of size c1 and size c2 at location l2 while in the vehicle. Drive the vehicle from location l2 to location l3. Drop off package p3 of size c1 and size c2 at location l3 while in the vehicle. Drive the vehicle from location l3 back to location l2. Then, drive the vehicle from location l2 to location l4. After that, drive the vehicle from location l4 to location l1. Finally, pick up package p4 of size c1 and size c2 at location l1 while in the vehicle, drive the vehicle from location l1 to location l4, and drop off package p4 of size c1 and size c2 at location l4 while in the vehicle.</pre></td><td><pre>Plan: (drive l4?location l2?location), (drive l2?location l3?location), (pick_up p1?package l3?location c1?size c2?size), (drive l3?location l2?location), (drive l2?location l4?location), (drop_off p1?package l4?location c1?size c2?size), (drive l4?location l2?location), (drive l2?location l3?location), (pick_up p2?package l3?location c1?size c2?size), (drive l3?location l2?location), (drop_off p2?package l2?location c1?size c2?size), (pick_up p3?package l2?location c1?size c2?size), (drive l2?location l3?location), (drop_off p3?package l3?location c1?size c2?size), (drive l3?location l2?location), (drive l2?location l4?location), (drive l4?location l1?location), (pick_up p4?package l1?location c1?size c2?size), (drive l1?location l4?location), (drop_off p4?package l4?location c1?size c2?size)
+
+States: 
+1. Before: (at_vehicle l4?location), (at_location l4?location)
+   After: (at_vehicle l2?location), (at_location l2?location)
+
+2. Before: (at_vehicle l2?location), (at_location l2?location)
+   After: (at_vehicle l3?location), (at_location l3?location)
+
+3. Before: (at_vehicle l3?location), (at_location l3?location), (available p1?package)
+   After: (at_vehicle l3?location), (at_location l3?location), (has p1?package), (not available p1?package)
+
+4. Before: (at_vehicle l3?location), (has p1?package), (at_location l3?location)
+   After: (at_vehicle l2?location), (has p1?package), (at_location l2?location)
+
+5. Before: (at_vehicle l2?location), (has p1?package), (at_location l2?location)
+   After: (at_vehicle l4?location), (has p1?package), (at_location l4?location)
+
+6. Before: (at_vehicle l4?location), (has p1?package), (at_location l4?location)
+   After: (at_vehicle l4?location), (not has p1?package), (at_location l4?location)
+
+7. Before: (at_vehicle l4?location), (at_location l4?location)
+   After: (at_vehicle l2?location), (at_location l2?location)
+
+8. Before: (at_vehicle l2?location), (at_location l2?location)
+   After: (at_vehicle l3?location), (at_location l3?location)
+
+9. Before: (at_vehicle l3?location), (at_location l3?location), (available p2?package)
+   After: (at_vehicle l3?location), (at_location l3?location), (has p2?package), (not available p2?package)
+
+10. Before: (at_vehicle l3?location), (has p2?package), (at_location l3?location)
+    After: (at_vehicle l2?location), (has p2?package), (at_location l2?location)
+
+11. Before: (at_vehicle l2?location), (has p2?package), (at_location l2?location)
+    After: (at_vehicle l2?location), (not has p2?package), (at_location l2?location)
+
+12. Before: (at_vehicle l2?location), (at_location l2?location), (available p3?package)
+    After: (at_vehicle l2?location), (at_location l2?location), (has p3?package), (not available p3?package)
+
+13. Before: (at_vehicle l2?location), (has p3?package), (at_location l2?location)
+    After: (at_vehicle l3?location), (has p3?package), (at_location l3?location)
+
+14. Before: (at_vehicle l3?location), (has p3?package), (at_location l3?location)
+    After: (at_vehicle l3?location), (not has p3?package), (at_location l3?location)
+
+15. Before: (at_vehicle l3?location), (at_location l3?location)
+    After: (at_vehicle l2?location), (at_location l2?location)
+
+16. Before: (at_vehicle l2?location), (at_location l2?location)
+    After: (at_vehicle l4?location), (at_location l4?location)
+
+17. Before: (at_vehicle l4?location), (at_location l4?location)
+    After: (at_vehicle l1?location), (at_location l1?location)
+
+18. Before: (at_vehicle l1?location), (at_location l1?location), (available p4?package)
+    After: (at_vehicle l1?location), (at_location l1?location), (has p4?package), (not available p4?package)
+
+19. Before: (at_vehicle l1?location), (has p4?package), (at_location l1?location)
+    After: (at_vehicle l4?location), (has p4?package), (at_location l4?location)
+
+20. Before: (at_vehicle l4?location), (has p4?package), (at_location l4?location)
+    After: (at_vehicle l4?location), (not has p4?package), (at_location l4?location)</pre></td></tr><tr><td>p11.pddl</td><td><pre>(drive v1?vehicle l1?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p2?package c1?size c2?size),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p2?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l1 to location l3. Next, pick up package p1, which is of size c1 and c2, from location l3. Then, drive the vehicle back from location l3 to location l1. After that, drop off package p1 at location l1. Now, drive the vehicle from location l1 to location l4. Once you arrive at location l4, pick up package p2, which is also of size c1 and c2. Drive the vehicle back from location l4 to location l1. Finally, drop off package p2 at location l1.</pre></td><td><pre>Plan: (drive l1?location l3?location), (pick_up p1?package l3?location c1?size c2?size), (drive l3?location l1?location), (drop_off p1?package l1?location), (drive l1?location l4?location), (pick_up p2?package l4?location c1?size c2?size), (drive l4?location l1?location), (drop_off p2?package l1?location)
+
+States: 
+1. Before: (at vehicle l1?location), (at package p1 l3?location), (at package p2 l4?location) 
+   After: (at vehicle l3?location), (at package p1 l3?location), (at package p2 l4?location)
+
+2. Before: (at vehicle l3?location), (at package p1 l3?location), (at package p2 l4?location) 
+   After: (at vehicle l3?location), (has package p1?package), (at package p2 l4?location)
+
+3. Before: (at vehicle l3?location), (has package p1?package), (at package p2 l4?location) 
+   After: (at vehicle l1?location), (has package p1?package), (at package p2 l4?location)
+
+4. Before: (at vehicle l1?location), (has package p1?package), (at package p2 l4?location) 
+   After: (at vehicle l1?location), (at package p1 l1?location), (at package p2 l4?location)
+
+5. Before: (at vehicle l1?location), (at package p1 l1?location), (at package p2 l4?location) 
+   After: (at vehicle l4?location), (at package p1 l1?location), (at package p2 l4?location)
+
+6. Before: (at vehicle l4?location), (at package p1 l1?location), (at package p2 l4?location) 
+   After: (at vehicle l4?location), (has package p2?package), (at package p1 l1?location)
+
+7. Before: (at vehicle l4?location), (has package p2?package), (at package p1 l1?location) 
+   After: (at vehicle l1?location), (has package p2?package), (at package p1 l1?location)
+
+8. Before: (at vehicle l1?location), (has package p2?package), (at package p1 l1?location) 
+   After: (at vehicle l1?location), (at package p2 l1?location), (at package p1 l1?location)</pre></td></tr><tr><td>p12.pddl</td><td><pre>(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l6?location),(pick-up v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(drive v1?vehicle l2?location l4?location),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p1?package c0?size c1?size),(pick-up v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l4?location),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l6?location),(drop v1?vehicle l6?location p2?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l3 to location l2. Next, drive the vehicle from location l2 to location l6. After that, pick up the package p1 at location l6, which has size c0 and size c1. Then, drive the vehicle from location l6 back to location l2. Continue by driving the vehicle from location l2 to location l4. Next, drive the vehicle from location l4 to location l5. Once you arrive at location l5, drop off the package p1 that has size c0 and size c1. Then, pick up the package p2 at location l5, which also has size c0 and size c1. After picking it up, drive the vehicle from location l5 back to location l4. Next, drive the vehicle from location l4 to location l2. Finally, drive the vehicle from location l2 to location l6 and drop off the package p2 that has size c0 and size c1.</pre></td><td><pre>Plan: (drive_vehicle l3?location l2?location), (drive_vehicle l2?location l6?location), (pick_up_package p1?package l6?location c0?size c1?size), (drive_vehicle l6?location l2?location), (drive_vehicle l2?location l4?location), (drive_vehicle l4?location l5?location), (drop_off_package p1?package l5?location c0?size c1?size), (pick_up_package p2?package l5?location c0?size c1?size), (drive_vehicle l5?location l4?location), (drive_vehicle l4?location l2?location), (drive_vehicle l2?location l6?location), (drop_off_package p2?package l6?location c0?size c1?size)
+
+States: 
+1. Before: (at_vehicle l3?location), (at_package p1?package l6?location), (size p1?package c0?size c1?size), (at_package p2?package l5?location), (size p2?package c0?size c1?size) 
+   After: (at_vehicle l2?location)
+2. Before: (at_vehicle l2?location)
+   After: (at_vehicle l6?location)
+3. Before: (at_vehicle l6?location), (at_package p1?package l6?location), (size p1?package c0?size c1?size)
+   After: (has_package p1?package)
+4. Before: (has_package p1?package)
+   After: (at_vehicle l2?location)
+5. Before: (at_vehicle l2?location)
+   After: (at_vehicle l4?location)
+6. Before: (at_vehicle l4?location)
+   After: (at_vehicle l5?location)
+7. Before: (at_vehicle l5?location), (has_package p1?package)
+   After: (not_has_package p1?package)
+8. Before: (at_vehicle l5?location)
+   After: (has_package p2?package)
+9. Before: (has_package p2?package)
+   After: (at_vehicle l4?location)
+10. Before: (at_vehicle l4?location)
+    After: (at_vehicle l2?location)
+11. Before: (at_vehicle l2?location), (has_package p2?package)
+    After: (not_has_package p2?package)
+12. Before: (not_has_package p2?package), (at_vehicle l6?location)
+    After: (not_has_package p2?package)</pre></td></tr><tr><td>p13.pddl</td><td><pre>(drive v1?vehicle l2?location l4?location),(pick-up v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(pick-up v1?vehicle l4?location p2?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l4?location),(pick-up v1?vehicle l4?location p3?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(drive v1?vehicle l3?location l1?location),(drop v1?vehicle l1?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l2 to location l4. Next, pick up the package p1 of size c0 and c1 from location l4. Then, drive the vehicle from location l4 to location l2. After that, drive the vehicle from location l2 to location l3. Once you arrive at location l3, drop off package p1 of size c0 and c1. Then, drive the vehicle from location l3 back to location l2. Next, drive the vehicle from location l2 to location l4. After reaching location l4, pick up package p2 of size c0 and c1. Then, drive the vehicle from location l4 to location l5. When you get to location l5, drop off package p2 of size c0 and c1. Next, drive the vehicle from location l5 back to location l4. After that, pick up package p3 of size c0 and c1 from location l4. Then, drive the vehicle from location l4 to location l2. Next, drive the vehicle from location l2 to location l3. Finally, drive the vehicle from location l3 to location l1 and drop off package p3 of size c0 and c1.</pre></td><td><pre>Plan: (drive_vehicle l2?location l4?location), (pick_up_package p1?package l4?location), (drive_vehicle l4?location l2?location), (drive_vehicle l2?location l3?location), (drop_off_package p1?package l3?location), (drive_vehicle l3?location l2?location), (drive_vehicle l2?location l4?location), (pick_up_package p2?package l4?location), (drive_vehicle l4?location l5?location), (drop_off_package p2?package l5?location), (drive_vehicle l5?location l4?location), (pick_up_package p3?package l4?location), (drive_vehicle l4?location l2?location), (drive_vehicle l2?location l3?location), (drive_vehicle l3?location l1?location), (drop_off_package p3?package l1?location)
+
+States: 
+1. Before: (at_vehicle l2?location), (at_package p1?package l4?location)
+   After: (at_vehicle l4?location), (at_package p1?package l4?location)
+
+2. Before: (at_vehicle l4?location), (at_package p1?package l4?location)
+   After: (at_vehicle l4?location), (at_package p1?package_l4?location), (has_package p1?package)
+
+3. Before: (at_vehicle l4?location)
+   After: (at_vehicle l2?location), (has_package p1?package)
+
+4. Before: (at_vehicle l2?location)
+   After: (at_vehicle l3?location), (has_package p1?package)
+
+5. Before: (at_vehicle l3?location), (has_package p1?package)
+   After: (at_vehicle l3?location), (has_package p1?package), (at_package p1?package l3?location)
+
+6. Before: (at_vehicle l3?location)
+   After: (at_vehicle l2?location), (has_package p1?package)
+
+7. Before: (at_vehicle l2?location)
+   After: (at_vehicle l4?location), (has_package p1?package)
+
+8. Before: (at_vehicle l4?location), (at_package p2?package l4?location)
+   After: (at_vehicle l4?location), (at_package p2?package l4?location), (has_package p2?package)
+
+9. Before: (at_vehicle l4?location), (has_package p2?package)
+   After: (at_vehicle l5?location), (has_package p2?package)
+
+10. Before: (at_vehicle l5?location), (has_package p2?package)
+    After: (at_vehicle l5?location), (has_package p2?package), (at_package p2?package l5?location)
+
+11. Before: (at_vehicle l5?location)
+    After: (at_vehicle l4?location), (has_package p2?package)
+
+12. Before: (at_vehicle l4?location), (at_package p3?package l4?location)
+    After: (at_vehicle l4?location), (at_package p3?package l4?location), (has_package p3?package)
+
+13. Before: (at_vehicle l4?location), (has_package p3?package)
+    After: (at_vehicle l2?location), (has_package p3?package)
+
+14. Before: (at_vehicle l2?location)
+    After: (at_vehicle l3?location), (has_package p3?package)
+
+15. Before: (at_vehicle l3?location), (has_package p3?package)
+    After: (at_vehicle l1?location), (has_package p3?package), (at_package p3?package l1?location)</pre></td></tr><tr><td>p14.pddl</td><td><pre>(pick-up v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l4?location),(drop v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l3?location),(pick-up v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drop v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p3?package c0?size c1?size),(drive v1?vehicle l1?location l5?location),(drop v1?vehicle l5?location p3?package c0?size c1?size)</pre></td><td><pre>First, pick up the package p1 of size c0 and c1 from location l6 using vehicle v1. Next, drive vehicle v1 from location l6 to location l4. Then, drop off package p1 of size c0 and c1 at location l4 while still using vehicle v1. After that, drive vehicle v1 from location l4 to location l3. Once you arrive at location l3, pick up package p2 of size c0 and c1 using vehicle v1. Drive vehicle v1 from location l3 to location l2. At location l2, drop off package p2 of size c0 and c1 while using vehicle v1. Then, drive vehicle v1 from location l2 to location l1. Finally, pick up package p3 of size c0 and c1 at location l1 using vehicle v1, and drive vehicle v1 from location l1 to location l5, where you will drop off package p3 of size c0 and c1.</pre></td><td><pre>Plan: (pick_up p1?package l6?location v1?vehicle), (drive v1?vehicle l6?location l4?location), (drop_off p1?package l4?location v1?vehicle), (drive v1?vehicle l4?location l3?location), (pick_up p2?package l3?location v1?vehicle), (drive v1?vehicle l3?location l2?location), (drop_off p2?package l2?location v1?vehicle), (drive v1?vehicle l2?location l1?location), (pick_up p3?package l1?location v1?vehicle), (drive v1?vehicle l1?location l5?location), (drop_off p3?package l5?location v1?vehicle)
+
+States: 
+1. Before: (at l6?location), (has p1?package), (size p1?package c0?size c1?size), (at v1?vehicle l6?location)
+   After: (at l6?location), (not has p1?package), (at v1?vehicle l6?location), (holding p1?package)
+
+2. Before: (at l6?location), (holding p1?package), (at v1?vehicle l6?location)
+   After: (at l4?location), (holding p1?package), (at v1?vehicle l4?location)
+
+3. Before: (at l4?location), (holding p1?package), (at v1?vehicle l4?location)
+   After: (at l4?location), (not holding p1?package), (at v1?vehicle l4?location)
+
+4. Before: (at l4?location), (not holding p1?package), (at v1?vehicle l4?location)
+   After: (at l3?location), (not holding p1?package), (at v1?vehicle l3?location)
+
+5. Before: (at l3?location), (not holding p1?package), (at v1?vehicle l3?location)
+   After: (at l3?location), (holding p2?package), (size p2?package c0?size c1?size), (at v1?vehicle l3?location)
+
+6. Before: (at l3?location), (holding p2?package), (at v1?vehicle l3?location)
+   After: (at l2?location), (holding p2?package), (at v1?vehicle l2?location)
+
+7. Before: (at l2?location), (holding p2?package), (at v1?vehicle l2?location)
+   After: (at l2?location), (not holding p2?package), (at v1?vehicle l2?location)
+
+8. Before: (at l2?location), (not holding p2?package), (at v1?vehicle l2?location)
+   After: (at l1?location), (not holding p2?package), (at v1?vehicle l1?location)
+
+9. Before: (at l1?location), (not holding p2?package), (at v1?vehicle l1?location)
+   After: (at l1?location), (holding p3?package), (size p3?package c0?size c1?size), (at v1?vehicle l1?location)
+
+10. Before: (at l1?location), (holding p3?package), (at v1?vehicle l1?location)
+    After: (at l5?location), (not holding p3?package), (at v1?vehicle l5?location)
+
+11. Before: (at l5?location), (not holding p3?package), (at v1?vehicle l5?location)
+    After: (at l5?location), (not holding p3?package), (at v1?vehicle l5?location)</pre></td></tr><tr><td>p15.pddl</td><td><pre>(drive v1?vehicle l2?location l5?location),(pick-up v1?vehicle l5?location p1?package c0?size c1?size),(drive v1?vehicle l5?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p2?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l6?location),(pick-up v1?vehicle l6?location p3?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(drop v1?vehicle l2?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l2 to location l5. Next, pick up the package p1 of size c0 and size c1 from location l5. After that, drive the vehicle from location l5 to location l1. Then, drop off the package p1 of size c0 and size c1 at location l1. Continue by driving the vehicle from location l1 to location l4. At location l4, pick up the package p2 of size c0 and size c1. Drive the vehicle from location l4 to location l5 again. Once you arrive at location l5, drop off the package p2 of size c0 and size c1. Next, drive the vehicle from location l5 to location l6. At location l6, pick up the package p3 of size c0 and size c1. Finally, drive the vehicle from location l6 back to location l2 and drop off the package p3 of size c0 and size c1 there.</pre></td><td><pre>Plan: (drive_vehicle l2?location l5?location), (pick_up_package p1?package l5?location c0?size c1?size), (drive_vehicle l5?location l1?location), (drop_off_package p1?package l1?location c0?size c1?size), (drive_vehicle l1?location l4?location), (pick_up_package p2?package l4?location c0?size c1?size), (drive_vehicle l4?location l5?location), (drop_off_package p2?package l5?location c0?size c1?size), (drive_vehicle l5?location l6?location), (pick_up_package p3?package l6?location c0?size c1?size), (drive_vehicle l6?location l2?location), (drop_off_package p3?package l2?location c0?size c1?size)
+
+States: 
+1. Before: (at_vehicle l2?location), (at_package p1?package l5?location), (at_package p2?package l4?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l5?location), (at_package p1?package l5?location), (at_package p2?package l4?location), (at_package p3?package l6?location)
+
+2. Before: (at_vehicle l5?location), (at_package p1?package l5?location), (at_package p2?package l4?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l5?location), (not_at_package p1?package l5?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location)
+
+3. Before: (at_vehicle l5?location), (not_at_package p1?package l5?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l1?location), (not_at_package p1?package l5?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location)
+
+4. Before: (at_vehicle l1?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l4?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location)
+
+5. Before: (at_vehicle l4?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (at_package p2?package l4?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l5?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (not_at_package p2?package l4?location), (at_package p2?package l5?location), (at_package p3?package l6?location)
+
+6. Before: (at_vehicle l5?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (not_at_package p2?package l4?location), (at_package p2?package l5?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l6?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (not_at_package p2?package l4?location), (at_package p2?package l5?location), (at_package p3?package l6?location)
+
+7. Before: (at_vehicle l6?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (not_at_package p2?package l4?location), (at_package p2?package l5?location), (at_package p3?package l6?location) 
+   After: (at_vehicle l2?location), (not_at_package p1?package l1?location), (at_package p1?package l1?location), (not_at_package p2?package l4?location), (at_package p2?package l5?location), (not_at_package p3?package l6?location), (at_package p3?package l2?location)</pre></td></tr><tr><td>p16.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(pick-up v1?vehicle l2?location p1?package c0?size c1?size),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(pick-up v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l2?location),(drop v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p3?package c0?size c1?size),(drive v1?vehicle l3?location l5?location),(drop v1?vehicle l5?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l2. Next, pick up the package p1 of size c0 and size c1 at location l2. Then, drive the vehicle from location l2 to location l4. After that, drop off the package p1 of size c0 and size c1 at location l4. Now, drive the vehicle from location l4 to location l5. Proceed to pick up the package p2 of size c0 and size c1 at location l5. Drive the vehicle from location l5 back to location l2 and drop off the package p2 of size c0 and size c1 there. Next, drive the vehicle from location l2 to location l3. Pick up the package p3 of size c0 and size c1 at location l3. Finally, drive the vehicle from location l3 to location l5 and drop off the package p3 of size c0 and size c1 at location l5.</pre></td><td><pre>Plan: (drive l4?location l2?location), (pick_up p1?package l2?location), (drive l2?location l4?location), (drop_off p1?package l4?location), (drive l4?location l5?location), (pick_up p2?package l5?location), (drive l5?location l2?location), (drop_off p2?package l2?location), (drive l2?location l3?location), (pick_up p3?package l3?location), (drive l3?location l5?location), (drop_off p3?package l5?location)
+
+States: 
+1. Before: (at_vehicle l4?location), (at_package p1?package l2?location) 
+   After: (at_vehicle l2?location), (at_package p1?package l2?location)
+
+2. Before: (at_vehicle l2?location), (at_package p1?package l2?location) 
+   After: (at_vehicle l2?location), (has_package p1?package)
+
+3. Before: (at_vehicle l2?location), (has_package p1?package) 
+   After: (at_vehicle l4?location), (has_package p1?package)
+
+4. Before: (at_vehicle l4?location), (has_package p1?package) 
+   After: (at_vehicle l4?location), (at_package p1?package l4?location)
+
+5. Before: (at_vehicle l4?location) 
+   After: (at_vehicle l5?location)
+
+6. Before: (at_vehicle l5?location), (at_package p2?package l5?location) 
+   After: (at_vehicle l5?location), (has_package p2?package)
+
+7. Before: (at_vehicle l5?location), (has_package p2?package) 
+   After: (at_vehicle l2?location), (has_package p2?package)
+
+8. Before: (at_vehicle l2?location), (has_package p2?package) 
+   After: (at_vehicle l2?location), (at_package p2?package l2?location)
+
+9. Before: (at_vehicle l2?location) 
+   After: (at_vehicle l3?location)
+
+10. Before: (at_vehicle l3?location), (at_package p3?package l3?location) 
+    After: (at_vehicle l3?location), (has_package p3?package)
+
+11. Before: (at_vehicle l3?location), (has_package p3?package) 
+    After: (at_vehicle l5?location), (has_package p3?package)
+
+12. Before: (at_vehicle l5?location), (has_package p3?package) 
+    After: (at_vehicle l5?location), (at_package p3?package l5?location)</pre></td></tr><tr><td>p17.pddl</td><td><pre>(drive v1?vehicle l4?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l3?location),(drop v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(pick-up v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l4?location),(pick-up v1?vehicle l4?location p3?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drop v1?vehicle l2?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l1. Next, pick up package p1, which is of size c0 and size c1, at location l1. Then, drive the vehicle from location l1 to location l3. After that, drop off package p1 at location l3. Now, drive the vehicle from location l3 to location l2. Next, pick up package p2, which is of size c0 and size c1, at location l2. Then, drive the vehicle from location l2 back to location l3. After that, drop off package p2 at location l3. Now, drive the vehicle from location l3 to location l4. Next, pick up package p3, which is of size c0 and size c1, at location l4. Finally, drive the vehicle from location l4 to location l2 and drop off package p3 at location l2.</pre></td><td><pre>Plan: (drive_vehicle l4?location l1?location), (pick_up_package p1?package l1?location c0?size c1?size), (drive_vehicle l1?location l3?location), (drop_off_package p1?package l3?location), (drive_vehicle l3?location l2?location), (pick_up_package p2?package l2?location c0?size c1?size), (drive_vehicle l2?location l3?location), (drop_off_package p2?package l3?location), (drive_vehicle l3?location l4?location), (pick_up_package p3?package l4?location c0?size c1?size), (drive_vehicle l4?location l2?location), (drop_off_package p3?package l2?location)
+
+States: 
+1. Before: (at_vehicle l4?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l4?location) 
+   After: (at_vehicle l1?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l4?location)
+
+2. Before: (at_vehicle l1?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l4?location) 
+   After: (at_vehicle l1?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p1?package)
+
+3. Before: (at_vehicle l1?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p1?package) 
+   After: (at_vehicle l3?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p1?package)
+
+4. Before: (at_vehicle l3?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p1?package) 
+   After: (at_vehicle l3?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (dropped_off p1?package)
+
+5. Before: (at_vehicle l3?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (dropped_off p1?package) 
+   After: (at_vehicle l2?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (dropped_off p1?package)
+
+6. Before: (at_vehicle l2?location), (at_package p2?package l2?location), (at_package p3?package l4?location) 
+   After: (at_vehicle l2?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p2?package)
+
+7. Before: (at_vehicle l2?location), (at_package p2?package l2?location), (at_package p3?package l4?location), (picked_up p2?package) 
+   After: (at_vehicle l3?location), (at_package p3?package l4?location), (dropped_off p2?package)
+
+8. Before: (at_vehicle l3?location), (at_package p3?package l4?location), (dropped_off p2?package) 
+   After: (at_vehicle l4?location), (at_package p3?package l4?location), (dropped_off p2?package)
+
+9. Before: (at_vehicle l4?location), (at_package p3?package l4?location) 
+   After: (at_vehicle l4?location), (picked_up p3?package)
+
+10. Before: (at_vehicle l4?location), (picked_up p3?package) 
+    After: (at_vehicle l2?location), (dropped_off p3?package)</pre></td></tr><tr><td>p18.pddl</td><td><pre>(drive v1?vehicle l3?location l7?location),(drive v1?vehicle l7?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l6?location),(drop v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(pick-up v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l1?location),(drive v1?vehicle l1?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l3?location),(drive v1?vehicle l3?location l7?location),(pick-up v1?vehicle l7?location p3?package c0?size c1?size),(drive v1?vehicle l7?location l2?location),(drive v1?vehicle l2?location l6?location),(drop v1?vehicle l6?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l3 to location l7. Next, drive the vehicle from location l7 to location l1. Then, pick up package p1 of size c0 and size c1 at location l1. After that, drive the vehicle from location l1 to location l6. Once you arrive at location l6, drop off package p1 of size c0 and size c1. Now, drive the vehicle from location l6 to location l2. At location l2, pick up package p2 of size c0 and size c1. Then, drive the vehicle from location l2 back to location l1. Next, drive the vehicle from location l1 to location l5. At location l5, drop off package p2 of size c0 and size c1. After that, drive the vehicle from location l5 to location l3. Then, drive the vehicle from location l3 to location l7. At location l7, pick up package p3 of size c0 and size c1. Finally, drive the vehicle from location l7 to location l2, and then drive from location l2 to location l6 to drop off package p3 of size c0 and size c1.</pre></td><td><pre>Plan: (drive l3?location l7?location), (drive l7?location l1?location), (pick_up p1?package l1?location c0?size c1?size), (drive l1?location l6?location), (drop_off p1?package l6?location c0?size c1?size), (drive l6?location l2?location), (pick_up p2?package l2?location c0?size c1?size), (drive l2?location l1?location), (drive l1?location l5?location), (drop_off p2?package l5?location c0?size c1?size), (drive l5?location l3?location), (drive l3?location l7?location), (pick_up p3?package l7?location c0?size c1?size), (drive l7?location l2?location), (drive l2?location l6?location), (drop_off p3?package l6?location c0?size c1?size)
+
+States: 
+1. Before: (at_vehicle l3?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l7?location)
+
+2. Before: (at_vehicle l7?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l1?location)
+
+3. Before: (at_vehicle l1?location), (at_package p1?package l1?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (holding_package p1?package), (at_package p1?package l1?location)
+
+4. Before: (holding_package p1?package), (at_vehicle l1?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l6?location), (at_package p1?package l1?location)
+
+5. Before: (at_vehicle l6?location), (holding_package p1?package), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l6?location), (at_package p1?package l6?location)
+
+6. Before: (at_vehicle l6?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l2?location), (at_package p2?package l2?location)
+
+7. Before: (at_vehicle l2?location), (at_package p2?package l2?location), (at_package p3?package l7?location)  
+   After: (holding_package p2?package), (at_package p2?package l2?location)
+
+8. Before: (holding_package p2?package), (at_vehicle l2?location), (at_package p3?package l7?location)  
+   After: (at_vehicle l1?location), (at_package p2?package l2?location)
+
+9. Before: (at_vehicle l1?location), (holding_package p2?package), (at_package p3?package l7?location)  
+   After: (at_vehicle l5?location), (at_package p2?package l1?location)
+
+10. Before: (at_vehicle l5?location), (holding_package p2?package), (at_package p3?package l7?location)  
+    After: (at_vehicle l5?location), (at_package p2?package l5?location)
+
+11. Before: (at_vehicle l5?location), (at_package p3?package l7?location)  
+    After: (at_vehicle l3?location)
+
+12. Before: (at_vehicle l3?location), (at_package p3?package l7?location)  
+    After: (at_vehicle l7?location), (at_package p3?package l7?location)
+
+13. Before: (at_vehicle l7?location), (at_package p3?package l7?location)  
+    After: (holding_package p3?package), (at_package p3?package l7?location)
+
+14. Before: (holding_package p3?package), (at_vehicle l7?location)  
+    After: (at_vehicle l2?location), (at_package p3?package l7?location)
+
+15. Before: (at_vehicle l2?location), (holding_package p3?package)  
+    After: (at_vehicle l6?location), (at_package p3?package l2?location)
+
+16. Before: (at_vehicle l6?location), (holding_package p3?package)  
+    After: (at_vehicle l6?location), (at_package p3?package l6?location)</pre></td></tr><tr><td>p19.pddl</td><td><pre>(drive v1?vehicle l4?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l5?location),(drop v1?vehicle l5?location p1?package c1?size c2?size),(drive v1?vehicle l5?location l6?location),(drive v1?vehicle l6?location l2?location),(pick-up v1?vehicle l2?location p2?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l4?location),(drive v1?vehicle l4?location l7?location),(pick-up v1?vehicle l7?location p3?package c1?size c2?size),(drive v1?vehicle l7?location l4?location),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p3?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p4?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drop v1?vehicle l2?location p4?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l3. Next, pick up the package p1 of size c1 and c2 at location l3. Then, drive the vehicle from location l3 to location l6. After that, drive the vehicle from location l6 to location l5 and drop off package p1 of size c1 and c2 at location l5. Continue by driving the vehicle from location l5 back to location l6. Then, drive the vehicle from location l6 to location l2 and pick up package p2 of size c1 and c2 at location l2. Afterward, drive the vehicle from location l2 to location l3 and drop off package p2 of size c1 and c2 at location l3. Next, drive the vehicle from location l3 to location l4 and then drive the vehicle from location l4 to location l7. Now, pick up package p3 of size c1 and c2 at location l7. After picking it up, drive the vehicle from location l7 back to location l4, then drive from location l4 to location l1 and drop off package p3 of size c1 and c2 at location l1. Finally, drive the vehicle from location l1 back to location l4, pick up package p4 of size c1 and c2 at location l4, drive from location l4 to location l2, and drop off package p4 of size c1 and c2 at location l2.</pre></td><td><pre>Plan: (drive l4?location l3?location), (pick_up p1?package l3?location c1?size c2?size), (drive l3?location l6?location), (drive l6?location l5?location), (drop_off p1?package l5?location c1?size c2?size), (drive l5?location l6?location), (drive l6?location l2?location), (pick_up p2?package l2?location c1?size c2?size), (drive l2?location l3?location), (drop_off p2?package l3?location c1?size c2?size), (drive l3?location l4?location), (drive l4?location l7?location), (pick_up p3?package l7?location c1?size c2?size), (drive l7?location l4?location), (drive l4?location l1?location), (drop_off p3?package l1?location c1?size c2?size), (drive l1?location l4?location), (pick_up p4?package l4?location c1?size c2?size), (drive l4?location l2?location), (drop_off p4?package l2?location c1?size c2?size)
+
+States:
+1. Before: (at_vehicle l4?location), (at_package p1?package l3?location), After: (at_vehicle l3?location), (holding_package p1?package l3?location c1?size c2?size)
+2. Before: (at_vehicle l3?location), After: (at_vehicle l6?location)
+3. Before: (at_vehicle l6?location), After: (at_vehicle l5?location)
+4. Before: (at_vehicle l5?location), (holding_package p1?package l3?location c1?size c2?size), After: (at_vehicle l5?location), (at_package p1?package l5?location c1?size c2?size)
+5. Before: (at_vehicle l5?location), After: (at_vehicle l6?location)
+6. Before: (at_vehicle l6?location), After: (at_vehicle l2?location)
+7. Before: (at_vehicle l2?location), (at_package p2?package l2?location), After: (at_vehicle l2?location), (holding_package p2?package l2?location c1?size c2?size)
+8. Before: (at_vehicle l2?location), After: (at_vehicle l3?location)
+9. Before: (at_vehicle l3?location), (holding_package p2?package l2?location c1?size c2?size), After: (at_vehicle l3?location), (at_package p2?package l3?location c1?size c2?size)
+10. Before: (at_vehicle l3?location), After: (at_vehicle l4?location)
+11. Before: (at_vehicle l4?location), After: (at_vehicle l7?location)
+12. Before: (at_vehicle l7?location), (at_package p3?package l7?location), After: (at_vehicle l4?location), (holding_package p3?package l7?location c1?size c2?size)
+13. Before: (at_vehicle l4?location), After: (at_vehicle l1?location)
+14. Before: (at_vehicle l1?location), (holding_package p3?package l7?location c1?size c2?size), After: (at_vehicle l1?location), (at_package p3?package l1?location c1?size c2?size)
+15. Before: (at_vehicle l1?location), After: (at_vehicle l4?location)
+16. Before: (at_vehicle l4?location), (at_package p4?package l4?location), After: (at_vehicle l4?location), (holding_package p4?package l4?location c1?size c2?size)
+17. Before: (at_vehicle l4?location), After: (at_vehicle l2?location)
+18. Before: (at_vehicle l2?location), (holding_package p4?package l4?location c1?size c2?size), After: (at_vehicle l2?location), (at_package p4?package l2?location c1?size c2?size)</pre></td></tr><tr><td>p20.pddl</td><td><pre>(pick-up v1?vehicle l7?location p1?package c1?size c2?size),(drive v1?vehicle l7?location l6?location),(drop v1?vehicle l6?location p1?package c1?size c2?size),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drop v1?vehicle l6?location p2?package c1?size c2?size),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p3?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drive v1?vehicle l7?location l2?location),(drop v1?vehicle l2?location p3?package c1?size c2?size),(drive v1?vehicle l2?location l7?location),(drive v1?vehicle l7?location l6?location),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p4?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drop v1?vehicle l7?location p4?package c1?size c2?size)</pre></td><td><pre>First, pick up the package p1 of size c1 and c2 from location l7 using vehicle v1. Next, drive from location l7 to location l6. After that, drop off package p1 of size c1 and c2 at location l6 using vehicle v1. Then, drive from location l6 to location l3. Once you arrive at location l3, pick up package p2 of size c1 and c2 using vehicle v1. Drive from location l3 to location l6 again. At location l6, drop off package p2 of size c1 and c2 using vehicle v1. Then, drive back from location l6 to location l3. At location l3, pick up package p3 of size c1 and c2 using vehicle v1. Drive from location l3 to location l6. Then, drive from location l6 to location l7. After reaching location l7, drop off package p3 of size c1 and c2 at that location using vehicle v1. Next, drive from location l2 back to location l7. Then drive from location l7 to location l6. After that, drive from location l6 to location l3. At location l3, pick up package p4 of size c1 and c2 using vehicle v1. Drive from location l3 to location l6. Then, drive from location l6 to location l7. Finally, drop off package p4 of size c1 and c2 at location l7 using vehicle v1.</pre></td><td><pre>Plan: (pick_up p1?package l7?location v1?vehicle), (drive l7?location l6?location v1?vehicle), (drop_off p1?package l6?location v1?vehicle), (drive l6?location l3?location v1?vehicle), (pick_up p2?package l3?location v1?vehicle), (drive l3?location l6?location v1?vehicle), (drop_off p2?package l6?location v1?vehicle), (drive l6?location l3?location v1?vehicle), (pick_up p3?package l3?location v1?vehicle), (drive l3?location l6?location v1?vehicle), (drive l6?location l7?location v1?vehicle), (drop_off p3?package l7?location v1?vehicle), (drive l2?location l7?location v1?vehicle), (drive l7?location l6?location v1?vehicle), (drive l6?location l3?location v1?vehicle), (pick_up p4?package l3?location v1?vehicle), (drive l3?location l6?location v1?vehicle), (drive l6?location l7?location v1?vehicle), (drop_off p4?package l7?location v1?vehicle)
+
+States:
+1. Before: (at l7?location), (has v1?vehicle), (has p1?package), (size p1 c1?size c2?size)
+   After: (not has p1?package), (at l7?location), (has v1?vehicle)
+
+2. Before: (at l7?location), (has v1?vehicle)
+   After: (not at l7?location), (at l6?location), (has v1?vehicle)
+
+3. Before: (at l6?location), (has v1?vehicle), (has p1?package), (size p1 c1?size c2?size)
+   After: (not has p1?package), (at l6?location), (has v1?vehicle)
+
+4. Before: (at l6?location), (has v1?vehicle)
+   After: (not at l6?location), (at l3?location), (has v1?vehicle)
+
+5. Before: (at l3?location), (has v1?vehicle), (has p2?package), (size p2 c1?size c2?size)
+   After: (not has p2?package), (at l3?location), (has v1?vehicle)
+
+6. Before: (at l3?location), (has v1?vehicle)
+   After: (not at l3?location), (at l6?location), (has v1?vehicle)
+
+7. Before: (at l6?location), (has v1?vehicle), (has p2?package), (size p2 c1?size c2?size)
+   After: (not has p2?package), (at l6?location), (has v1?vehicle)
+
+8. Before: (at l6?location), (has v1?vehicle)
+   After: (not at l6?location), (at l3?location), (has v1?vehicle)
+
+9. Before: (at l3?location), (has v1?vehicle), (has p3?package), (size p3 c1?size c2?size)
+   After: (not has p3?package), (at l3?location), (has v1?vehicle)
+
+10. Before: (at l3?location), (has v1?vehicle)
+    After: (not at l3?location), (at l6?location), (has v1?vehicle)
+
+11. Before: (at l6?location), (has v1?vehicle)
+    After: (not at l6?location), (at l7?location), (has v1?vehicle)
+
+12. Before: (at l7?location), (has v1?vehicle), (has p3?package), (size p3 c1?size c2?size)
+    After: (not has p3?package), (at l7?location), (has v1?vehicle)
+
+13. Before: (at l7?location), (has v1?vehicle)
+    After: (not at l7?location), (at l2?location), (has v1?vehicle)
+
+14. Before: (at l2?location), (has v1?vehicle)
+    After: (not at l2?location), (at l7?location), (has v1?vehicle)
+
+15. Before: (at l7?location), (has v1?vehicle)
+    After: (not at l7?location), (at l6?location), (has v1?vehicle)
+
+16. Before: (at l6?location), (has v1?vehicle)
+    After: (not at l6?location), (at l3?location), (has v1?vehicle)
+
+17. Before: (at l3?location), (has v1?vehicle), (has p4?package), (size p4 c1?size c2?size)
+    After: (not has p4?package), (at l3?location), (has v1?vehicle)
+
+18. Before: (at l3?location), (has v1?vehicle)
+    After: (not at l3?location), (at l6?location), (has v1?vehicle)
+
+19. Before: (at l6?location), (has v1?vehicle)
+    After: (not at l6?location), (at l7?location), (has v1?vehicle)
+
+20. Before: (at l7?location), (has v1?vehicle), (has p4?package), (size p4 c1?size c2?size)
+    After: (not has p4?package), (at l7?location), (has v1?vehicle)</pre></td></tr><tr><td>p21.pddl</td><td><pre>(drive v1?vehicle l2?location l3?location),(drive v1?vehicle l3?location l4?location),(pick-up v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l6?location),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drop v1?vehicle l7?location p2?package c0?size c1?size),(drive v1?vehicle l7?location l6?location),(pick-up v1?vehicle l6?location p3?package c0?size c1?size),(drive v1?vehicle l6?location l3?location),(drop v1?vehicle l3?location p3?package c0?size c1?size),(pick-up v1?vehicle l3?location p4?package c0?size c1?size),(drive v1?vehicle l3?location l5?location),(drop v1?vehicle l5?location p4?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l2 to location l3. Next, drive the vehicle from location l3 to location l4. After that, pick up the package at location l4, which has sizes c0 and c1. Then, drive the vehicle from location l4 to location l1 and drop off the package at location l1. Continue by driving the vehicle from location l1 to location l6. Next, drive the vehicle from location l6 to location l3. At location l3, pick up the second package with sizes c0 and c1. Then, drive the vehicle from location l3 to location l6 again. After reaching location l6, drive to location l7 and drop off the second package at location l7. Drive the vehicle back from location l7 to location l6. At location l6, pick up the third package with sizes c0 and c1. Then, drive the vehicle from location l6 to location l3 and drop off the third package at location l3. Finally, pick up the fourth package at location l3 with sizes c0 and c1 and drive the vehicle from location l3 to location l5, where you will drop off the fourth package at location l5.</pre></td><td><pre>Plan: (drive_vehicle l2?location l3?location), (drive_vehicle l3?location l4?location), (pick_up_package l4?location c0?size c1?size), (drive_vehicle l4?location l1?location), (drop_off_package l1?location), (drive_vehicle l1?location l6?location), (drive_vehicle l6?location l3?location), (pick_up_package l3?location c0?size c1?size), (drive_vehicle l3?location l6?location), (drive_vehicle l6?location l7?location), (drop_off_package l7?location), (drive_vehicle l7?location l6?location), (pick_up_package l6?location c0?size c1?size), (drive_vehicle l6?location l3?location), (drop_off_package l3?location), (pick_up_package l3?location c0?size c1?size), (drive_vehicle l3?location l5?location), (drop_off_package l5?location).
+
+States: 
+1. Before: (at_vehicle l2?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+2. Before: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l4?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+3. Before: (at_vehicle l4?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l1?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+4. Before: (at_vehicle l1?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l6?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+5. Before: (at_vehicle l6?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+6. Before: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l6?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+7. Before: (at_vehicle l6?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+
+8. Before: (at_vehicle l3?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1?), (at_package l6?size c0?size c1?), (at_package l5?size c0?size c1?)
+   After: (at_vehicle l5?location), (at_location l2?location), (at_location l3?location), (at_location l4?location), (at_location l1?location), (at_location l6?location), (at_location l7?location), (at_package l4?size c0?size c1?), (at_package l3?size c0?size c1</pre></td></tr></table>
