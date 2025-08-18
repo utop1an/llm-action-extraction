@@ -1,0 +1,683 @@
+
+    <style>
+        table { border-collapse: collapse; width: 100%; font-family: sans-serif; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; width: 25%; }
+        th { background-color: #f2f2f2; }
+        td pre { white-space: pre-wrap; word-break: break-word; }
+    </style>
+    <table>
+        <tr><th>Problem ID</th><th>Original Plan</th><th>NL Description</th><th>New Plan</th></tr>
+    <tr><td>p01.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>To execute the plan, first, you need to pick up a vehicle from a specific location while ensuring to take a package of a certain size. Next, drive the vehicle from the initial location to a new destination. Finally, drop off the package at the new location using the same vehicle.</pre></td><td><pre>**Plan to Execute the Task:**
+
+1. **Pick Up Vehicle:**
+   - Go to the specified location to pick up the vehicle.
+   - Ensure that you have the package of the designated size with you.
+
+2. **Drive to New Destination:**
+   - Start the vehicle.
+   - Navigate from the initial location to the new destination.
+
+3. **Drop Off Package:**
+   - Upon arrival at the new location, park the vehicle safely.
+   - Retrieve the package from the vehicle.
+   - Deliver the package to the designated drop-off point at the new location. 
+
+4. **Complete Task:**
+   - Ensure the package has been successfully delivered.
+   - Return the vehicle if required or follow any additional instructions related to the vehicle.</pre></td></tr><tr><td>p02.pddl</td><td><pre>(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>First, you need to drive a vehicle from one location to another location. Then, at the first location, you will pick up a package of a specified size. After that, you will drive the vehicle again from the first location to the second location. Finally, you will drop off the package at the second location.</pre></td><td><pre>**Plan:**
+
+1. **Drive to First Location:**
+   - Start the vehicle.
+   - Navigate to the first location.
+
+2. **Pick Up Package:**
+   - Arrive at the first location.
+   - Locate the specified package.
+   - Load the package into the vehicle.
+
+3. **Drive to Second Location:**
+   - Start the vehicle again.
+   - Navigate from the first location to the second location.
+
+4. **Drop Off Package:**
+   - Arrive at the second location.
+   - Unload the package from the vehicle.
+   - Confirm the drop-off of the package.</pre></td></tr><tr><td>p03.pddl</td><td><pre>(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size)</pre></td><td><pre>To execute the plan, first, you need to drive a vehicle from the initial location to the second location. Next, continue driving the same vehicle from the second location to the third location. At the third location, pick up a package of specified sizes. After picking up the package, drive the vehicle back from the third location to the second location. Then, drive the vehicle again from the second location back to the initial location. Finally, drop off the package at the initial location using the vehicle.</pre></td><td><pre>**Plan Execution Steps:**
+
+1. **Drive from Initial Location to Second Location:**
+   - Start the vehicle.
+   - Navigate to the second location.
+
+2. **Drive from Second Location to Third Location:**
+   - Continue driving the same vehicle.
+   - Navigate to the third location.
+
+3. **Pick Up Package at Third Location:**
+   - Arrive at the third location.
+   - Retrieve the package of specified sizes.
+
+4. **Drive from Third Location to Second Location:**
+   - Place the package securely in the vehicle.
+   - Drive back to the second location.
+
+5. **Drive from Second Location to Initial Location:**
+   - Depart from the second location.
+   - Navigate back to the initial location.
+
+6. **Drop Off Package at Initial Location:**
+   - Arrive at the initial location.
+   - Deliver and drop off the package.</pre></td></tr><tr><td>p04.pddl</td><td><pre>(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c0?size c1?size)</pre></td><td><pre>First, you need to drive a vehicle from location three to location two. Next, continue driving the same vehicle from location two to location one. After reaching location one, pick up a package of a specific size. Then, drive the vehicle again from location one to location two. Finally, drop off the package at location two.</pre></td><td><pre>**Plan:**
+
+1. **Drive from Location Three to Location Two:**
+   - Start the vehicle and navigate to Location Two.
+
+2. **Drive from Location Two to Location One:**
+   - Continue driving the vehicle to Location One.
+
+3. **Pick up Package at Location One:**
+   - Upon arrival at Location One, locate and pick up the specified package.
+
+4. **Drive from Location One to Location Two:**
+   - Drive the vehicle back to Location Two.
+
+5. **Drop off Package at Location Two:**
+   - Upon arrival at Location Two, deliver and drop off the package.</pre></td></tr><tr><td>p05.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size)</pre></td><td><pre>To carry out the plan, first, pick up the package of a certain size from a specific location using a vehicle. Next, drive the vehicle from that location to another location. After reaching the destination, drop off the package at that location. Then, drive the vehicle back to the original location. Once there, pick up another package of the same size from the original location using the vehicle. Drive again to the second location and finally drop off that package there.</pre></td><td><pre>**Plan for Package Delivery**
+
+1. **Pick Up First Package**
+   - Locate the specific pick-up location.
+   - Use the vehicle to pick up the package of the specified size.
+
+2. **Drive to Destination**
+   - Start the vehicle.
+   - Drive from the pick-up location to the designated drop-off location.
+
+3. **Drop Off First Package**
+   - Upon arrival at the drop-off location, carefully unload and drop off the first package.
+
+4. **Return to Original Location**
+   - Drive the vehicle back to the original pick-up location.
+
+5. **Pick Up Second Package**
+   - Upon arriving at the original location, pick up another package of the same size using the vehicle.
+
+6. **Drive to Second Destination**
+   - Start the vehicle again.
+   - Drive from the original location to the drop-off location.
+
+7. **Drop Off Second Package**
+   - Upon arrival at the drop-off location, carefully unload and drop off the second package.
+
+8. **Complete the Task**
+   - Ensure all packages have been delivered.
+   - Confirm completion of the delivery plan.</pre></td></tr><tr><td>p06.pddl</td><td><pre>(drive v1?vehicle l1?location l2?location),(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(pick-up v1?vehicle l2?location p2?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p2?package c1?size c2?size)</pre></td><td><pre>First, you start by driving from one location to another using a vehicle. Once you arrive at the second location, you pick up a package of a certain size. After that, you drive back to the first location with the package. Upon reaching the first location, you drop off the package. Then, you drive again from the first location to the second location. At the second location, you pick up another package of the same size. Finally, you drive back to the first location once more to drop off this second package.</pre></td><td><pre>### Plan
+
+1. **Drive to Second Location**
+   - Depart from the first location using a vehicle.
+   - Drive to the second location.
+
+2. **Pick Up First Package**
+   - Upon arrival at the second location, pick up a package of a certain size.
+
+3. **Drive Back to First Location**
+   - Drive back to the first location with the first package.
+
+4. **Drop Off First Package**
+   - Upon reaching the first location, drop off the first package.
+
+5. **Drive to Second Location Again**
+   - Depart from the first location again using a vehicle.
+   - Drive back to the second location.
+
+6. **Pick Up Second Package**
+   - Upon arrival at the second location, pick up another package of the same size.
+
+7. **Drive Back to First Location Again**
+   - Drive back to the first location with the second package.
+
+8. **Drop Off Second Package**
+   - Upon reaching the first location, drop off the second package.</pre></td></tr><tr><td>p07.pddl</td><td><pre>(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size)</pre></td><td><pre>The plan consists of a series of actions where the first step is to pick up a package of a certain size from a specified location using a vehicle, followed by driving the vehicle to a different location, then dropping off the package at that location. The next action involves picking up another package of the same size from the previous location with the same vehicle, after which the vehicle is driven again to the initial location, concluding with dropping off the second package at that location.</pre></td><td><pre>**Plan: Package Pickup and Drop-off**
+
+1. **Pick Up First Package**
+   - Action: Drive the vehicle to the specified pickup location.
+   - Task: Pick up the package of the specified size.
+
+2. **Drive to Drop-off Location**
+   - Action: Drive the vehicle to the designated drop-off location.
+
+3. **Drop Off First Package**
+   - Action: Drop off the package at the drop-off location.
+
+4. **Pick Up Second Package**
+   - Action: Drive the vehicle back to the initial pickup location.
+   - Task: Pick up another package of the same size.
+
+5. **Drive Back to Initial Location**
+   - Action: Drive the vehicle to the initial location.
+
+6. **Drop Off Second Package**
+   - Action: Drop off the second package at the initial location.
+
+**End of Plan**</pre></td></tr><tr><td>p08.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(pick-up v1?vehicle l2?location p1?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p1?package c1?size c2?size)</pre></td><td><pre>To execute the plan, first, you need to drive a vehicle from the starting location to the next location. After reaching that location, pick up a package of a certain size from the specified location. Once you have the package, drive the vehicle from the second location to a third location. Finally, drop off the package at the third location using the vehicle.</pre></td><td><pre>**Plan:**
+
+1. **Drive to the Second Location**
+   - Start at the initial location.
+   - Drive the vehicle to the specified second location.
+
+2. **Pick Up the Package**
+   - Upon arrival at the second location, locate the specified area to pick up the package.
+   - Retrieve the package of the specified size.
+
+3. **Drive to the Third Location**
+   - After securing the package, drive the vehicle from the second location to the designated third location.
+
+4. **Drop Off the Package**
+   - Upon reaching the third location, locate the designated drop-off point.
+   - Deliver and drop off the package at the third location.</pre></td></tr><tr><td>p09.pddl</td><td><pre>(pick-up v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p2?package c1?size c2?size),(drive v1?vehicle l1?location l2?location),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c1?size c2?size)</pre></td><td><pre>Start by picking up a package of a certain size from a specific location using a vehicle. Then, drive the vehicle to another location. After that, continue driving the vehicle to a fourth location where you will drop off the package. Next, drive back to the second location, and then return to the first location to pick up another package of the same size. Once again, drive to the second location, then proceed to a third location, where you will drop off the second package.</pre></td><td><pre>### Plan
+
+1. **Pick Up First Package**
+   - Use the vehicle to go to the specified location.
+   - Pick up the package of the designated size.
+
+2. **Drive to Second Location**
+   - Drive the vehicle from the first location to the second location.
+
+3. **Drive to Fourth Location**
+   - Continue driving from the second location to the fourth location.
+   - Drop off the first package at the fourth location.
+
+4. **Return to Second Location**
+   - Drive back to the second location.
+
+5. **Pick Up Second Package**
+   - From the second location, drive back to the first location.
+   - Pick up another package of the same size.
+
+6. **Drive to Second Location Again**
+   - Drive the vehicle from the first location back to the second location.
+
+7. **Drive to Third Location**
+   - Proceed from the second location to the third location.
+   - Drop off the second package at the third location.</pre></td></tr><tr><td>p10.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drop v1?vehicle l2?location p2?package c1?size c2?size),(pick-up v1?vehicle l2?location p3?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p3?package c1?size c2?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(drive v1?vehicle l4?location l1?location),(pick-up v1?vehicle l1?location p4?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(drop v1?vehicle l4?location p4?package c1?size c2?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l2, then drive the vehicle from location l2 to location l3. Next, pick up package p1, which has specified sizes c1 and c2, at location l3. After that, drive the vehicle back from location l3 to location l2, and then drive from location l2 to location l4 to drop off package p1 at location l4. Subsequently, drive from location l4 to location l2, and then from location l2 to location l3 to pick up package p2, which also has sizes c1 and c2, at location l3. Drive the vehicle from location l3 to location l2 again to drop off package p2 at location l2. Next, pick up package p3 with sizes c1 and c2 at location l2, and drive from location l2 to location l3 to drop it off at location l3. Afterward, drive the vehicle back from location l3 to location l2, and then from location l2 to location l4. Drive from location l4 to location l1 to pick up package p4 with sizes c1 and c2 at location l1. Finally, drive from location l1 back to location l4 to drop off package p4 at location l4.</pre></td><td><pre>### Plan
+
+1. **Drive from l4 to l2**  
+   - Start at location l4  
+   - Navigate to location l2  
+
+2. **Drive from l2 to l3**  
+   - Start at location l2  
+   - Navigate to location l3  
+
+3. **Pick up package p1 at l3**  
+   - Collect package p1 (sizes c1 and c2) at location l3  
+
+4. **Drive from l3 to l2**  
+   - Start at location l3  
+   - Navigate back to location l2  
+
+5. **Drive from l2 to l4 to drop off package p1**  
+   - Start at location l2  
+   - Navigate to location l4  
+   - Drop off package p1 at location l4  
+
+6. **Drive from l4 to l2**  
+   - Start at location l4  
+   - Navigate back to location l2  
+
+7. **Drive from l2 to l3 to pick up package p2**  
+   - Start at location l2  
+   - Navigate to location l3  
+   - Collect package p2 (sizes c1 and c2) at location l3  
+
+8. **Drive from l3 to l2 to drop off package p2**  
+   - Start at location l3  
+   - Navigate back to location l2  
+   - Drop off package p2 at location l2  
+
+9. **Pick up package p3 at l2**  
+   - Collect package p3 (sizes c1 and c2) at location l2  
+
+10. **Drive from l2 to l3 to drop off package p3**  
+    - Start at location l2  
+    - Navigate to location l3  
+    - Drop off package p3 at location l3  
+
+11. **Drive from l3 to l2**  
+    - Start at location l3  
+    - Navigate back to location l2  
+
+12. **Drive from l2 to l4**  
+    - Start at location l2  
+    - Navigate to location l4  
+
+13. **Drive from l4 to l1 to pick up package p4**  
+    - Start at location l4  
+    - Navigate to location l1  
+    - Collect package p4 (sizes c1 and c2) at location l1  
+
+14. **Drive from l1 back to l4 to drop off package p4**  
+    - Start at location l1  
+    - Navigate back to location l4  
+    - Drop off package p4 at location l4  </pre></td></tr><tr><td>p11.pddl</td><td><pre>(drive v1?vehicle l1?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l1?location),(drop v1?vehicle l1?location p1?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p2?package c1?size c2?size),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p2?package c1?size c2?size)</pre></td><td><pre>First, you need to drive a vehicle from the first location to the third location. Once you arrive at the third location, pick up a package of a specific size. After that, drive the vehicle back from the third location to the first location, where you will drop off the package. Next, drive from the first location to the fourth location. At the fourth location, pick up another package of the same size. Finally, drive back to the first location again and drop off the second package.</pre></td><td><pre>### Plan
+
+1. **Drive from First Location to Third Location**
+   - Depart from the first location.
+   - Navigate to the third location.
+
+2. **Pick Up Package at Third Location**
+   - Arrive at the third location.
+   - Locate and pick up the specified package.
+
+3. **Drive from Third Location to First Location**
+   - Depart from the third location.
+   - Navigate back to the first location.
+
+4. **Drop Off Package at First Location**
+   - Arrive at the first location.
+   - Deliver and drop off the first package.
+
+5. **Drive from First Location to Fourth Location**
+   - Depart from the first location.
+   - Navigate to the fourth location.
+
+6. **Pick Up Second Package at Fourth Location**
+   - Arrive at the fourth location.
+   - Locate and pick up the second package of the same size.
+
+7. **Drive from Fourth Location to First Location**
+   - Depart from the fourth location.
+   - Navigate back to the first location.
+
+8. **Drop Off Second Package at First Location**
+   - Arrive at the first location.
+   - Deliver and drop off the second package.</pre></td></tr><tr><td>p12.pddl</td><td><pre>(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l6?location),(pick-up v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(drive v1?vehicle l2?location l4?location),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p1?package c0?size c1?size),(pick-up v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l4?location),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l6?location),(drop v1?vehicle l6?location p2?package c0?size c1?size)</pre></td><td><pre>To execute the plan, first drive the vehicle from location 3 to location 2, then drive from location 2 to location 6. Next, pick up the package at location 6, and drive back to location 2. After that, drive from location 2 to location 4, then proceed to drive from location 4 to location 5. At location 5, drop off the first package and pick up the second package. Then drive back to location 4, followed by returning to location 2, and finally, drive from location 2 back to location 6 to drop off the second package.</pre></td><td><pre>### Plan Execution Steps
+
+1. **Drive from Location 3 to Location 2**
+   - Start the vehicle.
+   - Navigate to Location 2.
+
+2. **Drive from Location 2 to Location 6**
+   - Depart from Location 2.
+   - Navigate to Location 6.
+
+3. **Pick up the Package at Location 6**
+   - Arrive at Location 6.
+   - Retrieve the package.
+
+4. **Drive back to Location 2**
+   - Depart from Location 6.
+   - Navigate back to Location 2.
+
+5. **Drive from Location 2 to Location 4**
+   - Depart from Location 2.
+   - Navigate to Location 4.
+
+6. **Drive from Location 4 to Location 5**
+   - Depart from Location 4.
+   - Navigate to Location 5.
+
+7. **Drop off the First Package and Pick up the Second Package at Location 5**
+   - Arrive at Location 5.
+   - Deliver the first package.
+   - Retrieve the second package.
+
+8. **Drive back to Location 4**
+   - Depart from Location 5.
+   - Navigate back to Location 4.
+
+9. **Return to Location 2**
+   - Depart from Location 4.
+   - Navigate back to Location 2.
+
+10. **Drive from Location 2 to Location 6 to Drop off the Second Package**
+    - Depart from Location 2.
+    - Navigate to Location 6.
+    - Deliver the second package. 
+
+### End of Plan</pre></td></tr><tr><td>p13.pddl</td><td><pre>(drive v1?vehicle l2?location l4?location),(pick-up v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drive v1?vehicle l2?location l4?location),(pick-up v1?vehicle l4?location p2?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l4?location),(pick-up v1?vehicle l4?location p3?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drive v1?vehicle l2?location l3?location),(drive v1?vehicle l3?location l1?location),(drop v1?vehicle l1?location p3?package c0?size c1?size)</pre></td><td><pre>To carry out the plan, start by driving the vehicle to the second location, then pick up the first package from there. After that, drive back to the fourth location, and then proceed to drive to the third location where you will drop off the first package. Next, drive back to the second location, then return to the fourth location to pick up the second package. From there, drive to the fifth location to drop off the second package, then go back to the fourth location to pick up the third package. Drive to the second location, then drive to the third location, and finally drive to the first location to drop off the third package.</pre></td><td><pre>### Plan
+
+1. **Drive to Second Location**
+2. **Pick Up First Package**
+3. **Drive to Fourth Location**
+4. **Drive to Third Location**
+5. **Drop Off First Package**
+6. **Drive Back to Second Location**
+7. **Drive Back to Fourth Location**
+8. **Pick Up Second Package**
+9. **Drive to Fifth Location**
+10. **Drop Off Second Package**
+11. **Drive Back to Fourth Location**
+12. **Pick Up Third Package**
+13. **Drive to Second Location**
+14. **Drive to Third Location**
+15. **Drive to First Location**
+16. **Drop Off Third Package**</pre></td></tr><tr><td>p14.pddl</td><td><pre>(pick-up v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l4?location),(drop v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l3?location),(pick-up v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(drop v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l1?location),(pick-up v1?vehicle l1?location p3?package c0?size c1?size),(drive v1?vehicle l1?location l5?location),(drop v1?vehicle l5?location p3?package c0?size c1?size)</pre></td><td><pre>To execute the plan, first, pick up the package from the specified location using the vehicle. Next, drive from the current location to the next designated location. Once you arrive, drop off the package at that location. Continue by driving to another location, where you will pick up a second package. After that, drive to the next location and drop off the second package. Then, drive to a subsequent location to pick up a third package. Drive again to another location before finally dropping off the third package at the designated location.</pre></td><td><pre>### Execution Plan
+
+1. **Pick Up First Package**
+   - Use the vehicle to drive to the specified location.
+   - Pick up the package.
+
+2. **Drive to First Drop-off Location**
+   - Drive from the current location (where the first package was picked up) to the designated drop-off location for the first package.
+
+3. **Drop Off First Package**
+   - Once arrived, drop off the first package.
+
+4. **Pick Up Second Package**
+   - Drive to the next designated location to pick up the second package.
+
+5. **Drive to Second Drop-off Location**
+   - Drive from the second package pick-up location to the designated drop-off location for the second package.
+
+6. **Drop Off Second Package**
+   - Once arrived, drop off the second package.
+
+7. **Pick Up Third Package**
+   - Drive to the subsequent location to pick up the third package.
+
+8. **Drive to Third Drop-off Location**
+   - Drive from the third package pick-up location to the designated drop-off location for the third package.
+
+9. **Drop Off Third Package**
+   - Once arrived, drop off the third package.
+
+### Summary of Locations
+- **Location 1**: First package pickup
+- **Location 2**: First package drop-off
+- **Location 3**: Second package pickup
+- **Location 4**: Second package drop-off
+- **Location 5**: Third package pickup
+- **Location 6**: Third package drop-off</pre></td></tr><tr><td>p15.pddl</td><td><pre>(drive v1?vehicle l2?location l5?location),(pick-up v1?vehicle l5?location p1?package c0?size c1?size),(drive v1?vehicle l5?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p2?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l6?location),(pick-up v1?vehicle l6?location p3?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(drop v1?vehicle l2?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from the starting location to the second location. Next, pick up the first package at the second location. Then, drive the vehicle from the second location to the first location and drop off the first package there. After that, drive the vehicle from the first location to the fourth location and pick up the second package at the fourth location. Drive from the fourth location to the fifth location and drop off the second package there. Then, drive the vehicle from the fifth location to the sixth location and pick up the third package at the sixth location. Finally, drive the vehicle from the sixth location back to the second location and drop off the third package there.</pre></td><td><pre>### Plan
+
+1. **Drive to Second Location**
+   - Depart from the starting location.
+   - Arrive at the second location.
+
+2. **Pick Up First Package**
+   - Retrieve the first package at the second location.
+
+3. **Drive to First Location**
+   - Depart from the second location.
+   - Arrive at the first location.
+
+4. **Drop Off First Package**
+   - Deliver the first package at the first location.
+
+5. **Drive to Fourth Location**
+   - Depart from the first location.
+   - Arrive at the fourth location.
+
+6. **Pick Up Second Package**
+   - Retrieve the second package at the fourth location.
+
+7. **Drive to Fifth Location**
+   - Depart from the fourth location.
+   - Arrive at the fifth location.
+
+8. **Drop Off Second Package**
+   - Deliver the second package at the fifth location.
+
+9. **Drive to Sixth Location**
+   - Depart from the fifth location.
+   - Arrive at the sixth location.
+
+10. **Pick Up Third Package**
+    - Retrieve the third package at the sixth location.
+
+11. **Drive to Second Location**
+    - Depart from the sixth location.
+    - Arrive back at the second location.
+
+12. **Drop Off Third Package**
+    - Deliver the third package at the second location.</pre></td></tr><tr><td>p16.pddl</td><td><pre>(drive v1?vehicle l4?location l2?location),(pick-up v1?vehicle l2?location p1?package c0?size c1?size),(drive v1?vehicle l2?location l4?location),(drop v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l5?location),(pick-up v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l2?location),(drop v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l3?location),(pick-up v1?vehicle l3?location p3?package c0?size c1?size),(drive v1?vehicle l3?location l5?location),(drop v1?vehicle l5?location p3?package c0?size c1?size)</pre></td><td><pre>To execute the plan, start by driving a vehicle from location 4 to location 2. Next, pick up a package at location 2, which is of a specified size, and then drive from location 2 back to location 4 to drop off that package. Afterward, drive from location 4 to location 5, where you'll pick up another package at location 5, again of a specified size. Drive from location 5 back to location 2 to drop off this second package. Then, continue by driving from location 2 to location 3, where you will pick up a third package at location 3, of the same specified size. Finally, drive from location 3 back to location 5 to drop off the third package.</pre></td><td><pre>**Plan:**
+
+1. **Drive from Location 4 to Location 2**
+   - Start at Location 4.
+   - Drive to Location 2.
+
+2. **Pick Up Package at Location 2**
+   - Arrive at Location 2.
+   - Pick up the specified size package.
+
+3. **Drive from Location 2 back to Location 4**
+   - Drive from Location 2 to Location 4.
+
+4. **Drop Off Package at Location 4**
+   - Arrive at Location 4.
+   - Drop off the package.
+
+5. **Drive from Location 4 to Location 5**
+   - Drive from Location 4 to Location 5.
+
+6. **Pick Up Package at Location 5**
+   - Arrive at Location 5.
+   - Pick up another specified size package.
+
+7. **Drive from Location 5 back to Location 2**
+   - Drive from Location 5 to Location 2.
+
+8. **Drop Off Package at Location 2**
+   - Arrive at Location 2.
+   - Drop off the second package.
+
+9. **Drive from Location 2 to Location 3**
+   - Drive from Location 2 to Location 3.
+
+10. **Pick Up Package at Location 3**
+    - Arrive at Location 3.
+    - Pick up a third package of the same specified size.
+
+11. **Drive from Location 3 back to Location 5**
+    - Drive from Location 3 to Location 5.
+
+12. **Drop Off Package at Location 5**
+    - Arrive at Location 5.
+    - Drop off the third package.</pre></td></tr><tr><td>p17.pddl</td><td><pre>(drive v1?vehicle l4?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l3?location),(drop v1?vehicle l3?location p1?package c0?size c1?size),(drive v1?vehicle l3?location l2?location),(pick-up v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l4?location),(pick-up v1?vehicle l4?location p3?package c0?size c1?size),(drive v1?vehicle l4?location l2?location),(drop v1?vehicle l2?location p3?package c0?size c1?size)</pre></td><td><pre>First, drive the vehicle from location l4 to location l1. Next, pick up the package p1 of specified size from location l1. Then, drive the vehicle from location l1 to location l3 and drop off package p1 at location l3. After that, drive from location l3 to location l2 and pick up package p2 of specified size from location l2. Drive the vehicle back to location l3 to drop off package p2. Finally, drive from location l3 to location l4, pick up package p3 of specified size at location l4, and then drive to location l2 to drop off package p3.</pre></td><td><pre>**Plan:**
+
+1. **Drive from Location l4 to Location l1**
+   - Start the vehicle at location l4.
+   - Navigate to location l1.
+
+2. **Pick Up Package p1 at Location l1**
+   - Arrive at location l1.
+   - Retrieve package p1 of specified size.
+
+3. **Drive from Location l1 to Location l3**
+   - Depart from location l1.
+   - Navigate to location l3.
+
+4. **Drop Off Package p1 at Location l3**
+   - Arrive at location l3.
+   - Deliver package p1.
+
+5. **Drive from Location l3 to Location l2**
+   - Depart from location l3.
+   - Navigate to location l2.
+
+6. **Pick Up Package p2 at Location l2**
+   - Arrive at location l2.
+   - Retrieve package p2 of specified size.
+
+7. **Drive Back to Location l3**
+   - Depart from location l2.
+   - Navigate back to location l3.
+
+8. **Drop Off Package p2 at Location l3**
+   - Arrive at location l3.
+   - Deliver package p2.
+
+9. **Drive from Location l3 to Location l4**
+   - Depart from location l3.
+   - Navigate to location l4.
+
+10. **Pick Up Package p3 at Location l4**
+    - Arrive at location l4.
+    - Retrieve package p3 of specified size.
+
+11. **Drive to Location l2**
+    - Depart from location l4.
+    - Navigate to location l2.
+
+12. **Drop Off Package p3 at Location l2**
+    - Arrive at location l2.
+    - Deliver package p3.</pre></td></tr><tr><td>p18.pddl</td><td><pre>(drive v1?vehicle l3?location l7?location),(drive v1?vehicle l7?location l1?location),(pick-up v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l6?location),(drop v1?vehicle l6?location p1?package c0?size c1?size),(drive v1?vehicle l6?location l2?location),(pick-up v1?vehicle l2?location p2?package c0?size c1?size),(drive v1?vehicle l2?location l1?location),(drive v1?vehicle l1?location l5?location),(drop v1?vehicle l5?location p2?package c0?size c1?size),(drive v1?vehicle l5?location l3?location),(drive v1?vehicle l3?location l7?location),(pick-up v1?vehicle l7?location p3?package c0?size c1?size),(drive v1?vehicle l7?location l2?location),(drive v1?vehicle l2?location l6?location),(drop v1?vehicle l6?location p3?package c0?size c1?size)</pre></td><td><pre>The plan involves a series of driving and package handling actions that begin with driving from one location to another, followed by picking up a package at the first location, then driving to a new location to drop off that package. After the drop-off, the vehicle is driven to another location where a second package is picked up, followed by further drives to different locations to drop off this second package. The process continues with additional driving actions to pick up a third package and ultimately results in dropping off that package at a designated location, completing the sequence of actions.</pre></td><td><pre>**Plan for Package Handling and Delivery**
+
+1. **Drive to First Location**
+   - Start at the initial location.
+   - Drive to the first pick-up location.
+
+2. **Pick Up First Package**
+   - Arrive at the first location.
+   - Retrieve the package from the first location.
+
+3. **Drive to Drop-off Location for First Package**
+   - Drive from the first pick-up location to the first drop-off location.
+
+4. **Drop Off First Package**
+   - Arrive at the first drop-off location.
+   - Deliver the first package.
+
+5. **Drive to Second Pick-up Location**
+   - Drive from the first drop-off location to the second pick-up location.
+
+6. **Pick Up Second Package**
+   - Arrive at the second location.
+   - Retrieve the package from the second location.
+
+7. **Drive to Drop-off Location for Second Package**
+   - Drive from the second pick-up location to the second drop-off location.
+
+8. **Drop Off Second Package**
+   - Arrive at the second drop-off location.
+   - Deliver the second package.
+
+9. **Drive to Third Pick-up Location**
+   - Drive from the second drop-off location to the third pick-up location.
+
+10. **Pick Up Third Package**
+    - Arrive at the third location.
+    - Retrieve the package from the third location.
+
+11. **Drive to Drop-off Location for Third Package**
+    - Drive from the third pick-up location to the third drop-off location.
+
+12. **Drop Off Third Package**
+    - Arrive at the third drop-off location.
+    - Deliver the third package.
+
+13. **Complete Sequence**
+    - Confirm all packages have been delivered.
+    - End of the sequence of actions.</pre></td></tr><tr><td>p19.pddl</td><td><pre>(drive v1?vehicle l4?location l3?location),(pick-up v1?vehicle l3?location p1?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l5?location),(drop v1?vehicle l5?location p1?package c1?size c2?size),(drive v1?vehicle l5?location l6?location),(drive v1?vehicle l6?location l2?location),(pick-up v1?vehicle l2?location p2?package c1?size c2?size),(drive v1?vehicle l2?location l3?location),(drop v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l4?location),(drive v1?vehicle l4?location l7?location),(pick-up v1?vehicle l7?location p3?package c1?size c2?size),(drive v1?vehicle l7?location l4?location),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p3?package c1?size c2?size),(drive v1?vehicle l1?location l4?location),(pick-up v1?vehicle l4?location p4?package c1?size c2?size),(drive v1?vehicle l4?location l2?location),(drop v1?vehicle l2?location p4?package c1?size c2?size)</pre></td><td><pre>To execute the plan, first, drive the vehicle from location l4 to location l3. Next, pick up the package at location l3, ensuring it meets the specified size requirements. Then, drive from location l3 to location l6, followed by driving to location l5, where you will drop off the previously picked-up package. Afterward, return to location l6 and drive to location l2, where you will pick up another package at that location, again checking the size. Drive back to location l3 to drop off this second package, and then drive to location l4 before heading to location l7 to pick up a third package. After picking up this package at location l7, return to location l4, then drive to location l1 where you will drop off the third package. Subsequently, drive back to location l4 and pick up a fourth package before making your way to location l2 to drop off this last package.</pre></td><td><pre>### Execution Plan
+
+1. **Drive from Location l4 to Location l3**
+   - Ensure safe and efficient driving.
+
+2. **Pick Up Package at Location l3**
+   - Verify that the package meets specified size requirements.
+
+3. **Drive from Location l3 to Location l6**
+   - Navigate safely to the destination.
+
+4. **Drive from Location l6 to Location l5**
+   - Ensure safe driving during transit.
+
+5. **Drop Off Package at Location l5**
+   - Ensure package is delivered correctly.
+
+6. **Return to Location l6**
+   - Drive back to this location safely.
+
+7. **Drive from Location l6 to Location l2**
+   - Navigate to the next destination.
+
+8. **Pick Up Another Package at Location l2**
+   - Check the size of the package to confirm it meets requirements.
+
+9. **Drive Back to Location l3**
+   - Safely navigate back to this location.
+
+10. **Drop Off Second Package at Location l3**
+    - Ensure successful delivery of the package.
+
+11. **Drive from Location l3 to Location l4**
+    - Ensure safe driving during transit.
+
+12. **Drive to Location l7 to Pick Up Third Package**
+    - Safely navigate to the package pickup location.
+
+13. **Pick Up Package at Location l7**
+    - Verify that the package is the correct size.
+
+14. **Return to Location l4**
+    - Safely drive back to this location.
+
+15. **Drive to Location l1 to Drop Off Third Package**
+    - Ensure the package is delivered correctly.
+
+16. **Drive Back to Location l4**
+    - Safely navigate back to this location.
+
+17. **Pick Up Fourth Package at Location l4**
+    - Ensure the package meets the specified size requirements.
+
+18. **Drive to Location l2 to Drop Off Last Package**
+    - Ensure successful delivery of the last package. 
+
+### End of Plan
+- Confirm all deliveries are completed and all packages have been picked up as specified.</pre></td></tr><tr><td>p20.pddl</td><td><pre>(pick-up v1?vehicle l7?location p1?package c1?size c2?size),(drive v1?vehicle l7?location l6?location),(drop v1?vehicle l6?location p1?package c1?size c2?size),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p2?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drop v1?vehicle l6?location p2?package c1?size c2?size),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p3?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drive v1?vehicle l7?location l2?location),(drop v1?vehicle l2?location p3?package c1?size c2?size),(drive v1?vehicle l2?location l7?location),(drive v1?vehicle l7?location l6?location),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p4?package c1?size c2?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drop v1?vehicle l7?location p4?package c1?size c2?size)</pre></td><td><pre>To execute the plan, first, pick up a package from a specified location using a vehicle. Next, drive the vehicle to another location and drop off the package. After completing the drop-off, drive to a new location and pick up a second package. Then, drive back to the previous drop-off location to deliver that second package. Following this, return to the initial pick-up location to collect a third package and drive it to the drop-off location. Once that is complete, drive to the next location to pick up a fourth package, and finally, drive to the designated drop-off location to deliver this fourth package.</pre></td><td><pre>**Plan for Package Pickup and Delivery:**
+
+1. **Pick Up First Package:**
+   - Retrieve the first package from the specified pickup location using a vehicle.
+
+2. **Deliver First Package:**
+   - Drive the vehicle to the designated drop-off location.
+   - Drop off the first package.
+
+3. **Pick Up Second Package:**
+   - Drive to the new location to pick up the second package.
+
+4. **Deliver Second Package:**
+   - Drive back to the initial drop-off location.
+   - Drop off the second package.
+
+5. **Pick Up Third Package:**
+   - Return to the initial pickup location to collect the third package.
+
+6. **Deliver Third Package:**
+   - Drive the third package to the designated drop-off location.
+   - Drop off the third package.
+
+7. **Pick Up Fourth Package:**
+   - Drive to the next location to pick up the fourth package.
+
+8. **Deliver Fourth Package:**
+   - Drive to the designated drop-off location.
+   - Drop off the fourth package.
+
+**End of Plan**</pre></td></tr><tr><td>p21.pddl</td><td><pre>(drive v1?vehicle l2?location l3?location),(drive v1?vehicle l3?location l4?location),(pick-up v1?vehicle l4?location p1?package c0?size c1?size),(drive v1?vehicle l4?location l1?location),(drop v1?vehicle l1?location p1?package c0?size c1?size),(drive v1?vehicle l1?location l6?location),(drive v1?vehicle l6?location l3?location),(pick-up v1?vehicle l3?location p2?package c0?size c1?size),(drive v1?vehicle l3?location l6?location),(drive v1?vehicle l6?location l7?location),(drop v1?vehicle l7?location p2?package c0?size c1?size),(drive v1?vehicle l7?location l6?location),(pick-up v1?vehicle l6?location p3?package c0?size c1?size),(drive v1?vehicle l6?location l3?location),(drop v1?vehicle l3?location p3?package c0?size c1?size),(pick-up v1?vehicle l3?location p4?package c0?size c1?size),(drive v1?vehicle l3?location l5?location),(drop v1?vehicle l5?location p4?package c0?size c1?size)</pre></td><td><pre>To execute the plan, start by driving the vehicle from location 2 to location 3, then continue driving from location 3 to location 4. Once at location 4, pick up the package and then drive to location 1 to drop it off. After dropping off the first package, drive to location 6, then proceed from location 6 back to location 3. At location 3, pick up the second package and drive it to location 6, then drive from location 6 to location 7 to drop off the second package. After the drop-off, return to location 6 and pick up the third package before driving back to location 3 to drop it off. Finally, pick up the fourth package at location 3 and drive to location 5 to complete the delivery.</pre></td><td><pre>**Plan Execution Steps:**
+
+1. **Drive from Location 2 to Location 3.**
+2. **Drive from Location 3 to Location 4.**
+3. **At Location 4:**
+   - Pick up the package.
+4. **Drive from Location 4 to Location 1.**
+5. **At Location 1:**
+   - Drop off the first package.
+6. **Drive from Location 1 to Location 6.**
+7. **Drive from Location 6 back to Location 3.**
+8. **At Location 3:**
+   - Pick up the second package.
+9. **Drive from Location 3 to Location 6.**
+10. **Drive from Location 6 to Location 7.**
+11. **At Location 7:**
+    - Drop off the second package.
+12. **Return to Location 6.**
+13. **At Location 6:**
+    - Pick up the third package.
+14. **Drive from Location 6 back to Location 3.**
+15. **At Location 3:**
+    - Drop off the third package.
+16. **At Location 3:**
+    - Pick up the fourth package.
+17. **Drive from Location 3 to Location 5.**
+18. **At Location 5:**
+    - Complete the delivery of the fourth package.</pre></td></tr></table>
