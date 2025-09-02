@@ -32,7 +32,6 @@ async def generate_async_responses(model: Dict[str, Any], prompt: str) -> str:
         List[Dict[str, Any]]: List of responses with metadata from each model
     """
     
-    
     client = get_llm_client(model)
     response = await client.generate_async(prompt)
     

@@ -11,29 +11,46 @@ MODELS = {
         "provider": "openai",
         "model_name": "gpt-4",
         "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
     },
     "gpt-5": {
         "provider": "openai",
         "model_name": "gpt-5",
-        "api_key": os.getenv("OPENAI_API_KEY"),  
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
     },
     "gpt-5-mini": {
         "provider": "openai",
         "model_name": "gpt-5-mini",
         "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
     },
     
     "gpt-4o-mini": {
         "provider": "openai",
         "model_name": "gpt-4o-mini",
         "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
     },
     "gpt-3.5-turbo": {
         "provider": "openai",
         "model_name": "gpt-3.5-turbo",
         "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
     },
-    "deepseek-r1:8b": {
+    "ds-chat": {
+        "provider": "openai",
+        "model_name": "deepseek-chat",
+        "api_key": os.getenv("DEEPSEEK_API_KEY"),
+        "base_url": os.getenv("DEEPSEEK_BASE_URL")
+    },
+    "ds-reasoner": {
+        "provider": "openai",
+        "model_name": "deepseek-reasoner",
+        "api_key": os.getenv("DEEPSEEK_API_KEY"),
+        "base_url": os.getenv("DEEPSEEK_BASE_URL")
+    },
+    "ds-r1:8b": {
         "provider": "ollama",
         "model_name": "deepseek-r1:8b",
     }
@@ -158,11 +175,13 @@ PROMPTS = {
     "v2a": {
         "description": "Verb to Action Grouping",
         "template": """
-            ... 
+            Given the following groups of actions, and verb, determine which group of action the verb belongs to, based on...
+            Return only the 0-based index of the action group. If the verb doesn't belong to any of the given groups, return -1.
 
-            Verbs: {verbs}
+            Actions: {actions}
+            Verb: {verb}
             """,
-        "parameters": ["verbs"]
+        "parameters": ["actions","verb"]
     }
     
 }
@@ -175,7 +194,7 @@ def v2a(task: any, parameters: Dict[str, Any], model: str, is_async: bool = Fals
     for verb in verbs[1:]:
         added = False
         for group in res:
-            is_verb_in_group = task.test_call(parameters, model, is_async)
+            is_verb_in_group = task.get_llm_response(parameters, model, is_async)
             if is_verb_in_group:
                 group.append(verb)
                 added = True

@@ -14,8 +14,8 @@ class OpenAIClient(BaseLLMClient):
         if "api_key" not in config:
             raise ValueError("OpenAI API key is required")
         super().__init__(config)
-        self.client = OpenAI(api_key=config.get("api_key"))
-        self.async_client = AsyncOpenAI(api_key=self.config["api_key"])
+        self.client = OpenAI(api_key=config.get("api_key"), base_url=config.get("base_url", "https://api.openai.com/v1"))
+        self.async_client = AsyncOpenAI(api_key=self.config["api_key"], base_url=self.config.get("base_url", "https://api.openai.com/v1"))
 
         
 
