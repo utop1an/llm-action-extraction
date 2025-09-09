@@ -82,32 +82,42 @@ class TaskConfig:
 
 PROMPTS = {
     "p2nl": {
-        "template": """You are a non-expert in planning. Describe the following plan as if you are giving simple step-by-step instructions to someone. 
-            Return only the description in a single paragraph, without formatting or any extra text.
+        "template": """Convert the plan into a SINGLE PARAGRAPH of step-by-step instructions in the SAME ORDER as the actions.
             A plan is a sequence of actions, where each action is represented as either a verb or a verb phrase followed by its arguments in the form (action_name arg1?arg1_type arg2?arg2_type ...)
-            When you first mention any object or argument, write its name exactly as given, and do not generalize (avoid phrases like “some object”). 
-            After that first mention, you may refer back to the same object using natural pronouns like “it,” “that,” or “they” when the reference is unambiguous, but do not invent new names or paraphrases. 
-            Do not omit arguments or add details not present in the plan.
+            Rules:
+            - Keep every action; do not add, drop, reorder, or reinterpret steps.
+            - On first mention, write each object or argument EXACTLY as given; do not generalize (no phrases like “some object”). After that, you may use unambiguous pronouns (it/that/they), but never invent new names or paraphrases.
+            - Do not omit arguments or add details not present in the plan.
+            - Do not add facts not present in the plan. No lists, headings, quotes, or formatting.
+
+            Output: only the paragraph.
             Plan: {plan}""",
         "parameters": ["plan"]
     },
     "p2nl-summary": {
-        "template": """You are a non-expert in planning. Describe the following plan as if you are giving simple step-by-step instructions to someone. 
-            Return only the description in a single paragraph, without formatting or any extra text.
+        "template": """Summarize the following plan into a SINGLE PARAGRAPH of step-by-step instructions in the SAME ORDER as the actions, capturing the core steps.
             A plan is a sequence of actions, where each action is represented as either a verb or a verb phrase followed by its arguments in the form (action_name arg1?arg1_type arg2?arg2_type ...)
-            When you first mention any object or argument, write its name exactly as given, and do not generalize (avoid phrases like “some object”). 
-            After that first mention, you may refer back to the same object using natural pronouns like “it,” “that,” or “they” when the reference is unambiguous, but do not invent new names or paraphrases. 
-            Do not omit arguments in the plan. Try to summarize the plan, especially when some actions are repetitive or redundant.
+            Rules:
+            - Preserve the order and intent but MERGE or condense obvious repetition and routine steps.
+            - On first mention, write each object or argument EXACTLY as given; do not generalize (no phrases like “some object”). After that, you may use unambiguous pronouns (it/that/they), but never invent new names or paraphrases.
+            - Do not omit arguments or add details not present in the plan.
+            - Do not add facts not present in the plan. No lists, headings, quotes, or formatting.
+            
+            Output: only the paragraph.
             Plan: {plan}""",
         "parameters": ["plan"]
     },
     "p2nl-detail": {
-        "template": """You are a non-expert in planning. Describe the following plan as if you are giving simple step-by-step instructions to someone. 
-            Return only the description in a single paragraph, without formatting or any extra text.
+        "template": """Convert the following plan into a SINGLE PARAGRAPH of step-by-step instructions in the SAME ORDER as the actions, making the description more explicit and clear.
+        
             A plan is a sequence of actions, where each action is represented as either a verb or a verb phrase followed by its arguments in the form (action_name arg1?arg1_type arg2?arg2_type ...)
-            When you first mention any object or argument, write its name exactly as given, and do not generalize (avoid phrases like “some object”). 
-            After that first mention, you may refer back to the same object using natural pronouns like “it,” “that,” or “they” when the reference is unambiguous, but do not invent new names or paraphrases. 
-            Do not omit arguments. Try to add more details, especially when some actions are not clear.
+            Rules:
+            - Prefer explicitness over brevity; Try to add more details, especially when some actions are not clear.
+            - On first mention, write each object or argument EXACTLY as given; do not generalize (no phrases like “some object”). After that, you may use unambiguous pronouns (it/that/they), but never invent new names or paraphrases.
+            - Do not omit arguments. 
+            - No lists, headings, quotes, or formatting.
+
+            Output: only the paragraph.
             Plan: {plan}""",
         "parameters": ["plan"]
     },
