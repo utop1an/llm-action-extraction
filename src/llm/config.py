@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from dataclasses import dataclass
 from typing import List, Dict, Any
+from string import Template
 
 load_dotenv()
 
@@ -158,7 +159,7 @@ PROMPTS = {
             """,
         "parameters": ["nl", "predicates"]
     },
-    "actions": {
+    "verbs": {
         "template": """
             Extract all verbs and verb phrases from the following natural language plan description.  
             Unify different verbs or verb phrases that describe the same action into a single canonical action name.  
@@ -168,6 +169,33 @@ PROMPTS = {
 
             NL: {nl}
             """,
+        "parameters": ["nl"]
+    },
+    "srl": {
+        "template": Template("""
+            Extract all predicate–argument structures (semantic role labels) from the text.
+            Return STRICTLY a JSON array; each item:
+            
+            {
+            "predicate": "lemma",
+            "arguments": {"ARG0": "...", "ARG1": "...", "AM-TMP": "...", ...}
+            }
+
+            Only roles present in the text may appear; values must be exact substrings.
+
+            Rules:
+            1) Predicates: detect verbal (and light-verb) predicates; normalize to the verb lemma (e.g., "was purchased" → "purchase").
+            2) Roles: Use PropBank-style roles.
+                - Core: ARG0 (agent/causer), ARG1 (patient/theme), ARG2... (as appropriate).
+                - Adjuncts: AM-TMP (time), AM-LOC (location), AM-MNR (manner), AM-INS (instrument), AM-CAU (cause), AM-PNC (purpose), AM-DIR (direction), AM-NEG (negation).
+            3) Text fidelity: Every argument value must be an exact substring from the input text; if absent, omit that role (do NOT invent).
+            4) Voice & control: Handle passive/raising; if the agent is implicit and resolvable within the sentence, use it; otherwise omit ARG0.
+            5) Coordination: If two verbs share arguments, output separate lines for each verb, reusing the arguments as needed.
+            6) Granularity: Arguments are contiguous phrases (no discontiguous spans). Prefer the minimal informative span (e.g., "the red box" not just "box").
+            7) Output hygiene: No explanations or extra text. Only lines in the specified format. Do not output empty roles.
+            
+            Input: $nl
+            """),
         "parameters": ["nl"]
     },
     "objects": {
@@ -241,5 +269,8 @@ def generate_prompt(prompt_name: str, prompt_args: Dict[str, Any] = {}) -> str:
         raise ValueError(f"Prompt {prompt_name} not found in config: {PROMPTS.keys()}")
     if not all(param in prompt_args for param in PROMPTS[prompt_name]["parameters"]):
         raise ValueError(f"Missing parameters for prompt {prompt_name}. Required: {PROMPTS[prompt_name]['parameters']}, Provided: {list(prompt_args.keys())}")
-    prompt = PROMPTS[prompt_name]["template"].format(**prompt_args)
+    if isinstance(PROMPTS[prompt_name]["template"], Template):
+        prompt = PROMPTS[prompt_name]["template"].substitute(**prompt_args)
+    else:
+        prompt = PROMPTS[prompt_name]["template"].format(**prompt_args)
     return prompt
