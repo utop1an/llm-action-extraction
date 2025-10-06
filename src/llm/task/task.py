@@ -1,9 +1,9 @@
 from ..config import PROMPTS, TASK_FUNCTIONS, generate_prompt
 from .subtask import SubTask
-from typing import List
+from typing import List, Union
 
 class Task:
-    def __init__(self, name:str, subtasks: List[str|SubTask]=[]):
+    def __init__(self, name:str, subtasks: List[Union[str, SubTask]]=[]):
         self.name = name
         conf = PROMPTS.get(name)
         if not conf:
@@ -20,8 +20,8 @@ class Task:
     
     def __str__(self):
         return self.prompt.format(**self.parameters)
-    
-    def add_subtask(self, subtask: str|SubTask):
+
+    def add_subtask(self, subtask: Union[str, SubTask]):
         if isinstance(subtask, SubTask):
             self.subtasks.append(subtask)
         elif isinstance(subtask, str):

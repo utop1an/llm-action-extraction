@@ -86,7 +86,8 @@ PROMPTS = {
         "template": """Convert the plan into a SINGLE PARAGRAPH of step-by-step instructions in the SAME ORDER as the actions.
             A plan is a sequence of actions, where each action is represented as either a verb or a verb phrase followed by its arguments in the form (action_name arg1?arg1_type arg2?arg2_type ...)
             Rules:
-            - Keep every action; do not add, drop, reorder, or reinterpret steps.
+            - Do not add, drop, reorder, or reinterpret steps.
+            - You may rephrase the action verb or verb phrase slightly to mimic how a human would retell the action, but keep the meaning unchanged.
             - On first mention, write each object or argument EXACTLY as given; do not generalize (no phrases like “some object”). After that, you may use unambiguous pronouns (it/that/they), but never invent new names or paraphrases.
             - Do not omit arguments or add details not present in the plan.
             - Do not add facts not present in the plan. No lists, headings, quotes, or formatting.
@@ -162,13 +163,30 @@ PROMPTS = {
     "verbs": {
         "template": """
             Extract all verbs and verb phrases from the following natural language plan description.  
-            Unify different verbs or verb phrases that describe the same action into a single canonical action name.  
-            Return the result in the format: [verbs or verb phrases]: action_name, where [verbs or verb phrases] is a list of the original expressions found in the text, and action_name is the normalized action label they map to.  
-            Use only concise canonical names (single verb or short phrase) for action_name.  
+            Return the result in the format: [verbs or verb phrases].  
             Do not include explanations, steps, or any extra text outside of the required output.  
 
             NL: {nl}
             """,
+        "parameters": ["nl"]
+    },
+    "verb_arg": {
+        "template": Template("""
+            Extract all verbs and verb phrases from the following natural language plan description.  
+            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) as exact substrings from the text.  
+            
+
+            Rules:
+            - Extract argument as nouns or noun phrases from the text
+            - Return the result in STRICTLY a JSON array; each item: 
+            {
+                "verb": "verb or verb phrase",
+                "arguments": {"ARG0": "...", "ARG1": "...", ...}
+            }
+            - Output only the JSON array, with no explanations or extra text.
+
+            Input: $nl
+            """),
         "parameters": ["nl"]
     },
     "srl": {
@@ -212,32 +230,42 @@ PROMPTS = {
     },
     "v2a": {
         "description": "Verb to Action Grouping",
-        "template": """
-            Given the following groups of actions, and verb, determine which group of action the verb belongs to, based on...
-            Return only the 0-based index of the action group. If the verb doesn't belong to any of the given groups, return -1.
+        "template": Template("""
+            Given a list of action groups and a target verb, determine which action group the verb belongs to.  
 
-            Actions: {actions}
-            Verb: {verb}
-            """,
+            - The action groups are provided as a two-dimensional list: [[verb or verb phrase with arguments]].  
+            * Each inner list represents one action group.  
+            * Items inside an inner list are alternative verb forms or phrases (with arguments) that describe the same underlying action.  
+            - Verbs in the same group share the same action ontology:  
+            * They may differ in surface wording, but  
+            * They correspond to the same core action, having the same preconditions for execution and the same effects once executed.  
+
+            Instructions:  
+            1. Compare the target verb to the verbs in each group.  
+            2. If the target verb matches the ontology of one group, return the **0-based index** of that action group.  
+            3. If the verb does not belong to any group, return **-1**.  
+
+            Return only the action_name (string), with no explanations or extra text.  
+
+            Action groups: $actions  
+            Verb: $verb  
+
+            """),
         "parameters": ["actions","verb"]
     }
     
 }
 
 def v2a(task: any, parameters: Dict[str, Any], model: str, is_async: bool = False) -> List[List[str]]:
-    verbs = parameters.get("verbs", [])
+    verbs = parameters.get("verbs")
     if not verbs:
         raise ValueError("No verbs provided for v2a task")
     res = [[verbs[0]]]
     for verb in verbs[1:]:
-        added = False
-        for group in res:
-            is_verb_in_group = task.get_llm_response(parameters, model, is_async)
-            if is_verb_in_group:
-                group.append(verb)
-                added = True
-                break
-        if not added:
+        group_idx = task.get_llm_response({"actions": res, "verb": verb}, model, is_async)
+        if group_idx != "-1":
+            res[int(group_idx)].append(verb)
+        else:
             res.append([verb])
     return res
 
