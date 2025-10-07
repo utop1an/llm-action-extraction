@@ -1,6 +1,6 @@
 import asyncio
 from typing import Dict, Any, List
-from .config import MODELS, PROMPTS, TEMPERATURE
+from .config import MODELS
 from .base import BaseLLMClient
 from .openai import OpenAIClient
 from .ollama import OllamaClient
@@ -19,8 +19,28 @@ def get_llm_client(model_config: Dict[str, Any]) -> BaseLLMClient:
     else:
         raise ValueError(f"Unsupported provider: {model_config['provider']}")
 
+log_dir = './logs/llm_responses'
 
-async def generate_async_responses(model: Dict[str, Any], prompt: str) -> str:
+def _append_log(model_name, provider, prompt, response):
+    import os
+    import json
+    from datetime import datetime
+
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    
+    log_file = os.path.join(log_dir, f"{model_name}_{provider}.jsonl")
+    log_entry = {
+        "time": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        "prompt": prompt,
+        "response": response
+    }
+    
+    with open(log_file, 'a', encoding='utf-8') as f:
+        f.write(json.dumps(log_entry) + '\n')
+    
+
+async def generate_async_responses(client, prompt: str) -> str:
     """
     Generate responses from multiple LLMs for the same input plan.
     
@@ -31,20 +51,23 @@ async def generate_async_responses(model: Dict[str, Any], prompt: str) -> str:
     Returns:
         List[Dict[str, Any]]: List of responses with metadata from each model
     """
+    return await client.generate_async(prompt)
     
-    client = get_llm_client(model)
-    response = await client.generate_async(prompt)
     
-    return response
 
 
-def generate_responses(model_name: str, prompt: str, is_async: bool = False ) -> str:
+def generate_responses(model_name: str, prompt: str, is_async: bool = False, log: bool = False) -> str:
     if model_name not in MODELS:
         raise ValueError(f"Model {model_name} not found in config: {MODELS.keys()}")
     model = MODELS[model_name]
 
+    client = get_llm_client(model)
     if is_async:
-        return asyncio.run(generate_async_responses(model, prompt))
+        response = asyncio.run(generate_async_responses(client, prompt))
+
     else: 
-        client = get_llm_client(model)
-        return client.generate(prompt)
+        response = client.generate(prompt)
+    
+    if log:
+        _append_log(model_name, model['provider'], prompt, response)
+    return response
