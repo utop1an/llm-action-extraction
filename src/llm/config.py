@@ -123,6 +123,13 @@ PROMPTS = {
             Plan: {plan}""",
         "parameters": ["plan"]
     },
+    "gpt3_to_plan": {
+        "template": Template("""
+            $egs
+            TEXT: $nl                 
+            PLAN:"""),
+        "parameters": ["nl", "egs"]
+    },
     "nl2p": {
         "template": """Convert the following natural language description into a plan, 
             A plan is a sequence of action signatures, each action signature is represented as an action verb (or verb phrase) and its arguments, in the format of (action_name arg1?arg1_type arg2?arg2_type ...)
@@ -173,15 +180,19 @@ PROMPTS = {
     "verb_arg": {
         "template": Template("""
             Extract all verbs and verb phrases from the following natural language plan description.  
-            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) as exact substrings from the text.  
+            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) as nouns or noun phrases from the text.  
             
-
             Rules:
-            - Extract argument as nouns or noun phrases from the text
+            - If a verb has no arguments, return an empty list for "arguments".
+            - Use the lemma form for verbs (e.g., "running" -> "run"). Do not invent or infer verbs not explicitly mentioned in the text.
+            - Use the lemma or canonical form for arguments (e.g., "boxes" -> "box"). Do not invent or infer arguments not explicitly mentioned in the text.
+            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument
+            - If an argument is a pronoun (e.g., "it", "them"), resolve it to the most recent explicit noun or noun phrase mentioned in the text.
+            - Maintain the order of verbs as they appear in the text.
             - Return the result in STRICTLY a JSON array; each item: 
             {
                 "verb": "verb or verb phrase",
-                "arguments": {"ARG0": "...", "ARG1": "...", ...}
+                "arguments": ["arg1", "arg2" ...]
             }
             - Output only the JSON array, with no explanations or extra text.
 
