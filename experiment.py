@@ -43,12 +43,22 @@ DEBUG = False
 
 
 
-def read_from_dataset(filename, limit=None):
+def read_from_refined_dataset(filename, limit=None):
     """
     Read data from a dataset file
     """
     path = os.path.join('./data/easdrl', filename + '.pkl')
     dataset = load_pkl(path)[-1]
+    if limit is not None:
+        dataset = dataset[:(max(limit, len(dataset)))]
+    return dataset
+
+def read_from_labeled_dataset(filename, limit=None):
+    """
+    Read data from a dataset file
+    """
+    path = os.path.join('./data/easdrl', filename + '.pkl')
+    dataset = load_pkl(path)
     if limit is not None:
         dataset = dataset[:(max(limit, len(dataset)))]
     return dataset
@@ -83,21 +93,21 @@ def evaluation(results, dataset):
 def run_experiment(dataset, solver):
     results = []
     for i in range(len(dataset)):
-        paragraph_in_list = []
-        for j in range(len(dataset[i])):
-            item = dataset[i][j]
-            sent = item['this_sent']
-            paragraph_in_list += sent
-
-        paragraph = ' '.join(paragraph_in_list)
+        sents = dataset[i]['sents']
+        sentences = []
+        for sent in sents:
+            sentence = " ".join(sent)
+            sentences.append(sentence)
+        paragraph = '. '.join(sentences) + '.'
 
         raw_res = solver.solve(paragraph)
+        results.append(raw_res)
         res = refine_results(raw_res)
-        results.append(res)
+        dataset[i]['pred'] = res
+
     return results
 
-# TODO: better write to pkl?
-def write_results_to_file(ds_name, solver_name, results, model_name=""):
+def write_results(ds_name, solver_name, results, model_name=""):
     if not os.path.exists("./results"):
         os.makedirs("./results")
     outpath = os.path.join('./results', ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
@@ -105,12 +115,21 @@ def write_results_to_file(ds_name, solver_name, results, model_name=""):
         json.dump(results, f, indent=4)
     print('Results written to %s' % outpath)
 
+def write_pkl_results(ds_name, solver_name, results, model_name=""):
+    if not os.path.exists("./results"):
+        os.makedirs("./results")
+    outpath = os.path.join('./results', ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
+    import pickle
+    with open(outpath, 'wb') as f:
+        pickle.dump(results, f)
+    print('Results written to %s' % outpath)
+
 def main(args):
     # Define datasets
     datasets = {
-        'cooking': 'refined_cooking_data',
-        'wikihow': 'refined_wikihow_data',
-        'win2k': 'refined_win2k_data'
+        'cooking': 'cooking_labeled_text_data',
+        'wikihow': 'wikihow_labeled_text_data',
+        'win2k': 'win2k_labeled_text_data'
     }
     if args.d:
         if args.d not in datasets:
@@ -140,10 +159,10 @@ def main(args):
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = NL2P(model_name=model_name)
-        case 'ilocm':
-            solver = ilocm()
+        case 'ceasdrl':
+            solver = cEASDRL()
         case 'naruto':
-            solver = naruto()
+            solver = Naruto()
         case _:
             print('Unknown solver: %s' % solver_name)
             sys.exit(1)
@@ -157,16 +176,17 @@ def main(args):
         print('Debug mode is on!')
 
     for ds_name in target_ds:
-        dataset = read_from_dataset(ds_name, limit=args.l)
+        dataset = read_from_labeled_dataset(ds_name, limit=args.l)
         results = run_experiment(dataset, solver)
-        write_results_to_file(ds_name, solver_name, results, model_name)
+        write_results(ds_name, solver_name, results, model_name)
+        write_pkl_results(ds_name, solver_name, dataset, model_name)
         print('Experiment on %s dataset (%s, %s) done!' % (ds_name, solver_name, model_name if model_name else ''))
 
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', type=str, default='nl2p', help='solvers: gp3_to_plan, ilocm, nl2p, naruto')
+    parser.add_argument('-s', type=str, default='nl2p', help='solvers: gp3_to_plan, ceasdrl, nl2p, naruto')
     parser.add_argument('-m', type=str, help='optional, for llm based solve only, model name: gpt-4o-mini...')
     parser.add_argument('-d', type=str, help='dataset: cookin,wikihow,win2k')
     parser.add_argument('-l', type=int, help='limit the number of instances to run')

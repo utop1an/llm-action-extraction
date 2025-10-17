@@ -179,15 +179,15 @@ PROMPTS = {
     },
     "verb_arg": {
         "template": Template("""
-            Extract all verbs and verb phrases from the following natural language plan description.  
-            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) as nouns or noun phrases from the text.  
+            Extract all verbs or verb phrases from the following natural language plan description.  
+            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) **only if the argument is expressed as a noun or noun phrase** in the text.  
             
             Rules:
             - If a verb has no arguments, return an empty list for "arguments".
-            - Use the lemma form for verbs (e.g., "running" -> "run"). Do not invent or infer verbs not explicitly mentioned in the text.
-            - Use the lemma or canonical form for arguments (e.g., "boxes" -> "box"). Do not invent or infer arguments not explicitly mentioned in the text.
-            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument
+            - Keep verbs and verb phrases exactly as written in the text. Do not invent or infer verbs not explicitly mentioned in the text.
+            - Keep args exactly as written in the text. Do not invent or infer arguments not explicitly mentioned in the text.
             - If an argument is a pronoun (e.g., "it", "them"), resolve it to the most recent explicit noun or noun phrase mentioned in the text.
+            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; be careful with punctuation errors such as missing commas
             - Maintain the order of verbs as they appear in the text.
             - Return the result in STRICTLY a JSON array; each item: 
             {
@@ -199,6 +199,56 @@ PROMPTS = {
             Input: $nl
             """),
         "parameters": ["nl"]
+    },
+    "remove_non_eventive_verbs": {
+        "template": Template("""
+            Given a list of verbs or verb phrases extracted from a natural language text, identify and REMOVE any verbs that do NOT describe concrete, observable actions or events.  
+            Non-eventive verbs include, but are not limited to:
+                - Stative verbs that describe states, conditions, or mental states (e.g., "know", "believe", "love", "own").
+                - Modal verbs that express necessity, possibility, permission, or ability (e.g., "can", "must", "should", "might").
+                - Auxiliary verbs used to form tenses, moods, or voices (e.g., "is", "are", "was", "were", "have", "do").
+                - Reporting verbs that indicate speech or communication without describing the content (e.g., "say", "tell", "ask", "reply").
+                - Linking verbs that connect the subject to a subject complement (e.g., "seem", "become", "appear").
+                - Aspectual or phase verbs that mark the temporal stage of another event rather than a distinct action (e.g., start by doing, begin to do, continue doing...).
+                - Any verbs that do not correspond to a physical action or event that can be observed or measured.
+            
+            Rules:
+            - If a verb is removed, all its arguments must also be removed. If all verbs are removed, return an empty list.
+            - Maintain the order of the remaining verbs as they appear in the input list.
+            - Keep the input format the same as the output format, in STRICTLY a JSON array; each item:
+            {
+                "verb": "verb or verb phrase",
+                "arguments": ["arg1", "arg2" ...]
+            }
+            - Output only the JSON array, with no explanations or extra text.
+            
+            Original Natural Language: $nl
+            Input Verbs: $verbs                 
+            """),
+        "parameters": ["nl", "verbs"]
+    },
+    "identify_verb_types": {
+        "template": Template("""
+            Given a list of verbs or verb phrases extracted from a natural language text, identify the types of these verbs:
+                - Essential verbs: core actions that are crucial to the main task or plan described in the text, without which the task cannot be completed.
+                - Exclusive verbs: actions that are alternatives to other actions, where only one from a set of exclusive actions can be chosen or performed.
+                - Optional verbs: supplementary actions that are not critical to the main task but may provide additional context or details, and can be omitted without affecting the overall plan.
+            Rules:
+            - Classify each verb into one of the three categories: "essential", "optional", or "exclusive".
+            - Maintain the order of verbs as they appear in the input list.
+            - Return the result in STRICTLY a JSON array; each item:
+            {
+                "verb": "verb or verb phrase", // keep exactly as in the input
+                "arguments": ["arg1", "arg2" ...], // keep exactly as in the input
+                "type": "essential" | "optional" | "exclusive", // the verb type identified
+                "related_verbs": ["index1", "index2" ...]  //list of verb indices that are mutually exclusive with this verb; for exclusive verbs, empty list for essential and optional verbs;
+            }
+            - Output only the JSON array, with no explanations or extra text.
+                             
+            Original Natural Language: $nl
+            Input Verbs: $verbs  
+        """),
+        "parameters": ["nl", "verbs"]
     },
     "srl": {
         "template": Template("""
