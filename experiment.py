@@ -87,9 +87,6 @@ def test(dataset, methodology):
 def refine_results(raw_res):
     return raw_res
 
-def evaluation(results, dataset):
-    pass
-
 def run_experiment(dataset, solver):
     results = []
     for i in range(len(dataset)):
