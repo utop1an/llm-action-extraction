@@ -56,18 +56,18 @@ async def generate_async_responses(client, prompt: str) -> str:
     
 
 
-def generate_responses(model_name: str, prompt: str, is_async: bool = False, log: bool = False) -> str:
+def generate_responses(model_name: str, prompt: str, temperature: float = 0.5, is_async: bool = False, log: bool = False) -> str:
     if model_name not in MODELS:
         raise ValueError(f"Model {model_name} not found in config: {MODELS.keys()}")
     model = MODELS[model_name]
 
     client = get_llm_client(model)
     if is_async:
-        response = asyncio.run(generate_async_responses(client, prompt))
+        response = asyncio.run(generate_async_responses(client, prompt, temperature=temperature))
 
     else: 
-        response = client.generate(prompt)
-    
+        response = client.generate(prompt, temperature=temperature)
+
     if log:
         _append_log(model_name, model['provider'], prompt, response)
     return response

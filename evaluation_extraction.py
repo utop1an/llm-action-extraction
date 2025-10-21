@@ -8,42 +8,11 @@ from solvers.gpt3_to_plan import GPT3ToPlan
 from solvers.nl2p import NL2P
 from solvers.ceasdrl import cEASDRL
 from solvers.naruto import Naruto
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
 
 DEBUG = False
-
-# class Dataset:
-#     def __init__(self, filename):
-#         self.name = filename
-#         self.data = read_from_dataset(filename + '.pkl')
-
-#     def get_paragraph(self, idx):
-#         paragraph = []
-#         for j in range(len(self.data[idx])):
-#             item = self.data[idx][j]
-#             paragraph += item['this_sent']
-#         return paragraph
-
-#     def get_sent(self, i, j):
-#         item = self.data[i][j]
-#         return item['this_sent']
-
-#     def get_sent_item(self, i, j):
-#         return self.data[i][j]
-    
-#     def get_acts(self, i, j):
-#         item = self.data[i][j]
-#         acts = {}
-#         for k in range(len(item['acts'])):
-#             act_idx = item['acts'][k]['act_idx']
-#             act_name = item['this_sent'][act_idx]
-            
-#             obj_inds = item['acts'][k]['obj_idxs']
-#             obj_names = [item['this_sent'][ind] for ind in obj_inds[0]]
-#             acts[act_name] = obj_names
-#         return acts
-
-
-
 
 def read_from_refined_dataset(filename, limit=None):
     """
@@ -65,14 +34,14 @@ def read_from_labeled_dataset(filename, limit=None):
         dataset = dataset[:(max(limit, len(dataset)))]
     return dataset
 
-def read_from_predicted_dataset():
-    dir = './results'
+def read_from_predicted_dataset(dir):
     res_dict = defaultdict(list)
     if not os.path.exists(dir):
         raise FileNotFoundError(f"The results dir {dir} does not exist.")
     files = os.listdir(dir)
     pkl_files = [f for f in files if f.endswith('.pkl')]
     for file in pkl_files:
+        print(f"Loading {file}")
         path = os.path.join(dir, file)
         full_filename = file.split('.')[0].split('_')
         ds_name = full_filename[0]
@@ -81,118 +50,152 @@ def read_from_predicted_dataset():
         res_dict[(ds_name,solver_name,model_name)] = load_pkl(path)
     return res_dict
 
-def refine_results(raw_res):
-    return raw_res
-def match_objs(act_objs, pred_objs, words):
-    act_obj_names = [words[ind] for ind in act_objs]
-    pred_obj_names = [words[ind] for ind in pred_objs]
-    if set(act_obj_names) != set(pred_obj_names):
-        return False
-    return True
+def write_results(results: dict, dir: str):
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    outpath = os.path.join(dir, 'evaluation_result.csv')
+    with open(outpath, 'w') as f:
+        writer = csv.writer(f)
+        writer.writerow(['dataset', 'solver', 'model', 'Precision', 'Recall', 'F1', 'Object Precision', 'Object Recall', 'Object F1'])
+        for k,v in results.items():
+            ds_name, solver, model_name = k
+            precision, recall, f1, obj_precision, obj_recall, obj_f1 = v
+            writer.writerow([ds_name, solver, model_name, precision, recall, f1, obj_precision, obj_recall, obj_f1])
+    print('Results written to %s' % outpath)
 
+def match_obj(gt_name, pred_name):
+    gt_lemma = nlp(gt_name)[0].lemma_.lower()
+    doc2 = nlp(pred_name)
+    pred_lemma = " ".join([token.lemma_.lower() for token in doc2])
+    return gt_lemma in pred_lemma
+
+def match_objs(act_obj_names, pred_obj_names):
+    common = 0
+    gt_pointer = 0
+    pred_pointer = 0
+    while gt_pointer < len(act_obj_names):
+        matched = False
+        while pred_pointer < len(pred_obj_names):
+            matched = match_obj(act_obj_names[gt_pointer], pred_obj_names[pred_pointer])
+            if matched:
+                common += 1
+                gt_pointer += 1
+                pred_pointer += 1
+                break
+            else:
+                pred_pointer += 1
+        if not matched:
+            gt_pointer += 1
+    tp = common
+    fp = len(pred_obj_names) - common
+    fn = len(act_obj_names) - common
+
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+    return precision, recall, f1
 
 def match(act, pred, words):
     act_idx = act['act_idx']
     act_name = words[act_idx]
-    pred_idx = pred['act_idx']
-    pred_name = words[pred_idx]
-    if act_name != pred_name:
-        return False
-    act_obj_idxs = act['obj_idxs'][0]
-    pred_obj_idxs = pred['obj_idxs'][0]
-    if set(act_obj_idxs) != set(pred_obj_idxs):
-        return False
-    return True
+    
+    pred_act_name = pred['verb']
+    
+    act_lemma = nlp(act_name)[0].lemma_.lower()
+    doc2 = nlp(pred_act_name)
+    pred_act_lemma = " ".join([token.lemma_.lower() for token in doc2])
+    if not act_lemma in pred_act_lemma:
+        return False, None, None, None
+    
+    
+    act_obj_names = [words[ind] for ind in act['obj_idxs'][0]]
+    pred_obj_names = pred['arguments']
 
-def evaluation(dataset, preds):
-    tp, fp, tn, fn = 0, 0, 0, 0
-    recall, precision, f1 = 0.0, 0.0, 0.0
-    for item in preds:
+    obj_precision, obj_recall, obj_f1 = match_objs(act_obj_names, pred_obj_names)
+    return True, obj_precision, obj_recall, obj_f1
+
+def evaluation(preds):
+    precisions, recalls, f1s = [],[],[]
+    obj_precisions, obj_recalls, obj_f1s = [],[],[]
+    for i, item in enumerate(preds):
+        common = 0
+
         words = item['words']
         acts = item['acts']
         pred = item['pred']
-        seq_act = 0
-        seq_pred_verb = 0
-        while seq_act < len(acts):
-            act_idx = acts[seq_act]['act_idx']
-            act_name = words[act_idx]
-            obj_idxs = acts[seq_act]['obj_idxs']
-            obj_names = [words[ind] for ind in obj_idxs[0]]
+        if not pred:
+            print(f"No predictions found for item {i}.")
+            continue
+        pred_pointer = 0
+        for act_idx in range(len(acts)):
             matched = False
-
-            while seq_pred_verb < len(pred):
-                matched = match(acts[seq_act], pred[seq_pred_verb], words)
-                if matched:
-                    seq_act += 1
-                    seq_pred_verb += 1
-                    tp += 1
-                    break
-            if not matched:
-                fn += 1
-                seq_act += 1
             
-        
-    return (tp, fp, tn, fn, precision, recall, f1)
+            for pred_idx in range(pred_pointer, len(pred)):
+                matched, obj_precision, obj_recall, obj_f1 = match(acts[act_idx], pred[pred_idx], words)
+                if matched:
+                    obj_precisions.append(obj_precision)
+                    obj_recalls.append(obj_recall)
+                    obj_f1s.append(obj_f1)
+                    common += 1
+                    pred_pointer = pred_idx + 1
+                    break
 
-def run_evaluation(datasets, predicates):
+        tp = common
+        fp = len(pred) - common
+        fn = len(acts) - common
+
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        precisions.append(precision)
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        recalls.append(recall)
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+        f1s.append(f1)
+    
+    avg_precision = sum(precisions) / len(precisions) if len(precisions) > 0 else 0
+    avg_recall = sum(recalls) / len(recalls) if len(recalls) > 0 else 0
+    avg_f1 = sum(f1s) / len(f1s) if len(f1s) > 0 else 0
+
+    avg_obj_precision = sum(obj_precisions) / len(obj_precisions) if len(obj_precisions) > 0 else 0
+    avg_obj_recall = sum(obj_recalls) / len(obj_recalls) if len(obj_recalls) > 0 else 0
+    avg_obj_f1 = sum(obj_f1s) / len(obj_f1s) if len(obj_f1s) > 0 else 0
+
+    if (precision == 0 or recall == 0):
+        print("warning: zero precision or recall")
+
+    return avg_precision, avg_recall, avg_f1, avg_obj_precision, avg_obj_recall, avg_obj_f1
+
+def run_evaluation(predicates):
     results = {}
     for names, raw_res in predicates.items():
         ds_name, solver_name, model_name = names
-        if ds_name not in datasets:
-            print(f"Dataset {ds_name} not found in provided datasets. Skipping evaluation for this entry.")
-            continue
-        dataset = datasets[ds_name]
-        res = evaluation(dataset, raw_res)
-        results[(ds_name, solver_name, model_name)] = res
+        tp, fp, fn, precision, recall, f1 = evaluation(raw_res)
+        results[(ds_name, solver_name, model_name)] = (tp, fp, fn, precision, recall, f1)
     return results
 
-def write_results( results: dict):
-    if not os.path.exists("./results"):
-        os.makedirs("./results")
-    outpath = os.path.join('./results/evaluation_result.csv')
-    with open(outpath, 'w') as f:
-        writer = csv.writer(f)
-        writer.writerow(['dataset', 'solver', 'model', 'TP', 'FP', 'TN', 'FN', 'Precision', 'Recall', 'F1'])
-        for k,v in results.items():
-            ds_name, solver, model_name = k
-            tp, fp, tn, fn, precision, recall, f1 = v
-            writer.writerow([ds_name, solver, model_name, tp, fp, tn, fn, precision, recall, f1])
-    print('Results written to %s' % outpath)
+
 
 def main(args):
-    # Define datasets
-    datasets = {
-        'cooking': 'cooking_labeled_text_data',
-        'wikihow': 'wikihow_labeled_text_data',
-        'win2k': 'win2k_labeled_text_data'
-    }
-    if args.d:
-        if args.d not in datasets:
-            print('Dataset %s not found!' % args.d)
-            sys.exit(1)
-        target_ds = [datasets[args.d]]
-    else:
-        target_ds = datasets.values()
-
     # Debug mode
     if args.debug:
         global DEBUG
         DEBUG = True
         print('Debug mode is on!')
 
-    datasets = {}
-    for ds_name in target_ds:
-        datasets[ds_name] = read_from_labeled_dataset(ds_name, limit=args.l)
-    predicates = read_from_predicted_dataset(ds_name + '_refined', limit=args.l)
-    results = run_evaluation(datasets, predicates)
+    dir = args.d
+    if not os.path.exists(dir):
+        print(f"The results dir {dir} does not exist.")
+        sys.exit(1)
+    
+
+    predicates = read_from_predicted_dataset(dir)
+    results = run_evaluation(predicates)
     print('Evaluation done!')
-    write_results(results)
+    write_results(results, dir)
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-m', type=str, help='optional, for llm based solve only, model name: gpt-4o-mini...')
-    parser.add_argument('-d', type=str, help='dataset: cookin,wikihow,win2k')
+    parser.add_argument('-d', type=str, default='./results', help='results directory')
     parser.add_argument('--debug', action='store_true', help='debug mode')
     args = parser.parse_args()
     main(args)

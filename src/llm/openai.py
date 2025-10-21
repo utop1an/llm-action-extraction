@@ -19,14 +19,14 @@ class OpenAIClient(BaseLLMClient):
 
         
 
-    async def generate_async(self, prompt: str) -> Dict[str, Any]:
+    async def generate_async(self, prompt: str, temperature: float = 0.7) -> Dict[str, Any]:
         start_time = time.time()
         try:
             response = await self.async_client.chat.completions.create(
                 model=self.config["model_name"],
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=self.config.get("max_tokens", 2048),
-                temperature=self.config.get("temperature", 0.7)
+                temperature=temperature
             )
             
             end_time = time.time()
@@ -39,14 +39,14 @@ class OpenAIClient(BaseLLMClient):
         except Exception as e:
             raise RuntimeError(f"OpenAI API call failed: {str(e)}")
 
-    def generate(self, prompt: str) -> Dict[str, Any]:
+    def generate(self, prompt: str, temperature: float = 0.7) -> Dict[str, Any]:
         start_time = time.time()
         try:
             response = self.client.chat.completions.create(
                 model=self.config["model_name"],
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=self.config.get("max_tokens", 2048),
-                temperature=self.config.get("temperature", 0.7)
+                temperature=temperature
             )
             
             end_time = time.time()

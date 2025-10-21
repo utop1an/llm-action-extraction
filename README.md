@@ -76,3 +76,45 @@ ollama python library ([github](https://github.com/ollama/ollama-python))
 
 #### r1:8b
 
+
+# Experiment settings
+
+## MEMO
+
+### GPT3-TO-PLAN
+Replication of the gpt3-to-plan paper, with 2-shot prompting (which has overall good performance with less tokens, the default setting in the paper?), using examples with the highest propotion of OP and EX actions (as mentioned in the paper).
+
+### NL2P
+3 step extraction:
+1. extract verbs and args
+2. remove non-eventive verbs
+3. label verb types (ES, EX, OP)
+
+### NL2P-1
+1 step extraction of eventive verbs and their args (with simple explanation of eventive verbs)
+
+### VerbArgs
+1 step extraction of verbs and args only 
+
+
+### Possible Improvements
+- Traditional NLP/LLM based POS first
+- Extract verbs only (no args)
+- Better definition of eventive verbs
+- Experiment on different Temperature settings
+
+# Report
+
+## Possible problems
+
+### GT Labelled actions?
+- Some are not really an action, or a step? "after mixed", "until well grinded", ... (and sometimes they are not extracted, labelled as JJ in the the dataset)
+
+### GT Labelled args?
+- No comma, when multiple args... (also for verbs, "add something... top with something...")
+- Some are not labelled, "mix a b and c (in a bowl)", "do something (with something)"
+- it should be an arg, but labelled as a verb, "using the opener to open the can"
+
+
+### Predicated actions
+- do something before doing something, "doing something" should be a step after, often be omitted

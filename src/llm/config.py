@@ -127,7 +127,8 @@ PROMPTS = {
         "template": Template("""
             $egs
             TEXT: $nl                 
-            PLAN:"""),
+            ACTIONS:
+        """),
         "parameters": ["nl", "egs"]
     },
     "nl2p": {
@@ -177,17 +178,19 @@ PROMPTS = {
             """,
         "parameters": ["nl"]
     },
-    "verb_arg": {
+
+    "nl2p_1": {
         "template": Template("""
-            Extract all verbs or verb phrases from the following natural language plan description.  
-            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.) **only if the argument is expressed as a noun or noun phrase** in the text.  
-            
+            Extract eventive verbs or verb phrases from the following natural language plan description.  
+            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.).
+                               
             Rules:
+            - Eventive verbs are verbs that describe physical actions or concrete events (modal verbs, auxiliary verbs, linking verbs, and other non-eventive verbs should not be extracted).
             - If a verb has no arguments, return an empty list for "arguments".
             - Keep verbs and verb phrases exactly as written in the text. Do not invent or infer verbs not explicitly mentioned in the text.
-            - Keep args exactly as written in the text. Do not invent or infer arguments not explicitly mentioned in the text.
-            - If an argument is a pronoun (e.g., "it", "them"), resolve it to the most recent explicit noun or noun phrase mentioned in the text.
-            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; be careful with punctuation errors such as missing commas
+            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; do not invent or infer arguments not explicitly mentioned in the text.
+            - Use the exact wording from the text for all arguments unless the argument is a pronoun (e.g., "it", "them"); if it is a pronoun , replace it with the most recent explicit noun or noun phrase it refers to in the text.
+            - Be careful with punctuation errors such as missing commas.
             - Maintain the order of verbs as they appear in the text.
             - Return the result in STRICTLY a JSON array; each item: 
             {
@@ -200,19 +203,54 @@ PROMPTS = {
             """),
         "parameters": ["nl"]
     },
+    "verb_args": {
+        "template": Template("""
+            Extract all verbs or verb phrases from the following natural language plan description.  
+            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.).
+                               
+            Rules:
+            - If a verb has no arguments, return an empty list for "arguments".
+            - Keep verbs and verb phrases exactly as written in the text. Do not invent or infer verbs not explicitly mentioned in the text.
+            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; do not invent or infer arguments not explicitly mentioned in the text.
+            - Use the exact wording from the text for all arguments unless the argument is a pronoun (e.g., "it", "them"); if it is a pronoun , replace it with the most recent explicit noun or noun phrase it refers to in the text.
+            - Be careful with punctuation errors such as missing commas
+            - Maintain the order of verbs as they appear in the text.
+            - Return the result in STRICTLY a JSON array; each item: 
+            {
+                "verb": "verb or verb phrase",
+                "arguments": ["arg1", "arg2" ...]
+            }
+            - Output only the JSON array, with no explanations or extra text.
+
+            Input: $nl
+            """),
+        "parameters": ["nl"]
+    },
+    # - Stative verbs that describe states, conditions, or mental states (e.g., "know", "believe", "love", "own").
+    # - Modal verbs that express necessity, possibility, permission, or ability (e.g., "can", "must", "should", "might").
+    # - Auxiliary verbs used to form tenses, moods, or voices (e.g., "is", "are", "was", "were", "have", "do").
+    # - Reporting verbs that indicate speech or communication without describing the content (e.g., "say", "tell", "ask", "reply").
+    # - Linking verbs that connect the subject to a subject complement (e.g., "seem", "become", "appear").
+    # - Aspectual or phase verbs that mark the temporal stage of another event rather than a distinct action (e.g., start by doing, begin to do, continue doing...).
+    # - Any verbs that do not correspond to a physical action or event that can be observed or measured.
     "remove_non_eventive_verbs": {
         "template": Template("""
-            Given a list of verbs or verb phrases extracted from a natural language text, identify and REMOVE any verbs that do NOT describe concrete, observable actions or events.  
+            Given a list of verbs or verb phrases extracted from the following natural language plan description, identify and REMOVE non-eventive verbs that do NOT describe concrete, observable actions or events.
             Non-eventive verbs include, but are not limited to:
-                - Stative verbs that describe states, conditions, or mental states (e.g., "know", "believe", "love", "own").
                 - Modal verbs that express necessity, possibility, permission, or ability (e.g., "can", "must", "should", "might").
                 - Auxiliary verbs used to form tenses, moods, or voices (e.g., "is", "are", "was", "were", "have", "do").
-                - Reporting verbs that indicate speech or communication without describing the content (e.g., "say", "tell", "ask", "reply").
-                - Linking verbs that connect the subject to a subject complement (e.g., "seem", "become", "appear").
-                - Aspectual or phase verbs that mark the temporal stage of another event rather than a distinct action (e.g., start by doing, begin to do, continue doing...).
-                - Any verbs that do not correspond to a physical action or event that can be observed or measured.
+                - Linking verbs that connect the subject to a subject complement (e.g., "seem", "become").
+                - Aspectual or phase verbs that mark the temporal stage of another event rather than a distinct action (e.g., start by cooking, begin to wash, continue cleaning...).
+                    In such cases, keep only the main verb describing the action ("cook", "wash", "clean") and remove the aspectual verb.
+                - Light or causative verbs that serve primarily to permit, cause, or help another event rather than being observable actions themselves (e.g., "let it melt", "allow the paint to dry", "make it move").
+                    In such cases, keep only the complement verb ("melt", "dry", "move") and remove the light verb.
+                - Control or verification verbs (e.g., "make sure", "ensure", "verify", "check", "confirm") when followed by a clause expressing a desired state or condition.  
+                    In such cases, extract the underlying action that achieves the state (e.g., "make sure the door is closed" → keep "close the door") and remove the control verb itself.
+                - Advisory or reporting verbs that express recommendation, suggestion, or communication without representing an actual step (e.g., "recommend", "suggest", "advise", "say", "tell", "report").
+                    In such cases, keep only the embedded or complement action (e.g., "it is recommended to add" → keep "add") and remove the advisory verb.
             
             Rules:
+            - Remove only non-eventive verbs; retain all eventive verbs that describe concrete actions or events.
             - If a verb is removed, all its arguments must also be removed. If all verbs are removed, return an empty list.
             - Maintain the order of the remaining verbs as they appear in the input list.
             - Keep the input format the same as the output format, in STRICTLY a JSON array; each item:
@@ -235,7 +273,7 @@ PROMPTS = {
                 - Optional verbs: supplementary actions that are not critical to the main task but may provide additional context or details, and can be omitted without affecting the overall plan.
             Rules:
             - Classify each verb into one of the three categories: "essential", "optional", or "exclusive".
-            - Maintain the order of verbs as they appear in the input list.
+            - Maintain the order of verbs as they appear in the input list; do not remove the verbs.
             - Return the result in STRICTLY a JSON array; each item:
             {
                 "verb": "verb or verb phrase", // keep exactly as in the input

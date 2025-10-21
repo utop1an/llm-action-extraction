@@ -6,6 +6,8 @@ from solvers.gpt3_to_plan import GPT3ToPlan
 from solvers.nl2p import NL2P
 from solvers.ceasdrl import cEASDRL
 from solvers.naruto import Naruto
+from solvers.nl2p_1 import NL2P_1
+from solvers.verb_args import VerbArgs
 
 DEBUG = False
 
@@ -87,7 +89,7 @@ def test(dataset, methodology):
 def refine_results(raw_res):
     return raw_res
 
-def run_experiment(dataset, solver):
+def run_experiment(dataset, solver, ds_name=""):
     results = []
     for i in range(len(dataset)):
         sents = dataset[i]['sents']
@@ -97,7 +99,7 @@ def run_experiment(dataset, solver):
             sentences.append(sentence)
         paragraph = '. '.join(sentences) + '.'
 
-        raw_res = solver.solve(paragraph)
+        raw_res = solver.solve(paragraph, ds_name=ds_name)
         results.append(raw_res)
         res = refine_results(raw_res)
         dataset[i]['pred'] = res
@@ -105,23 +107,30 @@ def run_experiment(dataset, solver):
     return results
 
 def write_results(ds_name, solver_name, results, model_name=""):
-    if not os.path.exists("./results"):
-        os.makedirs("./results")
-    outpath = os.path.join('./results', ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
+    if not os.path.exists("./results/%s" % solver_name):
+        os.makedirs("./results/%s" % solver_name)
+    outpath = os.path.join('./results/%s' % solver_name, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
     with open(outpath, 'w') as f:
         json.dump(results, f, indent=4)
     print('Results written to %s' % outpath)
 
 def write_pkl_results(ds_name, solver_name, results, model_name=""):
-    if not os.path.exists("./results"):
-        os.makedirs("./results")
-    outpath = os.path.join('./results', ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
+    if not os.path.exists("./results/%s" % solver_name):
+        os.makedirs("./results/%s" % solver_name)
+    outpath = os.path.join('./results/%s' % solver_name, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
     import pickle
     with open(outpath, 'wb') as f:
         pickle.dump(results, f)
     print('Results written to %s' % outpath)
 
 def main(args):
+    # Debug mode
+    if args.debug:
+        global DEBUG
+        DEBUG = True
+        if not args.l:
+            args.l = 2
+        print('Debug mode is on!')
     # Define datasets
     datasets = {
         'cooking': 'cooking_labeled_text_data',
@@ -132,9 +141,9 @@ def main(args):
         if args.d not in datasets:
             print('Dataset %s not found!' % args.d)
             sys.exit(1)
-        target_ds = [datasets[args.d]]
+        target_ds = {args.d: read_from_labeled_dataset(datasets[args.d], limit=args.l)}
     else:
-        target_ds = datasets.values()
+        target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in datasets.items()}
 
     # Define models
     models = ['gpt-4o-mini']
@@ -146,16 +155,26 @@ def main(args):
     # Define solvers
     solver_name = args.s
     match solver_name:
-        case 'gpt3_to_plan':
+        case 'gpt3-to-plan':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
-            solver = GPT3ToPlan(model_name=model_name)
+            solver = GPT3ToPlan(datasets=target_ds, model_name=model_name)
         case 'nl2p':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = NL2P(model_name=model_name)
+        case 'nl2p-1':
+            if not model_name:
+                print('Please specify a model name for llm based solver!')
+                sys.exit(1)
+            solver = NL2P_1(model_name=model_name)
+        case 'verb-args':
+            if not model_name:
+                print('Please specify a model name for llm based solver!')
+                sys.exit(1)
+            solver = VerbArgs(model_name=model_name)
         case 'ceasdrl':
             solver = cEASDRL()
         case 'naruto':
@@ -164,17 +183,8 @@ def main(args):
             print('Unknown solver: %s' % solver_name)
             sys.exit(1)
 
-    # Debug mode
-    if args.debug:
-        global DEBUG
-        DEBUG = True
-        if not args.l:
-            args.l = 2
-        print('Debug mode is on!')
-
-    for ds_name in target_ds:
-        dataset = read_from_labeled_dataset(ds_name, limit=args.l)
-        results = run_experiment(dataset, solver)
+    for ds_name, dataset in target_ds.items():
+        results = run_experiment(dataset, solver, ds_name=ds_name)
         write_results(ds_name, solver_name, results, model_name)
         write_pkl_results(ds_name, solver_name, dataset, model_name)
         print('Experiment on %s dataset (%s, %s) done!' % (ds_name, solver_name, model_name if model_name else ''))
@@ -187,6 +197,7 @@ if __name__ == "__main__":
     parser.add_argument('-m', type=str, help='optional, for llm based solve only, model name: gpt-4o-mini...')
     parser.add_argument('-d', type=str, help='dataset: cookin,wikihow,win2k')
     parser.add_argument('-l', type=int, help='limit the number of instances to run')
+    parser.add_argument('-t', type=int, help='temperature for llm based solver')
     parser.add_argument('--debug', action='store_true', help='debug mode')
     args = parser.parse_args()
     main(args)

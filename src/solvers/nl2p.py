@@ -18,7 +18,7 @@ class NL2P(Solver):
             f.write(json.dumps(result) + '\n')
         
 
-    def solve(self, paragraph):
+    def solve(self, paragraph, ds_name=""):
         verb_args = self.get_verb_args(paragraph)
         verb_args_filtered = self.remove_non_eventive_verbs(paragraph, verb_args)
         typed_verb_args = self.identify_verb_types(paragraph, verb_args_filtered)
@@ -35,22 +35,22 @@ class NL2P(Solver):
             return None
 
     def get_verb_args(self, paragraph):
-        prompt = generate_prompt('verb_arg', {'nl': paragraph})
-        response = generate_responses(self.model_name, prompt, log=True)['content']
+        prompt = generate_prompt('verb_args', {'nl': paragraph})
+        response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
         obj = self.parse_json(response)
-        self.log('verb_arg', json.dumps(obj))
+        self.log('verb_args', json.dumps(obj))
         return obj
     
     def remove_non_eventive_verbs(self, paragraph, verb_args):
         prompt = generate_prompt('remove_non_eventive_verbs', {'nl': paragraph, 'verbs': json.dumps(verb_args)})
-        response = generate_responses(self.model_name, prompt, log=True)['content']
+        response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
         obj = self.parse_json(response)
         self.log('remove_non_eventive_verbs', json.dumps(obj))
         return obj
 
     def identify_verb_types(self, paragraph, verb_args):
         prompt = generate_prompt('identify_verb_types', {'nl': paragraph, 'verbs': json.dumps(verb_args)})
-        response = generate_responses(self.model_name, prompt, log=True)['content']
+        response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
         obj = self.parse_json(response)
         self.log('identify_verb_types', json.dumps(obj))
         return obj
