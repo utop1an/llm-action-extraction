@@ -18,7 +18,7 @@ echo "--- running ---"
 
 MODEL_DIR=~/ollama_models
 SIF=~/ollama.sif
-MODEL="gemma3"
+MODEL=gemma3
 
 mkdir -p "$MODEL_DIR"
 
@@ -41,7 +41,7 @@ done
 singularity exec \
   -B $MODEL_DIR:/ollama \
   $SIF \
-  ollama pull $model
+  ollama pull $MODEL
 
 # 4. Run experiments
 for SOLVER in nl2p_1 gp3_to_plan; do
