@@ -1,47 +1,11 @@
 
 import json
 import os, sys
-from utils import load_pkl
-from solvers.gpt3_to_plan import GPT3ToPlan
-from solvers.nl2p import NL2P
-from solvers.ceasdrl import cEASDRL
-from solvers.naruto import Naruto
-from solvers.nl2p_1 import NL2P_1
-from solvers.verb_args import VerbArgs
+from src.utils import load_pkl
+from src.solvers import NL2P_1, NL2P_2, NL2P_3, VerbArgs, GPT3ToPlan
+from tqdm import tqdm
 
 DEBUG = False
-
-# class Dataset:
-#     def __init__(self, filename):
-#         self.name = filename
-#         self.data = read_from_dataset(filename + '.pkl')
-
-#     def get_paragraph(self, idx):
-#         paragraph = []
-#         for j in range(len(self.data[idx])):
-#             item = self.data[idx][j]
-#             paragraph += item['this_sent']
-#         return paragraph
-
-#     def get_sent(self, i, j):
-#         item = self.data[i][j]
-#         return item['this_sent']
-
-#     def get_sent_item(self, i, j):
-#         return self.data[i][j]
-    
-#     def get_acts(self, i, j):
-#         item = self.data[i][j]
-#         acts = {}
-#         for k in range(len(item['acts'])):
-#             act_idx = item['acts'][k]['act_idx']
-#             act_name = item['this_sent'][act_idx]
-            
-#             obj_inds = item['acts'][k]['obj_idxs']
-#             obj_names = [item['this_sent'][ind] for ind in obj_inds[0]]
-#             acts[act_name] = obj_names
-#         return acts
-
 
 
 
@@ -65,33 +29,12 @@ def read_from_labeled_dataset(filename, limit=None):
         dataset = dataset[:(max(limit, len(dataset)))]
     return dataset
 
-def test(dataset, methodology):
-    for i in range(len(dataset)):
-        paragraph = []
-        paragraph_acts = []
-        for j in range(len(dataset[i])):
-            item = dataset[i][j]
-            sent = item['this_sent']
-            paragraph += sent
-            acts = []
-
-            sent_long = item['last_sent'] + item['this_sent']
-
-            for k in range(len(item['acts'])):
-                act_idx = item['acts'][k]['act_idx']
-                act_name = sent_long[act_idx]
-
-                obj_inds = item['acts'][k]['obj_idxs']
-                obj_names = [sent_long[ind] for ind in obj_inds[0]]
-                acts.append((act_name, obj_names))
-            paragraph_acts.append(acts)
-
 def refine_results(raw_res):
     return raw_res
 
 def run_experiment(dataset, solver, ds_name=""):
     results = []
-    for i in range(len(dataset)):
+    for i in tqdm(range(len(dataset)), desc="Processing instances", unit="sample"):
         sents = dataset[i]['sents']
         sentences = []
         for sent in sents:
@@ -146,7 +89,7 @@ def main(args):
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in datasets.items()}
 
     # Define models
-    models = ['gpt-4o-mini']
+    models = ['gpt-4o-mini', 'gpt-5-mini']
     if args.m and args.m not in models:
         print('Model %s not found!' % args.m)
         sys.exit(1)
@@ -155,35 +98,38 @@ def main(args):
     # Define solvers
     solver_name = args.s
     match solver_name:
-        case 'gpt3-to-plan':
+        case 'gpt3_to_plan':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = GPT3ToPlan(datasets=target_ds, model_name=model_name)
-        case 'nl2p':
-            if not model_name:
-                print('Please specify a model name for llm based solver!')
-                sys.exit(1)
-            solver = NL2P(model_name=model_name)
-        case 'nl2p-1':
+        case 'nl2p_1':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = NL2P_1(model_name=model_name)
-        case 'verb-args':
+        case 'nl2p_2':
+            if not model_name:
+                print('Please specify a model name for llm based solver!')
+                sys.exit(1)
+            solver = NL2P_2(model_name=model_name)
+        case 'nl2p_3':
+            if not model_name:
+                print('Please specify a model name for llm based solver!')
+                sys.exit(1)
+            solver = NL2P_3(model_name=model_name)
+        case 'verb_args':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = VerbArgs(model_name=model_name)
-        case 'ceasdrl':
-            solver = cEASDRL()
-        case 'naruto':
-            solver = Naruto()
         case _:
             print('Unknown solver: %s' % solver_name)
             sys.exit(1)
 
+    print("Starting experiment with solver: %s, model: %s" % (solver_name, model_name if model_name else ''))
     for ds_name, dataset in target_ds.items():
+        print('Running experiment on %s dataset...' % ds_name)
         results = run_experiment(dataset, solver, ds_name=ds_name)
         write_results(ds_name, solver_name, results, model_name)
         write_pkl_results(ds_name, solver_name, dataset, model_name)

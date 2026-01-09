@@ -168,71 +168,173 @@ PROMPTS = {
             """,
         "parameters": ["nl", "predicates"]
     },
+    "nl2p_1": {
+        "template": Template("""
+            You are given a natural language paragraph describing a sequence of actions.
+            
+            Your task is to extract actions from the following natural language plan description.  
+            
+            Definition:
+            - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
+            - A trigger verb is the verb or verb phrase that directly describes an action which changes the state of an entity.
+            - Arguments are entities associated with the action.
+                               
+            Rules:
+            - Extract a verb ONLY if it by itself describes a state-changing action.
+            - If a verb only introduces, permits, checks, or describes another action, and another verb describes the actual state change, extract ONLY that second verb.
+            - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
+            - Maintain the order of verbs and arguments as they appear in the text.
+            - If an action has no arguments, return an empty list for "arguments".
+            - Use the exact wording from the text for all arguments unless the argument is a pronoun; if it is a pronoun, replace it with the most recent explicit noun or noun phrase it refers to in the text.
+            - Do NOT merge multiple different entities into one argument; plurals are allowed if explicitly stated in the text.
+            - Do NOT add explanations or extra text.
+            
+            Return the result in STRICTLY a JSON array; each action item: 
+            {
+                "verb": "verb or verb phrase",
+                "arguments": ["arg1", "arg2" ...]
+            }
+            - Output only the JSON array, with no explanations or extra text.
+
+            Input: $nl
+            """),
+        "parameters": ["nl"]
+    },
     "verbs": {
         "template": """
-            Extract all verbs and verb phrases from the following natural language plan description.  
-            Return the result in the format: [verbs or verb phrases].  
-            Do not include explanations, steps, or any extra text outside of the required output.  
+            You are given a natural language paragraph describing a sequence of actions.
+            Your task is to extract all candidate action verbs.  
+            
+            Definition:
+            - An action verb (or verb phrase) is an eventive verb that denotes a state transition in the underlying system.
+            
+            Rules:
+            - Maintain the order of verbs as they appear in the text.
+            - Do NOT add explanations or extra text.
+            
+            Return the result in a STRICT JSON array: ["verb1", "verb2", ...]
 
             NL: {nl}
             """,
         "parameters": ["nl"]
     },
-
-    "nl2p_1": {
+    "trigger_verbs": {
         "template": Template("""
-            Extract eventive verbs or verb phrases from the following natural language plan description.  
-            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.).
-                               
-            Rules:
-            - Eventive verbs are verbs that describe physical actions or concrete events (modal verbs, auxiliary verbs, linking verbs, and other non-eventive verbs should not be extracted).
-            - If a verb has no arguments, return an empty list for "arguments".
-            - Keep verbs and verb phrases exactly as written in the text. Do not invent or infer verbs not explicitly mentioned in the text.
-            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; do not invent or infer arguments not explicitly mentioned in the text.
-            - Use the exact wording from the text for all arguments unless the argument is a pronoun (e.g., "it", "them"); if it is a pronoun , replace it with the most recent explicit noun or noun phrase it refers to in the text.
-            - Be careful with punctuation errors such as missing commas.
-            - Maintain the order of verbs as they appear in the text.
-            - Return the result in STRICTLY a JSON array; each item: 
-            {
-                "verb": "verb or verb phrase",
-                "arguments": ["arg1", "arg2" ...]
-            }
-            - Output only the JSON array, with no explanations or extra text.
+            You are given a natural language paragraph describing actions.
 
-            Input: $nl
+            Your task is to extract the trigger verbs of actions.
+
+            Definition:
+            - A trigger verb is the verb or verb phrase that directly describes an action which changes the state of an entity.
+
+            Constraints:
+            - Extract a verb ONLY if it by itself describes a state-changing action.
+            - If a verb only introduces, permits, checks, or describes another action, and another verb describes the actual state change, extract ONLY that second verb.
+            - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
+            - Preserve the order in which trigger verbs appear.
+            - If no trigger verbs are present, return an empty list.
+            - Do NOT add explanations or extra text.
+
+            Return the result STRICTLY as a JSON array of strings: ['verb1', 'verb2', ...].
+
+            Paragraph:
+            $nl
+
+            """),
+            "parameters": ["nl"]
+        },
+    "args": {
+        "template": Template("""
+            You are given a natural language paragraph describing a sequence of actions.
+
+            Your task is to extract all candidate arguments from the paragraph.
+
+            Definition:
+            - A candidate argument is any noun or noun phrase that denotes an entity, object, location, time, resource, or participant mentioned in the paragraph.
+
+            Rules:
+            - Extract noun phrases exactly as they appear in the paragraph.
+            - Resolve pronouns to their most recent explicit entities.
+            - Do NOT merge multiple noun phrases into one argument.
+            - Do NOT invent or infer entities not explicitly mentioned.
+            - Preserve the order in which the noun phrases appear in the paragraph.
+            - If no candidate arguments are present, return an empty list.
+            - Do NOT add explanations or extra text.
+
+            Return the result STRICTLY as a JSON array of strings: ["arg1", "arg2", ...].
+
+            NL: $nl
+
             """),
         "parameters": ["nl"]
     },
-    "verb_args": {
-        "template": Template("""
-            Extract all verbs or verb phrases from the following natural language plan description.  
-            For each verb or verb phrase, identify its associated arguments (e.g., subject, object, time, location, etc.).
-                               
-            Rules:
-            - If a verb has no arguments, return an empty list for "arguments".
-            - Keep verbs and verb phrases exactly as written in the text. Do not invent or infer verbs not explicitly mentioned in the text.
-            - Each argument must denote one distinct entity or noun phrase; do not merge multiple entities into one argument; do not invent or infer arguments not explicitly mentioned in the text.
-            - Use the exact wording from the text for all arguments unless the argument is a pronoun (e.g., "it", "them"); if it is a pronoun , replace it with the most recent explicit noun or noun phrase it refers to in the text.
-            - Be careful with punctuation errors such as missing commas
-            - Maintain the order of verbs as they appear in the text.
-            - Return the result in STRICTLY a JSON array; each item: 
-            {
-                "verb": "verb or verb phrase",
-                "arguments": ["arg1", "arg2" ...]
-            }
-            - Output only the JSON array, with no explanations or extra text.
 
-            Input: $nl
+    "nl2p_2_verb_args": {
+        "template": Template("""
+            You are given:
+            (1) a natural language paragraph describing a sequence of actions
+            (2) a list of action verbs extracted from the paragraph
+
+            Your task is to assign arguments to each verb.
+
+            Rules:
+            - Use ONLY the verbs provided in the list.
+            - For each verb, extract only arguments that are explicitly mentioned in the paragraph.
+            - Do NOT infer or assume missing arguments.
+            - Do NOT merge multiple different entities into one argument; plurals are allowed if explicitly stated in the text.
+            - If a verb has no explicit arguments, return an empty list of arguments.
+            - Preserve the original order of verbs.
+            - If an argument is a pronoun, replace it with the most recent explicit entity it refers to.
+            - Do NOT add explanations or extra text.
+                             
+            Return the result STRICTLY as a JSON array, where each item has the form:
+            {
+                "verb": "<verb>",
+                "arguments": ["arg1", "arg2", ...]
+            }
+
+            NL: $nl
+            
+            Verbs: $verbs
             """),
-        "parameters": ["nl"]
+        "parameters": ["nl", "verbs"]
     },
-    # - Stative verbs that describe states, conditions, or mental states (e.g., "know", "believe", "love", "own").
-    # - Modal verbs that express necessity, possibility, permission, or ability (e.g., "can", "must", "should", "might").
-    # - Auxiliary verbs used to form tenses, moods, or voices (e.g., "is", "are", "was", "were", "have", "do").
-    # - Reporting verbs that indicate speech or communication without describing the content (e.g., "say", "tell", "ask", "reply").
-    # - Linking verbs that connect the subject to a subject complement (e.g., "seem", "become", "appear").
-    # - Aspectual or phase verbs that mark the temporal stage of another event rather than a distinct action (e.g., start by doing, begin to do, continue doing...).
-    # - Any verbs that do not correspond to a physical action or event that can be observed or measured.
+
+    "nl2p_3_verb_args": {
+        "template": Template("""
+            You are given:
+            (1) a natural language paragraph describing a sequence of actions
+            (2) a list of action verbs extracted from the paragraph
+            (3) a list of argument candidates extracted from the paragraph
+
+            Your task is to assign arguments to each verb.
+
+            Rules:
+            - Use ONLY the verbs provided in the list.
+            - For each verb, select zero or more arguments ONLY from the provided argument candidates.
+            - Do NOT merge multiple candidates into one argument.
+            - Preserve the order of verbs as given.
+            - If a verb has no explicit arguments, return an empty list of arguments.
+            - Do NOT infer or assume missing arguments.
+            - Do NOT add explanations or extra text.
+
+            Return the result STRICTLY as a JSON array, where each item has the form:
+            {
+                "verb": "<verb>",
+                "arguments": ["arg1", "arg2", ...]
+            }
+
+            NL: $nl
+            
+            Verbs: $verbs
+                             
+            Arguments: $args
+            """),
+        "parameters": ["nl", "verbs", "args"]
+    },
+
+    
+    
     "remove_non_eventive_verbs": {
         "template": Template("""
             Given a list of verbs or verb phrases extracted from the following natural language plan description, identify and REMOVE non-eventive verbs that do NOT describe concrete, observable actions or events.

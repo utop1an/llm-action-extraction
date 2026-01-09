@@ -1,13 +1,11 @@
 
 from collections import defaultdict
 import csv
-import json
 import os, sys
-from utils import load_pkl
-from solvers.gpt3_to_plan import GPT3ToPlan
-from solvers.nl2p import NL2P
-from solvers.ceasdrl import cEASDRL
-from solvers.naruto import Naruto
+
+from tqdm import tqdm
+from src.utils import load_pkl
+
 import spacy
 
 nlp = spacy.load("en_core_web_sm")
@@ -114,39 +112,72 @@ def match(act, pred, words):
     obj_precision, obj_recall, obj_f1 = match_objs(act_obj_names, pred_obj_names)
     return True, obj_precision, obj_recall, obj_f1
 
+def get_total_truth(acts):
+    total_truth = 0
+    counted = set()
+    for act in acts:
+        if (act['act_type'] == 1) or (act['act_type'] == 2):
+            total_truth += 1
+        else:
+            act_idx = act['act_idx']
+            related_act_indices = act['related_acts']
+            all_indices = set(related_act_indices + [act_idx])
+            if all_indices.isdisjoint(counted):
+                total_truth += 1
+                counted.update(all_indices)
+    return total_truth
+
 def evaluation(preds):
     precisions, recalls, f1s = [],[],[]
     obj_precisions, obj_recalls, obj_f1s = [],[],[]
-    for i, item in enumerate(preds):
-        common = 0
-
+    for i, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
+        
         words = item['words']
         acts = item['acts']
         pred = item['pred']
+
+        total_right = 0
+        total_truth = 0
+        counted_exclusive_acts = set()
+
         if not pred:
             print(f"No predictions found for item {i}.")
             continue
         pred_pointer = 0
-        for act_idx in range(len(acts)):
+        for act in acts:
             matched = False
+
+            act_type = act['act_type']
+            if act_type == 1:
+                total_truth += 1
+            elif act_type == 3:
+                act_idx = act['act_idx']
+                related_act_indices = act['related_acts']
+                all_indices = set(related_act_indices + [act_idx])
+                if all_indices.isdisjoint(counted_exclusive_acts):
+                    total_truth += 1
+                    counted_exclusive_acts.update(all_indices)
             
-            for pred_idx in range(pred_pointer, len(pred)):
-                matched, obj_precision, obj_recall, obj_f1 = match(acts[act_idx], pred[pred_idx], words)
+            
+            for pred_act_idx in range(pred_pointer, len(pred)):
+                matched, obj_precision, obj_recall, obj_f1 = match(act, pred[pred_act_idx], words)
+
+
                 if matched:
+                    if act_type == 2:
+                        total_truth += 1
                     obj_precisions.append(obj_precision)
                     obj_recalls.append(obj_recall)
                     obj_f1s.append(obj_f1)
-                    common += 1
-                    pred_pointer = pred_idx + 1
+                    total_right += 1
+                    pred_pointer = pred_act_idx + 1
                     break
 
-        tp = common
-        fp = len(pred) - common
-        fn = len(acts) - common
+        total_tagged = len(pred)
 
-        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        precision = total_right / total_tagged if total_tagged > 0 else 0
         precisions.append(precision)
-        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        recall = total_right / total_truth if total_truth > 0 else 0
         recalls.append(recall)
         f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
         f1s.append(f1)
@@ -168,6 +199,7 @@ def run_evaluation(predicates):
     results = {}
     for names, raw_res in predicates.items():
         ds_name, solver_name, model_name = names
+        print(f"Evaluating {ds_name} with solver {solver_name} and model {model_name}")
         tp, fp, fn, precision, recall, f1 = evaluation(raw_res)
         results[(ds_name, solver_name, model_name)] = (tp, fp, fn, precision, recall, f1)
     return results

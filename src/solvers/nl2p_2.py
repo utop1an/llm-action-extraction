@@ -4,7 +4,7 @@ import json
 import re
 import os
 
-class VerbArgs(Solver):
+class NL2P_2(Solver):
 
     def __init__(self, model_name):
         self.model_name = model_name
@@ -13,13 +13,14 @@ class VerbArgs(Solver):
         log_dir = './logs'
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
-        log_file_name = os.path.join(log_dir, 'verb_args_%s.jsonl' % step)
+        log_file_name = os.path.join(log_dir, 'nl2p_2_%s.jsonl' % step)
         with open(log_file_name, 'a', encoding='utf-8') as f:
             f.write(json.dumps(result) + '\n')
         
 
     def solve(self, paragraph, ds_name=""):
-        verb_args = self.get_verb_args(paragraph)
+        verbs = self.get_verbs(paragraph)
+        verb_args = self.get_verb_args(paragraph, verbs)
         return verb_args
 
     def parse_json(self, string):
@@ -32,10 +33,17 @@ class VerbArgs(Solver):
             print("JSONDecodeError:", e)
             return None
 
-    def get_verb_args(self, paragraph):
-        prompt = generate_prompt('verb_args', {'nl': paragraph})
+    def get_verbs(self, paragraph):
+        prompt = generate_prompt('verbs', {'nl': paragraph})
         response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
         obj = self.parse_json(response)
         self.log('verb_args', json.dumps(obj))
+        return obj
+    
+    def get_verb_args(self, paragraph, verbs):
+        prompt = generate_prompt('nl2p_2_verb_args', {'nl': paragraph, 'verbs': json.dumps(verbs)})
+        response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
+        obj = self.parse_json(response)
+        self.log('get_verb_args', json.dumps(obj))
         return obj
     

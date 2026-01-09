@@ -2,7 +2,7 @@
 import json
 import re
 from .solver import Solver
-from llm import generate_prompt, generate_responses
+from src.llm import generate_prompt, generate_responses
 
 class GPT3ToPlan(Solver):
 

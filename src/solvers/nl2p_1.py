@@ -1,5 +1,5 @@
 from .solver import Solver
-from llm import generate_prompt, generate_responses
+from src.llm import generate_prompt, generate_responses
 import json
 import re
 import os
