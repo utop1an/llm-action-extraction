@@ -55,7 +55,14 @@ for SOLVER in nl2p_1 gp3_to_plan; do
 
     echo "Completed task solver: $SOLVER, model: $MODEL"
 
-    singularity 
+    singularity exec -B ~/llm-action-extraction/src/:/src \
+        -B ~/llm-action-extraction/data/:/data \
+        -B ~/llm-action-extraction/logs:/logs \
+        -B ~/llm-action-extraction/results/:/results \
+        $SIF python3 /src/evaluation.py \
+        -d results/$SOLVER/$MODEL/ \
+
+    echo "Completed task solver: $SOLVER, model: $MODEL"
 
     sacct -j $SLURM_JOB_ID --format=JobID,JobName,MaxRSS,MaxVMSize,State,Elapsed >> $SOLVER_$MODEL_$SLURM_JOB_ID.log
 done
