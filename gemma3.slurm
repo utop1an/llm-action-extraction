@@ -2,9 +2,8 @@
 #SBATCH --job-name=act-extraction
 #SBATCH --mail-type=END
 #SBATCH --mail-user=u6797221@anu.edu.au
-#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:a100:1
 #SBATCH --mem=32G
 #SBATCH --time=12:00:00
 #SBATCH --partition=gpu
