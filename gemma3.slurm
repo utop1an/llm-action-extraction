@@ -54,12 +54,6 @@ for SOLVER in nl2p_1 gp3_to_plan; do
             -s "$SOLVER" \
             -m "$MODEL"
 
-    singularity exec --nv \
-        -B "$BASE:/work" \
-        "$SIF" \
-        python3 evaluation.py \
-        -d "results/$SOLVER/$MODEL/"
-
     sacct -j "$SLURM_JOB_ID" \
       --format=JobID,JobName,MaxRSS,MaxVMSize,State,Elapsed \
       >> "${SOLVER}_${MODEL}_${SLURM_JOB_ID}.log"

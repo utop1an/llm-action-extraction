@@ -58,7 +58,11 @@ MODELS = {
     "gemma3": {
         "provider": "ollama",
         "model_name": "gemma3",
-    }
+    },
+    "gemma3:12b": {
+        "provider": "ollama",
+        "model_name": "gemma3:12b",
+    },
 }
 
 # Evaluation metrics configuration

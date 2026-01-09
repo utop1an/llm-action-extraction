@@ -77,8 +77,10 @@ def match_objs(act_obj_names, pred_obj_names):
 
     obj_true = len(es_obj_names)
     obj_tagged = len(pred_obj_names)
+    if obj_tagged == 0:
+        return 0, obj_true, obj_tagged
 
-    while gt_pointer < len(act_obj_names):
+    while gt_pointer < len(es_obj_names):
         matched = False
         while pred_pointer < len(pred_obj_names):
             matched = match_obj(es_obj_names[gt_pointer], pred_obj_names[pred_pointer])
@@ -89,11 +91,18 @@ def match_objs(act_obj_names, pred_obj_names):
                 break
             else:
                 if (len(ex_obj_names)>0):
-                    matched = match_obj(ex_obj_names[gt_pointer], pred_obj_names[pred_pointer])
-                    obj_right += 1
-                    gt_pointer += 1
-                    pred_pointer += 1
-                    break
+                    ex_matched = False
+                    for ex_obj in ex_obj_names:
+                        ex_matched = match_obj(ex_obj, pred_obj_names[pred_pointer])
+                        if ex_matched:
+                            obj_right += 1
+                            gt_pointer += 1
+                            pred_pointer += 1
+                            break
+                    if ex_matched:
+                        break
+                    else:
+                        pred_pointer += 1
                 else:
                     pred_pointer += 1
         if not matched:
@@ -106,7 +115,9 @@ def match(act, pred, words):
     act_idx = act['act_idx']
     act_name = words[act_idx]
     
-    pred_act_name = pred['verb']
+    pred_act_name = pred.get('verb', None)
+    if pred_act_name is None:
+        return False, 0, 0, 0
     
     act_lemma = nlp(act_name)[0].lemma_.lower()
     doc2 = nlp(pred_act_name)
@@ -115,8 +126,8 @@ def match(act, pred, words):
         return False, 0, 0, 0
     
     
-    act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]] , [words[ind] for ind in act['obj_idxs'][1]]]
-    pred_obj_names = pred['arguments']
+    act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]], [words[ind] for ind in act['obj_idxs'][1]]]
+    pred_obj_names = pred.get('arguments', [])
 
     obj_right, obj_true, obj_tagged = match_objs(act_obj_names, pred_obj_names)
     return True, obj_right, obj_true, obj_tagged
@@ -194,8 +205,8 @@ def run_evaluation(predicates):
     for names, raw_res in predicates.items():
         ds_name, solver_name, model_name = names
         print(f"Evaluating {ds_name} with solver {solver_name} and model {model_name}")
-        tp, fp, fn, precision, recall, f1 = evaluation(raw_res)
-        results[(ds_name, solver_name, model_name)] = (tp, fp, fn, precision, recall, f1)
+        precision, recall, f1, obj_precision, obj_recall, obj_f1 = evaluation(raw_res)
+        results[(ds_name, solver_name, model_name)] = (precision, recall, f1, obj_precision, obj_recall, obj_f1)
     return results
 
 
