@@ -1,69 +1,75 @@
 #! /bin/bash
 #SBATCH --job-name=act-extraction
-#SBATCH --mail-type=END          # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=u6797221@anu.edu.au     # Where to send mail
+#SBATCH --mail-type=END
+#SBATCH --mail-user=u6797221@anu.edu.au
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
-#SBATCH --mem=48G
+#SBATCH --mem=32G
 #SBATCH --time=12:00:00
 #SBATCH --partition=gpu
 #SBATCH --output=%j_act-extraction.log
-# Standard output and error log
+
 set -euo pipefail
 
 pwd; hostname; date
 echo "--- running ---"
 
-MODEL_DIR=~/ollama_models
-SIF=~/ollama.sif
-MODEL=gemma3
+BASE=$HOME/llm-action-extraction
+MODEL_DIR=$HOME/ollama_models
+SIF=$HOME/ollama.sif
+MODEL="gemma3:4b"
 
 mkdir -p "$MODEL_DIR"
 
-# 1. Start Ollama server (background, SAME JOB)
+# 1. Start Ollama
 singularity exec --nv \
-  -B $MODEL_DIR:/ollama \
-  $SIF \
+  -B "$MODEL_DIR:/ollama" \
+  "$SIF" \
   ollama serve &
 
 OLLAMA_PID=$!
 trap "kill $OLLAMA_PID 2>/dev/null || true" EXIT
 
-# 2. Wait for server to be ready
+# 2. Wait for Ollama
 echo "Waiting for Ollama..."
 until curl -s http://127.0.0.1:11434/api/tags >/dev/null; do
     sleep 2
 done
 
-# 3. Pull Gemma 3 (cached after first run)
+# 3. Pull model (cached after first run)
 singularity exec \
-  -B $MODEL_DIR:/ollama \
-  $SIF \
-  ollama pull $MODEL
+  -B "$MODEL_DIR:/ollama" \
+  "$SIF" \
+  ollama pull "$MODEL"
 
 # 4. Run experiments
 for SOLVER in nl2p_1 gp3_to_plan; do
-    echo "Running task solver: $solver"
-    singularity exec -B ~/llm-action-extraction/src/:/src \
-        -B ~/llm-action-extraction/data/:/data \
-        -B ~/llm-action-extraction/logs:/logs \
-        -B ~/llm-action-extraction/results/:/results \
-        $SIF python3 /src/experiment.py \
-        -s $SOLVER -m $MODEL
+    echo "Running solver: $SOLVER"
 
-    echo "Completed task solver: $SOLVER, model: $MODEL"
+    singularity exec \
+        -B "$BASE/src:/src" \
+        -B "$BASE/data:/data" \
+        -B "$BASE/logs:/logs" \
+        -B "$BASE/results:/results" \
+        "$SIF" \
+        python3 /src/experiment.py \
+        -s "$SOLVER" -m "$MODEL"
 
-    singularity exec -B ~/llm-action-extraction/src/:/src \
-        -B ~/llm-action-extraction/data/:/data \
-        -B ~/llm-action-extraction/logs:/logs \
-        -B ~/llm-action-extraction/results/:/results \
-        $SIF python3 /src/evaluation.py \
-        -d results/$SOLVER/$MODEL/ \
+    singularity exec \
+        -B "$BASE/src:/src" \
+        -B "$BASE/data:/data" \
+        -B "$BASE/logs:/logs" \
+        -B "$BASE/results:/results" \
+        "$SIF" \
+        python3 /src/evaluation.py \
+        -d "results/$SOLVER/$MODEL/"
 
-    echo "Completed task solver: $SOLVER, model: $MODEL"
+    sacct -j "$SLURM_JOB_ID" \
+      --format=JobID,JobName,MaxRSS,MaxVMSize,State,Elapsed \
+      >> "${SOLVER}_${MODEL}_${SLURM_JOB_ID}.log"
 
-    sacct -j $SLURM_JOB_ID --format=JobID,JobName,MaxRSS,MaxVMSize,State,Elapsed >> $SOLVER_$MODEL_$SLURM_JOB_ID.log
+    echo "Completed solver: $SOLVER"
 done
 
 echo "--- done ---"
