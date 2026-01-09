@@ -18,7 +18,7 @@ echo "--- running ---"
 BASE=$HOME/llm-action-extraction
 MODEL_DIR=$HOME/ollama_models
 SIF=$HOME/ollama.sif
-MODEL="gemma3:4b"
+MODEL="gemma3"
 
 mkdir -p "$MODEL_DIR"
 
