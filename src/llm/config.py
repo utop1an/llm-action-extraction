@@ -14,6 +14,24 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL")
     },
+    "gpt-4.1": {
+        "provider": "openai",
+        "model_name": "gpt-4.1",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
+    },
+    "gpt-4.1-mini": {
+        "provider": "openai",
+        "model_name": "gpt-4.1-mini",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
+    },
+    "gpt-4.1-nano": {
+        "provider": "openai",
+        "model_name": "gpt-4.1-nano",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
+    },
     "gpt-5": {
         "provider": "openai",
         "model_name": "gpt-5",
@@ -26,7 +44,12 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL")
     },
-    
+    "gpt-5-nano": {
+        "provider": "openai",
+        "model_name": "gpt-5-nano",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
+    },
     "gpt-4o-mini": {
         "provider": "openai",
         "model_name": "gpt-4o-mini",
@@ -63,6 +86,10 @@ MODELS = {
         "provider": "ollama",
         "model_name": "gemma3:12b",
     },
+    "llama3.2": {
+        "provider": "ollama",
+        "model_name": "llama3.2",
+    }
 }
 
 # Evaluation metrics configuration
