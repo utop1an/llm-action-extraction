@@ -68,30 +68,39 @@ def match_obj(gt_name, pred_name):
     return gt_lemma in pred_lemma
 
 def match_objs(act_obj_names, pred_obj_names):
-    common = 0
+    obj_right  = 0
     gt_pointer = 0
     pred_pointer = 0
+
+    es_obj_names = act_obj_names[0]
+    ex_obj_names = act_obj_names[1]
+
+    obj_true = len(es_obj_names)
+    obj_tagged = len(pred_obj_names)
+
     while gt_pointer < len(act_obj_names):
         matched = False
         while pred_pointer < len(pred_obj_names):
-            matched = match_obj(act_obj_names[gt_pointer], pred_obj_names[pred_pointer])
+            matched = match_obj(es_obj_names[gt_pointer], pred_obj_names[pred_pointer])
             if matched:
-                common += 1
+                obj_right += 1
                 gt_pointer += 1
                 pred_pointer += 1
                 break
             else:
-                pred_pointer += 1
+                if (len(ex_obj_names)>0):
+                    matched = match_obj(ex_obj_names[gt_pointer], pred_obj_names[pred_pointer])
+                    obj_right += 1
+                    gt_pointer += 1
+                    pred_pointer += 1
+                    break
+                else:
+                    pred_pointer += 1
         if not matched:
             gt_pointer += 1
-    tp = common
-    fp = len(pred_obj_names) - common
-    fn = len(act_obj_names) - common
 
-    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
-    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
-    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-    return precision, recall, f1
+
+    return obj_right, obj_true, obj_tagged
 
 def match(act, pred, words):
     act_idx = act['act_idx']
@@ -103,41 +112,30 @@ def match(act, pred, words):
     doc2 = nlp(pred_act_name)
     pred_act_lemma = " ".join([token.lemma_.lower() for token in doc2])
     if not act_lemma in pred_act_lemma:
-        return False, None, None, None
+        return False, 0, 0, 0
     
     
-    act_obj_names = [words[ind] for ind in act['obj_idxs'][0]]
+    act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]] , [words[ind] for ind in act['obj_idxs'][1]]]
     pred_obj_names = pred['arguments']
 
-    obj_precision, obj_recall, obj_f1 = match_objs(act_obj_names, pred_obj_names)
-    return True, obj_precision, obj_recall, obj_f1
+    obj_right, obj_true, obj_tagged = match_objs(act_obj_names, pred_obj_names)
+    return True, obj_right, obj_true, obj_tagged
 
-def get_total_truth(acts):
-    total_truth = 0
-    counted = set()
-    for act in acts:
-        if (act['act_type'] == 1) or (act['act_type'] == 2):
-            total_truth += 1
-        else:
-            act_idx = act['act_idx']
-            related_act_indices = act['related_acts']
-            all_indices = set(related_act_indices + [act_idx])
-            if all_indices.isdisjoint(counted):
-                total_truth += 1
-                counted.update(all_indices)
-    return total_truth
+
 
 def evaluation(preds):
-    precisions, recalls, f1s = [],[],[]
-    obj_precisions, obj_recalls, obj_f1s = [],[],[]
+    
+
+    total_right = total_truth = total_tagged = 0
+    obj_total_right = obj_total_truth = obj_total_tagged = 0
+
     for i, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
         
         words = item['words']
         acts = item['acts']
         pred = item['pred']
 
-        total_right = 0
-        total_truth = 0
+        
         counted_exclusive_acts = set()
 
         if not pred:
@@ -160,40 +158,36 @@ def evaluation(preds):
             
             
             for pred_act_idx in range(pred_pointer, len(pred)):
-                matched, obj_precision, obj_recall, obj_f1 = match(act, pred[pred_act_idx], words)
+                matched, obj_right, obj_true, obj_tagged = match(act, pred[pred_act_idx], words)
 
 
                 if matched:
                     if act_type == 2:
                         total_truth += 1
-                    obj_precisions.append(obj_precision)
-                    obj_recalls.append(obj_recall)
-                    obj_f1s.append(obj_f1)
                     total_right += 1
                     pred_pointer = pred_act_idx + 1
+                    
+                    obj_total_tagged += obj_tagged
+                    obj_total_truth += obj_true
+                    obj_total_truth += obj_right
+                    
                     break
 
-        total_tagged = len(pred)
+        total_tagged += len(pred)
 
-        precision = total_right / total_tagged if total_tagged > 0 else 0
-        precisions.append(precision)
-        recall = total_right / total_truth if total_truth > 0 else 0
-        recalls.append(recall)
-        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-        f1s.append(f1)
+    precision = total_right / total_tagged if total_tagged > 0 else 0
+    recall = total_right / total_truth if total_truth > 0 else 0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
     
-    avg_precision = sum(precisions) / len(precisions) if len(precisions) > 0 else 0
-    avg_recall = sum(recalls) / len(recalls) if len(recalls) > 0 else 0
-    avg_f1 = sum(f1s) / len(f1s) if len(f1s) > 0 else 0
-
-    avg_obj_precision = sum(obj_precisions) / len(obj_precisions) if len(obj_precisions) > 0 else 0
-    avg_obj_recall = sum(obj_recalls) / len(obj_recalls) if len(obj_recalls) > 0 else 0
-    avg_obj_f1 = sum(obj_f1s) / len(obj_f1s) if len(obj_f1s) > 0 else 0
+    obj_precision = obj_total_right / obj_total_tagged if obj_total_tagged > 0 else 0
+    obj_recall = obj_total_right / obj_total_truth if obj_total_truth > 0 else 0
+    obj_f1 = 2 * obj_precision * obj_recall / (obj_precision + obj_recall) if (obj_precision + obj_recall) > 0 else 0
+    
 
     if (precision == 0 or recall == 0):
         print("warning: zero precision or recall")
 
-    return avg_precision, avg_recall, avg_f1, avg_obj_precision, avg_obj_recall, avg_obj_f1
+    return precision, recall, f1, obj_precision, obj_recall, obj_f1
 
 def run_evaluation(predicates):
     results = {}

@@ -44,3 +44,10 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# logs
+logs/
+*.log
+
+# temporary files
+/results/archive/
+

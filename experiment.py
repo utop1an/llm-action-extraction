@@ -50,8 +50,8 @@ def run_experiment(dataset, solver, ds_name=""):
     return results
 
 def write_results(ds_name, solver_name, results, model_name=""):
-    if not os.path.exists("./results/%s" % solver_name):
-        os.makedirs("./results/%s" % solver_name)
+    if not os.path.exists("./results/%s/%s" % (solver_name, model_name)):
+        os.makedirs("./results/%s/%s" % (solver_name, model_name))
     outpath = os.path.join('./results/%s' % solver_name, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
     with open(outpath, 'w') as f:
         json.dump(results, f, indent=4)
@@ -89,7 +89,7 @@ def main(args):
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in datasets.items()}
 
     # Define models
-    models = ['gpt-4o-mini', 'gpt-5-mini']
+    models = ['gpt-4o-mini', 'gpt-5-mini', 'gpt-5-nano', "gemma3"]
     if args.m and args.m not in models:
         print('Model %s not found!' % args.m)
         sys.exit(1)

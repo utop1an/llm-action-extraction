@@ -25,7 +25,7 @@ class OllamaClient(BaseLLMClient):
         self.async_client = AsyncClient(host='http://localhost:11434')
         
 
-    async def generate_async(self, prompt: str) -> Dict[str, Any]:
+    async def generate_async(self, prompt: str, temperature: float = 0) -> Dict[str, Any]:
         start_time = time.time()
         try:
             response = await self.async_client.chat(
@@ -35,7 +35,7 @@ class OllamaClient(BaseLLMClient):
                     "content": prompt
                 }],
                 options= {
-                    "temperature": self.config.get("temperature", 0.7)
+                    "temperature": self.config.get("temperature", 0)
                 }
             )
 
@@ -50,7 +50,7 @@ class OllamaClient(BaseLLMClient):
         except Exception as e:
             raise RuntimeError(f"Ollama API call failed: {str(e)}")
 
-    def generate(self, prompt: str) -> Dict[str, Any]:
+    def generate(self, prompt: str, temperature: float = 0) -> Dict[str, Any]:
         start_time = time.time()
         try:
             response = self.client.chat(
@@ -60,7 +60,7 @@ class OllamaClient(BaseLLMClient):
                     "content": prompt
                 }],
                 options= {
-                    "temperature": self.config.get("temperature", 0.7)
+                    "temperature": self.config.get("temperature", 0)
                 }
             )
 

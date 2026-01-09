@@ -54,6 +54,10 @@ MODELS = {
     "ds-r1:8b": {
         "provider": "ollama",
         "model_name": "deepseek-r1:8b",
+    },
+    "gemma3": {
+        "provider": "ollama",
+        "model_name": "gemma3",
     }
 }
 
@@ -176,17 +180,16 @@ PROMPTS = {
             
             Definition:
             - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
-            - A trigger verb is the verb or verb phrase that directly describes an action which changes the state of an entity.
+            - A trigger verb is the verb or verb phrase that directly denotes an executable, state-changing action. 
             - Arguments are entities associated with the action.
                                
             Rules:
-            - Extract a verb ONLY if it by itself describes a state-changing action.
-            - If a verb only introduces, permits, checks, or describes another action, and another verb describes the actual state change, extract ONLY that second verb.
             - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
+            - Verbs that are non-eventive (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) should be excluded when they only frame or modify another action.
             - Maintain the order of verbs and arguments as they appear in the text.
             - If an action has no arguments, return an empty list for "arguments".
-            - Use the exact wording from the text for all arguments unless the argument is a pronoun; if it is a pronoun, replace it with the most recent explicit noun or noun phrase it refers to in the text.
-            - Do NOT merge multiple different entities into one argument; plurals are allowed if explicitly stated in the text.
+            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
             - Do NOT add explanations or extra text.
             
             Return the result in STRICTLY a JSON array; each action item: 
