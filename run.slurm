@@ -1,14 +1,13 @@
 #! /bin/bash
 #SBATCH --job-name=act-extraction
-#SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-type=END          # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=u6797221@anu.edu.au     # Where to send mail
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
 #SBATCH --mem=48G
-#SBATCH --time=24:00:00
-#SBATCH --partition=normal
-#SBATCH --qos=normal
+#SBATCH --time=12:00:00
+#SBATCH --partition=gpu
 #SBATCH --output=%j_act-extraction.log
 # Standard output and error log
 set -euo pipefail
