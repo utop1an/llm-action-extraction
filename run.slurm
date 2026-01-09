@@ -53,7 +53,7 @@ for SOLVER in nl2p_1 gp3_to_plan; do
         -B "$BASE/logs:/logs" \
         -B "$BASE/results:/results" \
         "$SIF" \
-        python3 /src/experiment.py \
+        python3 /experiment.py \
         -s "$SOLVER" -m "$MODEL"
 
     singularity exec \
@@ -62,7 +62,7 @@ for SOLVER in nl2p_1 gp3_to_plan; do
         -B "$BASE/logs:/logs" \
         -B "$BASE/results:/results" \
         "$SIF" \
-        python3 /src/evaluation.py \
+        python3 /evaluation.py \
         -d "results/$SOLVER/$MODEL/"
 
     sacct -j "$SLURM_JOB_ID" \
