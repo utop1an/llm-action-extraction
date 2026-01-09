@@ -47,22 +47,17 @@ singularity exec \
 for SOLVER in nl2p_1 gp3_to_plan; do
     echo "Running solver: $SOLVER"
 
-    singularity exec \
-        -B "$BASE/src:/src" \
-        -B "$BASE/data:/data" \
-        -B "$BASE/logs:/logs" \
-        -B "$BASE/results:/results" \
+    singularity exec --nv \
+        -B "$BASE:/work" \
         "$SIF" \
-        python3 /experiment.py \
-        -s "$SOLVER" -m "$MODEL"
+        python3 -u /work/experiment.py \
+            -s "$SOLVER" \
+            -m "$MODEL"
 
-    singularity exec \
-        -B "$BASE/src:/src" \
-        -B "$BASE/data:/data" \
-        -B "$BASE/logs:/logs" \
-        -B "$BASE/results:/results" \
+    singularity exec --nv \
+        -B "$BASE:/work" \
         "$SIF" \
-        python3 /evaluation.py \
+        python3 evaluation.py \
         -d "results/$SOLVER/$MODEL/"
 
     sacct -j "$SLURM_JOB_ID" \
