@@ -52,7 +52,7 @@ def run_experiment(dataset, solver, ds_name=""):
 def write_results(ds_name, solver_name, results, model_name=""):
     if not os.path.exists("./results/%s/%s" % (solver_name, model_name)):
         os.makedirs("./results/%s/%s" % (solver_name, model_name))
-    outpath = os.path.join('./results/%s' % solver_name, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
+    outpath = os.path.join('./results/%s/%s' % (solver_name, model_name), ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
     with open(outpath, 'w') as f:
         json.dump(results, f, indent=4)
     print('Results written to %s' % outpath)
