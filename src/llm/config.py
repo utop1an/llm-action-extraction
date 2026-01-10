@@ -50,6 +50,12 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL")
     },
+    "gpt-4o": {
+        "provider": "openai",
+        "model_name": "gpt-4o",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL")
+    },
     "gpt-4o-mini": {
         "provider": "openai",
         "model_name": "gpt-4o-mini",
