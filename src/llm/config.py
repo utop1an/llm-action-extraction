@@ -212,12 +212,13 @@ PROMPTS = {
             Definition:
             - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
             - A trigger verb is the verb or verb phrase that directly denotes an executable, state-changing action. 
-            - Arguments are entities associated with the action.
+            - Arguments are noun phrases denoting entities whose state is directly affectedby executing the action.
                                
             Rules:
             - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
             - Verbs that are non-eventive (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) should be excluded when they only frame or modify another action.
             - Maintain the order of verbs and arguments as they appear in the text.
+            - Do NOT include agents, instruments, locations, manners, or temporal expressions unless their own state is directly changed by the action.
             - If an action has no arguments, return an empty list for "arguments".
             - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
             - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.

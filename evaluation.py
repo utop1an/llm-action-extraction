@@ -180,7 +180,7 @@ def evaluation(preds):
                     
                     obj_total_tagged += obj_tagged
                     obj_total_truth += obj_true
-                    obj_total_truth += obj_right
+                    obj_total_right += obj_right
                     
                     break
 
