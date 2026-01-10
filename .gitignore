@@ -53,3 +53,7 @@ logs/
 
 # sif
 *.sif
+
+miglani_data/
+*.csv
+!*/evaluation_result.csv
