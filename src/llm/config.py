@@ -224,7 +224,7 @@ PROMPTS = {
             - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
             - Verbs that are non-eventive (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) should be excluded when they only frame or modify another action.
             - Maintain the order of verbs and arguments as they appear in the text.
-            - Do NOT include agents, instruments, locations, manners, or temporal expressions unless their own state is directly changed by the action.
+            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
             - If an action has no arguments, return an empty list for "arguments".
             - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
             - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
@@ -232,7 +232,7 @@ PROMPTS = {
             
             Return the result in STRICTLY a JSON array; each action item: 
             {
-                "verb": "verb or verb phrase",
+                "verb": "verb",
                 "arguments": ["arg1", "arg2" ...]
             }
             - Output only the JSON array, with no explanations or extra text.
@@ -266,13 +266,13 @@ PROMPTS = {
             Your task is to extract the trigger verbs of actions.
 
             Definition:
-            - A trigger verb is the verb or verb phrase that directly describes an action which changes the state of an entity.
+            - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
+            - A trigger verb is the verb or verb phrase that directly denotes an executable, state-changing action. 
 
             Constraints:
-            - Extract a verb ONLY if it by itself describes a state-changing action.
-            - If a verb only introduces, permits, checks, or describes another action, and another verb describes the actual state change, extract ONLY that second verb.
             - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
-            - Preserve the order in which trigger verbs appear.
+            - Verbs that are non-eventive (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) should be excluded when they only frame or modify another action.
+            - Maintain the order of verbs and arguments as they appear in the text.
             - If no trigger verbs are present, return an empty list.
             - Do NOT add explanations or extra text.
 
@@ -288,16 +288,16 @@ PROMPTS = {
         "template": Template("""
             You are given a natural language paragraph describing a sequence of actions.
 
-            Your task is to extract all candidate arguments from the paragraph.
+            Your task is to extract all candidate arguments of actions from the paragraph.
 
             Definition:
-            - A candidate argument is any noun or noun phrase that denotes an entity, object, location, time, resource, or participant mentioned in the paragraph.
+            - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
+            - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
 
             Rules:
-            - Extract noun phrases exactly as they appear in the paragraph.
-            - Resolve pronouns to their most recent explicit entities.
-            - Do NOT merge multiple noun phrases into one argument.
-            - Do NOT invent or infer entities not explicitly mentioned.
+            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
             - Preserve the order in which the noun phrases appear in the paragraph.
             - If no candidate arguments are present, return an empty list.
             - Do NOT add explanations or extra text.
@@ -317,20 +317,22 @@ PROMPTS = {
             (2) a list of action verbs extracted from the paragraph
 
             Your task is to assign arguments to each verb.
+            
+            Definition:
+                - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
 
             Rules:
             - Use ONLY the verbs provided in the list.
-            - For each verb, extract only arguments that are explicitly mentioned in the paragraph.
-            - Do NOT infer or assume missing arguments.
-            - Do NOT merge multiple different entities into one argument; plurals are allowed if explicitly stated in the text.
+            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
+            - Maintain the order of verbs and arguments as they appear in the text.             
             - If a verb has no explicit arguments, return an empty list of arguments.
-            - Preserve the original order of verbs.
-            - If an argument is a pronoun, replace it with the most recent explicit entity it refers to.
             - Do NOT add explanations or extra text.
                              
             Return the result STRICTLY as a JSON array, where each item has the form:
             {
-                "verb": "<verb>",
+                "verb": "verb",
                 "arguments": ["arg1", "arg2", ...]
             }
 
@@ -351,17 +353,19 @@ PROMPTS = {
             Your task is to assign arguments to each verb.
 
             Rules:
-            - Use ONLY the verbs provided in the list.
-            - For each verb, select zero or more arguments ONLY from the provided argument candidates.
+            - Use ONLY the verbs and arguments provided in the list.
+            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
             - Do NOT merge multiple candidates into one argument.
-            - Preserve the order of verbs as given.
+            - Maintain the order of verbs and arguments as they appear in the text.             
             - If a verb has no explicit arguments, return an empty list of arguments.
             - Do NOT infer or assume missing arguments.
             - Do NOT add explanations or extra text.
 
             Return the result STRICTLY as a JSON array, where each item has the form:
             {
-                "verb": "<verb>",
+                "verb": "verb",
                 "arguments": ["arg1", "arg2", ...]
             }
 
