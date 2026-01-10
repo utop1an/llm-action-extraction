@@ -1,0 +1,1365 @@
+[
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Chili Cornbread Pie Recipe**\n\n1. MAKE(chili,cornbread pie)\n2. Cook(ground beef,chopped onion,green pepper)\n3. Drain(fat)\n4. Add(tomato sauce,tomato paste,undrained beans,chili powder,hot pepper sauce,cumin)\n5. Stir(mixture)\n6. Bring(mixture) to boiling\n7. Reduce(heat)\n8. Let(simmer)\n9. Get(pie plate)\n10. Lightly(grease)\n11. Separate(corn bread twists)\n12. Arrange(twists)\n13. Ensure(twists)\n14. Using(spoon)\n15. Scoop(beef mixture)\n16. Mix(sour cream,flour)\n17. Spread(mixture)\n18. Sprinkle(chips,cheese)\n19. Set(oven)\n20. Bake\n21. Let(baked dish) stand\n22. Serve(garnish with green pepper)\n\nNote that some of the actions may be implicit or implied by other actions (e.g., \"Cook\" is implied by \"Add\", \"Drain\", etc.).",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(chocolate,raspberry,cream pie)\n2. GATHER(ingredients)\n3. PROCESS(cookies)\n4. BLEND(cookies,butter,chocolate,sugar)\n5. MIX(crumb,mixture)\n6. CHILL(mixture)\n7. WHISK(filling)\n8. ADD(raspberries,filling)\n9. PRESS(down,raspberries)\n10. STIR(slightly)\n11. POUR(filling,crumb)\n12. COOL(refrigerator)\n13. ADD(remaining raspberries)\n14. SERVE\n\nNote that some of these actions may be implied or part of a larger action (e.g., \"CHILL(mixture)\" implies \"LEAVE(in refrigerator)\"), but I've tried to break them down into distinct actions as they appear in the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the actions in the three texts:\n\n**Hash Brown Casserole**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, and cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, and cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, and cheese with hash browns\n6. Spray slow cooker\n7. coat butter on slow cooker\n8. Pour mixture into slow cooker\n9. put cover on slow cooker\n10. Turn slow cooker to high\n11. leave slow cooker for 1-1.5 hours\n12. turn heat to low\n13. leave slow cooker for 2.5 hours longer\n14. Turn off slow cooker\n15. serve with scrambled eggs\n16. add vegetables (optional)\n17. use vegetables (optional)\n18. add sausage or meat (optional)\n19. cooked meat (if using)\n20. put meat in slow cooker (if using)\n21. play with recipe\n22. change recipe\n\n**Pina Colada**\n\n1. need ingredients\n2. follow steps to make drink\n3. MAKE pina colada\n4. Add ice\n5. add pineapple juice\n6. add rum\n7. add rum\n8. blend concoction\n9. increase pineapple juice or cream of coconut for sweeter drink\n10. add more rum for stronger drink\n11. add or subtract ice for thicker or thinner drink\n\n**English Country Scones**\n\n1. Preheat oven to 425F\n2. Line baking sheet with parchment paper\n3. sift baking soda, salt, cream of tartar, and flour into bowl\n4. cut butter into mixture until consistency of bread crumbs\n5. mix in sugar and milk to form soft dough\n6. knead dough gently with rolling pin\n7. flatten dough to 0.75 inches thick\n8. cut 2-inch circles from dough using glass or dough cutter\n9. place dough slices on baking sheet, leaving space between each slice\n10. brush each dough slice with milk\n11. bake for 10 minutes\n12. cool scones briefly on wire rack",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions for making an English flapjack:\n\n1. Preheat(oven)\n2. Prepare(grease,pan)\n3. Mix(butter,syrup,sugar)\n4. Add(salt)\n5. Fold(in,oats,dried fruits,fresh almonds)\n6. Pour(batter)\n7. Cook(oven)\n8. Sweeten(lemon juice,syrup)\n9. Slice(square)\n10. Add(lemon juice,mixture)\n\nNote: The actions are not explicitly stated in the text, but can be inferred from the instructions provided.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(french toast)\n2. Choose medium-sized bowl\n3. Add 2 eggs, 0.2 teaspoon of salt, half a cup of milk, and a quarter teaspoon of vanilla to the bowl\n4. Mix ingredients together\n5. Dip slices of bread in the mixture on both sides\n6. Prepare cooking pan (use butter instead of oil)\n7. Cut thin slices of butter and let them melt in the pan\n8. Put slices of bread in the pan and cook evenly on both sides\n9. Remove bread when it turns gold or light brown\n10. Let bread cool for a minute\n11. Add creamy maple syrup on top of french toast (add as much as needed)\n12. Add powdered sugar and/or fruit (optional)\n\nNote that some actions are not explicitly stated, such as \"heat the pan\" or \"stir the mixture\", but these can be inferred from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Fritos Chili Pie**\n\n1. MAKE(Fritos chili pie)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink) (Note: This action is not applicable to Fritos Chili Pie, as it's a different recipe)\n5. Fill(bowls)\n6. Grate(cheddar cheese)\n7. Dice(onion)\n8. Heat(chili)\n9. Pour(chili)\n10. Add(cheese)\n11. Stir\n12. Add(optional ingredients)\n13. SPECIAL NOTES (Note: This is not an action, but rather a special note)\n\nLet me know if you'd like me to help with anything else!",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Soften(butter)\n2. Spread(butter)\n3. Place(cheese)\n4. Put(pan)\n5. Add(butter/oil)\n6. Check(bread)\n7. Flip(sandwich)\n8. Remove(bread)\n9. Cut(sandwich)\n\nNote that some of these actions are implied or part of a larger step (e.g., \"put the frying pan on medium heat\" is an action that leads to others), but I've tried to break them down into their most basic form.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n**Recipe 1: Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Recipe 2: Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Recipe 3: Gingerbread Men Cookies**\n\n1. MAKE(cookies)\n2. making(confectioners frosting)\n3. mixing(butter,vanilla)\n4. beat(mixture)\n5. Add(milk)\n6. Switch(to high speed)\n7. Beat(mixture)\n8. sift(flour,baking soda,salt,ginger,cloves,nutmeg,cinnamon)\n9. mixing(sugar,butter)\n10. add(molasses,egg)\n11. beat(mixture)\n12. Divide(dough)\n13. Wrap(dough)\n14. Refrigerate(dough)\n15. Preheat(oven)\n16. Place(rack)\n17. Roll(out dough)\n18. Cut(out cookies)\n19. Line(baking sheets)\n20. Put(cookies)on baking sheet\n21. Bake(cookies)\n22. Take(cookies)out of oven\n23. Leave(cookies)on baking sheet\n24. Transfer(cookies)to wire rack\n25. Place(frosting)in pastry bag\n26. Decorate(gingerbread man)\n\nNote: Some actions may be implied or not explicitly stated, but I've tried to extract the most relevant and explicit actions from each recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Homemade Pizza Recipe**\n\n1. MAKE(homemade pizza)\n2. Preheat(oven)\n3. Pour(yeast)\n4. Stir(in,sugar,salt)\n5. Add(flour)\n6. Slowly(stir)\n7. Add(oil)\n8. Vigorously(stir)\n9. Check(consistency)\n10. Add(flour)\n11. Let(rise)\n12. Take(out)\n13. Knead(dough)\n14. Coat(hands)\n15. Spread(dough)\n16. Pour(sauce)\n17. Use(spreader)\n18. Add(toppings)\n19. Sprinkle(cheese)\n20. Add(herbs)\n21. Bake(oven)\n22. Take(out)\n23. Serve(immediately)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. add(something)\n29. omit(something)\n30. adding(garlic)\n31. switching(flavor)\n\n**Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Lasagna**\n\n1. making(lasagne)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink) (Note: This action is not applicable to the lasagna recipe)\n5. Heat(saucepan)\n6. Add(in meat)\n7. cook(meat)\n8. Drain(fat)\n9. add(onions,garlic,red pepper,salt,pepper)\n10. Stir(meat mixture)\n11. add(oregano,tomato paste)\n12. Cover(pot)\n13. let(simmer)\n14. Cook(lasagne noodles)\n15. Drain(noodles)\n16. separate(noodles)\n17. Set(noodles) aside\n18. Add(basil)\n19. Preheat(oven)\n20. Place(ingredients) nearby\n21. Ladle(sauce)\n22. Place(noodles)\n23. Spread(cheese)\n24. Ladle(sauce)\n25. Continue(layers)\n26. Top(with cheese)\n27. Put(tray) in oven\n28. Bake(for 40 minutes)\n\nNote that some actions may be missing from the original text, and some actions may have been incorrectly assigned to the wrong recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the actions for making each dish:\n\n**Hash Brown Casserole**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, and cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, and cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, and cheese with hash browns\n6. Spray slow cooker\n7. coat butter on slow cooker\n8. Pour mixture into slow cooker\n9. put cover on slow cooker\n10. Turn slow cooker to high for 1-1.5 hours\n11. turn heat to low for 2.5 hours longer\n12. Turn off slow cooker and serve with scrambled eggs\n13. Keep warm if needed\n\n**Pina Colada**\n\n1. need ingredients (ice, pineapple juice, rum, cream of coconut)\n2. follow steps\n3. MAKE pina colada\n4. Add ice to blender\n5. add 3-4 cups of pineapple juice\n6. add rum (at least 1-2 ounces)\n7. blend concoction to desired consistency\n8. increase pineapple juice or cream of coconut for sweeter drink\n9. add more rum for stronger drink\n10. add or subtract ice for thicker or thinner drink\n\n**Beef Stroganoff**\n\n1. MAKE beef stroganoff\n2. Melt butter (or heat olive oil) in skillet over medium heat\n3. Increase heat to high and add beef (working in batches if needed)\n4. Brown well on each side, but avoid burning\n5. Sprinkle salt and pepper on the beef\n6. take meat out of pan and set aside\n7. Add shallots or onions to same skillet and cook for 1-2 minutes\n8. Allow shallots to soak up drippings from beef\n9. Remove shallots from pan and move to bowl with beef\n10. add remaining butter (or olive oil) to skillet\n11. Add mushrooms and cook over medium-high heat for about 4 minutes, stirring occasionally\n12. Sprinkle tarragon and nutmeg onto mushrooms\n13. Reduce heat and add sour cream to mushrooms\n14. Turn to very low heat and dilute if needed with water\n15. Mix thoroughly, but do not allow mixture to boil or simmer\n16. Add beef and shallots back into skillet\n17. mix thoroughly so that beef and mushrooms are well coated with sauce\n18. Add salt and pepper according to taste\n19. Serve hot over cooked pasta (spaghetti, linguine, or fettuccine)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Macaroon Brownie Bars Recipe**\n\n1. MAKE(breakfast) (Note: This is not a breakfast recipe, but rather a dessert recipe. It's likely an error in the text.)\n2. need(ingredients)\n3. follow(steps)\n4. prepare(brownie base)\n5. place(rack)\n6. preheat(oven)\n7. grease(baking pan)\n8. line(parchment paper)\n9. mix(cocoa powder, flour, salt)\n10. cream(butter, sugar)\n11. add(eggs)\n12. pour(almond, vanilla extracts)\n13. mix(dry ingredients)\n14. stir(in bittersweet chocolate)\n15. spread(batter)\n16. bake(brownie base)\n17. cool(on wire rack)\n18. prepare(coconut topping)\n19. mix(sugar, egg)\n20. pour(almond extract)\n21. mix(all ingredients)\n22. stir(in flaked coconut)\n23. spread(coconut mixture)\n24. use(rubber spatula)\n25. bake(coconut topping)\n\nNote: The first action in the Macaroon Brownie Bars recipe is likely an error, as it's not a breakfast recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Prepare glasses (salted)\n2. Moisturize rim with lime wedge\n3. Salt outside of glass rim\n4. Set aside salted glasses\n5. Make margarita\n6. Mix tequila, orange liqueur/triple sec, and lime juice in cocktail shaker/pitcher\n7. Add crushed ice\n8. Shake mixture well\n9. Strain into cocktail glasses\n10. Add ice to glasses (optional)\n11. Place lime wedge on rim of each glass\n12. Serve\n13. Adjust tequila amount for more buzz\n14. Adjust lime juice amount for more zing\n15. Adjust triple sec/liqueur amount for more sweetness\n16. Add sugar if desired\n17. Use premium tequila and triple sec for high-quality margarita\n18. Make slushy version by crushing ice cubes in an ice crusher\n19. Blend liquid ingredients and ice in a blender (optional)\n\nNote that some of these actions are implied or mentioned as optional, but I've tried to extract the most explicit actions from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Classic Meatloaf Recipe**\n\n1. MAKE(meatloaf)\n2. Preheat(oven)\n3. Heat(butter)\n4. Add(onions,garlic,celery,carrot)\n5. Cook(mixture)\n6. Combine(meat,bread crumbs,eggs,parsley)\n7. Add(cooked vegetables)\n8. Mix(everything)\n9. Push(mixture)into baking loaf pan\n10. Put(loaf)into oven\n11. Bake(loaf)\n12. Allow(loaf)to cool\n13. Remove(loaf)from baking pan\n14. Cut(loaf)into slices\n15. Serve(meatloaf)with buttered vegetables",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n**Recipe: Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. add(something)\n28. omit(something)\n29. adding(garlic)\n30. switching(flavor)\n\n**Recipe: Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Recipe: Vegetable Moussaka**\n\n1. Line the baking sheets with paper towels.\n2. Sprinkle salt on both sides of the eggplant rounds and place the eggplant slices on top of the paper towels.\n3. Leave the eggplant for about half an hour.\n4. Arrange two oven racks in the oven and then preheat the oven to 425 degree F.\n5. Remove the eggplant slices from the towel and pat them dry.\n6. Remove the paper towels from the baking sheets.\n7. Grease both baking sheets with olive oil.\n8. Brush the eggplant with 1/4 some of the olive oil.\n9. Arrange the eggplant rounds into a layer on the baking sheets.\n10. Place one baking sheet on each oven rack and bake the eggplant at 425 degree F for about 10 minutes.\n11. Then exchange the baking sheets' positions in the oven and bake the eggplant for 15 more minutes.\n12. Take out eggplant from the oven.\n13. Leave them in the sheets as they cool.\n14. Lower the oven temperature to 350 degree F.\n15. Heat 1/4 cup olive oil in skillet over medium-high heat.\n16. Add the carrots, celery, and onions.\n17. Saute until the onions are soft.\n18. Then add the mushrooms and garlic.\n19. Keep sauteing until the mixture is dry then add the cinnamon and oregano followed by the parsley and tomatoes.\n20. Cook until you have a thick mixture then season to taste with salt and pepper.\n21. Grease your glass baking dish.\n22. Arrange half of your eggplant rounds in a single layer at the bottom of the dish.\n23. Then spoon half of your vegetable mixture evenly over the eggplant layer then add a third layer made of 2 tablespoons of cheese.\n24. Repeat the process to make a second layer using the remaining eggplant vegetable mixture and more cheese.\n25. Melt the butter in a saucepan.\n26. Add in the flour and stir for 2 minutes.\n27. Slowly add in the milk followed by 1/2 cup cheese and some salt and pepper.\n28. Finally whisk in the beaten egg yolks and hot sauce (amount depends on you).\n29. Pour this mixture onto the contents of the baking dish.\n30. Finally top everything with a layer of cheese 1/4 cup.\n31. Bake the moussaka for about 45 minutes or until it is browned on top.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, cheese, browns\n6. Spray cooker\n7. coat butter\n8. Pour mixture\n9. put cover\n10. Turn cooker\n11. leave cooker\n12. turn heat\n13. leave cooker\n14. serve (with scrambled eggs)\n15. Keep warm\n16. add vegetables\n17. use vegetables\n18. add sausage\n19. cooked meat\n20. put meat\n21. play with recipe\n22. change recipe\n\n**Pina Colada Recipe**\n\n1. making pina colada\n2. need ingredients\n3. follow steps\n4. make drink\n5. Add ice\n6. add pineapple juice\n7. add rum\n8. add rum\n9. add ice\n10. blend concoction\n11. increase pineapple juice, cream of coconut\n12. add rum\n13. add ice\n14. subtract ice\n\n**Fluffy Pancakes Recipe**\n\n1. MAKE pancakes\n2. add vinegar to milk\n3. mix well and leave for 5 minutes\n4. sift flour, baking soda, baking powder, sugar, salt\n5. beat egg\n6. pour soured milk into flour mixture\n7. whisk\n8. keep whisking as you add egg and melted butter\n9. whisk until smooth with no lumps\n10. do not overbeat the mixture\n11. grease skillet with oil\n12. put on medium heat\n13. Pour about 1/4 cup of batter into pan\n14. let it spread to form pancake\n15. when large bubbles form, flip pancake with spatula\n16. cook until other side is golden brown\n17. serve pancakes immediately while warm\n18. top with butter and maple syrup",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Layer(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "2. Melt(butter)",
+            "arguments": []
+        },
+        {
+            "verb": "3. Transfer(butter)",
+            "arguments": []
+        },
+        {
+            "verb": "4. Set(aside)",
+            "arguments": []
+        },
+        {
+            "verb": "5. Add(flour)",
+            "arguments": []
+        },
+        {
+            "verb": "6. Stir(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "7. Gradually(add)(milk)",
+            "arguments": []
+        },
+        {
+            "verb": "8. Simmer(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "9. Let(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "10. Add(cheese)",
+            "arguments": []
+        },
+        {
+            "verb": "11. Stir(cheese)",
+            "arguments": []
+        },
+        {
+            "verb": "12. Pour(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "13. Ruin(arrangement)",
+            "arguments": []
+        },
+        {
+            "verb": "14. Give(sauce)",
+            "arguments": []
+        },
+        {
+            "verb": "15. Place(bread crumbs)",
+            "arguments": []
+        },
+        {
+            "verb": "16. Toss(coat)",
+            "arguments": []
+        },
+        {
+            "verb": "17. Spread(crumbs)",
+            "arguments": []
+        },
+        {
+            "verb": "18. Bake(at)",
+            "arguments": []
+        },
+        {
+            "verb": "19. Set(time)",
+            "arguments": []
+        },
+        {
+            "verb": "Note that some of these actions may be implicit or implied, but I've tried to break them down into distinct actions based on the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Pot Pie Recipe**\n\n1. MAKE(pot pie)\n2. mixing(flour,salt,shortening)\n3. Add(water)\n4. roll(dough)\n5. roll(out)\n6. Arrange(pie crust)\n7. prepare(filling)\n8. Put(butter)\n9. add(onions,celery)\n10. saute(vegetables)\n11. sprinkle(flour)\n12. stir(up)\n13. Pour(bouillon)\n14. mix(everything)\n15. Add(seasoning)\n16. continue heating\n17. Pour(gravy)\n18. spread(evenly)\n19. arrange(dough)\n20. seal(trim)\n21. make(slits)\n22. bake(oven)\n23. keep(cool)\n\nNote that some actions may be implied or not explicitly stated, but I've tried to extract the most relevant and clear actions from each text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE pretzels\n2. MIX (salt, brown sugar, yeast, water)\n3. WHIP (mixture)\n4. ADD flour\n5. LET dough sit overnight in fridge\n6. CUT dough into pieces\n7. ROLL dough into ropes\n8. SHAPE dough rope into J shape\n9. TWIST ends of J shape\n10. FLATTEN ends of pretzel\n11. PLACE pretzels on greased cookie sheet\n12. LET pretzels rise for 30 minutes\n13. BRUSH with water and baking soda mixture\n14. DIP in baking soda mixture\n15. BRUSH with egg and water mixture\n16. ADD toppings (sea salt, parmesan cheese, sesame seeds, cinnamon and sugar)\n17. BAKE in oven at 400-450 degrees for 10-15 minutes",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Combine (graham cracker crumbs, sugar, butter)\n2. Press (mix onto springform pan)\n3. Chill (pan for some time)\n4. Beat (cream cheese, sugar)\n5. Add (eggs one by one)\n6. Beat (spices, pumpkin, salt)\n7. Pour (pumpkin filling onto crust)\n8. Bake (crust at 350 degrees for 50 minutes)\n9. Prepare (topping mix sour cream, sugar, vanilla)\n10. Spread (topping over filling)\n11. Bake (topping for 8 more minutes)\n12. Let cool (cake on rack for 10 minutes)\n13. Remove (pan sizes)\n14. Refrigerate (cake overnight or 6-8 hours)\n15. Garnish (almonds, pecan slices, whipping cream)\n\nNote that some of these actions may be implicit or implied by the text, but I've tried to break them down into distinct actions based on the instructions provided.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(sangria)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. TAKE(oranges)",
+            "arguments": []
+        },
+        {
+            "verb": "slice",
+            "arguments": []
+        },
+        {
+            "verb": "squeeze\n5. STRAIN(mixture)\n6. CHILL(fruits,rum,wine,orange juice)\n7. REMOVE(refrigerator)",
+            "arguments": []
+        },
+        {
+            "verb": "slice",
+            "arguments": []
+        },
+        {
+            "verb": "place\n8. ADD(rum,sugar)\n9. KEEP(mixture)\n10. REFRIGERATE(mixture)\n11. CRUSH(fruits)\n12. STIR(in)\n13. ADJUST(sweetness)\n14. SERVE(sangria)\n15. GARNISH(glasses)",
+            "arguments": []
+        },
+        {
+            "verb": "fruit",
+            "arguments": []
+        },
+        {
+            "verb": "mint leaves",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Preheat(oven)\n2. Mix(wheat,bran,buttermilk)\n3. Stand(mixture)\n4. Sift(flour,baking powder,baking soda,salt)\n5. Beat(egg)\n6. Add(oil,vanilla extract,sugar)\n7. Line(muffin pan)\n8. Grease(muffin pan)\n9. Add(bran,mix,egg mixture)\n10. Mix(dry ingredients)\n11. Fold(raisons)\n12. Spoon(batter)\n13. Bake(muffins)\n14. Test(toothpick)\n15. Remove(muffins)\n16. Cool(muffins)\n17. Serve(muffins)\n18. Pack(lunchbox)\n\nNote that some of these actions may be implicit or implied, but I've tried to break them down into distinct actions based on the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the actions in the three texts:\n\n**Hash Brown Casserole**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, and cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, and cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, and cheese with hash browns\n6. Spray slow cooker\n7. coat butter on slow cooker\n8. Pour mixture into slow cooker\n9. put cover on slow cooker\n10. Turn slow cooker to high\n11. leave slow cooker for 1-1.5 hours\n12. turn heat to low\n13. leave slow cooker for 2.5 hours longer\n14. Turn off slow cooker\n15. serve with scrambled eggs\n16. add vegetables (optional)\n17. use vegetables (optional)\n18. add sausage or meat (optional)\n19. cooked meat (if using)\n20. put meat in slow cooker (if using)\n21. play with recipe\n22. change recipe\n\n**Pina Colada**\n\n1. need ingredients\n2. follow steps to make drink\n3. MAKE pina colada\n4. Add ice\n5. add pineapple juice\n6. add rum\n7. add rum\n8. blend concoction\n9. increase pineapple juice or cream of coconut for sweeter drink\n10. add more rum for stronger drink\n11. add or subtract ice for thicker or thinner drink\n\n**English Country Scones**\n\n1. Preheat oven to 425 degree\n2. Line baking sheet with parchment paper\n3. sift baking soda, salt, cream of tartar, and flour into bowl\n4. cut butter into mixture until bread crumb consistency\n5. mix in sugar and milk to form soft dough\n6. transfer dough to clean flat surface\n7. knead dough gently with rolling pin\n8. flatten dough to 3/4 inches thick\n9. cut 2-inch circles from dough using glass or dough cutter\n10. place dough slices on baking sheet\n11. leave space around each slice for expansion during baking\n12. brush each dough slice with milk\n13. bake dough slices at 425 degree for 10 minutes\n14. cool scones briefly on wire rack",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Scrambled Eggs Recipe**\n\n1. MAKE(eggs)\n2. Crack(eggs)\n3. Add(milk,salt)\n4. Whisk(egg,mixture)\n5. Heat(frying pan)\n6. Allow(butter,melt)\n7. Lower(heat)\n8. Add(egg,mixture)\n9. Tilt(skillet)\n10. Break(apart,large pieces)\n11. Flip(eggs)\n12. Cook(eggs)\n13. Lift(pan)\n14. Transfer(eggs)\n15. Sprinkle(salt,pepper)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. PREHEAT (oven)\n2. FRY (bacon)\n3. COOK (garlic, onions)\n4. ADD (ground meat)\n5. STIR (meat)\n6. COOK (meat)\n7. MIX (flour and meat)\n8. POUR (tomato sauce and broth)\n9. ADD (rosemary, celery, carrots)\n10. STIR (sauce)\n11. SIMMER (sauce)\n12. SPREAD (mashed potatoes)\n13. ADD (grated cheese)\n14. BAKE (shepherd's pie)\n15. COOL (dish)\n16. SLICE (dish)\n17. SPRINKLE (parsley or paprika)\n18. MAKE (fresh mashed potatoes)\n\nNote that some of these actions may be implicit, such as \"preheat the oven\" which implies taking a specific action to prepare the oven for use.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(strawberries,cream,trifle)\n2. Combine(milk,water)\n3. Add(pudding)\n4. Mix(mixture)\n5. Beat(mixture)\n6. Chill(mixture)\n7. Fold(whipped cream)\n8. Spoon(mixture) into bowl\n9. Top(bowl) with cake cubes, strawberries, jam, and pudding mixture\n10. Repeat(procedure)\n11. Add(pudding)mixture to bowl\n12. Chill(trifle) for 4 hours\n13. Garnish(reaming strawberries,almonds)\n14. Cover( leftovers)\n15. Refrigerate(leftovers)\n\nNote that some of these actions may be implied or part of a larger action (e.g. \"Repeat the procedure\" implies multiple iterations of steps 8-10), but I've tried to break them down into their most basic form.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Marinate(pork,soy,sauce,cornstarch)\n2. Prepare(batter,egg,flour,oil)\n3. Add(warm water)\n4. Test(oil,batter,mixture)\n5. Coat(pork,cornstarch)\n6. Deep fry(pork,wok,oil)\n7. Drain(pork,paper towels,colander)\n8. Transfer(pork,platter)\n9. Repeat(steps,rest of pork strips)\n10. Crisp(pork strips)\n11. Remove(oil,wok)\n12. Stir-fry(carrots,bell peppers,onion,sauce)\n13. Add(sugar,pineapple)\n14. Boil(mixture)\n15. Turn(heat)\n16. Prepare(slurry,cornstarch,water)\n17. Mix(slurry,sauce)\n18. Simmer(sauce)\n19. Pour(sauce,pork strips)\n\nNote that some of these actions may be implied or part of a larger step (e.g., \"Repeat steps 5 and 6 with the rest of the pork strips\"), but I've tried to break them down into their most basic form.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. add(something)\n29. omit(something)\n30. adding(garlic)\n31. switching(flavor)\n\n**Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**White Bread**\n\n1. MAKE(bread)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink) (Note: This action is not relevant to the recipe for white bread)\n5. Combine(one cup of milk and two tablespoons of butter in a small sauce pan over medium heat)\n6. Add 4 cups of ice\n7. add(pineapple,juice)\n8. add(rum)\n9. add(rum)\n10. add(ice)\n11. blend(concoction)\n12. Combine(one cup of warm water with the salt and sugar)\n13. Put 1/2 cup warm water into the small bowl.\n14. Slowly add the yeast\n15. Keep stirring while you do this to keep the yeast from clumping\n16. Once the yeast and water are thoroughly mixed together leave the bowl for about five minutes\n17. In the meantime get a large bowl and mix one cup of warm water with the salt and sugar.\n18. Return to your small saucepan of milk and butter from step 1.\n19. Add the unbleached bread flour a cup at a time\n20. Knead the dough while adding the remaining flour little by little\n21. Get another large bowl and grease it with butter.\n22. Transfer the dough into this bowl then turn the dough over such that its top is also greased with butter.\n23. Now get a clean kitchen towel to cover the bowl and allow the dough to rise at room temperature.\n24. Wait until the dough has risen to about twice its original size\n25. Punch down the dough to release trapped air\n26. Remove from the bowl and set it onto a floured board.\n27. Then knead for about five minutes to remove the bubbles\n28. Divide the dough in two\n29. Roll each half into a rectangle then roll it each rectangle up like a jellyroll\n30. Pinch the seam closed and tuck the edges under the loaf\n31. Preheat your oven to 375F.\n32. Get two loaf pans and grease them with butter.\n33. Some people also like to spread a thin layer of yellow cornmeal on the pans.\n34. Put the loaves into the pans and cover again with a kitchen towel.\n35. Now wait for approximately thirty minutes to let the dough rise until it doubles in size\n36. Put the bread into the oven and bake until it's golden brown.\n37. When you're done baking transfer the loaves onto a cooling rack.\n38. Wait until your bread has cooled before you cut.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Peanut Butter Cookies Recipe**\n\n1. MAKE(cookies)\n2. mixing(peanut butter,butter)\n3. mix(in(brown,sugar,white))\n4. Add(vanilla,extract)\n5. Beat(well,but don't overdo)\n6. set(bowl aside)\n7. sifting(dry,mixture)\n8. add(dry,mixture)to(wet,mixture)\n9. mix(well until smooth batter)\n10. Optional: Drop(semisweet,chocolate,chips)\n11. If(healthier,variant): skip(chocolate,chips),add(mashed,bananas)\n12. Add(crushed,nuts)\n13. Cover(bowl)with(plastic,wrap)\n14. Refrigerate(batter)for(around,3,hours)\n15. Preheat(oven)to(375F)\n16. Divide(dough)into(little,balls)\n17. Put(ungreased,cookie,sheet)on(baking,pan)\n18. Arrange(balls)on(cookie,sheets)\n19. Using(fork),flatten(each,ball)and(create(crisscross,patterns)\n20. Bake(cookies)for(around,10,minutes)\n21. Take(cookies)out(of,oxygen)and(wait(for,cookies,to,cool)\n22. Now(take)a(big,bite)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Buttermilk Biscuits Recipe**\n\n1. Preheat(oven)\n2. making(biscuits)\n3. need(ingredients)\n4. follow(steps)\n5. mixing(chives,sugar,flour,pepper)\n6. cut(shortening,cheese)\n7. add(shortening,cheese) to flour mixture\n8. mix(flour-mixture)\n9. drizzle(buttermilk)\n10. mix(in with fork)\n11. turn(dough) out onto floured-surface\n12. knead(dough) 3-4 times gently\n13. dust(surface) with little more flour\n14. roll(dough) 3/4 inch thick\n15. cut(out dough rounds)\n16. transfer(dough rounds) to baking-sheet\n17. collect(dough scraps) and start rolling/cutting again\n18. make(dimply) in center of every biscuit\n19. bake(biscuits) 14-16 minutes or until golden brown\n20. apply(tops) with melted butter (if using)\n21. serve(warm)\n\nNote that some actions may be implied or not explicitly stated, but I've tried to extract the most relevant and clear actions from each text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Preheat(oven)\n2. Grease(springform pan)\n3. Place(crust mixture) onto bottom of springform pan\n4. Set(pan aside)\n5. Combine(cream cheese,sugar,cream)\n6. Add(eggs) to cream cheese mixture\n7. Mix(well)\n8. Add(sour cream,vanilla extract,flour) to cream cheese mixture\n9. Stir(until smooth)\n10. Pour(mixture) into springform pan\n11. Smooth(top part of cake)\n12. Bake(in oven) for 1 hour\n13. Leave(cheesecake) in oven for 5-6 hours\n14. Chill(cheesecake) in refrigerator\n15. Top with(fruit glazing)\n16. Drizzle(with chocolate syrup or caramel)\n17. Sprinkle(with crushed cinnamon or cocoa powder)\n\nNote that some of these actions are implied, such as \"add\" and \"mix\", but I've tried to break them down into more specific actions based on the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (Chinese-style rice soup with chicken and ginger)\n2. need (ingredients)\n3. follow (steps)\n4. make (soup)\n5. Add (water, chicken broth, Arborio rice, butter)\n6. cover (slow cooker)\n7. cook (high heat)\n8. let (cook for 6 hours)\n9. remove (contents from slow cooker) -> NO\n10. add (ginger and scallions)\n11. stir (ginger and scallions)\n12. simmer (2 minutes)\n13. pour (soup into serving bowls)\n14. store (extra soup in refrigerator)\n15. top (with shredded chicken, cilantro, chili paste)\n16. serve (while hot)\n\nNote: Some actions are implied or not explicitly stated, but I've tried to extract the most relevant ones from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Chicken Burrito Recipe**\n\n1. MAKE(chicken burrito)\n2. Remove skin and bones of the chicken\n3. Prepare salsa by combining chicken, onion, bay leaves, and garlic in sauce pan\n4. Add enough water to cover mixture and simmer in medium-low heat\n5. Cover pot and wait for an hour or so until chicken becomes tender\n6. Take out chicken and cut into 1-inch cubes\n7. Heat oil in pot\n8. Put brown sugar and diced onion into pot and cook until onion becomes golden brown\n9. Throw in chipotle, adobo sauce, and tomatoes to mix and simmer for about 10 minutes or until mixture thickens\n10. Pour sauce into blender and blend\n11. Put sauce back into pot add shredded chicken mix then put in pepper and salt according to taste\n12. Use dry skillet to toast tortilla\n13. Take tortilla off skillet and assemble burrito\n14. Put a thick strip of the chicken mixture a little below center of tortilla\n15. Sprinkle some cheese, black beans, sour cream, and cabbage\n16. Fold bottom over strip fold in two sides and then roll rest of way until burrito is fully closed",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Preheat(oven)\n2. Pound(chicken,breasts)\n3. Rub(chicken,pieces,salt,pepper)\n4. Place(cheese,ham,chicken,breast)\n5. Fold(breast)\n6. Use(toothpick)\n7. Beat(egg)\n8. Dip(chicken,egg)\n9. Coat(chicken,bread crumbs)\n10. Spray(cooking,dish)\n11. Place(chicken,dish)\n12. Bake(chicken)\n13. Top(chicken,cheese)\n14. Put(back,in oven)\n15. Take(out,oof oven)\n16. Cut(breast)\n17. Remove(toothpick)\n18. Serve(immediately)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the text with the actions extracted:\n\n**Recipe 1: Hash Brown Casserole**\n\n* MAKE breakfast\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese\n* COMBINED cream, soup, sour cream, salt, pepper, onion, cheese\n* ADD browns\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* SPRAY cooker\n* COAT butter\n* POUR mixture\n* PUT cover\n* TURN cooker\n* LEAVE cooker (1-1.5 hours)\n* TURN heat to low and LEAVE cooker (2.5 hours longer)\n* TURN OFF cooker and SERVE\n* KEEP warm if needed\n* ADD vegetables (e.g. broccoli, cheese, peppers)\n* USE vegetables\n* ADD cooked sausage or bacon (if desired)\n\n**Recipe 2: Pina Colada**\n\n* MAKE pina colada\n* NEED ingredients (ice, pineapple juice, rum, cream of coconut)\n* FOLLOW steps\n* MAKE drink\n* ADD ice\n* ADD pineapple juice\n* ADD rum\n* ADD rum\n* ADD ice\n* BLEND concoction to desired consistency\n\n**Recipe 3: Broccoli Soup**\n\n* MAKE broccoli soup\n* NEED ingredients (olive oil, onions, celery, potatoes, broccoli, chicken or vegetable broth, nonfat milk)\n* FOLLOW steps\n* SAUTE onions and celery in pot until soft\n* ADD potatoes and broccoli to pot and saute for 5-6 minutes\n* POUR in broth and simmer for 3 minutes\n* POUR in milk and let soup come to a boil\n* REDUCE heat and SIMMER for 20 minutes or so\n* BLEND soup in blender until smooth\n* REHEAT soup in pot if needed\n* SERVE hot",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Peel(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "2. Clean(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "3. Slice(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "4. Peel(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "5. Cut(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "6. Heat(butter)",
+            "arguments": []
+        },
+        {
+            "verb": "7. Saute(onion)",
+            "arguments": []
+        },
+        {
+            "verb": "8. Add(garlic)",
+            "arguments": []
+        },
+        {
+            "verb": "9. Stir(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "10. Cook(wine)",
+            "arguments": []
+        },
+        {
+            "verb": "11. Reduce(wine)",
+            "arguments": []
+        },
+        {
+            "verb": "12. Add(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "13. Add(vegetable broth)",
+            "arguments": []
+        },
+        {
+            "verb": "14. Bring(to a boil)",
+            "arguments": []
+        },
+        {
+            "verb": "15. Increase(heat)",
+            "arguments": []
+        },
+        {
+            "verb": "16. Season(salt)",
+            "arguments": []
+        },
+        {
+            "verb": "17. Simmer",
+            "arguments": []
+        },
+        {
+            "verb": "18. Remove(from heat)",
+            "arguments": []
+        },
+        {
+            "verb": "19. Puree(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "20. Put(back into pot)",
+            "arguments": []
+        },
+        {
+            "verb": "21. Bring(to a boil)",
+            "arguments": []
+        },
+        {
+            "verb": "22. Adjust(thickness)",
+            "arguments": []
+        },
+        {
+            "verb": "23. Garnish(croutons)",
+            "arguments": []
+        },
+        {
+            "verb": "24. Add(sour cream)",
+            "arguments": []
+        },
+        {
+            "verb": "25. Add(nutmeg)",
+            "arguments": []
+        },
+        {
+            "verb": "26. Add(orange juice)",
+            "arguments": []
+        },
+        {
+            "verb": "Note that some of these actions may be implied or part of a larger action (e.g., \"heat butter\" is an action that leads to \"saute onion\"), but I've tried to break them down into their most basic form.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Sprinkle salt on celeriac\n2. Leave celeriac in colander to drain liquid\n3. Mix vinegar, salt, sugar, and olive oil\n4. Marinate mackerel fillet in vinegar-olive oil mixture\n5. Prepare grill\n6. Grill mackerel for 1-2 minutes per side\n7. Mix mayonnaise, lemon juice, and mustard\n8. Toss celeriac in mayonnaise\n9. Place salad leaves on plate\n10. Top salad with celeriac mayonnaise\n11. Lay mackerel fillet on top of celeriac",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Caesar Salad Recipe**\n\n1. MAKE(salad)\n2. Fry(bacon)\n3. Add(peices of bread)\n4. Cook(croutons)\n5. Prepare(dressing)\n6. Wash(lettuce)\n7. Blot(excess water)\n8. Tear(lettuce)\n9. Drizzle(dressing)\n10. Toss(lettuce)\n11. Add(salt and pepper)\n12. Place(chicken, bacon, croutons, egg)\n13. Serve\n14. Replace(mayonnaise with olive oil)\n15. Use(bacon alternatives)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Chili Recipe**\n\n1. Heat(saucepan)\n2. making(chili)\n3. need(ingredients)\n4. follow(steps)\n5. make(drink) (Note: This action is not applicable to the chili recipe, as it's a cooking recipe)\n6. Heat(saucepan)\n7. add(ground beef)\n8. sear(until juices come out)\n9. add(onions,garlic,green pepper)\n10. stir(well until meat is browned and onions are soft)\n11. add(diced tomatoes,tomato sauce,beans,chili powder,basil)\n12. add(salt and pepper)\n13. When(mixture boils), turn down heat\n14. simmer(for around 20 minutes)\n15. place(chili) in big serving bowl\n16. top(with green onions, red bell pepper, sour cream or cheese if desired)\n\nNote that some actions may be missing from the chili recipe, as they are not explicitly mentioned in the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Homemade Christmas Stuffing Recipe**\n\n1. Pre-heat(oven)\n2. place(butter,oil)\n3. Add(cranberries,celery,onions)\n4. cook(onion)\n5. Throw(in,vegetable broth)\n6. combine(rice,herbs,eggs)\n7. put(in,cranberries mixture)\n8. add(poultry seasoning,beans)\n9. use(salt,pepper)\n10. Bake(complete mixture)\n11. bake(again)\n12. start(experimenting)\n13. try(out different recipes)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(coleslaw)\n2. MIX(cabbage,carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "CHOP",
+            "arguments": [
+                "onions"
+            ]
+        },
+        {
+            "verb": "MIX",
+            "arguments": [
+                "dressing",
+                "cabbage",
+                "carrots"
+            ]
+        },
+        {
+            "verb": "COVER",
+            "arguments": [
+                "clingfilm"
+            ]
+        },
+        {
+            "verb": "REFRIGERATE\n6. SERVE(chilled)\n7. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "ADD",
+            "arguments": [
+                "mayonnaise"
+            ]
+        },
+        {
+            "verb": "ADD",
+            "arguments": [
+                "milk"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, cheese, browns\n6. Spray cooker\n7. coat butter\n8. Pour mixture\n9. put cover\n10. Turn cooker\n11. leave cooker\n12. turn heat\n13. leave cooker\n14. serve use\n15. Keep warm\n16. served eggs\n17. add something\n18. add vegetables\n19. use vegetables\n20. add sausage\n21. cooked meat\n22. put meat\n23. play recipe\n24. change recipe\n\n**Pina Colada Recipe**\n\n1. making pina colada\n2. need ingredients\n3. follow steps\n4. make drink\n5. Add ice\n6. add pineapple juice\n7. add rum\n8. add rum\n9. add ice\n10. blend concoction\n11. increase pineapple juice, cream of coconut\n12. add rum\n13. add ice\n14. subtract ice\n\n**Cooking a Turkey**\n\n1. making turkey\n2. need ingredients (not explicitly listed)\n3. follow steps\n4. make turkey\n5. Add ice\n6. add pineapple juice\n7. add rum\n8. add rum\n9. add ice\n10. blend concoction\n11. increase pineapple juice, cream of coconut\n12. add rum\n13. add ice\n14. subtract ice\n\nNote that the \"need ingredients\" action in the pina colada recipe and cooking a turkey is not explicitly listed, but it can be inferred as needing to gather the necessary ingredients for each recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the text in an actionable format:\n\n**Cooking Rice Properly**\n\n1. RINSE (rinse rice)\n2. PLACE IN POT (place rice in pot)\n3. ADD WATER (add water to pot)\n4. BOIL (bring to boil at medium heat, uncovered)\n5. REDUCE HEAT (turn heat down to medium-low)\n6. COVER POT (place lid on pot, but not completely)\n7. ADD OIL/SALT (optional: add butter or olive oil and salt)\n8. CHECK FOR HOLES (check for holes in rice)\n9. DROP HEAT (if holes develop, drop heat to low)\n10. FLUFF WITH FORK (leave on low heat for 15 minutes, then remove from heat)\n\n**Using a Rice Cooker**\n\n1. PLACE RICE IN COOKER (place rice in rice cooker)\n2. ADD WATER (add water to rice cooker)\n3. SET COOKER (set rice cooker according to manufacturer's instructions)\n4. WAIT FOR COOKING TIME (wait for cooking time, usually 15-20 minutes)\n\n**Tips**\n\n* Use a strainer to rinse rice\n* Don't cover the top of the pot completely to allow steam to escape\n* Adding butter or olive oil and salt is optional",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Take(slicer)\n2. Cut(bread)\n3. Brush(oil)\n4. Lay(bread)\n5. Sprinkle(salt)\n6. Toast(bread)\n7. Bring(pot)\n8. Prepare(bowl)\n9. Add(ice)\n10. Drop(kale)\n11. Drain(kale)\n12. Place(kale)\n13. Heat(oil)\n14. Saute(onion,garlic)\n15. Add(port,thyme)\n16. Simmer(port)\n17. Reduce(port)\n18. Add(kale)\n19. Cook(kale)\n20. Season(salt,pepper)\n21. Take(spoon)\n22. Top(crostini)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (salad)\n2. need (ingredients)\n3. follow (steps)\n4. prepare (salad)\n5. chop (greens, cucumbers, kiwifruit, yellow peppers, carrots, tomatoes)\n6. slice (cucumbers, kiwifruit, yellow peppers, carrots, tomatoes)\n7. assemble (greens, ingredients)\n8. place (diced tomatoes, sliced cucumbers, carrots, yellow peppers on top of greens)\n9. mince (fresh herbs)\n10. sprinkle (minced fresh herbs onto salad as garnish)\n11. pour (fruit juices into separate bowl)\n12. whisk (dressings together with sunflower oil, salt, sugar, pepper)\n13. store (bowl of greens and produce in refrigerator)\n14. cover (with plastic wrap)\n15. toss (salad with prepared dressing)\n16. serve\n17. use (fresh 100% organic greens)\n\nNote that some actions may be implied or not explicitly stated, but these are the ones that can be directly extracted from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Lobster Recipe**\n\n1. making Lobsters\n2. need(ingredients)\n3. follow(steps)\n4. melt(butter)\n5. combine(shallots,peppercorns,wine,vinegar,tarragon)\n6. reduce(sauce)\n7. strain(sauce)\n8. whisk(in,eggs)\n9. drop(eggs)\n10. add(melted,butter)\n11. preheat(oven)\n12. fry(chips)\n13. season(meat)\n14. cook Lobster\n15. serve(Lobsters)\n16. add(Barnaise,sauce)\n17. add(chips)\n\nNote that some actions may be missing from the original text, but I've tried to extract as many as possible based on the context provided.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Mushroom Soup Recipe**\n\n1. MAKE(breakfast) (Note: This recipe is not actually a breakfast recipe, but rather a soup recipe. It's unclear why it was included in the list of breakfast recipes.)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink) (Note: This recipe is not actually a drink recipe, but rather a soup recipe. It's unclear why it was included in the list of drink recipes.)\n5. Cut 4 ounces of mushrooms into slices.\n6. Chop the remaining 4 ounces.\n7. Melt 2 tablespoons of butter in a saucepan.\n8. Saute the sliced mushrooms in the pan until they are golden brown.\n9. Remove the mushrooms from the pan and set them aside.\n10. Melt the remaining 2 tablespoons of butter and saute the chopped onions and chopped mushrooms together.\n11. Add a bit of salt.\n12. Keep frying and stirring until your onions are soft not burned.\n13. Put the sliced mushrooms back into the pan.\n14. Add the flour and cook the mixture for about 2 minutes with constant stirring.\n15. Once the mixture is smooth pour in the chicken broth carefully.\n16. Stir the mixture constantly letting the soup simmer over low heat until it thickens.\n17. Season your soup with white pepper and nutmeg.\n18. Add and pour the heavy cream into the saucepan.\n19. Heat the soup until it starts to simmer.\n20. Before it begins to boil turn off the heat.\n21. Ladle the soup into serving bowls sit back relax and enjoy.\n\nNote: The actions for the mushroom soup recipe are not as clearly labeled as those for the hash brown casserole and pina colada recipes, which is why they were not included in the list of actions.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Thai-Style Stir-Fried Noodles**\n\n1. Bring(a pot of water to a boil)\n2. Drop(the rice noodles and wait)\n3. let it cook for 5 minutes or until the rice noodles has softened\n4. It still has to be in an aldente stage.\n5. Drain and give it a cold bath.\n6. Set it aside.\n7. Heat up(the wok then add around 2-3 tablespoons of peanut oil)\n8. Cook(the tofu first until it browns)\n9. Drop(in the garlic Thai chilli peanut shrimps scallions carrots and bean sprout)\n10. Add(the fish sauce and quickly stir)\n11. When(the veggies have softened take them out and set them aside.\n12. In the same wok pour in(the soy sauce tamarind sauce sugar and a drizzle of peanut oil)\n13. Turn off(the fire then add the rice noodles and the vegetables and toss it in the sauce\n14. When(serving garnish it with the ground peanut and cilantro with wedge of lime on the side",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Grilled Pepper Salad Recipe**\n\n1. Prepare the grill\n2. Cook the peppers on the grill and give the skin a little charring.\n3. Place them on a closed container and let it steam out the skin.\n4. After 10 minutes peel the skin off easily.\n5. Slice the peppers in half and take the seeds and stem out.\n6. Chop the succulent parts and set it aside.\n7. To make the croutons slice the bread into 2-inch squares.\n8. Drizzle olive oil over it and season with salt and pepper.\n9. Get the pieces toasting in the oven for 10 minutes turning them over halfway.\n10. In a mixing bowl whisk together .cup of olive oil, wine vinegar, herbs, anchovy sauce, onion, cucumber, tomatoes, and garlic.\n11. Add the cooked peppers and season it.\n12. Take croutons and toss it with the vegetables.\n13. Top it with the mozzarella cheese and serve.\n\nNote that some actions may be implied or not explicitly stated in the text, but I have tried to extract all possible actions based on the provided instructions.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Crouton Recipe**\n\n1. MAKE(recipe)\n2. preheat(oven)\n3. prepare(cooker)\n4. melt(butter)\n5. cook(butter)\n6. add(garlic)\n7. toss(bread-cubes)\n8. season(salt,pepper)\n9. sprinkle(cheese)\n10. stir(contents)\n11. bake(croutons)\n12. store(croutons)\n13. serve(recipe)\n14. garnish(oil)\n\nNote that some actions may be implied or not explicitly stated in the text, but I have tried to extract all possible actions based on the provided instructions.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Liver and Pears Parfait Recipe**\n\n1. Bring(stock) to a boil\n2. reduce(stock) down to a third of its volume\n3. Let(stock) cool\n4. Using(blender) mash(all the ingredients) together including(reduced stock)\n5. Line(bread pan) with(parchment paper)\n6. Pour(liver mixture) in and cover it with(foil)\n7. Cook(it) in the oven for 50 minutes at 150C\n8. Take(cooked liver) out of its mold and refrigerate\n9. For(chutney) place(all the ingredients except(pears)) in a sauce pan\n10. Let(it boil) while stirring constantly then bring down the heat to let it reduce\n11. When(the liquid has become syrupy) pour in(pears) and let it cook for another 40 minutes in low fire\n12. Serve(parfait) on a platter with(chutney) on the side accompanied by(sliced French bread)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Wash\n2. Scrub (with water and/or salt)\n3. Dilute (salt in a bowl of water)\n4. Soak (ginger in saltwater for 1-2 hours)\n5. Drain\n6. Dry (or wipe with paper towels)\n7. Slice (ginger thinly)\n8. Prepare (sterilized jar)\n9. Stack (sliced ginger in the jar)\n10. Boil (sugar mixture)\n11. Pour (hot sugar mixture into the jar)\n12. Place (lid on the jar)\n13. Wait (for the mixture to cool)\n14. Refrigerate",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Sushi Recipe**\n\n1. Lay a piece of nori on the rolling mat shiny side down.\n2. Place about 1/2 cup of sushi rice on the nori.\n3. Wet your hands with water so the rice won't stick to your hands.\n4. Spread the rice over the nori with your hands leaving a half inch strip of nori uncovered at the bottom.\n5. Place your desired fillings along this strip of uncovered nori on the edge closest to you.\n6. Using the rolling mat begin to tightly roll the sushi.\n7. Start at the side nearest to you and roll away from you.\n8. Make sure you don't roll the rolling mat into your sushi.\n9. When the sushi is completely rolled use the rolling mat to squeeze the sushi so it does not unroll when you are trying to cut it.\n10. Cut sushi and enjoy.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Place meat flat on chopping board.\n2. Cover meat with plastic wrap.\n3. Hammer away with meat pounder.\n4. Season meat with salt, pepper, and chilli peppers.\n5. Combine eggs and milk in a bowl.\n6. Heat oil for frying.\n7. Flour eggs & milk mixture.\n8. Bread crumbs.\n9. Dredge piece of meat in flour.\n10. Dip meat in milk, making sure it's fully coated.\n11. Dredge meat in bread crumbs well.\n12. Drop meat in frying pan.\n13. Turn meat over after 3 minutes or when underside turns golden brown.\n14. Take heat down to low.\n15. Mix in flour and let become pasty.\n16. Pour in chicken broth and scrape bottom of pan with spatula while mixing.\n17. Stir in sour cream and dill.\n18. Simmer for a few minutes.\n19. Serve schnitzels topped with sauce.\n\nNote that some actions may be implied or not explicitly stated, but these are the ones that can be directly extracted from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Microwave Scrambled Eggs Recipe**\n\n1. MAKE(scrambled eggs)\n2. get(mug/bowl)\n3. dip(paper towel)\n4. smear(oil)\n5. break(egg)\n6. beat(eggs,milk)\n7. season(pepper,salt)\n8. stir(mixture)\n9. cook(uncovered)\n10. remove(stir)\n11. fluff(up)\n12. add topping\n13. return(cook)\n14. mix(again)\n\nNote that some actions may be implied or not explicitly stated, but I've tried to extract the most relevant and clear actions from each text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Bring to a boil\n2. Stir constantly\n3. Take out of heat\n4. Toss in sweet sauce\n5. Leave on tray\n6. Heat oil for frying\n7. Prepare coating ingredients (flour, eggs, corn starch)\n8. Season shrimps with salt and pepper\n9. Drop shrimps in flour\n10. Shake off excess flour\n11. Dip in egg\n12. Coat with corn starch\n13. Drop shrimps into frying pan\n14. Cook until golden brown (2 minutes)\n15. Whisk together mayonnaise, milk, and honey\n16. Toss fried shrimps in sauce\n17. Serve while still crunchy\n18. Top with sugar-coated walnuts",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n**Recipe: Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Recipe: Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Recipe: Chicken Stock**\n\n1. making(chicken stock)\n2. need(ingredients)\n3. follow(steps)\n4. make(stock)\n5. Remove(tendons)\n6. Add(garlic)\n7. Add(dehydrated onion)\n8. Add(kosher salt)\n9. Cook(pot)\n10. Return(chicken)\n11. Chop(up(edible meat))\n12. Strain(stock)\n13. Making(chicken soup)\n14. need(ingredients)\n15. follow(steps)\n16. make(soup)\n17. Pour(in olive oil)\n18. Add(sofrito)\n19. Stir(mix)\n20. Simmer(pot)\n21. Add(rice)\n22. Simmer(pot)\n23. Serve(hot)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Boil(a pot-full of water)\n2. Add(salt)\n3. Whisk(milk, eggs, salt, nutmeg)\n4. Mix(flour)\n5. Rest(dough) for 10 minutes\n6. Divide(dough) into two portions\n7. Grate(dough) with a grater on top of boiling water\n8. Stir(speltzle)\n9. Drain(speltzle)\n10. Cook(second batch of dough)\n11. Cool(speltzle)\n12. Spread(speltzle) on a large baking dish\n13. Melt(butter)\n14. Add(sage) to butter in medium heat\n15. Brown(butter)\n16. Add(onion) to butter and sage\n17. Season(onion) with salt and pepper\n18. Toss(speltzle) in butter sauce",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (Cajun seasoning)\n2. combine (ingredients for Cajun seasoning)\n3. store (unused Cajun seasoning)\n4. mix (marinade ingredients)\n5. set aside (marinade)\n6. place (chicken in plastic bag)\n7. pour (marinade into bag)\n8. seal (bag)\n9. shake (bag to coat chicken with marinade)\n10. allow (chicken to marinate for 20 minutes)\n11. light (charcoal and grill)\n12. heat (grill)\n13. place (chicken on grill)\n14. cook (chicken for at least 14 minutes per side)\n15. check (for doneness by making slits in meat)\n16. serve (with fresh garden vegetables, jambalaya rice, or pasta)\n\nNote that some of these actions are implied rather than explicitly stated, but I've tried to break them down into their most basic components.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Szechuan Shrimp Recipe**\n\n1. Marinade the shrimp in a mixture of the soy sauce sugar pepper corns and sesame oil.\n2. Let it sit at least 20 minutes or longer.\n3. Drain it after and save the marinating liquid.\n4. Add 2 tablespoons of corn starch and .cup of water and mix until the starch is incorporated.\n5. In a hot pan add the minced garlic ginger and chilli flakes.\n6. Add the bell peppers and the grated carrots next and let them soften.\n7. Stir in the shrimps and scallions.\n8. Let it cook for 2 minutes.\n9. Add the corn starch and soy sauce mixture.\n10. Mix it around and let the sauce thicken.\n11. When serving place some rice in the center of the plate and top it with the Szechuan shrimps.\n12. Garnish it with the minced Thai chilli pepper and cilantro leaves.\n\nNote that there are no actions extracted from the third text, as it appears to be a recipe without any explicit actions listed.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing (cream, soup, cream, salt, pepper, onion, cheese)\n3. combined (cream, soup, cream, salt, pepper, onion, cheese)\n4. add browns\n5. mix (cream, soup, cream, salt, pepper, onion, cheese, browns)\n6. Spray cooker\n7. coat butter\n8. Pour mixture\n9. put cover\n10. Turn cooker\n11. leave cooker\n12. turn heat\n13. leave cooker\n14. serve use\n15. Keep warm\n16. served eggs\n17. add something\n18. add vegetables\n19. use vegetables\n20. add sausage\n21. cooked meat\n22. put meat\n23. play recipe\n24. change recipe\n\n**Pina Colada Recipe**\n\n1. making (pina, colada)\n2. need ingredients\n3. follow steps\n4. make drink\n5. Add ice\n6. add pineapple juice\n7. add rum\n8. blend concoction\n9. increase pineapple juice, cream of coconut\n10. add rum\n11. add ice\n12. subtract ice\n\n**Roasted Turkey Recipe**\n\n1. MAKE (Thanksgiving dinner)\n2. need ingredients\n3. follow steps\n4. make drink (not applicable to this recipe)\n5. Add turkey (thawed)\n6. remove giblets and neck bones\n7. melt butter in skillet\n8. mix in rosemary and thyme\n9. separate skin on breast from meat\n10. brush herb-and-butter mixture between breast meat and skin\n11. rub salt and pepper all over turkey's skin\n12. place turkey on rack in baking dish breast side down\n13. cook turkey at 475F for 20 minutes\n14. reduce temperature to 250F and cook turkey for 20 more minutes per pound\n15. check turkey by inserting meat thermometer into thigh\n16. put cooked stuffing into turkey\n17. give turkey 20 minutes to rest before serving",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. serve(use)\n15. Keep(warm)\n16. served(eggs)\n17. add(something)\n18. add(vegetables)\n19. use(vegetables)\n20. add(vegetables)\n21. add(sausage)\n22. add(meat)\n23. cooked(meat)\n24. put(meat)\n25. play(recipe)\n26. change(recipe)\n27. adding(garlic)\n28. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Toasted Almond Truffles Recipe**\n\n1. making(truffles)\n2. need(ingredients)\n3. follow(steps)\n4. make(truffles)\n5. put(sugar)\n6. bring(to boil)\n7. stir\n8. continue(stirring)\n9. take(off heat)\n10. add(chocolate chips)\n11. keep(stirring)\n12. add(extract)\n13. mix\n14. put(in refrigerator)\n15. shape(into balls)\n16. roll(in nuts)\n17. put(back(in refrigerator))\n18. serve\n\nNote that the actions for the Toasted Almond Truffles recipe are not as concise as those for the other two recipes, but they still provide a clear outline of the steps involved in making the truffles.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, and cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, and cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, and cheese with hash browns\n6. Spray cooker\n7. coat butter on cooker\n8. Pour mixture into slow cooker\n9. put cover on slow cooker\n10. Turn cooker to high\n11. leave cooker for 1-1.5 hours\n12. turn heat to low\n13. leave cooker for 2.5 hours longer\n14. Turn cooker off\n15. serve with scrambled eggs\n16. add vegetables (e.g., broccoli, cheese, peppers)\n17. use vegetables\n18. add cooked sausage or bacon\n19. play with recipe\n20. change recipe\n\n**Pina Colada Recipe**\n\n1. need ingredients\n2. follow steps to make drink\n3. Add ice\n4. add pineapple juice\n5. add rum (at least 1-2 ounces)\n6. blend concoction\n7. increase pineapple juice or cream of coconut for sweeter drink\n8. add more rum for stronger drink\n9. add or subtract ice for thicker or watered-down version\n\n**Veggie Burger Recipe**\n\n1. Process tofu in blender until creamy liquid consistency\n2. Set aside\n3. saute scallions, mushrooms, bell pepper, and corn in olive oil\n4. Add cumin and garlic to skillet\n5. Cook for another minute\n6. Remove mixture from heat and place in bowl\n7. add tofu, potato, carrot, salt, and pepper to bowl\n8. mix well with bread crumbs\n9. add more bread crumbs until ingredients hold together\n10. Form patties from mixture\n11. Place patties in refrigerator for 1 hour\n12. Heat remaining olive oil in skillet\n13. Fry patties in skillet\n14. Turn patties over to brown other side\n15. Assemble burger by slicing bun in half and topping with patty, lettuce, tomato, or garnish\n16. Serve immediately",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (breakfast, pina colada)\n2. NEED (ingredients)\n3. FOLLOW (steps)\n4. MAKE (drink)\n5. ADD (ice, pineapple juice, rum, cream of coconut)\n6. BLEND (concoction)\n7. INCREASE (pineapple juice, cream of coconut)\n8. ADD (rum, ice)\n9. SUBTRACT (ice)\n\nAnd here are the actions related to decorating a Christmas cake:\n\n1. AIM FOR A UNIQUE POSE\n2. USE SANTA DESIGN\n3. LOAD SLEIGH WITH TREATS AND CANDIES\n4. USE FROSTY THE SNOWMAN AS TOPPING\n5. CREATE CHRISTMAS TREE CENTERPIECE FROM EDIBLE ITEMS\n6. USE COMBINATION OF RED AND GREEN FOR POINSETTIA FLOWER DESIGN\n7. PUT MISTLETOE IN CENTERPIECE\n8. ASK KIDS FOR INPUT ON DECORATIONS\n9. ALLOW KIDS TO PLACE DECORATIONS ON CAKE\n10. DO TASTE TESTING ON DIFFERENT CAKE RECIPES",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Wash\n2. Scrub (with water and/or salt)\n3. Dilute (salt in a bowl of water)\n4. Soak (ginger in saltwater for 1-2 hours)\n5. Drain\n6. Dry (or wipe with paper towels)\n7. Slice (ginger thinly)\n8. Prepare (sterilized jar)\n9. Stack (sliced ginger in the jar)\n10. Boil (sugar mixture)\n11. Pour (hot sugar mixture into the jar)\n12. Place (lid on the jar)\n13. Wait (for the mixture to cool)\n14. Refrigerate",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Crispy Rosti Potatoes Recipe**\n\n1. MAKE\n2. boil(potatoes)\n3. cook(potatoes)\n4. drain(potatoes)\n5. cool(potatoes)\n6. peel(grate)\n7. grate(potatoes)\n8. add(onions)\n9. add(garlic)\n10. season(salt,pepper)\n11. use(chef's rings)\n12. make(shape)\n13. place(rings)\n14. fill(mixture)\n15. press(mixture)\n16. put(in fridge)\n17. cool(mixture)\n18. heat(oil)\n19. take(ring)\n20. add(to oil)\n21. cook(side)\n22. turn(over)\n23. drain(paper towel)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Chicken Florentine Recipe**\n\n1. Preheat(oven) to 350 degrees\n2. Season(chicken) with salt and pepper to taste\n3. place(chicken) in the oven and bake for 20 to 30 minutes or until it turns into a nice brown color\n4. Remove(chicken) from the oven and continue to preheat to 400 degrees\n5. Put(butter) in a pan over medium heat\n6. Add(mushroom soup, garlic, lemon juice, cream, seasoning, grated cheese)\n7. stir together until everything is well mixed\n8. Remove(from heat) and set aside\n9. On(a baking tray), cover the base with spinach and add mushrooms on top of it\n10. Take(half of mixture) and pour it over the spinach and mushrooms\n11. Place(chicken) breasts on top\n12. Use(the rest of the mixture) to cover the chicken\n13. Sprinkle(bacon bits, mozzarella cheese)\n14. Put(in the preheated oven) and bake for another 25 minutes or until the top has turned into a lovely golden brown in color\n15. Remove(from oven) and serve(in a platter)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(pina colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple, juice)\n7. add(rum)\n8. blend(concoction)\n9. increase(pineapple, juice, cream, coconut)\n10. add(rum)\n11. add(ice)\n12. subtract(ice)\n\nNote that some of these actions are repeated or have similar wording, but I've tried to extract the most distinct and unique actions from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the actions and steps from each text:\n\n**Hash Brown Casserole**\n\n* MAKE breakfast\n* mixing cream, soup, sour cream, salt, pepper, onion, cheese\n* combined cream, soup, sour cream, salt, pepper, onion, cheese\n* add hash browns\n* mix cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* Spray slow cooker\n* coat butter\n* Pour mixture\n* put cover\n* Turn on high for 1-1.5 hours\n* turn heat to low and leave for 2.5 hours longer\n* Turn off slow cooker\n* serve with scrambled eggs\n* add vegetables (e.g. broccoli, peppers)\n* add cooked sausage or bacon\n* play with recipe\n* change recipe\n\n**Pina Colada**\n\n* need ingredients\n* follow steps\n* make drink\n* Add ice\n* add pineapple juice\n* add rum\n* add rum\n* add ice\n* blend concoction\n* increase pineapple juice, cream of coconut, or rum for desired consistency\n* add more ice for thicker drink or watered down version\n\n**Crispy Chicken Karaage**\n\n* cut up chicken into bite-size pieces and marinate in sauce mixture (ginger, soy sauce, sake)\n* coat chicken with potato starch\n* heat oil to 180 degrees Celsius\n* fry chicken several pieces at a time\n* test temperature first with piece of chicken\n* remove when golden brown\n* drain on wire rack or paper towels\n* serve with lemon wedges or sansho pepper (optional)\n\nNote that some ingredients mentioned in the Chicken Karaage recipe may not be readily available, and substitutions should be made accordingly.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from the text:\n\n1. MAKE(iced espresso)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. USE(cold milk)\n5. COMPress(GROUND COFFEE)\n6. BRUSH(AWAY REMAINS)\n7. ATTACH(FILTER)\n8. PLACE(CUP)\n9. PREPARE(ESpresso shot)\n10. FILL(GLASS)\n11. ADD(SYRUP)\n12. STIR\n13. TOPPING(ADD)\n14. ENJOY(DRINK)\n15. PREPARE(DOUBLE SHOT)\n16. REPEAT(PROCEDURE)\n17. ADJUST(TAMPING PRESSURE)\n18. MIX(CHOCOLATE)\n19. ADD(ICE)\n\nNote that some of these actions may be implicit or part of a larger action (e.g., \"PREPARE(ESpresso shot)\" implies several steps), but I've tried to break them down into their most basic components.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions:\n\n1. Whisk(cream)",
+            "arguments": []
+        },
+        {
+            "verb": "2. Cover(bowl)",
+            "arguments": []
+        },
+        {
+            "verb": "3. Place(in refrigerator)",
+            "arguments": []
+        },
+        {
+            "verb": "4. Combine(sugar,milk)",
+            "arguments": []
+        },
+        {
+            "verb": "5. Bring(mixture) to boil",
+            "arguments": []
+        },
+        {
+            "verb": "6. Stir(gently)",
+            "arguments": []
+        },
+        {
+            "verb": "7. Divide(chocolate,squares)",
+            "arguments": []
+        },
+        {
+            "verb": "8. Pour(milk,over,chocolate)",
+            "arguments": []
+        },
+        {
+            "verb": "9. Add(allowing allowance)",
+            "arguments": []
+        },
+        {
+            "verb": "10. Remove(cream)",
+            "arguments": []
+        },
+        {
+            "verb": "11. Pour(cream,on top)",
+            "arguments": []
+        },
+        {
+            "verb": "12. Serve(hot)",
+            "arguments": []
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(pork,tostadas)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. blend(concoction)\n9. increase(pineapple,juice,cream,coconut)\n10. add(rum)\n11. add(ice)\n12. subtract(ice)\n\nAnd here are the actions extracted from the pork tostadas recipe:\n\n1. MAKE(pork,tostadas)\n2. need(ingredients)\n3. follow(steps)\n4. place(pork loin roast)\n5. rub(seasonings)\n6. bake(loin)\n7. saute(onions)\n8. add(garlic)\n9. mix(main seasoning ingredients)\n10. boil(mix)\n11. simmer(mix)\n12. stir(mix)\n13. add(cilantro)\n14. shred(pork)\n15. fry(tortillas)\n16. soak(excess oil)\n17. place(tortillas)\n18. top(pork, onion mixture, cheese)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Put(chopped,pineapple,frozen,grapes,frozen,mango,slices)into(blender)\n2. Blend(until(resulting)mixture(is)s smooth)\n3. Pour(2,liter,bottle)of(orange,soda)into(large,metal,bowl)\n4. Pour(contents)of(blender)into(bowl)containing(orange,soda)\n5. Mix(fruit)mixture(into)orange(soda)\n6. Add(3,cups)of(mini,marshmallows)to(fruit)salad(punch)\n7. Experiment(with)following.ingredients\n8. Add(a)little(dash)of(watermelon)flavoring(extract)for(extra)zip\n9. Use(mangosteen)flavoring(extract)for(unusual)tropical(flavor)\n10. Mix(in)about(1,8)cup(of)vanilla(sugar)into(fruit)salad(punch)\n11. Add(handfuls)of(gummy,candies)to(fruit)salad(punch)\n\nNote that some of these actions may be implied or suggested, but not explicitly stated in the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(confectioners frosting)",
+            "arguments": []
+        },
+        {
+            "verb": "2. Beat(butter)",
+            "arguments": []
+        },
+        {
+            "verb": "3. Add(vanilla extract)",
+            "arguments": []
+        },
+        {
+            "verb": "4. Put(mixer on low speed)",
+            "arguments": []
+        },
+        {
+            "verb": "5. Add(powdered sugar)",
+            "arguments": []
+        },
+        {
+            "verb": "6. Add(milk)",
+            "arguments": []
+        },
+        {
+            "verb": "7. Switch(to high speed)",
+            "arguments": []
+        },
+        {
+            "verb": "8. Beat(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "9. Set(frosting aside)",
+            "arguments": []
+        },
+        {
+            "verb": "10. Sift(flour, baking soda, salt, ginger, cloves, nutmeg, cinnamon)",
+            "arguments": []
+        },
+        {
+            "verb": "11. Beat(sugar and butter)",
+            "arguments": []
+        },
+        {
+            "verb": "12. Add(molasses)",
+            "arguments": []
+        },
+        {
+            "verb": "13. Add(egg)",
+            "arguments": []
+        },
+        {
+            "verb": "14. Beat(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "15. Add(flour mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "16. Beat(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "17. Divide(dough)",
+            "arguments": []
+        },
+        {
+            "verb": "18. Wrap(dough in plastic)",
+            "arguments": []
+        },
+        {
+            "verb": "19. Refrigerate(dough)",
+            "arguments": []
+        },
+        {
+            "verb": "20. Preheat(oven)",
+            "arguments": []
+        },
+        {
+            "verb": "21. Place(rack at center of oven)",
+            "arguments": []
+        },
+        {
+            "verb": "22. Roll(out dough)",
+            "arguments": []
+        },
+        {
+            "verb": "23. Cut(out cookies)",
+            "arguments": []
+        },
+        {
+            "verb": "24. Line(baking sheets with parchment paper)",
+            "arguments": []
+        },
+        {
+            "verb": "25. Put(cookies on baking sheet)",
+            "arguments": []
+        },
+        {
+            "verb": "26. Bake(cookies)",
+            "arguments": []
+        },
+        {
+            "verb": "27. Let(cookies cool)",
+            "arguments": []
+        },
+        {
+            "verb": "28. Transfer(cookies to wire rack)",
+            "arguments": []
+        },
+        {
+            "verb": "29. Decorate(gingerbread man)",
+            "arguments": []
+        },
+        {
+            "verb": "Note that some of these actions are not explicitly stated in the text, but can be inferred from the context (e.g. \"beat\" is a general action that can be applied to various steps).",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the text with the actions extracted:\n\n**Recipe 1: Hash Brown Casserole**\n\n* MAKE breakfast\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese\n* COMBINED cream, soup, sour cream, salt, pepper, onion, cheese\n* ADD browns\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* SPRAY cooker\n* COAT butter\n* POUR mixture\n* PUT cover\n* TURN cooker\n* LEAVE cooker (1-1.5 hours)\n* TURN heat\n* LEAVE cooker (2.5 hours)\n* TURN OFF cooker\n* SERVE use\n* KEEP warm\n* SERVED eggs\n* ADD vegetables\n* USE vegetables\n* ADD sausage\n* COOKED meat\n* PUT meat\n* PLAY recipe\n* CHANGE recipe\n\n**Recipe 2: Pina Colada**\n\n* NEED ingredients\n* FOLLOW steps\n* MAKE drink\n* ADD ice\n* ADD pineapple, juice\n* ADD rum\n* ADD rum\n* ADD ice\n* BLEND concoction\n* INCREASE pineapple, juice, cream, coconut\n* ADD rum\n* ADD ice\n* SUBTRACT ice\n\n**Recipe 3: Homemade Sausages**\n\n* NEED ingredients\n* FOLLOW steps\n* MAKE drink (not applicable)\n* PLACE meat and fat in freezer\n* SLICE meat and fat into small chunks\n* CUT fat smaller than meat\n* KEEP ingredients cold\n* MIX everything well together\n* PUT mixture in freezer\n* MIX sherry vinegar with dry sherry\n* IMMERSE casings in warm water\n* COARSELY grind sausage mixture\n* WORK quickly and put meat in cold metal bowl\n* PUT mixture back in freezer\n* ADD fennel seeds, black pepper, sherry vinegar, and dry sherry mixture\n* MIX sausage well using hands or wooden spoon or stand mixer\n* GLIDE casing into sausage stuffer\n* PUT meat into sausage stuffer\n* REGULATE speed of casing\n* CLOSE off open end with knotting or butcher's twine\n* PINCH off length of sausage\n* SPIN link away from yourself\n* REPEAT until end of coil\n* CLOSE off other end of casing\n* HANG sausages on rack\n* STERILIZE needle in gas flame\n* LOOK for air bubbles in sausages and PRICK them\n* LET sausages dry for 2 hours",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Combine (graham cracker crumbs, sugar, butter)\n2. Press (mix onto springform pan)\n3. Chill (pan for some time)\n4. Beat (cream cheese, sugar)\n5. Add (eggs one by one)\n6. Beat (spices: nutmeg, ginger, cinnamon, pumpkin, salt)\n7. Pour (pumpkin filling onto crust)\n8. Bake (crust at 350 degrees for 50 minutes)\n9. Prepare (topping mix sour cream, sugar, vanilla)\n10. Spread (topping over filling)\n11. Bake (topping for 8 more minutes)\n12. Let cool (cake on rack for 10 minutes)\n13. Remove (pan sizes)\n14. Refrigerate (cake overnight or 6-8 hours)\n15. Garnish (almonds, pecan slices, whipping cream)\n\nNote that some of these actions may be implicit or implied by the text, but I have tried to extract all the explicit actions mentioned in the recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from the text:\n\n1. MAKE(batter)\n2. MIX(flour,salt,pepper)",
+            "arguments": []
+        },
+        {
+            "verb": "BEAT",
+            "arguments": [
+                "egg",
+                "yolk"
+            ]
+        },
+        {
+            "verb": "ADD",
+            "arguments": [
+                "water"
+            ]
+        },
+        {
+            "verb": "POUR",
+            "arguments": [
+                "egg",
+                "mixture"
+            ]
+        },
+        {
+            "verb": "MIX",
+            "arguments": [
+                "ingredients"
+            ]
+        },
+        {
+            "verb": "3. PREPARE(seasoned flour)\n4. HEAT(oil)\n5. PAN-FRY/DEEP-FRY(chicken)\n6. ROLL(chicken)IN(flour)",
+            "arguments": []
+        },
+        {
+            "verb": "DIP",
+            "arguments": [
+                "batter"
+            ]
+        },
+        {
+            "verb": "ROLL",
+            "arguments": [
+                "again",
+                "flour"
+            ]
+        },
+        {
+            "verb": "DROP",
+            "arguments": [
+                "into skillet/pot"
+            ]
+        },
+        {
+            "verb": "USE",
+            "arguments": [
+                "TONGS"
+            ]
+        },
+        {
+            "verb": "FRY",
+            "arguments": [
+                "BATCHES"
+            ]
+        },
+        {
+            "verb": "SERVE\n\nNote that some of the actions may be implied or not explicitly stated in the text, but I have tried to extract the most relevant and clear actions from the provided text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (apricot-raspberry refresher)\n2. need (ingredients)\n3. follow (steps)\n4. prepare (drink)\n5. Add (raspberries, sugar/honey, water)\n6. crush (raspberries)\n7. stir (mixture)\n8. pour (mixture into saucepan)\n9. boil (mixture)\n10. reduce (heat)\n11. simmer (mixture)\n12. strain (liquid)\n13. cool (drink)\n14. refrigerate (drink)\n15. serve (drink)\n16. add (ginger ale)\n17. stir (pieces of ice cube)\n18. omit (seeds)\n\nNote that some actions may be implied or not explicitly stated, but these are the ones that can be directly extracted from the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (pie)\n2. PREHEAT (oven)\n3. PLACE (parchment paper, rice/beans in pie tin)\n4. PRESS (dough into corners and edges)\n5. BAKE (dough for 15 minutes, then again for 10 more minutes)\n6. COOL (on wire rack)\n7. HEAT (oil in skillet)\n8. STIR (mushrooms until translucent)\n9. ADD (salt, pepper to taste",
+            "arguments": []
+        },
+        {
+            "verb": "mushrooms",
+            "arguments": []
+        },
+        {
+            "verb": "cheese)\n10. MIX (eggs, cream, milk",
+            "arguments": []
+        },
+        {
+            "verb": "season with pepper, salt, nutmeg)\n11. POUR (mixture into pie tin)\n12. PLACE (pie tin on baking sheet)\n13. BAKE (quiche for 30-35 minutes)\n14. TEST (for doneness using knife)\n15. EXTEND (baking time if needed)\n16. COOL (on wire rack for 10 minutes)\n17. GARNISH (with pine nuts and parsley, if desired)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Remove(chicken)\n2. Allow(time,30-45)\n3. Preheat(oven,475)\n4. Chop(onions,carrots,celery,garlic)\n5. Place(vegetables)\n6. Drizzle(oil)\n7. Mix(briefly)\n8. Drizzle(oil,chicken)\n9. Season(chicken,salt,pepper)\n10. Rub(mixture)\n11. Prick(lemon)\n12. Add(lemon,fresh herbs)\n13. Place(chicken)\n14. Put(roasting pan)\n15. Turn(heat,down)\n16. Cook(time,1 hour 20 minutes)\n17. Baste(chicken,vegetables)\n18. Check(dryness)\n19. Add(water)\n20. Remove(chicken)\n21. Cover(bird,tinfoil)\n22. Rest(time,15)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(coleslaw)\n2. MIX(cabbage,carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "MIX",
+            "arguments": [
+                "onions"
+            ]
+        },
+        {
+            "verb": "3. ADD(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "4. BLEND(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "5. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "6. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "7. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "8. TRANSFER(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "9. COVER(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "10. LET(sit)",
+            "arguments": []
+        },
+        {
+            "verb": "11. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "12. ADJUST(dressing)",
+            "arguments": []
+        },
+        {
+            "verb": "13. MAKE(healthier version)\n14. SERVE(coleslaw)",
+            "arguments": []
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions for the Frozen Berry Frape recipe:\n\n1. MIX(frozen,berries)",
+            "arguments": []
+        },
+        {
+            "verb": "2. PROCESS(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "3. FILTER(mixture)",
+            "arguments": []
+        },
+        {
+            "verb": "4. STIR(in,ice,fresh,orange,juice)",
+            "arguments": []
+        },
+        {
+            "verb": "5. SERVE(drink)",
+            "arguments": []
+        },
+        {
+            "verb": "6. POUR(glass)",
+            "arguments": []
+        },
+        {
+            "verb": "7. ADD(straw/stirrer)",
+            "arguments": []
+        },
+        {
+            "verb": "Note: The text does not provide a specific action for \"experimenting with frozen berry frappe\", but it can be inferred as adding different types of berries or juices to the mixture.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions and their corresponding descriptions:\n\n**Recipe 1: Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Recipe 2: Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Recipe 3: Fresh Fruit Milkshake**\n\n1. Choose fresh fruits for your milkshake.\n2. Make sure the fruit has no wrinkled or bruised parts.\n3. The fruit should be firm have a bright color and smell sweet.\n4. Traditionally people use only one fruit for their milkshake but if you're feeling bold and adventurous you could try using a combination of fruits.\n5. Limit yourself to a maximum of three fruits though.\n6. Cut the fruits in small chunks.\n7. The smaller the chunks the easier it will be to puree them.\n8. Put the fruit chunks in the blender.\n9. Blend them until you have a chunk-free puree.\n10. Add the vanilla ice cream milk and crushed ice.\n11. Start the blender again.\n12. It will not take more than two minutes for the ingredients to mix up well.\n13. Put in some sugar if you want sugar in your shake.\n14. But taste the shake first.\n15. The fact is since fresh fruits are already sweet sugar is often unnecessary.\n16. But if you have a sweet tooth you may want a bit more sweetness so add sugar according to your preference.\n17. Then turn the blender on for a few more seconds to mix the sugar thoroughly in.\n18. Pour the milkshake into a chilled glass.\n19. Add some fruit garnishing.\n20. Now enjoy your tasty healthy fresh milkshake.\n21. Slurp it away.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, cheese\n4. add hash browns\n5. mix cream, soup, sour cream, salt, pepper, onion, cheese, browns\n6. Spray cooker\n7. coat butter\n8. Pour mixture\n9. put cover\n10. Turn cooker\n11. leave cooker\n12. turn heat\n13. leave cooker\n14. serve (use)\n15. Keep warm\n16. served eggs\n17. add vegetables\n18. use vegetables\n19. add sausage\n20. cooked meat\n21. put meat\n22. play recipe\n23. change recipe\n24. adding garlic\n25. switching flavor\n\n**Pina Colada Recipe**\n\n1. making pina colada\n2. need ingredients\n3. follow steps\n4. make drink\n5. Add ice\n6. add pineapple juice\n7. add rum\n8. add rum\n9. add ice\n10. blend concoction\n11. increase pineapple juice, cream of coconut\n12. add rum\n13. add ice\n14. subtract ice\n\n**Eggplant Casserole Recipe**\n\n1. Pre-heat oven to 350 F\n2. Spray large baking sheet with non-stick cooking spray\n3. Add onion and turkey and heat over medium heat until turkey loses pink color\n4. Minimize heat to medium\n5. Slowly stir in oregano, tomato sauce, cayenne, cinnamon, tsp black pepper, salt\n6. Cook stirring periodically until combination starts to simmer\n7. Simmer for 2-3 minutes\n8. Take away from heat\n9. Beat together flour and low-fat milk in medium-size saucepan until smooth\n10. Add extra milk and bring mixture to boil over medium-high heat stirring recurrently\n11. Minimize heat, seethe for 2-3 minutes stirring occasionally\n12. Take away from heat\n13. Put egg in mixing bowl beat and add cup hot milk\n14. Whip milk and egg combination into pan heat for 1 minute further until thickened\n15. Mix hot water, potato flakes, and rest of milk in medium bowl\n16. Layer half eggplant pieces on base of set baking sheet\n17. Spoon meat blend uniformly over eggplant\n18. Cover with 1 cup potato blend and pour half of white sauce spreading uniformly\n19. Layer rest of eggplant pieces on top of white sauce\n20. Cover with remaining white sauce and potato mixture\n21. Cover with foil\n22. Bake 45 minutes\n23. Uncover drizzle with cheese\n24. Bake for additional 8-10 minutes or until bubbly and golden\n25. Cool for 10 minutes and serve",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Fried Rice Recipe**\n\n1. MAKE(fried rice)\n2. mixing(greens,yellows,oranges)\n3. need(ingredients)\n4. follow(steps)\n5. make(drink) (Note: This action is not applicable to this recipe)\n6. moisten(rice)\n7. crumble(rice)\n8. Heat(oil)\n9. beat(eggs)\n10. pour(eggs)\n11. cook(eggs)\n12. transfer(eggs)\n13. cut(eggs)\n14. add(garlic)\n15. stir-fry(garlic)\n16. quickly(add(vegetables))\n17. fry(vegetables)\n18. mix(vegetables)\n19. season(vegetables)\n20. cook(vegetables)\n21. add(egg strips)\n22. serve(fried rice)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions and their corresponding text:\n\n**Recipe 1: Hash Brown Casserole**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n\n**Recipe 2: Pina Colada**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Recipe 3: Chicken Curry**\n\n1. chopping(onions, ginger, garlic)\n2. mixing(yogurt,salt,garlic,ginger,paste)\n3. pour(oil) into pan\n4. stir(fry onoins)\n5. mix(garlic and ginger paste)\n6. mixing(tumeric,cumin,garam masala,coriander,salt,chili pepper)\n7. pouring(mixture) over onions\n8. stirring(sauce)\n9. adding(chicken) to sauce\n10. closing(lid)\n11. simmering(chicken)\n12. serving(garam masala)\n13. serving(rice or Indian bread)\n\nNote that some actions may be missing from the text, and some actions may have multiple corresponding steps (e.g., \"add\" could correspond to multiple steps).",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Place (orange, lemon slices)\n2. Freeze (orange, lemon slices)\n3. Pour (water)\n4. Add (sugar, chopped or sliced ginger, cinnamon sticks)\n5. Put (container on heat)\n6. Bring to boil\n7. Simmer (mixture for 5-10 minutes)\n8. Remove from heat source\n9. Allow to cool\n10. Strain (liquid to remove ginger and cinnamon bits)\n11. Mix (strained liquid with other juices, soda)\n12. Store in a cool place\n13. Add (frozen fruit slices)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Peel(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "2. Clean(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "3. Slice(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "4. Peel(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "5. Cut(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "6. Heat(butter)",
+            "arguments": []
+        },
+        {
+            "verb": "7. Saute(onion)",
+            "arguments": []
+        },
+        {
+            "verb": "8. Add(garlic)",
+            "arguments": []
+        },
+        {
+            "verb": "9. Stir(carrots)",
+            "arguments": []
+        },
+        {
+            "verb": "10. Cook(wine)",
+            "arguments": []
+        },
+        {
+            "verb": "11. Reduce(wine)",
+            "arguments": []
+        },
+        {
+            "verb": "12. Add(potatoes)",
+            "arguments": []
+        },
+        {
+            "verb": "13. Add(vegetable broth)",
+            "arguments": []
+        },
+        {
+            "verb": "14. Bring(to a boil)",
+            "arguments": []
+        },
+        {
+            "verb": "15. Increase(heat)",
+            "arguments": []
+        },
+        {
+            "verb": "16. Season(salt)",
+            "arguments": []
+        },
+        {
+            "verb": "17. Simmer",
+            "arguments": []
+        },
+        {
+            "verb": "18. Remove(from heat)",
+            "arguments": []
+        },
+        {
+            "verb": "19. Puree(in blender/food processor)",
+            "arguments": []
+        },
+        {
+            "verb": "20. Put(back into pot)",
+            "arguments": []
+        },
+        {
+            "verb": "21. Bring(to a boil)",
+            "arguments": []
+        },
+        {
+            "verb": "22. Adjust(thickness)",
+            "arguments": []
+        },
+        {
+            "verb": "23. Garnish(toasted croutons)",
+            "arguments": []
+        },
+        {
+            "verb": "24. Add(sour cream)",
+            "arguments": []
+        },
+        {
+            "verb": "25. Add(nutmeg)",
+            "arguments": []
+        },
+        {
+            "verb": "26. Add(orange juice)",
+            "arguments": []
+        },
+        {
+            "verb": "Note that some of these actions may be implied or part of a larger action (e.g., \"heat butter\" is an action that leads to \"saute onion\"), but I've tried to break them down into their most basic form.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Choose medium-sized bowl\n2. Add 2 eggs, 1/5 teaspoon of salt, half a cup of milk, and a quarter teaspoon of vanilla\n3. Mix ingredients together\n4. Dip slices of bread in mixture on both sides\n5. Prepare cooking pan\n6. Use butter instead of oil (if desired)\n7. Cut several thin slices of butter and let them melt in the pan\n8. Put slices of bread in pan and cook evenly on both sides\n9. Remove bread when color turns gold or light brown\n10. Let bread cool for a minute\n11. Add creamy maple syrup on top of french toast\n12. Add powdered sugar (optional)\n13. Add slices of fruit (optional)\n\nNote that some actions are not explicitly stated, such as \"add\" and \"remove\", which can be inferred from the context.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Preheat(oven)\n2. Sift(flour,Bicarbonate of Soda,ginger,mixed spice)\n3. Rub(in,butter)\n4. Stir(in,sugar)\n5. Make(well)\n6. Add(syrup,egg)\n7. Combine(wet,dry)\n8. Bring(mixture)\n9. Turn(dough)\n10. Knead(dough)\n11. Roll(out,dough)\n12. Stamp(out(shapes))\n13. Arrange(shapes)\n14. Prick(fork)\n15. Bake(oven)\n16. Cool(minutes)\n17. Transfer(cooler)\n18. Beat(butter)\n19. Sieve(icing sugar)\n20. Mix(well)\n21. Add(Natural Lemon Extract)\n22. Sandwich(cookies)\n23. Dust(icing sugar)\n\nNote that some of these actions may be implicit or part of a larger action (e.g., \"bake\" is implied by the oven preheating and baking), but I've tried to break them down into their most basic components.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Steak Recipe**\n\n1. Steak(your preference)\n2. Salt and Pepper\n3. Let the steak reach room temperature.\n4. Trim the steak of excess fat.\n5. Strips of fat should only be 1/4 inch thick.\n6. Season the steak with salt pepper garlic powder and steak spice.\n7. Preheat gas grill on high or if using charcoal until the charcoals are white.\n8. Brush the hot rack of your grill with oil to prevent sticking (optional)\n9. Place steak on grill and close the lid for approximately one and a half minutes.\n10. Open cover and flip steak and allow to cook for another one and a half minutes for medium rare.\n11. Check for doneness with a meat thermometer.\n12. Remove steak and place foil tent over the steak for 5 minutes before carving or serving.\n\nNote that there are no actions extracted from the Steak Recipe, as it is more of an instruction-based text rather than an action-oriented one.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Grilled Cheese Sandwich Recipe**\n\n1. MAKE(breakfast) (Note: This text does not mention breakfast, but rather grilled cheese sandwiches. It's likely a mistake.)\n2. Add(bacon)\n3. Add(tomatoes)\n4. Add(lettuce)\n5. Eat and enjoy.\n\nPlease note that the first action in the Grilled Cheese Sandwich Recipe is incorrect, as it mentions making breakfast, which is not relevant to this recipe.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is the reformatted text with the actions extracted:\n\n**Hash Brown Casserole Recipe**\n\n* MAKE breakfast\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese\n* COMBINED cream, soup, sour cream, salt, pepper, onion, cheese\n* ADD browns\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* SPRAY cooker\n* COAT butter\n* POUR mixture\n* PUT cover\n* TURN cooker\n* LEAVE cooker (1-1.5 hours)\n* TURN heat\n* LEAVE cooker (2.5 hours)\n* TURN OFF cooker\n* SERVE use\n* KEEP warm\n* SERVED eggs\n* ADD something\n* ADD vegetables\n* USE vegetables\n* ADD sausage\n* ADD meat\n* COOKED meat\n* PUT meat\n* PLAY recipe\n* CHANGE recipe\n\n**Pina Colada Recipe**\n\n* MAKE drink\n* NEED ingredients\n* FOLLOW steps\n* ADD ice\n* ADD pineapple, juice\n* ADD rum\n* ADD rum\n* ADD ice\n* BLEND concoction\n* INCREASE pineapple, juice, cream, coconut\n* ADD rum\n* ADD ice\n* SUBTRACT ice\n\n**Homemade Potato Salad Recipe**\n\n* MAKE potato salad\n* BOIL potatoes in salted water until done\n* DRAIN and let cool down\n* PLACE in large bowl\n* MIX mayonnaise\n* MIX well until potatoes are covered up\n* ADD black olives, onions, vinegar, mustard\n* STIR in chopped eggs\n* ADD salt and pepper to taste\n* SERVE chilled\n* TOP with tomatoes and chopped celery (optional)\n* USE low fat mayonnaise for healthier option\n* USE normal salad dressing if not keen on mayonnaise",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(cookies and cream milkshake)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. MAKE(drink)\n5. Add(ice)\n6. Add(pineapple,juice)\n7. Add(rum)\n8. Blend(concoction)\n9. Increase(pineapple,juice,cream,coconut)\n10. Add(rum)\n11. Add(ice)\n12. Subtract(ice)\n\nNote that the actions for making cookies and cream milkshake are different from those for making a pina colada:\n\n1. MAKE(cookies and cream milkshake)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. MAKE(drink)\n5. Pour(full cream milk, all-purpose cream, crumbled cookies)\n6. Blend(ingredients) until creamy and smooth\n7. Stir(ingredients) and check for chunky pieces\n8. Blend(ingredients) for a few more seconds if necessary\n9. Pour(creamy milkshake) in serving glass\n10. Add(whipped cream) on top\n11. (Optional) Prepare healthy low-calorie version by using vanilla soymilk and ice cream\n\nLet me know if you'd like me to help with anything else!",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the text with the actions extracted:\n\n**Recipe 1: Hash Brown Casserole**\n\n* MAKE breakfast\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese\n* COMBINED cream, soup, sour cream, salt, pepper, onion, cheese\n* ADD browns\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* SPRAY cooker\n* COAT butter\n* POUR mixture\n* PUT cover\n* TURN cooker\n* LEAVE cooker (1-1.5 hours)\n* TURN heat to low and LEAVE cooker (2.5 hours longer)\n* TURN OFF cooker\n* SERVE use\n* KEEP warm\n* SERVED eggs\n* ADD vegetables\n* USE vegetables\n* ADD sausage\n* COOKED meat\n* PUT meat\n* PLAY recipe\n\n**Recipe 2: Pina Colada**\n\n* NEED ingredients\n* FOLLOW steps\n* MAKE drink\n* ADD ice\n* ADD pineapple juice\n* ADD rum (at least 1-2 ounces)\n* ADD rum (optional)\n* BLEND concoction to desired consistency\n* INCREASE pineapple juice, cream of coconut, or rum for sweeter drink\n* ADD or SUBTRACT ice for thicker or thinner drink\n\n**Recipe 3: Blueberry Muffins**\n\n* PREHEAT oven to 375 F\n* POSITION oven rack in mid-lower part of oven\n* WHIP baking powder, baking soda, flour, and salt together\n* BEAT butter and sugar until fluffy\n* PUT eggs one at a time, beating thoroughly after each egg\n* ADD lemon peel\n* PUT dry ingredients (1/3) and beat in\n* POUR yogurt (1/3), then beat in another 1/3 of dry ingredients\n* BEAT in second 1/3 of yogurt\n* PUT remaining dry ingredients and beat in\n* BEAT until well mixed\n* DO NOT OVERBEAT\n* FOLD in blueberries using spoon\n* TAKE out muffin tins\n* PUT paper liners in each cup\n* POUR batter into paper-lined cups\n* BAKE for 25-30 minutes or until golden brown\n* USE toothpick to check if central parts of muffins are cooked\n* PLACE muffin tins on wire rack and LET COOL",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is a summary of the text with the actions extracted:\n\n**Breakfast Hash Brown Casserole**\n\n* MAKE breakfast\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese\n* COMBINED cream, soup, sour cream, salt, pepper, onion, cheese\n* ADD browns\n* MIX cream, soup, sour cream, salt, pepper, onion, cheese, browns\n* SPRAY cooker\n* COAT butter\n* POUR mixture\n* PUT cover\n* TURN cooker\n* LEAVE cooker\n* TURN heat\n* LEAVE cooker\n* TURN cooker\n* SERVE (with scrambled eggs)\n* KEEP warm\n* ADD vegetables (optional)\n* USE vegetables (optional)\n* ADD sausage (optional)\n* COOKED meat\n* PUT meat\n* PLAY recipe\n* CHANGE recipe\n\n**Pina Colada**\n\n* NEED ingredients\n* FOLLOW steps\n* MAKE drink\n* ADD ice\n* ADD pineapple juice\n* ADD rum\n* ADD rum\n* ADD ice\n* BLEND concoction\n* INCREASE pineapple juice, cream of coconut (optional)\n* ADD rum\n* ADD ice\n* SUBTRACT ice\n\n**Ice Pop Cookies**\n\n* COMBINE vanilla layer ingredients\n* COMBINE cookie dough layer ingredients (except chocolate chips)\n* POUR 1 tablespoon vanilla mix into each ice pop mold\n* FREEZE for 1 hour\n* SPRINKLE chocolate chips on top of frozen vanilla layer\n* ADD 1 tablespoon cookie dough mix\n* FREEZE for 1 hour\n* INSERT wood sticks\n* REPEAT process alternating layers until molds are full\n* SERVE and enjoy",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Italian Antipasto Skewers Recipe**\n\n1. MAKE(appetizer)\n2. Cook(tortellini)\n3. drain(well)\n4. mixing(salad dressing,salami,mozzarella,mushrooms,tomatoes)\n5. combine(tortellini, salad dressing, salami, mozzarella, mushrooms, tomatoes)\n6. mix(well)\n7. thread(toothpick)\n8. transfer(prepared skewers)\n9. cover(plate)\n10. keep(refrigerated)\n11. serve(slightly chilled or at room temperature)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is an analysis of the three texts:\n\n**Text 1: Breakfast Recipe**\n\n* The text provides instructions for making a hash brown casserole in a slow cooker.\n* The recipe is relatively simple and forgiving, allowing for variations such as adding vegetables or meat.\n* The text includes suggestions for serving with scrambled eggs and keeping the dish warm.\n\n**Text 2: Pina Colada Recipe**\n\n* The text provides instructions for making a pina colada drink using only a few ingredients.\n* The recipe is straightforward, with options for adjusting sweetness, potency, and thickness by adding more or less of certain ingredients.\n* The text does not include any specific actions or steps beyond blending the concoction.\n\n**Text 3: Italian Seafood Cioppino Recipe**\n\n* The text provides instructions for making a seafood cioppino stew in a slow cooker.\n* The recipe is more complex than the first two, requiring multiple ingredients and cooking times.\n* The text includes suggestions for serving with crusty bread or oyster crackers.\n\n**Common Themes**\n\n* All three texts provide recipes that can be made using a slow cooker.\n* Each recipe has some level of flexibility or forgiveness, allowing for variations or substitutions.\n* The texts include suggestions for serving the dishes and adjusting ingredients to suit individual tastes.\n\n**Actionable Insights**\n\n* For Text 1: Consider adding more specific cooking times or temperatures to ensure the hash brown casserole is cooked to perfection.\n* For Text 2: Consider adding more detailed instructions on how to blend the pina colada concoction, as this step may be unclear for some readers.\n* For Text 3: Consider adding more suggestions for variations or substitutions within the seafood cioppino recipe, such as different types of seafood or spices.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(homemade glass and mirror cleaning wipes)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. blend(concoction)\n9. increase(pineapple,juice,cream,coconut)\n10. add(rum)\n11. add(ice)\n12. subtract(ice)\n\nNote that the text also mentions some additional actions related to making homemade glass and mirror cleaning wipes, such as:\n\n* Fill the container with towelettes\n* Use high-quality disposable napkins if needed\n* Pull out a wipe and use it to clean surfaces without streaks\n\nHowever, these actions are not explicitly listed in the format provided.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Cleaning Sheet Pan**\n\n1. (No explicit actions listed)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Cook\n2. Boil\n3. Drain\n4. Allow\n5. Serve\n6. Store\n7. Toss\n8. Drizzle",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is the reformatted text with the actions listed:\n\nTEXT:\nMAKE breakfast the night before with a hash brown casserole.\nStart by mixing together your cream of mushroom condensed soup sour cream salt pepper onion and cheese in a large bowl.\nAfter these are well combined add in the hash browns and mix gently.\nSpray your slow cooker with some non-stick cooking spray or coat with butter.\nThis will prevent sticking so you don't have a huge mess to clean up.\nPour the hash brown mixture into your slow cooker and put the cover on.\nTurn the slow cooker on high and leave for 1 to 1.5 hours.\nAfter this turn the heat to low and leave it on for 2.5 hours longer.\nTurn off slow cooker and serve right away.\nKeep on warm if you plan on waiting to enjoy for a little bit longer.\nIt's best when served with scrambled eggs.\nIf you want to add something unique to this recipe add your favorite vegetables.\nIt's generally best to use soft vegetables or those that have been slightly cooked before you add them.\nThis will ensure they don't turn out hard when the rest of the dish is cooked fully.\nBroccoli and cheese work well together but peppers also taste great.\nYou can also add in cooked sausage or bacon if you want some meat in the dish.\nJust make sure that the meat you add is already cooked before it's put in.\nIf you add in raw meat it likely won't fully cook when the rest of the dish is done and may be raw.\nThis is a very forgiving recipe that you can play around with and change if you want to add or omit something.\nYou can do everything from adding in some garlic to switching the flavor of condensed soup you use.\n\nACTIONS:\nMAKE(breakfast)\nmix(cream,soup,cream,salt,pepper,onion,cheese)\ncombined(cream,soup,cream,salt,pepper,onion,cheese)\nadd(browns)\nmix(cream,soup,cream,salt,pepper,onion,cheese,browns)\nSpray(cooker)\ncoat(butter)\nPour(mixture)\nput(cover)\nTurn(cooker)\nleave(cooker)\nturn(heat)\nleave(cooker)\nTurn(cooker)\nserve(use)\nKeep(warm)\nserved(eggs)\nadd(something)\nadd(vegetables)\nuse(vegetables)\nadd(vegetables)\nadd(sausage)\nadd(meat)\ncooked(meat)\nput(meat)\nadd(meat)\nplay(recipe)\nchange(recipe)\nadd(something)\nomit(something)\nadding(garlic)\nswitching(flavor)\n\nTEXT:\nWhen making a pina colada there are only a few ingredients you are going to need.\nAs with the ingredient list the steps you will follow are just as short.\nTo make your drink you will.\nAdd 4 cups of ice in to the blender then add 3 4 cup of the pineapple juice into the mix\nadd(rum)\nadd(rum)\nadd(ice)\nblend(concoction)\nincrease(pineapple,juice,cream,coconut)\nadd(rum)\nadd(ice)\nsubtract(ice)\n\nTEXT:\nWashing soda is a chemical compound that can be used to remove stubborn stains from laundry.\nIt's commonly used in homemade laundry detergents and dish detergents and is known for its stain-lifting abilities.\nWashing soda can be bought at most big box stores in the United States but isn't widely available around the rest of the world.\nThe good news is that you can make your own washing soda using one ingredient and it is extremely inexpensive.\nPreheat the oven to 450 degrees Fahrenheit.\nPour your desired amount of baking soda into a baking dish.\nMake as much or as little as you want.\nCook the baking soda in the oven for one hour making sure to stir around several times while cooking.\nAt this point the baking soda has broken down and the water has been cooked out.\nYou now have washing soda.\nCarefully remove from oven and allow to cool.\nOnce the washing soda has cooled store it in an airtight container until you are ready to use it.\n\nACTIONS:\nPreheat(oven)\nPour(baking,soda)\nMake(as,much,as,you,want)\nCook(baking,soda)\nStir(around)\nRemove(from oven)\nAllow(cool)\nStore(in,airtight,container)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE breakfast\n2. mixing cream, soup, sour cream, salt, pepper, onion, cheese\n3. combined cream, soup, sour cream, salt, pepper, onion, cheese\n4. add browns\n5. mix cream, soup, sour cream, salt, pepper, onion, cheese, browns\n6. Spray cooker\n7. coat butter\n8. Pour mixture\n9. put cover\n10. Turn cooker\n11. leave cooker\n12. turn heat\n13. leave cooker\n14. serve use\n15. Keep warm\n16. served eggs\n17. add something\n18. add vegetables\n19. use vegetables\n20. add vegetables\n21. add sausage\n22. add meat\n23. cooked meat\n24. put meat\n25. play recipe\n26. change recipe\n27. adding garlic\n28. switching flavor\n\n**Pina Colada Recipe**\n\n1. making pina colada\n2. need ingredients\n3. follow steps\n4. make drink\n5. Add ice\n6. add pineapple, juice\n7. add rum\n8. add rum\n9. add ice\n10. blend concoction\n11. increase pineapple, juice, cream, coconut\n12. add rum\n13. add ice\n14. subtract ice\n\n**Cooling Computer Fan**\n\n1. remove stand from fan (using driver)\n2. cut out bottom of styrofoam container (using utility knife or hole saw with masking tape)\n3. apply tape to inside and outside of styrofoam walls where cutting through",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "It appears that the text is a recipe for sangria, and the actions listed are:\n\n1. MAKE(sangria)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. MAKE(drink)\n5. Add(ice)\n6. Add(pineapple,juice)\n7. Add(rum)\n8. Stir(in,wine,sugar,peach,nectar,schnapps)\n9. Blend(concoction)\n\nThe text also mentions that the recipe has a cult following and is highly requested, but it does not provide any additional actions or steps for making the sangria.\n\nIt's worth noting that the original text provided earlier was actually a recipe for breakfast, not sangria.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Corn on the Cob Recipe**\n\n1. MAKE(breakfast) (Note: This is not a breakfast recipe, but rather a side dish recipe. It's likely that the author meant to say \"side dish\" instead of \"breakfast\".)\n2. Preheat(oven)\n3. Place(corn)\n4. bake(corn)\n5. Remove(corn)\n6. let(cool)\n7. Remove(husks)\n8. Butter(corn)\n9. sprinkle(salt,pepper)\n10. Serve(immediately)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(candle wax removal)\n2. NEED(items)\n3. FOLLOW(steps)\n4. REMOVE(wax)\n5. TURN(off steam setting)\n6. SOAK(wax) in washcloth\n7. REMOVE(washcloth)\n8. DISCARD(washcloth)\n\nNote that there are no specific actions listed for the candle wax removal process, but rather a general outline of steps to follow.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from each text:\n\n**Hash Brown Casserole Recipe**\n\n1. MAKE(breakfast)\n2. mixing(cream,soup,cream,salt,pepper,onion,cheese)\n3. combined(cream,soup,cream,salt,pepper,onion,cheese)\n4. add(browns)\n5. mix(cream,soup,cream,salt,pepper,onion,cheese,browns)\n6. Spray(cooker)\n7. coat(butter)\n8. Pour(mixture)\n9. put(cover)\n10. Turn(cooker)\n11. leave(cooker)\n12. turn(heat)\n13. leave(cooker)\n14. Turn(cooker)\n15. serve(use)\n16. Keep(warm)\n17. served(eggs)\n18. add(something)\n19. add(vegetables)\n20. use(vegetables)\n21. add(vegetables)\n22. add(sausage)\n23. add(meat)\n24. cooked(meat)\n25. put(meat)\n26. play(recipe)\n27. change(recipe)\n28. adding(garlic)\n29. switching(flavor)\n\n**Pina Colada Recipe**\n\n1. making(pina,colada)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. add(rum)\n9. add(ice)\n10. blend(concoction)\n11. increase(pineapple,juice,cream,coconut)\n12. add(rum)\n13. add(ice)\n14. subtract(ice)\n\n**Washing a Bathing Suit**\n\n1. Swish(water)\n2. incorporate(Castile soap)\n3. massage(soapy water)\n4. Rinse(bathing suit)\n5. press(out water)\n6. Lay(suit) flat\n7. roll(up in towel)\n8. Press(towel)\n\nNote that the actions for washing a bathing suit are not explicitly listed as separate actions, but rather as part of the steps to follow.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE(baking pans clean)\n2. NEED(ingredients)\n3. FOLLOW(steps)\n4. CLEAN(pans)\n5. USE(Castile soap)\n6. ADD(Castile soap, baking soda)\n7. APPLY(paste)\n8. SCRUB(sponge)\n9. REMOVE(burned food)\n10. SHINE(pans)\n\nNote that some of these actions may be implied or part of a larger process, but I've tried to break them down into individual steps as they appear in the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Spray(glass surface)\n2. Wipe(dirt smudges and fingerprints)\n3. Use(squeegee)\n4. Wipe(squeegee off with paper towel)\n\nNote that there is no explicit action \"clean windows\" in the text, but it can be inferred as a series of actions to achieve this goal.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here is the text with the actions extracted:\n\n1. MAKE(flea/tick remedy)\n2. need(ingredients)\n3. follow(steps)\n4. make(drink)\n5. Add(ice)\n6. add(pineapple,juice)\n7. add(rum)\n8. blend(concoction)\n9. increase(pineapple,juice,cream,coconut)\n10. add(rum)\n11. add(ice)\n12. subtract(ice)\n\nNote that the actions for the flea and tick remedy are not explicitly listed in the text, but can be inferred as:\n\n1. MAKE(flea/tick remedy)\n2. need(ingredients: apple cider vinegar, lemon juice)\n3. follow(steps: mix ingredients, apply to pet's coat)\n4. make(drink) (not applicable to this recipe)\n\nLet me know if you'd like me to clarify or expand on any of these actions!",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "It appears that there are three different texts provided, each with its own set of actions and instructions.\n\n**Text 1: Breakfast Hash Brown Casserole**\n\n* MAKE breakfast\n* mixing cream of mushroom condensed soup, sour cream, salt, pepper, onion, and cheese in a large bowl\n* combined cream of mushroom condensed soup, sour cream, salt, pepper, onion, and cheese\n* add hash browns to the mixture and mix gently\n* Spray slow cooker with non-stick cooking spray or coat with butter\n* Pour hash brown mixture into slow cooker and put cover on\n* Turn slow cooker on high for 1-1.5 hours\n* turn heat to low and leave for 2.5 hours longer\n* Turn off slow cooker and serve right away\n* Keep warm if needed\n* Serve with scrambled eggs\n\n**Text 2: Pina Colada Recipe**\n\n* need ingredients (ice, pineapple juice, rum, cream of coconut)\n* follow steps to make drink\n* Add ice to blender\n* add 3-4 cups of pineapple juice to the mix\n* add rum (at least 1-2 ounces) and adjust to taste\n* add 1/2 cup of cream of coconut to the blend\n* Blend concoction to desired consistency\n\n**Text 3: Onion Soup Variation**\n\n* Step away from packet of onion soup\n* Use a mixer or food processor until well combined\n* Refrigerate until ready to use",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (spinach artichoke dip)\n2. Squeeze (water out of spinach)\n3. Stir (spinach with remaining ingredients)\n4. Reserve (1/2 cup mozzarella cheese for topping)\n5. Add (spinach mixture to baking dish)\n6. Top (remaining cheese on top of spinach mixture)\n7. Bake (at 375 F for 20 minutes)\n8. Serve (warm with bread or chips)\n\nNote that some actions may be implied, such as \"add\" and \"serve\", but I have only extracted the explicit actions mentioned in the text.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. Give it a stir\n2. Massage (into the brush)\n3. Prop (handle of makeup brush)\n4. Clean (makeup brush)\n\nNote that there is no explicit list of actions in the text, but these four actions can be inferred as part of the cleaning process for makeup brushes.\n\nAlso, here are some additional actions that could be implied:\n\n1. Remove (makeup from the brush)\n2. Rinse (the brush with water or cleaner)\n3. Shake (out excess water or cleaner)\n\nHowever, these actions are not explicitly mentioned in the text and may require inference based on general knowledge of cleaning makeup brushes.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the extracted actions:\n\n1. Remove buttons on sleeves\n2. Resew buttons closer to edge\n3. Cut up center back of shirt\n4. Press raw edges under 0.5 inch\n5. Find coordinating fabric\n6. Pin coordinating fabric under opening\n7. Sew down both sides of opening close to edge\n8. Trim extra fabric from inside of shirt\n9. Leave half-inch seam allowance",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the text:\n\n1. MAKE (carpet cleaning solution)\n2. NEED (ingredients)\n3. FOLLOW (steps)\n4. MAKE (drink - pina colada)\n5. ADD (ice, pineapple juice, rum, cream of coconut)\n6. BLEND (concoction)\n7. INCREASE (pineapple juice, cream of coconut, rum)\n8. SUBTRACT (ice)\n9. ADD (water to container)\n10. FILL (container with water, reservoir with warm water)\n11. SAVE (homemade solution for future use)\n\nNote that some actions may be implied or not explicitly stated in the text, but these are the ones that can be directly extracted from the provided information.",
+            "arguments": []
+        }
+    ]
+]
