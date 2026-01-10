@@ -63,7 +63,7 @@ def write_results(results: dict, dir: str):
 
 def match_obj(gt_name, pred_name):
     gt_lemma = nlp(gt_name)[0].lemma_.lower()
-    doc2 = nlp(pred_name)
+    doc2 = nlp(str(pred_name))
     pred_lemma = " ".join([token.lemma_.lower() for token in doc2])
     return gt_lemma in pred_lemma
 
