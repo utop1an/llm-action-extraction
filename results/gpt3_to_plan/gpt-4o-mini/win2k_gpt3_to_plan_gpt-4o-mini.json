@@ -1,0 +1,9171 @@
+[
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "large",
+                "icons"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "small",
+                "icons"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(regional,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "japanese",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "japanese",
+                "your",
+                "locale",
+                "(location"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hardware",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(display)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "screen",
+                "saver",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "channel",
+                "screen",
+                "saver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "desired",
+                "channel",
+                "screen",
+                "savers"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(internet,explorer,icon)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "icon"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "custom",
+                "level"
+            ]
+        },
+        {
+            "verb": "change",
+            "arguments": [
+                "run",
+                "activex",
+                "controls",
+                "and",
+                "plug-ins",
+                "option"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "enable"
+            ]
+        },
+        {
+            "verb": "or",
+            "arguments": []
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "prompt"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "internet",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(folder)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "all",
+                "folders"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "dcomcnfg"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "default",
+                "properties",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "any",
+                "setting",
+                "other",
+                "than",
+                "anonymous",
+                "in",
+                "default",
+                "impersonation",
+                "level",
+                "box"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "identify"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "windows",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "file",
+                "types",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "htm",
+                "extension"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "print"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "edit"
+            ]
+        },
+        {
+            "verb": "replace",
+            "arguments": [
+                "entry",
+                "application"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "rundll32.exe c:\\winnt\\system32\\mshtml.dll printhtml \"%1\""
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(power,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ups",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "your",
+                "com",
+                "port"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "finish"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "internet",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "toolbars"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "customize"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "down",
+                "arrow"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "icon",
+                "options",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "large",
+                "icons"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "close"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "dcomcnfg"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "default",
+                "properties",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "identify",
+                "default",
+                "impersonation",
+                "level",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "internet",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "accessibility"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "file",
+                "types",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "registered",
+                "file",
+                "types"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "doc",
+                "microsoft",
+                "word",
+                "document"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "xls",
+                "microsoft",
+                "excel",
+                "worksheet"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "confirm",
+                "open",
+                "after",
+                "download",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the corresponding actions based on the provided text:\n\nACTIONS:\nRight-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "double-click(system,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(local,users,and,groups)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(users)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "new",
+                "user"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(keyboard)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "input",
+                "locales",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "basque"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "spanish",
+                "variation"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Based on the provided text, the corresponding actions would be:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "attachments"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "accessibility"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "magnifier"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "exit"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(power,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(users, passwords)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(users,passwords)",
+            "arguments": []
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "conf.exe"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "startup",
+                "and",
+                "recovery"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(accessibility,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings",
+                "under",
+                "filterkeys"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "clear",
+                "check",
+                "box",
+                "under",
+                "keyboard",
+                "shortcut"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(display)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "effects",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "show",
+                "window",
+                "contents",
+                "while",
+                "dragging",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "help"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "search",
+                "tab"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "large",
+                "fonts"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "list",
+                "topics"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(local,disk(c:))",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "check",
+                "now"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "security",
+                "policy"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "policies"
+            ]
+        },
+        {
+            "verb": "double-click(security,options)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(secure,channel:digitally,encrypt,or,sign,secure,channel,data(always))",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disabled"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(event,viewer)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(system,log,file)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "overwrite",
+                "as",
+                "needed"
+            ]
+        },
+        {
+            "verb": "set",
+            "arguments": [
+                "larger",
+                "maximum",
+                "log",
+                "file",
+                "size"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hardware",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "plus",
+                "symbol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "dvd/cd-rom",
+                "drives"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "your",
+                "cdrw/dvd",
+                "drive"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "enable",
+                "digital",
+                "cd",
+                "audio"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "restart",
+            "arguments": [
+                "computer"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "right-click(dial-up,adapter)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "networking",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "type",
+                "of",
+                "dial-up",
+                "server",
+                "i",
+                "am",
+                "calling",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ppp:windows",
+                "95/98/nt/2000",
+                "internet"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "double-click(local,security,policy)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(local,policies)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(security,options)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(prevent,users,from,installing,printer,drivers)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disabled"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "secpol.msc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "double-click(local,policies)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(user,rights,assignment)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(back,up,files,and,directories)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "double-click(administrators,group)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions derived from the provided text:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "security",
+                "policy"
+            ]
+        },
+        {
+            "verb": "double-click(security,settings)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(local,policies)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "options"
+            ]
+        },
+        {
+            "verb": "double-click(additional,restrictions,for,anonymous,connections)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "not",
+                "defined"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "none"
+            ]
+        },
+        {
+            "verb": "rely",
+            "arguments": [
+                "on",
+                "default",
+                "permissions"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(start)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "explore"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "show",
+                "hidden",
+                "files",
+                "folders"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "hide",
+                "file",
+                "extensions",
+                "for",
+                "known",
+                "file",
+                "types",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "help"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "internet",
+                "connection",
+                "sharing"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "list",
+                "topics"
+            ]
+        },
+        {
+            "verb": "double-click(internet,connection,sharing)",
+            "arguments": []
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "topic"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "right-click(appropriate,dial-up,network)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "networking",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "services.msc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "double-click(tcp/ip,netbios,helper,service)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "automatic"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "quit",
+            "arguments": [
+                "services",
+                "snap-in"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "paintjet",
+                "printer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties",
+                "file",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "settings",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "send",
+                "ctrl-d",
+                "after",
+                "each",
+                "job"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "no",
+                "list",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(local,area,connection,icon)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "client"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "client",
+                "for",
+                "microsoft",
+                "networks"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "double-click(applicable,local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "wins",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enable",
+                "netbios",
+                "over",
+                "tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "close",
+            "arguments": [
+                "all",
+                "dialog",
+                "boxes"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "right-click(internet,connection,sharing)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disabled"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "stop"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "START",
+            "arguments": [
+                "windows",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "CLICK",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "CLICK",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "CLICK",
+            "arguments": [
+                "view",
+                "tab"
+            ]
+        },
+        {
+            "verb": "CLEAR",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "CLICK",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "double-click(services,and,applications)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "right-click(dhcp,client)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "change",
+            "arguments": [
+                "startup",
+                "type",
+                "to",
+                "automatic"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "Right-Click(dhcp,client,service)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(network,and,dial-up,connections)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "protocol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "monitor",
+                "driver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "double-Click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "file",
+                "and",
+                "print",
+                "sharing",
+                "for",
+                "microsoft",
+                "networks",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "right-click(internet,connection,sharing)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers"
+            ]
+        },
+        {
+            "verb": "right-click(your,printer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "print",
+                "processor"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "raw"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok",
+                "to",
+                "close",
+                "printer",
+                "properties",
+                "dialog",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(network,and,dial-up,connections)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "service",
+                "in",
+                "the",
+                "select",
+                "network",
+                "component",
+                "type",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "sap",
+                "agent"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers"
+            ]
+        },
+        {
+            "verb": "Right-Click(hp 1600 cm/ps,printer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "new",
+                "driver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hp",
+                "manufacturers",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "1600 cm/ps",
+                "models",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "finish"
+            ]
+        },
+        {
+            "verb": "until",
+            "arguments": [
+                "wizard",
+                "finishes"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connection"
+            ]
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "wins",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enable",
+                "netbios",
+                "over",
+                "tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "disregard",
+            "arguments": [
+                "empty",
+                "primary",
+                "wins",
+                "address",
+                "notification"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "area",
+                "connection"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "clients"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "client",
+                "for",
+                "microsoft",
+                "networks"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "choose",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "show",
+                "pictures",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "print",
+                "background",
+                "colors",
+                "and",
+                "images",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "select",
+                "a",
+                "web",
+                "content",
+                "zone"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "custom",
+                "level"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disable",
+                "run",
+                "activex",
+                "scripts",
+                "plugins"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "delete",
+                "files"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok",
+                "delete",
+                "files",
+                "dialog",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok",
+                "internet",
+                "options",
+                "dialog",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "refresh",
+                "button"
+            ]
+        },
+        {
+            "verb": "ensure",
+            "arguments": [
+                "viewing",
+                "latest",
+                "version",
+                "current",
+                "page"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "languages"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "english",
+                "[united",
+                "states]",
+                "[en-us]"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "privacy",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "override",
+                "automatic",
+                "cookie",
+                "handling"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "prompt",
+                "first-party",
+                "cookies"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "prompt",
+                "third-party",
+                "cookies"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here is the corresponding ACTIONS for the provided TEXT:\n\n**TEXT:** In control panel double-click display. Click none and then click ok.  \n**ACTIONS:** double-click(control,panel)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(display)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "none"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "power",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "power",
+                "schemes",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "always",
+                "on"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "offline",
+                "files",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "enable",
+                "offline",
+                "files",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "routing",
+                "and",
+                "remote",
+                "access"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "stop",
+                "symbol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "remote",
+                "registry",
+                "service"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start",
+                "symbol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "routing",
+                "and",
+                "remote",
+                "access"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start",
+                "symbol"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "identification",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "id"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "this",
+                "computer",
+                "is",
+                "for",
+                "home",
+                "use",
+                "and",
+                "not",
+                "part",
+                "of",
+                "a",
+                "business",
+                "network"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "users",
+                "must",
+                "enter",
+                "a",
+                "user",
+                "name",
+                "and",
+                "password"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "finish"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(dial-up,networking)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(appropriate,dial-up,network)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "configure"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(services)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(messenger)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disabled"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "stop"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "hide",
+                "protected",
+                "operating",
+                "system",
+                "files",
+                "check",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "offline",
+                "files",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "files"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "synchronize"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "synchronize"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "right-click(print,spooler,service)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(component,services)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "services",
+                "local"
+            ]
+        },
+        {
+            "verb": "right-click(print,spooler)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "magnifier",
+                "tool"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "check",
+                "follow",
+                "mouse",
+                "cursor",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "minimize",
+            "arguments": [
+                "magnifier",
+                "tool"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(network,and,dial-up,connections)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "area",
+                "connection"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "service"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "file",
+                "and",
+                "printer",
+                "sharing",
+                "for",
+                "microsoft",
+                "networks"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(sounds,multimedia)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "audio",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "under",
+                "sound",
+                "playback"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "surround",
+                "sound",
+                "speakers"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "close",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(event,viewer)",
+            "arguments": []
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "event",
+                "viewer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "application"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "double-click(system,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(device,manager)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(ide,ata/atapi,controller)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(secondary,ide,channel)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "pio",
+                "only",
+                "in",
+                "transfer",
+                "mode",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "close",
+            "arguments": [
+                "computer",
+                "management",
+                "window"
+            ]
+        },
+        {
+            "verb": "reboot",
+            "arguments": [
+                "computer"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "accessories"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "system",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disk",
+                "defragmenter"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disk",
+                "that",
+                "you",
+                "want",
+                "to",
+                "defragment"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "defragment",
+                "on",
+                "action",
+                "menu"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hardware",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "right-click(modems)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "scan",
+                "for",
+                "hardware",
+                "changes"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the corresponding actions based on the provided text:\n\nACTIONS:\nright-click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "wins"
+            ]
+        },
+        {
+            "verb": "if",
+            "arguments": [
+                "using(static",
+                "internet",
+                "protocol",
+                "(ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enable",
+                "netbios",
+                "over",
+                "tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok",
+                "in",
+                "open",
+                "dialog",
+                "boxes"
+            ]
+        },
+        {
+            "verb": "close",
+            "arguments": [
+                "dialog",
+                "boxes"
+            ]
+        },
+        {
+            "verb": "save",
+            "arguments": [
+                "new",
+                "settings"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "networking",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "dns",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "desktop"
+            ]
+        },
+        {
+            "verb": "right-click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "double-click(internet,protocol,(tcp/ip))",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "wins",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "use",
+                "netbios",
+                "setting",
+                "from",
+                "the",
+                "dhcp",
+                "server"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "double-click(local,users,and,groups)",
+            "arguments": []
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "local",
+                "users",
+                "and",
+                "groups"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "users"
+            ]
+        },
+        {
+            "verb": "right-click(guest,account)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "make sure(password,set,null)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "taskbar",
+                "&",
+                "start",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "set",
+                "show",
+                "clock",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "search"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "files",
+                "or",
+                "folders"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "riched20.dll"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "search",
+                "now"
+            ]
+        },
+        {
+            "verb": "right-click(riched20.dll)",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings",
+                "under",
+                "startup",
+                "and",
+                "recovery"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "small",
+                "memory",
+                "dump",
+                "(64k"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "performance"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "performance",
+                "logs",
+                "and",
+                "alerts"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "open",
+            "arguments": [
+                "services",
+                "applications"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "Right-Click(performance,logs,alerts)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "log",
+                "on",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "this",
+                "account"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "double-click(services)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(fax,service)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "log",
+                "on",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "this",
+                "account"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "startup",
+                "and",
+                "recovery"
+            ]
+        },
+        {
+            "verb": "change",
+            "arguments": [
+                "value",
+                "system",
+                "startup",
+                "to",
+                "10",
+                "seconds"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "right-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "manage"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "show",
+                "hidden",
+                "devices"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "network",
+                "adapters"
+            ]
+        },
+        {
+            "verb": "right-click(direct,parallel)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disable"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(power,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "power",
+                "schemes",
+                "tab"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(phone,and,modem,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modems",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "your",
+                "modem"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "diagnostics",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "query",
+                "modem"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hardware",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "double-click(modems,branch)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(56000,bps,v90,modem)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modem",
+                "tab"
+            ]
+        },
+        {
+            "verb": "change",
+            "arguments": [
+                "maximum",
+                "port",
+                "speed",
+                "to",
+                "115200"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "regsvr32 /u inseng.dll"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "regsvr32 inseng.dll"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions corresponding to the provided text:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "display"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "button"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "adapter",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "list",
+                "all",
+                "modes",
+                "button"
+            ]
+        },
+        {
+            "verb": "display",
+            "arguments": [
+                "video",
+                "card",
+                "functionality"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions for the provided TEXT:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(computer,management)",
+            "arguments": []
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "storage",
+                "branch"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disk",
+                "management",
+                "folder"
+            ]
+        },
+        {
+            "verb": "open",
+            "arguments": [
+                "disk",
+                "management",
+                "folder"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "restore",
+                "basic",
+                "disk",
+                "configuration"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "optional",
+                "networking",
+                "components"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "networking",
+                "services",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "details"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "rip",
+                "listener",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "insert",
+            "arguments": [
+                "operating",
+                "system",
+                "installation",
+                "disc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "dns",
+            "arguments": [
+                "reinstall"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(network,adapter)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "button"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enable",
+                "netbios",
+                "over",
+                "tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "tlntsvr /service"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "search"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "for",
+                "files",
+                "and",
+                "folders"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "msn.cms"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "search",
+                "now"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "file",
+                "and",
+                "printer",
+                "sharing",
+                "for",
+                "microsoft",
+                "networks",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "computer",
+                "management"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "modem",
+                "branch"
+            ]
+        },
+        {
+            "verb": "right-click(your,modem)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "change",
+                "default",
+                "preferences"
+            ]
+        },
+        {
+            "verb": "configure",
+            "arguments": [
+                "modem",
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(display)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "appearance",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "scrollbar",
+                "item",
+                "box"
+            ]
+        },
+        {
+            "verb": "decrease",
+            "arguments": [
+                "size",
+                "box"
+            ]
+        },
+        {
+            "verb": "change",
+            "arguments": [
+                "size",
+                "to",
+                "10"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "mmc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add/remove",
+                "snap-in"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "configuration",
+                "and",
+                "analysis"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "close"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "right-click(security,configuration,and,analysis)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "open",
+                "database"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "regedit"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "locate",
+            "arguments": [
+                "hkey_local_machine \\ system \\ currentcontrolset \\ services \\ tcpip \\ parameters"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enableicmpredirect"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modify"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "1"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions based on the provided text:\n\n```\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "attachments"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "communications"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "right-click(dial-up,icon)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "(custom",
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties",
+                "under",
+                "use",
+                "extensible",
+                "authentication",
+                "protocol",
+                "(eap"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "validate",
+                "server",
+                "certificate",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "```",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Double-Click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "Double-Click(local,disk,(c:))",
+            "arguments": []
+        },
+        {
+            "verb": "Right-Click(autoexec,file)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "remove"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "look",
+                "in",
+                "box"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "name",
+                "current",
+                "computer"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "system"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "Click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "accessories"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "windows",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "go",
+            "arguments": [
+                "view",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "show",
+                "hidden",
+                "files",
+                "and",
+                "folders"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "my",
+                "computer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "drive",
+                "(c:"
+            ]
+        },
+        {
+            "verb": "find",
+            "arguments": [
+                "select(autoexec"
+            ]
+        },
+        {
+            "verb": "right-click(autoexec)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "hidden",
+                "attribute"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "computer",
+                "management"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "system",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "ide",
+                "ata/atapi",
+                "controllers"
+            ]
+        },
+        {
+            "verb": "double-click(secondary,ide,channel)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "settings",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "transfer",
+                "mode",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "pio",
+                "only"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "dma",
+                "if",
+                "available"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(phone,and,modem,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modems",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modem",
+                "that",
+                "you",
+                "want",
+                "to",
+                "remove"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "remove"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "yes",
+                "in",
+                "response",
+                "to",
+                "the",
+                "are",
+                "you",
+                "sure",
+                "you",
+                "want",
+                "to",
+                "remove",
+                "the",
+                "selected",
+                "modem(s"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(computer,management)",
+            "arguments": []
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "services",
+                "applications"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "double-click(indexing,service)",
+            "arguments": []
+        },
+        {
+            "verb": "set",
+            "arguments": [
+                "startup",
+                "automatic"
+            ]
+        },
+        {
+            "verb": "set",
+            "arguments": [
+                "startup",
+                "manual"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "user",
+                "profiles"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "administrator"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "copy",
+                "to"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "%systemroot%\\profiles\\default",
+                "user"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "change"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "look",
+                "in",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "name",
+                "of",
+                "current",
+                "computer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "everyone"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(computer,management)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(services,and,applications,branch)",
+            "arguments": []
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "services",
+                "and",
+                "applications",
+                "branch"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "performance",
+                "logs",
+                "and",
+                "alerts"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "action"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "start"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions derived from the provided text:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(administrative,tools)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "services"
+            ]
+        },
+        {
+            "verb": "right-click(netmeeting,remote,desktop,sharing)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disabled"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "administration",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "computer",
+                "management"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disk",
+                "management",
+                "folder"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "plus",
+                "sign",
+                "beside",
+                "storage"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "drive",
+                "c:"
+            ]
+        },
+        {
+            "verb": "right-click(drive,c:)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disk",
+                "cleanup"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "regedit"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "locate",
+            "arguments": [
+                "hkey_current_user \\ control panel \\ desktop"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "paintdesktopversion"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "1"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "exit"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "registry",
+                "menu"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "printers",
+                "folder"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "server",
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "file",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ports",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "com2",
+                "port"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "delete",
+                "port"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "yes"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here's the breakdown of the actions based on the provided text:\n\n1. Click(start)\n2. Click(run)\n3. Type(dcomcnfg)\n4. Click(ok)\n5. Click(default,properties,tab)\n6. Select(check,box,enable distributed com on this computer)\n7. Click(connect) (for default authentication level)\n8. Click(identify) (for default impersonation level)\n9. Click(applications,tab)\n10. Click({000c101c-0000-0000-c000-000000000046})\n11. Click(properties)\n12. Click(general,tab)\n13. Click(default) (in the authentication level box)\n14. Click(security,tab)\n15. Click(use default access permissions)\n16. Click(use default launch permissions)\n17. Click(use default configuration permissions)\n18. Click(apply)\n19. Click(ok)\n\nThis list comprises all the actions derived from the text you provided.",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions extracted from the provided text:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "Right-Click(icon,for,your,isp)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "networking",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "options",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ip",
+                "security"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "use",
+                "this",
+                "ip",
+                "security",
+                "policy"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "client",
+                "(respond",
+                "only"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "do",
+                "not",
+                "use",
+                "ipsec"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "close"
+            ]
+        },
+        {
+            "verb": "until",
+            "arguments": [
+                "all",
+                "dialog",
+                "boxes",
+                "are",
+                "closed"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "network",
+                "and",
+                "dial-up",
+                "connections"
+            ]
+        },
+        {
+            "verb": "right-click(connection,you,want,to,use)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "networking",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "computer",
+                "management"
+            ]
+        },
+        {
+            "verb": "double-click(local,users,and,groups)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "users"
+            ]
+        },
+        {
+            "verb": "double-click(user)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "member",
+                "of",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "either",
+                "administrators"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers"
+            ]
+        },
+        {
+            "verb": "double-click(add,printer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "printer"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "appropriate",
+                "port"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "epson",
+                "manufacturers",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "epson",
+                "stylus",
+                "color",
+                "800",
+                "esc/p",
+                "2"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-Click(user,configuration)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(administrative,templates)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(group,policy)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(automatic,updates,to,.adm,files)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "enabled"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the corresponding actions for the provided text:\n\nACTIONS:\ndouble-click(root,ca,certificate)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "install",
+                "certificate"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "place",
+                "all",
+                "certificates",
+                "in",
+                "the",
+                "following",
+                "store"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "browse"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "show",
+                "physical",
+                "stores",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "trusted",
+                "root",
+                "certification",
+                "authorities"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "local",
+                "computer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "finish"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Right-click(local,computer,policy)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "disable",
+                "user",
+                "configuration",
+                "settings"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "disable",
+                "computer",
+                "configuration",
+                "settings"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "open",
+            "arguments": [
+                "printers",
+                "or",
+                "printers",
+                "and",
+                "faxes",
+                "folder"
+            ]
+        },
+        {
+            "verb": "right-click(postscript,printer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printing",
+                "preferences"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "layout"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "double-click(postscript,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "truetype",
+                "font",
+                "download",
+                "option"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "automatic"
+            ]
+        },
+        {
+            "verb": "if",
+            "arguments": [
+                "automatic",
+                "selected"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "outline"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "bitmap"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions based on the provided text:\n\nACTIONS:\nStart(device,manager)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "show",
+                "hidden",
+                "devices"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "non-plug",
+                "and",
+                "play",
+                "drivers"
+            ]
+        },
+        {
+            "verb": "double-click(afd,networking,support,environment)",
+            "arguments": []
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "use",
+                "this",
+                "device",
+                "(enable"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(internet,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "content",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disable",
+                "content",
+                "advisor"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "```plaintext\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "gpedit.msc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "computer",
+                "configuration"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "administrative",
+                "templates"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "system"
+            ]
+        },
+        {
+            "verb": "double-click(group,policy)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(disk,quota,policy,processing)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select",
+                "enable"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "clear(allow",
+                "processing",
+                "across",
+                "slow",
+                "network",
+                "connection"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "clear(do",
+                "not",
+                "apply",
+                "during",
+                "periodic",
+                "background",
+                "processing"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "select(process",
+                "even",
+                "if",
+                "group",
+                "policy",
+                "objects",
+                "have",
+                "not",
+                "changed"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "```",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(folder,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "file",
+                "types",
+                "tab"
+            ]
+        },
+        {
+            "verb": "scroll",
+            "arguments": [
+                "down"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                ".zip",
+                "extension"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "verify",
+            "arguments": [
+                "confirm",
+                "open",
+                "after",
+                "download"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(internet,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "programs",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "e-mail",
+                "list"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "eudora"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "```\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "all",
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "accessories"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "communications"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "remote",
+                "desktop",
+                "connection"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "open"
+            ]
+        },
+        {
+            "verb": "locate",
+            "arguments": [
+                "default.rdp"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "open"
+            ]
+        },
+        {
+            "verb": "```",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions for the provided text:\n\nACTIONS:\nStart(internet,explorer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "connections",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "appropriate",
+                "connection"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box",
+                "automatically",
+                "detect",
+                "settings"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box",
+                "use",
+                "proxy",
+                "server"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box",
+                "bypass",
+                "proxy",
+                "server",
+                "for",
+                "local",
+                "addresses"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions corresponding to the provided text:\n\nACTIONS:\nClick(start)",
+            "arguments": []
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers",
+                "and",
+                "other",
+                "hardware"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "printers",
+                "and",
+                "faxes"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add",
+                "a",
+                "printer"
+            ]
+        },
+        {
+            "verb": "start",
+            "arguments": [
+                "add",
+                "printer",
+                "wizard"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "printer"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "printer",
+                "port"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "c:\\path\\printers\\nt4\\i386"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "browse"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hplj6.inf"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "open"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hp"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hp",
+                "laserjet",
+                "4si"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "regedit"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "hkey_local_machine \\ system \\ currentcontrolset \\ control \\ session manager"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "export",
+                "registry",
+                "file"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "session manager key"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "save"
+            ]
+        },
+        {
+            "verb": "right-click(resourcetimeoutcount)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "delete"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "yes"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "exit"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Right-click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "right-click(direct,cable,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "(custom",
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "allow",
+                "older",
+                "ms-chap",
+                "version",
+                "for",
+                "windows",
+                "95",
+                "servers",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(scheduled,tasks)",
+            "arguments": []
+        },
+        {
+            "verb": "right-click(task)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "task",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "programs"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "administrative",
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "local",
+                "security",
+                "policy"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "security",
+                "settings",
+                "node"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ip",
+                "security",
+                "policies",
+                "node"
+            ]
+        },
+        {
+            "verb": "double-click(secure,server,require,security,policy)",
+            "arguments": []
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "all",
+                "ip",
+                "traffic"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "dynamic"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "all",
+                "icmp",
+                "traffic"
+            ]
+        },
+        {
+            "verb": "double-click(all,icmp,traffic,rule)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "filter",
+                "action",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "require",
+                "security"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "apply"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "close"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Open",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "menu"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "show",
+                "hidden",
+                "devices"
+            ]
+        },
+        {
+            "verb": "double-click(non-plug,and,play,drivers)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(netbios,over,tcpip)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "use",
+                "this",
+                "device",
+                "(enable"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "double-click(control, panel)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(internet,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "connections",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "lan",
+                "settings"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here is the sequence of actions derived from the provided text:\n\nACTIONS:\ndouble-click(control,panel)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(system)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "hardware"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "device",
+                "manager"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "ide",
+                "ata/atapi",
+                "controllers"
+            ]
+        },
+        {
+            "verb": "right-click(pci,bus,master,ide,controller)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "driver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "update",
+                "driver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "display",
+                "a",
+                "list",
+                "of",
+                "known",
+                "drivers",
+                "for",
+                "this",
+                "device",
+                "so",
+                "that",
+                "i",
+                "can",
+                "choose",
+                "a",
+                "specific",
+                "driver"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "show",
+                "all",
+                "hardware",
+                "for",
+                "this",
+                "device",
+                "class"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "standard",
+                "ide",
+                "ata/atapi",
+                "controllers",
+                "in",
+                "the",
+                "manufacturers",
+                "list"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "standard",
+                "ide/esdi",
+                "hard",
+                "disk",
+                "controllers",
+                "in",
+                "the",
+                "models",
+                "list"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the parsed actions for the provided text:\n\n```\ndouble-click(control,panel)",
+            "arguments": []
+        },
+        {
+            "verb": "double-click(phone,and,modem,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "modems"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "add"
+            ]
+        },
+        {
+            "verb": "select(don't,detect,my,modem",
+            "arguments": []
+        },
+        {
+            "verb": "i,will,select,it,from,a,list,check,box)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "boca",
+                "research"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "boca",
+                "33.6",
+                "kbps",
+                "internal",
+                "fd34fsvd"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "com",
+                "port",
+                "where",
+                "you",
+                "want",
+                "to",
+                "install",
+                "the",
+                "modem"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "next"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "finish"
+            ]
+        },
+        {
+            "verb": "```",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "security",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "select",
+                "web",
+                "content",
+                "zone"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "custom",
+                "level"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "disable",
+                "run",
+                "activex",
+                "scripts",
+                "plugins"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions based on the provided text:\n\nACTIONS:\nStart(network,and,dial-up,connection,tool)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "right-click(local,area,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "dns",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "windows",
+                "explorer"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "view",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "show",
+                "hidden",
+                "files",
+                "and",
+                "folders"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "hide",
+                "protected",
+                "operating",
+                "system",
+                "files",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "run"
+            ]
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "compmgmt.msc"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "system",
+                "tools"
+            ]
+        },
+        {
+            "verb": "expand",
+            "arguments": [
+                "users",
+                "and",
+                "groups"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "users",
+                "folder"
+            ]
+        },
+        {
+            "verb": "right-click(user)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "member",
+                "of",
+                "tab"
+            ]
+        },
+        {
+            "verb": "verify",
+            "arguments": [
+                "administrators",
+                "listed"
+            ]
+        },
+        {
+            "verb": "",
+            "arguments": []
+        }
+    ],
+    [
+        {
+            "verb": "Right-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Select",
+            "arguments": [
+                "internal",
+                "adapter"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Select",
+            "arguments": [
+                "sap",
+                "agent"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "uninstall"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here is a breakdown of the actions based on the provided text:\n\nTEXT: Right-Click my network places and then click properties. Right-Click the dial-up adapter and then click properties. Click the options tab. Click to select the display progress while connecting check box. Click ok.\n\nACTIONS:\nRight-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(dial-up,adapter)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "options",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "open",
+                "internet",
+                "explorer",
+                "window"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "delete",
+                "files"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(my,computer)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "tools",
+                "menu"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "folder",
+                "options"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "offline",
+                "files",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "enable",
+                "offline",
+                "files",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "enable",
+            "arguments": [
+                "client-side",
+                "caching",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "disable",
+            "arguments": [
+                "client-side",
+                "caching",
+                "check",
+                "box"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "start"
+            ]
+        },
+        {
+            "verb": "point",
+            "arguments": [
+                "settings"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "double-click(regional,options)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "general",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Here are the actions parsed from the provided text:\n\nACTIONS:\nRight-Click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "Right-Click(cable,connection)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "show",
+                "icon",
+                "in",
+                "taskbar",
+                "when",
+                "connected",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Start",
+            "arguments": [
+                "registry",
+                "editor"
+            ]
+        },
+        {
+            "verb": "locate",
+            "arguments": [
+                "key",
+                "hkey_local_machine \\ system \\ currentcontrolset \\ services \\ afd"
+            ]
+        },
+        {
+            "verb": "double-click(value,start)",
+            "arguments": []
+        },
+        {
+            "verb": "type",
+            "arguments": [
+                "2",
+                "value",
+                "data",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Click",
+            "arguments": [
+                "desktop"
+            ]
+        },
+        {
+            "verb": "right-click(my,network,places)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "right-click(internal,adapter)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "internet",
+                "protocol",
+                "(tcp/ip"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "properties"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "advanced",
+                "button"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "dns",
+                "tab"
+            ]
+        },
+        {
+            "verb": "select",
+            "arguments": [
+                "register",
+                "this",
+                "connection's",
+                "addresses",
+                "in",
+                "dns",
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ],
+    [
+        {
+            "verb": "Double-click(sounds,multimedia)",
+            "arguments": []
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "control",
+                "panel"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "sounds",
+                "tab"
+            ]
+        },
+        {
+            "verb": "clear",
+            "arguments": [
+                "check",
+                "box"
+            ]
+        },
+        {
+            "verb": "click",
+            "arguments": [
+                "ok"
+            ]
+        }
+    ]
+]
