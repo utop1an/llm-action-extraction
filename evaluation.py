@@ -152,7 +152,7 @@ def evaluation(preds):
         if not pred:
             print(f"No predictions found for item {i}.")
             continue
-        pred_pointer = 0
+        used = [False] * len(pred)
         for act in acts:
             matched = False
 
@@ -168,20 +168,23 @@ def evaluation(preds):
                     counted_exclusive_acts.update(all_indices)
             
             
-            for pred_act_idx in range(pred_pointer, len(pred)):
-                matched, obj_right, obj_true, obj_tagged = match(act, pred[pred_act_idx], words)
+            for i, pred_act in enumerate(pred):
+                if used[i]:
+                    continue
+                matched, obj_right, obj_true, obj_tagged = match(act, pred_act, words)
 
 
                 if matched:
                     if act_type == 2:
                         total_truth += 1
                     total_right += 1
-                    pred_pointer = pred_act_idx + 1
+                    
                     
                     obj_total_tagged += obj_tagged
                     obj_total_truth += obj_true
                     obj_total_right += obj_right
                     
+                    used[i] = True
                     break
 
         total_tagged += len(pred)
