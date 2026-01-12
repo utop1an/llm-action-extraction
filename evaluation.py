@@ -108,8 +108,11 @@ def match_objs(act_obj_names, pred_obj_names):
         if not matched:
             gt_pointer += 1
 
+    obj_precision = obj_right / obj_tagged if obj_tagged > 0 else 0
+    obj_recall = obj_right / obj_true if obj_true > 0 else 0
+    obj_f1 = 2 * obj_precision * obj_recall / (obj_precision + obj_recall) if (obj_precision + obj_recall) > 0 else 0
 
-    return obj_right, obj_true, obj_tagged
+    return obj_right, obj_true, obj_tagged,obj_f1
 
 def match(act, pred, words):
     act_idx = act['act_idx']
@@ -129,8 +132,8 @@ def match(act, pred, words):
     act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]], [words[ind] for ind in act['obj_idxs'][1]]]
     pred_obj_names = pred.get('arguments', [])
 
-    obj_right, obj_true, obj_tagged = match_objs(act_obj_names, pred_obj_names)
-    return True, obj_right, obj_true, obj_tagged
+    obj_right, obj_true, obj_tagged, obj_f1 = match_objs(act_obj_names, pred_obj_names)
+    return True, obj_right, obj_true, obj_tagged, obj_f1
 
 
 
@@ -167,25 +170,28 @@ def evaluation(preds):
                     total_truth += 1
                     counted_exclusive_acts.update(all_indices)
             
-            
+            best = (None, 0,0,0,0)
             for i, pred_act in enumerate(pred):
                 if used[i]:
                     continue
-                matched, obj_right, obj_true, obj_tagged = match(act, pred_act, words)
-
+                matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
 
                 if matched:
-                    if act_type == 2:
+                    if best[4] < obj_f1:
+                        best = (i, obj_right, obj_true, obj_tagged, obj_f1)
+            
+            # matched the best prediction
+            if best[0] is not None:
+                if act_type == 2:
                         total_truth += 1
-                    total_right += 1
+                total_right += 1
                     
                     
-                    obj_total_tagged += obj_tagged
-                    obj_total_truth += obj_true
-                    obj_total_right += obj_right
+                obj_total_tagged += best[3]
+                obj_total_truth += best[2]
+                obj_total_right += best[1]
                     
-                    used[i] = True
-                    break
+                used[best[0]] = True
 
         total_tagged += len(pred)
 
