@@ -2,7 +2,7 @@ import os,sys
 from collections import defaultdict
 
 from tqdm import tqdm
-from evaluation import match, write_results
+from evaluation_first_match import match, write_results
 import spacy
 import pandas as pd
 import ast
@@ -36,7 +36,6 @@ def read_from_naruto_predicted_dataset(dir):
         df['event_elements'] = df['event_elements'].apply(ast.literal_eval)
         df['subevent_elements'] = df['subevent_elements'].apply(ast.literal_eval)
         df['event_words'] = df['event_words'].apply(ast.literal_eval)
-        df['join_key'] = df['event_words'].apply(make_join_key)
         res_dict[(ds_name,solver_name,model_name)] = df
     return res_dict
 
@@ -66,24 +65,25 @@ def get_naruto_predicted_events(predicted_df):
     return predicted_events
 
 
-def naruto_evaluation(predicted_df, gt_df):
+def naruto_evaluation(ds_name, predicted_df, gt_df):
 
     total_right = total_truth = total_tagged = 0
     obj_total_right = obj_total_truth = obj_total_tagged = 0
 
-    for i, item in (tqdm(gt_df.iterrows(), desc="Processing", unit="item")):
+    for i, (idx, item) in enumerate(tqdm(gt_df.iterrows(), desc="Processing", unit="item")):
     # for i, item in gt_df.iterrows():
         acts = item['acts']
         words = item['words']
-        words_key = item['join_key']
+        d_id = f"{ds_name}{i+1}"
 
         # find matching preidicted rows
-        matched_rows = predicted_df[predicted_df['join_key'].apply(lambda x: x in words_key)]
+        matched_df = predicted_df[predicted_df["d_id"] == d_id]
+        sorted_df = matched_df.sort_values(by="s_id", kind="stable")
 
         # Collect all naruto results and format into pkl way
-        pred = get_naruto_predicted_events(matched_rows)
+        pred = get_naruto_predicted_events(sorted_df)
         if not pred:
-            print(f"No predictions found for item {i}.")
+            print(f"No predictions found for item {d_id}.")
             continue
 
         counted_exclusive_acts = set()
@@ -102,28 +102,23 @@ def naruto_evaluation(predicted_df, gt_df):
                     total_truth += 1
                     counted_exclusive_acts.update(all_indices)
 
-            best = (None, 0,0,0,0)
             for i, pred_act in enumerate(pred):
                 if used[i]:
                     continue
-                matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
+                matched, obj_right, obj_true, obj_tagged = match(act, pred_act, words)
 
                 if matched:
-                    if best[4] < obj_f1:
-                        best = (i, obj_right, obj_true, obj_tagged, obj_f1)
+                    if act_type == 2:
+                        total_truth += 1
+                    total_right += 1
+                    
+                    obj_total_tagged += obj_tagged
+                    obj_total_truth += obj_true
+                    obj_total_right += obj_right
+                    
+                    used[i] = True
+                    break
 
-            # matched the best prediction
-            if best[0] is not None:
-                if act_type == 2:
-                    total_truth += 1
-                
-                total_right += 1
-                        
-                obj_total_tagged += best[3]
-                obj_total_truth += best[2]
-                obj_total_right += best[1]
-                        
-                used[best[0]] = True
 
         total_tagged += len(pred)
 
@@ -148,8 +143,9 @@ def run_evaluation(predicates, gt_df):
     for names, predicted_df in predicates.items():
         ds_name, solver_name, model_name = names
         ds_gt_df = gt_df[gt_df['ds_name'] == ds_name]
+        print(f"ds: {ds_name}, length: {len(ds_gt_df)}")
 
-        tp, fp, fn, precision, recall, f1 = naruto_evaluation(predicted_df, ds_gt_df)
+        tp, fp, fn, precision, recall, f1 = naruto_evaluation(ds_name, predicted_df, ds_gt_df)
         results[(ds_name, solver_name, model_name)] = (tp, fp, fn, precision, recall, f1)
     return results
 
@@ -174,7 +170,6 @@ def main(args):
         gt_df = pd.read_csv(f)
         gt_df['words'] = gt_df['words'].apply(ast.literal_eval)
         gt_df['acts'] = gt_df['acts'].apply(ast.literal_eval)
-        gt_df['join_key'] = gt_df['words'].apply(make_join_key)
 
     results = run_evaluation(predicts, gt_df)
     print('Evaluation done!')
