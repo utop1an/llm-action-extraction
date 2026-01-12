@@ -120,13 +120,13 @@ def match(act, pred, words):
     
     pred_act_name = pred.get('verb', None)
     if pred_act_name is None:
-        return False, 0, 0, 0
+        return False, 0, 0, 0, 0
     
     act_lemma = nlp(act_name)[0].lemma_.lower()
     doc2 = nlp(pred_act_name)
     pred_act_lemma = " ".join([token.lemma_.lower() for token in doc2])
     if not act_lemma in pred_act_lemma:
-        return False, 0, 0, 0
+        return False, 0, 0, 0, 0
     
     
     act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]], [words[ind] for ind in act['obj_idxs'][1]]]
