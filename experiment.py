@@ -89,7 +89,7 @@ def main(args):
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in datasets.items()}
 
     # Define models
-    models = [ 'gpt-4o','gpt-4o-mini','gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano', "gemma3", "gemma3:12b", "llama3.2"]
+    models = [ 'gpt-4o','gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano', "gemma3", "gemma3:12b", "llama3.2"]
     if args.m and args.m not in models:
         print('Model %s not found!' % args.m)
         sys.exit(1)

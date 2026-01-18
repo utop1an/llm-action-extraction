@@ -78,7 +78,7 @@ def match_objs(act_obj_names, pred_obj_names):
     obj_true = len(es_obj_names)
     obj_tagged = len(pred_obj_names)
     if obj_tagged == 0:
-        return 0, obj_true, obj_tagged
+        return 0, obj_true, obj_tagged, 0
 
     while gt_pointer < len(es_obj_names):
         matched = False
