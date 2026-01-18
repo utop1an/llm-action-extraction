@@ -88,7 +88,7 @@ MODELS = {
         "provider": "ollama",
         "model_name": "gemma3",
     },
-    "gemma3:12b": {
+    "gemma3-12b": {
         "provider": "ollama",
         "model_name": "gemma3:12b",
     },
