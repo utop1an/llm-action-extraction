@@ -43,7 +43,7 @@ singularity exec \
   ollama pull "$MODEL"
 
 # 4. Run experiments
-for SOLVER in nl2p_1 gpt3_to_plan; do
+for SOLVER in nl2p_1; do
     echo "Running solver: $SOLVER"
 
     singularity exec --nv \
