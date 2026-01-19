@@ -50,6 +50,7 @@ def run_experiment(dataset, solver, ds_name=""):
     return results
 
 def write_results(ds_name, solver_name, results, model_name=""):
+    model_name = model_name.replace(":", "_")
     if not os.path.exists("./results/%s/%s" % (solver_name, model_name)):
         os.makedirs("./results/%s/%s" % (solver_name, model_name))
     outpath = os.path.join('./results/%s/%s' % (solver_name, model_name), ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
@@ -58,6 +59,7 @@ def write_results(ds_name, solver_name, results, model_name=""):
     print('Results written to %s' % outpath)
 
 def write_pkl_results(ds_name, solver_name, results, model_name=""):
+    model_name = model_name.replace(":", "_")
     if not os.path.exists("./results/%s/%s" % (solver_name, model_name)):
         os.makedirs("./results/%s/%s" % (solver_name, model_name))
     outpath = os.path.join('./results/%s/%s' % (solver_name, model_name), ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
@@ -89,7 +91,7 @@ def main(args):
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in datasets.items()}
 
     # Define models
-    models = [ 'gpt-4o','gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano', "gemma3", "gemma3-12b", "llama3.2"]
+    models = [ 'gpt-4o','gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano', "gemma3", "gemma3:12b", "llama3.2"]
     if args.m and args.m not in models:
         print('Model %s not found!' % args.m)
         sys.exit(1)
