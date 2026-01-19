@@ -223,7 +223,7 @@ PROMPTS = {
             Rules:
             - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
             - Exclude non-eventive verbs (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) when they only frame, modify or regulate another action.
-            - If a verb appears in a causative, light-verb, or control construction, extract only the underlying action that directly causes a state change. Do not extract auxiliary, causative or control verbs. For example, map “allow to do”, “keep doing”, and “make sure something is done” to the base action “do”
+            - For descriptions involving causative, light-verb, or control constructions, extract only the underlying action that directly causes a state change. Do not extract auxiliary, causative, or control verbs (e.g., “allow pan to dry” -> "dry pan", “keep stirring" -> "stir" and “make sure food is cooked” -> "cook food").
             - Maintain the order of verbs and arguments as they appear in the text.
             - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
             - If an action has no arguments, return an empty list for "arguments".
