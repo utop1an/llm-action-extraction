@@ -56,5 +56,5 @@ logs/
 
 miglani_data/
 *.csv
-!*/evaluation_result.csv
+!evaluation_result.csv
 !results/naruto/output/evaluation_result_sid_stack.csv
