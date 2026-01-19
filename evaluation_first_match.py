@@ -111,6 +111,15 @@ def match_objs(act_obj_names, pred_obj_names):
 
     return obj_right, obj_true, obj_tagged
 
+def match_empty_obj(pred_obj_names):
+    obj_true = 1
+    obj_tagged = len(pred_obj_names)
+    if obj_tagged == 0:
+        return 1, obj_true, 1
+    else:
+        return 0, obj_true, obj_tagged
+
+
 def match(act, pred, words):
     act_idx = act['act_idx']
     act_name = words[act_idx]
@@ -125,11 +134,15 @@ def match(act, pred, words):
     if not act_lemma in pred_act_lemma:
         return False, 0, 0, 0
     
-    
-    act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]], [words[ind] for ind in act['obj_idxs'][1]]]
+    act_obj_idxs = act['obj_idxs']
     pred_obj_names = pred.get('arguments', [])
 
-    obj_right, obj_true, obj_tagged = match_objs(act_obj_names, pred_obj_names)
+    if len(act_obj_idxs[0]) == 1 and act_obj_idxs[0][0] == -1:
+        obj_right, obj_true, obj_tagged = match_empty_obj(pred_obj_names)
+    else:        
+        act_obj_names = [[words[ind] for ind in act['obj_idxs'][0]], [words[ind] for ind in act['obj_idxs'][1]]]
+        obj_right, obj_true, obj_tagged = match_objs(act_obj_names, pred_obj_names)
+
     return True, obj_right, obj_true, obj_tagged
 
 
