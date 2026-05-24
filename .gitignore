@@ -58,3 +58,10 @@ miglani_data/
 *.csv
 !evaluation_result.csv
 !results/naruto/output/evaluation_result_sid_stack.csv
+
+# AI directories
+.agents/
+.codex/
+
+!sampled_A.csv
+!sampled_B.csv
