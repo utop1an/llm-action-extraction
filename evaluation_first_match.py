@@ -112,7 +112,7 @@ def match_objs(act_obj_names, pred_obj_names):
     return obj_right, obj_true, obj_tagged
 
 def match_empty_obj(pred_obj_names):
-    obj_true = 1
+    obj_true = 0
     obj_tagged = len(pred_obj_names)
     if obj_tagged == 0:
         return 1, obj_true, 1

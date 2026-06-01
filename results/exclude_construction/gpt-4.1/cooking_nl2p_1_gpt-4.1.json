@@ -1,13 +1,7 @@
 [
     [
         {
-            "verb": "MAKE",
-            "arguments": [
-                "breakfast"
-            ]
-        },
-        {
-            "verb": "mixing",
+            "verb": "mix",
             "arguments": [
                 "cream of mushroom condensed soup",
                 "sour cream",
@@ -26,17 +20,11 @@
         {
             "verb": "mix",
             "arguments": [
-                "hash browns",
-                "cream of mushroom condensed soup",
-                "sour cream",
-                "salt",
-                "pepper",
-                "onion",
-                "cheese"
+                "hash browns"
             ]
         },
         {
-            "verb": "Spray",
+            "verb": "spray",
             "arguments": [
                 "slow cooker"
             ]
@@ -48,7 +36,7 @@
             ]
         },
         {
-            "verb": "Pour",
+            "verb": "pour",
             "arguments": [
                 "hash brown mixture"
             ]
@@ -60,7 +48,7 @@
             ]
         },
         {
-            "verb": "Turn",
+            "verb": "turn",
             "arguments": [
                 "slow cooker"
             ]
@@ -77,10 +65,12 @@
         },
         {
             "verb": "leave",
-            "arguments": []
+            "arguments": [
+                "heat"
+            ]
         },
         {
-            "verb": "Turn off",
+            "verb": "turn",
             "arguments": [
                 "slow cooker"
             ]
@@ -90,31 +80,25 @@
             "arguments": []
         },
         {
-            "verb": "Keep",
+            "verb": "keep",
             "arguments": []
-        },
-        {
-            "verb": "served",
-            "arguments": [
-                "scrambled eggs"
-            ]
         },
         {
             "verb": "add",
             "arguments": [
-                "favorite vegetables"
+                "vegetables"
             ]
         },
         {
             "verb": "use",
             "arguments": [
-                "soft vegetables"
+                "vegetables"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "soft vegetables"
+                "vegetables"
             ]
         },
         {
@@ -132,11 +116,43 @@
         {
             "verb": "add",
             "arguments": [
+                "meat"
+            ]
+        },
+        {
+            "verb": "put",
+            "arguments": [
+                "meat"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": [
+                "meat"
+            ]
+        },
+        {
+            "verb": "cook",
+            "arguments": [
+                "meat"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": []
+        },
+        {
+            "verb": "omit",
+            "arguments": []
+        },
+        {
+            "verb": "add",
+            "arguments": [
                 "garlic"
             ]
         },
         {
-            "verb": "switching",
+            "verb": "switch",
             "arguments": [
                 "flavor of condensed soup"
             ]
@@ -154,7 +170,8 @@
         {
             "verb": "drain",
             "arguments": [
-                "fat"
+                "fat",
+                "mixture"
             ]
         },
         {
@@ -193,15 +210,21 @@
             ]
         },
         {
+            "verb": "stir",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
             "verb": "get",
             "arguments": [
-                "ten inch pie plate"
+                "pie plate"
             ]
         },
         {
             "verb": "grease",
             "arguments": [
-                "ten inch pie plate"
+                "pie plate"
             ]
         },
         {
@@ -269,7 +292,7 @@
         {
             "verb": "bake",
             "arguments": [
-                "mixture"
+                "dish"
             ]
         },
         {
@@ -287,7 +310,8 @@
         {
             "verb": "garnish",
             "arguments": [
-                "dish"
+                "dish",
+                "green pepper"
             ]
         }
     ],
@@ -313,7 +337,7 @@
         {
             "verb": "process",
             "arguments": [
-                "broken wafer cookies"
+                "cookies"
             ]
         },
         {
@@ -327,9 +351,13 @@
         {
             "verb": "pop",
             "arguments": [
-                "butter",
-                "chocolate chips",
-                "sugar"
+                "bowl"
+            ]
+        },
+        {
+            "verb": "set",
+            "arguments": [
+                "microwave"
             ]
         },
         {
@@ -357,7 +385,7 @@
             ]
         },
         {
-            "verb": "chill",
+            "verb": "let",
             "arguments": [
                 "crumb mixture"
             ]
@@ -385,7 +413,9 @@
         },
         {
             "verb": "stir",
-            "arguments": []
+            "arguments": [
+                "raspberries"
+            ]
         },
         {
             "verb": "press",
@@ -414,13 +444,13 @@
         {
             "verb": "allow",
             "arguments": [
-                "contents of the filling"
+                "pie"
             ]
         },
         {
             "verb": "cool",
             "arguments": [
-                "contents of the filling"
+                "pie"
             ]
         },
         {
@@ -464,22 +494,25 @@
             "verb": "mix",
             "arguments": [
                 "sugar",
-                "milk",
-                "dough"
+                "about a half cup of milk"
+            ]
+        },
+        {
+            "verb": "form",
+            "arguments": [
+                "soft dough"
             ]
         },
         {
             "verb": "put",
             "arguments": [
-                "flour",
-                "surface"
+                "flour"
             ]
         },
         {
             "verb": "transfer",
             "arguments": [
-                "dough",
-                "surface"
+                "dough"
             ]
         },
         {
@@ -497,7 +530,7 @@
         {
             "verb": "cut",
             "arguments": [
-                "circles",
+                "2-inch circles",
                 "dough"
             ]
         },
@@ -509,9 +542,16 @@
             ]
         },
         {
+            "verb": "leave",
+            "arguments": [
+                "about 2 inches space",
+                "each slice"
+            ]
+        },
+        {
             "verb": "brush",
             "arguments": [
-                "dough slice",
+                "each dough slice",
                 "milk"
             ]
         },
@@ -544,7 +584,7 @@
         {
             "verb": "use",
             "arguments": [
-                "baking paper"
+                "non-stick baking paper"
             ]
         },
         {
@@ -558,17 +598,17 @@
         {
             "verb": "aim",
             "arguments": [
-                "texture"
+                "grainy texture"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "salt"
+                "pinch of salt"
             ]
         },
         {
-            "verb": "bring",
+            "verb": "bring out",
             "arguments": [
                 "sweetness"
             ]
@@ -576,7 +616,7 @@
         {
             "verb": "get",
             "arguments": [
-                "flavor"
+                "rounder flavor"
             ]
         },
         {
@@ -593,33 +633,33 @@
                 "oats",
                 "dried fruits",
                 "fresh almonds",
-                "butter mixture"
+                "sweet butter mixture"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "batter",
-                "pan"
+                "course batter",
+                "lined pan"
             ]
         },
         {
             "verb": "stick",
             "arguments": [
-                "pan",
+                "lined pan",
                 "oven"
             ]
         },
         {
             "verb": "cook",
             "arguments": [
-                "batter"
+                "lined pan"
             ]
         },
         {
             "verb": "use",
             "arguments": [
-                "syrup"
+                "remaining tablespoon of syrup"
             ]
         },
         {
@@ -631,13 +671,15 @@
         {
             "verb": "take",
             "arguments": [
-                "batter"
+                "lined pan",
+                "oven"
             ]
         },
         {
             "verb": "slice",
             "arguments": [
-                "batter"
+                "squares",
+                "pan"
             ]
         },
         {
@@ -697,7 +739,7 @@
         {
             "verb": "melt",
             "arguments": [
-                "butter"
+                "slices of butter"
             ]
         },
         {
@@ -711,12 +753,6 @@
             "verb": "cook",
             "arguments": [
                 "slices of bread"
-            ]
-        },
-        {
-            "verb": "turns",
-            "arguments": [
-                "colour of the bread"
             ]
         },
         {
@@ -749,19 +785,13 @@
             "arguments": [
                 "slices of fruit"
             ]
-        },
-        {
-            "verb": "prepare",
-            "arguments": [
-                "french toast"
-            ]
         }
     ],
     [
         {
             "verb": "fill",
             "arguments": [
-                "each bowl",
+                "bowl",
                 "Fritos"
             ]
         },
@@ -797,6 +827,12 @@
             ]
         },
         {
+            "verb": "melt",
+            "arguments": [
+                "cheese"
+            ]
+        },
+        {
             "verb": "stir",
             "arguments": []
         },
@@ -816,8 +852,14 @@
             "verb": "put",
             "arguments": [
                 "chili",
+                "small bag of Fritos"
+            ]
+        },
+        {
+            "verb": "put",
+            "arguments": [
                 "cheese",
-                "bag"
+                "small bag of Fritos"
             ]
         },
         {
@@ -839,9 +881,21 @@
             ]
         },
         {
+            "verb": "cool",
+            "arguments": [
+                "chili"
+            ]
+        },
+        {
             "verb": "keep mixing",
             "arguments": [
                 "fresh Fritos"
+            ]
+        },
+        {
+            "verb": "eat",
+            "arguments": [
+                "Frito pie"
             ]
         },
         {
@@ -853,7 +907,7 @@
         {
             "verb": "stick",
             "arguments": [
-                "the original"
+                "original"
             ]
         }
     ],
@@ -874,14 +928,14 @@
             "verb": "spread",
             "arguments": [
                 "butter",
-                "slices of bread"
+                "both sides of both slices of bread"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "pieces of the American cheese",
-                "slice of bread"
+                "2 pieces of American cheese",
+                "one slice of bread"
             ]
         },
         {
@@ -922,10 +976,12 @@
         },
         {
             "verb": "experiment",
-            "arguments": []
+            "arguments": [
+                "extras"
+            ]
         },
         {
-            "verb": "adding",
+            "verb": "add",
             "arguments": [
                 "extras",
                 "sandwich"
@@ -971,7 +1027,9 @@
         },
         {
             "verb": "switch",
-            "arguments": []
+            "arguments": [
+                "high speed"
+            ]
         },
         {
             "verb": "beat",
@@ -987,7 +1045,9 @@
         },
         {
             "verb": "blend",
-            "arguments": []
+            "arguments": [
+                "frosting"
+            ]
         },
         {
             "verb": "set",
@@ -1076,7 +1136,7 @@
             ]
         },
         {
-            "verb": "cut",
+            "verb": "cut out",
             "arguments": [
                 "cookies"
             ]
@@ -1159,14 +1219,6 @@
             ]
         },
         {
-            "verb": "combine",
-            "arguments": [
-                "salt",
-                "sugar",
-                "yeast mixture"
-            ]
-        },
-        {
             "verb": "add",
             "arguments": [
                 "flour"
@@ -1188,19 +1240,13 @@
             "verb": "stir",
             "arguments": [
                 "oil"
-            ]
-        },
-        {
-            "verb": "mix",
-            "arguments": [
-                "oil",
-                "dough"
             ]
         },
         {
             "verb": "check",
             "arguments": [
-                "consistency of the dough"
+                "consistency",
+                "dough"
             ]
         },
         {
@@ -1224,8 +1270,7 @@
         {
             "verb": "take",
             "arguments": [
-                "risen dough",
-                "bowl"
+                "risen dough"
             ]
         },
         {
@@ -1237,21 +1282,19 @@
         {
             "verb": "coat",
             "arguments": [
-                "hands",
-                "flour"
+                "hands"
             ]
         },
         {
             "verb": "spread",
             "arguments": [
-                "dough",
-                "cookie sheet"
+                "dough"
             ]
         },
         {
             "verb": "grease",
             "arguments": [
-                "sheet"
+                "cookie sheet"
             ]
         },
         {
@@ -1282,8 +1325,7 @@
         {
             "verb": "sprinkle",
             "arguments": [
-                "herbs",
-                "pizza"
+                "herbs"
             ]
         },
         {
@@ -1305,13 +1347,13 @@
     ],
     [
         {
-            "verb": "heat",
+            "verb": "Heat",
             "arguments": [
                 "saucepan"
             ]
         },
         {
-            "verb": "add",
+            "verb": "Add",
             "arguments": [
                 "meat"
             ]
@@ -1323,19 +1365,13 @@
             ]
         },
         {
-            "verb": "drain",
+            "verb": "Drain",
             "arguments": [
                 "fat"
             ]
         },
         {
-            "verb": "leave",
-            "arguments": [
-                "fat"
-            ]
-        },
-        {
-            "verb": "add",
+            "verb": "Add",
             "arguments": [
                 "onions",
                 "garlic",
@@ -1345,20 +1381,20 @@
             ]
         },
         {
-            "verb": "stir",
+            "verb": "Stir",
             "arguments": [
                 "meat mixture"
             ]
         },
         {
-            "verb": "add",
+            "verb": "Add",
             "arguments": [
                 "oregano",
                 "tomato paste"
             ]
         },
         {
-            "verb": "stir",
+            "verb": "Stir",
             "arguments": [
                 "canned tomatoes"
             ]
@@ -1370,7 +1406,7 @@
             ]
         },
         {
-            "verb": "cover",
+            "verb": "Cover",
             "arguments": [
                 "pot"
             ]
@@ -1388,7 +1424,7 @@
             ]
         },
         {
-            "verb": "cook",
+            "verb": "Cook",
             "arguments": [
                 "lasagne noodles"
             ]
@@ -1396,7 +1432,7 @@
         {
             "verb": "drain",
             "arguments": [
-                "noodles"
+                "lasagne noodles"
             ]
         },
         {
@@ -1406,7 +1442,7 @@
             ]
         },
         {
-            "verb": "set",
+            "verb": "Set",
             "arguments": [
                 "noodles"
             ]
@@ -1418,7 +1454,7 @@
             ]
         },
         {
-            "verb": "mix",
+            "verb": "Mix",
             "arguments": []
         },
         {
@@ -1428,27 +1464,27 @@
             ]
         },
         {
-            "verb": "preheat",
+            "verb": "Preheat",
             "arguments": [
                 "oven"
             ]
         },
         {
-            "verb": "place",
+            "verb": "Place",
             "arguments": [
                 "ingredients"
             ]
         },
         {
-            "verb": "ladle",
+            "verb": "Ladle",
             "arguments": [
                 "sauce"
             ]
         },
         {
-            "verb": "place",
+            "verb": "Place",
             "arguments": [
-                "four pieces of lasagne noodles"
+                "lasagne noodles"
             ]
         },
         {
@@ -1458,43 +1494,44 @@
             ]
         },
         {
-            "verb": "spread",
+            "verb": "Spread",
             "arguments": [
-                "layer each of ricotta mozzarella and parmesan cheeses"
+                "ricotta",
+                "mozzarella",
+                "parmesan cheeses"
             ]
         },
         {
-            "verb": "ladle",
+            "verb": "Ladle",
             "arguments": [
                 "sauce"
             ]
         },
         {
             "verb": "continue",
-            "arguments": [
-                "layers"
-            ]
+            "arguments": []
         },
         {
-            "verb": "spread",
+            "verb": "Spread",
             "arguments": [
-                "layer of ricotta cheese"
+                "ricotta cheese"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "rest of sauce"
+                "sauce"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "everything with all your remaining cheese"
+                "everything",
+                "cheese"
             ]
         },
         {
-            "verb": "put",
+            "verb": "Put",
             "arguments": [
                 "tray"
             ]
@@ -1519,9 +1556,7 @@
         },
         {
             "verb": "increase",
-            "arguments": [
-                "heat"
-            ]
+            "arguments": []
         },
         {
             "verb": "add",
@@ -1531,6 +1566,12 @@
         },
         {
             "verb": "brown",
+            "arguments": [
+                "beef"
+            ]
+        },
+        {
+            "verb": "burn",
             "arguments": [
                 "beef"
             ]
@@ -1558,17 +1599,25 @@
         {
             "verb": "add",
             "arguments": [
-                "shallots"
+                "shallots",
+                "onions"
             ]
         },
         {
             "verb": "cook",
             "arguments": [
+                "shallots",
+                "onions"
+            ]
+        },
+        {
+            "verb": "allow",
+            "arguments": [
                 "shallots"
             ]
         },
         {
-            "verb": "soak up",
+            "verb": "soak",
             "arguments": [
                 "shallots",
                 "drippings"
@@ -1589,12 +1638,7 @@
         {
             "verb": "add",
             "arguments": [
-                "butter"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
+                "butter",
                 "olive oil"
             ]
         },
@@ -1618,9 +1662,7 @@
         },
         {
             "verb": "stir",
-            "arguments": [
-                "mushrooms"
-            ]
+            "arguments": []
         },
         {
             "verb": "sprinkle",
@@ -1632,9 +1674,7 @@
         },
         {
             "verb": "reduce",
-            "arguments": [
-                "heat"
-            ]
+            "arguments": []
         },
         {
             "verb": "add",
@@ -1645,18 +1685,18 @@
         },
         {
             "verb": "turn",
-            "arguments": [
-                "heat"
-            ]
+            "arguments": []
         },
         {
             "verb": "dilute",
-            "arguments": [
-                "mixture"
-            ]
+            "arguments": []
         },
         {
             "verb": "mix",
+            "arguments": []
+        },
+        {
+            "verb": "allow",
             "arguments": [
                 "mixture"
             ]
@@ -1690,7 +1730,8 @@
             "verb": "mix",
             "arguments": [
                 "beef",
-                "mushrooms"
+                "mushrooms",
+                "sauce"
             ]
         },
         {
@@ -1701,7 +1742,7 @@
             ]
         },
         {
-            "verb": "serve",
+            "verb": "served",
             "arguments": [
                 "beef stroganoff",
                 "pasta"
@@ -1712,8 +1753,7 @@
         {
             "verb": "place",
             "arguments": [
-                "rack",
-                "center of the oven"
+                "rack"
             ]
         },
         {
@@ -1731,14 +1771,13 @@
         {
             "verb": "line",
             "arguments": [
-                "baking pan",
-                "parchment paper"
+                "baking pan"
             ]
         },
         {
             "verb": "leave",
             "arguments": [
-                "parchment paper"
+                "paper"
             ]
         },
         {
@@ -1774,14 +1813,7 @@
             "verb": "pour",
             "arguments": [
                 "almond extract",
-                "stand mixer bowl"
-            ]
-        },
-        {
-            "verb": "pour",
-            "arguments": [
-                "vanilla extract",
-                "stand mixer bowl"
+                "vanilla extract"
             ]
         },
         {
@@ -1805,8 +1837,7 @@
         {
             "verb": "spread",
             "arguments": [
-                "batter",
-                "pan"
+                "batter"
             ]
         },
         {
@@ -1818,12 +1849,11 @@
         {
             "verb": "remove",
             "arguments": [
-                "batter",
-                "oven"
+                "batter"
             ]
         },
         {
-            "verb": "cool",
+            "verb": "let",
             "arguments": [
                 "batter"
             ]
@@ -1838,14 +1868,13 @@
         {
             "verb": "pour",
             "arguments": [
-                "almond extract",
-                "mixture"
+                "almond extract"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "all ingredients"
+                "ingredients"
             ]
         },
         {
@@ -1857,8 +1886,7 @@
         {
             "verb": "spread",
             "arguments": [
-                "mixture",
-                "brownie base"
+                "mixture"
             ]
         },
         {
@@ -1870,8 +1898,7 @@
         {
             "verb": "place",
             "arguments": [
-                "pan",
-                "oven"
+                "pan"
             ]
         },
         {
@@ -1881,15 +1908,13 @@
         {
             "verb": "remove",
             "arguments": [
-                "baking pan",
-                "oven"
+                "baking pan"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "baking pan",
-                "wire rack"
+                "baking pan"
             ]
         },
         {
@@ -1913,6 +1938,13 @@
             ]
         },
         {
+            "verb": "use",
+            "arguments": [
+                "lime wedge",
+                "rim of each glass"
+            ]
+        },
+        {
             "verb": "moisten",
             "arguments": [
                 "rim of each glass"
@@ -1921,13 +1953,8 @@
         {
             "verb": "dip",
             "arguments": [
-                "outside of the rim"
-            ]
-        },
-        {
-            "verb": "salt",
-            "arguments": [
-                "outside of the glass"
+                "outside of the rim",
+                "salt"
             ]
         },
         {
@@ -1966,7 +1993,8 @@
         {
             "verb": "strain",
             "arguments": [
-                "mixture"
+                "mixture",
+                "cocktail glasses"
             ]
         },
         {
@@ -1979,7 +2007,8 @@
         {
             "verb": "pour",
             "arguments": [
-                "margarita"
+                "margarita",
+                "glasses"
             ]
         },
         {
@@ -2032,14 +2061,15 @@
         {
             "verb": "mix",
             "arguments": [
-                "crushed ice cubes",
+                "crushed ice",
                 "drinks"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "liquid ingredients and ice"
+                "liquid ingredients",
+                "ice"
             ]
         }
     ],
@@ -2067,6 +2097,12 @@
         },
         {
             "verb": "cook",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
+            "verb": "stir",
             "arguments": [
                 "mixture"
             ]
@@ -2164,7 +2200,7 @@
         {
             "verb": "serve",
             "arguments": [
-                "slices"
+                "meatloaf"
             ]
         }
     ],
@@ -2180,14 +2216,14 @@
             "verb": "sprinkle",
             "arguments": [
                 "salt",
-                "both sides of the eggplant rounds"
+                "eggplant rounds"
             ]
         },
         {
             "verb": "place",
             "arguments": [
                 "eggplant slices",
-                "top of the paper towels"
+                "paper towels"
             ]
         },
         {
@@ -2199,7 +2235,7 @@
         {
             "verb": "arrange",
             "arguments": [
-                "two oven racks",
+                "oven racks",
                 "oven"
             ]
         },
@@ -2232,7 +2268,7 @@
         {
             "verb": "grease",
             "arguments": [
-                "both baking sheets",
+                "baking sheets",
                 "olive oil"
             ]
         },
@@ -2247,15 +2283,14 @@
             "verb": "arrange",
             "arguments": [
                 "eggplant rounds",
-                "layer",
                 "baking sheets"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "one baking sheet",
-                "each oven rack"
+                "baking sheet",
+                "oven rack"
             ]
         },
         {
@@ -2354,9 +2389,7 @@
         {
             "verb": "season",
             "arguments": [
-                "mixture",
-                "salt",
-                "pepper"
+                "mixture"
             ]
         },
         {
@@ -2368,30 +2401,26 @@
         {
             "verb": "arrange",
             "arguments": [
-                "half of eggplant rounds",
-                "single layer",
+                "eggplant rounds",
                 "bottom of the dish"
             ]
         },
         {
             "verb": "spoon",
             "arguments": [
-                "half of vegetable mixture",
+                "vegetable mixture",
                 "eggplant layer"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "third layer",
-                "2 tablespoons of cheese"
+                "cheese"
             ]
         },
         {
             "verb": "repeat",
-            "arguments": [
-                "process"
-            ]
+            "arguments": []
         },
         {
             "verb": "melt",
@@ -2442,7 +2471,7 @@
             "verb": "top",
             "arguments": [
                 "everything",
-                "layer of cheese"
+                "cheese"
             ]
         },
         {
@@ -2517,15 +2546,13 @@
         {
             "verb": "add",
             "arguments": [
-                "egg",
-                "mixture"
+                "egg"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "melted butter",
-                "mixture"
+                "melted butter"
             ]
         },
         {
@@ -2580,7 +2607,7 @@
         {
             "verb": "cook",
             "arguments": [
-                "pancake"
+                "other side"
             ]
         },
         {
@@ -2602,13 +2629,15 @@
         {
             "verb": "layer",
             "arguments": [
-                "potato slices"
+                "potato slices",
+                "baking dish"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "potatoes"
+                "potatoes",
+                "rows"
             ]
         },
         {
@@ -2620,27 +2649,27 @@
         {
             "verb": "transfer",
             "arguments": [
-                "3 tablespoons of the melted butter"
+                "3 tablespoons of melted butter",
+                "cup or small bowl"
             ]
         },
         {
             "verb": "set",
             "arguments": [
-                "3 tablespoons of the melted butter"
+                "3 tablespoons of melted butter"
             ]
         },
         {
             "verb": "add",
             "arguments": [
                 "flour",
-                "butter remaining in the saucepan"
+                "butter remaining in the sauce pan"
             ]
         },
         {
             "verb": "stir",
             "arguments": [
-                "flour",
-                "butter remaining in the saucepan"
+                "mixture in the saucepan"
             ]
         },
         {
@@ -2659,7 +2688,8 @@
         {
             "verb": "get",
             "arguments": [
-                "mixture"
+                "mixture",
+                "smooth and thick consistency"
             ]
         },
         {
@@ -2671,6 +2701,12 @@
         },
         {
             "verb": "stir",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
+            "verb": "melt",
             "arguments": [
                 "cheese"
             ]
@@ -2685,7 +2721,8 @@
         {
             "verb": "give",
             "arguments": [
-                "sauce"
+                "sauce",
+                "time to seep to the bottom of the dish"
             ]
         },
         {
@@ -2710,18 +2747,10 @@
         },
         {
             "verb": "bake",
-            "arguments": [
-                "potatoes"
-            ]
+            "arguments": []
         }
     ],
     [
-        {
-            "verb": "prepare",
-            "arguments": [
-                "crust"
-            ]
-        },
         {
             "verb": "mix",
             "arguments": [
@@ -2742,15 +2771,7 @@
         },
         {
             "verb": "roll",
-            "arguments": [
-                "dough"
-            ]
-        },
-        {
-            "verb": "make",
-            "arguments": [
-                "rectangle"
-            ]
+            "arguments": []
         },
         {
             "verb": "arrange",
@@ -2783,6 +2804,12 @@
             "arguments": [
                 "chopped onions",
                 "celery"
+            ]
+        },
+        {
+            "verb": "turns",
+            "arguments": [
+                "onion"
             ]
         },
         {
@@ -2830,11 +2857,11 @@
             ]
         },
         {
-            "verb": "heat",
+            "verb": "heating",
             "arguments": []
         },
         {
-            "verb": "boil",
+            "verb": "boils",
             "arguments": []
         },
         {
@@ -2845,20 +2872,12 @@
         },
         {
             "verb": "spread",
-            "arguments": [
-                "gravy mixture"
-            ]
+            "arguments": []
         },
         {
             "verb": "arrange",
             "arguments": [
                 "remaining dough"
-            ]
-        },
-        {
-            "verb": "place",
-            "arguments": [
-                "dough"
             ]
         },
         {
@@ -2881,15 +2900,23 @@
         },
         {
             "verb": "bake",
+            "arguments": []
+        },
+        {
+            "verb": "stays",
             "arguments": [
-                "pot pie"
+                "crust"
+            ]
+        },
+        {
+            "verb": "keep",
+            "arguments": [
+                "crust"
             ]
         },
         {
             "verb": "let",
-            "arguments": [
-                "pot pie"
-            ]
+            "arguments": []
         }
     ],
     null,
@@ -2994,7 +3021,7 @@
         {
             "verb": "bake",
             "arguments": [
-                "cake"
+                "filling"
             ]
         },
         {
@@ -3012,8 +3039,7 @@
         {
             "verb": "remove",
             "arguments": [
-                "sides",
-                "pan"
+                "sizes of the pan"
             ]
         },
         {
@@ -3026,7 +3052,8 @@
             "verb": "garnish",
             "arguments": [
                 "cake",
-                "almonds pecan slices"
+                "almonds",
+                "pecan slices"
             ]
         },
         {
@@ -3063,6 +3090,13 @@
             ]
         },
         {
+            "verb": "remove",
+            "arguments": [
+                "pulp",
+                "seeds"
+            ]
+        },
+        {
             "verb": "chill",
             "arguments": [
                 "fruits",
@@ -3074,7 +3108,7 @@
         {
             "verb": "take",
             "arguments": [
-                "orange",
+                "whole orange",
                 "lime",
                 "lemon"
             ]
@@ -3082,7 +3116,7 @@
         {
             "verb": "slice",
             "arguments": [
-                "orange",
+                "whole orange",
                 "lime",
                 "lemon"
             ]
@@ -3096,7 +3130,7 @@
         {
             "verb": "pour",
             "arguments": [
-                "rum",
+                "chilled rum",
                 "sugar"
             ]
         },
@@ -3115,7 +3149,7 @@
         {
             "verb": "stir",
             "arguments": [
-                "orange juice",
+                "chilled orange juice",
                 "wine"
             ]
         },
@@ -3159,7 +3193,13 @@
             ]
         },
         {
-            "verb": "let stand",
+            "verb": "let",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
+            "verb": "stand",
             "arguments": [
                 "mixture"
             ]
@@ -3260,7 +3300,13 @@
             ]
         },
         {
-            "verb": "let cool",
+            "verb": "let",
+            "arguments": [
+                "muffins"
+            ]
+        },
+        {
+            "verb": "cool",
             "arguments": [
                 "muffins"
             ]
@@ -3275,7 +3321,7 @@
             "verb": "pack",
             "arguments": [
                 "muffins",
-                "your kid's lunchbox"
+                "kid's lunchbox"
             ]
         }
     ],
@@ -3299,7 +3345,7 @@
                 "baking soda",
                 "salt",
                 "cream of tartar",
-                "2 cups flour"
+                "flour"
             ]
         },
         {
@@ -3310,25 +3356,11 @@
             ]
         },
         {
-            "verb": "gain",
-            "arguments": [
-                "mixture",
-                "consistency of bread crumbs"
-            ]
-        },
-        {
             "verb": "mix",
             "arguments": [
                 "sugar",
-                "half cup of milk",
-                "mixture"
-            ]
-        },
-        {
-            "verb": "form",
-            "arguments": [
-                "mixture",
-                "soft dough"
+                "milk",
+                "dough"
             ]
         },
         {
@@ -3360,7 +3392,7 @@
         {
             "verb": "cut",
             "arguments": [
-                "2-inch circles",
+                "circles",
                 "dough"
             ]
         },
@@ -3440,13 +3472,8 @@
         {
             "verb": "allow",
             "arguments": [
-                "butter"
-            ]
-        },
-        {
-            "verb": "bubble",
-            "arguments": [
-                "butter"
+                "butter",
+                "pan"
             ]
         },
         {
@@ -3481,25 +3508,19 @@
             ]
         },
         {
-            "verb": "distribute",
-            "arguments": [
-                "runny parts"
-            ]
-        },
-        {
-            "verb": "break apart",
+            "verb": "break",
             "arguments": [
                 "large pieces"
             ]
         },
         {
-            "verb": "flip over",
+            "verb": "flip",
             "arguments": [
                 "eggs"
             ]
         },
         {
-            "verb": "cook",
+            "verb": "allow",
             "arguments": [
                 "eggs"
             ]
@@ -3527,7 +3548,7 @@
     ],
     [
         {
-            "verb": "preheat",
+            "verb": "preheating",
             "arguments": [
                 "oven"
             ]
@@ -3628,7 +3649,9 @@
         },
         {
             "verb": "bake",
-            "arguments": []
+            "arguments": [
+                "cheese"
+            ]
         },
         {
             "verb": "let",
@@ -3637,13 +3660,13 @@
             ]
         },
         {
-            "verb": "slice",
+            "verb": "slicing",
             "arguments": [
                 "dish"
             ]
         },
         {
-            "verb": "serve",
+            "verb": "serving",
             "arguments": [
                 "dish"
             ]
@@ -3774,8 +3797,7 @@
         {
             "verb": "place",
             "arguments": [
-                "pork strips",
-                "batter"
+                "pork strips"
             ]
         },
         {
@@ -3787,7 +3809,7 @@
         {
             "verb": "place",
             "arguments": [
-                "small drop of batter mixture"
+                "small drop of the batter mixture"
             ]
         },
         {
@@ -3799,8 +3821,7 @@
         {
             "verb": "place",
             "arguments": [
-                "flour",
-                "plastic bag"
+                "flour"
             ]
         },
         {
@@ -3812,8 +3833,7 @@
         {
             "verb": "place",
             "arguments": [
-                "small batch of pork strips",
-                "bag"
+                "small batch of pork strips"
             ]
         },
         {
@@ -3849,8 +3869,13 @@
         {
             "verb": "transfer",
             "arguments": [
-                "drained pork pieces",
-                "large platter"
+                "drained pork pieces"
+            ]
+        },
+        {
+            "verb": "repeat",
+            "arguments": [
+                "steps 5 and 6"
             ]
         },
         {
@@ -3868,7 +3893,7 @@
         {
             "verb": "leave",
             "arguments": [
-                "about 2 tablespoons (oil)"
+                "about 2 tablespoons"
             ]
         },
         {
@@ -3911,15 +3936,12 @@
         {
             "verb": "add",
             "arguments": [
-                "slurry",
-                "sauce"
+                "slurry"
             ]
         },
         {
             "verb": "stir",
-            "arguments": [
-                "sauce"
-            ]
+            "arguments": []
         },
         {
             "verb": "simmer",
@@ -3944,15 +3966,15 @@
             ]
         },
         {
-            "verb": "melted",
-            "arguments": [
-                "butter"
-            ]
-        },
-        {
             "verb": "turn off",
             "arguments": [
                 "heat"
+            ]
+        },
+        {
+            "verb": "allow",
+            "arguments": [
+                "mixture"
             ]
         },
         {
@@ -3974,13 +3996,7 @@
             ]
         },
         {
-            "verb": "stirring",
-            "arguments": [
-                "yeast"
-            ]
-        },
-        {
-            "verb": "mixed",
+            "verb": "stir",
             "arguments": [
                 "yeast",
                 "water"
@@ -4019,19 +4035,13 @@
             ]
         },
         {
-            "verb": "adding",
+            "verb": "add",
             "arguments": [
                 "unbleached bread flour"
             ]
         },
         {
-            "verb": "add",
-            "arguments": [
-                "fifth cup"
-            ]
-        },
-        {
-            "verb": "mixing",
+            "verb": "mix",
             "arguments": [
                 "dough"
             ]
@@ -4043,21 +4053,27 @@
             ]
         },
         {
-            "verb": "kneading",
+            "verb": "flour",
+            "arguments": [
+                "board"
+            ]
+        },
+        {
+            "verb": "knead",
             "arguments": [
                 "dough"
             ]
         },
         {
-            "verb": "kneading",
-            "arguments": [
-                "dough"
-            ]
-        },
-        {
-            "verb": "adding",
+            "verb": "add",
             "arguments": [
                 "remaining flour"
+            ]
+        },
+        {
+            "verb": "knead",
+            "arguments": [
+                "dough"
             ]
         },
         {
@@ -4085,9 +4101,9 @@
             ]
         },
         {
-            "verb": "greased",
+            "verb": "grease",
             "arguments": [
-                "top of dough"
+                "dough"
             ]
         },
         {
@@ -4109,10 +4125,8 @@
             ]
         },
         {
-            "verb": "risen",
-            "arguments": [
-                "dough"
-            ]
+            "verb": "wait",
+            "arguments": []
         },
         {
             "verb": "punch down",
@@ -4136,12 +4150,6 @@
             "verb": "knead",
             "arguments": [
                 "dough"
-            ]
-        },
-        {
-            "verb": "remove",
-            "arguments": [
-                "bubbles"
             ]
         },
         {
@@ -4195,7 +4203,7 @@
         {
             "verb": "spread",
             "arguments": [
-                "layer of yellow cornmeal"
+                "yellow cornmeal"
             ]
         },
         {
@@ -4213,12 +4221,6 @@
         {
             "verb": "wait",
             "arguments": []
-        },
-        {
-            "verb": "rise",
-            "arguments": [
-                "dough"
-            ]
         },
         {
             "verb": "put",
@@ -4239,11 +4241,7 @@
             ]
         },
         {
-            "verb": "wait",
-            "arguments": []
-        },
-        {
-            "verb": "cooled",
+            "verb": "cool",
             "arguments": [
                 "bread"
             ]
@@ -4286,7 +4284,7 @@
             "arguments": []
         },
         {
-            "verb": "set aside",
+            "verb": "set",
             "arguments": [
                 "bowl"
             ]
@@ -4314,8 +4312,7 @@
         {
             "verb": "drop",
             "arguments": [
-                "semisweet chocolate chips",
-                "batter"
+                "semisweet chocolate chips"
             ]
         },
         {
@@ -4339,8 +4336,7 @@
         {
             "verb": "cover",
             "arguments": [
-                "bowl",
-                "plastic wrap"
+                "bowl"
             ]
         },
         {
@@ -4364,28 +4360,26 @@
         {
             "verb": "put",
             "arguments": [
-                "cookie sheet",
-                "baking pan"
+                "cookie sheet"
             ]
         },
         {
             "verb": "arrange",
             "arguments": [
-                "balls",
-                "cookie sheets"
+                "balls"
             ]
         },
         {
             "verb": "flatten",
             "arguments": [
-                "each ball"
+                "ball"
             ]
         },
         {
             "verb": "create",
             "arguments": [
                 "crisscross patterns",
-                "each ball"
+                "ball"
             ]
         },
         {
@@ -4395,26 +4389,19 @@
             ]
         },
         {
-            "verb": "take out",
+            "verb": "take",
             "arguments": [
-                "cookies",
-                "oven"
+                "cookies"
             ]
         },
         {
             "verb": "wait",
             "arguments": []
-        },
-        {
-            "verb": "take",
-            "arguments": [
-                "big bite"
-            ]
         }
     ],
     [
         {
-            "verb": "Preheat",
+            "verb": "preheat",
             "arguments": [
                 "oven"
             ]
@@ -4438,7 +4425,7 @@
             ]
         },
         {
-            "verb": "Cut",
+            "verb": "cut",
             "arguments": [
                 "shortening",
                 "cheese"
@@ -4453,34 +4440,34 @@
             ]
         },
         {
-            "verb": "chopping",
+            "verb": "chop",
             "arguments": [
                 "cubes"
             ]
         },
         {
-            "verb": "Drizzle",
+            "verb": "drizzle",
             "arguments": [
                 "buttermilk",
                 "flour-mixture"
             ]
         },
         {
-            "verb": "mixing",
+            "verb": "mix",
             "arguments": [
                 "buttermilk",
                 "flour-mixture"
             ]
         },
         {
-            "verb": "Add",
+            "verb": "add",
             "arguments": [
-                "buttermilk",
+                "butter milk",
                 "dough"
             ]
         },
         {
-            "verb": "Turn",
+            "verb": "turn",
             "arguments": [
                 "dough"
             ]
@@ -4492,9 +4479,10 @@
             ]
         },
         {
-            "verb": "Dust",
+            "verb": "dust",
             "arguments": [
-                "surface"
+                "surface",
+                "flour"
             ]
         },
         {
@@ -4504,7 +4492,7 @@
             ]
         },
         {
-            "verb": "cut out",
+            "verb": "cut",
             "arguments": [
                 "dough rounds"
             ]
@@ -4517,47 +4505,45 @@
             ]
         },
         {
-            "verb": "Collect",
+            "verb": "collect",
             "arguments": [
                 "dough scraps"
             ]
         },
         {
-            "verb": "rolling",
+            "verb": "start",
+            "arguments": []
+        },
+        {
+            "verb": "roll",
             "arguments": [
                 "dough scraps"
             ]
         },
         {
-            "verb": "cutting",
+            "verb": "cut",
             "arguments": [
                 "biscuits"
             ]
         },
         {
-            "verb": "Make",
+            "verb": "make",
             "arguments": [
                 "dimple",
-                "center of every biscuit"
+                "center",
+                "biscuit"
             ]
         },
         {
-            "verb": "Bake",
+            "verb": "bake",
             "arguments": [
-                "biscuits"
+                "biscuit"
             ]
         },
         {
-            "verb": "turns",
+            "verb": "take",
             "arguments": [
-                "biscuits",
-                "golden brown"
-            ]
-        },
-        {
-            "verb": "Take",
-            "arguments": [
-                "biscuits"
+                "biscuit"
             ]
         },
         {
@@ -4568,9 +4554,9 @@
             ]
         },
         {
-            "verb": "Serve",
+            "verb": "serve",
             "arguments": [
-                "biscuits"
+                "biscuit"
             ]
         }
     ],
@@ -4693,7 +4679,7 @@
             ]
         },
         {
-            "verb": "take",
+            "verb": "take out",
             "arguments": [
                 "cheesecake"
             ]
@@ -4714,13 +4700,7 @@
             "verb": "top",
             "arguments": [
                 "cheesecake",
-                "fresh fruits"
-            ]
-        },
-        {
-            "verb": "top",
-            "arguments": [
-                "cheesecake",
+                "fresh fruits",
                 "glazed fruits"
             ]
         },
@@ -4779,18 +4759,6 @@
             "verb": "cook",
             "arguments": [
                 "rice"
-            ]
-        },
-        {
-            "verb": "cook",
-            "arguments": [
-                "rice"
-            ]
-        },
-        {
-            "verb": "remove",
-            "arguments": [
-                "contents"
             ]
         },
         {
@@ -4855,8 +4823,13 @@
             "verb": "remove",
             "arguments": [
                 "skin",
-                "bones",
-                "chicken"
+                "bones"
+            ]
+        },
+        {
+            "verb": "prepare",
+            "arguments": [
+                "salsa"
             ]
         },
         {
@@ -4871,14 +4844,19 @@
         {
             "verb": "add",
             "arguments": [
-                "water",
+                "water"
+            ]
+        },
+        {
+            "verb": "cover",
+            "arguments": [
                 "mixture"
             ]
         },
         {
             "verb": "simmer",
             "arguments": [
-                "whole thing"
+                "mixture"
             ]
         },
         {
@@ -4913,8 +4891,7 @@
             "verb": "put",
             "arguments": [
                 "brown sugar",
-                "diced onion",
-                "pot"
+                "diced onion"
             ]
         },
         {
@@ -4928,8 +4905,7 @@
             "arguments": [
                 "chipotle",
                 "adobo sauce",
-                "tomatoes",
-                "mix"
+                "tomatoes"
             ]
         },
         {
@@ -4941,8 +4917,7 @@
         {
             "verb": "pour",
             "arguments": [
-                "sauce",
-                "blender"
+                "sauce"
             ]
         },
         {
@@ -4954,19 +4929,21 @@
         {
             "verb": "put",
             "arguments": [
-                "sauce",
-                "pot"
+                "sauce"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "shredded chicken",
-                "mix"
+                "shredded chicken"
             ]
         },
         {
-            "verb": "put in",
+            "verb": "mix",
+            "arguments": []
+        },
+        {
+            "verb": "put",
             "arguments": [
                 "pepper",
                 "salt"
@@ -4993,9 +4970,7 @@
         {
             "verb": "put",
             "arguments": [
-                "thick strip",
-                "chicken mixture",
-                "tortilla"
+                "chicken mixture"
             ]
         },
         {
@@ -5014,7 +4989,7 @@
             ]
         },
         {
-            "verb": "fold in",
+            "verb": "fold",
             "arguments": [
                 "two sides"
             ]
@@ -5022,7 +4997,7 @@
         {
             "verb": "roll",
             "arguments": [
-                "rest"
+                "burrito"
             ]
         }
     ],
@@ -5042,23 +5017,27 @@
         {
             "verb": "rub",
             "arguments": [
-                "chicken pieces",
-                "salt",
-                "pepper"
+                "chicken pieces"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "one slice of cheese",
-                "one slice of ham",
-                "each chicken breast"
+                "slice of cheese",
+                "slice of ham",
+                "chicken breast"
             ]
         },
         {
             "verb": "fold",
             "arguments": [
                 "breast"
+            ]
+        },
+        {
+            "verb": "use",
+            "arguments": [
+                "toothpick"
             ]
         },
         {
@@ -5070,29 +5049,25 @@
         {
             "verb": "dip",
             "arguments": [
-                "chicken",
-                "egg"
+                "chicken"
             ]
         },
         {
             "verb": "coat",
             "arguments": [
-                "chicken",
-                "bread crumbs"
+                "chicken"
             ]
         },
         {
             "verb": "coat",
             "arguments": [
-                "baking dish",
-                "non-stick cooking spray"
+                "baking dish"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "chicken",
-                "baking dish"
+                "chicken"
             ]
         },
         {
@@ -5110,22 +5085,17 @@
         {
             "verb": "top",
             "arguments": [
-                "each",
-                "half a slice of cheese"
+                "chicken",
+                "cheese"
             ]
         },
         {
             "verb": "put",
-            "arguments": [
-                "everything",
-                "oven"
-            ]
+            "arguments": []
         },
         {
             "verb": "wait",
-            "arguments": [
-                "cheese"
-            ]
+            "arguments": []
         },
         {
             "verb": "take",
@@ -5136,11 +5106,11 @@
         {
             "verb": "cut",
             "arguments": [
-                "each breast"
+                "breast"
             ]
         },
         {
-            "verb": "take",
+            "verb": "take out",
             "arguments": [
                 "toothpicks"
             ]
@@ -5154,7 +5124,8 @@
         {
             "verb": "add",
             "arguments": [
-                "olive oil"
+                "two tablespoons of olive oil",
+                "soup pot"
             ]
         },
         {
@@ -5168,15 +5139,13 @@
             "verb": "add",
             "arguments": [
                 "peeled potatoes",
-                "broccoli"
+                "broccoli",
+                "pot"
             ]
         },
         {
             "verb": "saute",
-            "arguments": [
-                "peeled potatoes",
-                "broccoli"
-            ]
+            "arguments": []
         },
         {
             "verb": "pour",
@@ -5198,13 +5167,14 @@
             "verb": "pour",
             "arguments": [
                 "soup",
-                "milk"
+                "milk",
+                "pot"
             ]
         },
         {
             "verb": "boil",
             "arguments": [
-                "soup"
+                "soup in the pot"
             ]
         },
         {
@@ -5224,7 +5194,7 @@
             "arguments": []
         },
         {
-            "verb": "let",
+            "verb": "cool",
             "arguments": [
                 "soup"
             ]
@@ -5232,13 +5202,14 @@
         {
             "verb": "pour",
             "arguments": [
-                "soup"
+                "soup",
+                "blender"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "soup"
+                "soup up in the blender"
             ]
         },
         {
@@ -5249,7 +5220,9 @@
         },
         {
             "verb": "serve",
-            "arguments": []
+            "arguments": [
+                "soup"
+            ]
         }
     ],
     [
@@ -5353,12 +5326,6 @@
             ]
         },
         {
-            "verb": "simmer",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
             "verb": "remove",
             "arguments": [
                 "soup"
@@ -5389,12 +5356,6 @@
             ]
         },
         {
-            "verb": "serve",
-            "arguments": [
-                "dish"
-            ]
-        },
-        {
             "verb": "garnish",
             "arguments": [
                 "soup"
@@ -5420,8 +5381,13 @@
         {
             "verb": "leave",
             "arguments": [
-                "celeriac",
-                "colander"
+                "celeriac"
+            ]
+        },
+        {
+            "verb": "come",
+            "arguments": [
+                "liquid"
             ]
         },
         {
@@ -5442,8 +5408,13 @@
         {
             "verb": "leave",
             "arguments": [
-                "mackerel fillet",
-                "vinegar-olive oil mixture"
+                "mackerel fillet"
+            ]
+        },
+        {
+            "verb": "pickle",
+            "arguments": [
+                "mackerel fillet"
             ]
         },
         {
@@ -5461,8 +5432,19 @@
         {
             "verb": "give",
             "arguments": [
-                "mackerel",
-                "charring"
+                "mackerel"
+            ]
+        },
+        {
+            "verb": "overcook",
+            "arguments": [
+                "fish"
+            ]
+        },
+        {
+            "verb": "dry",
+            "arguments": [
+                "fish"
             ]
         },
         {
@@ -5503,22 +5485,19 @@
         {
             "verb": "place",
             "arguments": [
-                "salad leaves",
-                "plate"
+                "salad leaves"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "celeriac mayonnaise",
-                "vegetables"
+                "celeriac mayonnaise"
             ]
         },
         {
             "verb": "lay",
             "arguments": [
-                "fish",
-                "celeriac mayonnaise"
+                "fish"
             ]
         }
     ],
@@ -5543,6 +5522,12 @@
             ]
         },
         {
+            "verb": "make",
+            "arguments": [
+                "each bite"
+            ]
+        },
+        {
             "verb": "fry",
             "arguments": [
                 "bacon bits"
@@ -5561,9 +5546,14 @@
             ]
         },
         {
+            "verb": "set",
+            "arguments": []
+        },
+        {
             "verb": "add",
             "arguments": [
-                "pieces of bread"
+                "pieces of bread",
+                "frying pan"
             ]
         },
         {
@@ -5593,13 +5583,14 @@
         {
             "verb": "put",
             "arguments": [
-                "all the ingredients"
+                "all the ingredients",
+                "food processor"
             ]
         },
         {
             "verb": "blend",
             "arguments": [
-                "mixture"
+                "all the ingredients"
             ]
         },
         {
@@ -5629,26 +5620,27 @@
         {
             "verb": "tear",
             "arguments": [
-                "leaves"
+                "lettuce leaves"
             ]
         },
         {
             "verb": "put",
             "arguments": [
-                "leaves"
+                "lettuce leaves",
+                "serving bowl"
             ]
         },
         {
             "verb": "drizzle",
             "arguments": [
-                "leaves",
+                "lettuce leaves",
                 "dressing"
             ]
         },
         {
             "verb": "toss",
             "arguments": [
-                "leaves"
+                "lettuce leaves"
             ]
         },
         {
@@ -5664,7 +5656,8 @@
                 "chicken pieces",
                 "bacon bits",
                 "croutons",
-                "egg"
+                "egg",
+                "bed of lettuce"
             ]
         },
         {
@@ -5687,13 +5680,13 @@
     ],
     [
         {
-            "verb": "Heat",
+            "verb": "heat",
             "arguments": [
                 "saucepan"
             ]
         },
         {
-            "verb": "Add",
+            "verb": "add",
             "arguments": [
                 "ground beef"
             ]
@@ -5705,7 +5698,7 @@
             ]
         },
         {
-            "verb": "Add",
+            "verb": "add",
             "arguments": [
                 "onions",
                 "garlic",
@@ -5713,13 +5706,25 @@
             ]
         },
         {
-            "verb": "Stir",
+            "verb": "stir",
             "arguments": [
                 "mixture"
             ]
         },
         {
-            "verb": "Add",
+            "verb": "brown",
+            "arguments": [
+                "meat"
+            ]
+        },
+        {
+            "verb": "soften",
+            "arguments": [
+                "onions"
+            ]
+        },
+        {
+            "verb": "add",
             "arguments": [
                 "diced tomatoes",
                 "tomato sauce",
@@ -5729,14 +5734,14 @@
             ]
         },
         {
-            "verb": "Add",
+            "verb": "add",
             "arguments": [
                 "salt",
                 "pepper"
             ]
         },
         {
-            "verb": "boils",
+            "verb": "boil",
             "arguments": [
                 "mixture"
             ]
@@ -5756,19 +5761,25 @@
         {
             "verb": "place",
             "arguments": [
-                "chili"
+                "chili",
+                "big serving bowl"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "chili"
+                "chili",
+                "green onions",
+                "red bell pepper",
+                "sour cream",
+                "cheese"
             ]
         },
         {
             "verb": "throw in",
             "arguments": [
-                "sliced jalapeno pepper"
+                "sliced jalapeno pepper",
+                "mixture"
             ]
         }
     ],
@@ -5845,25 +5856,25 @@
         {
             "verb": "bake",
             "arguments": [
-                "complete mixture"
+                "mixture"
             ]
         },
         {
             "verb": "bake",
             "arguments": [
-                "complete mixture"
+                "mixture"
             ]
         },
         {
-            "verb": "start",
+            "verb": "experiment",
             "arguments": [
-                "experimenting on different homemade Christmas stuffing types"
+                "Christmas stuffing types"
             ]
         },
         {
             "verb": "try",
             "arguments": [
-                "different recipes"
+                "recipes"
             ]
         },
         {
@@ -5888,6 +5899,12 @@
             ]
         },
         {
+            "verb": "shred",
+            "arguments": [
+                "carrots"
+            ]
+        },
+        {
             "verb": "add",
             "arguments": [
                 "chopped onions"
@@ -5896,7 +5913,7 @@
         {
             "verb": "make",
             "arguments": [
-                "onions"
+                "chopped onions"
             ]
         },
         {
@@ -5924,12 +5941,6 @@
             "arguments": []
         },
         {
-            "verb": "transfer",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
             "verb": "cover",
             "arguments": [
                 "mixture"
@@ -5937,6 +5948,12 @@
         },
         {
             "verb": "let",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
+            "verb": "sit",
             "arguments": [
                 "mixture"
             ]
@@ -5965,18 +5982,6 @@
         }
     ],
     [
-        {
-            "verb": "cook",
-            "arguments": [
-                "turkey"
-            ]
-        },
-        {
-            "verb": "go",
-            "arguments": [
-                "turkey"
-            ]
-        },
         {
             "verb": "thaw",
             "arguments": [
@@ -6069,12 +6074,6 @@
             ]
         },
         {
-            "verb": "run",
-            "arguments": [
-                "juices"
-            ]
-        },
-        {
             "verb": "remove",
             "arguments": [
                 "tent"
@@ -6093,10 +6092,8 @@
             ]
         },
         {
-            "verb": "stand",
-            "arguments": [
-                "turkey"
-            ]
+            "verb": "let",
+            "arguments": []
         },
         {
             "verb": "redistribute",
@@ -6348,160 +6345,38 @@
         {
             "verb": "add",
             "arguments": [
-                "them",
+                "shreds",
                 "cream"
             ]
         },
         {
             "verb": "cook",
-            "arguments": [
-                "it"
-            ]
+            "arguments": []
         },
         {
             "verb": "season",
-            "arguments": [
-                "it"
-            ]
+            "arguments": []
         },
         {
             "verb": "take",
             "arguments": [
-                "spoonful of the creamy kale"
+                "creamy kale"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "it",
+                "creamy kale",
                 "crostini"
             ]
         }
     ],
-    [
-        {
-            "verb": "prepare",
-            "arguments": [
-                "salad"
-            ]
-        },
-        {
-            "verb": "whip up",
-            "arguments": [
-                "batch"
-            ]
-        },
-        {
-            "verb": "chop",
-            "arguments": [
-                "greens"
-            ]
-        },
-        {
-            "verb": "slice",
-            "arguments": [
-                "cucumbers",
-                "kiwifruit",
-                "yellow peppers",
-                "carrots",
-                "tomatoes"
-            ]
-        },
-        {
-            "verb": "assemble",
-            "arguments": [
-                "trimmed greens"
-            ]
-        },
-        {
-            "verb": "make",
-            "arguments": [
-                "bed"
-            ]
-        },
-        {
-            "verb": "place",
-            "arguments": [
-                "diced tomatoes",
-                "sliced cucumbers",
-                "carrots",
-                "yellow peppers"
-            ]
-        },
-        {
-            "verb": "mince",
-            "arguments": [
-                "fresh leaves of the herbs"
-            ]
-        },
-        {
-            "verb": "sprinkle",
-            "arguments": [
-                "herbs"
-            ]
-        },
-        {
-            "verb": "pour",
-            "arguments": [
-                "fresh fruit juices"
-            ]
-        },
-        {
-            "verb": "stir",
-            "arguments": []
-        },
-        {
-            "verb": "pour",
-            "arguments": [
-                "sunflower oil"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "salt",
-                "sugar",
-                "pepper"
-            ]
-        },
-        {
-            "verb": "whisk",
-            "arguments": []
-        },
-        {
-            "verb": "store",
-            "arguments": [
-                "bowl of greens",
-                "fresh produce"
-            ]
-        },
-        {
-            "verb": "cover",
-            "arguments": [
-                "bowl of greens",
-                "fresh produce"
-            ]
-        },
-        {
-            "verb": "toss",
-            "arguments": [
-                "salad",
-                "dressing"
-            ]
-        }
-    ],
+    null,
     [
         {
             "verb": "cook",
             "arguments": [
                 "lobsters"
-            ]
-        },
-        {
-            "verb": "pairing",
-            "arguments": [
-                "lobsters",
-                "sauce"
             ]
         },
         {
@@ -6515,27 +6390,18 @@
             "arguments": [
                 "shallots",
                 "peppercorns",
-                "wine vinegar",
+                "wine",
+                "vinegar",
                 "tarragon"
             ]
         },
         {
             "verb": "leave",
-            "arguments": [
-                "shallots",
-                "peppercorns",
-                "wine vinegar",
-                "tarragon"
-            ]
+            "arguments": []
         },
         {
             "verb": "reduce",
-            "arguments": [
-                "shallots",
-                "peppercorns",
-                "wine vinegar",
-                "tarragon"
-            ]
+            "arguments": []
         },
         {
             "verb": "strain",
@@ -6569,7 +6435,7 @@
             ]
         },
         {
-            "verb": "whisking",
+            "verb": "whisk",
             "arguments": []
         },
         {
@@ -6599,7 +6465,8 @@
         {
             "verb": "lay",
             "arguments": [
-                "chips"
+                "chips",
+                "baking pan"
             ]
         },
         {
@@ -6622,9 +6489,7 @@
         },
         {
             "verb": "turn",
-            "arguments": [
-                "chips"
-            ]
+            "arguments": []
         },
         {
             "verb": "melt",
@@ -6659,9 +6524,7 @@
         {
             "verb": "serve",
             "arguments": [
-                "lobster",
-                "Barnaise sauce",
-                "chips"
+                "lobster"
             ]
         }
     ],
@@ -6693,7 +6556,7 @@
         {
             "verb": "chop",
             "arguments": [
-                "remaining 4 ounces"
+                "the remaining 4 ounces"
             ]
         },
         {
@@ -6723,7 +6586,7 @@
         {
             "verb": "melt",
             "arguments": [
-                "remaining 2 tablespoons of butter"
+                "the remaining 2 tablespoons of butter"
             ]
         },
         {
@@ -6736,7 +6599,7 @@
         {
             "verb": "add",
             "arguments": [
-                "salt"
+                "a bit of salt"
             ]
         },
         {
@@ -6760,7 +6623,7 @@
         {
             "verb": "add",
             "arguments": [
-                "flour"
+                "the flour"
             ]
         },
         {
@@ -6788,13 +6651,13 @@
             ]
         },
         {
-            "verb": "let",
+            "verb": "simmer",
             "arguments": [
                 "soup"
             ]
         },
         {
-            "verb": "thicken",
+            "verb": "thickens",
             "arguments": [
                 "soup"
             ]
@@ -6808,13 +6671,13 @@
         {
             "verb": "add",
             "arguments": [
-                "heavy cream"
+                "the heavy cream"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "heavy cream"
+                "the heavy cream"
             ]
         },
         {
@@ -6830,9 +6693,9 @@
             ]
         },
         {
-            "verb": "begin",
+            "verb": "boil",
             "arguments": [
-                "boil"
+                "soup"
             ]
         },
         {
@@ -6848,7 +6711,7 @@
             ]
         },
         {
-            "verb": "sit",
+            "verb": "sit back",
             "arguments": []
         },
         {
@@ -6907,7 +6770,7 @@
         {
             "verb": "add",
             "arguments": [
-                "2-3 tablespoons of peanut oil"
+                "peanut oil"
             ]
         },
         {
@@ -6917,7 +6780,7 @@
             ]
         },
         {
-            "verb": "drop in",
+            "verb": "drop",
             "arguments": [
                 "garlic",
                 "Thai chilli",
@@ -6956,7 +6819,7 @@
                 "soy sauce",
                 "tamarind sauce",
                 "sugar",
-                "drizzle of peanut oil"
+                "peanut oil"
             ]
         },
         {
@@ -6983,7 +6846,7 @@
         {
             "verb": "garnish",
             "arguments": [
-                "rice noodles and vegetables in sauce",
+                "rice noodles",
                 "ground peanut",
                 "cilantro"
             ]
@@ -7017,8 +6880,7 @@
         {
             "verb": "let",
             "arguments": [
-                "peppers",
-                "skin"
+                "it"
             ]
         },
         {
@@ -7061,14 +6923,13 @@
         {
             "verb": "drizzle",
             "arguments": [
-                "olive oil",
-                "bread"
+                "olive oil"
             ]
         },
         {
             "verb": "season",
             "arguments": [
-                "bread"
+                "olive oil"
             ]
         },
         {
@@ -7078,7 +6939,7 @@
             ]
         },
         {
-            "verb": "turn",
+            "verb": "turning",
             "arguments": [
                 "pieces"
             ]
@@ -7086,7 +6947,7 @@
         {
             "verb": "whisk",
             "arguments": [
-                "olive oil",
+                "cup of olive oil",
                 "wine vinegar",
                 "herbs",
                 "anchovy sauce",
@@ -7105,14 +6966,6 @@
         {
             "verb": "season",
             "arguments": [
-                "olive oil",
-                "wine vinegar",
-                "herbs",
-                "anchovy sauce",
-                "onion",
-                "cucumber",
-                "tomatoes",
-                "garlic",
                 "cooked peppers"
             ]
         },
@@ -7132,8 +6985,7 @@
         {
             "verb": "top",
             "arguments": [
-                "croutons",
-                "vegetables",
+                "it",
                 "mozzarella cheese"
             ]
         },
@@ -7180,7 +7032,7 @@
             ]
         },
         {
-            "verb": "season",
+            "verb": "seasoning",
             "arguments": [
                 "bread-cubes"
             ]
@@ -7198,7 +7050,13 @@
             ]
         },
         {
-            "verb": "bake",
+            "verb": "melts",
+            "arguments": [
+                "cheese"
+            ]
+        },
+        {
+            "verb": "baked",
             "arguments": [
                 "bread cubes"
             ]
@@ -7212,7 +7070,7 @@
         {
             "verb": "store",
             "arguments": [
-                "croutons"
+                "crisp croutons"
             ]
         },
         {
@@ -7222,20 +7080,16 @@
             ]
         },
         {
-            "verb": "drizzle",
+            "verb": "drizzled",
             "arguments": [
                 "cherry-tomatoes mixture"
             ]
         },
         {
-            "verb": "garnish",
+            "verb": "garnishing",
             "arguments": [
                 "bowl"
             ]
-        },
-        {
-            "verb": "enjoy",
-            "arguments": []
         }
     ],
     [
@@ -7266,8 +7120,7 @@
         {
             "verb": "mash",
             "arguments": [
-                "all the ingredients of the parfait",
-                "reduced stock"
+                "all the ingredients of the parfait including the reduced stock"
             ]
         },
         {
@@ -7321,7 +7174,7 @@
             ]
         },
         {
-            "verb": "stir",
+            "verb": "stirring",
             "arguments": [
                 "all the ingredients except the pears"
             ]
@@ -7359,13 +7212,15 @@
         {
             "verb": "serve",
             "arguments": [
-                "parfait"
+                "parfait",
+                "chutney",
+                "sliced French bread"
             ]
         }
     ],
     [
         {
-            "verb": "wash",
+            "verb": "Wash",
             "arguments": [
                 "ginger"
             ]
@@ -7389,21 +7244,19 @@
             ]
         },
         {
-            "verb": "dilute",
+            "verb": "Dilute",
             "arguments": [
-                "salt",
-                "bowl of water"
+                "salt"
             ]
         },
         {
-            "verb": "soak",
+            "verb": "Soak",
             "arguments": [
-                "ginger",
-                "bowl of saltwater"
+                "ginger"
             ]
         },
         {
-            "verb": "drain",
+            "verb": "Drain",
             "arguments": [
                 "ginger"
             ]
@@ -7417,27 +7270,25 @@
         {
             "verb": "wipe",
             "arguments": [
-                "ginger",
-                "paper towels"
+                "ginger"
             ]
         },
         {
-            "verb": "slice",
+            "verb": "Slice",
             "arguments": [
                 "ginger"
             ]
         },
         {
-            "verb": "prepare",
+            "verb": "Prepare",
             "arguments": [
                 "sterilized jar"
             ]
         },
         {
-            "verb": "place",
+            "verb": "Place",
             "arguments": [
-                "sliced ginger",
-                "jar"
+                "sliced ginger"
             ]
         },
         {
@@ -7449,25 +7300,13 @@
         {
             "verb": "pour",
             "arguments": [
-                "hot mixture",
-                "ginger-filled jar"
+                "hot mixture"
             ]
         },
         {
-            "verb": "place",
+            "verb": "Place",
             "arguments": [
                 "lid"
-            ]
-        },
-        {
-            "verb": "wait",
-            "arguments": []
-        },
-        {
-            "verb": "place",
-            "arguments": [
-                "jar",
-                "refrigerator"
             ]
         }
     ],
@@ -7481,7 +7320,7 @@
         {
             "verb": "place",
             "arguments": [
-                "about 1/2 cup of sushi rice",
+                "1/2 cup of sushi rice",
                 "nori"
             ]
         },
@@ -7538,8 +7377,7 @@
         {
             "verb": "place",
             "arguments": [
-                "meat",
-                "chopping board"
+                "meat"
             ]
         },
         {
@@ -7552,7 +7390,7 @@
         {
             "verb": "hammer",
             "arguments": [
-                "meat pounder"
+                "meat"
             ]
         },
         {
@@ -7579,17 +7417,7 @@
         },
         {
             "verb": "flour",
-            "arguments": [
-                "eggs",
-                "milk mixture",
-                "bread crumbs"
-            ]
-        },
-        {
-            "verb": "take",
-            "arguments": [
-                "piece of meat"
-            ]
+            "arguments": []
         },
         {
             "verb": "dredge",
@@ -7603,13 +7431,6 @@
             "arguments": [
                 "piece of meat",
                 "milk"
-            ]
-        },
-        {
-            "verb": "bring",
-            "arguments": [
-                "piece of meat",
-                "bread crumbs plate"
             ]
         },
         {
@@ -7663,6 +7484,12 @@
             ]
         },
         {
+            "verb": "use",
+            "arguments": [
+                "spatula"
+            ]
+        },
+        {
             "verb": "scrape",
             "arguments": [
                 "bottom of the pan"
@@ -7681,9 +7508,7 @@
         },
         {
             "verb": "let",
-            "arguments": [
-                "it"
-            ]
+            "arguments": []
         },
         {
             "verb": "serve",
@@ -7693,119 +7518,7 @@
             ]
         }
     ],
-    [
-        {
-            "verb": "get",
-            "arguments": [
-                "mug",
-                "bowl"
-            ]
-        },
-        {
-            "verb": "dip",
-            "arguments": [
-                "paper towel"
-            ]
-        },
-        {
-            "verb": "smear",
-            "arguments": [
-                "oil",
-                "bowl"
-            ]
-        },
-        {
-            "verb": "spray",
-            "arguments": [
-                "mug",
-                "bowl"
-            ]
-        },
-        {
-            "verb": "break",
-            "arguments": [
-                "egg",
-                "bowl"
-            ]
-        },
-        {
-            "verb": "beat",
-            "arguments": [
-                "eggs",
-                "milk"
-            ]
-        },
-        {
-            "verb": "season",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "stir",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "cook",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "remove",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "stir",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "stir",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "shredded cheese",
-                "scallions",
-                "topping"
-            ]
-        },
-        {
-            "verb": "return",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "cook",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "mix",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "serve",
-            "arguments": [
-                "eggs",
-                "herbs",
-                "bread"
-            ]
-        }
-    ],
+    null,
     [
         {
             "verb": "bring",
@@ -7889,7 +7602,7 @@
         {
             "verb": "shake",
             "arguments": [
-                "flour"
+                "excess flour"
             ]
         },
         {
@@ -7902,6 +7615,7 @@
         {
             "verb": "give",
             "arguments": [
+                "shrimps",
                 "corn starch"
             ]
         },
@@ -7955,33 +7669,35 @@
     ],
     [
         {
-            "verb": "debone",
+            "verb": "deboned",
             "arguments": [
                 "rotisserie chicken"
             ]
         },
         {
-            "verb": "remove",
+            "verb": "removed",
             "arguments": [
                 "tendons",
                 "dark meat",
                 "skin",
+                "tendons",
                 "commonly nonedible parts"
             ]
         },
         {
-            "verb": "place",
+            "verb": "placed",
             "arguments": [
                 "tendons",
                 "dark meat",
                 "skin",
+                "tendons",
                 "commonly nonedible parts"
             ]
         },
         {
             "verb": "put",
             "arguments": [
-                "various cut pieces from the chicken"
+                "cut pieces from the chicken"
             ]
         },
         {
@@ -8025,7 +7741,7 @@
         {
             "verb": "add",
             "arguments": [
-                "white wine"
+                "splash of white wine"
             ]
         },
         {
@@ -8037,7 +7753,7 @@
         {
             "verb": "leave",
             "arguments": [
-                "pot"
+                "cover"
             ]
         },
         {
@@ -8071,12 +7787,6 @@
             ]
         },
         {
-            "verb": "be",
-            "arguments": [
-                "bones"
-            ]
-        },
-        {
             "verb": "pour",
             "arguments": [
                 "olive oil"
@@ -8090,12 +7800,6 @@
         },
         {
             "verb": "cook",
-            "arguments": [
-                "contents"
-            ]
-        },
-        {
-            "verb": "monitor",
             "arguments": [
                 "contents"
             ]
@@ -8125,7 +7829,7 @@
             ]
         },
         {
-            "verb": "pour in",
+            "verb": "pour",
             "arguments": [
                 "packet Sazon de Goya"
             ]
@@ -8154,13 +7858,13 @@
             ]
         },
         {
-            "verb": "pour in",
+            "verb": "pour",
             "arguments": [
                 "chicken stock"
             ]
         },
         {
-            "verb": "stir",
+            "verb": "stirring",
             "arguments": []
         },
         {
@@ -8177,20 +7881,22 @@
         },
         {
             "verb": "place",
-            "arguments": []
+            "arguments": [
+                "make-ahead meal"
+            ]
         }
     ],
     [
         {
             "verb": "boil",
             "arguments": [
-                "water"
+                "pot-full of water"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "salt"
+                "1 teaspoon of salt"
             ]
         },
         {
@@ -8218,7 +7924,7 @@
             ]
         },
         {
-            "verb": "mixing",
+            "verb": "mix",
             "arguments": [
                 "milk",
                 "eggs",
@@ -8242,7 +7948,7 @@
         {
             "verb": "grate",
             "arguments": [
-                "dough"
+                "first portion of dough"
             ]
         },
         {
@@ -8278,17 +7984,11 @@
         {
             "verb": "grate",
             "arguments": [
-                "dough"
+                "second batch of dough"
             ]
         },
         {
             "verb": "cool",
-            "arguments": [
-                "spaetzle"
-            ]
-        },
-        {
-            "verb": "spread",
             "arguments": [
                 "spaetzle"
             ]
@@ -8306,7 +8006,7 @@
             ]
         },
         {
-            "verb": "turned",
+            "verb": "turn",
             "arguments": [
                 "butter"
             ]
@@ -8362,7 +8062,7 @@
             ]
         },
         {
-            "verb": "set aside",
+            "verb": "set",
             "arguments": [
                 "ingredients for marinade"
             ]
@@ -8418,13 +8118,13 @@
         {
             "verb": "cook",
             "arguments": [
-                "side"
+                "each side"
             ]
         },
         {
             "verb": "turn",
             "arguments": [
-                "side"
+                "each side"
             ]
         },
         {
@@ -8434,15 +8134,21 @@
             ]
         },
         {
+            "verb": "leave",
+            "arguments": [
+                "inside part"
+            ]
+        },
+        {
             "verb": "check",
             "arguments": [
                 "chicken"
             ]
         },
         {
-            "verb": "make slits",
+            "verb": "make",
             "arguments": [
-                "meat"
+                "slits on the meat"
             ]
         },
         {
@@ -8467,12 +8173,6 @@
             ]
         },
         {
-            "verb": "sit",
-            "arguments": [
-                "shrimp"
-            ]
-        },
-        {
             "verb": "drain",
             "arguments": [
                 "shrimp"
@@ -8488,22 +8188,19 @@
             "verb": "add",
             "arguments": [
                 "2 tablespoons of corn starch",
-                ". cup of water"
+                "cup of water"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "2 tablespoons of corn starch",
-                ". cup of water"
+                "2 tablespoons of corn starch and cup of water"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "minced garlic",
-                "ginger",
-                "chilli flakes"
+                "minced garlic ginger and chilli flakes"
             ]
         },
         {
@@ -8530,7 +8227,7 @@
         {
             "verb": "cook",
             "arguments": [
-                "shrimp",
+                "shrimps",
                 "scallions"
             ]
         },
@@ -8542,7 +8239,9 @@
         },
         {
             "verb": "mix",
-            "arguments": []
+            "arguments": [
+                "corn starch and soy sauce mixture"
+            ]
         },
         {
             "verb": "thicken",
@@ -8567,7 +8266,7 @@
         {
             "verb": "garnish",
             "arguments": [
-                "Szechuan shrimps",
+                "rice",
                 "minced Thai chilli pepper",
                 "cilantro leaves"
             ]
@@ -8578,12 +8277,6 @@
             "verb": "thaw",
             "arguments": [
                 "frozen turkey"
-            ]
-        },
-        {
-            "verb": "melted",
-            "arguments": [
-                "ice"
             ]
         },
         {
@@ -8600,9 +8293,7 @@
         },
         {
             "verb": "preheat",
-            "arguments": [
-                "oven"
-            ]
+            "arguments": []
         },
         {
             "verb": "remove",
@@ -8612,13 +8303,7 @@
             ]
         },
         {
-            "verb": "boiled",
-            "arguments": [
-                "giblets"
-            ]
-        },
-        {
-            "verb": "used",
+            "verb": "boil",
             "arguments": [
                 "giblets"
             ]
@@ -8639,23 +8324,21 @@
         {
             "verb": "separate",
             "arguments": [
-                "skin"
+                "skin",
+                "meat"
             ]
         },
         {
             "verb": "brush",
             "arguments": [
-                "herb-and-butter mixture",
-                "breast meat",
-                "skin"
+                "herb-and-butter mixture"
             ]
         },
         {
             "verb": "rub",
             "arguments": [
                 "salt",
-                "pepper",
-                "turkey's skin"
+                "pepper"
             ]
         },
         {
@@ -8689,6 +8372,16 @@
             ]
         },
         {
+            "verb": "wait",
+            "arguments": []
+        },
+        {
+            "verb": "reach",
+            "arguments": [
+                "1/3 of the cooking time"
+            ]
+        },
+        {
             "verb": "check",
             "arguments": [
                 "turkey"
@@ -8697,8 +8390,7 @@
         {
             "verb": "insert",
             "arguments": [
-                "meat thermometer",
-                "thigh"
+                "meat thermometer"
             ]
         },
         {
@@ -8714,10 +8406,15 @@
             ]
         },
         {
+            "verb": "overcook",
+            "arguments": [
+                "turkey"
+            ]
+        },
+        {
             "verb": "put",
             "arguments": [
-                "cooked stuffing",
-                "turkey"
+                "cooked stuffing"
             ]
         },
         {
@@ -8727,9 +8424,13 @@
             ]
         },
         {
-            "verb": "redistribute",
+            "verb": "rest",
+            "arguments": []
+        },
+        {
+            "verb": "enjoy",
             "arguments": [
-                "juices"
+                "Thanksgiving dinner"
             ]
         }
     ],
@@ -8738,8 +8439,7 @@
             "verb": "put",
             "arguments": [
                 "sugar",
-                "evaporated milk",
-                "saucepan"
+                "evaporated milk"
             ]
         },
         {
@@ -8757,22 +8457,10 @@
             ]
         },
         {
-            "verb": "prevent",
+            "verb": "come",
             "arguments": [
-                "ingredients"
-            ]
-        },
-        {
-            "verb": "stick",
-            "arguments": [
-                "ingredients",
-                "pan"
-            ]
-        },
-        {
-            "verb": "burn",
-            "arguments": [
-                "ingredients"
+                "sugar",
+                "evaporated milk"
             ]
         },
         {
@@ -8783,23 +8471,15 @@
             ]
         },
         {
-            "verb": "keep",
-            "arguments": [
-                "heat"
-            ]
-        },
-        {
             "verb": "take",
             "arguments": [
-                "mixture",
-                "heat"
+                "mixture"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "chocolate chips",
-                "mixture"
+                "chocolate chips"
             ]
         },
         {
@@ -8811,8 +8491,7 @@
         {
             "verb": "add",
             "arguments": [
-                "extract",
-                "mixture"
+                "extract"
             ]
         },
         {
@@ -8824,46 +8503,31 @@
         {
             "verb": "put",
             "arguments": [
-                "mixture",
-                "refrigerator"
+                "mixture"
             ]
         },
         {
             "verb": "shape",
             "arguments": [
-                "mixture",
-                "balls"
+                "mixture"
             ]
         },
         {
             "verb": "roll",
             "arguments": [
-                "balls",
-                "nuts"
+                "balls"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "truffles",
-                "refrigerator"
+                "truffles"
             ]
         },
         {
             "verb": "serve",
             "arguments": [
                 "truffles"
-            ]
-        },
-        {
-            "verb": "plan",
-            "arguments": []
-        },
-        {
-            "verb": "give",
-            "arguments": [
-                "guests",
-                "treat"
             ]
         }
     ],
@@ -8875,10 +8539,8 @@
             ]
         },
         {
-            "verb": "set",
-            "arguments": [
-                "tofu"
-            ]
+            "verb": "set aside",
+            "arguments": []
         },
         {
             "verb": "saute",
@@ -8898,14 +8560,7 @@
         },
         {
             "verb": "cook",
-            "arguments": [
-                "scallions",
-                "mushrooms",
-                "bell pepper",
-                "corn",
-                "cumin",
-                "garlic"
-            ]
+            "arguments": []
         },
         {
             "verb": "remove",
@@ -9038,22 +8693,33 @@
         {
             "verb": "climbing",
             "arguments": [
-                "Santa",
-                "chimney"
+                "Santa"
             ]
         },
         {
-            "verb": "choose",
+            "verb": "put",
             "arguments": [
-                "put Santa s sleigh on top"
+                "Santa s sleigh"
             ]
         },
         {
             "verb": "load",
             "arguments": [
                 "Santa s sleigh",
-                "treats",
-                "candies",
+                "treats"
+            ]
+        },
+        {
+            "verb": "load",
+            "arguments": [
+                "Santa s sleigh",
+                "candies"
+            ]
+        },
+        {
+            "verb": "load",
+            "arguments": [
+                "Santa s sleigh",
                 "strawberries"
             ]
         },
@@ -9073,7 +8739,25 @@
             "verb": "offset",
             "arguments": [
                 "snow white design",
-                "bright orange for Frosty the Snowman s nose"
+                "bright orange"
+            ]
+        },
+        {
+            "verb": "try",
+            "arguments": [
+                "creating the tree"
+            ]
+        },
+        {
+            "verb": "carved",
+            "arguments": [
+                "fruit"
+            ]
+        },
+        {
+            "verb": "encourage",
+            "arguments": [
+                "kids"
             ]
         },
         {
@@ -9107,9 +8791,23 @@
             ]
         },
         {
+            "verb": "find",
+            "arguments": [
+                "design ideas trite"
+            ]
+        },
+        {
             "verb": "opt",
             "arguments": [
                 "different theme"
+            ]
+        },
+        {
+            "verb": "be",
+            "arguments": [
+                "Christmas angels",
+                "carolers",
+                "Grinch"
             ]
         },
         {
@@ -9129,13 +8827,25 @@
             "verb": "allow",
             "arguments": [
                 "kids",
-                "place the different decorations on the cake"
+                "place different decorations"
+            ]
+        },
+        {
+            "verb": "be",
+            "arguments": [
+                "kids"
+            ]
+        },
+        {
+            "verb": "enjoy",
+            "arguments": [
+                "festive season"
             ]
         },
         {
             "verb": "choose",
             "arguments": [
-                "between different cake recipes"
+                "different cake recipes"
             ]
         },
         {
@@ -9147,13 +8857,13 @@
         {
             "verb": "try",
             "arguments": [
-                "creating these cakes in smaller batches"
+                "creating these cakes"
             ]
         },
         {
             "verb": "serving",
             "arguments": [
-                "samplers for the family"
+                "samplers"
             ]
         }
     ],
@@ -9201,6 +8911,10 @@
             ]
         },
         {
+            "verb": "let",
+            "arguments": []
+        },
+        {
             "verb": "dry",
             "arguments": [
                 "ginger"
@@ -9227,8 +8941,7 @@
         {
             "verb": "place",
             "arguments": [
-                "sliced ginger",
-                "jar"
+                "sliced ginger"
             ]
         },
         {
@@ -9240,14 +8953,23 @@
         {
             "verb": "pour",
             "arguments": [
-                "hot mixture",
-                "ginger-filled jar"
+                "hot mixture"
             ]
         },
         {
             "verb": "place",
             "arguments": [
                 "lid"
+            ]
+        },
+        {
+            "verb": "wait",
+            "arguments": []
+        },
+        {
+            "verb": "placing",
+            "arguments": [
+                "jar"
             ]
         }
     ],
@@ -9271,7 +8993,7 @@
             ]
         },
         {
-            "verb": "cool down",
+            "verb": "cool",
             "arguments": [
                 "potatoes"
             ]
@@ -9286,6 +9008,12 @@
             "verb": "grate",
             "arguments": [
                 "potatoes"
+            ]
+        },
+        {
+            "verb": "avoid",
+            "arguments": [
+                "finest part on the grater"
             ]
         },
         {
@@ -9311,14 +9039,14 @@
         {
             "verb": "place",
             "arguments": [
-                "four chef's rings"
+                "chef's rings"
             ]
         },
         {
             "verb": "fill",
             "arguments": [
-                "each chef's ring",
-                "the mixture"
+                "each one",
+                "mixture"
             ]
         },
         {
@@ -9336,13 +9064,13 @@
         {
             "verb": "put",
             "arguments": [
-                "cakes"
+                "cake"
             ]
         },
         {
             "verb": "cool",
             "arguments": [
-                "cakes"
+                "cake"
             ]
         },
         {
@@ -9352,10 +9080,9 @@
             ]
         },
         {
-            "verb": "take off",
+            "verb": "take",
             "arguments": [
-                "chef ring",
-                "cake"
+                "chef ring"
             ]
         },
         {
@@ -9367,7 +9094,7 @@
         {
             "verb": "cook",
             "arguments": [
-                "each side"
+                "side"
             ]
         },
         {
@@ -9377,7 +9104,7 @@
             ]
         },
         {
-            "verb": "turn over",
+            "verb": "turn",
             "arguments": [
                 "it"
             ]
@@ -9385,7 +9112,7 @@
         {
             "verb": "drain",
             "arguments": [
-                "it"
+                "cake"
             ]
         }
     ],
@@ -9421,10 +9148,6 @@
             ]
         },
         {
-            "verb": "continue",
-            "arguments": []
-        },
-        {
             "verb": "preheat",
             "arguments": [
                 "oven"
@@ -9433,7 +9156,8 @@
         {
             "verb": "put",
             "arguments": [
-                "butter"
+                "butter",
+                "pan"
             ]
         },
         {
@@ -9483,13 +9207,13 @@
         {
             "verb": "take",
             "arguments": [
-                "half of the mixture"
+                "mixture"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "half of the mixture"
+                "mixture"
             ]
         },
         {
@@ -9501,13 +9225,13 @@
         {
             "verb": "use",
             "arguments": [
-                "rest of the mixture"
+                "mixture"
             ]
         },
         {
             "verb": "cover",
             "arguments": [
-                "chicken"
+                "chicken breasts"
             ]
         },
         {
@@ -9520,12 +9244,15 @@
         {
             "verb": "put",
             "arguments": [
-                "tray"
+                "baking tray",
+                "oven"
             ]
         },
         {
             "verb": "bake",
-            "arguments": []
+            "arguments": [
+                "baking tray"
+            ]
         },
         {
             "verb": "remove",
@@ -9533,24 +9260,20 @@
         },
         {
             "verb": "serve",
-            "arguments": []
-        },
-        {
-            "verb": "prepare",
             "arguments": [
-                "Chicken Florentine"
+                "chicken florentine"
             ]
         },
         {
             "verb": "try",
             "arguments": [
-                "Chicken Florentine"
+                "chicken florentine"
             ]
         },
         {
             "verb": "serve",
             "arguments": [
-                "Chicken Florentine"
+                "chicken florentine"
             ]
         }
     ],
@@ -9624,8 +9347,7 @@
         {
             "verb": "subtract",
             "arguments": [
-                "amount of ice",
-                "mix"
+                "amount of ice"
             ]
         }
     ],
@@ -9686,6 +9408,12 @@
             ]
         },
         {
+            "verb": "soak",
+            "arguments": [
+                "chicken"
+            ]
+        },
+        {
             "verb": "coat",
             "arguments": [
                 "chicken pieces",
@@ -9719,13 +9447,8 @@
         {
             "verb": "test",
             "arguments": [
-                "temperature"
-            ]
-        },
-        {
-            "verb": "see",
-            "arguments": [
-                "temperature"
+                "temperature",
+                "piece of chicken"
             ]
         },
         {
@@ -9747,91 +9470,44 @@
             ]
         },
         {
-            "verb": "use",
-            "arguments": [
-                "paper towels"
-            ]
-        },
-        {
-            "verb": "eat",
-            "arguments": [
-                "chicken"
-            ]
-        },
-        {
             "verb": "serve",
             "arguments": [
-                "chicken karaage"
-            ]
-        },
-        {
-            "verb": "find",
-            "arguments": [
-                "sake"
-            ]
-        },
-        {
-            "verb": "use",
-            "arguments": [
-                "vinegar"
-            ]
-        },
-        {
-            "verb": "enjoy",
-            "arguments": [
-                "crispy chicken karaage"
+                "fried chicken"
             ]
         }
     ],
     [
         {
-            "verb": "prepare",
+            "verb": "use",
             "arguments": [
-                "iced espresso"
-            ]
-        },
-        {
-            "verb": "follow",
-            "arguments": [
-                "steps mentioned below"
+                "cold milk"
             ]
         },
         {
             "verb": "fill",
             "arguments": [
-                "portafilter"
+                "portafilter",
+                "fresh ground-coffee"
             ]
         },
         {
             "verb": "compress",
             "arguments": [
-                "ground espresso"
+                "ground espresso",
+                "machine's porta filter"
             ]
         },
         {
-            "verb": "brush aside",
+            "verb": "brush",
             "arguments": [
-                "remains spilled out"
+                "remains"
             ]
         },
         {
             "verb": "attach",
             "arguments": [
-                "filter"
-            ]
-        },
-        {
-            "verb": "align",
-            "arguments": [
                 "filter",
-                "pockets"
-            ]
-        },
-        {
-            "verb": "seal",
-            "arguments": [
-                "filter",
-                "pockets"
+                "machine"
             ]
         },
         {
@@ -9875,7 +9551,9 @@
         },
         {
             "verb": "stir",
-            "arguments": []
+            "arguments": [
+                "contents"
+            ]
         },
         {
             "verb": "add",
@@ -9890,27 +9568,16 @@
             ]
         },
         {
-            "verb": "make",
-            "arguments": [
-                "drinks"
-            ]
-        },
-        {
             "verb": "enjoy",
             "arguments": [
                 "drink"
             ]
         },
         {
-            "verb": "prepare",
-            "arguments": [
-                "single double shot iced espresso"
-            ]
-        },
-        {
             "verb": "place",
             "arguments": [
-                "2 espresso cups"
+                "2 espresso cups",
+                "two spouts"
             ]
         },
         {
@@ -9929,12 +9596,6 @@
             "verb": "adjust",
             "arguments": [
                 "amount of tamping pressure"
-            ]
-        },
-        {
-            "verb": "use",
-            "arguments": [
-                "chocolate"
             ]
         },
         {
@@ -10006,7 +9667,8 @@
         {
             "verb": "divide",
             "arguments": [
-                "chocolate squares"
+                "chocolate squares",
+                "glasses"
             ]
         },
         {
@@ -10050,34 +9712,15 @@
         {
             "verb": "place",
             "arguments": [
-                "pork loin roast",
-                "pan"
+                "pork loin roast"
             ]
         },
         {
             "verb": "add",
             "arguments": [
                 "salt",
-                "pork loin roast"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
                 "oregano",
-                "pork loin roast"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
                 "pepper",
-                "pork loin roast"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
                 "cayenne",
                 "pork loin roast"
             ]
@@ -10086,47 +9729,43 @@
             "verb": "rub",
             "arguments": [
                 "seasonings",
-                "pork loin roast"
+                "loin"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "pork loin roast",
-                "roasting pan"
+                "pork loin"
             ]
         },
         {
             "verb": "bake",
             "arguments": [
-                "pork loin roast"
+                "loin"
             ]
         },
         {
             "verb": "bake",
             "arguments": [
-                "pork loin roast"
+                "loin"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "saute pan",
-                "stove"
+                "saute pan"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "chopped onions",
-                "saute pan"
+                "chopped onions"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "canola oil",
-                "chopped onions"
+                "canola oil"
             ]
         },
         {
@@ -10138,29 +9777,23 @@
         {
             "verb": "place",
             "arguments": [
-                "cloves of garlic",
-                "mix"
+                "cloves of garlic"
             ]
         },
         {
             "verb": "cook",
             "arguments": [
-                "mix"
+                "garlic"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "seasoning ingredients",
-                "mix"
+                "main seasoning ingredients"
             ]
         },
         {
-            "verb": "allow",
-            "arguments": []
-        },
-        {
-            "verb": "boil",
+            "verb": "come",
             "arguments": [
                 "ingredients"
             ]
@@ -10192,15 +9825,13 @@
         {
             "verb": "add",
             "arguments": [
-                "cilantro",
-                "mix"
+                "cilantro"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "cooked pork",
-                "oven"
+                "cooked pork"
             ]
         },
         {
@@ -10230,14 +9861,19 @@
         {
             "verb": "flip",
             "arguments": [
-                "tortilla"
+                "tortillas"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "tortilla",
-                "pan"
+                "tortillas"
+            ]
+        },
+        {
+            "verb": "use",
+            "arguments": [
+                "paper towels"
             ]
         },
         {
@@ -10250,28 +9886,14 @@
         {
             "verb": "place",
             "arguments": [
-                "tortillas",
-                "serving plates"
+                "tortillas"
             ]
         },
         {
             "verb": "top",
             "arguments": [
                 "tortillas",
-                "shredded pork"
-            ]
-        },
-        {
-            "verb": "top",
-            "arguments": [
-                "tortillas",
-                "onion mixture"
-            ]
-        },
-        {
-            "verb": "top",
-            "arguments": [
-                "tortillas",
+                "shredded pork onion mixture",
                 "cheese"
             ]
         }
@@ -10289,7 +9911,7 @@
         {
             "verb": "blend",
             "arguments": [
-                "mixture"
+                "resulting mixture"
             ]
         },
         {
@@ -10329,7 +9951,7 @@
         {
             "verb": "add",
             "arguments": [
-                "flavoring extract",
+                "right flavoring extract",
                 "fruit salad punch"
             ]
         },
@@ -10340,10 +9962,9 @@
             ]
         },
         {
-            "verb": "give",
+            "verb": "help",
             "arguments": [
-                "fruit salad punch",
-                "wonderful tropical flavor"
+                "fruit salad punch"
             ]
         },
         {
@@ -10356,12 +9977,18 @@
         {
             "verb": "add",
             "arguments": [
-                "gummy candies",
+                "couple handfuls of the gummy candies you want to use",
                 "fruit salad punch"
             ]
         }
     ],
     [
+        {
+            "verb": "make",
+            "arguments": [
+                "confectioners frosting"
+            ]
+        },
         {
             "verb": "beat",
             "arguments": [
@@ -10394,9 +10021,7 @@
         },
         {
             "verb": "switch",
-            "arguments": [
-                "mixer"
-            ]
+            "arguments": []
         },
         {
             "verb": "beat",
@@ -10412,9 +10037,7 @@
         },
         {
             "verb": "blend",
-            "arguments": [
-                "frosting"
-            ]
+            "arguments": []
         },
         {
             "verb": "set",
@@ -10462,9 +10085,7 @@
         },
         {
             "verb": "beat",
-            "arguments": [
-                "mixture"
-            ]
+            "arguments": []
         },
         {
             "verb": "divide",
@@ -10519,6 +10140,10 @@
             "arguments": [
                 "cookies"
             ]
+        },
+        {
+            "verb": "make",
+            "arguments": []
         },
         {
             "verb": "bake",
@@ -10617,7 +10242,7 @@
         {
             "verb": "place",
             "arguments": [
-                "sherry vinegar with dry sherry"
+                "sherry vinegar and dry sherry mixture"
             ]
         },
         {
@@ -10630,12 +10255,6 @@
             "verb": "grind",
             "arguments": [
                 "sausage mixture"
-            ]
-        },
-        {
-            "verb": "make",
-            "arguments": [
-                "meat"
             ]
         },
         {
@@ -10695,7 +10314,8 @@
         {
             "verb": "close",
             "arguments": [
-                "open end"
+                "open end",
+                "start point"
             ]
         },
         {
@@ -10764,18 +10384,20 @@
         },
         {
             "verb": "start",
-            "arguments": []
+            "arguments": [
+                "looking for air bubbles"
+            ]
         },
         {
             "verb": "find",
             "arguments": [
-                "bubbles"
+                "air bubbles"
             ]
         },
         {
             "verb": "prick",
             "arguments": [
-                "bubbles"
+                "air bubbles"
             ]
         },
         {
@@ -10802,29 +10424,43 @@
             "verb": "combine",
             "arguments": [
                 "graham cracker crumbs",
-                "sugar",
-                "melted butter"
+                "1 sugar",
+                "the melted butter"
             ]
         },
         {
             "verb": "stir",
             "arguments": [
                 "graham cracker crumbs",
-                "sugar",
-                "melted butter"
+                "1 sugar",
+                "the melted butter"
+            ]
+        },
+        {
+            "verb": "blend",
+            "arguments": [
+                "graham cracker crumbs",
+                "1 sugar",
+                "the melted butter"
+            ]
+        },
+        {
+            "verb": "take",
+            "arguments": [
+                "8-9 inch springform pan"
             ]
         },
         {
             "verb": "press",
             "arguments": [
-                "mix",
-                "springform pan"
+                "the mix",
+                "the pan"
             ]
         },
         {
             "verb": "chill",
             "arguments": [
-                "mix"
+                "the mix"
             ]
         },
         {
@@ -10848,7 +10484,7 @@
             ]
         },
         {
-            "verb": "beating",
+            "verb": "beat",
             "arguments": [
                 "eggs"
             ]
@@ -10867,71 +10503,72 @@
         {
             "verb": "pour",
             "arguments": [
-                "pumpkin filling",
-                "prepared crust"
+                "this pumpkin filling",
+                "the prepared crust"
             ]
         },
         {
             "verb": "bake",
             "arguments": [
-                "pumpkin filling"
+                "this pumpkin filling"
             ]
         },
         {
             "verb": "prepare",
             "arguments": [
-                "topping"
+                "the topping"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
                 "sour cream",
-                "sugar",
+                "the remaining cup sugar",
                 "vanilla"
             ]
         },
         {
             "verb": "spread",
             "arguments": [
-                "topping",
-                "filling"
+                "the topping",
+                "the filling"
             ]
         },
         {
             "verb": "bake",
             "arguments": [
-                "filling"
+                "the topping",
+                "the filling"
             ]
         },
         {
             "verb": "take",
             "arguments": [
-                "filling"
+                "it"
             ]
         },
         {
             "verb": "cool",
             "arguments": [
-                "cake"
+                "the cake"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "sizes of the pan"
+                "the sizes of the pan"
             ]
         },
         {
             "verb": "refrigerate",
             "arguments": [
-                "pumpkin cheesecake"
+                "the pumpkin cheesecake"
             ]
         },
         {
             "verb": "garnish",
             "arguments": [
-                "cake",
+                "the cake",
                 "almonds",
                 "pecan slices"
             ]
@@ -10940,7 +10577,7 @@
             "verb": "pipe",
             "arguments": [
                 "whipping cream",
-                "sides of the cake"
+                "the sides of the cake"
             ]
         }
     ],
@@ -11029,6 +10666,12 @@
             ]
         },
         {
+            "verb": "cover",
+            "arguments": [
+                "chicken parts"
+            ]
+        },
+        {
             "verb": "roll",
             "arguments": [
                 "chicken pieces",
@@ -11052,7 +10695,6 @@
         {
             "verb": "cover",
             "arguments": [
-                "chicken pieces",
                 "parts"
             ]
         },
@@ -11063,10 +10705,9 @@
             ]
         },
         {
-            "verb": "stick",
+            "verb": "allow",
             "arguments": [
-                "coating",
-                "skin"
+                "coating"
             ]
         },
         {
@@ -11088,26 +10729,13 @@
             ]
         },
         {
-            "verb": "turn",
-            "arguments": [
-                "chicken pieces"
-            ]
-        },
-        {
             "verb": "place",
             "arguments": [
-                "chicken pieces",
-                "cooling rack"
+                "chicken pieces"
             ]
         },
         {
             "verb": "allow",
-            "arguments": [
-                "chicken pieces"
-            ]
-        },
-        {
-            "verb": "drain",
             "arguments": [
                 "chicken pieces"
             ]
@@ -11139,7 +10767,7 @@
         {
             "verb": "finish",
             "arguments": [
-                "chicken pieces"
+                "them"
             ]
         }
     ],
@@ -11153,126 +10781,134 @@
         {
             "verb": "add",
             "arguments": [
-                "pizzazz"
+                "pizzazz",
+                "your drink"
             ]
         },
         {
             "verb": "make",
             "arguments": [
-                "smoothie"
+                "a smoothie",
+                "apricot-raspberry"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "ingredients"
+                "what you like",
+                "your ingredients"
             ]
         },
         {
             "verb": "crush",
             "arguments": [
-                "raspberries"
+                "the raspberries"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "sugar or honey vinegar",
-                "cup of water"
+                "the sugar or honey vinegar"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": [
+                "a cup of water"
             ]
         },
         {
             "verb": "stir",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "boil",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "reduce",
             "arguments": [
-                "heat"
+                "the heat"
             ]
         },
         {
             "verb": "let",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "simmer",
             "arguments": [
-                "mixture"
+                "this mixture"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "mixture"
+                "the mixture"
             ]
         },
         {
-            "verb": "strain off",
+            "verb": "strain",
             "arguments": [
-                "liquid produced"
+                "the liquid produced"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "seeds"
+                "the seeds"
             ]
         },
         {
             "verb": "leave",
             "arguments": [
-                "seeds"
+                "the seeds"
             ]
         },
         {
             "verb": "cool",
             "arguments": [
-                "drink"
+                "the drink"
             ]
         },
         {
             "verb": "place",
             "arguments": [
-                "drink"
+                "the drink"
             ]
         },
         {
             "verb": "serve",
             "arguments": [
-                "drink"
+                "the drink"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "ginger ale"
+                "the ginger ale"
             ]
         },
         {
-            "verb": "stir in",
+            "verb": "stir",
             "arguments": [
                 "pieces of ice cube"
             ]
@@ -11316,7 +10952,6 @@
         {
             "verb": "press",
             "arguments": [
-                "parchment paper",
                 "corners and edges"
             ]
         },
@@ -11383,22 +11018,18 @@
         },
         {
             "verb": "stir",
-            "arguments": [
-                "oil"
-            ]
+            "arguments": []
         },
         {
             "verb": "add",
             "arguments": [
                 "mushrooms",
-                "oil"
+                "salt and pepper"
             ]
         },
         {
             "verb": "stir",
-            "arguments": [
-                "mushrooms"
-            ]
+            "arguments": []
         },
         {
             "verb": "sprinkle",
@@ -11410,20 +11041,21 @@
         {
             "verb": "add",
             "arguments": [
-                "mushrooms",
-                "cheese"
+                "mushrooms"
             ]
         },
         {
             "verb": "spread",
             "arguments": [
-                "mushrooms"
+                "mushrooms",
+                "cheese"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "cheese"
+                "layer",
+                "remaining cheese"
             ]
         },
         {
@@ -11435,7 +11067,8 @@
         {
             "verb": "season",
             "arguments": [
-                "eggs cream and milk"
+                "eggs cream and milk",
+                "pepper salt and nutmeg"
             ]
         },
         {
@@ -11454,15 +11087,7 @@
         },
         {
             "verb": "bake",
-            "arguments": [
-                "quiche"
-            ]
-        },
-        {
-            "verb": "test",
-            "arguments": [
-                "quiche"
-            ]
+            "arguments": []
         },
         {
             "verb": "poke",
@@ -11484,9 +11109,16 @@
             ]
         },
         {
+            "verb": "cool",
+            "arguments": [
+                "quiche"
+            ]
+        },
+        {
             "verb": "garnish",
             "arguments": [
-                "mushroom quiche"
+                "mushroom quiche",
+                "sprinkling of pine nuts and a few sprigs of parsley"
             ]
         }
     ],
@@ -11494,8 +11126,7 @@
         {
             "verb": "remove",
             "arguments": [
-                "chicken",
-                "refrigerator"
+                "chicken"
             ]
         },
         {
@@ -11522,8 +11153,7 @@
         {
             "verb": "place",
             "arguments": [
-                "vegetables",
-                "bottom of the roasting pan"
+                "vegetables"
             ]
         },
         {
@@ -11542,14 +11172,16 @@
         {
             "verb": "drizzle",
             "arguments": [
-                "olive oil",
-                "chicken"
+                "chicken",
+                "olive oil"
             ]
         },
         {
             "verb": "season",
             "arguments": [
-                "entire chicken"
+                "chicken",
+                "salt",
+                "pepper"
             ]
         },
         {
@@ -11569,14 +11201,7 @@
             "verb": "place",
             "arguments": [
                 "lemon",
-                "inside the chicken"
-            ]
-        },
-        {
-            "verb": "place",
-            "arguments": [
-                "fresh herbs",
-                "inside the chicken"
+                "chicken"
             ]
         },
         {
@@ -11615,8 +11240,7 @@
         {
             "verb": "add",
             "arguments": [
-                "splash of water",
-                "pan"
+                "water"
             ]
         },
         {
@@ -11677,16 +11301,6 @@
             ]
         },
         {
-            "verb": "mix",
-            "arguments": []
-        },
-        {
-            "verb": "create",
-            "arguments": [
-                "creamy dressing"
-            ]
-        },
-        {
             "verb": "pour",
             "arguments": [
                 "dressing",
@@ -11696,8 +11310,13 @@
         {
             "verb": "mix",
             "arguments": [
-                "dressing",
                 "cabbage mixture"
+            ]
+        },
+        {
+            "verb": "transfer",
+            "arguments": [
+                "mixture"
             ]
         },
         {
@@ -11715,14 +11334,25 @@
         {
             "verb": "add",
             "arguments": [
-                "tablespoon of mayonnaise"
+                "mayonnaise"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": [
+                "milk"
             ]
         },
         {
             "verb": "use",
             "arguments": [
-                "artificial sweeter",
-                "substitute for granulated sugar"
+                "artificial sweeter"
+            ]
+        },
+        {
+            "verb": "substitute",
+            "arguments": [
+                "granulated sugar"
             ]
         }
     ],
@@ -11731,18 +11361,6 @@
             "verb": "prepare",
             "arguments": [
                 "frozen berry frappe"
-            ]
-        },
-        {
-            "verb": "use",
-            "arguments": [
-                "varieties of frozen berries"
-            ]
-        },
-        {
-            "verb": "enjoy",
-            "arguments": [
-                "refreshing and healthy drink"
             ]
         },
         {
@@ -11755,12 +11373,6 @@
             "verb": "process",
             "arguments": [
                 "frozen berries"
-            ]
-        },
-        {
-            "verb": "get",
-            "arguments": [
-                "smooth mixture"
             ]
         },
         {
@@ -11777,15 +11389,9 @@
             ]
         },
         {
-            "verb": "serve",
-            "arguments": [
-                "frappe with frozen berries"
-            ]
-        },
-        {
             "verb": "pour",
             "arguments": [
-                "frappe with frozen berries"
+                "frappe"
             ]
         },
         {
@@ -11799,7 +11405,7 @@
             "verb": "combine",
             "arguments": [
                 "zest of orange",
-                "strong delicious flavor of frozen berries"
+                "flavor of frozen berries"
             ]
         },
         {
@@ -11811,14 +11417,13 @@
         {
             "verb": "use",
             "arguments": [
-                "one type of berries"
+                "cranberry juice"
             ]
         },
         {
-            "verb": "combine",
+            "verb": "use",
             "arguments": [
-                "two varieties",
-                "three varieties"
+                "carrot juice"
             ]
         }
     ],
@@ -11870,7 +11475,7 @@
         {
             "verb": "taste",
             "arguments": [
-                "milkshake"
+                "shake"
             ]
         },
         {
@@ -11975,8 +11580,8 @@
         {
             "verb": "beat",
             "arguments": [
-                "floor",
-                "low fat milk"
+                "flour",
+                "milk"
             ]
         },
         {
@@ -11992,12 +11597,6 @@
             ]
         },
         {
-            "verb": "stirring",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
             "verb": "Minimize",
             "arguments": [
                 "heat"
@@ -12005,12 +11604,6 @@
         },
         {
             "verb": "seethe",
-            "arguments": [
-                "mixture"
-            ]
-        },
-        {
-            "verb": "stirring",
             "arguments": [
                 "mixture"
             ]
@@ -12099,7 +11692,7 @@
         {
             "verb": "cover",
             "arguments": [
-                "rest of the eggplant pieces"
+                "eggplant"
             ]
         },
         {
@@ -12110,7 +11703,9 @@
         },
         {
             "verb": "Bake",
-            "arguments": []
+            "arguments": [
+                "baking sheet"
+            ]
         },
         {
             "verb": "Uncover",
@@ -12126,11 +11721,15 @@
         },
         {
             "verb": "Bake",
-            "arguments": []
+            "arguments": [
+                "baking sheet"
+            ]
         },
         {
             "verb": "Cool",
-            "arguments": []
+            "arguments": [
+                "baking sheet"
+            ]
         },
         {
             "verb": "serve",
@@ -12185,7 +11784,7 @@
         {
             "verb": "heat",
             "arguments": [
-                "1 tablespoon of oil"
+                "oil"
             ]
         },
         {
@@ -12243,12 +11842,6 @@
             ]
         },
         {
-            "verb": "overcook",
-            "arguments": [
-                "minced garlic"
-            ]
-        },
-        {
             "verb": "add",
             "arguments": [
                 "vegetables"
@@ -12262,15 +11855,11 @@
         },
         {
             "verb": "mix",
-            "arguments": [
-                "vegetable"
-            ]
+            "arguments": []
         },
         {
             "verb": "season",
-            "arguments": [
-                "vegetable"
-            ]
+            "arguments": []
         },
         {
             "verb": "cook",
@@ -12323,14 +11912,6 @@
             ]
         },
         {
-            "verb": "chop",
-            "arguments": [
-                "onions",
-                "ginger",
-                "garlic"
-            ]
-        },
-        {
             "verb": "cut",
             "arguments": [
                 "chicken"
@@ -12347,8 +11928,7 @@
             "arguments": [
                 "yogurt",
                 "salt",
-                "garlic",
-                "ginger paste"
+                "garlic and ginger paste"
             ]
         },
         {
@@ -12378,15 +11958,12 @@
         {
             "verb": "add",
             "arguments": [
-                "garlic",
-                "ginger paste"
+                "garlic and ginger paste"
             ]
         },
         {
             "verb": "stirring",
-            "arguments": [
-                "mixture"
-            ]
+            "arguments": []
         },
         {
             "verb": "mix",
@@ -12420,22 +11997,17 @@
         },
         {
             "verb": "saute",
-            "arguments": [
-                "tomatoes"
-            ]
+            "arguments": []
         },
         {
             "verb": "pour",
             "arguments": [
-                "chicken",
-                "yogurt marinade"
+                "chicken and its yogurt marinade"
             ]
         },
         {
             "verb": "mix",
-            "arguments": [
-                "everything"
-            ]
+            "arguments": []
         },
         {
             "verb": "close",
@@ -12476,14 +12048,14 @@
         {
             "verb": "serve",
             "arguments": [
-                "it",
+                "chicken curry",
                 "rice"
             ]
         },
         {
             "verb": "serve",
             "arguments": [
-                "it",
+                "chicken curry",
                 "Indian bread"
             ]
         }
@@ -12526,12 +12098,6 @@
         },
         {
             "verb": "bring",
-            "arguments": [
-                "solution"
-            ]
-        },
-        {
-            "verb": "boil",
             "arguments": [
                 "solution"
             ]
@@ -12586,155 +12152,20 @@
         {
             "verb": "add",
             "arguments": [
-                "frozen fruit slices",
+                "frozen orange slices",
+                "frozen lemon slices",
                 "ginger punch"
             ]
         }
     ],
+    null,
     [
         {
-            "verb": "Peel",
+            "verb": "choose",
             "arguments": [
-                "carrots"
+                "medium-sized bowl"
             ]
         },
-        {
-            "verb": "clean",
-            "arguments": [
-                "carrots"
-            ]
-        },
-        {
-            "verb": "slice",
-            "arguments": [
-                "carrots"
-            ]
-        },
-        {
-            "verb": "Peel",
-            "arguments": [
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "cut",
-            "arguments": [
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "Heat",
-            "arguments": [
-                "butter"
-            ]
-        },
-        {
-            "verb": "Saute",
-            "arguments": [
-                "onion"
-            ]
-        },
-        {
-            "verb": "Add",
-            "arguments": [
-                "garlic",
-                "carrots"
-            ]
-        },
-        {
-            "verb": "stir",
-            "arguments": [
-                "garlic",
-                "carrots"
-            ]
-        },
-        {
-            "verb": "Add",
-            "arguments": [
-                "white wine"
-            ]
-        },
-        {
-            "verb": "cook",
-            "arguments": [
-                "white wine"
-            ]
-        },
-        {
-            "verb": "Add",
-            "arguments": [
-                "potatoes",
-                "vegetable broth or stock"
-            ]
-        },
-        {
-            "verb": "Bring",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "Season",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "Reduce",
-            "arguments": []
-        },
-        {
-            "verb": "simmer",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "Remove",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "puree",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "Put",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "bring",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "broth"
-            ]
-        },
-        {
-            "verb": "Garnish",
-            "arguments": [
-                "soup"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "sour cream",
-                "nutmeg",
-                "orange juice"
-            ]
-        }
-    ],
-    [
         {
             "verb": "add",
             "arguments": [
@@ -12747,20 +12178,19 @@
         {
             "verb": "mix",
             "arguments": [
-                "the ingredients"
+                "ingredients"
             ]
         },
         {
             "verb": "dip",
             "arguments": [
-                "the slices of bread",
-                "the mixture"
+                "slices of bread"
             ]
         },
         {
             "verb": "prepare",
             "arguments": [
-                "the cooking pan"
+                "cooking pan"
             ]
         },
         {
@@ -12772,39 +12202,43 @@
         {
             "verb": "melt",
             "arguments": [
-                "the slices of butter"
+                "several thin slices of butter"
             ]
         },
         {
             "verb": "put",
             "arguments": [
-                "the slices of bread",
-                "the pan"
+                "slices of bread"
             ]
         },
         {
             "verb": "cook",
             "arguments": [
-                "the slices of bread"
+                "slices of bread"
+            ]
+        },
+        {
+            "verb": "turns",
+            "arguments": [
+                "colour of the bread"
             ]
         },
         {
             "verb": "remove",
             "arguments": [
-                "the slices of bread"
+                "slices of bread"
             ]
         },
         {
             "verb": "cool",
             "arguments": [
-                "the slices of bread"
+                "slices of bread"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "the creamy maple syrup",
-                "the french toast"
+                "creamy maple syrup"
             ]
         },
         {
@@ -12816,11 +12250,185 @@
         {
             "verb": "add",
             "arguments": [
-                "some slices of fruit"
+                "slices of fruit"
             ]
         }
     ],
-    null,
+    [
+        {
+            "verb": "preheat",
+            "arguments": [
+                "oven"
+            ]
+        },
+        {
+            "verb": "sift",
+            "arguments": [
+                "flour",
+                "Bicarbonate of Soda",
+                "ginger",
+                "mixed spice"
+            ]
+        },
+        {
+            "verb": "rub",
+            "arguments": [
+                "butter",
+                "mixture"
+            ]
+        },
+        {
+            "verb": "stir",
+            "arguments": [
+                "sugar"
+            ]
+        },
+        {
+            "verb": "make",
+            "arguments": [
+                "well"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": [
+                "syrup",
+                "egg"
+            ]
+        },
+        {
+            "verb": "combine",
+            "arguments": [
+                "wet ingredients",
+                "dry ingredients"
+            ]
+        },
+        {
+            "verb": "bring",
+            "arguments": [
+                "mixture"
+            ]
+        },
+        {
+            "verb": "turn",
+            "arguments": [
+                "dough"
+            ]
+        },
+        {
+            "verb": "knead",
+            "arguments": [
+                "dough"
+            ]
+        },
+        {
+            "verb": "roll",
+            "arguments": [
+                "dough"
+            ]
+        },
+        {
+            "verb": "stamp",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "re-roll",
+            "arguments": [
+                "dough"
+            ]
+        },
+        {
+            "verb": "arrange",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "prick",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "bake",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "cool",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "transfer",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "cool",
+            "arguments": [
+                "shapes"
+            ]
+        },
+        {
+            "verb": "place",
+            "arguments": [
+                "butter"
+            ]
+        },
+        {
+            "verb": "beat",
+            "arguments": [
+                "butter"
+            ]
+        },
+        {
+            "verb": "sieve",
+            "arguments": [
+                "icing sugar"
+            ]
+        },
+        {
+            "verb": "beat",
+            "arguments": [
+                "icing sugar"
+            ]
+        },
+        {
+            "verb": "make",
+            "arguments": [
+                "icing"
+            ]
+        },
+        {
+            "verb": "add",
+            "arguments": [
+                "Natural Lemon Extract"
+            ]
+        },
+        {
+            "verb": "mix",
+            "arguments": []
+        },
+        {
+            "verb": "sandwich",
+            "arguments": [
+                "cookies",
+                "lemon buttercream"
+            ]
+        },
+        {
+            "verb": "dust",
+            "arguments": [
+                "icing sugar"
+            ]
+        }
+    ],
     [
         {
             "verb": "salt",
@@ -12838,6 +12446,12 @@
             "verb": "let",
             "arguments": [
                 "steak"
+            ]
+        },
+        {
+            "verb": "reach",
+            "arguments": [
+                "room temperature"
             ]
         },
         {
@@ -12861,7 +12475,7 @@
         {
             "verb": "brush",
             "arguments": [
-                "hot rack of your grill"
+                "hot rack"
             ]
         },
         {
@@ -12915,18 +12529,6 @@
     ],
     [
         {
-            "verb": "use",
-            "arguments": [
-                "Wonderbread"
-            ]
-        },
-        {
-            "verb": "grill",
-            "arguments": [
-                "bread"
-            ]
-        },
-        {
             "verb": "make",
             "arguments": [
                 "grilled cheese sandwich"
@@ -12947,15 +12549,7 @@
         },
         {
             "verb": "eat",
-            "arguments": [
-                "grilled cheese sandwich"
-            ]
-        },
-        {
-            "verb": "enjoy",
-            "arguments": [
-                "grilled cheese sandwich"
-            ]
+            "arguments": []
         }
     ],
     [
@@ -12972,7 +12566,7 @@
             ]
         },
         {
-            "verb": "cool down",
+            "verb": "let cool down",
             "arguments": [
                 "potatoes"
             ]
@@ -12980,84 +12574,47 @@
         {
             "verb": "place",
             "arguments": [
-                "potatoes",
-                "large bowl"
+                "potatoes"
             ]
         },
         {
             "verb": "add",
             "arguments": [
-                "mayonnaise",
-                "potatoes"
+                "mayonnaise"
             ]
         },
         {
             "verb": "mix",
             "arguments": [
-                "potatoes",
-                "mayonnaise"
+                "potatoes"
             ]
         },
         {
             "verb": "add",
             "arguments": [
                 "black olives",
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
                 "onions",
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
                 "vinegar",
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "mustard",
-                "potatoes"
+                "mustard"
             ]
         },
         {
             "verb": "stir",
             "arguments": [
-                "chopped eggs",
-                "potatoes"
+                "chopped eggs"
             ]
         },
         {
             "verb": "add",
             "arguments": [
                 "salt",
-                "potatoes"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "pepper",
-                "potatoes"
+                "pepper"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "potatoes",
-                "tomatoes"
-            ]
-        },
-        {
-            "verb": "top",
-            "arguments": [
-                "potatoes",
+                "tomatoes",
                 "chopped celery"
             ]
         }
@@ -13090,7 +12647,9 @@
         {
             "verb": "check",
             "arguments": [
-                "chunky or large pieces of cookies"
+                "full cream milk",
+                "all-purpose cream",
+                "crumbled cookies"
             ]
         },
         {
@@ -13115,9 +12674,7 @@
         },
         {
             "verb": "enjoy",
-            "arguments": [
-                "yummy treat"
-            ]
+            "arguments": []
         },
         {
             "verb": "pour",
@@ -13155,7 +12712,9 @@
         },
         {
             "verb": "serve",
-            "arguments": []
+            "arguments": [
+                "milkshake"
+            ]
         }
     ],
     [
@@ -13166,7 +12725,7 @@
             ]
         },
         {
-            "verb": "positioned",
+            "verb": "position",
             "arguments": [
                 "oven rack"
             ]
@@ -13214,43 +12773,43 @@
         {
             "verb": "put",
             "arguments": [
-                "1/3 of the dry ingredients"
+                "dry ingredients"
             ]
         },
         {
             "verb": "beat",
             "arguments": [
-                "1/3 of the dry ingredients"
+                "mixture"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "1/3 of the yogurt"
+                "yogurt"
             ]
         },
         {
             "verb": "beat",
             "arguments": [
-                "1/3 of the other dry ingredients"
+                "mixture"
             ]
         },
         {
             "verb": "beat",
             "arguments": [
-                "second 1/3 of the yogurt"
+                "yogurt"
             ]
         },
         {
             "verb": "put",
             "arguments": [
-                "remaining dry ingredients"
+                "dry ingredients"
             ]
         },
         {
             "verb": "beat",
             "arguments": [
-                "remaining yogurt"
+                "yogurt"
             ]
         },
         {
@@ -13296,6 +12855,13 @@
             ]
         },
         {
+            "verb": "poke",
+            "arguments": [
+                "toothpick",
+                "muffin"
+            ]
+        },
+        {
             "verb": "place",
             "arguments": [
                 "muffin tins"
@@ -13330,40 +12896,40 @@
         {
             "verb": "combine",
             "arguments": [
-                "all the ingredients for the cookie dough layers except for the chocolate chips"
+                "ingredients for the cookie dough layers except for the chocolate chips"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
                 "1 tablespoon of vanilla mix",
-                "the bottom of each ice pop mold"
+                "bottom of each ice pop mold"
             ]
         },
         {
             "verb": "freeze",
             "arguments": [
-                "vanilla mix in ice pop molds"
+                "vanilla mix"
             ]
         },
         {
             "verb": "sprinkle",
             "arguments": [
                 "chocolate chips",
-                "top of frozen vanilla layer"
+                "frozen vanilla layer"
             ]
         },
         {
             "verb": "pour",
             "arguments": [
-                "1 tablespoon of cookie dough mix",
-                "top of frozen vanilla layer"
+                "1 Tablespoon of cookie dough mix",
+                "on top of frozen vanilla layer"
             ]
         },
         {
             "verb": "freeze",
             "arguments": [
-                "ice pop molds"
+                "cookie dough mix"
             ]
         },
         {
@@ -13375,7 +12941,13 @@
         {
             "verb": "repeat",
             "arguments": [
-                "process alternating layers"
+                "process"
+            ]
+        },
+        {
+            "verb": "alternate",
+            "arguments": [
+                "layers"
             ]
         },
         {
@@ -13414,12 +12986,7 @@
         {
             "verb": "mix",
             "arguments": [
-                "tortellini",
-                "salad dressing",
-                "salami",
-                "mozzarella",
-                "mushrooms",
-                "tomatoes"
+                "ingredients"
             ]
         },
         {
@@ -13430,7 +12997,7 @@
                 "mozzarella ball",
                 "lettuce leaf",
                 "mushroom",
-                "one tomato half"
+                "tomato half"
             ]
         },
         {
@@ -13458,7 +13025,7 @@
             ]
         },
         {
-            "verb": "run",
+            "verb": "run out",
             "arguments": [
                 "appetizer"
             ]
@@ -13496,7 +13063,7 @@
             ]
         },
         {
-            "verb": "cooking",
+            "verb": "continue cooking",
             "arguments": []
         },
         {
@@ -13519,7 +13086,9 @@
         },
         {
             "verb": "serve",
-            "arguments": []
+            "arguments": [
+                "seafood cioppino"
+            ]
         }
     ],
     [
@@ -13527,13 +13096,13 @@
             "verb": "fill",
             "arguments": [
                 "container",
-                "towelettes"
+                "towelette"
             ]
         },
         {
             "verb": "use",
             "arguments": [
-                "high quality disposable napkins"
+                "disposable napkin"
             ]
         },
         {
@@ -13545,15 +13114,14 @@
         {
             "verb": "use",
             "arguments": [
-                "wipe"
+                "wipe",
+                "surface of your glass and mirrors"
             ]
         },
         {
             "verb": "clean",
             "arguments": [
-                "surface",
-                "glass",
-                "mirrors"
+                "surface of your glass and mirrors"
             ]
         },
         {
@@ -13564,6 +13132,12 @@
         }
     ],
     [
+        {
+            "verb": "get used",
+            "arguments": [
+                "sheet pans"
+            ]
+        },
         {
             "verb": "pour",
             "arguments": [
@@ -13595,7 +13169,7 @@
             ]
         },
         {
-            "verb": "cool",
+            "verb": "cook",
             "arguments": [
                 "orzo"
             ]
@@ -13620,6 +13194,7 @@
         {
             "verb": "drizzle",
             "arguments": [
+                "salad",
                 "glaze"
             ]
         }
@@ -13653,11 +13228,12 @@
         {
             "verb": "remove",
             "arguments": [
-                "washing soda"
+                "washing soda",
+                "oven"
             ]
         },
         {
-            "verb": "allow",
+            "verb": "cool",
             "arguments": [
                 "washing soda"
             ]
@@ -13679,10 +13255,15 @@
             ]
         },
         {
-            "verb": "sit",
+            "verb": "use",
             "arguments": [
-                "fan",
-                "containers"
+                "styrofoam containers"
+            ]
+        },
+        {
+            "verb": "create",
+            "arguments": [
+                "double-walled inner container"
             ]
         },
         {
@@ -13692,7 +13273,7 @@
             ]
         },
         {
-            "verb": "cut out",
+            "verb": "cut",
             "arguments": [
                 "bottom",
                 "one of the containers"
@@ -13706,12 +13287,6 @@
             ]
         },
         {
-            "verb": "cut",
-            "arguments": [
-                "styrofoam containers"
-            ]
-        },
-        {
             "verb": "stabilize",
             "arguments": [
                 "area to be cut"
@@ -13722,13 +13297,6 @@
             "arguments": [
                 "tape",
                 "inside",
-                "styrofoam walls"
-            ]
-        },
-        {
-            "verb": "apply",
-            "arguments": [
-                "tape",
                 "outside",
                 "styrofoam walls"
             ]
@@ -13736,19 +13304,27 @@
     ],
     [
         {
-            "verb": "take",
+            "verb": "spent",
             "arguments": [
-                "credit",
-                "this recipe"
+                "my sister",
+                "years"
             ]
         },
         {
-            "verb": "spent",
+            "verb": "drinking",
             "arguments": [
-                "years",
-                "drinking",
-                "tweaking",
-                "serving",
+                "it"
+            ]
+        },
+        {
+            "verb": "tweaking",
+            "arguments": [
+                "it"
+            ]
+        },
+        {
+            "verb": "serving",
+            "arguments": [
                 "it"
             ]
         },
@@ -13771,7 +13347,7 @@
             ]
         },
         {
-            "verb": "stir",
+            "verb": "Stir",
             "arguments": [
                 "the wine",
                 "sugar",
@@ -13788,14 +13364,13 @@
         {
             "verb": "help",
             "arguments": [
-                "frozen peaches",
-                "keep the sangria cold"
+                "Frozen peaches"
             ]
         },
         {
-            "verb": "water",
+            "verb": "keep",
             "arguments": [
-                "it"
+                "the sangria"
             ]
         }
     ],
@@ -13825,7 +13400,7 @@
             ]
         },
         {
-            "verb": "let cool",
+            "verb": "let",
             "arguments": [
                 "corn"
             ]
@@ -13850,9 +13425,7 @@
         },
         {
             "verb": "serve",
-            "arguments": [
-                "corn"
-            ]
+            "arguments": []
         }
     ],
     [
@@ -13861,10 +13434,6 @@
             "arguments": [
                 "steam setting"
             ]
-        },
-        {
-            "verb": "use",
-            "arguments": []
         },
         {
             "verb": "soaked",
@@ -13915,8 +13484,7 @@
         {
             "verb": "press",
             "arguments": [
-                "water",
-                "bathing suit"
+                "water"
             ]
         },
         {
@@ -13933,9 +13501,10 @@
             ]
         },
         {
-            "verb": "roll",
+            "verb": "roll up",
             "arguments": [
-                "bathing suit"
+                "bathing suit",
+                "towel"
             ]
         },
         {
@@ -13947,56 +13516,11 @@
         {
             "verb": "absorb",
             "arguments": [
-                "moisture",
-                "suit"
+                "moisture"
             ]
         }
     ],
     [
-        {
-            "verb": "burn",
-            "arguments": [
-                "food"
-            ]
-        },
-        {
-            "verb": "get",
-            "arguments": [
-                "burned food"
-            ]
-        },
-        {
-            "verb": "save",
-            "arguments": [
-                "baking pans"
-            ]
-        },
-        {
-            "verb": "bring",
-            "arguments": [
-                "shine",
-                "pans"
-            ]
-        },
-        {
-            "verb": "clean",
-            "arguments": [
-                "pan"
-            ]
-        },
-        {
-            "verb": "loosen",
-            "arguments": [
-                "foods",
-                "grease"
-            ]
-        },
-        {
-            "verb": "form",
-            "arguments": [
-                "paste"
-            ]
-        },
         {
             "verb": "add",
             "arguments": [
@@ -14014,7 +13538,7 @@
         {
             "verb": "remove",
             "arguments": [
-                "spots"
+                "burned on spots"
             ]
         }
     ],
@@ -14074,63 +13598,51 @@
     ],
     [
         {
-            "verb": "squeeze",
+            "verb": "Squeeze",
             "arguments": [
                 "water",
                 "spinach"
             ]
         },
         {
-            "verb": "stir",
+            "verb": "Stir",
             "arguments": [
                 "spinach",
-                "all remaining ingredients"
+                "remaining ingredients"
             ]
         },
         {
-            "verb": "reserve",
+            "verb": "Add",
             "arguments": [
-                "1/2 cup mozzarella cheese"
-            ]
-        },
-        {
-            "verb": "add",
-            "arguments": [
-                "spinach with all remaining ingredients",
-                "8 x 8 baking dish"
+                "spinach with remaining ingredients",
+                "baking dish"
             ]
         },
         {
             "verb": "top",
             "arguments": [
-                "add to an 8 x 8 baking dish",
+                "spinach with remaining ingredients in baking dish",
                 "remaining cheese"
             ]
         },
         {
-            "verb": "bake",
+            "verb": "Bake",
             "arguments": [
-                "add to an 8 x 8 baking dish top with remaining cheese"
+                "spinach with remaining ingredients and cheese in baking dish"
             ]
         },
         {
-            "verb": "serve",
+            "verb": "Serve",
             "arguments": [
-                "add to an 8 x 8 baking dish top with remaining cheese"
+                "spinach artichoke dip"
             ]
         }
     ],
     [
         {
-            "verb": "show",
-            "arguments": [
-                "how to clean makeup brushes safely",
-                "how to help makeup brushes last longer"
-            ]
-        },
-        {
             "verb": "give",
             "arguments": [
+                "cleaner",
                 "stir"
             ]
         },
@@ -14142,7 +13654,7 @@
             ]
         },
         {
-            "verb": "remove",
+            "verb": "removed",
             "arguments": [
                 "makeup",
                 "brush"
@@ -14151,7 +13663,7 @@
         {
             "verb": "prop",
             "arguments": [
-                "handle of makeup brushes"
+                "handle of your makeup brushes"
             ]
         },
         {
@@ -14159,18 +13671,6 @@
             "arguments": [
                 "moisture",
                 "towel"
-            ]
-        },
-        {
-            "verb": "clean",
-            "arguments": [
-                "makeup brushes"
-            ]
-        },
-        {
-            "verb": "keep",
-            "arguments": [
-                "brushes clean"
             ]
         },
         {
@@ -14184,49 +13684,43 @@
         {
             "verb": "keep",
             "arguments": [
-                "those favorite shirts that have seen better days in the fit department"
+                "shirts"
             ]
         },
         {
             "verb": "buying",
             "arguments": [
-                "that perfect shirt that's a bit too small"
+                "shirt"
             ]
         },
         {
             "verb": "make",
             "arguments": [
-                "any shirt"
+                "shirt"
             ]
         },
         {
             "verb": "fit",
             "arguments": [
-                "any shirt"
+                "shirt"
             ]
         },
         {
-            "verb": "Remove",
+            "verb": "remove",
             "arguments": [
-                "the buttons on the sleeves"
+                "buttons"
             ]
         },
         {
             "verb": "resew",
             "arguments": [
-                "them"
+                "buttons"
             ]
         },
         {
-            "verb": "give",
+            "verb": "cut",
             "arguments": [
-                "your arms"
-            ]
-        },
-        {
-            "verb": "Cut",
-            "arguments": [
-                "the center back of the shirt"
+                "center back of the shirt"
             ]
         },
         {
@@ -14234,59 +13728,47 @@
             "arguments": []
         },
         {
-            "verb": "get",
+            "verb": "press",
             "arguments": [
-                "the yoke"
+                "raw edges"
             ]
         },
         {
-            "verb": "Press",
+            "verb": "find",
             "arguments": [
-                "the raw edges"
-            ]
-        },
-        {
-            "verb": "Find",
-            "arguments": [
-                "some pretty lace or coordinating fabric"
+                "lace",
+                "coordinating fabric"
             ]
         },
         {
             "verb": "insert",
             "arguments": [
-                "pretty lace or coordinating fabric",
-                "the back"
+                "lace",
+                "back"
             ]
         },
         {
             "verb": "pin",
             "arguments": [
-                "the coordinating fabric"
+                "coordinating fabric"
             ]
         },
         {
-            "verb": "made",
+            "verb": "sew",
             "arguments": [
-                "the opening",
-                "the back"
+                "sides of the opening"
             ]
         },
         {
-            "verb": "Sew",
+            "verb": "trim",
             "arguments": [
-                "both sides of the opening"
-            ]
-        },
-        {
-            "verb": "Trim",
-            "arguments": [
-                "the extra fabric"
+                "extra fabric"
             ]
         },
         {
             "verb": "leave",
             "arguments": [
-                "a half-inch seam allowance"
+                "half-inch seam allowance"
             ]
         }
     ],
