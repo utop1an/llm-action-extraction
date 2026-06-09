@@ -18,11 +18,12 @@ class OllamaClient(BaseLLMClient):
         try:
             from ollama import Client, AsyncClient
         except ImportError:
-            print("Ollama library not found. Please install it using 'pip install ollama'.")
+            raise ImportError("Ollama library not found. Please install it using 'pip install ollama'.")
             
         super().__init__(config)
-        self.client = Client(host='http://localhost:11434')
-        self.async_client = AsyncClient(host='http://localhost:11434')
+        host = config.get("host", "http://localhost:11434")
+        self.client = Client(host=host)
+        self.async_client = AsyncClient(host=host)
         
 
     async def generate_async(self, prompt: str, temperature: float = 0) -> Dict[str, Any]:
@@ -35,7 +36,7 @@ class OllamaClient(BaseLLMClient):
                     "content": prompt
                 }],
                 options= {
-                    "temperature": self.config.get("temperature", 0)
+                    "temperature": temperature
                 }
             )
 
@@ -45,7 +46,11 @@ class OllamaClient(BaseLLMClient):
                 "content": content_part,
                 "think": think_part,
                 "response_time": end_time - start_time,
-                "model": self.config["model_name"]
+                "model": self.config["model_name"],
+                "usage": {
+                    "prompt_eval_count": getattr(response, "prompt_eval_count", None),
+                    "eval_count": getattr(response, "eval_count", None),
+                },
             }
         except Exception as e:
             raise RuntimeError(f"Ollama API call failed: {str(e)}")
@@ -60,7 +65,7 @@ class OllamaClient(BaseLLMClient):
                     "content": prompt
                 }],
                 options= {
-                    "temperature": self.config.get("temperature", 0)
+                    "temperature": temperature
                 }
             )
 
@@ -71,7 +76,11 @@ class OllamaClient(BaseLLMClient):
                 "content": content_part,
                 "think": think_part,
                 "response_time": end_time - start_time,
-                "model": self.config["model_name"]
+                "model": self.config["model_name"],
+                "usage": {
+                    "prompt_eval_count": getattr(response, "prompt_eval_count", None),
+                    "eval_count": getattr(response, "eval_count", None),
+                },
             }
         except Exception as e:
             raise RuntimeError(f"Ollama API call failed: {str(e)}")

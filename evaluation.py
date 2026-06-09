@@ -2,6 +2,7 @@
 from collections import defaultdict
 import csv
 import os, sys
+import json
 
 from tqdm import tqdm
 from src.utils import load_pkl
@@ -12,6 +13,17 @@ nlp = spacy.load("en_core_web_sm")
 
 DEBUG = False
 
+DATASETS = ("cooking", "wikihow", "win2k")
+SOLVERS = ("gpt3_to_plan", "nl2p_1", "nl2p_2", "nl2p_3", "verb_args")
+
+PREPOSITIONS = {
+    "about", "above", "across", "after", "against", "along", "among", "around",
+    "at", "before", "behind", "below", "beneath", "beside", "between", "by",
+    "down", "during", "for", "from", "in", "inside", "into", "near", "of",
+    "off", "on", "onto", "out", "over", "through", "to", "under", "up", "with",
+    "within", "without",
+}
+
 def read_from_refined_dataset(filename, limit=None):
     """
     Read data from a dataset file
@@ -19,7 +31,7 @@ def read_from_refined_dataset(filename, limit=None):
     path = os.path.join('./data/easdrl', filename + '.pkl')
     dataset = load_pkl(path)[-1]
     if limit is not None:
-        dataset = dataset[:(max(limit, len(dataset)))]
+        dataset = dataset[:limit]
     return dataset
 
 def read_from_labeled_dataset(filename, limit=None):
@@ -29,8 +41,27 @@ def read_from_labeled_dataset(filename, limit=None):
     path = os.path.join('./data/easdrl', filename + '.pkl')
     dataset = load_pkl(path)
     if limit is not None:
-        dataset = dataset[:(max(limit, len(dataset)))]
+        dataset = dataset[:limit]
     return dataset
+
+def parse_result_filename(file):
+    stem = os.path.splitext(file)[0]
+    for ds_name in DATASETS:
+        prefix = ds_name + "_"
+        if not stem.startswith(prefix):
+            continue
+        rest = stem[len(prefix):]
+        for solver_name in sorted(SOLVERS, key=len, reverse=True):
+            if rest == solver_name:
+                return ds_name, solver_name, "none"
+            solver_prefix = solver_name + "_"
+            if rest.startswith(solver_prefix):
+                return ds_name, solver_name, rest[len(solver_prefix):] or "none"
+    parts = stem.split("_")
+    ds_name = parts[0]
+    solver_name = "_".join(parts[1:-1]) if len(parts) > 2 else (parts[1] if len(parts) > 1 else "unknown")
+    model_name = parts[-1] if len(parts) > 2 else "none"
+    return ds_name, solver_name, model_name
 
 def read_from_predicted_dataset(dir):
     res_dict = defaultdict(list)
@@ -41,10 +72,7 @@ def read_from_predicted_dataset(dir):
     for file in pkl_files:
         print(f"Loading {file}")
         path = os.path.join(dir, file)
-        full_filename = file.split('.')[0].split('_')
-        ds_name = full_filename[0]
-        solver_name = full_filename[1]
-        model_name = full_filename[2] if len(full_filename) > 2 else 'none'
+        ds_name, solver_name, model_name = parse_result_filename(file)
         res_dict[(ds_name,solver_name,model_name)] = load_pkl(path)
     return res_dict
 
@@ -61,11 +89,194 @@ def write_results(results: dict, dir: str):
             writer.writerow([ds_name, solver, model_name, precision, recall, f1, obj_precision, obj_recall, obj_f1])
     print('Results written to %s' % outpath)
 
+def write_diagnostics(diagnostics: list, dir: str):
+    if not diagnostics:
+        print("No mismatch diagnostics to write.")
+        return
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    outpath = os.path.join(dir, "evaluation_mismatch_diagnostics.csv")
+    fieldnames = [
+        "dataset", "solver", "model", "doc_id", "docId", "source_file",
+        "mismatch_type", "candidate_dataset_issue", "candidate_llm_issue",
+        "reason", "original_text", "gold_verb", "gold_arguments",
+        "pred_verb", "pred_arguments", "gold_action", "pred_action",
+    ]
+    with open(outpath, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in diagnostics:
+            writer.writerow({key: row.get(key, "") for key in fieldnames})
+    print("Mismatch diagnostics written to %s" % outpath)
+
 def match_obj(gt_name, pred_name):
-    gt_lemma = nlp(gt_name)[0].lemma_.lower()
+    doc1 = nlp(str(gt_name))
+    if not doc1:
+        return False
+    gt_lemma = doc1[0].lemma_.lower()
     doc2 = nlp(str(pred_name))
     pred_lemma = " ".join([token.lemma_.lower() for token in doc2])
     return gt_lemma in pred_lemma
+
+def lemma_text(text):
+    return " ".join(token.lemma_.lower() for token in nlp(str(text)) if not token.is_space)
+
+def content_lemmas(text):
+    return {
+        token.lemma_.lower()
+        for token in nlp(str(text))
+        if not token.is_space and not token.is_punct and not token.is_stop
+    }
+
+def normalize_args(args):
+    if args is None:
+        return []
+    if isinstance(args, str):
+        return [args]
+    return [str(arg) for arg in args if arg is not None]
+
+def action_text(act, words):
+    act_idx = act.get("act_idx")
+    if isinstance(act_idx, int) and 0 <= act_idx < len(words):
+        return words[act_idx]
+    return ""
+
+def action_arguments(act, words):
+    obj_idxs = act.get("obj_idxs", [[], []])
+    if len(obj_idxs) == 0:
+        return []
+    if len(obj_idxs[0]) == 1 and obj_idxs[0][0] == -1:
+        return []
+    return [words[idx] for idx in obj_idxs[0] if isinstance(idx, int) and 0 <= idx < len(words)]
+
+def action_record(act, words):
+    return {
+        "verb": action_text(act, words),
+        "arguments": action_arguments(act, words),
+        "act_idx": act.get("act_idx"),
+        "obj_idxs": act.get("obj_idxs"),
+        "act_type": act.get("act_type"),
+        "related_acts": act.get("related_acts", []),
+    }
+
+def original_text(item):
+    if item.get("original_text"):
+        return item["original_text"]
+    if item.get("sents"):
+        return ". ".join(" ".join(sent) for sent in item["sents"]) + "."
+    return " ".join(item.get("words", []))
+
+def doc_id(item, fallback):
+    return item.get("doc_id", fallback)
+
+def doc_key(item, dataset, fallback):
+    if item.get("docId"):
+        return item["docId"]
+    return f"{dataset}:{item.get('doc_id', fallback)}"
+
+def is_preposition_argument(arg):
+    doc = nlp(str(arg))
+    return bool(doc) and doc[0].lemma_.lower() in PREPOSITIONS
+
+def is_split_modifier_case(extra_args, other_args):
+    """Detect cases like choose(square, shadow, box) for one noun phrase."""
+    other_lemmas = content_lemmas(" ".join(other_args))
+    if not other_lemmas:
+        return False
+    extra_lemmas = [content_lemmas(arg) for arg in extra_args]
+    return any(lemmas and lemmas.issubset(other_lemmas) for lemmas in extra_lemmas)
+
+def arg_diff(gold_args, pred_args):
+    matched_gold = set()
+    matched_pred = set()
+    for gi, gold_arg in enumerate(gold_args):
+        for pi, pred_arg in enumerate(pred_args):
+            if pi in matched_pred:
+                continue
+            if match_obj(gold_arg, pred_arg) or match_obj(pred_arg, gold_arg):
+                matched_gold.add(gi)
+                matched_pred.add(pi)
+                break
+    missing_from_pred = [gold_args[i] for i in range(len(gold_args)) if i not in matched_gold]
+    extra_in_pred = [pred_args[i] for i in range(len(pred_args)) if i not in matched_pred]
+    return missing_from_pred, extra_in_pred
+
+def classify_argument_mismatch(gold_args, pred_args):
+    missing_from_pred, extra_in_pred = arg_diff(gold_args, pred_args)
+    notes = []
+    dataset_issues = []
+    llm_issues = []
+
+    if missing_from_pred:
+        dataset_issues.append("extra_arguments")
+        llm_issues.append("missing_arguments")
+        notes.append("gold has arguments not matched by prediction")
+        if any(is_preposition_argument(arg) for arg in missing_from_pred):
+            dataset_issues.append("extra_arguments:preposition_argument")
+            notes.append("gold unmatched argument starts with a preposition")
+        if is_split_modifier_case(missing_from_pred, pred_args):
+            dataset_issues.append("extra_arguments:unnecessary_head_or_modifier_split")
+            notes.append("gold unmatched argument looks like a split modifier/head word")
+
+    if extra_in_pred:
+        dataset_issues.append("missing_arguments")
+        llm_issues.append("extra_arguments")
+        notes.append("prediction has arguments not matched by gold")
+        if any(is_preposition_argument(arg) for arg in extra_in_pred):
+            llm_issues.append("extra_arguments:preposition_argument")
+            notes.append("pred unmatched argument starts with a preposition")
+        if is_split_modifier_case(extra_in_pred, gold_args):
+            llm_issues.append("extra_arguments:unnecessary_head_or_modifier_split")
+            notes.append("pred unmatched argument looks like a split modifier/head word")
+
+    if missing_from_pred and extra_in_pred:
+        dataset_issues.append("wrong_arguments")
+        llm_issues.append("wrong_arguments")
+
+    return {
+        "missing_from_pred": missing_from_pred,
+        "extra_in_pred": extra_in_pred,
+        "candidate_dataset_issue": "|".join(dict.fromkeys(dataset_issues)),
+        "candidate_llm_issue": "|".join(dict.fromkeys(llm_issues)),
+        "reason": "; ".join(notes),
+    }
+
+def best_verb_candidate(gold_action, unused_preds):
+    gold_verb = gold_action.get("verb", "")
+    best = None
+    best_score = 0
+    for pred_idx, pred in unused_preds:
+        pred_verb = pred.get("verb", "")
+        score = len(content_lemmas(gold_verb) & content_lemmas(pred_verb))
+        score += len(content_lemmas(" ".join(gold_action.get("arguments", []))) & content_lemmas(" ".join(normalize_args(pred.get("arguments", [])))))
+        if score > best_score:
+            best = (pred_idx, pred)
+            best_score = score
+    return best, best_score
+
+def diagnostic_row(names, item, item_idx, mismatch_type, gold=None, pred=None, dataset_issue="", llm_issue="", reason=""):
+    ds_name, solver_name, model_name = names
+    gold = gold or {}
+    pred = pred or {}
+    return {
+        "dataset": ds_name,
+        "solver": solver_name,
+        "model": model_name,
+        "doc_id": doc_id(item, item_idx),
+        "docId": doc_key(item, ds_name, item_idx),
+        "source_file": item.get("source_file", ""),
+        "mismatch_type": mismatch_type,
+        "candidate_dataset_issue": dataset_issue,
+        "candidate_llm_issue": llm_issue,
+        "reason": reason,
+        "original_text": original_text(item),
+        "gold_verb": gold.get("verb", ""),
+        "gold_arguments": json.dumps(gold.get("arguments", []), ensure_ascii=False),
+        "pred_verb": pred.get("verb", ""),
+        "pred_arguments": json.dumps(normalize_args(pred.get("arguments", [])), ensure_ascii=False),
+        "gold_action": json.dumps(gold, ensure_ascii=False),
+        "pred_action": json.dumps(pred, ensure_ascii=False),
+    }
 
 def match_objs(act_obj_names, pred_obj_names):
     obj_right  = 0
@@ -137,13 +348,14 @@ def match(act, pred, words):
 
 
 
-def evaluation(preds):
+def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
     
 
     total_right = total_truth = total_tagged = 0
     obj_total_right = obj_total_truth = obj_total_tagged = 0
+    diagnostics = []
 
-    for i, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
+    for item_idx, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
         
         words = item['words']
         acts = item['acts']
@@ -153,8 +365,8 @@ def evaluation(preds):
         counted_exclusive_acts = set()
 
         if not pred:
-            print(f"No predictions found for item {i}.")
-            continue
+            print(f"No predictions found for item {item_idx}.")
+            pred = []
         used = [False] * len(pred)
         for act in acts:
             matched = False
@@ -171,14 +383,14 @@ def evaluation(preds):
                     counted_exclusive_acts.update(all_indices)
             
             best = (None, 0,0,0,0)
-            for i, pred_act in enumerate(pred):
-                if used[i]:
+            for pred_idx, pred_act in enumerate(pred):
+                if used[pred_idx]:
                     continue
                 matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
 
                 if matched:
                     if best[4] < obj_f1:
-                        best = (i, obj_right, obj_true, obj_tagged, obj_f1)
+                        best = (pred_idx, obj_right, obj_true, obj_tagged, obj_f1)
             
             # matched the best prediction
             if best[0] is not None:
@@ -192,8 +404,83 @@ def evaluation(preds):
                 obj_total_right += best[1]
                     
                 used[best[0]] = True
+                if collect_diagnostics and (best[1] < best[2] or best[1] < best[3]):
+                    gold = action_record(act, words)
+                    pred_act = pred[best[0]]
+                    arg_info = classify_argument_mismatch(gold["arguments"], normalize_args(pred_act.get("arguments", [])))
+                    diagnostics.append(
+                        diagnostic_row(
+                            names,
+                            item,
+                            item_idx,
+                            "argument_mismatch",
+                            gold=gold,
+                            pred=pred_act,
+                            dataset_issue=arg_info["candidate_dataset_issue"],
+                            llm_issue=arg_info["candidate_llm_issue"],
+                            reason=arg_info["reason"],
+                        )
+                    )
+            elif collect_diagnostics:
+                gold = action_record(act, words)
+                unused_preds = [(idx, pred_act) for idx, pred_act in enumerate(pred) if not used[idx]]
+                candidate, score = best_verb_candidate(gold, unused_preds)
+                if candidate and score > 0:
+                    pred_idx, pred_act = candidate
+                    diagnostics.append(
+                        diagnostic_row(
+                            names,
+                            item,
+                            item_idx,
+                            "wrong_action",
+                            gold=gold,
+                            pred=pred_act,
+                            dataset_issue="wrong_actions",
+                            llm_issue="wrong_actions",
+                            reason="unmatched gold action has lexical/argument overlap with an unused prediction",
+                        )
+                    )
+                else:
+                    diagnostics.append(
+                        diagnostic_row(
+                            names,
+                            item,
+                            item_idx,
+                            "unmatched_gold_action",
+                            gold=gold,
+                            dataset_issue="extra_actions",
+                            llm_issue="missing_actions",
+                            reason="gold action was not matched by any prediction",
+                        )
+                    )
 
         total_tagged += len(pred)
+
+        if collect_diagnostics:
+            for pred_idx, pred_act in enumerate(pred):
+                if used[pred_idx]:
+                    continue
+                pred_verb = pred_act.get("verb", "")
+                if pred_verb and lemma_text(pred_verb) in lemma_text(original_text(item)):
+                    dataset_issue = "missing_actions"
+                    llm_issue = "extra_actions"
+                    reason = "unused prediction verb appears in original text; annotation may have missed this action"
+                else:
+                    dataset_issue = ""
+                    llm_issue = "extra_actions"
+                    reason = "unused prediction did not match any gold action"
+                diagnostics.append(
+                    diagnostic_row(
+                        names,
+                        item,
+                        item_idx,
+                        "unmatched_prediction",
+                        pred=pred_act,
+                        dataset_issue=dataset_issue,
+                        llm_issue=llm_issue,
+                        reason=reason,
+                    )
+                )
 
     precision = total_right / total_tagged if total_tagged > 0 else 0
     recall = total_right / total_truth if total_truth > 0 else 0
@@ -207,15 +494,26 @@ def evaluation(preds):
     if (precision == 0 or recall == 0):
         print("warning: zero precision or recall")
 
-    return precision, recall, f1, obj_precision, obj_recall, obj_f1
+    metrics = (precision, recall, f1, obj_precision, obj_recall, obj_f1)
+    if collect_diagnostics:
+        return metrics, diagnostics
+    return metrics
 
-def run_evaluation(predicates):
+def run_evaluation(predicates, collect_diagnostics=False):
     results = {}
+    all_diagnostics = []
     for names, raw_res in predicates.items():
         ds_name, solver_name, model_name = names
         print(f"Evaluating {ds_name} with solver {solver_name} and model {model_name}")
-        precision, recall, f1, obj_precision, obj_recall, obj_f1 = evaluation(raw_res)
+        if collect_diagnostics:
+            metrics, diagnostics = evaluation(raw_res, names=names, collect_diagnostics=True)
+            all_diagnostics.extend(diagnostics)
+            precision, recall, f1, obj_precision, obj_recall, obj_f1 = metrics
+        else:
+            precision, recall, f1, obj_precision, obj_recall, obj_f1 = evaluation(raw_res)
         results[(ds_name, solver_name, model_name)] = (precision, recall, f1, obj_precision, obj_recall, obj_f1)
+    if collect_diagnostics:
+        return results, all_diagnostics
     return results
 
 
@@ -234,14 +532,21 @@ def main(args):
     
 
     predicates = read_from_predicted_dataset(dir)
-    results = run_evaluation(predicates)
+    if args.diagnostics:
+        results, diagnostics = run_evaluation(predicates, collect_diagnostics=True)
+    else:
+        results = run_evaluation(predicates)
+        diagnostics = []
     print('Evaluation done!')
     write_results(results, dir)
+    if args.diagnostics:
+        write_diagnostics(diagnostics, dir)
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', type=str, default='./results', help='results directory')
+    parser.add_argument('--diagnostics', action='store_true', help='write mismatch diagnostics for annotation/LLM error analysis')
     parser.add_argument('--debug', action='store_true', help='debug mode')
     args = parser.parse_args()
     main(args)

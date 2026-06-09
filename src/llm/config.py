@@ -36,19 +36,22 @@ MODELS = {
         "provider": "openai",
         "model_name": "gpt-5",
         "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL")
+        "base_url": os.getenv("OPENAI_BASE_URL"),
+        "supports_custom_sampling": False,
     },
     "gpt-5-mini": {
         "provider": "openai",
         "model_name": "gpt-5-mini",
         "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL")
+        "base_url": os.getenv("OPENAI_BASE_URL"),
+        "supports_custom_sampling": False,
     },
     "gpt-5-nano": {
         "provider": "openai",
         "model_name": "gpt-5-nano",
         "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL")
+        "base_url": os.getenv("OPENAI_BASE_URL"),
+        "supports_custom_sampling": False,
     },
     "gpt-4o": {
         "provider": "openai",
@@ -172,19 +175,6 @@ PROMPTS = {
         """),
         "parameters": ["nl", "egs"]
     },
-    "nl2p": {
-        "template": """Convert the following natural language description into a plan, 
-            A plan is a sequence of action signatures, each action signature is represented as an action verb (or verb phrase) and its arguments, in the format of (action_name arg1?arg1_type arg2?arg2_type ...)
-            Return only the plan as a single line with actions separated by commas. Do not include explanations, steps, or any other text outside of the required output.
-            NL: {nl}""",
-        "parameters": ["nl"]
-    },
-    "nl2p_refinement": {
-        "template": """Correct the following plan:
-            {plan}
-            Natural Language: {nl}""",
-        "parameters": ["plan", "nl"]
-    },
     "nl2p&s": {
         "template": """Convert the following natural language description into a plan and its associated states.
             A plan is a sequence of action signatures, each action signature is represented as an action verb (or verb phrase) and its arguments, in the format of (action_name arg1?arg1_type arg2?arg2_type ...).
@@ -216,29 +206,34 @@ PROMPTS = {
             Your task is to extract actions from the following natural language plan description.  
             
             Definition:
-            - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
-            - A trigger verb is the verb or verb phrase that directly denotes an executable, state-changing action. 
-            - Arguments are noun phrases denoting entities whose state is directly affectedby executing the action.
+            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
+            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
+            - An argument is a noun phrase denoting an entity directly affected by the action.
                                
             Rules:
-            - Use only verbs explicitly present in the paragraph; do NOT invent verbs.
-            - Exclude non-eventive verbs (e.g. modal, auxiliary, linking, aspectual, light, control, advisory) when they only frame, modify or regulate another action.
-            - For descriptions involving causative, light-verb, or control constructions, extract only the underlying action that directly causes a state change. Do not extract auxiliary, causative, or control verbs (e.g., “allow pan to dry” -> "dry pan", “keep stirring" -> "stir" and “make sure food is cooked” -> "cook food").
-            - Maintain the order of verbs and arguments as they appear in the text.
-            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
-            - If an action has no arguments, return an empty list for "arguments".
-            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
-            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
-            - Do NOT add explanations or extra text.
-            
-            Return the result in STRICTLY a JSON array; each action item: 
-            {
-                "verb": "verb",
-                "arguments": ["arg1", "arg2" ...]
-            }
-            - Output only the JSON array, with no explanations or extra text.
+            - Use only actions explicitly supported by the paragraph.
+            - Preserve action order.
+            - Do not invent actions, arguments, object types, or hidden preconditions.
+            - Exclude modal, auxiliary, linking, reporting, advisory, and purely descriptive verbs when they do not denote an executable step.
+            - For control/light/causative constructions, extract the underlying executable action when clear, e.g. "make sure the door is closed" -> "close" with ["door"]
+            - Do not include agents such as "you" as arguments.
+            - Do not include agents, time, location, manner, or instrument phrases unless the phrase denotes an entity whose state is directly changed.
+            - Resolve pronouns only when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
+            - Keep coordinated entities as separate arguments when they are separate objects, e.g. "mix salt and pepper" -> "mix" with ["salt", "pepper"].
+            - Use concise surface forms from the text for arguments.
+            - If an action has no direct argument, use an empty list.
+            - Output must be valid JSON only.
 
-            Input: $nl
+            Return a JSON array. Each item must have exactly this form:
+            [
+                {
+                    "verb": "trigger verb or verb phrase",
+                    "arguments": ["argument 1", "argument 2" ...]
+                }
+            ]
+
+            Paragraph:
+            $nl
             """),
         "parameters": ["nl"]
     },
@@ -378,9 +373,6 @@ PROMPTS = {
             """),
         "parameters": ["nl", "verbs", "args"]
     },
-
-    
-    
     "remove_non_eventive_verbs": {
         "template": Template("""
             Given a list of verbs or verb phrases extracted from the following natural language plan description, identify and REMOVE non-eventive verbs that do NOT describe concrete, observable actions or events.
@@ -475,6 +467,37 @@ PROMPTS = {
         """,
         "parameters": ["nl"]
     },
+    "llm_coref_resolution": {
+        "template": Template("""
+            You are given an instructional text from a procedural dataset.
+
+            Rewrite the text with entity-only coreference resolution.
+
+            Replace a pronoun or demonstrative ONLY when all of the following are true:
+            - The mention is one of: "it", "its", "itself", "they", "them", "their", "themselves", "this", "that", "these", or "those".
+            - The mention clearly refers to a concrete entity or entities that already appeared in the text.
+            - The antecedent can be written as a noun phrase, such as an object, ingredient, tool, file, window, button, person, place, or other named entity.
+
+            Do NOT replace the mention if it refers to:
+            - A previous action, event, process, step, instruction, state, condition, result, fact, or whole sentence.
+            - A verb phrase, adjective phrase, clause, or abstract idea.
+            - An ambiguous antecedent.
+
+            Editing rules:
+            - Preserve the original step order, actions, entities, and facts.
+            - Do not add new steps, remove steps, or infer hidden objects.
+            - Do not convert events or actions into noun phrases.
+            - Make the minimum changes needed for clear entity coreference.
+            - You may add commas and basic punctuation only when it does not change meaning.
+            - Keep the text as one paragraph.
+
+            Output only the rewritten paragraph. Do not output JSON, bullets, markdown, explanations, or labels.
+
+            TEXT:
+            $nl
+        """),
+        "parameters": ["nl"]
+    },
     "v2a": {
         "description": "Verb to Action Grouping",
         "template": Template("""
@@ -510,6 +533,7 @@ def v2a(task: any, parameters: Dict[str, Any], model: str, is_async: bool = Fals
     res = [[verbs[0]]]
     for verb in verbs[1:]:
         group_idx = task.get_llm_response({"actions": res, "verb": verb}, model, is_async)
+        group_idx = str(group_idx).strip().strip('"').strip("'")
         if group_idx != "-1":
             res[int(group_idx)].append(verb)
         else:

@@ -7,12 +7,12 @@ class SubTask:
         conf = PROMPTS.get(name)
         if not conf:
             raise ValueError(f"SubTask {name} not found in config: {PROMPTS.keys()}")
-        self.description = conf["description"]
-        self.prompt = conf["prompt"]
+        self.description = conf.get("description", "")
+        self.prompt = conf["template"]
         self.parameters = conf["parameters"]
 
     def __repr__(self):
-        return f"SubTask({self.task.name}-{self.name}: {self.parameters})"
+        return f"SubTask({self.name}: {self.parameters})"
     
     def get_prompt(self, parameters):
         # check parameter keys
@@ -22,4 +22,4 @@ class SubTask:
         from ..chat_completion import generate_responses
         prompt = self.get_prompt(parameters)
 
-        return generate_responses(model,prompt,is_async)
+        return generate_responses(model, prompt, is_async=is_async)["content"]

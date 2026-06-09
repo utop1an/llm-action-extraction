@@ -6,10 +6,10 @@ class BaseLLMClient(ABC):
         self.config = config
 
     @abstractmethod
-    async def generate(self, prompt: str) -> Dict[str, Any]:
+    def generate(self, prompt: str, temperature: float = 0) -> Dict[str, Any]:
         pass
 
     @abstractmethod
-    async def generate_async(self, prompt: str) -> Dict[str, Any]:
+    async def generate_async(self, prompt: str, temperature: float = 0) -> Dict[str, Any]:
         pass
 
