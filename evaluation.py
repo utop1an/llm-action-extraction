@@ -24,6 +24,8 @@ PREPOSITIONS = {
     "within", "without",
 }
 
+ARGUMENT_MATCH_THRESHOLD = 0.65
+
 def read_from_refined_dataset(filename, limit=None):
     """
     Read data from a dataset file
@@ -109,14 +111,71 @@ def write_diagnostics(diagnostics: list, dir: str):
             writer.writerow({key: row.get(key, "") for key in fieldnames})
     print("Mismatch diagnostics written to %s" % outpath)
 
+def normalized_argument_text(text):
+    return " ".join(
+        token.lemma_.lower()
+        for token in nlp(str(text))
+        if not token.is_space and not token.is_punct
+    )
+
+def argument_head_lemma(text):
+    doc = nlp(str(text))
+    if not doc:
+        return ""
+    try:
+        chunks = list(doc.noun_chunks)
+    except ValueError:
+        chunks = []
+    if chunks:
+        return chunks[-1].root.lemma_.lower()
+    for token in reversed(doc):
+        if token.pos_ in {"NOUN", "PROPN", "PRON"}:
+            return token.lemma_.lower()
+    for token in reversed(doc):
+        if not token.is_space and not token.is_punct and not token.is_stop:
+            return token.lemma_.lower()
+    return doc[-1].lemma_.lower()
+
+def argument_match_score(left, right):
+    left_norm = normalized_argument_text(left)
+    right_norm = normalized_argument_text(right)
+    if not left_norm or not right_norm:
+        return 0
+    if left_norm == right_norm:
+        return 1
+
+    left_lemmas = content_lemmas(left)
+    right_lemmas = content_lemmas(right)
+    if not left_lemmas or not right_lemmas:
+        return 0
+
+    left_head = argument_head_lemma(left)
+    right_head = argument_head_lemma(right)
+    intersection = left_lemmas & right_lemmas
+    if not intersection:
+        return 0
+
+    smaller = min(len(left_lemmas), len(right_lemmas))
+    larger = max(len(left_lemmas), len(right_lemmas))
+    overlap_small = len(intersection) / smaller
+    overlap_large = len(intersection) / larger
+
+    if left_lemmas == right_lemmas:
+        return 0.95
+    if left_head and left_head == right_head:
+        if left_lemmas.issubset(right_lemmas) or right_lemmas.issubset(left_lemmas):
+            return 0.88
+        if overlap_small == 1 and overlap_large >= 0.75:
+            return 0.78
+        return 0.55
+    if left_lemmas.issubset(right_lemmas) or right_lemmas.issubset(left_lemmas):
+        return 0.72
+    if overlap_large >= 0.8:
+        return 0.7
+    return 0
+
 def match_obj(gt_name, pred_name):
-    doc1 = nlp(str(gt_name))
-    if not doc1:
-        return False
-    gt_lemma = doc1[0].lemma_.lower()
-    doc2 = nlp(str(pred_name))
-    pred_lemma = " ".join([token.lemma_.lower() for token in doc2])
-    return gt_lemma in pred_lemma
+    return argument_match_score(gt_name, pred_name) >= ARGUMENT_MATCH_THRESHOLD
 
 def lemma_text(text):
     return " ".join(token.lemma_.lower() for token in nlp(str(text)) if not token.is_space)
@@ -187,16 +246,22 @@ def is_split_modifier_case(extra_args, other_args):
     return any(lemmas and lemmas.issubset(other_lemmas) for lemmas in extra_lemmas)
 
 def arg_diff(gold_args, pred_args):
-    matched_gold = set()
-    matched_pred = set()
+    scored_pairs = []
     for gi, gold_arg in enumerate(gold_args):
         for pi, pred_arg in enumerate(pred_args):
-            if pi in matched_pred:
-                continue
-            if match_obj(gold_arg, pred_arg) or match_obj(pred_arg, gold_arg):
-                matched_gold.add(gi)
-                matched_pred.add(pi)
-                break
+            score = argument_match_score(gold_arg, pred_arg)
+            if score >= ARGUMENT_MATCH_THRESHOLD:
+                scored_pairs.append((score, gi, pi))
+    scored_pairs.sort(reverse=True)
+
+    matched_gold = set()
+    matched_pred = set()
+    for _, gi, pi in scored_pairs:
+        if gi in matched_gold or pi in matched_pred:
+            continue
+        matched_gold.add(gi)
+        matched_pred.add(pi)
+
     missing_from_pred = [gold_args[i] for i in range(len(gold_args)) if i not in matched_gold]
     extra_in_pred = [pred_args[i] for i in range(len(pred_args)) if i not in matched_pred]
     return missing_from_pred, extra_in_pred
@@ -279,10 +344,6 @@ def diagnostic_row(names, item, item_idx, mismatch_type, gold=None, pred=None, d
     }
 
 def match_objs(act_obj_names, pred_obj_names):
-    obj_right  = 0
-    gt_pointer = 0
-    pred_pointer = 0
-
     es_obj_names = act_obj_names[0]
     ex_obj_names = act_obj_names[1]
 
@@ -291,33 +352,25 @@ def match_objs(act_obj_names, pred_obj_names):
     if obj_tagged == 0:
         return 0, obj_true, obj_tagged, 0
 
-    while gt_pointer < len(es_obj_names):
-        matched = False
-        while pred_pointer < len(pred_obj_names):
-            matched = match_obj(es_obj_names[gt_pointer], pred_obj_names[pred_pointer])
-            if matched:
-                obj_right += 1
-                gt_pointer += 1
-                pred_pointer += 1
-                break
-            else:
-                if (len(ex_obj_names)>0):
-                    ex_matched = False
-                    for ex_obj in ex_obj_names:
-                        ex_matched = match_obj(ex_obj, pred_obj_names[pred_pointer])
-                        if ex_matched:
-                            obj_right += 1
-                            gt_pointer += 1
-                            pred_pointer += 1
-                            break
-                    if ex_matched:
-                        break
-                    else:
-                        pred_pointer += 1
-                else:
-                    pred_pointer += 1
-        if not matched:
-            gt_pointer += 1
+    scored_pairs = []
+    for gold_idx, gold_arg in enumerate(es_obj_names):
+        for pred_idx, pred_arg in enumerate(pred_obj_names):
+            score = argument_match_score(gold_arg, pred_arg)
+            for ex_arg in ex_obj_names:
+                score = max(score, argument_match_score(ex_arg, pred_arg))
+            if score >= ARGUMENT_MATCH_THRESHOLD:
+                scored_pairs.append((score, gold_idx, pred_idx))
+    scored_pairs.sort(reverse=True)
+
+    matched_gold = set()
+    matched_pred = set()
+    for _, gold_idx, pred_idx in scored_pairs:
+        if gold_idx in matched_gold or pred_idx in matched_pred:
+            continue
+        matched_gold.add(gold_idx)
+        matched_pred.add(pred_idx)
+
+    obj_right = len(matched_gold)
 
     obj_precision = obj_right / obj_tagged if obj_tagged > 0 else 0
     obj_recall = obj_right / obj_true if obj_true > 0 else 0

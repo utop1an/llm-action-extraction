@@ -74,6 +74,19 @@ def test_match_obj_handles_lemma_phrase_and_empty_input():
     assert not ev.match_obj("box", "")
 
 
+def test_match_obj_rejects_shared_modifier_or_substring_false_positives():
+    assert not ev.match_obj("red button", "blue button")
+    assert not ev.match_obj("cream cheese", "cream sauce")
+    assert not ev.match_obj("file", "profile")
+
+
+def test_argument_match_score_distinguishes_head_and_modifier_matches():
+    assert ev.argument_match_score("box", "square shadow box") >= ev.ARGUMENT_MATCH_THRESHOLD
+    assert ev.argument_match_score("square shadow box", "box") >= ev.ARGUMENT_MATCH_THRESHOLD
+    assert ev.argument_match_score("red button", "blue button") < ev.ARGUMENT_MATCH_THRESHOLD
+    assert ev.argument_match_score("cream cheese", "cream sauce") < ev.ARGUMENT_MATCH_THRESHOLD
+
+
 def test_match_objs_scores_partial_extra_and_empty_predictions():
     obj_right, obj_true, obj_tagged, obj_f1 = ev.match_objs([["box"], []], ["square shadow box"])
     assert (obj_right, obj_true, obj_tagged) == (1, 1, 1)
@@ -84,6 +97,20 @@ def test_match_objs_scores_partial_extra_and_empty_predictions():
     assert math.isclose(obj_f1, 0.5)
 
     assert ev.match_objs([["box"], []], []) == (0, 1, 0, 0)
+
+
+def test_arg_diff_uses_best_scored_one_to_one_matching():
+    missing, extra = ev.arg_diff(["file", "target folder"], ["folder", "file name"])
+
+    assert missing == []
+    assert extra == []
+
+
+def test_arg_diff_keeps_modifier_conflict_as_missing_and_extra():
+    missing, extra = ev.arg_diff(["red button"], ["blue button"])
+
+    assert missing == ["red button"]
+    assert extra == ["blue button"]
 
 
 def test_match_accepts_verb_phrase_and_rejects_missing_or_wrong_verb():
