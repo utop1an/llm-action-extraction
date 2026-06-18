@@ -155,16 +155,6 @@ def run_evaluation(predicates, gt_df):
 
 
 def main(args):
-    # # Debug mode
-    # if args.debug:
-    #     global DEBUG
-    #     DEBUG = True
-    #     print('Debug mode is on!')
-
-    # dir = args.d
-    # if not os.path.exists(dir):
-    #     print(f"The results dir {dir} does not exist.")
-    #     sys.exit(1)
     dir = './results/naruto'
     output_dir = './results/naruto/output'
     os.makedirs(output_dir, exist_ok=True)

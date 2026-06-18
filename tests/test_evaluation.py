@@ -81,10 +81,19 @@ def test_match_obj_rejects_shared_modifier_or_substring_false_positives():
 
 
 def test_argument_match_score_distinguishes_head_and_modifier_matches():
-    assert ev.argument_match_score("box", "square shadow box") >= ev.ARGUMENT_MATCH_THRESHOLD
-    assert ev.argument_match_score("square shadow box", "box") >= ev.ARGUMENT_MATCH_THRESHOLD
-    assert ev.argument_match_score("red button", "blue button") < ev.ARGUMENT_MATCH_THRESHOLD
-    assert ev.argument_match_score("cream cheese", "cream sauce") < ev.ARGUMENT_MATCH_THRESHOLD
+    assert ev.argument_match_type("box", "square shadow box") == "head_expansion"
+    assert ev.argument_match_type("square shadow box", "box") == "head_expansion"
+    assert ev.argument_match_type("red button", "blue button") == ""
+    assert ev.argument_match_type("cream cheese", "cream sauce") == ""
+
+
+def test_match_obj_strictly_requires_same_head_or_exact_lemmas():
+    assert ev.match_obj("box", "square shadow box")
+    assert ev.match_obj("square shadow box", "box")
+    assert ev.match_obj("square shadow box", "shadow square box")
+    assert not ev.match_obj("file", "file name")
+    assert not ev.match_obj("source file", "target file")
+    assert not ev.match_obj("mushroom soup", "cream mushroom soup")
 
 
 def test_match_objs_scores_partial_extra_and_empty_predictions():
@@ -99,11 +108,22 @@ def test_match_objs_scores_partial_extra_and_empty_predictions():
     assert ev.match_objs([["box"], []], []) == (0, 1, 0, 0)
 
 
-def test_arg_diff_uses_best_scored_one_to_one_matching():
-    missing, extra = ev.arg_diff(["file", "target folder"], ["folder", "file name"])
+def test_match_objs_treats_string_arguments_as_single_argument():
+    assert ev.match_objs([["file"], []], "file") == (1, 1, 1, 1.0)
+
+
+def test_arg_diff_uses_strict_one_to_one_matching():
+    missing, extra = ev.arg_diff(["file", "target folder"], ["folder", "file"])
 
     assert missing == []
     assert extra == []
+
+
+def test_arg_diff_does_not_match_head_mismatch_or_modifier_conflict():
+    missing, extra = ev.arg_diff(["file", "source file"], ["file name", "target file"])
+
+    assert missing == ["source file"]
+    assert extra == ["file name"]
 
 
 def test_arg_diff_keeps_modifier_conflict_as_missing_and_extra():
@@ -127,6 +147,24 @@ def test_match_accepts_verb_phrase_and_rejects_missing_or_wrong_verb():
     assert ev.match(act(0, [4]), {"verb": "open", "arguments": ["box"]}, WORDS) == (False, 0, 0, 0, 0)
 
 
+def test_match_handles_bad_indices_missing_obj_idxs_and_string_arguments():
+    assert ev.match({"act_idx": 999, "obj_idxs": [[4], []]}, {"verb": "choose", "arguments": ["box"]}, WORDS) == (
+        False,
+        0,
+        0,
+        0,
+        0,
+    )
+    assert ev.match({"act_idx": 0}, {"verb": "choose", "arguments": []}, WORDS) == (True, 0, 0, 0, 0)
+    assert ev.match({"act_idx": 0, "obj_idxs": [[4, 999], []]}, {"verb": "choose", "arguments": "box"}, WORDS) == (
+        True,
+        1,
+        1,
+        1,
+        1.0,
+    )
+
+
 def test_action_record_ignores_empty_marker_and_bad_indices():
     assert ev.action_record(act(0, [-1]), WORDS)["arguments"] == []
     assert ev.action_record(act(99, [4, 99]), WORDS) == {
@@ -141,16 +179,20 @@ def test_action_record_ignores_empty_marker_and_bad_indices():
 
 def test_classify_argument_mismatch_missing_extra_wrong_and_subtypes():
     missing = ev.classify_argument_mismatch(["box"], [])
-    assert missing["candidate_dataset_issue"] == "extra_arguments"
+    assert missing["candidate_dataset_issue"] == ""
     assert missing["candidate_llm_issue"] == "missing_arguments"
 
     extra = ev.classify_argument_mismatch([], ["box"])
-    assert extra["candidate_dataset_issue"] == "missing_arguments"
+    assert extra["candidate_dataset_issue"] == ""
     assert extra["candidate_llm_issue"] == "extra_arguments"
 
     wrong = ev.classify_argument_mismatch(["file"], ["folder"])
-    assert "wrong_arguments" in wrong["candidate_dataset_issue"]
+    assert wrong["candidate_dataset_issue"] == ""
     assert "wrong_arguments" in wrong["candidate_llm_issue"]
+
+    dataset_missing = ev.classify_argument_mismatch([], ["box"], source_text="choose the box")
+    assert dataset_missing["candidate_dataset_issue"] == "missing_arguments"
+    assert dataset_missing["candidate_llm_issue"] == ""
 
     preposition = ev.classify_argument_mismatch([], ["to folder"])
     assert "extra_arguments:preposition_argument" in preposition["candidate_llm_issue"]
@@ -209,7 +251,7 @@ def test_evaluation_argument_mismatch_diagnoses_extra_llm_arguments():
     assert row["docId"] == "cooking:118"
     assert row["mismatch_type"] == "argument_mismatch"
     assert row["candidate_llm_issue"] == "extra_arguments"
-    assert row["candidate_dataset_issue"] == "missing_arguments"
+    assert row["candidate_dataset_issue"] == ""
     assert row["gold_verb"] == "choose"
     assert row["pred_verb"] == "choose"
 
@@ -230,9 +272,89 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_split_head_words():
     row = diagnostics[0]
     assert row["mismatch_type"] == "argument_mismatch"
     assert row["candidate_dataset_issue"] == "extra_arguments|extra_arguments:unnecessary_head_or_modifier_split"
-    assert row["candidate_llm_issue"] == "missing_arguments"
+    assert row["candidate_llm_issue"] == ""
     assert row["gold_arguments"] == '["square", "shadow", "box"]'
     assert row["pred_arguments"] == '["square shadow box"]'
+
+
+def test_evaluation_argument_mismatch_diagnoses_dataset_split_when_llm_outputs_head_only():
+    data = [
+        sample(
+            [act(0, [2, 3, 4])],
+            [{"verb": "choose", "arguments": ["box"]}],
+            doc_id=120,
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 1, 1 / 3, 0.5))
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["mismatch_type"] == "argument_mismatch"
+    assert row["candidate_dataset_issue"] == "extra_arguments|extra_arguments:unnecessary_head_or_modifier_split"
+    assert row["candidate_llm_issue"] == ""
+    assert row["gold_arguments"] == '["square", "shadow", "box"]'
+    assert row["pred_arguments"] == '["box"]'
+
+
+def test_classify_argument_mismatch_flags_gt_split_with_pred_head_only():
+    info = ev.classify_argument_mismatch(["square", "shadow", "box"], ["box"])
+
+    assert info["missing_from_pred"] == ["square", "shadow"]
+    assert info["extra_in_pred"] == []
+    assert "extra_arguments:unnecessary_head_or_modifier_split" in info["candidate_dataset_issue"]
+    assert info["candidate_llm_issue"] == ""
+
+
+def test_evaluation_argument_mismatch_diagnoses_llm_missing_argument():
+    data = [sample([act(5, [7])], [{"verb": "open", "arguments": []}], sents=[["open", "the", "file"]])]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 0, 0, 0))
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["mismatch_type"] == "argument_mismatch"
+    assert row["candidate_dataset_issue"] == ""
+    assert row["candidate_llm_issue"] == "missing_arguments"
+    assert row["reason"] == "gold has arguments not matched by prediction"
+
+
+def test_evaluation_argument_mismatch_diagnoses_dataset_missing_argument():
+    data = [sample([act(5, [])], [{"verb": "open", "arguments": ["file"]}], sents=[["open", "the", "file"]])]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 0, 0, 0))
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["mismatch_type"] == "argument_mismatch"
+    assert row["candidate_dataset_issue"] == "missing_arguments"
+    assert row["candidate_llm_issue"] == ""
+    assert row["reason"] == "prediction has arguments not matched by gold; pred unmatched argument appears in original text; annotation may have missed it"
+
+
+def test_evaluation_argument_mismatch_diagnoses_wrong_arguments():
+    data = [sample([act(5, [7])], [{"verb": "open", "arguments": ["folder"]}], sents=[["open", "the", "file"]])]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 0, 0, 0))
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["mismatch_type"] == "argument_mismatch"
+    assert row["candidate_dataset_issue"] == ""
+    assert "wrong_arguments" in row["candidate_llm_issue"]
+    assert "gold has arguments not matched by prediction" in row["reason"]
+    assert "prediction has arguments not matched by gold" in row["reason"]
+
+
+def test_classify_argument_mismatch_flags_dataset_preposition_argument():
+    info = ev.classify_argument_mismatch(["to folder"], [])
+
+    assert "extra_arguments:preposition_argument" in info["candidate_dataset_issue"]
+    assert info["candidate_llm_issue"] == ""
 
 
 def test_evaluation_empty_predictions_count_against_recall_and_diagnose_missing_action():
@@ -243,7 +365,7 @@ def test_evaluation_empty_predictions_count_against_recall_and_diagnose_missing_
     assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
     assert len(diagnostics) == 1
     assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
-    assert diagnostics[0]["candidate_dataset_issue"] == "extra_actions"
+    assert diagnostics[0]["candidate_dataset_issue"] == ""
     assert diagnostics[0]["candidate_llm_issue"] == "missing_actions"
 
 
@@ -266,7 +388,42 @@ def test_evaluation_unused_prediction_diagnoses_possible_missing_dataset_action(
     assert len(diagnostics) == 1
     assert diagnostics[0]["mismatch_type"] == "unmatched_prediction"
     assert diagnostics[0]["candidate_dataset_issue"] == "missing_actions"
+    assert diagnostics[0]["candidate_llm_issue"] == ""
+
+
+def test_evaluation_unused_prediction_not_in_original_is_llm_extra_only():
+    data = [
+        sample(
+            [act(5, [7])],
+            [
+                {"verb": "open", "arguments": ["file"]},
+                {"verb": "delete", "arguments": ["file"]},
+            ],
+            sents=[["open", "the", "file"]],
+            original_text="open the file.",
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (0.5, 1, 2 / 3, 1, 1, 1))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_prediction"
+    assert diagnostics[0]["candidate_dataset_issue"] == ""
     assert diagnostics[0]["candidate_llm_issue"] == "extra_actions"
+    assert diagnostics[0]["reason"] == "unused prediction did not match any gold action"
+
+
+def test_evaluation_prediction_with_no_gold_actions_is_diagnosed_as_unused_prediction():
+    data = [sample([], [{"verb": "save", "arguments": ["file"]}], sents=[["save", "the", "file"]])]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_prediction"
+    assert diagnostics[0]["candidate_dataset_issue"] == "missing_actions"
+    assert diagnostics[0]["candidate_llm_issue"] == ""
 
 
 def test_evaluation_unmatched_gold_with_similar_unused_prediction_diagnoses_wrong_action():
@@ -284,7 +441,7 @@ def test_evaluation_unmatched_gold_with_similar_unused_prediction_diagnoses_wron
     assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
     assert len(diagnostics) == 2
     assert diagnostics[0]["mismatch_type"] == "wrong_action"
-    assert diagnostics[0]["candidate_dataset_issue"] == "wrong_actions"
+    assert diagnostics[0]["candidate_dataset_issue"] == ""
     assert diagnostics[0]["candidate_llm_issue"] == "wrong_actions"
     assert diagnostics[1]["mismatch_type"] == "unmatched_prediction"
     assert diagnostics[1]["candidate_llm_issue"] == "extra_actions"
@@ -331,6 +488,67 @@ def test_evaluation_optional_action_matched_adds_truth_denominator():
     metrics = ev.evaluation(data)
 
     assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
+
+
+def test_evaluation_handles_none_predictions_like_empty_predictions():
+    data = [sample([act(5, [7])], None, doc_id=4, sents=[["open", "the", "file"]])]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["candidate_llm_issue"] == "missing_actions"
+
+
+def test_run_evaluation_collects_metrics_and_diagnostics():
+    data = [sample([act(5, [7])], [], doc_id=5, sents=[["open", "the", "file"]])]
+
+    results, diagnostics = ev.run_evaluation({("win2k", "nl2p_1", "gpt-5-mini"): data}, collect_diagnostics=True)
+
+    assert results[("win2k", "nl2p_1", "gpt-5-mini")] == (0, 0, 0, 0, 0, 0)
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["docId"] == "win2k:5"
+
+
+def test_diagnostic_row_falls_back_to_words_when_text_metadata_missing():
+    row = ev.diagnostic_row(
+        ("win2k", "nl2p_1", "gpt-5-mini"),
+        {"words": ["open", "file"], "doc_id": 9},
+        9,
+        "unmatched_gold_action",
+        gold={"verb": "open", "arguments": ["file"]},
+    )
+
+    assert row["docId"] == "win2k:9"
+    assert row["original_text"] == "open file"
+    assert row["gold_arguments"] == '["file"]'
+
+
+def test_diagnostic_row_preserves_existing_docid_original_text_and_source_file():
+    row = ev.diagnostic_row(
+        ("cooking", "nl2p_1", "gpt-5-mini"),
+        {
+            "words": ["choose", "box"],
+            "doc_id": 10,
+            "docId": "custom-doc",
+            "original_text": "choose the box.",
+            "source_file": "data/easdrl/cooking_labeled_text_data.pkl",
+        },
+        10,
+        "argument_mismatch",
+        pred={"verb": "choose", "arguments": ["box"]},
+    )
+
+    assert row["docId"] == "custom-doc"
+    assert row["original_text"] == "choose the box."
+    assert row["source_file"] == "data/easdrl/cooking_labeled_text_data.pkl"
+    assert row["pred_arguments"] == '["box"]'
+
+
+def test_write_diagnostics_empty_input_does_not_create_csv(tmp_path):
+    ev.write_diagnostics([], str(tmp_path))
+
+    assert not (tmp_path / "evaluation_mismatch_diagnostics.csv").exists()
 
 
 def test_write_diagnostics_outputs_expected_csv_columns(tmp_path):

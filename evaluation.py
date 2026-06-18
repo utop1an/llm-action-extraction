@@ -7,13 +7,27 @@ from tqdm import tqdm
 
 from src.utils import load_pkl
 from src.evaluation_helpers import (
+    DATASETS,
+    SOLVERS,
     action_record,
+    arg_diff,
+    argument_head_lemma,
+    argument_match_type,
+    argument_match_score,
     best_verb_candidate,
     classify_argument_mismatch,
+    content_lemmas,
     diagnostic_row,
+    doc_id,
+    doc_key,
+    is_preposition_argument,
+    is_split_modifier_case,
     lemma_text,
     match,
+    match_obj,
+    match_objs,
     normalize_args,
+    normalized_argument_text,
     original_text,
     parse_result_filename,
     write_diagnostics,
@@ -98,13 +112,17 @@ def _best_prediction_for_act(act, pred, used, words):
         if used[pred_idx]:
             continue
         matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
-        if matched and best[4] < obj_f1:
+        if matched and (best[0] is None or best[4] < obj_f1):
             best = (pred_idx, obj_right, obj_true, obj_tagged, obj_f1)
     return best
 
 
 def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
-    arg_info = classify_argument_mismatch(gold["arguments"], normalize_args(pred_act.get("arguments", [])))
+    arg_info = classify_argument_mismatch(
+        gold["arguments"],
+        normalize_args(pred_act.get("arguments", [])),
+        source_text=original_text(item),
+    )
     return diagnostic_row(
         names,
         item,
@@ -130,7 +148,6 @@ def _diagnose_unmatched_gold(names, item, item_idx, gold, pred, used):
             "wrong_action",
             gold=gold,
             pred=pred_act,
-            dataset_issue="wrong_actions",
             llm_issue="wrong_actions",
             reason="unmatched gold action has lexical/argument overlap with an unused prediction",
         )
@@ -140,7 +157,6 @@ def _diagnose_unmatched_gold(names, item, item_idx, gold, pred, used):
         item_idx,
         "unmatched_gold_action",
         gold=gold,
-        dataset_issue="extra_actions",
         llm_issue="missing_actions",
         reason="gold action was not matched by any prediction",
     )
@@ -154,9 +170,11 @@ def _diagnose_unused_predictions(names, item, item_idx, pred, used):
         pred_verb = pred_act.get("verb", "")
         if pred_verb and lemma_text(pred_verb) in lemma_text(original_text(item)):
             dataset_issue = "missing_actions"
+            llm_issue = ""
             reason = "unused prediction verb appears in original text; annotation may have missed this action"
         else:
             dataset_issue = ""
+            llm_issue = "extra_actions"
             reason = "unused prediction did not match any gold action"
         rows.append(
             diagnostic_row(
@@ -166,7 +184,7 @@ def _diagnose_unused_predictions(names, item, item_idx, pred, used):
                 "unmatched_prediction",
                 pred=pred_act,
                 dataset_issue=dataset_issue,
-                llm_issue="extra_actions",
+                llm_issue=llm_issue,
                 reason=reason,
             )
         )

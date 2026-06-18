@@ -18,7 +18,12 @@ PREPOSITIONS = {
     "within", "without",
 }
 
-ARGUMENT_MATCH_THRESHOLD = 0.65
+ARGUMENT_MATCH_RANK = {
+    "exact": 4,
+    "lemma_exact": 3,
+    "modifier_exact": 2,
+    "head_expansion": 1,
+}
 
 
 def parse_result_filename(file):
@@ -89,47 +94,50 @@ def argument_head_lemma(text):
     return doc[-1].lemma_.lower()
 
 
-def argument_match_score(left, right):
+def argument_match_type(left, right):
     left_norm = normalized_argument_text(left)
     right_norm = normalized_argument_text(right)
     if not left_norm or not right_norm:
-        return 0
+        return ""
     if left_norm == right_norm:
-        return 1
+        return "exact"
 
     left_lemmas = content_lemmas(left)
     right_lemmas = content_lemmas(right)
     if not left_lemmas or not right_lemmas:
-        return 0
+        return ""
+    if left_lemmas == right_lemmas:
+        return "lemma_exact"
 
     left_head = argument_head_lemma(left)
     right_head = argument_head_lemma(right)
-    intersection = left_lemmas & right_lemmas
-    if not intersection:
-        return 0
+    if not left_head or left_head != right_head:
+        return ""
 
-    smaller = min(len(left_lemmas), len(right_lemmas))
-    larger = max(len(left_lemmas), len(right_lemmas))
-    overlap_small = len(intersection) / smaller
-    overlap_large = len(intersection) / larger
+    left_mods = left_lemmas - {left_head}
+    right_mods = right_lemmas - {right_head}
+    if not left_mods or not right_mods:
+        return "head_expansion"
+    if left_mods == right_mods:
+        return "modifier_exact"
+    return ""
 
-    if left_lemmas == right_lemmas:
+
+def argument_match_score(left, right):
+    match_type = argument_match_type(left, right)
+    if match_type == "exact":
+        return 1
+    if match_type == "lemma_exact":
         return 0.95
-    if left_head and left_head == right_head:
-        if left_lemmas.issubset(right_lemmas) or right_lemmas.issubset(left_lemmas):
-            return 0.88
-        if overlap_small == 1 and overlap_large >= 0.75:
-            return 0.78
-        return 0.55
-    if left_lemmas.issubset(right_lemmas) or right_lemmas.issubset(left_lemmas):
-        return 0.72
-    if overlap_large >= 0.8:
-        return 0.7
+    if match_type == "modifier_exact":
+        return 0.9
+    if match_type == "head_expansion":
+        return 0.8
     return 0
 
 
 def match_obj(gt_name, pred_name):
-    return argument_match_score(gt_name, pred_name) >= ARGUMENT_MATCH_THRESHOLD
+    return bool(argument_match_type(gt_name, pred_name))
 
 
 def lemma_text(text):
@@ -140,7 +148,7 @@ def content_lemmas(text):
     return {
         token.lemma_.lower()
         for token in nlp(str(text))
-        if not token.is_space and not token.is_punct and not token.is_stop
+        if not token.is_space and not token.is_punct
     }
 
 
@@ -202,27 +210,40 @@ def is_preposition_argument(arg):
     return bool(doc) and doc[0].lemma_.lower() in PREPOSITIONS
 
 
-def is_split_modifier_case(extra_args, other_args):
+def is_split_modifier_case(extra_args, other_args, *, allow_head_only=False):
     """Detect cases like choose(square, shadow, box) for one noun phrase."""
     other_lemmas = content_lemmas(" ".join(other_args))
     if not other_lemmas:
         return False
     extra_lemmas = [content_lemmas(arg) for arg in extra_args]
-    return any(lemmas and lemmas.issubset(other_lemmas) for lemmas in extra_lemmas)
+    if any(lemmas and lemmas.issubset(other_lemmas) for lemmas in extra_lemmas):
+        return True
+    if not allow_head_only:
+        return False
+    if len(extra_args) < 2:
+        return False
+
+    combined_head = argument_head_lemma(" ".join([*extra_args, *other_args]))
+    if not combined_head:
+        return False
+    for other_arg in other_args:
+        if argument_head_lemma(other_arg) == combined_head:
+            return True
+    return False
 
 
 def arg_diff(gold_args, pred_args):
-    scored_pairs = []
+    ranked_pairs = []
     for gi, gold_arg in enumerate(gold_args):
         for pi, pred_arg in enumerate(pred_args):
-            score = argument_match_score(gold_arg, pred_arg)
-            if score >= ARGUMENT_MATCH_THRESHOLD:
-                scored_pairs.append((score, gi, pi))
-    scored_pairs.sort(reverse=True)
+            match_type = argument_match_type(gold_arg, pred_arg)
+            if match_type:
+                ranked_pairs.append((ARGUMENT_MATCH_RANK[match_type], gi, pi))
+    ranked_pairs.sort(reverse=True)
 
     matched_gold = set()
     matched_pred = set()
-    for _, gi, pi in scored_pairs:
+    for _, gi, pi in ranked_pairs:
         if gi in matched_gold or pi in matched_pred:
             continue
         matched_gold.add(gi)
@@ -233,37 +254,65 @@ def arg_diff(gold_args, pred_args):
     return missing_from_pred, extra_in_pred
 
 
-def classify_argument_mismatch(gold_args, pred_args):
+def _append_unique(items, values):
+    for value in values:
+        if value and value not in items:
+            items.append(value)
+
+
+def _args_appear_in_text(args, text):
+    if not text:
+        return False
+    normalized_text = normalized_argument_text(text)
+    for arg in args:
+        normalized_arg = normalized_argument_text(arg)
+        if normalized_arg and normalized_arg in normalized_text:
+            return True
+    return False
+
+
+def classify_argument_mismatch(gold_args, pred_args, source_text=""):
     missing_from_pred, extra_in_pred = arg_diff(gold_args, pred_args)
     notes = []
     dataset_issues = []
     llm_issues = []
 
     if missing_from_pred:
-        dataset_issues.append("extra_arguments")
-        llm_issues.append("missing_arguments")
         notes.append("gold has arguments not matched by prediction")
+        gold_specific_issues = []
         if any(is_preposition_argument(arg) for arg in missing_from_pred):
-            dataset_issues.append("extra_arguments:preposition_argument")
+            gold_specific_issues.extend(["extra_arguments", "extra_arguments:preposition_argument"])
             notes.append("gold unmatched argument starts with a preposition")
-        if is_split_modifier_case(missing_from_pred, pred_args):
-            dataset_issues.append("extra_arguments:unnecessary_head_or_modifier_split")
+        if is_split_modifier_case(missing_from_pred, pred_args, allow_head_only=True):
+            gold_specific_issues.extend(["extra_arguments", "extra_arguments:unnecessary_head_or_modifier_split"])
             notes.append("gold unmatched argument looks like a split modifier/head word")
+        if gold_specific_issues:
+            _append_unique(dataset_issues, gold_specific_issues)
+        else:
+            _append_unique(llm_issues, ["missing_arguments"])
 
     if extra_in_pred:
-        dataset_issues.append("missing_arguments")
-        llm_issues.append("extra_arguments")
         notes.append("prediction has arguments not matched by gold")
-        if any(is_preposition_argument(arg) for arg in extra_in_pred):
-            llm_issues.append("extra_arguments:preposition_argument")
-            notes.append("pred unmatched argument starts with a preposition")
-        if is_split_modifier_case(extra_in_pred, gold_args):
-            llm_issues.append("extra_arguments:unnecessary_head_or_modifier_split")
-            notes.append("pred unmatched argument looks like a split modifier/head word")
+        has_full_phrase_extra = any(len(content_lemmas(arg)) > 1 for arg in extra_in_pred)
+        if (not gold_args or has_full_phrase_extra) and _args_appear_in_text(extra_in_pred, source_text):
+            _append_unique(dataset_issues, ["missing_arguments"])
+            notes.append("pred unmatched argument appears in original text; annotation may have missed it")
+        elif not dataset_issues:
+            pred_specific_issues = ["extra_arguments"]
+            if any(is_preposition_argument(arg) for arg in extra_in_pred):
+                pred_specific_issues.append("extra_arguments:preposition_argument")
+                notes.append("pred unmatched argument starts with a preposition")
+            if is_split_modifier_case(extra_in_pred, gold_args):
+                pred_specific_issues.append("extra_arguments:unnecessary_head_or_modifier_split")
+                notes.append("pred unmatched argument looks like a split modifier/head word")
+            _append_unique(llm_issues, pred_specific_issues)
 
     if missing_from_pred and extra_in_pred:
-        dataset_issues.append("wrong_arguments")
-        llm_issues.append("wrong_arguments")
+        if dataset_issues:
+            _append_unique(dataset_issues, ["wrong_arguments"])
+            llm_issues = []
+        else:
+            _append_unique(llm_issues, ["wrong_arguments"])
 
     return {
         "missing_from_pred": missing_from_pred,
@@ -317,27 +366,30 @@ def diagnostic_row(names, item, item_idx, mismatch_type, gold=None, pred=None, d
 
 
 def match_objs(act_obj_names, pred_obj_names):
-    es_obj_names = act_obj_names[0]
-    ex_obj_names = act_obj_names[1]
+    pred_obj_names = normalize_args(pred_obj_names)
+    es_obj_names = act_obj_names[0] if len(act_obj_names) > 0 else []
+    ex_obj_names = act_obj_names[1] if len(act_obj_names) > 1 else []
 
     obj_true = len(es_obj_names)
     obj_tagged = len(pred_obj_names)
     if obj_tagged == 0:
         return 0, obj_true, obj_tagged, 0
 
-    scored_pairs = []
+    ranked_pairs = []
     for gold_idx, gold_arg in enumerate(es_obj_names):
         for pred_idx, pred_arg in enumerate(pred_obj_names):
-            score = argument_match_score(gold_arg, pred_arg)
+            match_type = argument_match_type(gold_arg, pred_arg)
+            rank = ARGUMENT_MATCH_RANK.get(match_type, 0)
             for ex_arg in ex_obj_names:
-                score = max(score, argument_match_score(ex_arg, pred_arg))
-            if score >= ARGUMENT_MATCH_THRESHOLD:
-                scored_pairs.append((score, gold_idx, pred_idx))
-    scored_pairs.sort(reverse=True)
+                ex_match_type = argument_match_type(ex_arg, pred_arg)
+                rank = max(rank, ARGUMENT_MATCH_RANK.get(ex_match_type, 0))
+            if rank:
+                ranked_pairs.append((rank, gold_idx, pred_idx))
+    ranked_pairs.sort(reverse=True)
 
     matched_gold = set()
     matched_pred = set()
-    for _, gold_idx, pred_idx in scored_pairs:
+    for _, gold_idx, pred_idx in ranked_pairs:
         if gold_idx in matched_gold or pred_idx in matched_pred:
             continue
         matched_gold.add(gold_idx)
@@ -353,7 +405,9 @@ def match_objs(act_obj_names, pred_obj_names):
 
 
 def match(act, pred, words):
-    act_idx = act["act_idx"]
+    act_idx = act.get("act_idx")
+    if not isinstance(act_idx, int) or not 0 <= act_idx < len(words):
+        return False, 0, 0, 0, 0
     act_name = words[act_idx]
 
     pred_act_name = pred.get("verb", None)
@@ -366,8 +420,14 @@ def match(act, pred, words):
     if not act_lemma in pred_act_lemma:
         return False, 0, 0, 0, 0
 
-    act_obj_names = [[words[ind] for ind in act["obj_idxs"][0]], [words[ind] for ind in act["obj_idxs"][1]]]
-    pred_obj_names = pred.get("arguments", [])
+    obj_idxs = act.get("obj_idxs", [[], []])
+    es_obj_idxs = obj_idxs[0] if len(obj_idxs) > 0 else []
+    ex_obj_idxs = obj_idxs[1] if len(obj_idxs) > 1 else []
+    act_obj_names = [
+        [words[ind] for ind in es_obj_idxs if isinstance(ind, int) and 0 <= ind < len(words)],
+        [words[ind] for ind in ex_obj_idxs if isinstance(ind, int) and 0 <= ind < len(words)],
+    ]
+    pred_obj_names = normalize_args(pred.get("arguments", []))
 
     obj_right, obj_true, obj_tagged, obj_f1 = match_objs(act_obj_names, pred_obj_names)
     return True, obj_right, obj_true, obj_tagged, obj_f1
