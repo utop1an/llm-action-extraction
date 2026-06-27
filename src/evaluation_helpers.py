@@ -670,31 +670,37 @@ def match_objs(act_obj_names, pred_obj_names):
     ex_obj_names = act_obj_names[1] if len(act_obj_names) > 1 else []
 
     obj_true = len(es_obj_names)
-    obj_tagged = len(pred_obj_names)
-    if obj_tagged == 0:
-        return 0, obj_true, obj_tagged, 0
+    if not pred_obj_names:
+        return 0, obj_true, 0, 0
 
     ranked_pairs = []
     for gold_idx, gold_arg in enumerate(es_obj_names):
         for pred_idx, pred_arg in enumerate(pred_obj_names):
             match_type = argument_match_type(gold_arg, pred_arg)
             rank = ARGUMENT_MATCH_RANK.get(match_type, 0)
+            direct_match = bool(rank)
             for ex_arg in ex_obj_names:
                 ex_match_type = argument_match_type(ex_arg, pred_arg)
                 rank = max(rank, ARGUMENT_MATCH_RANK.get(ex_match_type, 0))
             if rank:
-                ranked_pairs.append((rank, gold_idx, pred_idx))
+                ranked_pairs.append((rank, direct_match, gold_idx, pred_idx))
     ranked_pairs.sort(reverse=True)
 
     matched_gold = set()
     matched_pred = set()
-    for _, gold_idx, pred_idx in ranked_pairs:
+    for _, _, gold_idx, pred_idx in ranked_pairs:
         if gold_idx in matched_gold or pred_idx in matched_pred:
             continue
         matched_gold.add(gold_idx)
         matched_pred.add(pred_idx)
 
     obj_right = len(matched_gold)
+    neutral_pred = {
+        pred_idx
+        for pred_idx, pred_arg in enumerate(pred_obj_names)
+        if pred_idx not in matched_pred and any(match_obj(ex_arg, pred_arg) for ex_arg in ex_obj_names)
+    }
+    obj_tagged = len(pred_obj_names) - len(neutral_pred)
 
     obj_precision = obj_right / obj_tagged if obj_tagged > 0 else 0
     obj_recall = obj_right / obj_true if obj_true > 0 else 0

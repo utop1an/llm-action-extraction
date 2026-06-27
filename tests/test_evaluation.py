@@ -23,10 +23,10 @@ WORDS = [
 ]
 
 
-def act(verb_idx, obj_idxs=None, act_type=1, related_acts=None):
+def act(verb_idx, obj_idxs=None, act_type=1, related_acts=None, exclusive_obj_idxs=None):
     return {
         "act_idx": verb_idx,
-        "obj_idxs": [obj_idxs or [], []],
+        "obj_idxs": [obj_idxs or [], exclusive_obj_idxs or []],
         "act_type": act_type,
         "related_acts": related_acts or [],
     }
@@ -115,6 +115,19 @@ def test_match_objs_scores_partial_extra_and_empty_predictions():
 
 def test_match_objs_treats_string_arguments_as_single_argument():
     assert ev.match_objs([["file"], []], "file") == (1, 1, 1, 1.0)
+
+
+def test_match_objs_treats_exclusive_arguments_as_alternatives_not_extras():
+    assert ev.match_objs([["switch"], ["button"]], ["button"]) == (1, 1, 1, 1.0)
+    assert ev.match_objs([["switch"], ["button"]], ["switch", "button"]) == (1, 1, 1, 1.0)
+
+    obj_right, obj_true, obj_tagged, obj_f1 = ev.match_objs(
+        [["switch"], ["button"]],
+        ["switch", "button", "panel"],
+    )
+
+    assert (obj_right, obj_true, obj_tagged) == (1, 1, 2)
+    assert math.isclose(obj_f1, 2 / 3)
 
 
 def test_arg_diff_uses_strict_one_to_one_matching():
@@ -686,8 +699,50 @@ def test_evaluation_exclusive_actions_count_truth_once():
     metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
 
     assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
-    assert len(diagnostics) == 1
-    assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
+    assert diagnostics == []
+
+
+def test_evaluation_exclusive_actions_allow_multiple_group_predictions_without_fp():
+    words = ["turn", "switch", "press", "button"]
+    data = [
+        sample(
+            [
+                act(0, [1], act_type=3, related_acts=[2]),
+                act(2, [3], act_type=3, related_acts=[0]),
+            ],
+            [
+                {"verb": "turn", "arguments": ["switch"]},
+                {"verb": "press", "arguments": ["button"]},
+            ],
+            words=words,
+            sents=[["turn", "switch"], ["or", "press", "button"]],
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
+    assert diagnostics == []
+
+
+def test_evaluation_optional_action_can_be_omitted_without_diagnostic_or_fn():
+    words = ["open", "file", "preview", "document"]
+    data = [
+        sample(
+            [
+                act(0, [1], act_type=1),
+                act(2, [3], act_type=2),
+            ],
+            [{"verb": "open", "arguments": ["file"]}],
+            words=words,
+            sents=[["open", "file"], ["preview", "document"]],
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
+    assert diagnostics == []
 
 
 def test_evaluation_optional_action_matched_adds_truth_denominator():

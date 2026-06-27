@@ -18,6 +18,8 @@ DATASETS = {
 
 MODELS = [
     "gpt-5",
+    "gpt-5.4",
+    "gpt-5.4-mini",
     "gpt-5-mini",
     "gpt-5-nano",
     "gpt-4o",
@@ -77,11 +79,7 @@ def sample_gold_actions(sample):
 def build_result_record(ds_name, doc_id, source_file, sample, prediction):
     return {
         "dataset": ds_name,
-        "domain": ds_name,
         "doc_id": doc_id,
-        "docId": f"{ds_name}:{doc_id}",
-        "source_file": source_file,
-        "original_text": sample_to_paragraph(sample),
         "sentences": sample_to_sentences(sample),
         "prediction": prediction,
         "gold_actions": sample_gold_actions(sample),
@@ -158,7 +156,7 @@ def write_summary(ds_name, solver_name, results, model_name=""):
         "model": model_name,
         "num_docs": len(results),
         "doc_ids": [item["doc_id"] for item in results],
-        "source_file": results[0]["source_file"] if results else None,
+        "source_file": results[0].get("source_file") if results else None,
     }
     with open(outpath, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=4, ensure_ascii=False)

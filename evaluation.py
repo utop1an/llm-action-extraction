@@ -93,18 +93,8 @@ def write_results(results: dict, dir: str):
     print("Results written to %s" % outpath)
 
 
-def _count_truth(act, counted_exclusive_acts):
-    act_type = act["act_type"]
-    if act_type == 1:
-        return 1
-    if act_type == 3:
-        act_idx = act["act_idx"]
-        related_act_indices = act["related_acts"]
-        all_indices = set(related_act_indices + [act_idx])
-        if all_indices.isdisjoint(counted_exclusive_acts):
-            counted_exclusive_acts.update(all_indices)
-            return 1
-    return 0
+def _exclusive_action_key(act):
+    return frozenset([act.get("act_idx"), *act.get("related_acts", [])])
 
 
 def _best_prediction_for_act(act, pred, used, words):
@@ -116,6 +106,26 @@ def _best_prediction_for_act(act, pred, used, words):
         if matched and (best[0] is None or best[4] < obj_f1):
             best = (pred_idx, obj_right, obj_true, obj_tagged, obj_f1)
     return best
+
+
+def _best_prediction_for_acts(acts, pred, used, words):
+    best = (None, None, 0, 0, 0, 0)
+    for act in acts:
+        candidate = _best_prediction_for_act(act, pred, used, words)
+        if candidate[0] is not None and (best[0] is None or best[5] < candidate[4]):
+            best = (candidate[0], act, candidate[1], candidate[2], candidate[3], candidate[4])
+    return best
+
+
+def _consume_neutral_exclusive_predictions(acts, pred, used, neutral, words):
+    consumed = True
+    while consumed:
+        consumed = False
+        best = _best_prediction_for_acts(acts, pred, used, words)
+        if best[0] is not None:
+            used[best[0]] = True
+            neutral[best[0]] = True
+            consumed = True
 
 
 def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
@@ -203,23 +213,57 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
         words = item["words"]
         acts = item["acts"]
         pred = item["pred"] or []
-        counted_exclusive_acts = set()
 
         if not pred:
             print(f"No predictions found for item {item_idx}.")
 
         used = [False] * len(pred)
+        neutral = [False] * len(pred)
+        exclusive_groups = defaultdict(list)
         for act in acts:
-            total_truth += _count_truth(act, counted_exclusive_acts)
+            if act.get("act_type") == 3:
+                exclusive_groups[_exclusive_action_key(act)].append(act)
+
+        processed_exclusive_groups = set()
+        for act in acts:
+            act_type = act.get("act_type")
+            if act_type == 3:
+                group_key = _exclusive_action_key(act)
+                if group_key in processed_exclusive_groups:
+                    continue
+                processed_exclusive_groups.add(group_key)
+                group_acts = exclusive_groups[group_key]
+                total_truth += 1
+                best = _best_prediction_for_acts(group_acts, pred, used, words)
+                if best[0] is None:
+                    if collect_diagnostics:
+                        gold = action_record(group_acts[0], words)
+                        diagnostics.append(_diagnose_unmatched_gold(names, item, item_idx, gold, pred, used))
+                    continue
+
+                total_right += 1
+                obj_total_tagged += best[4]
+                obj_total_truth += best[3]
+                obj_total_right += best[2]
+                used[best[0]] = True
+                _consume_neutral_exclusive_predictions(group_acts, pred, used, neutral, words)
+                if collect_diagnostics and (best[2] < best[3] or best[2] < best[4]):
+                    gold = action_record(best[1], words)
+                    diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[best[0]]))
+                continue
+
+            if act_type == 1:
+                total_truth += 1
+
             best = _best_prediction_for_act(act, pred, used, words)
 
             if best[0] is None:
-                if collect_diagnostics:
+                if collect_diagnostics and act_type != 2:
                     gold = action_record(act, words)
                     diagnostics.append(_diagnose_unmatched_gold(names, item, item_idx, gold, pred, used))
                 continue
 
-            if act["act_type"] == 2:
+            if act_type == 2:
                 total_truth += 1
             total_right += 1
             obj_total_tagged += best[3]
@@ -231,7 +275,7 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
                 gold = action_record(act, words)
                 diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[best[0]]))
 
-        total_tagged += len(pred)
+        total_tagged += sum(1 for is_neutral in neutral if not is_neutral)
 
         if collect_diagnostics:
             diagnostics.extend(_diagnose_unused_predictions(names, item, item_idx, pred, used))
