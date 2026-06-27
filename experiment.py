@@ -2,7 +2,7 @@
 import json
 import os, sys
 from src.utils import load_pkl
-from src.solvers import NL2P_1, NL2P_2, NL2P_3, VerbArgs, GPT3ToPlan
+from src.solvers import NL2P_1, NL2P_1_Ablation, NL2P_2, NL2P_3, VerbArgs, GPT3ToPlan
 from tqdm import tqdm
 
 DEBUG = False
@@ -198,6 +198,11 @@ def main(args):
                 print('Please specify a model name for llm based solver!')
                 sys.exit(1)
             solver = NL2P_1(model_name=model_name)
+        case 'nl2p_1_ablation':
+            if not model_name:
+                print('Please specify a model name for llm based solver!')
+                sys.exit(1)
+            solver = NL2P_1_Ablation(model_name=model_name)
         case 'nl2p_2':
             if not model_name:
                 print('Please specify a model name for llm based solver!')
@@ -231,7 +236,7 @@ def main(args):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', type=str, default='nl2p_1', help='solvers: gpt3_to_plan, nl2p_1, nl2p_2, nl2p_3, verb_args')
+    parser.add_argument('-s', type=str, default='nl2p_1', help='solvers: gpt3_to_plan, nl2p_1, nl2p_1_ablation, nl2p_2, nl2p_3, verb_args')
     parser.add_argument('-m', type=str, help='optional, for llm based solve only, model name: gpt-5-mini, gpt-4.1-mini...')
     parser.add_argument('-d', type=str, help='dataset: cooking,wikihow,win2k')
     parser.add_argument('-l', type=int, help='limit the number of instances to run')

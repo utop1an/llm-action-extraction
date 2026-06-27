@@ -6,6 +6,9 @@ import os
 
 class NL2P_1(Solver):
 
+    prompt_name = "nl2p_1"
+    log_prefix = "nl2p_1"
+
     def __init__(self, model_name):
         self.model_name = model_name
 
@@ -13,7 +16,7 @@ class NL2P_1(Solver):
         log_dir = './logs'
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
-        log_file_name = os.path.join(log_dir, 'nl2p_1_%s.jsonl' % step)
+        log_file_name = os.path.join(log_dir, '%s_%s.jsonl' % (self.log_prefix, step))
         with open(log_file_name, 'a', encoding='utf-8') as f:
             f.write(json.dumps(result) + '\n')
         
@@ -33,9 +36,14 @@ class NL2P_1(Solver):
             return None
 
     def get_verb_args(self, paragraph):
-        prompt = generate_prompt('nl2p_1', {'nl': paragraph})
+        prompt = generate_prompt(self.prompt_name, {'nl': paragraph})
         response = generate_responses(self.model_name, prompt, temperature=0, log=True)['content']
         obj = self.parse_json(response)
-        self.log('nl2p_1', json.dumps(obj))
+        self.log(self.prompt_name, json.dumps(obj))
         return obj
+
+
+class NL2P_1_Ablation(NL2P_1):
+    prompt_name = "nl2p_1_ablation"
+    log_prefix = "nl2p_1_ablation"
     

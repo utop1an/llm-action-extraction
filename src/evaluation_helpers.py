@@ -22,7 +22,7 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 DATASETS = ("cooking", "wikihow", "win2k")
-SOLVERS = ("gpt3_to_plan", "nl2p_1", "nl2p_2", "nl2p_3", "verb_args")
+SOLVERS = ("gpt3_to_plan", "nl2p_1_ablation", "nl2p_1", "nl2p_2", "nl2p_3", "verb_args")
 
 PREPOSITIONS = {
     "about", "above", "across", "after", "against", "along", "among", "around",
@@ -99,8 +99,9 @@ def write_diagnostics(diagnostics: list, dir: str):
     fieldnames = [
         "dataset", "solver", "model", "doc_id", "docId", "source_file",
         "mismatch_type", "candidate_dataset_issue", "candidate_llm_issue",
-        "reason", "original_text", "gold_verb", "gold_arguments",
-        "pred_verb", "pred_arguments", "gold_action", "pred_action",
+        "strong_dataset_issue", "dataset_issue_confidence", "reason",
+        "original_text", "gold_verb", "gold_arguments", "pred_verb",
+        "pred_arguments", "gold_action", "pred_action",
     ]
     with open(outpath, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -280,6 +281,31 @@ def original_text(item):
     return " ".join(item.get("words", []))
 
 
+def action_source_text(item, gold_action):
+    """Return the sentence most likely to contain a gold action."""
+    sentences = item.get("sents") or []
+    verb = gold_action.get("verb", "")
+    verb_lemmas = content_lemmas(verb)
+    gold_arg_lemmas = content_lemmas(" ".join(gold_action.get("arguments", [])))
+
+    if sentences and verb_lemmas:
+        best_sentence = ""
+        best_score = 0
+        for sent in sentences:
+            sent_text = " ".join(sent) if isinstance(sent, list) else str(sent)
+            sent_lemmas = content_lemmas(sent_text)
+            if not (verb_lemmas & sent_lemmas):
+                continue
+            score = 10 * len(verb_lemmas & sent_lemmas) + len(gold_arg_lemmas & sent_lemmas)
+            if score > best_score:
+                best_sentence = sent_text
+                best_score = score
+        if best_sentence:
+            return best_sentence
+
+    return original_text(item)
+
+
 def doc_id(item, fallback):
     """Return a stable document id, falling back to the row index."""
     return item.get("doc_id", fallback)
@@ -325,6 +351,9 @@ def is_preposition_object_in_text(arg, source_text):
             root = chunk.root
             if root.dep_ in {"pobj", "pcomp"} and root.head.lemma_.lower() in PREPOSITIONS:
                 return True
+
+    if len(arg_lemmas) != 1:
+        return False
 
     for token in doc:
         if token.lemma_.lower() not in arg_lemmas:
@@ -542,9 +571,6 @@ def classify_argument_mismatch(gold_args, pred_args, source_text=""):
         if _any_preposition_object(extra_in_pred, source_text):
             _append_unique(dataset_issues, ["missing_arguments", "missing_arguments:preposition_object"])
             notes.append("pred unmatched argument is a preposition object in source text; annotation may have omitted it")
-        elif has_missing_valid_argument_evidence(gold_args, extra_in_pred, source_text):
-            _append_unique(dataset_issues, ["missing_arguments", "missing_arguments:gold_missing_valid_argument"])
-            notes.append("gold has no arguments and pred unmatched argument is an entity-like noun phrase in source text")
         elif has_gold_generic_reference_with_concrete_prediction(gold_args, pred_args, extra_in_pred):
             _append_unique(dataset_issues, ["wrong_arguments", "wrong_arguments:gold_pronoun_or_generic_reference"])
             notes.append("gold argument is a pronoun or generic reference while prediction provides a concrete argument")
@@ -567,6 +593,8 @@ def classify_argument_mismatch(gold_args, pred_args, source_text=""):
         "extra_in_pred": extra_in_pred,
         "candidate_dataset_issue": "|".join(dict.fromkeys(dataset_issues)),
         "candidate_llm_issue": "|".join(dict.fromkeys(llm_issues)),
+        "strong_dataset_issue": "|".join(dict.fromkeys(dataset_issues)),
+        "dataset_issue_confidence": "strong" if dataset_issues else "",
         "reason": "; ".join(notes),
     }
 
@@ -589,7 +617,19 @@ def best_verb_candidate(gold_action, unused_preds):
     return best, best_score
 
 
-def diagnostic_row(names, item, item_idx, mismatch_type, gold=None, pred=None, dataset_issue="", llm_issue="", reason=""):
+def diagnostic_row(
+    names,
+    item,
+    item_idx,
+    mismatch_type,
+    gold=None,
+    pred=None,
+    dataset_issue="",
+    llm_issue="",
+    reason="",
+    strong_dataset_issue="",
+    dataset_issue_confidence="",
+):
     """Build one normalized mismatch diagnostic row."""
     ds_name, solver_name, model_name = names
     gold = gold or {}
@@ -604,6 +644,8 @@ def diagnostic_row(names, item, item_idx, mismatch_type, gold=None, pred=None, d
         "mismatch_type": mismatch_type,
         "candidate_dataset_issue": dataset_issue,
         "candidate_llm_issue": llm_issue,
+        "strong_dataset_issue": strong_dataset_issue,
+        "dataset_issue_confidence": dataset_issue_confidence,
         "reason": reason,
         "original_text": original_text(item),
         "gold_verb": gold.get("verb", ""),

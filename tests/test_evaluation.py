@@ -55,6 +55,11 @@ def test_parse_result_filename_handles_solver_and_model_underscores():
         "nl2p_1",
         "gpt-5-mini",
     )
+    assert ev.parse_result_filename("cooking_nl2p_1_ablation_gpt-5-mini.pkl") == (
+        "cooking",
+        "nl2p_1_ablation",
+        "gpt-5-mini",
+    )
     assert ev.parse_result_filename("wikihow_gpt3_to_plan_gpt-4.1.pkl") == (
         "wikihow",
         "gpt3_to_plan",
@@ -191,8 +196,8 @@ def test_classify_argument_mismatch_missing_extra_wrong_and_subtypes():
     assert "wrong_arguments" in wrong["candidate_llm_issue"]
 
     dataset_missing = ev.classify_argument_mismatch([], ["box"], source_text="choose the box")
-    assert dataset_missing["candidate_dataset_issue"] == "missing_arguments|missing_arguments:gold_missing_valid_argument"
-    assert dataset_missing["candidate_llm_issue"] == ""
+    assert dataset_missing["candidate_dataset_issue"] == ""
+    assert dataset_missing["candidate_llm_issue"] == "extra_arguments"
 
     preposition = ev.classify_argument_mismatch([], ["to folder"])
     assert "extra_arguments:preposition_argument" in preposition["candidate_llm_issue"]
@@ -272,6 +277,8 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_split_head_words():
     row = diagnostics[0]
     assert row["mismatch_type"] == "argument_mismatch"
     assert row["candidate_dataset_issue"] == "extra_arguments|extra_arguments:unnecessary_head_or_modifier_split"
+    assert row["strong_dataset_issue"] == "extra_arguments|extra_arguments:unnecessary_head_or_modifier_split"
+    assert row["dataset_issue_confidence"] == "strong"
     assert row["candidate_llm_issue"] == ""
     assert row["gold_arguments"] == '["square", "shadow", "box"]'
     assert row["pred_arguments"] == '["square shadow box"]'
@@ -385,15 +392,18 @@ def test_classify_argument_mismatch_keeps_preposition_object_priority_over_gener
 
     assert "missing_arguments:preposition_object" in info["candidate_dataset_issue"]
     assert "gold_pronoun_or_generic_reference" not in info["candidate_dataset_issue"]
+    assert info["strong_dataset_issue"] == info["candidate_dataset_issue"]
+    assert info["dataset_issue_confidence"] == "strong"
     assert info["candidate_llm_issue"] == ""
 
 
-def test_classify_argument_mismatch_flags_conservative_gold_missing_valid_argument():
+def test_classify_argument_mismatch_does_not_keep_weak_gold_missing_valid_argument():
     info = ev.classify_argument_mismatch([], ["batter"], source_text="Bake the batter for 45 minutes")
 
-    assert info["candidate_dataset_issue"] == "missing_arguments|missing_arguments:gold_missing_valid_argument"
-    assert info["candidate_llm_issue"] == ""
-    assert "entity-like noun phrase" in info["reason"]
+    assert info["candidate_dataset_issue"] == ""
+    assert info["strong_dataset_issue"] == ""
+    assert info["dataset_issue_confidence"] == ""
+    assert info["candidate_llm_issue"] == "extra_arguments"
 
 
 def test_classify_argument_mismatch_does_not_flag_non_entity_missing_valid_argument():
@@ -434,7 +444,7 @@ def test_evaluation_argument_mismatch_diagnoses_llm_missing_argument():
     assert row["reason"] == "gold has arguments not matched by prediction"
 
 
-def test_evaluation_argument_mismatch_diagnoses_dataset_missing_argument():
+def test_evaluation_argument_mismatch_keeps_weak_missing_argument_as_llm_extra():
     data = [sample([act(5, [])], [{"verb": "open", "arguments": ["file"]}], sents=[["open", "the", "file"]])]
 
     metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
@@ -443,8 +453,9 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_missing_argument():
     assert len(diagnostics) == 1
     row = diagnostics[0]
     assert row["mismatch_type"] == "argument_mismatch"
-    assert row["candidate_dataset_issue"] == "missing_arguments|missing_arguments:gold_missing_valid_argument"
-    assert row["candidate_llm_issue"] == ""
+    assert row["candidate_dataset_issue"] == ""
+    assert row["strong_dataset_issue"] == ""
+    assert row["candidate_llm_issue"] == "extra_arguments"
 
 
 def test_evaluation_argument_mismatch_diagnoses_dataset_missing_preposition_object():
@@ -465,6 +476,8 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_missing_preposition_obje
     row = diagnostics[0]
     assert row["mismatch_type"] == "argument_mismatch"
     assert row["candidate_dataset_issue"] == "missing_arguments|missing_arguments:preposition_object"
+    assert row["strong_dataset_issue"] == "missing_arguments|missing_arguments:preposition_object"
+    assert row["dataset_issue_confidence"] == "strong"
     assert row["candidate_llm_issue"] == ""
 
 
@@ -486,6 +499,7 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_extra_preposition_object
     row = diagnostics[0]
     assert row["mismatch_type"] == "argument_mismatch"
     assert row["candidate_dataset_issue"] == "extra_arguments|extra_arguments:preposition_object"
+    assert row["strong_dataset_issue"] == "extra_arguments|extra_arguments:preposition_object"
     assert row["candidate_llm_issue"] == ""
     assert row["reason"] == (
         "gold has arguments not matched by prediction; "
@@ -506,6 +520,56 @@ def test_evaluation_argument_mismatch_diagnoses_wrong_arguments():
     assert "wrong_arguments" in row["candidate_llm_issue"]
     assert "gold has arguments not matched by prediction" in row["reason"]
     assert "prediction has arguments not matched by gold" in row["reason"]
+
+
+def test_evaluation_preposition_object_uses_action_local_sentence_for_missing_gold_arg():
+    data = [
+        sample(
+            [act(0, [1])],
+            [{"verb": "preheat", "arguments": []}],
+            words=["preheat", "oven"],
+            sents=[["preheat", "oven", "to", "325oF"], ["remove", "cake", "out", "of", "oven"]],
+        )
+    ]
+
+    _, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["candidate_dataset_issue"] == ""
+    assert row["strong_dataset_issue"] == ""
+    assert row["candidate_llm_issue"] == "missing_arguments"
+
+
+def test_evaluation_preposition_object_uses_action_local_sentence_for_extra_pred_arg():
+    data = [
+        sample(
+            [act(0, [])],
+            [{"verb": "start", "arguments": ["blender"]}],
+            words=["start", "blender"],
+            sents=[["start", "the", "blender", "again"], ["pour", "fruit", "in", "the", "blender"]],
+        )
+    ]
+
+    _, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["candidate_dataset_issue"] == ""
+    assert row["strong_dataset_issue"] == ""
+    assert row["candidate_llm_issue"] == "extra_arguments"
+
+
+def test_classify_argument_mismatch_does_not_call_overlong_prep_span_a_dataset_issue():
+    info = ev.classify_argument_mismatch(
+        ["fruit"],
+        ["fruit chunks in the blender"],
+        source_text="Pulse fruit chunks in the blender.",
+    )
+
+    assert info["candidate_dataset_issue"] == ""
+    assert info["strong_dataset_issue"] == ""
+    assert "wrong_arguments" in info["candidate_llm_issue"]
 
 
 def test_classify_argument_mismatch_flags_dataset_preposition_argument():
@@ -732,4 +796,6 @@ def test_write_diagnostics_outputs_expected_csv_columns(tmp_path):
     assert len(records) == 1
     assert records[0]["docId"] == "cooking:1"
     assert records[0]["candidate_llm_issue"] == "missing_actions"
+    assert "strong_dataset_issue" in records[0]
+    assert "dataset_issue_confidence" in records[0]
     assert "original_text" in records[0]

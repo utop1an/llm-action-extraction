@@ -10,6 +10,7 @@ from src.evaluation_helpers import (
     DATASETS,
     SOLVERS,
     action_record,
+    action_source_text,
     arg_diff,
     argument_head_lemma,
     argument_match_score,
@@ -121,7 +122,7 @@ def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
     arg_info = classify_argument_mismatch(
         gold["arguments"],
         normalize_args(pred_act.get("arguments", [])),
-        source_text=original_text(item),
+        source_text=action_source_text(item, gold),
     )
     return diagnostic_row(
         names,
@@ -132,6 +133,8 @@ def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
         pred=pred_act,
         dataset_issue=arg_info["candidate_dataset_issue"],
         llm_issue=arg_info["candidate_llm_issue"],
+        strong_dataset_issue=arg_info["strong_dataset_issue"],
+        dataset_issue_confidence=arg_info["dataset_issue_confidence"],
         reason=arg_info["reason"],
     )
 

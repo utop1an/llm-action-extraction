@@ -237,6 +237,57 @@ PROMPTS = {
             """),
         "parameters": ["nl"]
     },
+    "nl2p_1_ablation": {
+        "template": Template("""
+            You are given a natural language paragraph describing a sequence of actions.
+
+            Your task is to extract actions from the following natural language plan description.
+
+            Definition:
+            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
+            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
+            - An argument is a noun phrase denoting an entity directly affected by the action.
+
+            General extraction rules:
+            - Use only actions explicitly supported by the paragraph.
+            - Preserve action order.
+            - Process the paragraph sentence by sentence. Do not borrow arguments from a different sentence.
+            - If the same verb appears multiple times, output separate actions in text order.
+            - Do not invent actions, arguments, object types, or hidden preconditions.
+            - Do not include agents such as "you" as arguments.
+            - Output must be valid JSON only.
+
+            Action coverage rules:
+            - Extract all eventive actions, not only the main imperative verb.
+            - Include passive, participial, embedded, and state-change events when they are explicit in the text.
+            - Include actions in before/after/while/until clauses when they denote a real event.
+            - Exclude modal, auxiliary, linking, reporting, advisory, and purely descriptive verbs when they do not denote an executable step.
+            - Prefer the concrete event over control/light/causative verbs. For "let/allow/make sure/try to X", extract X when X is the real action.
+            - Examples of control-verb normalization: "make sure the meat is cooked" -> "cook" with ["meat"]; "let it simmer" -> "simmer" with the resolved object when clear; "allow the mixture to boil" -> "boil" with ["mixture"].
+
+            Argument rules:
+            - Arguments should be core participants, usually direct objects or entities whose state is directly changed.
+            - Do not include time, temperature, duration, manner, condition, or location phrases as arguments unless their own state is directly changed.
+            - Do not include prepositions inside arguments. Prefer "bowl" over "into the bowl"; prefer "fruit chunks" over "fruit chunks in the blender".
+            - Resolve pronouns such as "it", "them", "this", and "everything" to the most specific preceding entity when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
+            - Keep a complete noun phrase as one argument when it denotes one object, e.g. "lemon juice" is one argument, not ["lemon", "juice"].
+            - Keep coordinated entities as separate arguments when they are separate objects, e.g. "mix salt and pepper" -> "mix" with ["salt", "pepper"].
+            - Use concise surface forms from the text for arguments.
+            - If an action has no direct argument, use an empty list.
+
+            Return a JSON array. Each item must have exactly this form:
+            [
+                {
+                    "verb": "trigger verb or verb phrase",
+                    "arguments": ["argument 1", "argument 2" ...]
+                }
+            ]
+
+            Paragraph:
+            $nl
+            """),
+        "parameters": ["nl"]
+    },
     "verbs": {
         "template": """
             You are given a natural language paragraph describing a sequence of actions.
