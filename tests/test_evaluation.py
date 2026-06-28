@@ -494,6 +494,26 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_missing_preposition_obje
     assert row["candidate_llm_issue"] == ""
 
 
+def test_evaluation_argument_mismatch_diagnoses_dataset_missing_with_object():
+    words = ["make", "sauce"]
+    data = [
+        sample(
+            [act(0, [1])],
+            [{"verb": "make", "arguments": ["sauce", "butter"]}],
+            words=words,
+            sents=[["make", "sauce", "with", "butter"]],
+        )
+    ]
+
+    _, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["candidate_dataset_issue"] == "missing_arguments|missing_arguments:preposition_object"
+    assert row["strong_dataset_issue"] == "missing_arguments|missing_arguments:preposition_object"
+    assert row["candidate_llm_issue"] == ""
+
+
 def test_evaluation_argument_mismatch_diagnoses_dataset_extra_preposition_object():
     words = ["put", "food", "bowl"]
     data = [
@@ -518,6 +538,26 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_extra_preposition_object
         "gold has arguments not matched by prediction; "
         "gold unmatched argument is a preposition object in source text"
     )
+
+
+def test_evaluation_argument_mismatch_diagnoses_dataset_extra_with_object():
+    words = ["make", "sauce", "butter"]
+    data = [
+        sample(
+            [act(0, [1, 2])],
+            [{"verb": "make", "arguments": ["sauce"]}],
+            words=words,
+            sents=[["make", "sauce", "with", "butter"]],
+        )
+    ]
+
+    _, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert len(diagnostics) == 1
+    row = diagnostics[0]
+    assert row["candidate_dataset_issue"] == "extra_arguments|extra_arguments:preposition_object"
+    assert row["strong_dataset_issue"] == "extra_arguments|extra_arguments:preposition_object"
+    assert row["candidate_llm_issue"] == ""
 
 
 def test_evaluation_argument_mismatch_diagnoses_wrong_arguments():
@@ -571,6 +611,19 @@ def test_evaluation_preposition_object_uses_action_local_sentence_for_extra_pred
     assert row["candidate_dataset_issue"] == ""
     assert row["strong_dataset_issue"] == ""
     assert row["candidate_llm_issue"] == "extra_arguments"
+
+
+def test_classify_preposition_object_rejects_leading_pp_fragment_false_positive():
+    info = ev.classify_argument_mismatch(
+        ["options"],
+        [],
+        source_text="In control panel double-click internet options.",
+        action_verb="double-click",
+    )
+
+    assert info["candidate_dataset_issue"] == ""
+    assert info["strong_dataset_issue"] == ""
+    assert info["candidate_llm_issue"] == "missing_arguments"
 
 
 def test_classify_argument_mismatch_does_not_call_overlong_prep_span_a_dataset_issue():

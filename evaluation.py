@@ -133,6 +133,7 @@ def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
         gold["arguments"],
         normalize_args(pred_act.get("arguments", [])),
         source_text=action_source_text(item, gold),
+        action_verb=gold.get("verb", ""),
     )
     return diagnostic_row(
         names,

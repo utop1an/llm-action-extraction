@@ -324,7 +324,7 @@ def is_preposition_argument(arg):
     return bool(doc) and doc[0].lemma_.lower() in PREPOSITIONS
 
 
-def is_preposition_object_in_text(arg, source_text):
+def is_preposition_object_in_text(arg, source_text, action_verb=""):
     """Return whether `arg` appears as the object of a preposition in text.
 
     This is intentionally narrower than checking whether the argument text
@@ -345,11 +345,25 @@ def is_preposition_object_in_text(arg, source_text):
     except ValueError:
         chunks = []
 
+    action_lemmas = content_lemmas(action_verb)
+
+    def is_action_local_preposition(prep):
+        if prep.lemma_.lower() not in PREPOSITIONS or prep.dep_ != "prep":
+            return False
+        if prep.i <= prep.head.i:
+            return False
+        if action_lemmas and prep.head.lemma_.lower() not in action_lemmas:
+            for ancestor in prep.head.ancestors:
+                if ancestor.lemma_.lower() in action_lemmas:
+                    return True
+            return False
+        return True
+
     for chunk in chunks:
         chunk_lemmas = content_lemmas(chunk.text)
         if arg_lemmas.issubset(chunk_lemmas):
             root = chunk.root
-            if root.dep_ in {"pobj", "pcomp"} and root.head.lemma_.lower() in PREPOSITIONS:
+            if root.dep_ in {"pobj", "pcomp"} and is_action_local_preposition(root.head):
                 return True
 
     if len(arg_lemmas) != 1:
@@ -358,7 +372,7 @@ def is_preposition_object_in_text(arg, source_text):
     for token in doc:
         if token.lemma_.lower() not in arg_lemmas:
             continue
-        if token.dep_ in {"pobj", "pcomp"} and token.head.lemma_.lower() in PREPOSITIONS:
+        if token.dep_ in {"pobj", "pcomp"} and is_action_local_preposition(token.head):
             return True
 
     return False
@@ -525,11 +539,11 @@ def _append_unique(items, values):
             items.append(value)
 
 
-def _any_preposition_object(args, source_text):
-    return any(is_preposition_object_in_text(arg, source_text) for arg in args)
+def _any_preposition_object(args, source_text, action_verb=""):
+    return any(is_preposition_object_in_text(arg, source_text, action_verb) for arg in args)
 
 
-def classify_argument_mismatch(gold_args, pred_args, source_text=""):
+def classify_argument_mismatch(gold_args, pred_args, source_text="", action_verb=""):
     """Classify a matched action's argument-level mismatch.
 
     The return value contains the unmatched argument lists plus mutually
@@ -552,7 +566,7 @@ def classify_argument_mismatch(gold_args, pred_args, source_text=""):
     if missing_from_pred:
         notes.append("gold has arguments not matched by prediction")
         gold_specific_issues = []
-        if _any_preposition_object(missing_from_pred, source_text):
+        if _any_preposition_object(missing_from_pred, source_text, action_verb):
             gold_specific_issues.extend(["extra_arguments", "extra_arguments:preposition_object"])
             notes.append("gold unmatched argument is a preposition object in source text")
         elif is_gold_split_modifier_case(gold_args, pred_args, missing_from_pred):
@@ -568,7 +582,7 @@ def classify_argument_mismatch(gold_args, pred_args, source_text=""):
 
     if extra_in_pred:
         notes.append("prediction has arguments not matched by gold")
-        if _any_preposition_object(extra_in_pred, source_text):
+        if _any_preposition_object(extra_in_pred, source_text, action_verb):
             _append_unique(dataset_issues, ["missing_arguments", "missing_arguments:preposition_object"])
             notes.append("pred unmatched argument is a preposition object in source text; annotation may have omitted it")
         elif has_gold_generic_reference_with_concrete_prediction(gold_args, pred_args, extra_in_pred):
