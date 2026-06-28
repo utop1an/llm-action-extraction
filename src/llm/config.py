@@ -109,9 +109,17 @@ MODELS = {
         "provider": "ollama",
         "model_name": "gemma3:12b",
     },
+    "gemma3-12b": {
+        "provider": "ollama",
+        "model_name": "gemma3:12b",
+    },
     "llama3.2": {
         "provider": "ollama",
         "model_name": "llama3.2",
+    },
+    "llama3-70b": {
+        "provider": "ollama",
+        "model_name": "llama3.3:70b",
     }
 }
 
@@ -187,7 +195,7 @@ PROMPTS = {
             - Keep a complete noun phrase as one argument when it denotes one object.
             - Keep coordinated entities as separate arguments when they are separate objects.
             - Use concise surface forms from the text for arguments.
-            - If an action has no direct argument, use an empty list.
+            - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
             - Output valid JSON only.
 
             Return a JSON array. Each item must have exactly this form:
@@ -217,29 +225,32 @@ PROMPTS = {
             General extraction rules:
             - Use only actions explicitly supported by the paragraph.
             - Preserve action order.
-            - Process the paragraph sentence by sentence. Do not borrow arguments from a different sentence.
-            - If the same verb appears multiple times, output separate actions in text order.
+            - Process the paragraph sentence by sentence. Do not borrow actions or arguments from a different sentence unless a pronoun or ellipsis clearly refers back to it.
+            - If the same verb appears multiple times as separate events, output separate actions in text order.
             - Do not invent actions, arguments, object types, or hidden preconditions.
+            - Do not extract general background facts, preferences, warnings, explanations, or expected outcomes unless they explicitly instruct or describe an executable event.
             - Do not include agents such as "you" as arguments.
             - Output must be valid JSON only.
 
             Action coverage rules:
             - Extract all eventive actions, not only the main imperative verb.
-            - Include passive, participial, embedded, and state-change events when they are explicit in the text.
-            - Include actions in before/after/while/until clauses when they denote a real event.
+            - Include explicit passive, participial, embedded, conditional, and state-change events when they denote real executable steps.
+            - Include actions in before/after/while/until/if clauses when they denote real executable events.
             - Exclude modal, auxiliary, linking, reporting, advisory, and purely descriptive verbs when they do not denote an executable step.
-            - Prefer the concrete event over control/light/causative verbs. For "let/allow/make sure/try to X", extract X when X is the real action.
-            - Examples of control-verb normalization: "make sure the meat is cooked" -> "cook" with ["meat"]; "let it simmer" -> "simmer" with the resolved object when clear; "allow the mixture to boil" -> "boil" with ["mixture"].
+            - Prefer the concrete state-changing event over framing, control, light, aspectual, or causative verbs.
+            - For constructions such as "start to X", "continue X-ing", "try to X", "make sure X is done", "allow X to Y", or "let X Y", extract X/Y when X/Y is the real executable action.
+            - Keep the trigger verb close to the wording in the paragraph, but choose the event head rather than surrounding helper words.
 
             Argument rules:
-            - Arguments should be core participants, usually direct objects or entities whose state is directly changed.
-            - Do not include time, temperature, duration, manner, condition, or location phrases as arguments unless their own state is directly changed.
-            - Do not include prepositions inside arguments. Prefer "bowl" over "into the bowl"; prefer "fruit chunks" over "fruit chunks in the blender".
-            - Resolve pronouns such as "it", "them", "this", and "everything" to the most specific preceding entity when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
-            - Keep a complete noun phrase as one argument when it denotes one object, e.g. "lemon juice" is one argument, not ["lemon", "juice"].
-            - Keep coordinated entities as separate arguments when they are separate objects, e.g. "mix salt and pepper" -> "mix" with ["salt", "pepper"].
+            - Arguments should be core affected entities, usually direct objects or entities whose state, location, configuration, possession, or availability changes.
+            - Do not include time, duration, temperature, condition, purpose, manner, location, source, destination, container, or instrument phrases as arguments unless that entity itself is directly changed.
+            - Do not include prepositions inside arguments. Prefer the core noun phrase over the full prepositional phrase.
+            - For transfer, placement, insertion, removal, or movement actions, include the moved or changed entity. Include the source, destination, or container only if it is also directly acted on or changed.
+            - Resolve pronouns such as "it", "them", "this", "these", "those", and "everything" to the most specific preceding entity or entity set when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
+            - Keep a complete noun phrase as one argument when it denotes one object.
+            - Keep coordinated entities as separate arguments only when they are separate affected objects.
             - Use concise surface forms from the text for arguments.
-            - If an action has no direct argument, use an empty list.
+            - - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
 
             Return a JSON array. Each item must have exactly this form:
             [

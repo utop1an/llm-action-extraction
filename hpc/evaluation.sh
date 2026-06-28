@@ -1,13 +1,22 @@
-PREFIX="./results/experiment"
-SOLVERS="gpt3_to_plan nl2p_1 nl2p_2 nl2p_3"
-MODELS="gemma3 gemma3_12b llama3.2 gpt-4.1 gpt-4.1-mini gpt-4.1-nano gpt-4o gpt-4o-mini"
+#!/usr/bin/env bash
+set -euo pipefail
+
+PREFIX="${PREFIX:-./results}"
+SOLVERS="${SOLVERS:-nl2p_1 nl2p_1_ablation}"
+MODELS="${MODELS:-gpt-5.4 gpt-5.4-mini gemma3-12b llama3-70b}"
+DIAGNOSTICS="${DIAGNOSTICS:---diagnostics}"
+PYTHON="${PYTHON:-python3}"
 
 for solver in $SOLVERS; do
     for model in $MODELS; do
-        echo "Evaluating solver: $solver with model: $model"
+        result_dir="$PREFIX/${solver}/${model}"
+        if [ ! -d "$result_dir" ]; then
+            echo "Skipping missing results dir: $result_dir"
+            continue
+        fi
 
-        python3 evaluation_first_match.py \
-            -d "$PREFIX/${solver}/${model}/"
+        echo "Evaluating solver: $solver with model: $model"
+        "$PYTHON" evaluation.py -d "$result_dir" $DIAGNOSTICS
         echo "Completed evaluation for solver: $solver with model: $model"
     done
 done

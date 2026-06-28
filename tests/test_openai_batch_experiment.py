@@ -1,6 +1,6 @@
 import json
 
-from experiment import build_result_record
+from experiment import build_result_record, load_coref_texts, sample_to_input_text
 from scripts import openai_batch_experiment as batch
 
 
@@ -52,6 +52,8 @@ def test_prepare_writes_batch_jsonl_and_manifest(tmp_path, monkeypatch):
             "d": "toy",
             "l": None,
             "t": 0,
+            "coref": "none",
+            "coref_dir": None,
             "run_id": "test-run",
         },
     )()
@@ -71,3 +73,68 @@ def test_prepare_writes_batch_jsonl_and_manifest(tmp_path, monkeypatch):
     assert rows[0]["url"] == "/v1/chat/completions"
     assert rows[0]["body"]["model"] == "gpt-5.4-mini"
     assert "Pick up the box." in rows[0]["body"]["messages"][0]["content"]
+
+
+def test_load_llm_coref_texts_and_sample_input_replacement(tmp_path):
+    coref_path = tmp_path / "toy_llm_coref.jsonl"
+    coref_path.write_text(
+        json.dumps(
+            {
+                "domain": "toy",
+                "doc_id": 2,
+                "original_text": "Move it.",
+                "resolved_text": "Move the box.",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    coref_texts = load_coref_texts("toy", coref="llm", coref_dir=str(tmp_path))
+    sample = {"sents": [["Move", "it"]], "words": ["Move", "it"], "acts": []}
+
+    assert coref_texts == {2: "Move the box."}
+    assert sample_to_input_text(sample, ds_name="toy", doc_id=2, coref_texts=coref_texts) == "Move the box."
+
+
+def test_prepare_uses_llm_coref_resolved_text(tmp_path, monkeypatch):
+    sample = {
+        "sents": [["Move", "it"]],
+        "words": ["Move", "it"],
+        "acts": [],
+    }
+    coref_path = tmp_path / "coref" / "toy_llm_coref.jsonl"
+    coref_path.parent.mkdir()
+    coref_path.write_text(
+        json.dumps({"domain": "toy", "doc_id": 0, "resolved_text": "Move the box."}) + "\n",
+        encoding="utf-8",
+    )
+
+    monkeypatch.setattr(batch, "BATCH_ROOT", tmp_path / "batch")
+    monkeypatch.setattr(batch, "DATASETS", {"toy": "toy_labeled_text_data"})
+    monkeypatch.setattr(batch, "dataset_path", lambda filename: f"data/easdrl/{filename}.pkl")
+    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: [sample])
+
+    args = type(
+        "Args",
+        (),
+        {
+            "s": "nl2p_1",
+            "m": "gpt-5.4-mini",
+            "d": "toy",
+            "l": None,
+            "t": 0,
+            "coref": "llm",
+            "coref_dir": str(coref_path.parent),
+            "run_id": "coref-test",
+        },
+    )()
+
+    batch.prepare(args)
+
+    input_path = tmp_path / "batch" / "nl2p_1" / "gpt-5.4-mini" / "coref-test" / "input.jsonl"
+    row = json.loads(input_path.read_text(encoding="utf-8").splitlines()[0])
+    prompt = row["body"]["messages"][0]["content"]
+
+    assert "Move the box." in prompt
+    assert "Move it." not in prompt

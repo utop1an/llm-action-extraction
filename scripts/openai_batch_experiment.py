@@ -37,8 +37,9 @@ from experiment import (  # noqa: E402
     RESULTS_DIR,
     build_result_record,
     dataset_path,
+    load_coref_texts,
     read_from_labeled_dataset,
-    sample_to_paragraph,
+    sample_to_input_text,
 )
 from src.llm import MODELS, generate_prompt  # noqa: E402
 from src.solvers import NL2P_1, NL2P_1_Ablation  # noqa: E402
@@ -140,14 +141,19 @@ def prepare(args: argparse.Namespace) -> None:
     run_id = args.run_id or datetime.now().strftime("%Y%m%d-%H%M%S")
     out_dir = run_dir(args.s, args.m, run_id)
     solver = SUPPORTED_SOLVERS[args.s](model_name=args.m)
+    coref_by_domain = {
+        ds_name: load_coref_texts(ds_name, coref=args.coref, coref_dir=args.coref_dir)
+        for ds_name in target_datasets
+    }
 
     requests = []
     records = []
     for ds_name in target_datasets:
         source_file = dataset_path(DATASETS[ds_name])
         dataset = read_from_labeled_dataset(DATASETS[ds_name], limit=args.l)
+        coref_texts = coref_by_domain[ds_name] or None
         for doc_id, sample in enumerate(dataset):
-            paragraph = sample_to_paragraph(sample)
+            paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=doc_id, coref_texts=coref_texts)
             prompt = generate_prompt(solver.prompt_name, {"nl": paragraph})
             custom_id = f"{args.s}|{safe_name(args.m)}|{ds_name}|{doc_id}"
             requests.append(
@@ -176,6 +182,8 @@ def prepare(args: argparse.Namespace) -> None:
         "datasets": target_datasets,
         "limit": args.l,
         "temperature": args.t,
+        "coref": args.coref,
+        "coref_dir": args.coref_dir,
         "run_id": run_id,
         "endpoint": "/v1/chat/completions",
         "input_jsonl": str(out_dir / "input.jsonl"),
@@ -354,6 +362,8 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_parser.add_argument("-d", choices=sorted(DATASETS), help="Dataset; omit to prepare all datasets")
     prepare_parser.add_argument("-l", type=int, help="Limit documents per dataset")
     prepare_parser.add_argument("-t", type=float, default=0, help="Temperature for models that support it")
+    prepare_parser.add_argument("--coref", choices=["none", "llm", "nlp"], default="none", help="Use precomputed coreference-resolved input text")
+    prepare_parser.add_argument("--coref-dir", help="Directory containing *_llm_coref.jsonl or *_coref.json files")
     prepare_parser.add_argument("--run-id", help="Stable run id; defaults to timestamp")
     prepare_parser.set_defaults(func=prepare)
 

@@ -15,6 +15,10 @@ DATASETS = {
     "wikihow": "wikihow_labeled_text_data",
     "win2k": "win2k_labeled_text_data",
 }
+COREF_DIRS = {
+    "llm": os.path.join(".", "data", "coref_llm"),
+    "nlp": os.path.join(".", "data", "coref"),
+}
 
 MODELS = [
     "gpt-5",
@@ -29,7 +33,9 @@ MODELS = [
     "gpt-4.1-nano",
     "gemma3",
     "gemma3:12b",
+    "gemma3-12b",
     "llama3.2",
+    "llama3-70b",
 ]
 
 
@@ -52,6 +58,47 @@ def sample_to_sentences(sample):
 def sample_to_paragraph(sample):
     sentences = sample_to_sentences(sample)
     return ". ".join(sentences) + "."
+
+
+def load_coref_texts(ds_name, coref="none", coref_dir=None):
+    if coref in (None, "", "none"):
+        return {}
+    if coref not in COREF_DIRS:
+        raise ValueError(f"Unknown coref mode {coref!r}; expected one of none, llm, nlp")
+
+    base_dir = coref_dir or COREF_DIRS[coref]
+    if coref == "llm":
+        path = os.path.join(base_dir, f"{ds_name}_llm_coref.jsonl")
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"LLM coref file not found: {path}")
+        records = {}
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                item = json.loads(line)
+                if item.get("domain") == ds_name and item.get("resolved_text"):
+                    records[int(item["doc_id"])] = item["resolved_text"]
+        return records
+
+    path = os.path.join(base_dir, f"{ds_name}_coref.json")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"NLP coref file not found: {path}")
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return {
+        int(item["doc_id"]): item["coref"]["resolved_text"]
+        for item in data
+        if item.get("domain") == ds_name and item.get("coref", {}).get("resolved_text")
+    }
+
+
+def sample_to_input_text(sample, ds_name="", doc_id=None, coref_texts=None):
+    if coref_texts is None:
+        return sample_to_paragraph(sample)
+    if doc_id not in coref_texts:
+        raise KeyError(f"Missing coref text for {ds_name}:{doc_id}")
+    return coref_texts[doc_id]
 
 
 def sample_gold_actions(sample):
@@ -105,11 +152,11 @@ def read_from_labeled_dataset(filename, limit=None):
 def refine_results(raw_res):
     return raw_res
 
-def run_experiment(dataset, solver, ds_name="", source_file=""):
+def run_experiment(dataset, solver, ds_name="", source_file="", coref_texts=None):
     results = []
     for i in tqdm(range(len(dataset)), desc="Processing instances", unit="sample"):
         sample = dataset[i]
-        paragraph = sample_to_paragraph(sample)
+        paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=i, coref_texts=coref_texts)
 
         raw_res = solver.solve(paragraph, ds_name=ds_name)
         res = refine_results(raw_res)
@@ -178,6 +225,11 @@ def main(args):
     else:
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in DATASETS.items()}
 
+    coref_by_domain = {
+        ds_name: load_coref_texts(ds_name, coref=args.coref, coref_dir=args.coref_dir)
+        for ds_name in target_ds
+    }
+
     if args.m and args.m not in MODELS:
         print('Model %s not found!' % args.m)
         sys.exit(1)
@@ -224,7 +276,13 @@ def main(args):
     for ds_name, dataset in target_ds.items():
         print('Running experiment on %s dataset...' % ds_name)
         source_file = dataset_path(DATASETS[ds_name])
-        results = run_experiment(dataset, solver, ds_name=ds_name, source_file=source_file)
+        results = run_experiment(
+            dataset,
+            solver,
+            ds_name=ds_name,
+            source_file=source_file,
+            coref_texts=coref_by_domain[ds_name] or None,
+        )
         write_results(ds_name, solver_name, results, model_name)
         write_pkl_results(ds_name, solver_name, dataset, model_name)
         write_summary(ds_name, solver_name, results, model_name)
@@ -239,6 +297,8 @@ if __name__ == "__main__":
     parser.add_argument('-d', type=str, help='dataset: cooking,wikihow,win2k')
     parser.add_argument('-l', type=int, help='limit the number of instances to run')
     parser.add_argument('-t', type=int, help='temperature for llm based solver')
+    parser.add_argument('--coref', choices=['none', 'llm', 'nlp'], default='none', help='replace input text with precomputed coreference-resolved text')
+    parser.add_argument('--coref-dir', help='directory containing *_llm_coref.jsonl or *_coref.json files')
     parser.add_argument('--debug', action='store_true', help='debug mode')
     args = parser.parse_args()
     main(args)
