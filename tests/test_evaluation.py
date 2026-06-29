@@ -60,6 +60,16 @@ def test_parse_result_filename_handles_solver_and_model_underscores():
         "nl2p_1_ablation",
         "gpt-5-mini",
     )
+    assert ev.parse_result_filename("cooking_nl2p_1_coref_gpt-5-mini.pkl") == (
+        "cooking",
+        "nl2p_1_coref",
+        "gpt-5-mini",
+    )
+    assert ev.parse_result_filename("cooking_nl2p_1_ablation_coref_gpt-5-mini.pkl") == (
+        "cooking",
+        "nl2p_1_ablation_coref",
+        "gpt-5-mini",
+    )
     assert ev.parse_result_filename("wikihow_gpt3_to_plan_gpt-4.1.pkl") == (
         "wikihow",
         "gpt3_to_plan",

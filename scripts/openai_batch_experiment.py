@@ -60,6 +60,14 @@ def run_dir(solver_name: str, model_name: str, run_id: str) -> Path:
     return BATCH_ROOT / solver_name / safe_name(model_name) / run_id
 
 
+def result_solver_name(manifest: dict[str, Any]) -> str:
+    solver_name = manifest["solver"]
+    coref_mode = manifest.get("coref") or "none"
+    if coref_mode == "none":
+        return solver_name
+    return f"{solver_name}_coref"
+
+
 def load_manifest(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
@@ -316,13 +324,14 @@ def collect(args: argparse.Namespace) -> None:
             build_result_record(ds_name, doc_id, record["source_file"], sample, prediction)
         )
 
-    result_root = ROOT / RESULTS_DIR / manifest["solver"] / safe_name(manifest["model"])
+    output_solver = result_solver_name(manifest)
+    result_root = ROOT / RESULTS_DIR / output_solver / safe_name(manifest["model"])
     result_root.mkdir(parents=True, exist_ok=True)
     for ds_name, results in grouped_results.items():
         results.sort(key=lambda item: item["doc_id"])
-        result_path = result_root / f"{ds_name}_{manifest['solver']}_{safe_name(manifest['model'])}.json"
-        pkl_path = result_root / f"{ds_name}_{manifest['solver']}_{safe_name(manifest['model'])}.pkl"
-        summary_path = result_root / f"{ds_name}_{manifest['solver']}_{safe_name(manifest['model'])}_summary.json"
+        result_path = result_root / f"{ds_name}_{output_solver}_{safe_name(manifest['model'])}.json"
+        pkl_path = result_root / f"{ds_name}_{output_solver}_{safe_name(manifest['model'])}.pkl"
+        summary_path = result_root / f"{ds_name}_{output_solver}_{safe_name(manifest['model'])}_summary.json"
         write_json(result_path, results)
         with pkl_path.open("wb") as f:
             pickle.dump(grouped_samples[ds_name], f)
@@ -330,7 +339,9 @@ def collect(args: argparse.Namespace) -> None:
             summary_path,
             {
                 "dataset": ds_name,
-                "solver": manifest["solver"],
+                "solver": output_solver,
+                "source_solver": manifest["solver"],
+                "coref": manifest.get("coref", "none"),
                 "model": safe_name(manifest["model"]),
                 "num_docs": len(results),
                 "doc_ids": [item["doc_id"] for item in results],
@@ -342,6 +353,8 @@ def collect(args: argparse.Namespace) -> None:
 
     manifest["collected_at"] = datetime.now().isoformat(timespec="seconds")
     manifest["output_jsonl"] = str(output_path)
+    manifest["result_solver"] = output_solver
+    manifest["result_dir"] = str(result_root)
     manifest["failure_count"] = len(failures)
     write_json(manifest_path, manifest)
     if failures:

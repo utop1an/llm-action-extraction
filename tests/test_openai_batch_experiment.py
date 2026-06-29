@@ -138,3 +138,87 @@ def test_prepare_uses_llm_coref_resolved_text(tmp_path, monkeypatch):
 
     assert "Move the box." in prompt
     assert "Move it." not in prompt
+
+
+def test_result_solver_name_adds_coref_suffix():
+    assert batch.result_solver_name({"solver": "nl2p_1", "coref": "none"}) == "nl2p_1"
+    assert batch.result_solver_name({"solver": "nl2p_1", "coref": "llm"}) == "nl2p_1_coref"
+    assert (
+        batch.result_solver_name({"solver": "nl2p_1_ablation", "coref": "llm"})
+        == "nl2p_1_ablation_coref"
+    )
+
+
+def test_collect_writes_coref_results_under_coref_solver(tmp_path, monkeypatch):
+    sample = {
+        "sents": [["Pick", "up", "the", "box"]],
+        "words": ["Pick", "up", "the", "box"],
+        "acts": [{"act_idx": 0, "obj_idxs": [[3], []], "act_type": 1, "related_acts": []}],
+    }
+
+    class SolverStub:
+        def __init__(self, model_name):
+            self.model_name = model_name
+
+        def parse_json(self, content):
+            return [{"verb": "Pick up", "arguments": ["box"]}]
+
+    monkeypatch.setattr(batch, "ROOT", tmp_path)
+    monkeypatch.setattr(batch, "RESULTS_DIR", "results")
+    monkeypatch.setattr(batch, "DATASETS", {"toy": "toy_labeled_text_data"})
+    monkeypatch.setattr(batch, "SUPPORTED_SOLVERS", {"nl2p_1": SolverStub})
+    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: [sample])
+
+    manifest_path = tmp_path / "manifest.json"
+    output_path = tmp_path / "output.jsonl"
+    manifest = {
+        "solver": "nl2p_1",
+        "model": "gpt-5.4-mini",
+        "datasets": ["toy"],
+        "limit": None,
+        "coref": "llm",
+        "run_id": "coref-test",
+        "batch_id": "batch_123",
+        "records": [
+            {
+                "custom_id": "nl2p_1|gpt-5.4-mini|toy|0",
+                "dataset": "toy",
+                "doc_id": 0,
+                "source_file": "data/easdrl/toy.pkl",
+                "original_text": "Pick up the box.",
+            }
+        ],
+    }
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            {
+                "custom_id": "nl2p_1|gpt-5.4-mini|toy|0",
+                "response": {
+                    "status_code": 200,
+                    "body": {"choices": [{"message": {"content": "[]"}}]},
+                },
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    args = type(
+        "Args",
+        (),
+        {
+            "manifest": str(manifest_path),
+            "output_jsonl": str(output_path),
+            "output_file_id": None,
+        },
+    )()
+
+    batch.collect(args)
+
+    coref_result = tmp_path / "results" / "nl2p_1_coref" / "gpt-5.4-mini" / "toy_nl2p_1_coref_gpt-5.4-mini.pkl"
+    baseline_result = tmp_path / "results" / "nl2p_1" / "gpt-5.4-mini" / "toy_nl2p_1_gpt-5.4-mini.pkl"
+    updated_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    assert coref_result.exists()
+    assert not baseline_result.exists()
+    assert updated_manifest["result_solver"] == "nl2p_1_coref"

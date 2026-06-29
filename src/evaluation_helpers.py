@@ -22,7 +22,16 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 DATASETS = ("cooking", "wikihow", "win2k")
-SOLVERS = ("gpt3_to_plan", "nl2p_1_ablation", "nl2p_1", "nl2p_2", "nl2p_3", "verb_args")
+SOLVERS = (
+    "gpt3_to_plan",
+    "nl2p_1_ablation_coref",
+    "nl2p_1_ablation",
+    "nl2p_1_coref",
+    "nl2p_1",
+    "nl2p_2",
+    "nl2p_3",
+    "verb_args",
+)
 
 PREPOSITIONS = {
     "about", "above", "across", "after", "against", "along", "among", "around",
