@@ -152,9 +152,54 @@ def read_from_labeled_dataset(filename, limit=None):
 def refine_results(raw_res):
     return raw_res
 
-def run_experiment(dataset, solver, ds_name="", source_file="", coref_texts=None):
-    results = []
+def result_paths(ds_name, solver_name, model_name=""):
+    model_name = (model_name or "").replace(":", "_")
+    out_dir = os.path.join(RESULTS_DIR, solver_name, model_name)
+    outpath = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
+    pkl_path = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
+    summary_path = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '_summary.json')
+    return out_dir, outpath, pkl_path, summary_path
+
+
+def load_existing_results(ds_name, solver_name, model_name=""):
+    _, outpath, _, _ = result_paths(ds_name, solver_name, model_name)
+    if not os.path.exists(outpath):
+        return []
+    with open(outpath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def hydrate_sample_from_result(sample, result, ds_name, source_file):
+    sample["pred"] = result.get("prediction")
+    sample["doc_id"] = result.get("doc_id")
+    sample["docId"] = f"{ds_name}:{result.get('doc_id')}"
+    sample["domain"] = ds_name
+    sample["source_file"] = source_file
+    sample["original_text"] = ". ".join(result.get("sentences", [])) + "."
+
+
+def run_experiment(
+    dataset,
+    solver,
+    ds_name="",
+    source_file="",
+    coref_texts=None,
+    existing_results=None,
+    checkpoint_callback=None,
+    checkpoint_every=1,
+):
+    results = list(existing_results or [])
+    completed = {item.get("doc_id") for item in results}
+    existing_by_doc_id = {item.get("doc_id"): item for item in results}
+
+    for doc_id, result in existing_by_doc_id.items():
+        if isinstance(doc_id, int) and 0 <= doc_id < len(dataset):
+            hydrate_sample_from_result(dataset[doc_id], result, ds_name, source_file)
+
+    checkpoint_counter = 0
     for i in tqdm(range(len(dataset)), desc="Processing instances", unit="sample"):
+        if i in completed:
+            continue
         sample = dataset[i]
         paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=i, coref_texts=coref_texts)
 
@@ -167,40 +212,38 @@ def run_experiment(dataset, solver, ds_name="", source_file="", coref_texts=None
         sample["source_file"] = source_file
         sample["original_text"] = paragraph
         results.append(build_result_record(ds_name, i, source_file, sample, res))
+        checkpoint_counter += 1
+
+        if checkpoint_callback and checkpoint_every > 0 and checkpoint_counter % checkpoint_every == 0:
+            checkpoint_callback(results)
 
     return results
 
 def write_results(ds_name, solver_name, results, model_name=""):
-    model_name = (model_name or "").replace(":", "_")
-    out_dir = os.path.join(RESULTS_DIR, solver_name, model_name)
+    out_dir, outpath, _, _ = result_paths(ds_name, solver_name, model_name)
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
-    outpath = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.json')
     with open(outpath, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=4, ensure_ascii=False)
     print('Results written to %s' % outpath)
 
 def write_pkl_results(ds_name, solver_name, results, model_name=""):
-    model_name = (model_name or "").replace(":", "_")
-    out_dir = os.path.join(RESULTS_DIR, solver_name, model_name)
+    out_dir, _, outpath, _ = result_paths(ds_name, solver_name, model_name)
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
-    outpath = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
     import pickle
     with open(outpath, 'wb') as f:
         pickle.dump(results, f)
     print('Results written to %s' % outpath)
 
 def write_summary(ds_name, solver_name, results, model_name=""):
-    model_name = (model_name or "").replace(":", "_")
-    out_dir = os.path.join(RESULTS_DIR, solver_name, model_name)
+    out_dir, _, _, outpath = result_paths(ds_name, solver_name, model_name)
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
-    outpath = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '_summary.json')
     summary = {
         "dataset": ds_name,
         "solver": solver_name,
-        "model": model_name,
+        "model": (model_name or "").replace(":", "_"),
         "num_docs": len(results),
         "doc_ids": [item["doc_id"] for item in results],
         "source_file": results[0].get("source_file") if results else None,
@@ -276,12 +319,25 @@ def main(args):
     for ds_name, dataset in target_ds.items():
         print('Running experiment on %s dataset...' % ds_name)
         source_file = dataset_path(DATASETS[ds_name])
+        existing_results = []
+        if args.resume:
+            existing_results = load_existing_results(ds_name, solver_name, model_name)
+            if existing_results:
+                print('Resuming %s with %s existing results.' % (ds_name, len(existing_results)))
+
+        def checkpoint(current_results):
+            write_results(ds_name, solver_name, current_results, model_name)
+            write_summary(ds_name, solver_name, current_results, model_name)
+
         results = run_experiment(
             dataset,
             solver,
             ds_name=ds_name,
             source_file=source_file,
             coref_texts=coref_by_domain[ds_name] or None,
+            existing_results=existing_results,
+            checkpoint_callback=checkpoint,
+            checkpoint_every=args.checkpoint_every,
         )
         write_results(ds_name, solver_name, results, model_name)
         write_pkl_results(ds_name, solver_name, dataset, model_name)
@@ -299,6 +355,8 @@ if __name__ == "__main__":
     parser.add_argument('-t', type=int, help='temperature for llm based solver')
     parser.add_argument('--coref', choices=['none', 'llm', 'nlp'], default='none', help='replace input text with precomputed coreference-resolved text')
     parser.add_argument('--coref-dir', help='directory containing *_llm_coref.jsonl or *_coref.json files')
+    parser.add_argument('--resume', action='store_true', help='skip doc_ids already present in the result JSON file')
+    parser.add_argument('--checkpoint-every', type=int, default=1, help='write partial JSON results every N newly processed instances')
     parser.add_argument('--debug', action='store_true', help='debug mode')
     args = parser.parse_args()
     main(args)

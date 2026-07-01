@@ -24,6 +24,8 @@ DATASET="${DATASET:-}"
 LIMIT="${LIMIT:-}"
 COREF="${COREF:-none}"
 COREF_DIR="${COREF_DIR:-}"
+RESUME="${RESUME:-1}"
+CHECKPOINT_EVERY="${CHECKPOINT_EVERY:-1}"
 
 mkdir -p "$MODEL_DIR"
 
@@ -64,6 +66,12 @@ for SOLVER in $SOLVERS; do
     fi
     if [ -n "$COREF_DIR" ]; then
         ARGS+=(--coref-dir "$COREF_DIR")
+    fi
+    if [ "$RESUME" != "0" ]; then
+        ARGS+=(--resume)
+    fi
+    if [ -n "$CHECKPOINT_EVERY" ]; then
+        ARGS+=(--checkpoint-every "$CHECKPOINT_EVERY")
     fi
 
     singularity exec --nv \
