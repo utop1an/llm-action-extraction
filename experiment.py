@@ -34,7 +34,9 @@ MODELS = [
     "gemma3",
     "gemma3:12b",
     "gemma3-12b",
+    "gemma3-27b",
     "llama3.2",
+    "llama3-3b",
     "llama3-70b",
 ]
 
@@ -159,6 +161,12 @@ def result_paths(ds_name, solver_name, model_name=""):
     pkl_path = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '.pkl')
     summary_path = os.path.join(out_dir, ds_name + '_' + solver_name + '_' + (model_name if model_name else '') + '_summary.json')
     return out_dir, outpath, pkl_path, summary_path
+
+
+def result_solver_name(solver_name, coref="none"):
+    if coref in (None, "", "none"):
+        return solver_name
+    return f"{solver_name}_coref"
 
 
 def load_existing_results(ds_name, solver_name, model_name=""):
@@ -315,19 +323,23 @@ def main(args):
             print('Unknown solver: %s' % solver_name)
             sys.exit(1)
 
+    output_solver_name = result_solver_name(solver_name, args.coref)
+
     print("Starting experiment with solver: %s, model: %s" % (solver_name, model_name if model_name else ''))
+    if output_solver_name != solver_name:
+        print("Writing coref experiment results under solver name: %s" % output_solver_name)
     for ds_name, dataset in target_ds.items():
         print('Running experiment on %s dataset...' % ds_name)
         source_file = dataset_path(DATASETS[ds_name])
         existing_results = []
         if args.resume:
-            existing_results = load_existing_results(ds_name, solver_name, model_name)
+            existing_results = load_existing_results(ds_name, output_solver_name, model_name)
             if existing_results:
                 print('Resuming %s with %s existing results.' % (ds_name, len(existing_results)))
 
         def checkpoint(current_results):
-            write_results(ds_name, solver_name, current_results, model_name)
-            write_summary(ds_name, solver_name, current_results, model_name)
+            write_results(ds_name, output_solver_name, current_results, model_name)
+            write_summary(ds_name, output_solver_name, current_results, model_name)
 
         results = run_experiment(
             dataset,
@@ -339,10 +351,10 @@ def main(args):
             checkpoint_callback=checkpoint,
             checkpoint_every=args.checkpoint_every,
         )
-        write_results(ds_name, solver_name, results, model_name)
-        write_pkl_results(ds_name, solver_name, dataset, model_name)
-        write_summary(ds_name, solver_name, results, model_name)
-        print('Experiment on %s dataset (%s, %s) done!' % (ds_name, solver_name, model_name if model_name else ''))
+        write_results(ds_name, output_solver_name, results, model_name)
+        write_pkl_results(ds_name, output_solver_name, dataset, model_name)
+        write_summary(ds_name, output_solver_name, results, model_name)
+        print('Experiment on %s dataset (%s, %s) done!' % (ds_name, output_solver_name, model_name if model_name else ''))
 
 
 if __name__ == "__main__":

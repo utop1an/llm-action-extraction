@@ -1,6 +1,6 @@
 import json
 
-from experiment import build_result_record, load_coref_texts, sample_to_input_text
+from experiment import build_result_record, load_coref_texts, result_solver_name, sample_to_input_text
 from scripts import openai_batch_experiment as batch
 
 
@@ -147,6 +147,9 @@ def test_result_solver_name_adds_coref_suffix():
         batch.result_solver_name({"solver": "nl2p_1_ablation", "coref": "llm"})
         == "nl2p_1_ablation_coref"
     )
+    assert result_solver_name("nl2p_1", "none") == "nl2p_1"
+    assert result_solver_name("nl2p_1", "llm") == "nl2p_1_coref"
+    assert result_solver_name("nl2p_1_ablation", "nlp") == "nl2p_1_ablation_coref"
 
 
 def test_collect_writes_coref_results_under_coref_solver(tmp_path, monkeypatch):

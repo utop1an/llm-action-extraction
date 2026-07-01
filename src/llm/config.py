@@ -8,12 +8,6 @@ load_dotenv()
 
 # Model configurations
 MODELS = {
-    "gpt-4": {
-        "provider": "openai",
-        "model_name": "gpt-4",
-        "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL")
-    },
     "gpt-4.1": {
         "provider": "openai",
         "model_name": "gpt-4.1",
@@ -32,13 +26,6 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL")
     },
-    "gpt-5": {
-        "provider": "openai",
-        "model_name": "gpt-5",
-        "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL"),
-        "supports_custom_sampling": False,
-    },
     "gpt-5.4": {
         "provider": "openai",
         "model_name": "gpt-5.4",
@@ -49,20 +36,6 @@ MODELS = {
     "gpt-5.4-mini": {
         "provider": "openai",
         "model_name": "gpt-5.4-mini",
-        "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL"),
-        "supports_custom_sampling": False,
-    },
-    "gpt-5-mini": {
-        "provider": "openai",
-        "model_name": "gpt-5-mini",
-        "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL"),
-        "supports_custom_sampling": False,
-    },
-    "gpt-5-nano": {
-        "provider": "openai",
-        "model_name": "gpt-5-nano",
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL"),
         "supports_custom_sampling": False,
@@ -79,43 +52,17 @@ MODELS = {
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_BASE_URL")
     },
-    "gpt-3.5-turbo": {
-        "provider": "openai",
-        "model_name": "gpt-3.5-turbo",
-        "api_key": os.getenv("OPENAI_API_KEY"),
-        "base_url": os.getenv("OPENAI_BASE_URL")
-    },
-    "ds-chat": {
-        "provider": "openai",
-        "model_name": "deepseek-chat",
-        "api_key": os.getenv("DEEPSEEK_API_KEY"),
-        "base_url": os.getenv("DEEPSEEK_BASE_URL")
-    },
-    "ds-reasoner": {
-        "provider": "openai",
-        "model_name": "deepseek-reasoner",
-        "api_key": os.getenv("DEEPSEEK_API_KEY"),
-        "base_url": os.getenv("DEEPSEEK_BASE_URL")
-    },
     "ds-r1:8b": {
         "provider": "ollama",
         "model_name": "deepseek-r1:8b",
-    },
-    "gemma3": {
-        "provider": "ollama",
-        "model_name": "gemma3",
-    },
-    "gemma3:12b": {
-        "provider": "ollama",
-        "model_name": "gemma3:12b",
     },
     "gemma3-12b": {
         "provider": "ollama",
         "model_name": "gemma3:12b",
     },
-    "llama3.2": {
+    "gemma3-27b": {
         "provider": "ollama",
-        "model_name": "llama3.2",
+        "model_name": "gemma3:27b",
     },
     "llama3-70b": {
         "provider": "ollama",

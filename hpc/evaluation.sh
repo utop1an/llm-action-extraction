@@ -3,7 +3,7 @@ set -euo pipefail
 
 PREFIX="${PREFIX:-./results}"
 SOLVERS="${SOLVERS:-nl2p_1 nl2p_1_ablation}"
-MODELS="${MODELS:-gpt-5.4 gpt-5.4-mini gemma3-12b llama3-70b}"
+MODELS="${MODELS:-gpt-5.4 gpt-5.4-mini gemma3-12b gemma3-27b llama3-3b llama3-70b}"
 DIAGNOSTICS="${DIAGNOSTICS:---diagnostics}"
 PYTHON="${PYTHON:-python3}"
 
