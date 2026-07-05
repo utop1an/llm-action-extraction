@@ -1,0 +1,336 @@
+[
+    {
+        "dataset": "win2k",
+        "doc_id": 0,
+        "sentences": [
+            "Click start point to settings and then click control panel",
+            "On the view menu click large icons",
+            "On the view menu click small icons"
+        ],
+        "prediction": [
+            {
+                "verb": "click",
+                "arguments": [
+                    "start point"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "control panel"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "large icons"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "small icons"
+                ]
+            }
+        ],
+        "gold_actions": [
+            {
+                "act_idx": 0,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        1
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "start"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 2,
+                "verb": "point",
+                "obj_idxs": [
+                    [
+                        4
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "settings"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 7,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        8,
+                        9
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "control",
+                        "panel"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 14,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        15,
+                        16
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "large",
+                        "icons"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 21,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        22,
+                        23
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "small",
+                        "icons"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            }
+        ]
+    },
+    {
+        "dataset": "win2k",
+        "doc_id": 1,
+        "sentences": [
+            "Click start point to settings click control panel and then double-click regional options",
+            "Under language settings for the system click to select the japanese check box",
+            "In the your locale (location) list click japanese and then click ok"
+        ],
+        "prediction": [
+            {
+                "verb": "Click",
+                "arguments": [
+                    "start point"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "control panel"
+                ]
+            },
+            {
+                "verb": "double-click",
+                "arguments": [
+                    "regional options"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "japanese check box"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "japanese"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "ok"
+                ]
+            }
+        ],
+        "gold_actions": [
+            {
+                "act_idx": 0,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        1
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "start"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 2,
+                "verb": "point",
+                "obj_idxs": [
+                    [
+                        4
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "settings"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 5,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        6,
+                        7
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "control",
+                        "panel"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 10,
+                "verb": "double-click",
+                "obj_idxs": [
+                    [
+                        11,
+                        12
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "regional",
+                        "options"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 19,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        -1
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "ok"
+                    ],
+                    []
+                ],
+                "act_type": 2,
+                "related_acts": []
+            },
+            {
+                "act_idx": 21,
+                "verb": "select",
+                "obj_idxs": [
+                    [
+                        23,
+                        24,
+                        25
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "japanese",
+                        "check",
+                        "box"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 32,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        33
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "japanese"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 36,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        37
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "ok"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            }
+        ]
+    }
+]
