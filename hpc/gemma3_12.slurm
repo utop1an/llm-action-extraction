@@ -26,10 +26,16 @@ COREF="${COREF:-none}"
 COREF_DIR="${COREF_DIR:-}"
 RESUME="${RESUME:-1}"
 CHECKPOINT_EVERY="${CHECKPOINT_EVERY:-1}"
+JOB_ID_FOR_PORT="${SLURM_JOB_ID:-$$}"
+OLLAMA_PORT="${OLLAMA_PORT:-$((20000 + JOB_ID_FOR_PORT % 20000))}"
+export OLLAMA_HOST="${OLLAMA_HOST:-127.0.0.1:${OLLAMA_PORT}}"
+export SINGULARITYENV_OLLAMA_HOST="$OLLAMA_HOST"
+export APPTAINERENV_OLLAMA_HOST="$OLLAMA_HOST"
 
 mkdir -p "$MODEL_DIR"
 
 # 1. Start Ollama
+echo "Starting Ollama on $OLLAMA_HOST"
 singularity exec --nv \
   -B "$MODEL_DIR:/ollama" \
   "$SIF" \
@@ -40,7 +46,7 @@ trap "kill $OLLAMA_PID 2>/dev/null || true" EXIT
 
 # 2. Wait for Ollama
 echo "Waiting for Ollama..."
-until curl -s http://127.0.0.1:11434/api/tags >/dev/null; do
+until curl -s "http://${OLLAMA_HOST}/api/tags" >/dev/null; do
     sleep 2
 done
 

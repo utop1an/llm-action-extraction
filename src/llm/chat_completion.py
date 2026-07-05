@@ -1,4 +1,5 @@
 import asyncio
+import os
 from typing import Dict, Any, List
 from .config import MODELS
 from .base import BaseLLMClient
@@ -19,7 +20,7 @@ def get_llm_client(model_config: Dict[str, Any]) -> BaseLLMClient:
         model_config["model_name"],
         model_config.get("base_url"),
         model_config.get("api_key"),
-        model_config.get("host"),
+        model_config.get("host") or os.getenv("OLLAMA_HOST"),
     )
     if cache_key in _CLIENT_CACHE:
         return _CLIENT_CACHE[cache_key]

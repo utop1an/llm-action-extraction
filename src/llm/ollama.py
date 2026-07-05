@@ -2,6 +2,7 @@ import time
 from typing import Dict, Any
 from .base import BaseLLMClient
 import re
+import os
 
 def split_think_content(text):
     match = re.search(r"<think>(.*?)</think>\s*(.*)", text, re.DOTALL)
@@ -21,7 +22,9 @@ class OllamaClient(BaseLLMClient):
             raise ImportError("Ollama library not found. Please install it using 'pip install ollama'.")
             
         super().__init__(config)
-        host = config.get("host", "http://localhost:11434")
+        host = config.get("host") or os.getenv("OLLAMA_HOST") or "http://localhost:11434"
+        if not host.startswith(("http://", "https://")):
+            host = f"http://{host}"
         self.client = Client(host=host)
         self.async_client = AsyncClient(host=host)
         
