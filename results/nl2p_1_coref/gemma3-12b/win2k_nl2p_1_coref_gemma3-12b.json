@@ -34876,5 +34876,417 @@
                 "related_acts": []
             }
         ]
+    },
+    {
+        "dataset": "win2k",
+        "doc_id": 152,
+        "sentences": [
+            "On the desktop right-click my network places and then click properties",
+            "Right-Click the internal adapter and then click properties",
+            "Click internet protocol (tcp/ip) and then click properties",
+            "Click the advanced button",
+            "Click the dns tab and then click to select the register this connection's addresses in dns check box at the bottom of the tab",
+            "Click ok until the network properties dialog box is closed"
+        ],
+        "prediction": [
+            {
+                "verb": "right-click",
+                "arguments": [
+                    "my network places"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "properties"
+                ]
+            },
+            {
+                "verb": "right-click",
+                "arguments": [
+                    "the internal adapter"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "properties"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "internet protocol (tcp/ip)"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "properties"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "the advanced button"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "the dns tab"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "to select the register this connection's addresses in dns check box"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "ok"
+                ]
+            }
+        ],
+        "gold_actions": [
+            {
+                "act_idx": 3,
+                "verb": "right-click",
+                "obj_idxs": [
+                    [
+                        5,
+                        6
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "network",
+                        "places"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 9,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        10
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "properties"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 11,
+                "verb": "Right-Click",
+                "obj_idxs": [
+                    [
+                        13,
+                        14
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "internal",
+                        "adapter"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 17,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        18
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "properties"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 19,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        20,
+                        21
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "internet",
+                        "protocol"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 25,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        26
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "properties"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 27,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        29,
+                        30
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "advanced",
+                        "button"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 31,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        33,
+                        34
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "dns",
+                        "tab"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 37,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        -1
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "closed"
+                    ],
+                    []
+                ],
+                "act_type": 2,
+                "related_acts": []
+            },
+            {
+                "act_idx": 39,
+                "verb": "select",
+                "obj_idxs": [
+                    [
+                        47,
+                        48
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "check",
+                        "box"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 55,
+                "verb": "Click",
+                "obj_idxs": [
+                    [
+                        56
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "ok"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 64,
+                "verb": "closed",
+                "obj_idxs": [
+                    [
+                        61,
+                        62
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "dialog",
+                        "box"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            }
+        ]
+    },
+    {
+        "dataset": "win2k",
+        "doc_id": 153,
+        "sentences": [
+            "Double-Click the sounds and multimedia in the control panel",
+            "On the sounds tab under sound volume click to clear the show volume control on the taskbar check box and then click ok"
+        ],
+        "prediction": [
+            {
+                "verb": "Double-Click",
+                "arguments": [
+                    "sounds and multimedia"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "show volume control on the taskbar check box"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "ok"
+                ]
+            }
+        ],
+        "gold_actions": [
+            {
+                "act_idx": 0,
+                "verb": "Double-Click",
+                "obj_idxs": [
+                    [
+                        2,
+                        4
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "sounds",
+                        "multimedia"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 16,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        -1
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "ok"
+                    ],
+                    []
+                ],
+                "act_type": 2,
+                "related_acts": []
+            },
+            {
+                "act_idx": 18,
+                "verb": "clear",
+                "obj_idxs": [
+                    [
+                        26,
+                        27
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "check",
+                        "box"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            },
+            {
+                "act_idx": 30,
+                "verb": "click",
+                "obj_idxs": [
+                    [
+                        31
+                    ],
+                    []
+                ],
+                "arguments": [
+                    [
+                        "ok"
+                    ],
+                    []
+                ],
+                "act_type": 1,
+                "related_acts": []
+            }
+        ]
     }
 ]
