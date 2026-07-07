@@ -337,8 +337,40 @@ def main(args):
     if args.diagnostics:
         write_diagnostics(diagnostics, dir)
 
+def debug():
+    # Evaluation Parameters
+    model_name = "nl2p_1"
+    dataset_name = "wikihow"
+    solver_name = "gpt-5.4"
+    doc_id = 38
+
+    # Read dataset
+    input_dir = f"./results/{model_name}/{solver_name}"
+    output_dir = f"./results/{model_name}/{solver_name}/debug"
+    os.makedirs(output_dir, exist_ok=True)
+    predicts = read_from_predicted_dataset(input_dir)
+    target_ds = predicts.get((dataset_name, model_name, solver_name), [])
+    if not target_ds:
+        raise ValueError(f"No predictions found for dataset {dataset_name}, solver {solver_name}, model {model_name}.")    
+    
+    # Create dummy input for evaluation
+    target_doc = [doc for doc in target_ds if doc.get("doc_id") == doc_id]
+    target_input = {
+        (dataset_name, solver_name, model_name): target_doc
+    }
+
+    # Run evaluation and output
+    results, diagnostics = run_evaluation(target_input, collect_diagnostics=True)
+    print("Evaluation done!")
+    write_results(results, output_dir)
+    write_diagnostics(diagnostics, output_dir)
+
 
 if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        debug()
+        sys.exit(0)
+    
     import argparse
 
     parser = argparse.ArgumentParser()
