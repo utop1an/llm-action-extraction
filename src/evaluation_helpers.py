@@ -17,7 +17,7 @@ import json
 import os
 
 import spacy
-
+from functools import lru_cache
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -132,7 +132,7 @@ def write_diagnostics(diagnostics: list, dir: str):
             writer.writerow({key: row.get(key, "") for key in fieldnames})
     print("Mismatch diagnostics written to %s" % outpath)
 
-
+@lru_cache(maxsize=None)
 def normalized_argument_text(text):
     """Normalize an argument phrase to lowercase lemmas without spaces/punctuation."""
     return " ".join(
@@ -141,7 +141,7 @@ def normalized_argument_text(text):
         if not token.is_space and not token.is_punct
     )
 
-
+@lru_cache(maxsize=None)
 def argument_head_lemma(text):
     """Return the best available head lemma for an argument phrase.
 
@@ -232,12 +232,12 @@ def match_obj(gt_name, pred_name):
     """Return whether a predicted object is an accepted match for a gold object."""
     return bool(argument_match_type(gt_name, pred_name))
 
-
+@lru_cache(maxsize=None)
 def lemma_text(text):
     """Return lowercase lemmas for all non-space tokens in `text`."""
     return " ".join(token.lemma_.lower() for token in nlp(str(text)) if not token.is_space)
 
-
+@lru_cache(maxsize=None)
 def content_lemmas(text):
     """Return lowercase lemmas excluding whitespace and punctuation tokens."""
     return {
