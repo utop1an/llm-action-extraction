@@ -115,7 +115,20 @@ def write_diagnostics(diagnostics: list, dir: str):
     with open(outpath, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        for row in diagnostics:
+        for row in sorted(
+            diagnostics,
+            key=lambda row: (
+                row.get("dataset", ""),
+                row.get("solver", ""),
+                row.get("model", ""),
+                row.get("doc_id", ""),
+                row.get("mismatch_type", ""),
+                row.get("gold_verb", ""),
+                row.get("pred_verb", ""),
+                row.get("gold_arguments", ""),
+                row.get("pred_arguments", ""),
+            ),
+        ):
             writer.writerow({key: row.get(key, "") for key in fieldnames})
     print("Mismatch diagnostics written to %s" % outpath)
 

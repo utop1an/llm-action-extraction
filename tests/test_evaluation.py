@@ -724,7 +724,7 @@ def test_evaluation_prediction_with_no_gold_actions_is_diagnosed_as_unused_predi
     assert diagnostics[0]["candidate_llm_issue"] == ""
 
 
-def test_evaluation_unmatched_gold_with_similar_unused_prediction_diagnoses_wrong_action():
+def test_evaluation_single_argument_overlap_is_not_enough_for_wrong_action():
     data = [
         sample(
             [act(5, [7])],
@@ -738,11 +738,84 @@ def test_evaluation_unmatched_gold_with_similar_unused_prediction_diagnoses_wron
 
     assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
     assert len(diagnostics) == 2
-    assert diagnostics[0]["mismatch_type"] == "wrong_action"
+    assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
     assert diagnostics[0]["candidate_dataset_issue"] == ""
-    assert diagnostics[0]["candidate_llm_issue"] == "wrong_actions"
+    assert diagnostics[0]["candidate_llm_issue"] == "missing_actions"
     assert diagnostics[1]["mismatch_type"] == "unmatched_prediction"
     assert diagnostics[1]["candidate_llm_issue"] == "extra_actions"
+
+
+def test_evaluation_stronger_overlap_diagnoses_wrong_action():
+    words = ["open", "source", "file"]
+    data = [
+        sample(
+            [act(0, [1, 2])],
+            [{"verb": "load", "arguments": ["source file"]}],
+            words=words,
+            sents=[["open", "source", "file"]],
+            original_text="open source file.",
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
+    assert len(diagnostics) == 2
+    assert diagnostics[0]["mismatch_type"] == "wrong_action"
+    assert diagnostics[0]["candidate_llm_issue"] == "wrong_actions"
+    assert diagnostics[1]["mismatch_type"] == "unmatched_prediction"
+
+
+def test_unmatched_gold_diagnostic_does_not_reuse_future_matched_prediction():
+    words = ["give", "caesar", "salad", "transfer", "dressing"]
+    data = [
+        sample(
+            [
+                act(0, [2]),
+                act(3, [4]),
+            ],
+            [{"verb": "transfer", "arguments": ["dressing"]}],
+            words=words,
+            sents=[["give", "caesar", "salad"], ["transfer", "dressing"]],
+            original_text="give caesar salad. transfer dressing.",
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 0.5, 2 / 3, 1, 1, 1))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
+    assert diagnostics[0]["gold_verb"] == "give"
+    assert diagnostics[0]["pred_verb"] == ""
+
+
+def test_repeated_verbs_use_global_argument_quality_matching():
+    words = ["add", "flavor", "add", "bread", "add", "salt", "pepper"]
+    data = [
+        sample(
+            [
+                act(0, [1]),
+                act(2, [3]),
+                act(4, [5, 6]),
+            ],
+            [
+                {"verb": "Add", "arguments": ["bread"]},
+                {"verb": "Add", "arguments": ["salt", "pepper"]},
+            ],
+            words=words,
+            sents=[["add", "flavor"], ["add", "bread"], ["add", "salt", "pepper"]],
+            original_text="add flavor. add bread. add salt and pepper.",
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 2 / 3, 0.8, 1, 1, 1))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
+    assert diagnostics[0]["gold_verb"] == "add"
+    assert diagnostics[0]["gold_arguments"] == '["flavor"]'
 
 
 def test_evaluation_exclusive_actions_count_truth_once():
