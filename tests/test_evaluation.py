@@ -510,6 +510,24 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_missing_preposition_obje
     assert row["extra_pred_args"] == '["bowl"]'
 
 
+def test_adjusted_metric_only_filters_preposition_extra_pred_args():
+    words = ["put", "food"]
+    data = [
+        sample(
+            [act(0, [1])],
+            [{"verb": "put", "arguments": ["food", "bowl", "timer"]}],
+            words=words,
+            sents=[["put", "food", "into", "the", "red", "bowl"]],
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 1 / 3, 1, 0.5, 0.5, 1, 2 / 3))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["extra_pred_args"] == '["bowl", "timer"]'
+
+
 def test_evaluation_argument_mismatch_diagnoses_dataset_missing_with_object():
     words = ["make", "sauce"]
     data = [
@@ -556,6 +574,24 @@ def test_evaluation_argument_mismatch_diagnoses_dataset_extra_preposition_object
     )
     assert row["missing_gold_args"] == '["bowl"]'
     assert row["extra_pred_args"] == "[]"
+
+
+def test_adjusted_metric_only_filters_preposition_missing_gold_args():
+    words = ["put", "food", "bowl", "timer"]
+    data = [
+        sample(
+            [act(0, [1, 2, 3])],
+            [{"verb": "put", "arguments": ["food"]}],
+            words=words,
+            sents=[["put", "food", "into", "the", "red", "bowl"]],
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
+
+    assert_close_tuple(metrics, (1, 1, 1, 1, 1 / 3, 0.5, 1, 0.5, 2 / 3))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["missing_gold_args"] == '["bowl", "timer"]'
 
 
 def test_evaluation_argument_mismatch_diagnoses_dataset_extra_with_object():

@@ -582,6 +582,13 @@ def classify_argument_mismatch(gold_args, pred_args, source_text="", action_verb
     The `reason` string records the heuristic evidence used for that assignment.
     """
     missing_from_pred, extra_in_pred = arg_diff(gold_args, pred_args)
+    missing_preposition_objects = [
+        arg for arg in missing_from_pred if is_preposition_object_in_text(arg, source_text, action_verb)
+    ]
+    extra_preposition_objects = [
+        arg for arg in extra_in_pred if is_preposition_object_in_text(arg, source_text, action_verb)
+    ]
+    split_missing_from_pred = []
     notes = []
     dataset_issues = []
     llm_issues = []
@@ -589,10 +596,11 @@ def classify_argument_mismatch(gold_args, pred_args, source_text="", action_verb
     if missing_from_pred:
         notes.append("gold has arguments not matched by prediction")
         gold_specific_issues = []
-        if _any_preposition_object(missing_from_pred, source_text, action_verb):
+        if missing_preposition_objects:
             gold_specific_issues.extend(["extra_arguments", "extra_arguments:preposition_object"])
             notes.append("gold unmatched argument is a preposition object in source text")
         elif is_gold_split_modifier_case(gold_args, pred_args, missing_from_pred):
+            split_missing_from_pred = missing_from_pred
             gold_specific_issues.extend(["extra_arguments", "extra_arguments:unnecessary_head_or_modifier_split"])
             notes.append("gold unmatched argument looks like a split modifier/head word")
         elif not extra_in_pred and has_missing_gold_generic_reference(missing_from_pred, pred_args):
@@ -605,7 +613,7 @@ def classify_argument_mismatch(gold_args, pred_args, source_text="", action_verb
 
     if extra_in_pred:
         notes.append("prediction has arguments not matched by gold")
-        if _any_preposition_object(extra_in_pred, source_text, action_verb):
+        if extra_preposition_objects:
             _append_unique(dataset_issues, ["missing_arguments", "missing_arguments:preposition_object"])
             notes.append("pred unmatched argument is a preposition object in source text; annotation may have omitted it")
         elif has_gold_generic_reference_with_concrete_prediction(gold_args, pred_args, extra_in_pred):
@@ -628,6 +636,9 @@ def classify_argument_mismatch(gold_args, pred_args, source_text="", action_verb
     return {
         "missing_from_pred": missing_from_pred,
         "extra_in_pred": extra_in_pred,
+        "split_missing_from_pred": split_missing_from_pred,
+        "missing_preposition_objects": missing_preposition_objects,
+        "extra_preposition_objects": extra_preposition_objects,
         "candidate_dataset_issue": "|".join(dict.fromkeys(dataset_issues)),
         "candidate_llm_issue": "|".join(dict.fromkeys(llm_issues)),
         "strong_dataset_issue": "|".join(dict.fromkeys(dataset_issues)),

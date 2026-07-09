@@ -229,11 +229,11 @@ def _adjusted_object_deductions(arg_info):
     gold_deduction = 0
     pred_deduction = 0
     if "extra_arguments:unnecessary_head_or_modifier_split" in issues:
-        gold_deduction += len(arg_info.get("missing_from_pred", []))
+        gold_deduction += len(arg_info.get("split_missing_from_pred", []))
     if "extra_arguments:preposition_object" in issues:
-        gold_deduction += len(arg_info.get("missing_from_pred", []))
+        gold_deduction += len(arg_info.get("missing_preposition_objects", []))
     if "missing_arguments:preposition_object" in issues:
-        pred_deduction += len(arg_info.get("extra_in_pred", []))
+        pred_deduction += len(arg_info.get("extra_preposition_objects", []))
     return gold_deduction, pred_deduction
 
 
