@@ -761,10 +761,11 @@ def match(act, pred, words):
     if pred_act_name is None:
         return False, 0, 0, 0, 0
 
-    act_lemma = nlp(act_name)[0].lemma_.lower()
-    doc2 = nlp(pred_act_name)
-    pred_act_lemma = " ".join([token.lemma_.lower() for token in doc2])
-    if not act_lemma in pred_act_lemma:
+    act_lemma_text = lemma_text(act_name)
+    act_lemma = act_lemma_text.split()[0] if act_lemma_text else ""
+    
+    pred_act_lemma = lemma_text(pred_act_name)
+    if not act_lemma or act_lemma not in pred_act_lemma:
         return False, 0, 0, 0, 0
 
     obj_idxs = act.get("obj_idxs", [[], []])
