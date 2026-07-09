@@ -110,7 +110,8 @@ def write_diagnostics(diagnostics: list, dir: str):
         "mismatch_type", "candidate_dataset_issue", "candidate_llm_issue",
         "strong_dataset_issue", "dataset_issue_confidence", "reason",
         "original_text", "gold_verb", "gold_arguments", "pred_verb",
-        "pred_arguments", "gold_action", "pred_action",
+        "pred_arguments", "missing_gold_args", "extra_pred_args",
+        "gold_action", "pred_action",
     ]
     with open(outpath, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -118,15 +119,15 @@ def write_diagnostics(diagnostics: list, dir: str):
         for row in sorted(
             diagnostics,
             key=lambda row: (
-                row.get("dataset", ""),
-                row.get("solver", ""),
-                row.get("model", ""),
-                row.get("doc_id", ""),
-                row.get("mismatch_type", ""),
-                row.get("gold_verb", ""),
-                row.get("pred_verb", ""),
-                row.get("gold_arguments", ""),
-                row.get("pred_arguments", ""),
+                str(row.get("dataset", "")),
+                str(row.get("solver", "")),
+                str(row.get("model", "")),
+                str(row.get("doc_id", "")),
+                str(row.get("mismatch_type", "")),
+                str(row.get("gold_verb", "")),
+                str(row.get("pred_verb", "")),
+                str(row.get("gold_arguments", "")),
+                str(row.get("pred_arguments", "")),
             ),
         ):
             writer.writerow({key: row.get(key, "") for key in fieldnames})
@@ -688,6 +689,8 @@ def diagnostic_row(
         "gold_arguments": json.dumps(gold.get("arguments", []), ensure_ascii=False),
         "pred_verb": pred.get("verb", ""),
         "pred_arguments": json.dumps(normalize_args(pred.get("arguments", [])), ensure_ascii=False),
+        "missing_gold_args": "",
+        "extra_pred_args": "",
         "gold_action": json.dumps(gold, ensure_ascii=False),
         "pred_action": json.dumps(pred, ensure_ascii=False),
     }

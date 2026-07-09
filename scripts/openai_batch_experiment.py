@@ -1,7 +1,7 @@
 r"""Prepare, submit, and collect OpenAI Batch experiments.
 
 This keeps the normal synchronous experiment path untouched. It currently
-supports one-call solvers whose output is a JSON action list.
+supports one-call solvers whose output can be parsed independently per sample.
 
 prepare
 C:\Users\Apexmod\miniforge3\envs\llm\python.exe scripts\openai_batch_experiment.py prepare -s nl2p_1 -m gpt-5.4-mini --run-id full
@@ -42,11 +42,12 @@ from experiment import (  # noqa: E402
     sample_to_input_text,
 )
 from src.llm import MODELS, generate_prompt  # noqa: E402
-from src.solvers import NL2P_1, NL2P_1_Ablation  # noqa: E402
+from src.solvers import GPT3ToPlan, NL2P_1, NL2P_1_Ablation  # noqa: E402
 
 
 BATCH_ROOT = ROOT / "results" / "batch"
 SUPPORTED_SOLVERS = {
+    "gpt3_to_plan": GPT3ToPlan,
     "nl2p_1": NL2P_1,
     "nl2p_1_ablation": NL2P_1_Ablation,
 }
@@ -115,6 +116,18 @@ def build_chat_body(model_key: str, prompt: str, temperature: float) -> dict[str
     return body
 
 
+def build_solver(solver_name: str, model_name: str, datasets: dict[str, list[dict[str, Any]]] | None = None):
+    if solver_name == "gpt3_to_plan":
+        return GPT3ToPlan(datasets=datasets or {}, model_name=model_name)
+    return SUPPORTED_SOLVERS[solver_name](model_name=model_name)
+
+
+def build_prompt(solver, paragraph: str, ds_name: str) -> str:
+    if hasattr(solver, "build_prompt"):
+        return solver.build_prompt(paragraph, ds_name=ds_name)
+    return generate_prompt(solver.prompt_name, {"nl": paragraph})
+
+
 def get_openai_client(model_key: str):
     model_config = MODELS[model_key]
     if model_config.get("provider") != "openai":
@@ -148,21 +161,25 @@ def prepare(args: argparse.Namespace) -> None:
 
     run_id = args.run_id or datetime.now().strftime("%Y%m%d-%H%M%S")
     out_dir = run_dir(args.s, args.m, run_id)
-    solver = SUPPORTED_SOLVERS[args.s](model_name=args.m)
     coref_by_domain = {
         ds_name: load_coref_texts(ds_name, coref=args.coref, coref_dir=args.coref_dir)
         for ds_name in target_datasets
     }
+    datasets = {
+        ds_name: read_from_labeled_dataset(DATASETS[ds_name], limit=args.l)
+        for ds_name in target_datasets
+    }
+    solver = build_solver(args.s, args.m, datasets=datasets)
 
     requests = []
     records = []
     for ds_name in target_datasets:
         source_file = dataset_path(DATASETS[ds_name])
-        dataset = read_from_labeled_dataset(DATASETS[ds_name], limit=args.l)
+        dataset = datasets[ds_name]
         coref_texts = coref_by_domain[ds_name] or None
         for doc_id, sample in enumerate(dataset):
             paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=doc_id, coref_texts=coref_texts)
-            prompt = generate_prompt(solver.prompt_name, {"nl": paragraph})
+            prompt = build_prompt(solver, paragraph, ds_name)
             custom_id = f"{args.s}|{safe_name(args.m)}|{ds_name}|{doc_id}"
             requests.append(
                 {
@@ -288,7 +305,7 @@ def collect(args: argparse.Namespace) -> None:
 
     output_rows = {row["custom_id"]: row for row in read_jsonl(output_path)}
     record_map = {record["custom_id"]: record for record in manifest["records"]}
-    solver = SUPPORTED_SOLVERS[manifest["solver"]](model_name=manifest["model"])
+    solver = build_solver(manifest["solver"], manifest["model"])
 
     grouped_results: dict[str, list[dict[str, Any]]] = {ds_name: [] for ds_name in manifest["datasets"]}
     grouped_samples: dict[str, list[dict[str, Any]]] = {}

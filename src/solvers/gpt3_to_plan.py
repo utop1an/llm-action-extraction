@@ -6,6 +6,8 @@ from src.llm import generate_prompt, generate_responses
 
 class GPT3ToPlan(Solver):
 
+    prompt_name = "gpt3_to_plan"
+
     def __init__(self, datasets, model_name = 'gpt-4o-mini'):
         self.model_name = model_name
         self.examples = self.generate_examples(datasets)
@@ -48,14 +50,14 @@ class GPT3ToPlan(Solver):
             examples[ds_name] = example_text
         return examples
 
-    def solve(self, paragraph, ds_name=""):
+    def build_prompt(self, paragraph, ds_name=""):
         example = self.examples.get(ds_name, [])
         if not example:
             raise ValueError(f'No examples found for dataset: {ds_name}')
-        prompt = generate_prompt('gpt3_to_plan',  {'nl': paragraph, 'egs': example})
-        response = generate_responses(self.model_name, prompt, log=True)['content']
-        
-        acts = response.strip().split(';')
+        return generate_prompt(self.prompt_name, {'nl': paragraph, 'egs': example})
+
+    def parse_json(self, string):
+        acts = string.strip().split(';')
         results = []
         for item in acts:
             m = re.match(r'(\w+)\((.*?)\)', item.strip())
@@ -71,3 +73,8 @@ class GPT3ToPlan(Solver):
             }
             results.append(act_obj)
         return results
+
+    def solve(self, paragraph, ds_name=""):
+        prompt = self.build_prompt(paragraph, ds_name=ds_name)
+        response = generate_responses(self.model_name, prompt, log=True)['content']
+        return self.parse_json(response)

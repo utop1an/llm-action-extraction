@@ -75,6 +75,49 @@ def test_prepare_writes_batch_jsonl_and_manifest(tmp_path, monkeypatch):
     assert "Pick up the box." in rows[0]["body"]["messages"][0]["content"]
 
 
+def test_prepare_gpt3_to_plan_uses_dataset_examples(tmp_path, monkeypatch):
+    sample = {
+        "sents": [["Open", "the", "box"]],
+        "words": ["Open", "the", "box"],
+        "acts": [{"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []}],
+    }
+
+    monkeypatch.setattr(batch, "BATCH_ROOT", tmp_path)
+    monkeypatch.setattr(batch, "DATASETS", {"toy": "toy_labeled_text_data"})
+    monkeypatch.setattr(batch, "dataset_path", lambda filename: f"data/easdrl/{filename}.pkl")
+    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: [sample])
+
+    args = type(
+        "Args",
+        (),
+        {
+            "s": "gpt3_to_plan",
+            "m": "gpt-5.4-mini",
+            "d": "toy",
+            "l": None,
+            "t": 0,
+            "coref": "none",
+            "coref_dir": None,
+            "run_id": "gpt3-test",
+        },
+    )()
+
+    batch.prepare(args)
+
+    out_dir = tmp_path / "gpt3_to_plan" / "gpt-5.4-mini" / "gpt3-test"
+    manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
+    row = json.loads((out_dir / "input.jsonl").read_text(encoding="utf-8").splitlines()[0])
+    prompt = row["body"]["messages"][0]["content"]
+
+    assert manifest["solver"] == "gpt3_to_plan"
+    assert manifest["prompt_name"] == "gpt3_to_plan"
+    assert row["custom_id"] == "gpt3_to_plan|gpt-5.4-mini|toy|0"
+    assert "TEXT:" in prompt
+    assert "ACTIONS:" in prompt
+    assert "Open(box)" in prompt
+    assert "Open the box." in prompt
+
+
 def test_load_llm_coref_texts_and_sample_input_replacement(tmp_path):
     coref_path = tmp_path / "toy_llm_coref.jsonl"
     coref_path.write_text(
@@ -225,3 +268,78 @@ def test_collect_writes_coref_results_under_coref_solver(tmp_path, monkeypatch):
     assert coref_result.exists()
     assert not baseline_result.exists()
     assert updated_manifest["result_solver"] == "nl2p_1_coref"
+
+
+def test_collect_gpt3_to_plan_writes_standard_results(tmp_path, monkeypatch):
+    sample = {
+        "sents": [["Open", "the", "box"], ["Close", "the", "file"]],
+        "words": ["Open", "the", "box", "Close", "the", "file"],
+        "acts": [
+            {"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []},
+            {"act_idx": 3, "obj_idxs": [[5], []], "act_type": 1, "related_acts": []},
+        ],
+    }
+
+    monkeypatch.setattr(batch, "ROOT", tmp_path)
+    monkeypatch.setattr(batch, "RESULTS_DIR", "results")
+    monkeypatch.setattr(batch, "DATASETS", {"toy": "toy_labeled_text_data"})
+    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: [sample])
+
+    manifest_path = tmp_path / "manifest.json"
+    output_path = tmp_path / "output.jsonl"
+    manifest = {
+        "solver": "gpt3_to_plan",
+        "model": "gpt-5.4-mini",
+        "datasets": ["toy"],
+        "limit": None,
+        "coref": "none",
+        "run_id": "gpt3-test",
+        "batch_id": "batch_123",
+        "records": [
+            {
+                "custom_id": "gpt3_to_plan|gpt-5.4-mini|toy|0",
+                "dataset": "toy",
+                "doc_id": 0,
+                "source_file": "data/easdrl/toy.pkl",
+                "original_text": "Open the box. Close the file.",
+            }
+        ],
+    }
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+    output_path.write_text(
+        json.dumps(
+            {
+                "custom_id": "gpt3_to_plan|gpt-5.4-mini|toy|0",
+                "response": {
+                    "status_code": 200,
+                    "body": {"choices": [{"message": {"content": "open(box);close(file)"}}]},
+                },
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    args = type(
+        "Args",
+        (),
+        {
+            "manifest": str(manifest_path),
+            "output_jsonl": str(output_path),
+            "output_file_id": None,
+        },
+    )()
+
+    batch.collect(args)
+
+    result_path = tmp_path / "results" / "gpt3_to_plan" / "gpt-5.4-mini" / "toy_gpt3_to_plan_gpt-5.4-mini.json"
+    pkl_path = tmp_path / "results" / "gpt3_to_plan" / "gpt-5.4-mini" / "toy_gpt3_to_plan_gpt-5.4-mini.pkl"
+    result = json.loads(result_path.read_text(encoding="utf-8"))
+    updated_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    assert pkl_path.exists()
+    assert result[0]["prediction"] == [
+        {"verb": "open", "arguments": ["box"]},
+        {"verb": "close", "arguments": ["file"]},
+    ]
+    assert set(result[0]) == {"dataset", "doc_id", "sentences", "prediction", "gold_actions"}
+    assert updated_manifest["result_solver"] == "gpt3_to_plan"

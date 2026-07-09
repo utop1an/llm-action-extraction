@@ -1,5 +1,6 @@
 from collections import defaultdict
 import csv
+import json
 import os
 import sys
 
@@ -85,12 +86,32 @@ def write_results(results: dict, dir: str):
             "Object Precision",
             "Object Recall",
             "Object F1",
+            "adjusted_precision",
+            "adjusted_recall",
+            "adjusted_f1",
         ])
         for k in sorted(results):
             v = results[k]
             ds_name, solver, model_name = k
-            precision, recall, f1, obj_precision, obj_recall, obj_f1 = v
-            writer.writerow([ds_name, solver, model_name, precision, recall, f1, obj_precision, obj_recall, obj_f1])
+            if len(v) == 6:
+                precision, recall, f1, obj_precision, obj_recall, obj_f1 = v
+                adjusted_precision, adjusted_recall, adjusted_f1 = obj_precision, obj_recall, obj_f1
+            else:
+                precision, recall, f1, obj_precision, obj_recall, obj_f1, adjusted_precision, adjusted_recall, adjusted_f1 = v
+            writer.writerow([
+                ds_name,
+                solver,
+                model_name,
+                precision,
+                recall,
+                f1,
+                obj_precision,
+                obj_recall,
+                obj_f1,
+                adjusted_precision,
+                adjusted_recall,
+                adjusted_f1,
+            ])
     print("Results written to %s" % outpath)
 
 
@@ -171,14 +192,17 @@ def _global_match_actions(actions, pred, used, words):
     return matches
 
 
-def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
-    arg_info = classify_argument_mismatch(
+def _classify_matched_argument_mismatch(item, gold, pred_act):
+    return classify_argument_mismatch(
         gold["arguments"],
         normalize_args(pred_act.get("arguments", [])),
         source_text=action_source_text(item, gold),
         action_verb=gold.get("verb", ""),
     )
-    return diagnostic_row(
+
+
+def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act, arg_info):
+    row = diagnostic_row(
         names,
         item,
         item_idx,
@@ -191,6 +215,26 @@ def _diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred_act):
         dataset_issue_confidence=arg_info["dataset_issue_confidence"],
         reason=arg_info["reason"],
     )
+    row["missing_gold_args"] = json_dumps(arg_info["missing_from_pred"])
+    row["extra_pred_args"] = json_dumps(arg_info["extra_in_pred"])
+    return row
+
+
+def json_dumps(value):
+    return json.dumps(value, ensure_ascii=False)
+
+
+def _adjusted_object_deductions(arg_info):
+    issues = set(filter(None, arg_info.get("strong_dataset_issue", "").split("|")))
+    gold_deduction = 0
+    pred_deduction = 0
+    if "extra_arguments:unnecessary_head_or_modifier_split" in issues:
+        gold_deduction += len(arg_info.get("missing_from_pred", []))
+    if "extra_arguments:preposition_object" in issues:
+        gold_deduction += len(arg_info.get("missing_from_pred", []))
+    if "missing_arguments:preposition_object" in issues:
+        pred_deduction += len(arg_info.get("extra_in_pred", []))
+    return gold_deduction, pred_deduction
 
 
 def _diagnose_unmatched_gold(names, item, item_idx, gold, pred, used, diagnostic_used=None):
@@ -260,6 +304,7 @@ def _diagnose_unused_predictions(names, item, item_idx, pred, used):
 def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
     total_right = total_truth = total_tagged = 0
     obj_total_right = obj_total_truth = obj_total_tagged = 0
+    adjusted_obj_total_truth = adjusted_obj_total_tagged = 0
     diagnostics = []
 
     for item_idx, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
@@ -301,11 +346,18 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
                 obj_total_tagged += best[4]
                 obj_total_truth += best[3]
                 obj_total_right += best[2]
+                adjusted_obj_total_tagged += best[4]
+                adjusted_obj_total_truth += best[3]
                 used[best[0]] = True
                 _consume_neutral_exclusive_predictions(group_acts, pred, used, neutral, words)
-                if collect_diagnostics and (best[2] < best[3] or best[2] < best[4]):
+                if best[2] < best[3] or best[2] < best[4]:
                     gold = action_record(best[1], words)
-                    diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[best[0]]))
+                    arg_info = _classify_matched_argument_mismatch(item, gold, pred[best[0]])
+                    gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
+                    adjusted_obj_total_truth -= gold_deduction
+                    adjusted_obj_total_tagged -= pred_deduction
+                    if collect_diagnostics:
+                        diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[best[0]], arg_info))
             elif act_type == 1:
                 required_actions.append((action_order, act))
             elif act_type == 2:
@@ -320,9 +372,16 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             obj_total_tagged += obj_tagged
             obj_total_truth += obj_true
             obj_total_right += obj_right
-            if collect_diagnostics and (obj_right < obj_true or obj_right < obj_tagged):
+            adjusted_obj_total_tagged += obj_tagged
+            adjusted_obj_total_truth += obj_true
+            if obj_right < obj_true or obj_right < obj_tagged:
                 gold = action_record(act, words)
-                diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx]))
+                arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
+                gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
+                adjusted_obj_total_truth -= gold_deduction
+                adjusted_obj_total_tagged -= pred_deduction
+                if collect_diagnostics:
+                    diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx], arg_info))
 
         if collect_diagnostics:
             for action_order, act in required_actions:
@@ -336,9 +395,16 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             obj_total_tagged += obj_tagged
             obj_total_truth += obj_true
             obj_total_right += obj_right
-            if collect_diagnostics and (obj_right < obj_true or obj_right < obj_tagged):
+            adjusted_obj_total_tagged += obj_tagged
+            adjusted_obj_total_truth += obj_true
+            if obj_right < obj_true or obj_right < obj_tagged:
                 gold = action_record(act, words)
-                diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx]))
+                arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
+                gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
+                adjusted_obj_total_truth -= gold_deduction
+                adjusted_obj_total_tagged -= pred_deduction
+                if collect_diagnostics:
+                    diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx], arg_info))
 
         total_tagged += sum(1 for is_neutral in neutral if not is_neutral)
 
@@ -355,11 +421,20 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
     obj_precision = obj_total_right / obj_total_tagged if obj_total_tagged > 0 else 0
     obj_recall = obj_total_right / obj_total_truth if obj_total_truth > 0 else 0
     obj_f1 = 2 * obj_precision * obj_recall / (obj_precision + obj_recall) if (obj_precision + obj_recall) > 0 else 0
+    adjusted_obj_total_truth = max(adjusted_obj_total_truth, obj_total_right)
+    adjusted_obj_total_tagged = max(adjusted_obj_total_tagged, obj_total_right)
+    adjusted_precision = obj_total_right / adjusted_obj_total_tagged if adjusted_obj_total_tagged > 0 else 0
+    adjusted_recall = obj_total_right / adjusted_obj_total_truth if adjusted_obj_total_truth > 0 else 0
+    adjusted_f1 = (
+        2 * adjusted_precision * adjusted_recall / (adjusted_precision + adjusted_recall)
+        if (adjusted_precision + adjusted_recall) > 0
+        else 0
+    )
 
     if precision == 0 or recall == 0:
         print("warning: zero precision or recall")
 
-    metrics = (precision, recall, f1, obj_precision, obj_recall, obj_f1)
+    metrics = (precision, recall, f1, obj_precision, obj_recall, obj_f1, adjusted_precision, adjusted_recall, adjusted_f1)
     if collect_diagnostics:
         return metrics, diagnostics
     return metrics
