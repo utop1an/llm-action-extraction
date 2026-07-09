@@ -44,11 +44,38 @@ def sample(acts, pred, words=None, sents=None, **extra):
 
 
 def assert_close_tuple(actual, expected):
-    if len(expected) == 6 and len(actual) == 9:
+    if len(expected) == 6 and len(actual) >= 9:
         expected = (*expected, *expected[3:6])
+        actual = actual[:9]
+    elif len(actual) > len(expected):
+        actual = actual[:len(expected)]
     assert len(actual) == len(expected)
     for got, want in zip(actual, expected):
         assert math.isclose(got, want, rel_tol=1e-9, abs_tol=1e-9)
+
+
+def test_evaluation_reports_raw_event_counts():
+    data = [
+        sample(
+            [act(5, [7])],
+            [{"verb": "open", "arguments": ["file"]}],
+            sents=[["open", "the", "file"]],
+        ),
+        sample(
+            [act(8, [10])],
+            [{"verb": "save", "arguments": []}],
+            sents=[["save", "as", "PDF"]],
+        ),
+    ]
+
+    metrics = ev.evaluation(data)
+
+    assert len(metrics) == 12
+    assert metrics[9:] == (
+        1,  # perfect_action_argument_matches
+        1,  # argument_mismatch_actions
+        2,  # matched_action_events
+    )
 
 
 def test_parse_result_filename_handles_solver_and_model_underscores():
