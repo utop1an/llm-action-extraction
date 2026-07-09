@@ -74,6 +74,11 @@ def write_results(results: dict, dir: str):
     if not os.path.exists(dir):
         os.makedirs(dir)
     outpath = os.path.join(dir, "evaluation_result.csv")
+    count_columns = [
+        "perfect_action_argument_matches",
+        "argument_mismatch_actions",
+        "matched_action_events",
+    ]
     with open(outpath, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -89,6 +94,7 @@ def write_results(results: dict, dir: str):
             "adjusted_precision",
             "adjusted_recall",
             "adjusted_f1",
+            *count_columns,
         ])
         for k in sorted(results):
             v = results[k]
@@ -96,8 +102,13 @@ def write_results(results: dict, dir: str):
             if len(v) == 6:
                 precision, recall, f1, obj_precision, obj_recall, obj_f1 = v
                 adjusted_precision, adjusted_recall, adjusted_f1 = obj_precision, obj_recall, obj_f1
-            else:
+                counts = [""] * len(count_columns)
+            elif len(v) == 9:
                 precision, recall, f1, obj_precision, obj_recall, obj_f1, adjusted_precision, adjusted_recall, adjusted_f1 = v
+                counts = [""] * len(count_columns)
+            else:
+                precision, recall, f1, obj_precision, obj_recall, obj_f1, adjusted_precision, adjusted_recall, adjusted_f1 = v[:9]
+                counts = list(v[9:])
             writer.writerow([
                 ds_name,
                 solver,
@@ -111,6 +122,7 @@ def write_results(results: dict, dir: str):
                 adjusted_precision,
                 adjusted_recall,
                 adjusted_f1,
+                *counts,
             ])
     print("Results written to %s" % outpath)
 
@@ -305,6 +317,10 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
     total_right = total_truth = total_tagged = 0
     obj_total_right = obj_total_truth = obj_total_tagged = 0
     adjusted_obj_total_truth = adjusted_obj_total_tagged = 0
+    # matched action, and arguments are also perfectly matched
+    perfect_action_argument_matches = 0
+    # matched action, but arguments have missing/extra mismatch
+    argument_mismatch_actions = 0
     diagnostics = []
 
     for item_idx, item in enumerate(tqdm(preds, desc="Processing", unit="item")):
@@ -350,6 +366,10 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
                 adjusted_obj_total_truth += best[3]
                 used[best[0]] = True
                 _consume_neutral_exclusive_predictions(group_acts, pred, used, neutral, words)
+                if best[2] == best[3] and best[2] == best[4]:
+                    perfect_action_argument_matches += 1
+                else:
+                    argument_mismatch_actions += 1
                 if best[2] < best[3] or best[2] < best[4]:
                     gold = action_record(best[1], words)
                     arg_info = _classify_matched_argument_mismatch(item, gold, pred[best[0]])
@@ -374,6 +394,10 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             obj_total_right += obj_right
             adjusted_obj_total_tagged += obj_tagged
             adjusted_obj_total_truth += obj_true
+            if obj_right == obj_true and obj_right == obj_tagged:
+                perfect_action_argument_matches += 1
+            else:
+                argument_mismatch_actions += 1
             if obj_right < obj_true or obj_right < obj_tagged:
                 gold = action_record(act, words)
                 arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
@@ -397,6 +421,10 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             obj_total_right += obj_right
             adjusted_obj_total_tagged += obj_tagged
             adjusted_obj_total_truth += obj_true
+            if obj_right == obj_true and obj_right == obj_tagged:
+                perfect_action_argument_matches += 1
+            else:
+                argument_mismatch_actions += 1
             if obj_right < obj_true or obj_right < obj_tagged:
                 gold = action_record(act, words)
                 arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
@@ -434,7 +462,22 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
     if precision == 0 or recall == 0:
         print("warning: zero precision or recall")
 
-    metrics = (precision, recall, f1, obj_precision, obj_recall, obj_f1, adjusted_precision, adjusted_recall, adjusted_f1)
+    matched_action_events = perfect_action_argument_matches + argument_mismatch_actions
+
+    metrics = (
+        precision,
+        recall,
+        f1,
+        obj_precision,
+        obj_recall,
+        obj_f1,
+        adjusted_precision,
+        adjusted_recall,
+        adjusted_f1,
+        perfect_action_argument_matches,
+        argument_mismatch_actions,
+        matched_action_events,
+    )
     if collect_diagnostics:
         return metrics, diagnostics
     return metrics
