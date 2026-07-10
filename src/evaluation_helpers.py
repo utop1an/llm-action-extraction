@@ -18,6 +18,7 @@ import os
 
 import spacy
 from functools import lru_cache
+from spacy.strings import hash_string
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -63,6 +64,59 @@ ARGUMENT_MATCH_RANK = {
     "modifier_exact": 2,
     "head_expansion": 1,
 }
+
+NOUN_LOOKUP = hash_string("noun")
+
+
+@lru_cache(maxsize=None)
+def _noun_lookup_table(name):
+    try:
+        return nlp.get_pipe("lemmatizer").lookups.get_table(name).get(NOUN_LOOKUP, {})
+    except KeyError:
+        return {}
+
+
+def argument_token_lemma(token):
+    """Return a noun-biased lemma for object/argument tokens.
+
+    Isolated objects can be mis-tagged as verbs by spaCy, e.g. `leaves` ->
+    `leave`.  For argument matching, prefer the noun lemmatizer's exceptions and
+    plural rules while leaving action verb lemmatization unchanged.
+    """
+    lower = token.text.lower()
+    if not lower:
+        return token.lemma_.lower()
+
+    exceptions = _noun_lookup_table("lemma_exc")
+    if lower in exceptions:
+        return exceptions[lower][0].lower()
+
+    should_try_plural_rule = (
+        token.tag_ in {"NNS", "NNPS"}
+        or token.pos_ in {"NOUN", "PROPN"}
+        or (token.pos_ == "VERB" and lower.endswith("s") and not lower.endswith(("ss", "us", "is")))
+    )
+    if should_try_plural_rule:
+        noun_index = _noun_lookup_table("lemma_index")
+        fallback = None
+        for suffix, replacement in _noun_lookup_table("lemma_rules"):
+            if not suffix or not lower.endswith(suffix):
+                continue
+            candidate = lower[: -len(suffix)] + replacement
+            if not candidate:
+                continue
+            if candidate in noun_index:
+                return candidate.lower()
+            if fallback is None and token.tag_ in {"NNS", "NNPS"}:
+                fallback = candidate
+        if fallback:
+            return fallback.lower()
+
+    return token.lemma_.lower()
+
+
+def has_noun_exception(token):
+    return token.text.lower() in _noun_lookup_table("lemma_exc")
 
 
 def parse_result_filename(file):
@@ -137,7 +191,7 @@ def write_diagnostics(diagnostics: list, dir: str):
 def normalized_argument_text(text):
     """Normalize an argument phrase to lowercase lemmas without spaces/punctuation."""
     return " ".join(
-        token.lemma_.lower()
+        argument_token_lemma(token)
         for token in nlp(str(text))
         if not token.is_space and not token.is_punct
     )
@@ -153,19 +207,22 @@ def argument_head_lemma(text):
     doc = nlp(str(text))
     if not doc:
         return ""
+    for token in reversed(doc):
+        if not token.is_space and not token.is_punct and not token.is_stop and has_noun_exception(token):
+            return argument_token_lemma(token)
     try:
         chunks = list(doc.noun_chunks)
     except ValueError:
         chunks = []
     if chunks:
-        return chunks[-1].root.lemma_.lower()
+        return argument_token_lemma(chunks[-1].root)
     for token in reversed(doc):
         if token.pos_ in {"NOUN", "PROPN", "PRON"}:
-            return token.lemma_.lower()
+            return argument_token_lemma(token)
     for token in reversed(doc):
         if not token.is_space and not token.is_punct and not token.is_stop:
-            return token.lemma_.lower()
-    return doc[-1].lemma_.lower()
+            return argument_token_lemma(token)
+    return argument_token_lemma(doc[-1])
 
 
 def argument_match_type(left, right):
@@ -242,7 +299,7 @@ def lemma_text(text):
 def content_lemmas(text):
     """Return lowercase lemmas excluding whitespace and punctuation tokens."""
     return {
-        token.lemma_.lower()
+        argument_token_lemma(token)
         for token in nlp(str(text))
         if not token.is_space and not token.is_punct
     }

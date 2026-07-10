@@ -2,5 +2,5 @@ from abc import ABC, abstractmethod
 
 class Solver(ABC):
     @abstractmethod
-    def solve(self, paragraph, ds_name=""):
+    def solve(self, paragraph, ds_name="", **kwargs):
         raise NotImplementedError

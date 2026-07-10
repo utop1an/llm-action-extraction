@@ -162,45 +162,30 @@ def _consume_neutral_exclusive_predictions(acts, pred, used, neutral, words):
             consumed = True
 
 
-def _global_match_actions(actions, pred, used, words):
-    """Return one-to-one matches for ordinary actions using document-level ranking."""
-    ranked_edges = []
-    for action_order, act in actions:
-        for pred_idx, pred_act in enumerate(pred):
-            if used[pred_idx]:
-                continue
-            matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
-            if not matched:
-                continue
-            unmatched_objects = (obj_true - obj_right) + (obj_tagged - obj_right)
-            ranked_edges.append(
-                (
-                    obj_f1,
-                    obj_right,
-                    -unmatched_objects,
-                    -abs(action_order - pred_idx),
-                    -action_order,
-                    -pred_idx,
-                    action_order,
-                    act,
-                    pred_idx,
-                    obj_right,
-                    obj_true,
-                    obj_tagged,
-                    obj_f1,
-                )
-            )
+def _strict_first_match_actions(actions, pred, used, words):
+    """Return order-preserving first matches for ordinary actions.
 
-    ranked_edges.sort(reverse=True)
-    matched_actions = set()
+    For each gold action, scan predictions from the previous successful match.
+    If a match is found, consume that prediction and advance both cursors.  If no
+    prediction matches the current gold action, leave predictions unconsumed and
+    try the next gold action from the same prediction cursor.
+    """
     matches = []
-    for _, _, _, _, _, _, action_order, act, pred_idx, obj_right, obj_true, obj_tagged, obj_f1 in ranked_edges:
-        if action_order in matched_actions or used[pred_idx]:
-            continue
-        matched_actions.add(action_order)
-        used[pred_idx] = True
-        matches.append((action_order, act, pred_idx, obj_right, obj_true, obj_tagged, obj_f1))
-    matches.sort(key=lambda item: item[0])
+    pred_cursor = 0
+    for action_order, act in actions:
+        pred_idx = pred_cursor
+        while pred_idx < len(pred):
+            if used[pred_idx]:
+                pred_idx += 1
+                continue
+            matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred[pred_idx], words)
+            if not matched:
+                pred_idx += 1
+                continue
+            used[pred_idx] = True
+            matches.append((action_order, act, pred_idx, obj_right, obj_true, obj_tagged, obj_f1))
+            pred_cursor = pred_idx + 1
+            break
     return matches
 
 
@@ -385,7 +370,7 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
 
         total_truth += len(required_actions)
 
-        matched_required = _global_match_actions(required_actions, pred, used, words)
+        matched_required = _strict_first_match_actions(required_actions, pred, used, words)
         matched_required_orders = {action_order for action_order, *_ in matched_required}
         for action_order, act, pred_idx, obj_right, obj_true, obj_tagged, _ in matched_required:
             total_right += 1
@@ -412,7 +397,7 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
                 if action_order not in matched_required_orders:
                     pending_unmatched_gold.append(action_record(act, words))
 
-        matched_optional = _global_match_actions(optional_actions, pred, used, words)
+        matched_optional = _strict_first_match_actions(optional_actions, pred, used, words)
         for _, act, pred_idx, obj_right, obj_true, obj_tagged, _ in matched_optional:
             total_truth += 1
             total_right += 1

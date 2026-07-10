@@ -2,6 +2,7 @@ import json
 
 from experiment import build_result_record, load_coref_texts, result_solver_name, sample_to_input_text
 from scripts import openai_batch_experiment as batch
+from src.solvers import GPT3ToPlan
 
 
 def test_build_result_record_keeps_compact_eval_fields():
@@ -75,17 +76,29 @@ def test_prepare_writes_batch_jsonl_and_manifest(tmp_path, monkeypatch):
     assert "Pick up the box." in rows[0]["body"]["messages"][0]["content"]
 
 
-def test_prepare_gpt3_to_plan_uses_dataset_examples(tmp_path, monkeypatch):
-    sample = {
-        "sents": [["Open", "the", "box"]],
-        "words": ["Open", "the", "box"],
-        "acts": [{"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []}],
-    }
+def test_prepare_gpt3_to_plan_excludes_current_doc_from_examples(tmp_path, monkeypatch):
+    samples = [
+        {
+            "sents": [["Open", "the", "box"]],
+            "words": ["Open", "the", "box"],
+            "acts": [{"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []}],
+        },
+        {
+            "sents": [["Close", "the", "lid"]],
+            "words": ["Close", "the", "lid"],
+            "acts": [{"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []}],
+        },
+        {
+            "sents": [["Move", "the", "crate"]],
+            "words": ["Move", "the", "crate"],
+            "acts": [{"act_idx": 0, "obj_idxs": [[2], []], "act_type": 1, "related_acts": []}],
+        },
+    ]
 
     monkeypatch.setattr(batch, "BATCH_ROOT", tmp_path)
     monkeypatch.setattr(batch, "DATASETS", {"toy": "toy_labeled_text_data"})
     monkeypatch.setattr(batch, "dataset_path", lambda filename: f"data/easdrl/{filename}.pkl")
-    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: [sample])
+    monkeypatch.setattr(batch, "read_from_labeled_dataset", lambda filename, limit=None: samples)
 
     args = type(
         "Args",
@@ -114,8 +127,19 @@ def test_prepare_gpt3_to_plan_uses_dataset_examples(tmp_path, monkeypatch):
     assert row["custom_id"] == "gpt3_to_plan|gpt-5.4-mini|toy|0"
     assert "TEXT:" in prompt
     assert "ACTIONS:" in prompt
-    assert "Open(box)" in prompt
     assert "Open the box." in prompt
+    assert "Open(box)" not in prompt
+    assert "Close(lid)" in prompt
+    assert "Move(crate)" in prompt
+
+
+def test_gpt3_to_plan_parse_json_accepts_multiword_action_names():
+    solver = GPT3ToPlan({}, model_name="unused")
+
+    assert solver.parse_json("add in(hash browns);double-click(control panel)") == [
+        {"verb": "add in", "arguments": ["hash browns"]},
+        {"verb": "double-click", "arguments": ["control panel"]},
+    ]
 
 
 def test_load_llm_coref_texts_and_sample_input_replacement(tmp_path):

@@ -21,7 +21,7 @@ class NL2P_1(Solver):
             f.write(json.dumps(result) + '\n')
         
 
-    def solve(self, paragraph, ds_name=""):
+    def solve(self, paragraph, ds_name="", **kwargs):
         verb_args = self.get_verb_args(paragraph)
         return verb_args
 

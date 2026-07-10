@@ -131,6 +131,15 @@ def test_argument_match_score_distinguishes_head_and_modifier_matches():
     assert ev.argument_match_type("cream cheese", "cream sauce") == ""
 
 
+def test_argument_lemmas_are_noun_biased_for_plural_objects():
+    assert ev.normalized_argument_text("leaves") == "leaf"
+    assert ev.argument_head_lemma("bay leaves") == "leaf"
+    assert ev.content_lemmas("bay leaves") == {"bay", "leaf"}
+    assert ev.match_obj("leaves", "leaf")
+    assert ev.match_obj("bay leaves", "bay leaf")
+    assert ev.lemma_text("leaves") == "leave"
+
+
 def test_match_obj_strictly_requires_same_head_or_exact_lemmas():
     assert ev.match_obj("box", "square shadow box")
     assert ev.match_obj("square shadow box", "box")
@@ -195,6 +204,15 @@ def test_match_accepts_verb_phrase_and_rejects_missing_or_wrong_verb():
         act(0, [4]),
         {"verb": "choose carefully", "arguments": ["square shadow box"]},
         WORDS,
+    )
+    assert matched
+    assert (obj_right, obj_true, obj_tagged) == (1, 1, 1)
+    assert math.isclose(obj_f1, 1.0)
+
+    matched, obj_right, obj_true, obj_tagged, obj_f1 = ev.match(
+        {"act_idx": 0, "obj_idxs": [[2], []]},
+        {"verb": "add in", "arguments": ["hash"]},
+        ["add", "in", "hash"],
     )
     assert matched
     assert (obj_right, obj_true, obj_tagged) == (1, 1, 1)
@@ -861,7 +879,7 @@ def test_unmatched_gold_diagnostic_does_not_reuse_future_matched_prediction():
     assert diagnostics[0]["pred_verb"] == ""
 
 
-def test_repeated_verbs_use_global_argument_quality_matching():
+def test_repeated_verbs_use_strict_first_match_order():
     words = ["add", "flavor", "add", "bread", "add", "salt", "pepper"]
     data = [
         sample(
@@ -882,11 +900,16 @@ def test_repeated_verbs_use_global_argument_quality_matching():
 
     metrics, diagnostics = ev.evaluation(data, names=("cooking", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
 
-    assert_close_tuple(metrics, (1, 2 / 3, 0.8, 1, 1, 1))
-    assert len(diagnostics) == 1
-    assert diagnostics[0]["mismatch_type"] == "unmatched_gold_action"
-    assert diagnostics[0]["gold_verb"] == "add"
+    assert_close_tuple(metrics, (1, 2 / 3, 0.8, 0, 0, 0))
+    assert len(diagnostics) == 3
+    assert diagnostics[0]["mismatch_type"] == "argument_mismatch"
     assert diagnostics[0]["gold_arguments"] == '["flavor"]'
+    assert diagnostics[0]["pred_arguments"] == '["bread"]'
+    assert diagnostics[1]["mismatch_type"] == "argument_mismatch"
+    assert diagnostics[1]["gold_arguments"] == '["bread"]'
+    assert diagnostics[1]["pred_arguments"] == '["salt", "pepper"]'
+    assert diagnostics[2]["mismatch_type"] == "unmatched_gold_action"
+    assert diagnostics[2]["gold_arguments"] == '["salt", "pepper"]'
 
 
 def test_evaluation_exclusive_actions_count_truth_once():

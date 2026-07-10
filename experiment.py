@@ -211,7 +211,7 @@ def run_experiment(
         sample = dataset[i]
         paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=i, coref_texts=coref_texts)
 
-        raw_res = solver.solve(paragraph, ds_name=ds_name)
+        raw_res = solver.solve(paragraph, ds_name=ds_name, doc_id=i)
         res = refine_results(raw_res)
         sample["pred"] = res
         sample["doc_id"] = i

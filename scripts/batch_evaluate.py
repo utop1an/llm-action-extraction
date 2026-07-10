@@ -20,7 +20,7 @@ from typing import BinaryIO
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOLVERS = ("nl2p_1", "nl2p_1_ablation", "nl2p_1_coref")
+DEFAULT_SOLVERS = ("nl2p_1", "nl2p_1_ablation", "nl2p_1_coref", "gpt3_to_plan")
 DEFAULT_MODELS = (
     "gpt-5.4",
     "gpt-5.4-mini",
@@ -240,7 +240,7 @@ def build_parser() -> argparse.ArgumentParser:
         "-j",
         "--jobs",
         type=positive_int,
-        default=min(4, os.cpu_count() or 1),
+        default=min(5, os.cpu_count() or 1),
         help="Maximum concurrent evaluation.py processes.",
     )
     parser.add_argument("--python", default=sys.executable, help="Python executable used to run evaluation.py.")

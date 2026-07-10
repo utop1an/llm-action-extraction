@@ -173,9 +173,7 @@ PROMPTS = {
             - Use only actions explicitly supported by the paragraph.
             - Preserve action order.
             - Process the paragraph sentence by sentence. Do not borrow actions or arguments from a different sentence unless a pronoun or ellipsis clearly refers back to it.
-            - If the same verb appears multiple times as separate events, output separate actions in text order.
             - Do not invent actions, arguments, object types, or hidden preconditions.
-            - Do not extract general background facts, preferences, warnings, explanations, or expected outcomes unless they explicitly instruct or describe an executable event.
             - Do not include agents such as "you" as arguments.
             - Output must be valid JSON only.
 
@@ -197,7 +195,7 @@ PROMPTS = {
             - Keep a complete noun phrase as one argument when it denotes one object.
             - Keep coordinated entities as separate arguments only when they are separate affected objects.
             - Use concise surface forms from the text for arguments.
-            - - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
+            - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
 
             Return a JSON array. Each item must have exactly this form:
             [

@@ -122,9 +122,9 @@ def build_solver(solver_name: str, model_name: str, datasets: dict[str, list[dic
     return SUPPORTED_SOLVERS[solver_name](model_name=model_name)
 
 
-def build_prompt(solver, paragraph: str, ds_name: str) -> str:
+def build_prompt(solver, paragraph: str, ds_name: str, doc_id: int | None = None) -> str:
     if hasattr(solver, "build_prompt"):
-        return solver.build_prompt(paragraph, ds_name=ds_name)
+        return solver.build_prompt(paragraph, ds_name=ds_name, doc_id=doc_id)
     return generate_prompt(solver.prompt_name, {"nl": paragraph})
 
 
@@ -179,7 +179,7 @@ def prepare(args: argparse.Namespace) -> None:
         coref_texts = coref_by_domain[ds_name] or None
         for doc_id, sample in enumerate(dataset):
             paragraph = sample_to_input_text(sample, ds_name=ds_name, doc_id=doc_id, coref_texts=coref_texts)
-            prompt = build_prompt(solver, paragraph, ds_name)
+            prompt = build_prompt(solver, paragraph, ds_name, doc_id=doc_id)
             custom_id = f"{args.s}|{safe_name(args.m)}|{ds_name}|{doc_id}"
             requests.append(
                 {
