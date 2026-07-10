@@ -38,15 +38,17 @@ def read_eval_results(result_dir, domain_labels, method_labels, model_order=None
     result_dir = Path(result_dir)
     rows = []
 
-    for method_key in method_labels:
+    for method_key in method_labels.keys():
         method_root = result_dir / method_key
         if not method_root.exists():
             print(f"Missing result directory: {method_root}")
             continue
-
-        for model_dir in sorted(path for path in method_root.iterdir() if path.is_dir()):
+        
+        model_dirs = sorted(path for path in method_root.iterdir() if path.is_dir())
+        for model_dir in model_dirs:
             csv_path = model_dir / "evaluation_result.csv"
             if not csv_path.exists():
+                print(f"Missing evaluation_result.csv for {model_dir.name}")
                 continue
 
             for _, row in pd.read_csv(csv_path).iterrows():
@@ -92,14 +94,18 @@ def read_eval_results(result_dir, domain_labels, method_labels, model_order=None
 
     domain_order = [key for key in DOMAIN_ORDER if key in domain_labels]
     method_order = [key for key in METHOD_ORDER if key in method_labels]
+    method_order += [key for key in method_labels if key not in method_order]
     result_df["domain"] = pd.Categorical(result_df["domain"], domain_order, ordered=True)
     result_df["method"] = pd.Categorical(result_df["method"], method_order, ordered=True)
     return result_df.sort_values(["domain", "model", "method"]).reset_index(drop=True)
 
 
 
-def read_arg_mismatch_diagnostics(result_dir, domain_labels, method_labels, model_order=None):
-    """Read argument-mismatch diagnostic rows into one flat DataFrame."""
+def read_diagnostics_by_mismatch_type(result_dir, domain_labels, method_labels, model_order=None, mismatch_type=None):
+    """
+    Read diagnostic rows based on mismatch type into one flat DataFrame.
+    Default `mismatch_type = None` will read all diagnostic rows
+    """
     result_dir = Path(result_dir)
     rows = []
 
@@ -115,7 +121,9 @@ def read_arg_mismatch_diagnostics(result_dir, domain_labels, method_labels, mode
                 continue
 
             df = pd.read_csv(csv_path)
-            df = df[df["mismatch_type"] == "argument_mismatch"].copy()
+            if mismatch_type is not None:
+                df = df[df["mismatch_type"] == mismatch_type].copy()
+            
             for _, row in df.iterrows():
                 domain_key = str(row["dataset"]).strip()
                 if domain_key not in domain_labels:
