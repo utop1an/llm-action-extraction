@@ -170,8 +170,11 @@
         ]
       },
       {
-        "verb": "double-click(regional,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "regional",
+          "options"
+        ]
       },
       {
         "verb": "select",
@@ -377,8 +380,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -521,8 +526,10 @@
         ]
       },
       {
-        "verb": "double-click(display)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "display"
+        ]
       },
       {
         "verb": "click",
@@ -549,6 +556,7 @@
       {
         "verb": "select",
         "arguments": [
+          "desired",
           "channel",
           "screen",
           "savers"
@@ -795,8 +803,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(internet,explorer,icon)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "internet",
+          "explorer",
+          "icon"
+        ]
       },
       {
         "verb": "Click",
@@ -983,10 +995,16 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "start",
         "arguments": [
           "internet",
           "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "tools"
         ]
       },
       {
@@ -997,28 +1015,25 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "advanced",
           "tab"
         ]
       },
       {
-        "verb": "clear",
+        "verb": "clear_or_select",
         "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
           "check",
           "box"
         ]
       },
       {
-        "verb": "select",
-        "arguments": [
-          "check",
-          "box"
-        ]
-      },
-      {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -1178,8 +1193,10 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(folder)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "folder"
+        ]
       },
       {
         "verb": "Click",
@@ -1445,9 +1462,10 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
       },
       {
@@ -1488,7 +1506,11 @@
       {
         "verb": "click",
         "arguments": [
-          "setting"
+          "any",
+          "setting",
+          "other",
+          "than",
+          "anonymous"
         ]
       }
     ],
@@ -1608,12 +1630,19 @@
       {
         "verb": "click",
         "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
           "folder",
           "options"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "file",
           "types",
@@ -1677,19 +1706,19 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -1960,8 +1989,11 @@
         ]
       },
       {
-        "verb": "double-click(power,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "power",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -2737,25 +2769,28 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(my,computer)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "tools",
           "menu"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "folder",
           "options"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "file",
           "types",
@@ -2763,7 +2798,7 @@
         ]
       },
       {
-        "verb": "select",
+        "verb": "Select",
         "arguments": [
           "doc",
           "microsoft",
@@ -2772,7 +2807,7 @@
         ]
       },
       {
-        "verb": "select",
+        "verb": "Select",
         "arguments": [
           "xls",
           "microsoft",
@@ -2781,13 +2816,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced"
         ]
       },
       {
-        "verb": "clear",
+        "verb": "Clear",
         "arguments": [
           "confirm",
           "open",
@@ -2798,7 +2833,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -2995,8 +3030,11 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,computer)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
         "verb": "click",
@@ -3005,16 +3043,26 @@
         ]
       },
       {
-        "verb": "Double-Click(system,tools)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "system",
+          "tools"
+        ]
       },
       {
-        "verb": "Double-Click(local,users,and,groups)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "local",
+          "users",
+          "and",
+          "groups"
+        ]
       },
       {
-        "verb": "Double-Click(users)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "users"
+        ]
       },
       {
         "verb": "click",
@@ -3155,56 +3203,7 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
-        "arguments": [
-          "internet",
-          "explorer"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "internet",
-          "options"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "advanced",
-          "tab"
-        ]
-      },
-      {
-        "verb": "clear",
-        "arguments": [
-          "enable",
-          "personalized",
-          "favorites",
-          "menu",
-          "check",
-          "box"
-        ]
-      },
-      {
-        "verb": "select",
-        "arguments": [
-          "enable",
-          "personalized",
-          "favorites",
-          "menu",
-          "check",
-          "box"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "ok"
-        ]
-      },
-      {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "start"
         ]
@@ -3223,66 +3222,10 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
-      },
-      {
-        "verb": "double-click(computer,management)",
-        "arguments": []
-      },
-      {
-        "verb": "expand",
+        "verb": "double-click",
         "arguments": [
-          "storage",
-          "branch"
+          "keyboard"
         ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "disk",
-          "management",
-          "folder"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "action",
-          "menu"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "restore",
-          "basic",
-          "disk",
-          "configuration"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "settings"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "control",
-          "panel"
-        ]
-      },
-      {
-        "verb": "double-click(keyboard)",
-        "arguments": []
       },
       {
         "verb": "click",
@@ -3301,24 +3244,7 @@
       {
         "verb": "click",
         "arguments": [
-          "input",
-          "locale",
-          "box"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
           "basque"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "keyboard",
-          "layout",
-          "ime",
-          "box"
         ]
       },
       {
@@ -3541,37 +3467,13 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "programs"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "accessories"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "accessability"
-        ]
-      },
-      {
-        "verb": "click",
+        "verb": "Start",
         "arguments": [
           "magnifier"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "follow",
           "mouse",
@@ -3591,7 +3493,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "exit"
         ]
@@ -3768,9 +3670,42 @@
       {
         "verb": "click",
         "arguments": [
-          "control",
-          "panel"
+          "internet",
+          "options"
         ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click(ok)\n\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -3786,8 +3721,57 @@
         ]
       },
       {
-        "verb": "double-click(power,options)",
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\n\nClick(start)",
         "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "power",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -3963,7 +3947,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
           "start"
         ]
@@ -3982,8 +3966,12 @@
         ]
       },
       {
-        "verb": "double-click(users,passwords)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "users",
+          "and",
+          "passwords"
+        ]
       },
       {
         "verb": "click",
@@ -4125,8 +4113,12 @@
         ]
       },
       {
-        "verb": "double-click(users,and,passwords)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "users",
+          "and",
+          "passwords"
+        ]
       },
       {
         "verb": "select",
@@ -4274,25 +4266,13 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "run"
-        ]
-      },
-      {
-        "verb": "type",
+        "verb": "Start",
         "arguments": [
           "conf.exe"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -4384,7 +4364,63 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "start"
         ]
@@ -4403,8 +4439,74 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "restore",
+          "basic",
+          "disk",
+          "configuration"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -4620,8 +4722,11 @@
         ]
       },
       {
-        "verb": "double-click(accessibility,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "accessibility",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -4788,8 +4893,49 @@
       {
         "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click(ok)\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -4805,8 +4951,63 @@
         ]
       },
       {
-        "verb": "double-click(display)",
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\nClick(start)",
         "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "display"
+        ]
       },
       {
         "verb": "click",
@@ -4818,6 +5019,11 @@
       {
         "verb": "clear",
         "arguments": [
+          "show",
+          "window",
+          "contents",
+          "while",
+          "dragging",
           "check",
           "box"
         ]
@@ -4993,9 +5199,10 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "start",
+          "menu"
         ]
       },
       {
@@ -5005,7 +5212,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "search",
           "tab"
@@ -5019,7 +5226,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "list",
           "topics"
@@ -5135,12 +5342,16 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(my,computer)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "my computer"
+        ]
       },
       {
-        "verb": "right-click(local,disk,c)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local disk (c:)"
+        ]
       },
       {
         "verb": "click",
@@ -5157,8 +5368,7 @@
       {
         "verb": "click",
         "arguments": [
-          "check",
-          "now"
+          "check now"
         ]
       }
     ],
@@ -5306,12 +5516,25 @@
         ]
       },
       {
-        "verb": "double-click(security,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "security",
+          "options"
+        ]
       },
       {
-        "verb": "double-click(secure,channel: digitally encrypt or sign secure channel data (always))",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "secure",
+          "channel:digitally",
+          "encrypt",
+          "or",
+          "sign",
+          "secure",
+          "channel",
+          "data",
+          "(always)"
+        ]
       },
       {
         "verb": "click",
@@ -5534,16 +5757,26 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(event,viewer)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "event",
+          "viewer"
+        ]
       },
       {
-        "verb": "right-click(system,log,file)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "system",
+          "log",
+          "file"
+        ]
       },
       {
         "verb": "click",
@@ -5793,7 +6026,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
           "start"
         ]
@@ -5812,8 +6045,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -5839,7 +6074,8 @@
       {
         "verb": "click",
         "arguments": [
-          "cdrw/dvd",
+          "cdrw",
+          "dvd",
           "drive"
         ]
       },
@@ -6116,7 +6352,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
           "start"
         ]
@@ -6137,8 +6373,11 @@
         ]
       },
       {
-        "verb": "right-click(dial-up,adapter)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "dial-up",
+          "adapter"
+        ]
       },
       {
         "verb": "click",
@@ -6457,20 +6696,37 @@
         ]
       },
       {
-        "verb": "double-click(local,security,policy)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "security",
+          "policy"
+        ]
       },
       {
-        "verb": "double-click(local,policies)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "policies"
+        ]
       },
       {
-        "verb": "double-click(security,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "security",
+          "options"
+        ]
       },
       {
-        "verb": "double-click(prevent,users,from,installing,printer,drivers)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "prevent",
+          "users",
+          "from",
+          "installing",
+          "printer",
+          "drivers"
+        ]
       },
       {
         "verb": "click",
@@ -6675,104 +6931,9 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "Click",
         "arguments": [
-          "internet",
-          "explorer"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "internet",
-          "options"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "advanced",
-          "tab"
-        ]
-      },
-      {
-        "verb": "clear",
-        "arguments": [
-          "enable",
-          "personalized",
-          "favorites",
-          "menu",
-          "check",
-          "box"
-        ]
-      },
-      {
-        "verb": "select",
-        "arguments": [
-          "enable",
-          "personalized",
-          "favorites",
-          "menu",
-          "check",
-          "box"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "ok"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "settings"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "control",
-          "panel"
-        ]
-      },
-      {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
-      },
-      {
-        "verb": "double-click(computer,management)",
-        "arguments": []
-      },
-      {
-        "verb": "expand",
-        "arguments": [
-          "storage",
-          "branch"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "disk",
-          "management",
-          "folder"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "action",
-          "menu"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "restore",
-          "basic",
-          "disk",
-          "configuration"
+          "start"
         ]
       },
       {
@@ -6794,16 +6955,29 @@
         ]
       },
       {
-        "verb": "double-click(local,policies)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "policies"
+        ]
       },
       {
-        "verb": "double-click(user,rights,assignment)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "user",
+          "rights",
+          "assignment"
+        ]
       },
       {
-        "verb": "double-click(back,up,files,and,directories)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "back",
+          "up",
+          "files",
+          "and",
+          "directories"
+        ]
       },
       {
         "verb": "click",
@@ -6812,8 +6986,11 @@
         ]
       },
       {
-        "verb": "double-click(administrators,group)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrators",
+          "group"
+        ]
       },
       {
         "verb": "click",
@@ -7056,8 +7233,11 @@
         ]
       },
       {
-        "verb": "double-click(local,policies)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "policies"
+        ]
       },
       {
         "verb": "click",
@@ -7067,8 +7247,14 @@
         ]
       },
       {
-        "verb": "double-click(additional,restrictions,for,anonymous,connections)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "additional",
+          "restrictions",
+          "for",
+          "anonymous",
+          "connections"
+        ]
       },
       {
         "verb": "click",
@@ -7080,12 +7266,7 @@
       {
         "verb": "click",
         "arguments": [
-          "none"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
+          "none",
           "rely",
           "on",
           "default",
@@ -7246,8 +7427,10 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(start)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "start"
+        ]
       },
       {
         "verb": "click",
@@ -7439,9 +7622,10 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
       },
       {
@@ -7473,8 +7657,12 @@
         ]
       },
       {
-        "verb": "double-click(internet,connection,sharing)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "internet",
+          "connection",
+          "sharing"
+        ]
       }
     ],
     "gold_actions": [
@@ -7610,9 +7798,10 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
       },
       {
@@ -7631,8 +7820,12 @@
         ]
       },
       {
-        "verb": "right-click(appropriate,dial-up,network)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "appropriate",
+          "dial-up",
+          "network"
+        ]
       },
       {
         "verb": "click",
@@ -7926,29 +8119,57 @@
       {
         "verb": "Start",
         "arguments": [
-          "services.msc"
+          "internet",
+          "explorer"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
+        "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "ok"
-        ]
-      },
-      {
-        "verb": "double-click(tcp/ip,netbios,helper,service)",
-        "arguments": []
-      },
-      {
-        "verb": "Click",
-        "arguments": [
-          "automatic"
-        ]
-      },
-      {
-        "verb": "Click",
-        "arguments": [
-          "apply"
         ]
       },
       {
@@ -7958,7 +8179,126 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "restore",
+          "basic",
+          "disk",
+          "configuration"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "run"
+        ]
+      },
+      {
+        "verb": "type",
+        "arguments": [
+          "services.msc",
+          "open",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "tcp/ip",
+          "netbios",
+          "helper",
+          "service"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "startup",
+          "type",
+          "list"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "automatic"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "apply"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -8215,7 +8555,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
           "start"
         ]
@@ -8439,8 +8779,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -8449,8 +8793,13 @@
         ]
       },
       {
-        "verb": "Right-Click(local,area,connection,icon)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "local",
+          "area",
+          "connection",
+          "icon"
+        ]
       },
       {
         "verb": "click",
@@ -8706,7 +9055,8 @@
       {
         "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
       },
       {
@@ -8716,7 +9066,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "network",
           "and",
@@ -8725,17 +9075,21 @@
         ]
       },
       {
-        "verb": "double-click(local,area,connection)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "internet",
           "protocol",
@@ -8743,26 +9097,26 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "wins",
           "tab"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "enable",
           "netbios",
@@ -8771,7 +9125,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -9030,7 +9384,32 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "Click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "services"
+        ]
+      },
+      {
+        "verb": "right-click",
         "arguments": [
           "internet",
           "connection",
@@ -9409,37 +9788,48 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,computer,icon)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "computer",
+          "icon"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "manage"
         ]
       },
       {
-        "verb": "Double-Click(services,and,applications)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "services",
+          "and",
+          "applications"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "services"
         ]
       },
       {
-        "verb": "Right-Click(dhcp,client)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "dhcp",
+          "client"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Change",
+        "verb": "change",
         "arguments": [
           "startup",
           "type",
@@ -9447,17 +9837,21 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Right-Click(dhcp,client,service)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "dhcp",
+          "client",
+          "service"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "start"
         ]
@@ -9671,7 +10065,56 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "start"
         ]
@@ -9690,12 +10133,78 @@
         ]
       },
       {
-        "verb": "double-click(network,and,dial-up,connections)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "restore",
+          "basic",
+          "disk",
+          "configuration"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "network",
+          "and",
+          "dial-up",
+          "connections"
+        ]
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -9961,8 +10470,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -9971,8 +10484,12 @@
         ]
       },
       {
-        "verb": "Double-Click(local,area,connection)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -10174,8 +10691,12 @@
         ]
       },
       {
-        "verb": "right-click(internet,connection,sharing)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "internet",
+          "connection",
+          "sharing"
+        ]
       },
       {
         "verb": "click",
@@ -10313,7 +10834,14 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "start"
         ]
@@ -10331,8 +10859,10 @@
         ]
       },
       {
-        "verb": "right-click(your,printer)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "printer"
+        ]
       },
       {
         "verb": "click",
@@ -10594,12 +11124,21 @@
         ]
       },
       {
-        "verb": "double-click(network,and,dial-up,connections)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "network",
+          "and",
+          "dial-up",
+          "connections"
+        ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -10865,10 +11404,104 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
-          "start"
+          "advanced",
+          "tab"
         ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "Click(ok)\n\nClick(start)",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\n\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -10883,8 +11516,13 @@
         ]
       },
       {
-        "verb": "right-click(hp 1600 cm/ps,printer)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "hp",
+          "1600",
+          "cm/ps",
+          "printer"
+        ]
       },
       {
         "verb": "click",
@@ -10923,7 +11561,8 @@
       {
         "verb": "click",
         "arguments": [
-          "1600 cm/ps",
+          "1600",
+          "cm/ps",
           "models",
           "box"
         ]
@@ -11185,8 +11824,12 @@
         ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -11514,7 +12157,14 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "start"
         ]
@@ -11797,7 +12447,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "choose",
         "arguments": [
           "internet",
           "options"
@@ -11971,7 +12621,6 @@
           "print",
           "background",
           "colors",
-          "and",
           "images",
           "check",
           "box"
@@ -12312,19 +12961,12 @@
       {
         "verb": "click",
         "arguments": [
-          "tools",
-          "menu"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
           "internet",
           "options"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced",
           "tab"
@@ -12333,19 +12975,12 @@
       {
         "verb": "clear",
         "arguments": [
-          "do",
-          "not",
-          "save",
-          "encryped",
-          "pages",
-          "to",
-          "disk",
           "check",
           "box"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -12460,13 +13095,6 @@
       "Click the refresh button at the top of the browser to ensure that you are viewing the latest version of the current page"
     ],
     "prediction": [
-      {
-        "verb": "Click",
-        "arguments": [
-          "tools",
-          "menu"
-        ]
-      },
       {
         "verb": "Click",
         "arguments": [
@@ -12788,34 +13416,27 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
-        "arguments": [
-          "internet",
-          "explorer"
-        ]
-      },
-      {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "internet",
           "options"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "general",
           "tab"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "languages"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "english",
           "united",
@@ -12824,19 +13445,19 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -13015,7 +13636,14 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "internet",
           "options"
@@ -13048,13 +13676,17 @@
       {
         "verb": "Click",
         "arguments": [
-          "prompt"
+          "prompt",
+          "first-party",
+          "cookies"
         ]
       },
       {
         "verb": "Click",
         "arguments": [
-          "prompt"
+          "prompt",
+          "third-party",
+          "cookies"
         ]
       },
       {
@@ -13194,8 +13826,10 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(display)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "display"
+        ]
       },
       {
         "verb": "Click",
@@ -13284,7 +13918,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "power",
           "options"
@@ -13299,7 +13933,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "always",
           "on"
@@ -13402,18 +14036,28 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(my,computer)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
+        "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "Click",
         "arguments": [
           "folder",
           "options"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "offline",
           "files",
@@ -13431,13 +14075,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "apply"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -13593,33 +14237,33 @@
     ],
     "prediction": [
       {
-        "verb": "Point",
+        "verb": "Start",
         "arguments": [
           "start",
           "menu"
         ]
       },
       {
-        "verb": "Point",
+        "verb": "point",
         "arguments": [
           "programs"
         ]
       },
       {
-        "verb": "Point",
+        "verb": "point",
         "arguments": [
           "administrative",
           "tools"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "services"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "routing",
           "and",
@@ -13628,14 +14272,14 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "stop",
           "symbol"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "remote",
           "registry",
@@ -13643,14 +14287,14 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "start",
           "symbol"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "routing",
           "and",
@@ -13659,7 +14303,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "start",
           "symbol"
@@ -13884,8 +14528,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -14180,32 +14826,42 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(my,computer)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "double-click(dial-up,networking)",
-        "arguments": []
+        "verb": "double-Click",
+        "arguments": [
+          "dial-up",
+          "networking"
+        ]
       },
       {
-        "verb": "right-click(dial-up,network)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "dial-up",
+          "network"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "configure"
         ]
       },
       {
-        "verb": "clear",
+        "verb": "Click",
         "arguments": [
+          "clear",
           "enable",
           "modem",
           "error",
@@ -14215,13 +14871,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -14439,16 +15095,23 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(services)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "services"
+        ]
       },
       {
-        "verb": "double-click(messenger)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "messenger"
+        ]
       },
       {
         "verb": "click",
@@ -14697,6 +15360,11 @@
       {
         "verb": "clear",
         "arguments": [
+          "hide",
+          "protected",
+          "operating",
+          "system",
+          "files",
           "check",
           "box"
         ]
@@ -14775,18 +15443,21 @@
     ],
     "prediction": [
       {
-        "verb": "Double-Click(my,computer)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "folder",
           "options"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "offline",
           "files",
@@ -14794,20 +15465,20 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "view",
           "files"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "synchronize"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "synchronize"
         ]
@@ -14946,8 +15617,12 @@
         ]
       },
       {
-        "verb": "right-click(print,spooler,service)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "print",
+          "spooler",
+          "service"
+        ]
       },
       {
         "verb": "click",
@@ -15102,12 +15777,18 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(component,services)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "component",
+          "services"
+        ]
       },
       {
         "verb": "select",
@@ -15117,8 +15798,11 @@
         ]
       },
       {
-        "verb": "right-click(print,spooler)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "print",
+          "spooler"
+        ]
       },
       {
         "verb": "click",
@@ -15493,8 +16177,13 @@
         ]
       },
       {
-        "verb": "double-click(network,and,dial-up,connections)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "network",
+          "and",
+          "dial-up",
+          "connections"
+        ]
       },
       {
         "verb": "click",
@@ -15793,8 +16482,12 @@
         ]
       },
       {
-        "verb": "double-click(sounds,and,multimedia)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "sounds",
+          "and",
+          "multimedia"
+        ]
       },
       {
         "verb": "click",
@@ -15807,6 +16500,14 @@
         "verb": "click",
         "arguments": [
           "advanced"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "speaker",
+          "setup",
+          "box"
         ]
       },
       {
@@ -16040,12 +16741,18 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(event,viewer)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "event",
+          "viewer"
+        ]
       },
       {
         "verb": "expand",
@@ -16228,33 +16935,50 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,computer)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "manage"
         ]
       },
       {
-        "verb": "double-click(system,tools)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "system",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(device,manager)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "device",
+          "manager"
+        ]
       },
       {
-        "verb": "double-click(ide,ata/atapi,controller)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "ide",
+          "ata/atapi",
+          "controller"
+        ]
       },
       {
-        "verb": "double-click(secondary,ide,channel)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "secondary",
+          "ide",
+          "channel"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced",
           "settings",
@@ -16262,20 +16986,28 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "pio",
           "only"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
+        "arguments": [
+          "transfer",
+          "mode",
+          "box"
+        ]
+      },
+      {
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "close",
+        "verb": "Close",
         "arguments": [
           "computer",
           "management",
@@ -16283,7 +17015,7 @@
         ]
       },
       {
-        "verb": "reboot",
+        "verb": "Reboot",
         "arguments": [
           "computer"
         ]
@@ -16716,8 +17448,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -16734,8 +17468,10 @@
         ]
       },
       {
-        "verb": "right-click(modems)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "modems"
+        ]
       },
       {
         "verb": "click",
@@ -16917,8 +17653,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my network places)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -16927,8 +17667,12 @@
         ]
       },
       {
-        "verb": "right-click(local area connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -16939,7 +17683,9 @@
       {
         "verb": "click",
         "arguments": [
-          "internet protocol (tcp/ip"
+          "internet",
+          "protocol",
+          "tcp/ip"
         ]
       },
       {
@@ -16963,7 +17709,10 @@
       {
         "verb": "click",
         "arguments": [
-          "enable netbios over tcp/ip"
+          "enable",
+          "netbios",
+          "over",
+          "tcp/ip"
         ]
       },
       {
@@ -17258,8 +18007,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my,network,places)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -17268,8 +18021,12 @@
         ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -17557,62 +18314,80 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my network places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "right-click(local area connection)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "double-click(internet protocol (tcp/ip))",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "internet",
+          "protocol",
+          "tcp/ip"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "wins",
-          " tab"
+          "tab"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
-          "use netbios setting from the dhcp server"
+          "use",
+          "netbios",
+          "setting",
+          "from",
+          "the",
+          "dhcp",
+          "server"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -17810,8 +18585,11 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my computer)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
         "verb": "click",
@@ -17820,8 +18598,13 @@
         ]
       },
       {
-        "verb": "double-click(local users and groups)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "users",
+          "and",
+          "groups"
+        ]
       },
       {
         "verb": "click",
@@ -17830,8 +18613,11 @@
         ]
       },
       {
-        "verb": "right-click(guest account)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "guest",
+          "account"
+        ]
       },
       {
         "verb": "click",
@@ -17842,8 +18628,11 @@
       {
         "verb": "clear",
         "arguments": [
-          "account is disabled",
-          "check box"
+          "account",
+          "is",
+          "disabled",
+          "check",
+          "box"
         ]
       },
       {
@@ -18035,10 +18824,104 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click(ok)\nClick(start)",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -18055,7 +18938,7 @@
         ]
       },
       {
-        "verb": "select",
+        "verb": "set",
         "arguments": [
           "show",
           "clock",
@@ -18230,8 +19113,10 @@
         ]
       },
       {
-        "verb": "right-click(riched20.dll)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "riched20.dll"
+        ]
       }
     ],
     "gold_actions": [
@@ -18379,8 +19264,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -18393,15 +19280,6 @@
         "verb": "click",
         "arguments": [
           "settings"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "write",
-          "debugging",
-          "information",
-          "list"
         ]
       },
       {
@@ -18684,17 +19562,20 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,computer)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "manage"
         ]
       },
       {
-        "verb": "Open",
+        "verb": "open",
         "arguments": [
           "services",
           "and",
@@ -18702,23 +19583,28 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "services"
         ]
       },
       {
-        "verb": "Right-Click(performance,logs,and,alerts)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "performance",
+          "logs",
+          "and",
+          "alerts"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "log",
           "on",
@@ -18726,7 +19612,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "this",
           "account"
@@ -18901,7 +19787,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start from the pattern used above, preserving order and action style:\n\nACTIONS:\nClick",
         "arguments": [
           "start"
         ]
@@ -18927,12 +19813,17 @@
         ]
       },
       {
-        "verb": "double-click(services)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "services"
+        ]
       },
       {
-        "verb": "right-click(fax,service)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "fax",
+          "service"
+        ]
       },
       {
         "verb": "click",
@@ -19138,8 +20029,11 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,computer)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
         "verb": "Click",
@@ -19317,8 +20211,11 @@
         ]
       },
       {
-        "verb": "right-click(my,computer)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
         "verb": "click",
@@ -19349,8 +20246,11 @@
         ]
       },
       {
-        "verb": "right-click(direct,parallel)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "direct",
+          "parallel"
+        ]
       },
       {
         "verb": "click",
@@ -19543,8 +20443,11 @@
         ]
       },
       {
-        "verb": "double-click(power,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "power",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -19688,8 +20591,13 @@
         ]
       },
       {
-        "verb": "double-click(phone,and,modem,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "phone",
+          "and",
+          "modem",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -19701,6 +20609,7 @@
       {
         "verb": "click",
         "arguments": [
+          "your",
           "modem"
         ]
       },
@@ -19932,8 +20841,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -19950,19 +20861,20 @@
         ]
       },
       {
-        "verb": "double-click(modems,branch)",
-        "arguments": []
-      },
-      {
-        "verb": "expand",
+        "verb": "double-click",
         "arguments": [
           "modems",
           "branch"
         ]
       },
       {
-        "verb": "right-click(56000,bps,v90,modem)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "56000",
+          "bps",
+          "v90",
+          "modem"
+        ]
       },
       {
         "verb": "click",
@@ -20315,10 +21227,8 @@
         ]
       },
       {
-        "verb": "click",
-        "arguments": [
-          "ok"
-        ]
+        "verb": "click(ok)\n\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -20334,12 +21244,18 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(computer,management)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
       },
       {
         "verb": "expand",
@@ -20364,13 +21280,8 @@
         ]
       },
       {
-        "verb": "click",
-        "arguments": [
-          "restore",
-          "basic",
-          "disk",
-          "configuration"
-        ]
+        "verb": "click(restore,basic,disk,configuration)\n\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "click",
@@ -20671,10 +21582,97 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click(ok)\nClick(start)",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -20891,31 +21889,25 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "settings"
-        ]
-      },
-      {
-        "verb": "click",
+        "verb": "Start",
         "arguments": [
           "control",
           "panel"
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(computer,management)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
       },
       {
         "verb": "expand",
@@ -20928,16 +21920,7 @@
         "verb": "click",
         "arguments": [
           "disk",
-          "management",
-          "folder"
-        ]
-      },
-      {
-        "verb": "open",
-        "arguments": [
-          "disk",
-          "management",
-          "folder"
+          "management"
         ]
       },
       {
@@ -21149,24 +22132,21 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Click",
-        "arguments": [
-          "advanced",
-          "menu"
-        ]
-      },
-      {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "optional",
           "networking",
@@ -21174,7 +22154,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "select",
         "arguments": [
           "networking",
           "services",
@@ -21183,13 +22163,13 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "details"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "select",
         "arguments": [
           "rip",
           "listener",
@@ -21198,19 +22178,19 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "Insert",
+        "verb": "insert",
         "arguments": [
           "operating",
           "system",
@@ -21219,7 +22199,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -21483,8 +22463,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "Click",
@@ -21493,8 +22477,11 @@
         ]
       },
       {
-        "verb": "Right-Click(network,adapter)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "network",
+          "adapter"
+        ]
       },
       {
         "verb": "Click",
@@ -21519,7 +22506,8 @@
       {
         "verb": "Click",
         "arguments": [
-          "advanced"
+          "advanced",
+          "button"
         ]
       },
       {
@@ -21782,26 +22770,34 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "telnet",
+          "server",
+          "service"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
           "start"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "run"
         ]
       },
       {
-        "verb": "type",
+        "verb": "Type",
         "arguments": [
           "tlntsvr",
           "/service"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -21916,13 +22912,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
+        "verb": "Start",
         "arguments": [
           "search"
         ]
@@ -21942,7 +22932,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "search",
           "now"
@@ -22055,8 +23045,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -22065,8 +23059,12 @@
         ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -22089,7 +23087,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -22247,33 +23245,14 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "programs"
-        ]
-      },
-      {
-        "verb": "point",
-        "arguments": [
-          "administrative",
-          "tools"
-        ]
-      },
-      {
-        "verb": "click",
+        "verb": "Start",
         "arguments": [
           "computer",
           "management"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "device",
           "manager"
@@ -22287,8 +23266,10 @@
         ]
       },
       {
-        "verb": "right-click(modem)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "modem"
+        ]
       },
       {
         "verb": "click",
@@ -22297,14 +23278,14 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "advanced",
           "tab"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "change",
           "default",
@@ -22319,13 +23300,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -22615,8 +23596,10 @@
         ]
       },
       {
-        "verb": "double-click(display)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "display"
+        ]
       },
       {
         "verb": "click",
@@ -22809,32 +23792,44 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "Click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "run"
+        ]
+      },
+      {
+        "verb": "type",
         "arguments": [
           "mmc"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "add/remove",
           "snap-in"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "add"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "security",
           "configuration",
@@ -22843,29 +23838,34 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "add"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "close"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "Right-click(security,configuration,and,analysis)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "security",
+          "configuration",
+          "and",
+          "analysis"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "open",
           "database"
@@ -23160,8 +24160,16 @@
         ]
       },
       {
-        "verb": "right-click(enableicmpredirect,enableicmpredirects)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "enableicmpredirect"
+        ]
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "enableicmpredirects"
+        ]
       },
       {
         "verb": "click",
@@ -23391,18 +24399,12 @@
       {
         "verb": "Start",
         "arguments": [
-          "internet",
-          "explorer"
+          "start",
+          "menu"
         ]
       },
       {
         "verb": "click",
-        "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "point",
         "arguments": [
           "programs"
         ]
@@ -23429,8 +24431,11 @@
         ]
       },
       {
-        "verb": "right-click(dial-up,icon)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "dial-up",
+          "icon"
+        ]
       },
       {
         "verb": "click",
@@ -23747,16 +24752,26 @@
     ],
     "prediction": [
       {
-        "verb": "Double-Click(my,computer)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
-        "verb": "Double-Click(local,disk,c)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "local",
+          "disk",
+          "c"
+        ]
       },
       {
-        "verb": "Right-Click(autoexec,file)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "autoexec",
+          "file"
+        ]
       },
       {
         "verb": "Click",
@@ -23772,18 +24787,8 @@
         ]
       },
       {
-        "verb": "Clear",
+        "verb": "clear",
         "arguments": [
-          "allow",
-          "inheritable",
-          "permissions",
-          "from",
-          "parent",
-          "to",
-          "propagate",
-          "to",
-          "this",
-          "object",
           "check",
           "box"
         ]
@@ -23803,23 +24808,8 @@
       {
         "verb": "Click",
         "arguments": [
-          "look",
-          "in",
-          "box"
-        ]
-      },
-      {
-        "verb": "Click",
-        "arguments": [
           "current",
           "computer"
-        ]
-      },
-      {
-        "verb": "Click",
-        "arguments": [
-          "name",
-          "box"
         ]
       },
       {
@@ -24163,7 +25153,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "Go",
         "arguments": [
           "view",
           "tab"
@@ -24201,26 +25191,27 @@
         ]
       },
       {
+        "verb": "Find",
+        "arguments": [
+          "autoexec"
+        ]
+      },
+      {
         "verb": "Select",
         "arguments": [
           "autoexec"
         ]
       },
       {
-        "verb": "Right-click(autoexec)",
-        "arguments": []
-      },
-      {
-        "verb": "Click",
+        "verb": "Right-click",
         "arguments": [
-          "properties"
+          "autoexec"
         ]
       },
       {
         "verb": "Click",
         "arguments": [
-          "general",
-          "tab"
+          "properties"
         ]
       },
       {
@@ -24584,8 +25575,12 @@
         ]
       },
       {
-        "verb": "double-click(secondary,ide,channel)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "secondary",
+          "ide",
+          "channel"
+        ]
       },
       {
         "verb": "click",
@@ -24877,8 +25872,13 @@
         ]
       },
       {
-        "verb": "double-click(phone,and,modem,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "phone",
+          "and",
+          "modem",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -25093,12 +26093,20 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools,icon)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools",
+          "icon"
+        ]
       },
       {
-        "verb": "double-click(computer,management,icon)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management",
+          "icon"
+        ]
       },
       {
         "verb": "expand",
@@ -25115,8 +26123,11 @@
         ]
       },
       {
-        "verb": "double-click(indexing,service)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "indexing",
+          "service"
+        ]
       },
       {
         "verb": "set",
@@ -25345,8 +26356,10 @@
         ]
       },
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
         "verb": "click",
@@ -25683,16 +26696,27 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
-        "verb": "double-click(computer,management)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
       },
       {
-        "verb": "double-click(services,and,applications,branch)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "services",
+          "and",
+          "applications",
+          "branch"
+        ]
       },
       {
         "verb": "expand",
@@ -25980,8 +27004,11 @@
         ]
       },
       {
-        "verb": "double-click(administrative,tools)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
       },
       {
         "verb": "click",
@@ -25990,21 +27017,18 @@
         ]
       },
       {
-        "verb": "right-click(netmeeting,remote,desktop,sharing)",
-        "arguments": []
-      },
-      {
-        "verb": "click",
+        "verb": "right-click",
         "arguments": [
-          "properties"
+          "netmeeting",
+          "remote",
+          "desktop",
+          "sharing"
         ]
       },
       {
         "verb": "click",
         "arguments": [
-          "startup",
-          "type",
-          "box"
+          "properties"
         ]
       },
       {
@@ -26207,47 +27231,33 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
-        "arguments": [
-          "computer",
-          "management"
-        ]
-      },
-      {
         "verb": "Click",
         "arguments": [
           "start"
         ]
       },
       {
-        "verb": "Point",
+        "verb": "point",
         "arguments": [
           "programs"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "administration",
           "tools"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "computer",
           "management"
         ]
       },
       {
-        "verb": "Expand",
-        "arguments": [
-          "storage",
-          "option"
-        ]
-      },
-      {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "disk",
           "management",
@@ -26255,24 +27265,27 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "drive",
           "c"
         ]
       },
       {
-        "verb": "Right-Click(drive,c)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "drive",
+          "c"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "disk",
           "cleanup"
@@ -26511,22 +27524,8 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
-        ]
-      },
-      {
-        "verb": "click",
-        "arguments": [
-          "run"
-        ]
-      },
-      {
-        "verb": "type",
-        "arguments": [
-          "open",
-          "box",
           "regedit"
         ]
       },
@@ -26555,16 +27554,18 @@
         ]
       },
       {
-        "verb": "double-click(paintdesktopversion)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "paintdesktopversion"
+        ]
       },
       {
         "verb": "type",
         "arguments": [
+          "1",
           "value",
           "data",
-          "box",
-          "1"
+          "box"
         ]
       },
       {
@@ -26797,7 +27798,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ports",
           "tab"
@@ -26944,6 +27945,126 @@
       {
         "verb": "Start",
         "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "restore",
+          "basic",
+          "disk",
+          "configuration"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
           "start"
         ]
       },
@@ -27027,11 +28148,7 @@
       {
         "verb": "click",
         "arguments": [
-          "default",
-          "in",
-          "authentication",
-          "level",
-          "box"
+          "default"
         ]
       },
       {
@@ -27434,10 +28551,9 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "Click",
         "arguments": [
-          "internet",
-          "explorer"
+          "start"
         ]
       },
       {
@@ -27456,8 +28572,13 @@
         ]
       },
       {
-        "verb": "right-click(icon,for,your,isp)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "icon",
+          "for",
+          "your",
+          "isp"
+        ]
       },
       {
         "verb": "click",
@@ -27851,7 +28972,7 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
           "start"
         ]
@@ -27872,8 +28993,10 @@
         ]
       },
       {
-        "verb": "right-click(connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -27897,6 +29020,12 @@
       {
         "verb": "clear",
         "arguments": [
+          "negotiate",
+          "multi-link",
+          "for",
+          "single",
+          "link",
+          "connections",
           "check",
           "box"
         ]
@@ -28167,10 +29296,111 @@
     ],
     "prediction": [
       {
-        "verb": "Click",
+        "verb": "Start",
         "arguments": [
-          "start"
+          "internet",
+          "explorer"
         ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "tools",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click(ok)\nClick(start)",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "action",
+          "menu"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\n\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -28193,8 +29423,13 @@
         ]
       },
       {
-        "verb": "double-click(local,users,and,groups)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "local",
+          "users",
+          "and",
+          "groups"
+        ]
       },
       {
         "verb": "click",
@@ -28203,8 +29438,10 @@
         ]
       },
       {
-        "verb": "double-click(user)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "user"
+        ]
       },
       {
         "verb": "click",
@@ -28223,7 +29460,16 @@
       {
         "verb": "click",
         "arguments": [
-          "administrators"
+          "administrators",
+          "group"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "power",
+          "users",
+          "group"
         ]
       },
       {
@@ -28528,8 +29774,11 @@
         ]
       },
       {
-        "verb": "double-click(add,printer)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "add",
+          "printer"
+        ]
       },
       {
         "verb": "click",
@@ -28547,6 +29796,15 @@
       {
         "verb": "clear",
         "arguments": [
+          "automatically",
+          "detect",
+          "and",
+          "install",
+          "my",
+          "plug",
+          "and",
+          "play",
+          "printer",
           "check",
           "box"
         ]
@@ -28560,7 +29818,11 @@
       {
         "verb": "click",
         "arguments": [
-          "port"
+          "appropriate",
+          "port",
+          "for",
+          "the",
+          "printer"
         ]
       },
       {
@@ -28874,27 +30136,44 @@
     ],
     "prediction": [
       {
-        "verb": "Double-Click(user,configuration)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "user",
+          "configuration"
+        ]
       },
       {
-        "verb": "double-Click(administrative,templates)",
-        "arguments": []
+        "verb": "double-Click",
+        "arguments": [
+          "administrative",
+          "templates"
+        ]
       },
       {
-        "verb": "Double-Click(system)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "system"
+        ]
       },
       {
-        "verb": "double-Click(group,policy)",
-        "arguments": []
+        "verb": "double-Click",
+        "arguments": [
+          "group",
+          "policy"
+        ]
       },
       {
-        "verb": "Double-Click(automatic,updates,to,.adm,files)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "automatic",
+          "updates",
+          "to",
+          "adm",
+          "files"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "enabled"
         ]
@@ -29034,8 +30313,12 @@
     ],
     "prediction": [
       {
-        "verb": "Double-Click(root,ca,certificate)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "root",
+          "ca",
+          "certificate"
+        ]
       },
       {
         "verb": "Click",
@@ -29069,9 +30352,8 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "select",
         "arguments": [
-          "select",
           "show",
           "physical",
           "stores",
@@ -29392,8 +30674,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(local,computer,policy)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "local",
+          "computer",
+          "policy"
+        ]
       },
       {
         "verb": "Click",
@@ -29404,6 +30690,21 @@
       {
         "verb": "clear",
         "arguments": [
+          "disable",
+          "user",
+          "configuration",
+          "settings",
+          "check",
+          "boxes"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "disable",
+          "computer",
+          "configuration",
+          "settings",
           "check",
           "boxes"
         ]
@@ -29525,8 +30826,11 @@
         ]
       },
       {
-        "verb": "right-click(postscript,printer)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "postscript",
+          "printer"
+        ]
       },
       {
         "verb": "click",
@@ -29554,8 +30858,11 @@
         ]
       },
       {
-        "verb": "double-click(postscript,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "postscript",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -29826,8 +31133,13 @@
         ]
       },
       {
-        "verb": "Double-Click(afd,networking,support,environment)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "afd",
+          "networking",
+          "support",
+          "environment"
+        ]
       },
       {
         "verb": "Select",
@@ -29999,21 +31311,40 @@
     ],
     "prediction": [
       {
-        "verb": "Start",
+        "verb": "Click",
+        "arguments": [
+          "start"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
         "arguments": [
           "internet",
           "options"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "content",
           "tab"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "disable"
         ]
@@ -30172,12 +31503,20 @@
         ]
       },
       {
-        "verb": "double-click(group,policy)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "group",
+          "policy"
+        ]
       },
       {
-        "verb": "double-click(disk,quota,policy,processing)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "disk",
+          "quota",
+          "policy",
+          "processing"
+        ]
       },
       {
         "verb": "click",
@@ -30187,8 +31526,9 @@
         ]
       },
       {
-        "verb": "clear",
+        "verb": "click",
         "arguments": [
+          "clear",
           "allow",
           "processing",
           "across",
@@ -30199,8 +31539,9 @@
         ]
       },
       {
-        "verb": "clear",
+        "verb": "click",
         "arguments": [
+          "clear",
           "do",
           "not",
           "apply",
@@ -30211,8 +31552,9 @@
         ]
       },
       {
-        "verb": "select",
+        "verb": "click",
         "arguments": [
+          "select",
           "process",
           "even",
           "if",
@@ -30571,8 +31913,11 @@
         ]
       },
       {
-        "verb": "double-click(folder,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "folder",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -30823,8 +32168,11 @@
         ]
       },
       {
-        "verb": "double-click(internet,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
       },
       {
         "verb": "click",
@@ -31081,8 +32429,10 @@
         ]
       },
       {
-        "verb": "left-click(default.rdp)",
-        "arguments": []
+        "verb": "left-click",
+        "arguments": [
+          "default.rdp"
+        ]
       }
     ],
     "gold_actions": [
@@ -31625,6 +32975,14 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "add",
+          "printer",
+          "wizard"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
           "start"
@@ -31647,7 +33005,6 @@
         "verb": "click",
         "arguments": [
           "printers",
-          "and",
           "other",
           "hardware"
         ]
@@ -31656,7 +33013,6 @@
         "verb": "click",
         "arguments": [
           "printers",
-          "and",
           "faxes"
         ]
       },
@@ -31664,16 +33020,7 @@
         "verb": "click",
         "arguments": [
           "add",
-          "a",
           "printer"
-        ]
-      },
-      {
-        "verb": "start",
-        "arguments": [
-          "add",
-          "printer",
-          "wizard"
         ]
       },
       {
@@ -31694,7 +33041,6 @@
         "arguments": [
           "automatically",
           "detect",
-          "and",
           "install",
           "check",
           "box"
@@ -32260,19 +33606,26 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "registry",
+          "editor"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
           "start"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "run"
         ]
       },
       {
-        "verb": "type",
+        "verb": "Type",
         "arguments": [
           "open",
           "box",
@@ -32280,13 +33633,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "expand",
+        "verb": "Expand",
         "arguments": [
           "hkey_local_machine",
           "system",
@@ -32297,7 +33650,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "export",
           "registry",
@@ -32305,7 +33658,7 @@
         ]
       },
       {
-        "verb": "type",
+        "verb": "Type",
         "arguments": [
           "file",
           "name",
@@ -32316,29 +33669,31 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "save"
         ]
       },
       {
-        "verb": "right-click(resourcetimeoutcount)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "resourcetimeoutcount"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "delete"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "yes"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "exit"
         ]
@@ -32584,8 +33939,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my network places)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -32594,8 +33953,12 @@
         ]
       },
       {
-        "verb": "right-click(direct cable connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "direct",
+          "cable",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -32614,7 +33977,8 @@
         "verb": "click",
         "arguments": [
           "advanced",
-          "custom settings"
+          "custom",
+          "settings"
         ]
       },
       {
@@ -32626,8 +33990,16 @@
       {
         "verb": "select",
         "arguments": [
-          "allow older ms-chap version for windows 95 servers",
-          "check box"
+          "allow",
+          "older",
+          "ms-chap",
+          "version",
+          "for",
+          "windows",
+          "95",
+          "servers",
+          "check",
+          "box"
         ]
       },
       {
@@ -32865,12 +34237,17 @@
         ]
       },
       {
-        "verb": "double-click(scheduled,tasks)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "scheduled",
+          "tasks"
+        ]
       },
       {
-        "verb": "right-click(task)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "task"
+        ]
       },
       {
         "verb": "click",
@@ -33094,6 +34471,27 @@
         ]
       },
       {
+        "verb": "point",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "local",
+          "security",
+          "policy"
+        ]
+      },
+      {
         "verb": "expand",
         "arguments": [
           "security",
@@ -33111,8 +34509,14 @@
         ]
       },
       {
-        "verb": "double-click(secure,server,require,security,policy)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "secure",
+          "server",
+          "require",
+          "security",
+          "policy"
+        ]
       },
       {
         "verb": "clear",
@@ -33137,8 +34541,13 @@
         ]
       },
       {
-        "verb": "double-click(all,icmp,traffic,rule)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "all",
+          "icmp",
+          "traffic",
+          "rule"
+        ]
       },
       {
         "verb": "click",
@@ -33556,7 +34965,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "view",
           "menu"
@@ -33573,23 +34982,24 @@
         ]
       },
       {
-        "verb": "Double-Click(non-plug,and,play,drivers)",
-        "arguments": []
-      },
-      {
-        "verb": "Double-Click(netbios,over,tcpip)",
-        "arguments": []
-      },
-      {
-        "verb": "Click",
+        "verb": "double-click",
         "arguments": [
-          "device",
-          "usage",
-          "box"
+          "non-plug",
+          "and",
+          "play",
+          "drivers"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "double-click",
+        "arguments": [
+          "netbios",
+          "over",
+          "tcpip"
+        ]
+      },
+      {
+        "verb": "click",
         "arguments": [
           "use",
           "this",
@@ -33733,8 +35143,11 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(internet,options)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
       },
       {
         "verb": "Click",
@@ -33882,86 +35295,124 @@
     ],
     "prediction": [
       {
-        "verb": "double-click(system)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "system"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "hardware"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "device",
           "manager"
         ]
       },
       {
-        "verb": "expand",
+        "verb": "Expand",
         "arguments": [
-          "ide ata/atapi",
+          "ide",
+          "ata/atapi",
           "controllers"
         ]
       },
       {
-        "verb": "right-click(pci bus master ide controller)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "pci",
+          "bus",
+          "master",
+          "ide",
+          "controller"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "driver"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "update",
           "driver"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
-          "display a list of known drivers for this device so that i can choose a specific driver"
+          "display",
+          "a",
+          "list",
+          "of",
+          "known",
+          "drivers",
+          "for",
+          "this",
+          "device",
+          "so",
+          "that",
+          "i",
+          "can",
+          "choose",
+          "a",
+          "specific",
+          "driver"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
-          "show all hardware for this device class"
+          "show",
+          "all",
+          "hardware",
+          "for",
+          "this",
+          "device",
+          "class"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
-          "standard ide ata/atapi controllers"
+          "standard",
+          "ide",
+          "ata/atapi",
+          "controllers"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
-          "standard ide/esdi hard disk controllers"
+          "standard",
+          "ide/esdi",
+          "hard",
+          "disk",
+          "controllers"
         ]
       }
     ],
@@ -34268,23 +35719,28 @@
     ],
     "prediction": [
       {
-        "verb": "double-click(phone,and,modem,options)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "phone",
+          "and",
+          "modem",
+          "options"
+        ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "modems"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "add"
         ]
       },
       {
-        "verb": "select",
+        "verb": "Select",
         "arguments": [
           "don't",
           "detect",
@@ -34302,20 +35758,20 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "boca",
           "research"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "boca",
           "33.6",
@@ -34325,26 +35781,26 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "com",
           "port"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "next"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "finish"
         ]
@@ -34793,15 +36249,23 @@
           "and",
           "dial-up",
           "connection",
-          "tool",
-          "in",
+          "tool"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
           "control",
           "panel"
         ]
       },
       {
-        "verb": "right-click(local,area,connection)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "local",
+          "area",
+          "connection"
+        ]
       },
       {
         "verb": "click",
@@ -34838,14 +36302,6 @@
       {
         "verb": "select",
         "arguments": [
-          "use",
-          "this",
-          "connection's",
-          "dns",
-          "suffix",
-          "in",
-          "dns",
-          "registrations",
           "check",
           "box"
         ]
@@ -35192,6 +36648,55 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
           "start"
@@ -35210,7 +36715,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -35238,8 +36743,10 @@
         ]
       },
       {
-        "verb": "right-click(user)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "user"
+        ]
       },
       {
         "verb": "click",
@@ -35248,7 +36755,7 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "member",
           "of",
@@ -35467,8 +36974,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "Click",
@@ -35634,8 +37145,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my,network,places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -35644,8 +37159,11 @@
         ]
       },
       {
-        "verb": "Right-Click(dial-up,adapter)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "dial-up",
+          "adapter"
+        ]
       },
       {
         "verb": "click",
@@ -36016,8 +37534,11 @@
     ],
     "prediction": [
       {
-        "verb": "Double-Click(my,computer)",
-        "arguments": []
+        "verb": "Double-Click",
+        "arguments": [
+          "my",
+          "computer"
+        ]
       },
       {
         "verb": "Click",
@@ -36054,8 +37575,6 @@
       {
         "verb": "Enable",
         "arguments": [
-          "client-side",
-          "caching",
           "check",
           "box"
         ]
@@ -36063,8 +37582,6 @@
       {
         "verb": "Disable",
         "arguments": [
-          "client-side",
-          "caching",
           "check",
           "box"
         ]
@@ -36183,10 +37700,51 @@
     ],
     "prediction": [
       {
+        "verb": "Start",
+        "arguments": [
+          "internet",
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
         "verb": "Click",
         "arguments": [
-          "start"
+          "advanced",
+          "tab"
         ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "enable",
+          "personalized",
+          "favorites",
+          "menu",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "Click(ok)\nClick(start)",
+        "arguments": []
       },
       {
         "verb": "point",
@@ -36202,11 +37760,60 @@
         ]
       },
       {
-        "verb": "double-click(regional,options)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
       },
       {
         "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "click(restore,basic,disk,configuration)\nClick(start)",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "regional",
+          "options"
+        ]
+      },
+      {
+        "verb": "Click",
         "arguments": [
           "general",
           "tab"
@@ -36221,13 +37828,13 @@
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
       },
       {
-        "verb": "click",
+        "verb": "Click",
         "arguments": [
           "ok"
         ]
@@ -36396,33 +38003,47 @@
     ],
     "prediction": [
       {
-        "verb": "Right-Click(my network places)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Right-Click(cable connection)",
-        "arguments": []
+        "verb": "Right-Click",
+        "arguments": [
+          "cable",
+          "connection"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "properties"
         ]
       },
       {
-        "verb": "Clear",
+        "verb": "clear",
         "arguments": [
-          "show icon in taskbar when connected check box"
+          "show",
+          "icon",
+          "in",
+          "taskbar",
+          "when",
+          "connected",
+          "check",
+          "box"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -36579,7 +38200,8 @@
         "verb": "Start",
         "arguments": [
           "registry",
-          "editor"
+          "editor",
+          "regedt32.exe"
         ]
       },
       {
@@ -36593,8 +38215,11 @@
         ]
       },
       {
-        "verb": "double-click(value,start)",
-        "arguments": []
+        "verb": "double-click",
+        "arguments": [
+          "value",
+          "start"
+        ]
       },
       {
         "verb": "Type",
@@ -36720,8 +38345,12 @@
     ],
     "prediction": [
       {
-        "verb": "Right-click(my,network,places)",
-        "arguments": []
+        "verb": "Right-click",
+        "arguments": [
+          "my",
+          "network",
+          "places"
+        ]
       },
       {
         "verb": "click",
@@ -36730,8 +38359,11 @@
         ]
       },
       {
-        "verb": "Right-Click(internal,adapter)",
-        "arguments": []
+        "verb": "right-click",
+        "arguments": [
+          "internal",
+          "adapter"
+        ]
       },
       {
         "verb": "click",
@@ -36740,10 +38372,11 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "internet",
-          "protocol"
+          "protocol",
+          "tcp/ip"
         ]
       },
       {
@@ -36753,14 +38386,14 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "advanced",
           "button"
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "dns",
           "tab"
@@ -36780,7 +38413,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
@@ -37028,11 +38661,15 @@
     ],
     "prediction": [
       {
-        "verb": "Double-click(sounds,and,multimedia)",
-        "arguments": []
+        "verb": "Double-click",
+        "arguments": [
+          "sounds",
+          "and",
+          "multimedia"
+        ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "sounds",
           "tab"
@@ -37052,7 +38689,7 @@
         ]
       },
       {
-        "verb": "Click",
+        "verb": "click",
         "arguments": [
           "ok"
         ]
