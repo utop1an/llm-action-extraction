@@ -1,6 +1,8 @@
 {
   "dataset": "cooking",
   "solver": "nl2p_1_ablation",
+  "source_solver": "nl2p_1_ablation",
+  "coref": "none",
   "model": "gpt-5.4",
   "num_docs": 116,
   "doc_ids": [
@@ -122,5 +124,5 @@
     115
   ],
   "source_file": null,
-  "batch_id": "batch_6a4116252f7c8190b9bcce3d78134f7a"
+  "batch_id": "batch_6a510b1aa5ec8190b1baa32b215aea55"
 }

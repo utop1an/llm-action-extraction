@@ -1,6 +1,8 @@
 {
   "dataset": "win2k",
   "solver": "nl2p_1",
+  "source_solver": "nl2p_1",
+  "coref": "none",
   "model": "gpt-5.4-mini",
   "num_docs": 154,
   "doc_ids": [
@@ -160,5 +162,5 @@
     153
   ],
   "source_file": null,
-  "batch_id": "batch_6a4114dd331c8190b5f785c80ce7baef"
+  "batch_id": "batch_6a510b1db9e08190aa8f618289cd259a"
 }

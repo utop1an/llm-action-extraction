@@ -1,6 +1,12 @@
 import json
 
-from experiment import build_result_record, load_coref_texts, result_solver_name, sample_to_input_text
+from experiment import (
+    build_result_record,
+    load_coref_texts,
+    normalize_solver_and_coref,
+    result_solver_name,
+    sample_to_input_text,
+)
 from scripts import openai_batch_experiment as batch
 from src.solvers import GPT3ToPlan
 
@@ -217,6 +223,18 @@ def test_result_solver_name_adds_coref_suffix():
     assert result_solver_name("nl2p_1", "none") == "nl2p_1"
     assert result_solver_name("nl2p_1", "llm") == "nl2p_1_coref"
     assert result_solver_name("nl2p_1_ablation", "nlp") == "nl2p_1_ablation_coref"
+
+
+def test_normalize_solver_aliases_and_coref():
+    assert normalize_solver_and_coref("gpt3toplan") == ("gpt3_to_plan", "none", "gpt3_to_plan")
+    assert normalize_solver_and_coref("nl2p") == ("nl2p_1", "none", "nl2p_1")
+    assert normalize_solver_and_coref("nl2p_ablation") == (
+        "nl2p_1_ablation",
+        "none",
+        "nl2p_1_ablation",
+    )
+    assert normalize_solver_and_coref("nl2p_coref") == ("nl2p_1", "llm", "nl2p_1_coref")
+    assert normalize_solver_and_coref("nl2p_1_coref") == ("nl2p_1", "llm", "nl2p_1_coref")
 
 
 def test_collect_writes_coref_results_under_coref_solver(tmp_path, monkeypatch):

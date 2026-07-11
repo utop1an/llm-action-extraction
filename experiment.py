@@ -19,6 +19,19 @@ COREF_DIRS = {
     "llm": os.path.join(".", "data", "coref_llm"),
     "nlp": os.path.join(".", "data", "coref"),
 }
+SOLVER_ALIASES = {
+    "gpt3toplan": "gpt3_to_plan",
+    "gpt3_to_plan": "gpt3_to_plan",
+    "nl2p": "nl2p_1",
+    "nl2p_1": "nl2p_1",
+    "nl2p_ablation": "nl2p_1_ablation",
+    "nl2p_1_ablation": "nl2p_1_ablation",
+    "nl2p_coref": "nl2p_1_coref",
+    "nl2p_1_coref": "nl2p_1_coref",
+    "nl2p_2": "nl2p_2",
+    "nl2p_3": "nl2p_3",
+    "verb_args": "verb_args",
+}
 
 MODELS = [
     "gpt-5",
@@ -169,6 +182,16 @@ def result_solver_name(solver_name, coref="none"):
     return f"{solver_name}_coref"
 
 
+def normalize_solver_and_coref(solver_name, coref="none"):
+    solver_name = SOLVER_ALIASES.get(solver_name, solver_name)
+    coref = coref or "none"
+    if solver_name == "nl2p_1_coref":
+        if coref not in ("none", "llm"):
+            raise ValueError("nl2p_1_coref always uses LLM coref; do not combine it with another coref mode")
+        return "nl2p_1", "llm", "nl2p_1_coref"
+    return solver_name, coref, result_solver_name(solver_name, coref)
+
+
 def load_existing_results(ds_name, solver_name, model_name=""):
     _, outpath, _, _ = result_paths(ds_name, solver_name, model_name)
     if not os.path.exists(outpath):
@@ -276,18 +299,23 @@ def main(args):
     else:
         target_ds = {k: read_from_labeled_dataset(v, limit=args.l) for k, v in DATASETS.items()}
 
-    coref_by_domain = {
-        ds_name: load_coref_texts(ds_name, coref=args.coref, coref_dir=args.coref_dir)
-        for ds_name in target_ds
-    }
-
     if args.m and args.m not in MODELS:
         print('Model %s not found!' % args.m)
         sys.exit(1)
     model_name = args.m
 
     # Define solvers
-    solver_name = args.s
+    try:
+        solver_name, coref_mode, output_solver_name = normalize_solver_and_coref(args.s, args.coref)
+    except ValueError as exc:
+        print(str(exc))
+        sys.exit(1)
+
+    coref_by_domain = {
+        ds_name: load_coref_texts(ds_name, coref=coref_mode, coref_dir=args.coref_dir)
+        for ds_name in target_ds
+    }
+
     match solver_name:
         case 'gpt3_to_plan':
             if not model_name:
@@ -323,9 +351,9 @@ def main(args):
             print('Unknown solver: %s' % solver_name)
             sys.exit(1)
 
-    output_solver_name = result_solver_name(solver_name, args.coref)
-
-    print("Starting experiment with solver: %s, model: %s" % (solver_name, model_name if model_name else ''))
+    print("Starting experiment with solver: %s, model: %s" % (args.s, model_name if model_name else ''))
+    if solver_name != args.s:
+        print("Resolved solver alias %s -> %s" % (args.s, solver_name))
     if output_solver_name != solver_name:
         print("Writing coref experiment results under solver name: %s" % output_solver_name)
     for ds_name, dataset in target_ds.items():
@@ -360,7 +388,7 @@ def main(args):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', type=str, default='nl2p_1', help='solvers: gpt3_to_plan, nl2p_1, nl2p_1_ablation, nl2p_2, nl2p_3, verb_args')
+    parser.add_argument('-s', type=str, default='nl2p_1', help='solvers: gpt3_to_plan, nl2p_1, nl2p_1_ablation, nl2p_1_coref, nl2p_2, nl2p_3, verb_args; aliases: gpt3toplan, nl2p, nl2p_ablation, nl2p_coref')
     parser.add_argument('-m', type=str, help='optional, for llm based solve only, model name: gpt-5-mini, gpt-4.1-mini...')
     parser.add_argument('-d', type=str, help='dataset: cooking,wikihow,win2k')
     parser.add_argument('-l', type=int, help='limit the number of instances to run')

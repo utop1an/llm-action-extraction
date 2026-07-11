@@ -19,7 +19,7 @@ MODEL_DIR=$HOME/ollama_models
 SIF=$HOME/ollama.sif
 OLLAMA_MODEL="llama3.3:70b"
 MODEL_KEY="llama3-70b"
-SOLVERS="${SOLVERS:-nl2p_1 nl2p_1_ablation}"
+SOLVERS="${SOLVERS:-gpt3_to_plan nl2p_1 nl2p_1_ablation nl2p_1_coref}"
 DATASET="${DATASET:-}"
 LIMIT="${LIMIT:-}"
 COREF="${COREF:-none}"
@@ -58,7 +58,14 @@ singularity exec \
 
 # 4. Run experiments
 for SOLVER in $SOLVERS; do
-    echo "Running solver: $SOLVER model: $MODEL_KEY"
+    SOLVER_COREF="$COREF"
+    case "$SOLVER" in
+        nl2p_coref|nl2p_1_coref)
+            SOLVER_COREF="llm"
+            ;;
+    esac
+
+    echo "Running solver: $SOLVER model: $MODEL_KEY coref: $SOLVER_COREF"
 
     ARGS=(-s "$SOLVER" -m "$MODEL_KEY")
     if [ -n "$DATASET" ]; then
@@ -67,8 +74,8 @@ for SOLVER in $SOLVERS; do
     if [ -n "$LIMIT" ]; then
         ARGS+=(-l "$LIMIT")
     fi
-    if [ "$COREF" != "none" ]; then
-        ARGS+=(--coref "$COREF")
+    if [ "$SOLVER_COREF" != "none" ]; then
+        ARGS+=(--coref "$SOLVER_COREF")
     fi
     if [ -n "$COREF_DIR" ]; then
         ARGS+=(--coref-dir "$COREF_DIR")

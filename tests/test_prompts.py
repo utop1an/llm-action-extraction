@@ -12,11 +12,18 @@ def test_nl2p_1_ablation_prompt_is_available_and_contains_ablation_rules():
     prompt = generate_prompt("nl2p_1_ablation", {"nl": "Let the mixture simmer."})
 
     assert "Let the mixture simmer." in prompt
-    assert "Process the paragraph sentence by sentence" in prompt
-    assert "Prefer the concrete state-changing event over framing" in prompt
+    assert "distinct event" in prompt
+    assert "role in context, not merely from the presence of a verb" in prompt
+    assert "not only the main event of a sentence" in prompt
+    assert 'aspectual or control constructions such as "start to X"' in prompt
+    assert "always consider the embedded event X" in prompt
+    assert "contributes a distinct procedural event" in prompt
+    assert "Preserve the lexical trigger" in prompt
+    assert "empty argument list" in prompt
     assert "Do not include prepositions inside arguments" in prompt
-    assert "Do not extract general background facts" in prompt
-    assert "source, destination, or container" in prompt
+    assert "hypothetical background" in prompt
+    assert "Coverage check" in prompt
+    assert "use, check, start" not in prompt
 
 
 def test_nl2p_1_ablation_solver_uses_ablation_prompt_name():

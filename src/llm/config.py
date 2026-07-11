@@ -121,7 +121,7 @@ PROMPTS = {
     },
     "nl2p_1": {
         "template": Template("""
-            You are given a natural language paragraph that may include both actions and contextual information.
+            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
 
             Your task is to extract the executable actions explicitly described in the paragraph.
             
@@ -135,7 +135,7 @@ PROMPTS = {
             - Preserve action order.
             - Do not invent actions, arguments, object types, or hidden preconditions.
             - Extract concrete eventive actions, not modal, auxiliary, linking, reporting, advisory, or purely descriptive verbs.
-            - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame, check, start, continue, recommend, or enable another event unless that verb itself changes an entity.
+            - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity.
             - Do not include agents such as "you" as arguments.
             - Arguments are core affected entities only. Do not include time, duration, purpose, manner, or instrument phrases unless the phrase denotes an entity whose state is directly changed.
             - Resolve pronouns such as it, them, this, these, those, and everything to the nearest unambiguous entity or entity set in the preceding context.
@@ -160,42 +160,43 @@ PROMPTS = {
     },
     "nl2p_1_ablation": {
         "template": Template("""
-            You are given a natural language paragraph that may contain multiple explicit or embedded executable actions, as well as non-action context.
+            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content.
 
-            Your task is to extract all and only the executable actions explicitly described in the paragraph.
+            Your task is to extract all and only the actions that the paragraph presents as steps or events in the procedure.
 
             Definition:
-            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
-            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
-            - An argument is a noun phrase denoting an entity directly affected by the action.
+            - An action is a distinct event that is explicitly presented as occurring, required, or performed as part of the procedure.
+            - A trigger is the verb or verb phrase in the text that denotes the event.
+            - An argument is a noun phrase denoting an entity that participates in the event.
 
             General extraction rules:
-            - Use only actions explicitly supported by the paragraph.
-            - Preserve action order.
-            - Process the paragraph sentence by sentence. Do not borrow actions or arguments from a different sentence unless a pronoun or ellipsis clearly refers back to it.
+            - Process the paragraph sentence by sentence and preserve the textual order of actions.
+            - Use only events explicitly supported by the paragraph; do not infer unstated steps.
+            - Decide whether an event belongs to the procedure from its role in context, not merely from the presence of a verb.
             - Do not invent actions, arguments, object types, or hidden preconditions.
             - Do not include agents such as "you" as arguments.
             - Output must be valid JSON only.
 
             Action coverage rules:
-            - Extract all eventive actions, not only the main imperative verb.
-            - Include explicit passive, participial, embedded, conditional, and state-change events when they denote real executable steps.
-            - Include actions in before/after/while/until/if clauses when they denote real executable events.
-            - Exclude modal, auxiliary, linking, reporting, advisory, and purely descriptive verbs when they do not denote an executable step.
-            - Prefer the concrete state-changing event over framing, control, light, aspectual, or causative verbs.
-            - For constructions such as "start to X", "continue X-ing", "try to X", "make sure X is done", "allow X to Y", or "let X Y", extract X/Y when X/Y is the real executable action.
-            - Keep the trigger verb close to the wording in the paragraph, but choose the event head rather than surrounding helper words.
-
+            - Extract each distinct event that the paragraph presents as a step in the procedure, including events that do not directly change an entity.
+            - Include events expressed in main, subordinate, passive, participial, or conditional constructions when they function as procedural steps rather than explanations or hypothetical background.
+            - In aspectual or control constructions such as "start to X" or "continue X-ing", treat the embedded event X as an action candidate. Keep the outer expression separately only when it also denotes a distinct procedural step.
+            - When multiple procedural events occur in one clause, extract them separately rather than merging them.
+            - Exclude verbs used only for modality, description, explanation, discourse organization, or other non-procedural functions.
+            - Use the action trigger stated in the paragraph. Do not replace it with a synonym or an inferred action label.
+                             
             Argument rules:
-            - Arguments should be core affected entities, usually direct objects or entities whose state, location, configuration, possession, or availability changes.
-            - Do not include time, duration, temperature, condition, purpose, manner, location, source, destination, container, or instrument phrases as arguments unless that entity itself is directly changed.
+            - Arguments should be core participating entities that are explicitly connected to the action in its local context.
+            - Do not include time, duration, temperature, condition, purpose, manner, location, source, destination, container, or instrument phrases unless they identify a core participant in that event.
             - Do not include prepositions inside arguments. Prefer the core noun phrase over the full prepositional phrase.
-            - For transfer, placement, insertion, removal, or movement actions, include the moved or changed entity. Include the source, destination, or container only if it is also directly acted on or changed.
             - Resolve pronouns such as "it", "them", "this", "these", "those", and "everything" to the most specific preceding entity or entity set when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
             - Keep a complete noun phrase as one argument when it denotes one object.
             - Keep coordinated entities as separate arguments only when they are separate affected objects.
             - Use concise surface forms from the text for arguments.
-            - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
+            - Do not borrow an argument from another sentence unless an unambiguous pronoun or ellipsis requires it. If no reliable argument is available, use an empty list.
+
+            Coverage check:
+            - Before returning the answer, verify sentence by sentence that every included item is a distinct event in the procedure and that no such explicit event was omitted.
 
             Return a JSON array. Each item must have exactly this form:
             [
