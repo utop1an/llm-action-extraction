@@ -9,25 +9,25 @@
         ],
         "prediction": [
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "start point"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "control panel"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "large icons"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "small icons"
                 ]
@@ -348,7 +348,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -479,7 +479,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -497,13 +497,13 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "channel screen saver"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "settings"
                 ]
@@ -511,17 +511,17 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "desired channel screen savers"
+                    "channel screen savers"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -1136,9 +1136,9 @@
                 "arguments": []
             },
             {
-                "verb": "allow",
+                "verb": "check",
                 "arguments": [
-                    "the index service to index this folder check box"
+                    "the for fast searching allow the index service to index this folder check box"
                 ]
             },
             {
@@ -1545,7 +1545,7 @@
             {
                 "verb": "Replace",
                 "arguments": [
-                    "the entry"
+                    "entry"
                 ]
             },
             {
@@ -1819,7 +1819,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -1837,13 +1837,13 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "select"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "com port"
                 ]
@@ -1855,7 +1855,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -2234,7 +2234,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the default properties tab"
+                    "default properties tab"
                 ]
             },
             {
@@ -3610,7 +3610,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
@@ -3741,7 +3741,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
@@ -3758,7 +3758,9 @@
             },
             {
                 "verb": "Click",
-                "arguments": []
+                "arguments": [
+                    "check box"
+                ]
             }
         ],
         "gold_actions": [
@@ -4199,7 +4201,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
@@ -4229,7 +4231,7 @@
             {
                 "verb": "clear",
                 "arguments": [
-                    "check box"
+                    "use shortcut check box"
                 ]
             }
         ],
@@ -5411,7 +5413,7 @@
             {
                 "verb": "click",
                 "arguments": [
-                    "select the enable digital cd audio"
+                    "select the enable digital cd audio for this cd-rom device"
                 ]
             },
             {
@@ -6225,7 +6227,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "run"
                 ]
@@ -6237,7 +6239,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -6530,7 +6532,8 @@
             {
                 "verb": "click",
                 "arguments": [
-                    "not defined"
+                    "not defined",
+                    "none"
                 ]
             }
         ],
@@ -6687,8 +6690,10 @@
         ],
         "prediction": [
             {
-                "verb": "start",
-                "arguments": []
+                "verb": "click",
+                "arguments": [
+                    "start"
+                ]
             },
             {
                 "verb": "click",
@@ -6884,7 +6889,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "list topics"
                 ]
@@ -7841,9 +7846,9 @@
         ],
         "prediction": [
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
-                    "network places"
+                    "my network places"
                 ]
             },
             {
@@ -7853,9 +7858,9 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
-                    "local area connection icon"
+                    "the local area connection icon"
                 ]
             },
             {
@@ -8121,8 +8126,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "network",
-                    "dial-up connections"
+                    "network and dial-up connections"
                 ]
             },
             {
@@ -8685,6 +8689,12 @@
                 "arguments": []
             },
             {
+                "verb": "clear",
+                "arguments": [
+                    "launch folder windows in a separate process check box"
+                ]
+            },
+            {
                 "verb": "click",
                 "arguments": [
                     "ok"
@@ -9096,13 +9106,7 @@
                 ]
             },
             {
-                "verb": "Click",
-                "arguments": [
-                    "settings"
-                ]
-            },
-            {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -9132,13 +9136,13 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "protocol"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "add"
                 ]
@@ -9150,7 +9154,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -9406,7 +9410,9 @@
             },
             {
                 "verb": "click",
-                "arguments": []
+                "arguments": [
+                    "file"
+                ]
             },
             {
                 "verb": "print",
@@ -9990,7 +9996,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -10020,13 +10026,13 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "service"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "add"
                 ]
@@ -10038,7 +10044,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -10886,7 +10892,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
@@ -11160,7 +11166,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the show pictures check box"
+                    "to select the show pictures check box"
                 ]
             },
             {
@@ -12290,9 +12296,9 @@
                 ]
             },
             {
-                "verb": "select",
+                "verb": "click",
                 "arguments": [
-                    "the override automatic cookie handling check box"
+                    "override automatic cookie handling check box"
                 ]
             },
             {
@@ -12537,7 +12543,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the power schemes tab"
+                    "power schemes tab"
                 ]
             },
             {
@@ -12661,18 +12667,22 @@
                 ]
             },
             {
-                "verb": "select",
+                "verb": "Click",
                 "arguments": [
                     "the enable offline files check box"
                 ]
             },
             {
                 "verb": "click",
-                "arguments": []
+                "arguments": [
+                    "apply"
+                ]
             },
             {
                 "verb": "click",
-                "arguments": []
+                "arguments": [
+                    "ok"
+                ]
             }
         ],
         "gold_actions": [
@@ -13108,7 +13118,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "this computer is for home use and not part of a business network"
                 ]
@@ -14633,7 +14643,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -14651,7 +14661,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "properties"
                 ]
@@ -14663,7 +14673,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "add"
                 ]
@@ -14675,7 +14685,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -16070,7 +16080,7 @@
             {
                 "verb": "click",
                 "arguments": [
-                    "enable"
+                    "enable netbios over tcp/ip"
                 ]
             },
             {
@@ -16082,7 +16092,7 @@
             {
                 "verb": "close",
                 "arguments": [
-                    "them"
+                    "dialog boxes"
                 ]
             },
             {
@@ -16379,7 +16389,7 @@
             {
                 "verb": "Right-Click",
                 "arguments": [
-                    "the icon"
+                    "the icon for the local area connection"
                 ]
             },
             {
@@ -16415,7 +16425,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "to clear"
+                    "to clear the register this connection's address in dns check box"
                 ]
             },
             {
@@ -16933,9 +16943,9 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "clear",
                 "arguments": [
-                    "account is disabled check box"
+                    "the account is disabled check box"
                 ]
             },
             {
@@ -17631,6 +17641,24 @@
             {
                 "verb": "Click",
                 "arguments": [
+                    "programs point"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
+                    "administrative tools"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
+                    "performance and then"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
                     "performance logs and alerts"
                 ]
             }
@@ -17950,7 +17978,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -17974,7 +18002,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "properties"
                 ]
@@ -18174,7 +18202,7 @@
         ],
         "prediction": [
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
                     "my computer"
                 ]
@@ -18192,7 +18220,7 @@
                 ]
             },
             {
-                "verb": "change",
+                "verb": "Change",
                 "arguments": [
                     "the value"
                 ]
@@ -18343,7 +18371,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "right-click",
                 "arguments": [
                     "my computer"
                 ]
@@ -18373,7 +18401,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
                     "direct parallel"
                 ]
@@ -18552,11 +18580,11 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -18570,7 +18598,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "power schemes tab"
+                    "the power schemes tab"
                 ]
             }
         ],
@@ -18694,7 +18722,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -18708,17 +18736,17 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the modems tab"
+                    "modems tab"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "your modem"
+                    "modem"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "properties"
                 ]
@@ -18726,7 +18754,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the diagnostics tab"
+                    "diagnostics tab"
                 ]
             },
             {
@@ -19286,7 +19314,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "ok"
                 ]
@@ -19316,7 +19344,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "ok"
                 ]
@@ -19571,9 +19599,9 @@
                 ]
             },
             {
-                "verb": "control",
+                "verb": "Click",
                 "arguments": [
-                    "panel"
+                    "control panel"
                 ]
             },
             {
@@ -19601,15 +19629,9 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "list all modes button"
-                ]
-            },
-            {
-                "verb": "displayed",
-                "arguments": [
-                    "list"
                 ]
             }
         ],
@@ -20768,10 +20790,6 @@
             },
             {
                 "verb": "search",
-                "arguments": []
-            },
-            {
-                "verb": "click",
                 "arguments": [
                     "files",
                     "folders"
@@ -20779,9 +20797,11 @@
             },
             {
                 "verb": "Click",
-                "arguments": [
-                    "search"
-                ]
+                "arguments": []
+            },
+            {
+                "verb": "search",
+                "arguments": []
             }
         ],
         "gold_actions": [
@@ -20890,9 +20910,9 @@
         ],
         "prediction": [
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
-                    "properties"
+                    "my network places"
                 ]
             },
             {
@@ -20902,13 +20922,25 @@
                 ]
             },
             {
-                "verb": "select",
+                "verb": "Right-Click",
+                "arguments": [
+                    "local area connection"
+                ]
+            },
+            {
+                "verb": "click",
+                "arguments": [
+                    "properties"
+                ]
+            },
+            {
+                "verb": "Click",
                 "arguments": [
                     "file and printer sharing for microsoft networks check box"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "ok"
                 ]
@@ -21104,7 +21136,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "modem"
+                    "your modem"
                 ]
             },
             {
@@ -21415,7 +21447,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -21946,6 +21978,12 @@
                 "verb": "Click",
                 "arguments": [
                     "ok"
+                ]
+            },
+            {
+                "verb": "locate",
+                "arguments": [
+                    "subkey"
                 ]
             },
             {
@@ -22891,12 +22929,6 @@
             {
                 "verb": "point",
                 "arguments": [
-                    "start menu"
-                ]
-            },
-            {
-                "verb": "point",
-                "arguments": [
                     "programs"
                 ]
             },
@@ -22975,7 +23007,7 @@
             {
                 "verb": "clear",
                 "arguments": [
-                    "hidden attribute"
+                    "the hidden attribute"
                 ]
             },
             {
@@ -23286,7 +23318,12 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point",
+                    "start point"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
                     "programs"
                 ]
             },
@@ -23580,7 +23617,13 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start click settings"
+                    "start"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
+                    "settings"
                 ]
             },
             {
@@ -23794,7 +23837,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -24914,7 +24957,7 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "the drive c:"
                 ]
@@ -25383,12 +25426,6 @@
                 ]
             },
             {
-                "verb": "remove",
-                "arguments": [
-                    "com2 port"
-                ]
-            },
-            {
                 "verb": "click",
                 "arguments": [
                     "delete port"
@@ -25543,79 +25580,79 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "default properties tab"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "enable distributed com on this computer check box"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "connect"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "identify"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "applications tab"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "{000c101c-0000-0000-c000-000000000046}"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "properties"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "general tab"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "default"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "security tab"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "use default access permissions"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "use default launch permissions"
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Click",
                 "arguments": [
                     "use default configuration permissions"
                 ]
@@ -26012,7 +26049,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "the networking tab"
+                    "networking tab"
                 ]
             },
             {
@@ -26059,6 +26096,10 @@
             },
             {
                 "verb": "click",
+                "arguments": []
+            },
+            {
+                "verb": "Click",
                 "arguments": [
                     "ok"
                 ]
@@ -26385,7 +26426,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "network and dial-up connections"
                 ]
@@ -29250,11 +29291,11 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "start point"
+                    "start point to settings"
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "control panel"
                 ]
@@ -29284,7 +29325,7 @@
                 ]
             },
             {
-                "verb": "Click",
+                "verb": "click",
                 "arguments": [
                     "ok"
                 ]
@@ -30879,7 +30920,7 @@
             {
                 "verb": "right-click",
                 "arguments": [
-                    "the direct cable connection"
+                    "direct cable connection"
                 ]
             },
             {
@@ -30903,7 +30944,7 @@
             {
                 "verb": "click",
                 "arguments": [
-                    "the allow older ms-chap version for windows 95 servers check box"
+                    "allow older ms-chap version for windows 95 servers check box"
                 ]
             },
             {
@@ -31376,49 +31417,49 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "security settings node"
+                    "the security settings node"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "ip security policies node"
+                    "the ip security policies node"
                 ]
             },
             {
                 "verb": "Double-Click",
                 "arguments": [
-                    "secure server (require security) policy"
+                    "the secure server (require security) policy"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "all ip traffic"
+                    "the all ip traffic"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "dynamic check boxes"
+                    "the dynamic check boxes"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "all icmp traffic check box"
+                    "the all icmp traffic check box"
                 ]
             },
             {
                 "verb": "Double-Click",
                 "arguments": [
-                    "all icmp traffic rule"
+                    "the all icmp traffic rule"
                 ]
             },
             {
                 "verb": "Click",
                 "arguments": [
-                    "filter action tab"
+                    "the filter action tab"
                 ]
             },
             {
@@ -32532,7 +32573,7 @@
             {
                 "verb": "select",
                 "arguments": [
-                    "the don't detect my modem; i will select it from a list check box"
+                    "don't detect my modem; i will select it from a list check box"
                 ]
             },
             {
@@ -32562,7 +32603,7 @@
             {
                 "verb": "click",
                 "arguments": [
-                    "the com port"
+                    "com port"
                 ]
             },
             {
@@ -33057,7 +33098,7 @@
             {
                 "verb": "Click",
                 "arguments": [
-                    "use this connection's dns suffix in dns registrations check box"
+                    "check box"
                 ]
             }
         ],
@@ -33812,9 +33853,9 @@
         ],
         "prediction": [
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
-                    "properties"
+                    "my network places"
                 ]
             },
             {
@@ -33824,19 +33865,31 @@
                 ]
             },
             {
-                "verb": "click",
+                "verb": "Right-Click",
                 "arguments": [
-                    "options tab"
-                ]
-            },
-            {
-                "verb": "select",
-                "arguments": [
-                    "display progress while connecting check box"
+                    "the dial-up adapter"
                 ]
             },
             {
                 "verb": "click",
+                "arguments": [
+                    "properties"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
+                    "the options tab"
+                ]
+            },
+            {
+                "verb": "Click",
+                "arguments": [
+                    "the display progress while connecting check box"
+                ]
+            },
+            {
+                "verb": "Click",
                 "arguments": [
                     "ok"
                 ]
@@ -34354,12 +34407,6 @@
                 ]
             },
             {
-                "verb": "copy",
-                "arguments": [
-                    "files"
-                ]
-            },
-            {
                 "verb": "click",
                 "arguments": [
                     "ok"
@@ -34543,7 +34590,7 @@
             {
                 "verb": "clear",
                 "arguments": [
-                    "show icon in taskbar when connected check box"
+                    "check box"
                 ]
             },
             {
@@ -34709,13 +34756,13 @@
             {
                 "verb": "Locate",
                 "arguments": [
-                    "the following key"
+                    "key"
                 ]
             },
             {
                 "verb": "double-click",
                 "arguments": [
-                    "the value start"
+                    "value start"
                 ]
             },
             {
