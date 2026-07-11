@@ -2225,7 +2225,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "scones"
         ]
@@ -2380,10 +2380,6 @@
         "arguments": [
           "scones"
         ]
-      },
-      {
-        "verb": "",
-        "arguments": []
       }
     ],
     "gold_actions": [
@@ -12564,7 +12560,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "pot",
           "pie"
@@ -21418,7 +21414,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -24595,7 +24591,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nadd",
+        "verb": "add",
         "arguments": [
           "olive oil"
         ]
@@ -36746,7 +36742,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nBring",
+        "verb": "Bring",
         "arguments": [
           "water",
           "sugar"
@@ -43545,7 +43541,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "chicken",
           "florentine"
@@ -51479,7 +51475,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nprepare",
+        "verb": "prepare",
         "arguments": [
           "apricot",
           "raspberry"
@@ -57551,28 +57547,28 @@
         "verb": "Place",
         "arguments": [
           "orange slices",
-          " container"
+          "container"
         ]
       },
       {
         "verb": "Place",
         "arguments": [
           "lemon slices",
-          " container"
+          "container"
         ]
       },
       {
         "verb": "freeze",
         "arguments": [
           "orange slices",
-          " lemon slices"
+          "lemon slices"
         ]
       },
       {
         "verb": "Pour",
         "arguments": [
           "water",
-          " pan"
+          "pan"
         ]
       },
       {
@@ -57597,14 +57593,14 @@
         "verb": "Put",
         "arguments": [
           "container",
-          " heat"
+          "heat"
         ]
       },
       {
         "verb": "bring",
         "arguments": [
           "solution",
-          " boil"
+          "boil"
         ]
       },
       {
@@ -57617,14 +57613,14 @@
         "verb": "Remove",
         "arguments": [
           "mixture",
-          " heat"
+          "heat"
         ]
       },
       {
         "verb": "allow",
         "arguments": [
           "mixture",
-          " cool"
+          "cool"
         ]
       },
       {
@@ -57637,29 +57633,29 @@
         "verb": "remove",
         "arguments": [
           "ginger bits",
-          " cinnamon bits"
+          "cinnamon bits"
         ]
       },
       {
         "verb": "mix",
         "arguments": [
           "strained liquid",
-          " juices",
-          " soda"
+          "juices",
+          "soda"
         ]
       },
       {
         "verb": "store",
         "arguments": [
           "ginger punch",
-          " cool place"
+          "cool place"
         ]
       },
       {
         "verb": "Add",
         "arguments": [
           "frozen fruit slices",
-          " ginger punch"
+          "ginger punch"
         ]
       },
       {
@@ -62283,7 +62279,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "vanilla",
           "layer",
@@ -63287,7 +63283,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmaking",
+        "verb": "making",
         "arguments": [
           "wipes"
         ]
@@ -63604,7 +63600,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nis",
+        "verb": "is",
         "arguments": [
           "recipe"
         ]
@@ -65854,7 +65850,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nuse",
+        "verb": "use",
         "arguments": [
           "pans"
         ]
@@ -66406,7 +66402,7 @@
     ],
     "prediction": [
       {
-        "verb": "Using a mixer or food processor, combine sour cream, cream cheese, caramelized onions, onion powder, and dried onions until well combined. Refrigerate until ready to use.\n\nACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "sour",
           "cream",
@@ -67067,7 +67063,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nkeep",
+        "verb": "keep",
         "arguments": [
           "shirts"
         ]

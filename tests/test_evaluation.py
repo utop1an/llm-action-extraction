@@ -104,6 +104,11 @@ def test_parse_result_filename_handles_solver_and_model_underscores():
         "gpt3_to_plan",
         "gpt-4.1",
     )
+    assert ev.parse_result_filename("wikihow_gpt3_to_plan_reparsed_gpt-5.4.pkl") == (
+        "wikihow",
+        "gpt3_to_plan_reparsed",
+        "gpt-5.4",
+    )
     assert ev.parse_result_filename("win2k_verb_args_gemma3_12b.pkl") == (
         "win2k",
         "verb_args",

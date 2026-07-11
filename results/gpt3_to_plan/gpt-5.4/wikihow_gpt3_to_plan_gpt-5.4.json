@@ -7848,10 +7848,6 @@
           "decoration",
           "comfort"
         ]
-      },
-      {
-        "verb": "",
-        "arguments": []
       }
     ],
     "gold_actions": [
@@ -34844,9 +34840,9 @@
         "verb": "Collect",
         "arguments": [
           "water",
-          " rain",
-          " snow",
-          " precipitation"
+          "rain",
+          "snow",
+          "precipitation"
         ]
       },
       {
@@ -34871,16 +34867,16 @@
         "verb": "funnel",
         "arguments": [
           "water",
-          " container"
+          "container"
         ]
       },
       {
         "verb": "Get",
         "arguments": [
           "water",
-          " stream",
-          " river",
-          " lake"
+          "stream",
+          "river",
+          "lake"
         ]
       },
       {
@@ -34893,7 +34889,7 @@
         "verb": "Opt",
         "arguments": [
           "body",
-          " water"
+          "water"
         ]
       },
       {
@@ -34918,17 +34914,17 @@
         "verb": "Pass",
         "arguments": [
           "water",
-          " filter"
+          "filter"
         ]
       },
       {
         "verb": "Pour",
         "arguments": [
           "water",
-          " coffee_filter",
-          " t-shirt",
-          " sock",
-          " material"
+          "coffee_filter",
+          "t-shirt",
+          "sock",
+          "material"
         ]
       },
       {
@@ -34953,7 +34949,7 @@
         "verb": "hold",
         "arguments": [
           "container",
-          " fire"
+          "fire"
         ]
       },
       {
@@ -34966,15 +34962,15 @@
         "verb": "boil",
         "arguments": [
           "water",
-          " paper_container"
+          "paper_container"
         ]
       },
       {
         "verb": "make",
         "arguments": [
           "solar",
-          " water",
-          " still"
+          "water",
+          "still"
         ]
       },
       {
@@ -34993,28 +34989,28 @@
         "verb": "Place",
         "arguments": [
           "leaves",
-          " vegetation"
+          "vegetation"
         ]
       },
       {
         "verb": "lay",
         "arguments": [
           "plastic_sheet",
-          " hole"
+          "hole"
         ]
       },
       {
         "verb": "Weigh",
         "arguments": [
           "edges",
-          " rocks"
+          "rocks"
         ]
       },
       {
         "verb": "place",
         "arguments": [
           "rock",
-          " plastic"
+          "plastic"
         ]
       },
       {
@@ -35027,7 +35023,7 @@
         "verb": "roll",
         "arguments": [
           "condensation",
-          " container"
+          "container"
         ]
       },
       {
@@ -35040,7 +35036,7 @@
         "verb": "boil",
         "arguments": [
           "it",
-          " water"
+          "water"
         ]
       }
     ],
@@ -41040,7 +41036,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nUse",
+        "verb": "Use",
         "arguments": [
           "raw",
           "crystal"
@@ -47880,7 +47876,7 @@
         "verb": "Dampen",
         "arguments": [
           "rag",
-          " white_vinegar"
+          "white_vinegar"
         ]
       },
       {
@@ -47893,36 +47889,36 @@
         "verb": "Drape",
         "arguments": [
           "rag",
-          " stains_or_buildup"
+          "stains_or_buildup"
         ]
       },
       {
         "verb": "Allow",
         "arguments": [
           "rag",
-          " remain",
-          " several_hours"
+          "remain",
+          "several_hours"
         ]
       },
       {
         "verb": "Rinse",
         "arguments": [
           "treated_area",
-          " cold_water"
+          "cold_water"
         ]
       },
       {
         "verb": "Wipe_up",
         "arguments": [
           "excess_liquid",
-          " dry_rag"
+          "dry_rag"
         ]
       },
       {
         "verb": "Treat",
         "arguments": [
           "remaining_stains_or_buildup",
-          " cleaning_agent"
+          "cleaning_agent"
         ]
       },
       {
@@ -47935,14 +47931,14 @@
         "verb": "Combine",
         "arguments": [
           "cleaning_agent",
-          " water"
+          "water"
         ]
       },
       {
         "verb": "Apply",
         "arguments": [
           "paste",
-          " remaining_stains_or_buildup"
+          "remaining_stains_or_buildup"
         ]
       },
       {
@@ -47955,8 +47951,8 @@
         "verb": "Polish",
         "arguments": [
           "marble",
-          " polishing_agent",
-          " soft_rag"
+          "polishing_agent",
+          "soft_rag"
         ]
       }
     ],
@@ -124191,7 +124187,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nGrab",
+        "verb": "Grab",
         "arguments": [
           "felt",
           "hanger"

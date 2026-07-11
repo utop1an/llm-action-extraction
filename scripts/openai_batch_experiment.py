@@ -61,7 +61,9 @@ def run_dir(solver_name: str, model_name: str, run_id: str) -> Path:
     return BATCH_ROOT / solver_name / safe_name(model_name) / run_id
 
 
-def result_solver_name(manifest: dict[str, Any]) -> str:
+def result_solver_name(manifest: dict[str, Any], override: str | None = None) -> str:
+    if override:
+        return safe_name(override)
     solver_name = manifest["solver"]
     coref_mode = manifest.get("coref") or "none"
     if coref_mode == "none":
@@ -341,7 +343,7 @@ def collect(args: argparse.Namespace) -> None:
             build_result_record(ds_name, doc_id, record["source_file"], sample, prediction)
         )
 
-    output_solver = result_solver_name(manifest)
+    output_solver = result_solver_name(manifest, getattr(args, "result_solver", None))
     result_root = ROOT / RESULTS_DIR / output_solver / safe_name(manifest["model"])
     result_root.mkdir(parents=True, exist_ok=True)
     for ds_name, results in grouped_results.items():
@@ -410,6 +412,10 @@ def build_parser() -> argparse.ArgumentParser:
     collect_parser.add_argument("manifest", help="Path to manifest.json")
     collect_parser.add_argument("--output-file-id", help="Override output file id")
     collect_parser.add_argument("--output-jsonl", help="Use an already downloaded output JSONL")
+    collect_parser.add_argument(
+        "--result-solver",
+        help="Write to a separate solver result directory/name, e.g. gpt3_to_plan_reparsed",
+    )
     collect_parser.set_defaults(func=collect)
 
     return parser

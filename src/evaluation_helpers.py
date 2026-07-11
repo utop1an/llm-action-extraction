@@ -24,6 +24,7 @@ nlp = spacy.load("en_core_web_sm")
 
 DATASETS = ("cooking", "wikihow", "win2k")
 SOLVERS = (
+    "gpt3_to_plan_reparsed",
     "gpt3_to_plan",
     "nl2p_1_ablation_coref",
     "nl2p_1_ablation",

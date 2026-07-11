@@ -841,7 +841,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nCook",
+        "verb": "Cook",
         "arguments": [
           "ground beef",
           "chopped onion",
@@ -1533,7 +1533,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "dessert"
         ]
@@ -2174,7 +2174,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:  \nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -2648,7 +2648,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -3133,7 +3133,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nadd",
+        "verb": "add",
         "arguments": [
           "eggs"
         ]
@@ -3618,7 +3618,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nfill",
+        "verb": "fill",
         "arguments": [
           "bowl",
           "Fritos"
@@ -6376,7 +6376,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nHeat",
+        "verb": "Heat",
         "arguments": [
           "saucepan"
         ]
@@ -8071,7 +8071,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nplace",
+        "verb": "place",
         "arguments": [
           "rack"
         ]
@@ -8951,7 +8951,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nprepare",
+        "verb": "prepare",
         "arguments": [
           "glasses"
         ]
@@ -9579,7 +9579,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -11837,7 +11837,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nlayer",
+        "verb": "layer",
         "arguments": [
           "potato",
           "slices",
@@ -12395,7 +12395,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPrepare",
+        "verb": "Prepare",
         "arguments": [
           "crust"
         ]
@@ -13915,7 +13915,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "graham",
           "cracker",
@@ -17567,7 +17567,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "milk",
           "water"
@@ -20237,7 +20237,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncream",
+        "verb": "cream",
         "arguments": [
           "peanut",
           "butter"
@@ -21000,7 +21000,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -21622,7 +21622,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -22381,7 +22381,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nAdd",
+        "verb": "Add",
         "arguments": [
           "water"
         ]
@@ -22769,7 +22769,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nRemove",
+        "verb": "Remove",
         "arguments": [
           "skin",
           "bones",
@@ -23604,8 +23604,8 @@
         "verb": "Place",
         "arguments": [
           "slice cheese",
-          " slice ham",
-          " chicken breast"
+          "slice ham",
+          "chicken breast"
         ]
       },
       {
@@ -23636,7 +23636,7 @@
         "verb": "coat",
         "arguments": [
           "chicken",
-          " bread crumbs"
+          "bread crumbs"
         ]
       },
       {
@@ -23667,7 +23667,7 @@
         "verb": "top",
         "arguments": [
           "each",
-          " half slice cheese"
+          "half slice cheese"
         ]
       },
       {
@@ -24128,7 +24128,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nadd",
+        "verb": "add",
         "arguments": [
           "olive",
           "oil"
@@ -25543,7 +25543,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nSprinkle",
+        "verb": "Sprinkle",
         "arguments": [
           "salt"
         ]
@@ -26771,7 +26771,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nHeat",
+        "verb": "Heat",
         "arguments": [
           "saucepan"
         ]
@@ -27138,7 +27138,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPre-heat",
+        "verb": "Pre-heat",
         "arguments": [
           "oven"
         ]
@@ -27548,7 +27548,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmix",
+        "verb": "mix",
         "arguments": [
           "cabbage",
           "carrots"
@@ -29087,7 +29087,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncut",
+        "verb": "cut",
         "arguments": [
           "bread"
         ]
@@ -29790,7 +29790,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nchop",
+        "verb": "chop",
         "arguments": [
           "greens"
         ]
@@ -30412,7 +30412,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmelt",
+        "verb": "melt",
         "arguments": [
           "butter"
         ]
@@ -31091,7 +31091,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nclean",
+        "verb": "clean",
         "arguments": [
           "mushrooms"
         ]
@@ -32461,7 +32461,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPrepare",
+        "verb": "Prepare",
         "arguments": [
           "grill"
         ]
@@ -33024,7 +33024,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\npreheat",
+        "verb": "preheat",
         "arguments": [
           "oven",
           "375F"
@@ -33576,7 +33576,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nBring",
+        "verb": "Bring",
         "arguments": [
           "stock"
         ]
@@ -34593,7 +34593,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nLay",
+        "verb": "Lay",
         "arguments": [
           "nori"
         ]
@@ -35048,7 +35048,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPlace",
+        "verb": "Place",
         "arguments": [
           "meat",
           "board"
@@ -35671,7 +35671,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nget",
+        "verb": "get",
         "arguments": [
           "mug",
           "bowl"
@@ -38286,7 +38286,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "Cajun",
           "seasoning",
@@ -38871,7 +38871,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmarinade",
+        "verb": "marinade",
         "arguments": [
           "shrimp"
         ]
@@ -39997,7 +39997,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nput",
+        "verb": "put",
         "arguments": [
           "sugar"
         ]
@@ -40566,7 +40566,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nprocess",
+        "verb": "process",
         "arguments": [
           "tofu"
         ]
@@ -41181,7 +41181,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nAim",
+        "verb": "Aim",
         "arguments": [
           "pose"
         ]
@@ -41846,7 +41846,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nWash",
+        "verb": "Wash",
         "arguments": [
           "ginger"
         ]
@@ -43638,7 +43638,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nAdd",
+        "verb": "Add",
         "arguments": [
           "ice"
         ]
@@ -46674,7 +46674,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nchop",
+        "verb": "chop",
         "arguments": [
           "pineapple"
         ]
@@ -47005,7 +47005,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nBeat",
+        "verb": "Beat",
         "arguments": [
           "butter"
         ]
@@ -49275,7 +49275,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "crumbs",
           "sugar",
@@ -49902,7 +49902,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "batter"
         ]
@@ -50697,7 +50697,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncrush",
+        "verb": "crush",
         "arguments": [
           "raspberries"
         ]
@@ -52824,7 +52824,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmix",
+        "verb": "mix",
         "arguments": [
           "cabbage",
           "carrots"
@@ -53326,7 +53326,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmake",
+        "verb": "make",
         "arguments": [
           "frappe"
         ]
@@ -53754,7 +53754,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nChoose",
+        "verb": "Choose",
         "arguments": [
           "fruits"
         ]
@@ -54371,7 +54371,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nheat",
+        "verb": "heat",
         "arguments": [
           "oven"
         ]
@@ -55980,7 +55980,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nchop",
+        "verb": "chop",
         "arguments": [
           "onions",
           "ginger",
@@ -56764,7 +56764,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPlace",
+        "verb": "Place",
         "arguments": [
           "slices",
           "container"
@@ -57952,7 +57952,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nadd",
+        "verb": "add",
         "arguments": [
           "eggs"
         ]
@@ -59118,7 +59118,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nreach",
+        "verb": "reach",
         "arguments": [
           "steak",
           "room",
@@ -59568,7 +59568,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nuse",
+        "verb": "use",
         "arguments": [
           "Wonderbread"
         ]
@@ -60063,7 +60063,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\npour",
+        "verb": "pour",
         "arguments": [
           "full",
           "cream",
@@ -60611,7 +60611,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nPreheat",
+        "verb": "Preheat",
         "arguments": [
           "oven"
         ]
@@ -61425,7 +61425,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncombine",
+        "verb": "combine",
         "arguments": [
           "vanilla",
           "layer",
@@ -61754,7 +61754,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nCook",
+        "verb": "Cook",
         "arguments": [
           "tortellini"
         ]
@@ -62368,7 +62368,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmaking",
+        "verb": "making",
         "arguments": [
           "wipes"
         ]
@@ -62547,21 +62547,21 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nget",
+        "verb": "get",
         "arguments": [
-          " sheet pans "
+          "sheet pans"
         ]
       },
       {
         "verb": "used",
         "arguments": [
-          " sheet pans "
+          "sheet pans"
         ]
       },
       {
         "verb": "get",
         "arguments": [
-          " sheet pans "
+          "sheet pans"
         ]
       },
       {
@@ -62599,7 +62599,7 @@
       {
         "verb": "should",
         "arguments": [
-          " pan "
+          "pan"
         ]
       },
       {
@@ -62691,7 +62691,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nbeauty",
+        "verb": "beauty",
         "arguments": [
           "recipe"
         ]
@@ -63310,7 +63310,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nuse",
+        "verb": "use",
         "arguments": [
           "driver"
         ]
@@ -63747,7 +63747,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\ncredit",
+        "verb": "credit",
         "arguments": [
           "recipe"
         ]
@@ -63972,7 +63972,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nEating",
+        "verb": "Eating",
         "arguments": [
           "healthy"
         ]
@@ -64401,7 +64401,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nspill",
+        "verb": "spill",
         "arguments": [
           "wax"
         ]
@@ -64657,7 +64657,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nabsorb",
+        "verb": "absorb",
         "arguments": [
           "chlorine",
           "salt",
@@ -65064,7 +65064,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nAdd",
+        "verb": "Add",
         "arguments": [
           "Castile",
           "soap"
@@ -65406,7 +65406,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nfull",
+        "verb": "full",
         "arguments": [
           "chemicals"
         ]
@@ -65522,7 +65522,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nneed",
+        "verb": "need",
         "arguments": [
           "packet",
           "onion",
@@ -65913,7 +65913,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nclean",
+        "verb": "clean",
         "arguments": [
           "makeup",
           "brushes"
@@ -66239,7 +66239,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nRemove",
+        "verb": "Remove",
         "arguments": [
           "buttons"
         ]
@@ -66617,7 +66617,7 @@
     ],
     "prediction": [
       {
-        "verb": "ACTIONS:\nmaking",
+        "verb": "making",
         "arguments": [
           "solution"
         ]

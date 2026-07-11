@@ -148,6 +148,34 @@ def test_gpt3_to_plan_parse_json_accepts_multiword_action_names():
     ]
 
 
+def test_gpt3_to_plan_parse_json_normalizes_actions_wrapper_and_whitespace():
+    solver = GPT3ToPlan({}, model_name="unused")
+
+    assert solver.parse_json(
+        "Here are the extracted steps.\nACTIONS:\nadd in(hash browns, slow cooker); serve"
+    ) == [
+        {"verb": "add in", "arguments": ["hash browns", "slow cooker"]},
+        {"verb": "serve", "arguments": []},
+    ]
+
+
+def test_gpt3_to_plan_parse_json_uses_last_actions_block():
+    solver = GPT3ToPlan({}, model_name="unused")
+
+    assert solver.parse_json(
+        "ACTIONS:\nexample(old)\nACTIONS:\nopen(control panel);click(ok)"
+    ) == [
+        {"verb": "open", "arguments": ["control panel"]},
+        {"verb": "click", "arguments": ["ok"]},
+    ]
+
+
+def test_gpt3_to_plan_parse_json_accepts_empty_response():
+    solver = GPT3ToPlan({}, model_name="unused")
+
+    assert solver.parse_json("") == []
+
+
 def test_load_llm_coref_texts_and_sample_input_replacement(tmp_path):
     coref_path = tmp_path / "toy_llm_coref.jsonl"
     coref_path.write_text(

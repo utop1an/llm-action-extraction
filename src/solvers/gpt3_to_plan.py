@@ -78,15 +78,27 @@ class GPT3ToPlan(Solver):
         return generate_prompt(self.prompt_name, {'nl': paragraph, 'egs': example})
 
     def parse_json(self, string):
-        acts = string.strip().split(';')
+        if not string or not string.strip():
+            return []
+
+        # Batch responses sometimes repeat the prompt's ``ACTIONS:`` label or
+        # add a short explanation before it.  Keep the last labelled block so
+        # repeated few-shot material cannot become part of the prediction.
+        text = re.split(r'(?i)\bACTIONS\s*:\s*', string)[-1].strip()
+        text = re.sub(r'^```(?:text)?\s*', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'\s*```$', '', text)
+        acts = text.split(';')
         results = []
         for item in acts:
+            item = item.strip()
+            if not item:
+                continue
             m = re.match(r'\s*([^()]+?)\s*\((.*)\)\s*$', item.strip())
             if m:
                 act_name = m.group(1).strip()
-                arguments = m.group(2).split(',') if m.group(2) else []
+                arguments = [arg.strip() for arg in m.group(2).split(',')] if m.group(2) else []
             else:
-                act_name = item.strip()
+                act_name = item
                 arguments = []
             act_obj = {
                 'verb': act_name,
