@@ -53,13 +53,13 @@
                 ]
             },
             {
-                "verb": "recycle",
+                "verb": "drop off",
                 "arguments": [
                     "alkaline batteries"
                 ]
             },
             {
-                "verb": "drop off",
+                "verb": "recycle",
                 "arguments": [
                     "alkaline batteries"
                 ]
@@ -617,14 +617,14 @@
             {
                 "verb": "Place",
                 "arguments": [
-                    "those books",
+                    "those large books",
                     "on tables as coffee table books"
                 ]
             },
             {
                 "verb": "Put",
                 "arguments": [
-                    "those books",
+                    "those large books",
                     "on a large tray with a vase of flowers and an interesting object"
                 ]
             },
@@ -637,7 +637,7 @@
             {
                 "verb": "Stack",
                 "arguments": [
-                    "books that create a cohesive color scheme"
+                    "or line up books that create a cohesive color scheme"
                 ]
             },
             {
@@ -2704,7 +2704,8 @@
             {
                 "verb": "Paint",
                 "arguments": [
-                    "canisters"
+                    "canisters",
+                    "latex paint"
                 ]
             },
             {
@@ -2742,7 +2743,8 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "chalk paint"
+                    "chalk paint",
+                    "canister"
                 ]
             },
             {
@@ -2781,13 +2783,15 @@
                 "verb": "Fix",
                 "arguments": [
                     "stencil",
-                    "canister"
+                    "canister",
+                    "tape"
                 ]
             },
             {
                 "verb": "Fill in",
                 "arguments": [
-                    "stencil"
+                    "stencil",
+                    "chalk or paint"
                 ]
             },
             {
@@ -2799,7 +2803,8 @@
             {
                 "verb": "Paint",
                 "arguments": [
-                    "stenciled area"
+                    "stenciled area",
+                    "paint or chalk paint"
                 ]
             },
             {
@@ -3846,8 +3851,7 @@
                 "verb": "Scoop",
                 "arguments": [
                     "cat",
-                    "towel or pillowcase",
-                    "carrier"
+                    "towel or pillowcase"
                 ]
             },
             {
@@ -3893,13 +3897,6 @@
                 ]
             },
             {
-                "verb": "Huddle",
-                "arguments": [
-                    "old mattress",
-                    "safe zone"
-                ]
-            },
-            {
                 "verb": "Include",
                 "arguments": [
                     "element",
@@ -3913,8 +3910,7 @@
             {
                 "verb": "Present",
                 "arguments": [
-                    "even keel",
-                    "storm shelter"
+                    "even keel"
                 ]
             },
             {
@@ -4671,7 +4667,7 @@
                 "verb": "Add",
                 "arguments": [
                     "water features",
-                    "near the succulents"
+                    "succulents"
                 ]
             },
             {
@@ -4690,7 +4686,7 @@
                 "verb": "Add",
                 "arguments": [
                     "chicken wire",
-                    "back of old shutters"
+                    "old shutters"
                 ]
             },
             {
@@ -4711,7 +4707,7 @@
                 "verb": "Place",
                 "arguments": [
                     "succulents",
-                    "between the slats of your shutter(s)"
+                    "slats of your shutter(s)"
                 ]
             },
             {
@@ -6300,8 +6296,7 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "pieces of driftwood",
-                    "pinecones"
+                    "hooks"
                 ]
             },
             {
@@ -7042,7 +7037,7 @@
                 "verb": "Turn",
                 "arguments": [
                     "an old combination radiophonograph in a beautifully veneered cabinet",
-                    "into an elegant foyer console"
+                    "an elegant foyer console"
                 ]
             },
             {
@@ -7073,7 +7068,8 @@
             {
                 "verb": "Decorate",
                 "arguments": [
-                    "an old chest for a teenage boy's room with discarded license plates"
+                    "an old chest for a teenage boy’s room",
+                    "with discarded license plates"
                 ]
             },
             {
@@ -7091,7 +7087,8 @@
             {
                 "verb": "Safeguard",
                 "arguments": [
-                    "the dresser or dressing table with a finishing glaze or coat of polyurethane"
+                    "the dresser or dressing table",
+                    "with a finishing glaze or coat of polyurethane"
                 ]
             },
             {
@@ -7103,11 +7100,12 @@
             {
                 "verb": "Attach",
                 "arguments": [
-                    "interesting gimp fringe or other trim along the bottom of the seat"
+                    "interesting gimp (an ornamental braid or cord) fringe or other trim",
+                    "along the bottom of the seat"
                 ]
             },
             {
-                "verb": "Faux paint",
+                "verb": "Paint",
                 "arguments": [
                     "old wooden furniture"
                 ]
@@ -7119,28 +7117,28 @@
                 ]
             },
             {
-                "verb": "Paint",
-                "arguments": [
-                    "mismatched chairs bold colors",
-                    "a wooden chair with an interesting shape in different colors and patterns"
-                ]
-            },
-            {
                 "verb": "Stencil",
                 "arguments": [
-                    "your children's names on the chair backs or add a motif"
+                    "your children’s names on the chair backs",
+                    "a motif"
                 ]
             },
             {
                 "verb": "Paint",
                 "arguments": [
-                    "vertical stripes on an old or RTA chest or nightstand"
+                    "a wooden chair with an interesting shape in different colors and patterns like a Victorian house"
                 ]
             },
             {
                 "verb": "Measure",
                 "arguments": [
                     "off the stripes using a ruler and a pencil to make light marks"
+                ]
+            },
+            {
+                "verb": "Take",
+                "arguments": [
+                    "a tip from Colonial homemakers"
                 ]
             },
             {
@@ -7152,13 +7150,14 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "a deep glass-fronted china cabinet to hold a small TV or serve as a minibar"
+                    "a deep glass-fronted china cabinet to hold a small TV or serve as a minibar in the living room"
                 ]
             },
             {
                 "verb": "Punch",
                 "arguments": [
-                    "a hole in the back of the china cabinet to slip through the wires for any appliances"
+                    "a hole in the back of the china cabinet",
+                    "to slip through the wires for any appliances"
                 ]
             },
             {
@@ -8019,7 +8018,7 @@
                 ]
             },
             {
-                "verb": "Use a piece of thread or silk ribbon as a bookmark",
+                "verb": "Try using a piece of thread or silk ribbon as a bookmark",
                 "arguments": [
                     "thread or silk ribbon",
                     "book"
@@ -8035,10 +8034,12 @@
             },
             {
                 "verb": "Avoid folding or dog-earing corners of pages",
-                "arguments": []
+                "arguments": [
+                    "corners of pages"
+                ]
             },
             {
-                "verb": "Open books carefully",
+                "verb": "Avoid opening books widely",
                 "arguments": [
                     "books"
                 ]
@@ -8063,8 +8064,10 @@
                 ]
             },
             {
-                "verb": "Avoid bending paperback covers",
-                "arguments": []
+                "verb": "Don't bend paperback covers",
+                "arguments": [
+                    "paperback covers"
+                ]
             },
             {
                 "verb": "Invest in reading copies",
@@ -8083,7 +8086,8 @@
             {
                 "verb": "Consult national book conservation organizations",
                 "arguments": [
-                    "national book conservation organizations"
+                    "national book conservation organizations",
+                    "local conservationists"
                 ]
             }
         ],
@@ -8577,7 +8581,7 @@
             {
                 "verb": "Light",
                 "arguments": [
-                    "citronella candles to keep mosquitoes at bay"
+                    "citronella candles nearby while outdoors"
                 ]
             }
         ],
@@ -9296,8 +9300,7 @@
             {
                 "verb": "clean",
                 "arguments": [
-                    "your zinc objects",
-                    "an old rag or cloth"
+                    "your zinc objects"
                 ]
             },
             {
@@ -9315,15 +9318,13 @@
             {
                 "verb": "use",
                 "arguments": [
-                    "lemon juice or vinegar",
-                    "your zinc objects"
+                    "lemon juice or vinegar"
                 ]
             },
             {
                 "verb": "cut",
                 "arguments": [
-                    "one or two lemons",
-                    "in half"
+                    "one or two lemons"
                 ]
             },
             {
@@ -9341,8 +9342,7 @@
             {
                 "verb": "use",
                 "arguments": [
-                    "toothpaste",
-                    "your zinc objects"
+                    "toothpaste"
                 ]
             },
             {
@@ -9373,15 +9373,13 @@
             {
                 "verb": "clean",
                 "arguments": [
-                    "small or hard-to-reach areas",
-                    "a toothbrush"
+                    "small or hard-to-reach areas"
                 ]
             },
             {
                 "verb": "store",
                 "arguments": [
-                    "the toothbrush",
-                    "your cleaning supplies"
+                    "the toothbrush"
                 ]
             }
         ],
@@ -9904,23 +9902,21 @@
             {
                 "verb": "wipe up",
                 "arguments": [
-                    "bleach",
-                    "rim or floor",
+                    "bleach that splashes onto the rim or floor",
                     "clean rag"
                 ]
             },
             {
-                "verb": "scrub under",
+                "verb": "scrub",
                 "arguments": [
-                    "entire rim of the toilet or bidet",
+                    "under the entire rim of the toilet or bidet",
                     "toilet brush"
                 ]
             },
             {
                 "verb": "insert",
                 "arguments": [
-                    "brush",
-                    "chute"
+                    "brush into and out of the chute"
                 ]
             },
             {
@@ -9933,7 +9929,7 @@
             {
                 "verb": "wash",
                 "arguments": [
-                    "areas of body that come into contact with bleach"
+                    "areas of your body that come into contact with bleach"
                 ]
             },
             {
@@ -9951,22 +9947,25 @@
             {
                 "verb": "place",
                 "arguments": [
-                    "toilet brush",
-                    "under the rim"
+                    "toilet brush under the rim"
+                ]
+            },
+            {
+                "verb": "flush",
+                "arguments": [
+                    "toilet or bidet"
                 ]
             },
             {
                 "verb": "tap",
                 "arguments": [
-                    "brush",
-                    "side of the toilet"
+                    "brush on the side of the toilet"
                 ]
             },
             {
                 "verb": "return",
                 "arguments": [
-                    "toilet brush",
-                    "its holder"
+                    "toilet brush to its holder"
                 ]
             }
         ],
@@ -10566,8 +10565,7 @@
             {
                 "verb": "Ask",
                 "arguments": [
-                    "someone",
-                    "identification of the plant"
+                    "someone to identify the plant"
                 ]
             },
             {
@@ -10587,15 +10585,14 @@
             {
                 "verb": "Post",
                 "arguments": [
-                    "photos",
+                    "photos online",
                     "garden forums"
                 ]
             },
             {
                 "verb": "Ask",
                 "arguments": [
-                    "help with identification",
-                    "online communities"
+                    "help with identification from these online communities"
                 ]
             },
             {
@@ -10608,84 +10605,92 @@
             {
                 "verb": "Identify",
                 "arguments": [
-                    "the houseplant"
+                    "the houseplant yourself"
                 ]
             },
             {
                 "verb": "Collect",
                 "arguments": [
-                    "houseplant reference books"
+                    "some houseplant reference books"
                 ]
             },
             {
                 "verb": "Try",
                 "arguments": [
-                    "the library",
-                    "plant reference books"
+                    "the library for plant reference books"
                 ]
             },
             {
                 "verb": "Ask",
                 "arguments": [
-                    "nurseries and greenhouses",
-                    "references"
+                    "nurseries and greenhouses if they have references you can look at"
                 ]
             },
             {
                 "verb": "Examine",
                 "arguments": [
-                    "the plant"
+                    "the plant carefully"
                 ]
             },
             {
-                "verb": "Look",
+                "verb": "Try",
                 "arguments": [
-                    "a complete specimen with leaves, stems, roots, and any flowers, fruits, or seeds"
+                    "to look at a complete specimen with leaves, stems, roots, and any flowers, fruits, or seeds"
                 ]
             },
             {
                 "verb": "Answer",
                 "arguments": [
-                    "questions",
-                    "notebook"
-                ]
-            },
-            {
-                "verb": "Use",
-                "arguments": [
-                    "a hand magnification lens"
-                ]
-            },
-            {
-                "verb": "Split",
-                "arguments": [
-                    "fruit or seed pods"
-                ]
-            },
-            {
-                "verb": "Search",
-                "arguments": [
-                    "reference books",
-                    "a match"
-                ]
-            },
-            {
-                "verb": "Read",
-                "arguments": [
-                    "description of the plant"
-                ]
-            },
-            {
-                "verb": "Compare",
-                "arguments": [
-                    "description of each part",
-                    "observations"
+                    "these questions if possible"
                 ]
             },
             {
                 "verb": "Record",
                 "arguments": [
-                    "name, including Latin name"
+                    "the answers in a notebook"
+                ]
+            },
+            {
+                "verb": "Use",
+                "arguments": [
+                    "a hand magnification lens if needed"
+                ]
+            },
+            {
+                "verb": "Split",
+                "arguments": [
+                    "open fruit or seed pods"
+                ]
+            },
+            {
+                "verb": "Search",
+                "arguments": [
+                    "your reference books for a match"
+                ]
+            },
+            {
+                "verb": "Look",
+                "arguments": [
+                    "for a plant that seems to look like the plant"
+                ]
+            },
+            {
+                "verb": "Read",
+                "arguments": [
+                    "the description of the plant and compare it to your observations"
+                ]
+            },
+            {
+                "verb": "Compare",
+                "arguments": [
+                    "the description of each part",
+                    "your observations"
+                ]
+            },
+            {
+                "verb": "Record",
+                "arguments": [
+                    "the name, including the Latin name, when you have a match"
                 ]
             },
             {
@@ -11500,7 +11505,13 @@
             {
                 "verb": "hang",
                 "arguments": [
-                    "catnip plants"
+                    "whole catnip plants"
+                ]
+            },
+            {
+                "verb": "keep away",
+                "arguments": [
+                    "cat from drying catnip leaves"
                 ]
             },
             {
@@ -12361,7 +12372,7 @@
                 "verb": "Add",
                 "arguments": [
                     "wallpaper",
-                    "the wall"
+                    "the long wall"
                 ]
             },
             {
@@ -14518,7 +14529,7 @@
             {
                 "verb": "Light",
                 "arguments": [
-                    "citronella candles to keep mosquitoes at bay"
+                    "citronella candles nearby while outdoors"
                 ]
             }
         ],
@@ -16129,7 +16140,7 @@
                 ]
             },
             {
-                "verb": "Prevent spoilage by refrigerating",
+                "verb": "Refrigerate",
                 "arguments": [
                     "perishable items as soon as you get home"
                 ]
@@ -17676,25 +17687,25 @@
                 ]
             },
             {
-                "verb": "Note",
+                "verb": "note",
                 "arguments": [
                     "the leaves"
                 ]
             },
             {
-                "verb": "Avoid",
+                "verb": "avoid",
                 "arguments": [
                     "plants with leaves that look overly shiny or polished"
                 ]
             },
             {
-                "verb": "Go for",
+                "verb": "go for",
                 "arguments": [
                     "plants with new flowers or leaf buds"
                 ]
             },
             {
-                "verb": "Examine",
+                "verb": "examine",
                 "arguments": [
                     "the selection at the grower"
                 ]
@@ -17706,7 +17717,7 @@
                 ]
             },
             {
-                "verb": "Look for",
+                "verb": "look for",
                 "arguments": [
                     "signs of pests or disease"
                 ]
@@ -17719,19 +17730,19 @@
                 ]
             },
             {
-                "verb": "Make sure",
+                "verb": "make sure",
                 "arguments": [
                     "the plants look clean and well potted"
                 ]
             },
             {
-                "verb": "Discuss",
+                "verb": "discuss",
                 "arguments": [
                     "the maintenance of the houseplant with the grower"
                 ]
             },
             {
-                "verb": "Ask",
+                "verb": "ask",
                 "arguments": [
                     "the grower for advice on watering the plants",
                     "the grower for advice on giving the plants fertilizer",
@@ -17739,19 +17750,25 @@
                 ]
             },
             {
-                "verb": "Opt for",
+                "verb": "talk to",
+                "arguments": [
+                    "the grower about warning signs of declining health in the plants"
+                ]
+            },
+            {
+                "verb": "opt for",
                 "arguments": [
                     "low maintenance plants"
                 ]
             },
             {
-                "verb": "Ask",
+                "verb": "ask",
                 "arguments": [
                     "the grower about houseplants that will be easy to care for and require very little watering or attention"
                 ]
             },
             {
-                "verb": "Avoid",
+                "verb": "avoid",
                 "arguments": [
                     "houseplants that are poisonous when chewed or swallowed"
                 ]
@@ -18130,21 +18147,11 @@
                 ]
             },
             {
-                "verb": "Set up",
+                "verb": "Offer",
                 "arguments": [
-                    "another room as a sewing room, exercise room, sauna and spa, playroom, model collection space, or astronomy observatory"
-                ]
-            },
-            {
-                "verb": "Promise",
-                "arguments": [
-                    "a certain number of hours each month on household repairs, odd jobs, or chores"
-                ]
-            },
-            {
-                "verb": "Arrange",
-                "arguments": [
-                    "regular dates or family time"
+                    "setting up another room as a sewing room, exercise room, sauna and spa, playroom, model collection space, or astronomy observatory",
+                    "promising a certain number of hours each month on household repairs, odd jobs, or chores",
+                    "arranging regular dates or family time"
                 ]
             },
             {
@@ -18725,14 +18732,14 @@
                 "verb": "Line",
                 "arguments": [
                     "the terracotta pots",
-                    "fences around pools or yards or even on the back wall of your home"
+                    "in large geometric patterns like squares, circles, or even stars"
                 ]
             },
             {
-                "verb": "Leave",
+                "verb": "Place",
                 "arguments": [
                     "the terracotta pots",
-                    "their common orange color"
+                    "on fences around pools or yards or even on the back wall of your home"
                 ]
             },
             {
@@ -20742,12 +20749,6 @@
                 "verb": "sweep up",
                 "arguments": [
                     "remaining debris and glue-scrapings"
-                ]
-            },
-            {
-                "verb": "install",
-                "arguments": [
-                    "new carpet, laminate, or other types of flooring"
                 ]
             }
         ],
@@ -22813,7 +22814,7 @@
                 "verb": "have",
                 "arguments": [
                     "small children",
-                    "an art project"
+                    "an art project related to the story"
                 ]
             },
             {
@@ -22826,8 +22827,7 @@
             {
                 "verb": "cut",
                 "arguments": [
-                    "a fish",
-                    "purple or blue paper"
+                    "a fish out of purple or blue paper"
                 ]
             },
             {
@@ -22846,9 +22846,7 @@
             {
                 "verb": "get",
                 "arguments": [
-                    "cozy",
-                    "a blanket",
-                    "your favorite book"
+                    "cozy with a blanket and your favorite book"
                 ]
             },
             {
@@ -22860,8 +22858,7 @@
             {
                 "verb": "write",
                 "arguments": [
-                    "a letter",
-                    "a relative"
+                    "a letter to a relative"
                 ]
             },
             {
@@ -22873,8 +22870,7 @@
             {
                 "verb": "play",
                 "arguments": [
-                    "word games",
-                    "Hangman or Mad Libs"
+                    "word games like Hangman or Mad Libs"
                 ]
             },
             {
@@ -22886,40 +22882,42 @@
             {
                 "verb": "watch",
                 "arguments": [
-                    "movies",
-                    "a portable DVD player"
+                    "movies on a portable DVD player"
                 ]
             },
             {
                 "verb": "keep",
                 "arguments": [
-                    "the screen",
-                    "as dim as possible"
+                    "the screen as dim as possible"
                 ]
             },
             {
                 "verb": "close",
                 "arguments": [
-                    "apps"
+                    "any apps that you are not using"
                 ]
             },
             {
-                "verb": "listen",
+                "verb": "listen to",
                 "arguments": [
-                    "music"
+                    "some music"
                 ]
             },
             {
                 "verb": "play",
                 "arguments": [
-                    "an instrument",
-                    "a song"
+                    "an instrument"
                 ]
             },
             {
-                "verb": "teach",
+                "verb": "practice",
                 "arguments": [
-                    "yourself",
+                    "a song that you have been learning"
+                ]
+            },
+            {
+                "verb": "teach yourself",
+                "arguments": [
                     "a new song"
                 ]
             },
@@ -22929,13 +22927,13 @@
             },
             {
                 "verb": "dance",
-                "arguments": []
+                "arguments": [
+                    "to your favorite songs"
+                ]
             },
             {
-                "verb": "get",
-                "arguments": [
-                    "crafty"
-                ]
+                "verb": "get crafty",
+                "arguments": []
             },
             {
                 "verb": "do",
@@ -22946,33 +22944,25 @@
             {
                 "verb": "paint",
                 "arguments": [
-                    "a canvas"
+                    "instead"
                 ]
             },
             {
                 "verb": "make",
                 "arguments": [
-                    "crafty items",
-                    "yarn dolls or duct tape wallets"
+                    "crafty items such as yarn dolls or duct tape wallets"
                 ]
             },
             {
-                "verb": "knit",
-                "arguments": []
-            },
-            {
-                "verb": "crochet",
-                "arguments": []
-            },
-            {
-                "verb": "embroider",
-                "arguments": []
+                "verb": "try",
+                "arguments": [
+                    "knitting, crochet, or embroidery"
+                ]
             },
             {
                 "verb": "make",
                 "arguments": [
-                    "something",
-                    "clay or play-doh"
+                    "something out of clay or play-doh"
                 ]
             }
         ],
@@ -25073,6 +25063,12 @@
                 "arguments": [
                     "the book",
                     "a plastic bag"
+                ]
+            },
+            {
+                "verb": "take",
+                "arguments": [
+                    "the book"
                 ]
             },
             {
@@ -27623,147 +27619,161 @@
         ],
         "prediction": [
             {
-                "verb": "Set a trap",
+                "verb": "Set",
                 "arguments": [
-                    "trap"
+                    "a trap"
                 ]
             },
             {
-                "verb": "exterminate or relocate voles",
+                "verb": "Make sure",
+                "arguments": []
+            },
+            {
+                "verb": "Set",
                 "arguments": [
-                    "voles"
+                    "your traps"
                 ]
             },
             {
-                "verb": "Choose from a variety of lethal traps",
+                "verb": "Choose",
                 "arguments": [
                     "lethal traps"
                 ]
             },
             {
-                "verb": "Set your trap",
+                "verb": "Set",
                 "arguments": [
-                    "trap"
+                    "your trap"
                 ]
             },
             {
-                "verb": "Check your traps daily",
+                "verb": "Check",
                 "arguments": [
-                    "traps"
+                    "your traps"
                 ]
             },
             {
-                "verb": "remove dead and captured voles",
+                "verb": "Remove",
                 "arguments": [
                     "dead and captured voles"
                 ]
             },
             {
-                "verb": "Employ either one-time traps or reusable ones",
-                "arguments": [
-                    "one-time traps",
-                    "reusable traps"
-                ]
-            },
-            {
-                "verb": "Remove dead pests",
-                "arguments": [
-                    "dead pests"
-                ]
-            },
-            {
-                "verb": "Protect children and pets from your traps",
-                "arguments": [
-                    "children",
-                    "pets",
-                    "traps"
-                ]
-            },
-            {
-                "verb": "Cover your traps in a box",
-                "arguments": [
-                    "traps",
-                    "box"
-                ]
-            },
-            {
-                "verb": "Switch locations of your traps",
+                "verb": "Employ",
                 "arguments": [
                     "traps"
                 ]
             },
             {
-                "verb": "Use apple bits, oatmeal, or peanut butter as effective bait",
+                "verb": "Set",
                 "arguments": [
-                    "apple bits",
-                    "oatmeal",
-                    "peanut butter"
+                    "your traps"
                 ]
             },
             {
-                "verb": "Set a trap for live capture",
+                "verb": "Leave",
+                "arguments": []
+            },
+            {
+                "verb": "Protect",
                 "arguments": [
-                    "trap"
+                    "children and pets"
                 ]
             },
             {
-                "verb": "Remove voles using humane traps",
+                "verb": "Cover",
                 "arguments": [
-                    "voles",
-                    "humane traps"
+                    "your traps"
                 ]
             },
             {
-                "verb": "Relocate the animals once caught with these traps",
+                "verb": "Switch",
                 "arguments": [
-                    "animals"
+                    "locations of your traps"
                 ]
             },
             {
-                "verb": "Choose the right poison",
+                "verb": "Use",
+                "arguments": [
+                    "apple bits, oatmeal, or peanut butter"
+                ]
+            },
+            {
+                "verb": "Set",
+                "arguments": [
+                    "a trap for live capture"
+                ]
+            },
+            {
+                "verb": "Remove",
+                "arguments": [
+                    "voles"
+                ]
+            },
+            {
+                "verb": "Relocate",
+                "arguments": [
+                    "the animals"
+                ]
+            },
+            {
+                "verb": "Choose",
+                "arguments": [
+                    "a location"
+                ]
+            },
+            {
+                "verb": "Use",
                 "arguments": [
                     "poison"
                 ]
             },
             {
-                "verb": "Use poison in the early fall or late winter",
+                "verb": "Obey",
                 "arguments": [
-                    "poison"
+                    "safety precautions"
                 ]
             },
             {
-                "verb": "Obey the safety precautions after you have read the label",
-                "arguments": []
-            },
-            {
-                "verb": "Rotate your traps every week or set 2 traps every few days",
+                "verb": "Rotate",
                 "arguments": [
-                    "traps"
+                    "your traps"
                 ]
             },
             {
-                "verb": "Follow the safety precautions so that the poison doesn’t spread to other animals",
-                "arguments": []
-            },
-            {
-                "verb": "Utilize bait containers or place the trap directly at the opening of a vole tunnel",
+                "verb": "Set",
                 "arguments": [
-                    "bait containers",
-                    "trap"
+                    "2 traps"
                 ]
             },
             {
-                "verb": "Create an open-ended box for your traps",
+                "verb": "Follow",
                 "arguments": [
-                    "box",
-                    "traps"
+                    "safety precautions"
                 ]
             },
             {
-                "verb": "Handle voles -- dead or alive -- with gloves",
+                "verb": "Utilize",
                 "arguments": [
-                    "voles",
-                    "gloves"
+                    "bait containers"
+                ]
+            },
+            {
+                "verb": "Place",
+                "arguments": [
+                    "the trap"
+                ]
+            },
+            {
+                "verb": "Create",
+                "arguments": [
+                    "an open-ended box"
+                ]
+            },
+            {
+                "verb": "Handle",
+                "arguments": [
+                    "voles"
                 ]
             }
         ],
@@ -28410,97 +28420,133 @@
         ],
         "prediction": [
             {
+                "verb": "wait",
+                "arguments": [
+                    "the bat to land"
+                ]
+            },
+            {
                 "verb": "catch",
                 "arguments": [
-                    "bat"
+                    "a moving bat"
+                ]
+            },
+            {
+                "verb": "try",
+                "arguments": []
+            },
+            {
+                "verb": "make",
+                "arguments": [
+                    "noise"
+                ]
+            },
+            {
+                "verb": "scare",
+                "arguments": [
+                    "the bat"
+                ]
+            },
+            {
+                "verb": "catch",
+                "arguments": [
+                    "the bat mid-flight"
+                ]
+            },
+            {
+                "verb": "wait",
+                "arguments": [
+                    "for the bat to land"
                 ]
             },
             {
                 "verb": "use",
                 "arguments": [
-                    "small box or bucket"
-                ]
-            },
-            {
-                "verb": "wait",
-                "arguments": []
-            },
-            {
-                "verb": "approach",
-                "arguments": [
-                    "bat"
-                ]
-            },
-            {
-                "verb": "place",
-                "arguments": [
-                    "container",
-                    "bat"
-                ]
-            },
-            {
-                "verb": "slide",
-                "arguments": [
-                    "piece of cardboard or container lid",
-                    "container"
-                ]
-            },
-            {
-                "verb": "enclose",
-                "arguments": [
-                    "bat",
-                    "container and lid"
-                ]
-            },
-            {
-                "verb": "carry",
-                "arguments": [
-                    "container"
-                ]
-            },
-            {
-                "verb": "release",
-                "arguments": [
-                    "bat"
+                    "a small box or bucket"
                 ]
             },
             {
                 "verb": "catch",
                 "arguments": [
-                    "bat",
-                    "net or blanket"
+                    "the bat"
+                ]
+            },
+            {
+                "verb": "find",
+                "arguments": [
+                    "a container"
                 ]
             },
             {
                 "verb": "approach",
                 "arguments": [
-                    "bat"
+                    "the bat"
                 ]
             },
             {
                 "verb": "place",
                 "arguments": [
-                    "net or cloth",
-                    "bat"
+                    "the container over the bat"
                 ]
             },
             {
-                "verb": "wrap",
+                "verb": "slide",
                 "arguments": [
-                    "bat",
-                    "cloth towel or blanket"
+                    "a piece of cardboard or container lid under the container"
+                ]
+            },
+            {
+                "verb": "enclose",
+                "arguments": [
+                    "the bat within the container and lid"
                 ]
             },
             {
                 "verb": "carry",
                 "arguments": [
-                    "bat in net or cloth"
+                    "the container outside"
                 ]
             },
             {
                 "verb": "release",
                 "arguments": [
-                    "bat"
+                    "the bat back into your yard"
+                ]
+            },
+            {
+                "verb": "catch",
+                "arguments": [
+                    "the bat in a net or blanket"
+                ]
+            },
+            {
+                "verb": "approach",
+                "arguments": [
+                    "the bat slowly with the cloth or net in front of you"
+                ]
+            },
+            {
+                "verb": "place",
+                "arguments": [
+                    "the net or cloth over the bat rapidly"
+                ]
+            },
+            {
+                "verb": "wrap",
+                "arguments": [
+                    "the bat up with the cloth towel or blanket"
+                ]
+            },
+            {
+                "verb": "carry",
+                "arguments": [
+                    "the bat outdoors while still in the net or cloth"
+                ]
+            },
+            {
+                "verb": "release",
+                "arguments": [
+                    "the bat"
                 ]
             }
         ],
@@ -29087,8 +29133,12 @@
             {
                 "verb": "Pull over",
                 "arguments": [
-                    "the vehicle"
+                    "your vehicle"
                 ]
+            },
+            {
+                "verb": "Make sure",
+                "arguments": []
             },
             {
                 "verb": "Soak up",
@@ -29101,7 +29151,7 @@
                 "verb": "Blot",
                 "arguments": [
                     "the coffee spill",
-                    "a cloth or napkin"
+                    "a cloth"
                 ]
             },
             {
@@ -29127,8 +29177,8 @@
             {
                 "verb": "Brush off",
                 "arguments": [
-                    "solid material",
-                    "coffee grounds"
+                    "any solid material",
+                    "a brush"
                 ]
             },
             {
@@ -29138,10 +29188,21 @@
                 ]
             },
             {
+                "verb": "Wait",
+                "arguments": []
+            },
+            {
                 "verb": "Blot",
                 "arguments": [
-                    "coffee grounds",
-                    "a cloth or napkin"
+                    "the coffee grounds",
+                    "a cloth"
+                ]
+            },
+            {
+                "verb": "Brush",
+                "arguments": [
+                    "the coffee grounds",
+                    "a brush"
                 ]
             },
             {
@@ -29169,7 +29230,7 @@
                 "verb": "Add",
                 "arguments": [
                     "dish soap or baking soda",
-                    "the stain or a cloth or napkin"
+                    "the stain"
                 ]
             },
             {
@@ -30100,12 +30161,6 @@
                 ]
             },
             {
-                "verb": "Choose",
-                "arguments": [
-                    "colors that correspond with the holiday"
-                ]
-            },
-            {
                 "verb": "Buy",
                 "arguments": [
                     "items related to your theme"
@@ -30126,7 +30181,7 @@
             {
                 "verb": "Choose",
                 "arguments": [
-                    "items that hint at the theme for the rest of the table"
+                    "items that hint at that theme for the rest of the table"
                 ]
             },
             {
@@ -30144,13 +30199,13 @@
             {
                 "verb": "Choose",
                 "arguments": [
-                    "either a tablecloth or a table runner"
+                    "either a tablecloth or a table runner to place beneath the food on the buffet table"
                 ]
             },
             {
                 "verb": "Supply",
                 "arguments": [
-                    "plenty of spare napkins"
+                    "plenty of spare napkins in case of a mess"
                 ]
             },
             {
@@ -30162,7 +30217,7 @@
             {
                 "verb": "Make",
                 "arguments": [
-                    "labels for each dish"
+                    "labels for each dish that you will have on the table"
                 ]
             },
             {
@@ -30186,7 +30241,7 @@
             {
                 "verb": "Display",
                 "arguments": [
-                    "the menu using a small menu easel or a stand"
+                    "the menu either using a small menu easel on the table or a stand beside the beginning of the table"
                 ]
             }
         ],
@@ -31567,7 +31622,7 @@
             {
                 "verb": "Set out",
                 "arguments": [
-                    "open container"
+                    "container"
                 ]
             },
             {
@@ -31580,13 +31635,7 @@
                 "verb": "Collect",
                 "arguments": [
                     "water",
-                    "leaves"
-                ]
-            },
-            {
-                "verb": "Funnel",
-                "arguments": [
-                    "water",
+                    "leaves",
                     "container"
                 ]
             },
@@ -31635,7 +31684,7 @@
                     "water",
                     "coffee filter",
                     "t-shirt",
-                    "clean sock",
+                    "sock",
                     "porous material"
                 ]
             },
@@ -31643,21 +31692,22 @@
                 "verb": "Disinfect",
                 "arguments": [
                     "water",
-                    "harmful bacteria"
+                    "bacteria"
                 ]
             },
             {
                 "verb": "Boil",
                 "arguments": [
                     "water",
-                    "fire"
+                    "fire",
+                    "container"
                 ]
             },
             {
-                "verb": "Use",
+                "verb": "Hold",
                 "arguments": [
-                    "sticks",
-                    "container"
+                    "container",
+                    "sticks"
                 ]
             },
             {
@@ -31696,9 +31746,10 @@
                 ]
             },
             {
-                "verb": "Let form",
+                "verb": "Place",
                 "arguments": [
-                    "condensation"
+                    "rock",
+                    "middle of plastic"
                 ]
             }
         ],
@@ -32575,7 +32626,7 @@
                 "verb": "Get",
                 "arguments": [
                     "beavers",
-                    "to move out of the area"
+                    "out of the area"
                 ]
             },
             {
@@ -32659,13 +32710,6 @@
                 "arguments": [
                     "plate of beer or wine",
                     "affected areas"
-                ]
-            },
-            {
-                "verb": "Create",
-                "arguments": [
-                    "line of salt",
-                    "around affected plants"
                 ]
             },
             {
@@ -33862,19 +33906,49 @@
                 ]
             },
             {
-                "verb": "Nail, screw, or glue",
+                "verb": "Gather",
+                "arguments": [
+                    "wood"
+                ]
+            },
+            {
+                "verb": "Cut",
+                "arguments": [
+                    "wood"
+                ]
+            },
+            {
+                "verb": "Nail",
                 "arguments": [
                     "your form"
                 ]
             },
             {
-                "verb": "Decorate",
+                "verb": "Screw",
+                "arguments": [
+                    "your form"
+                ]
+            },
+            {
+                "verb": "Glue",
+                "arguments": [
+                    "your form"
+                ]
+            },
+            {
+                "verb": "Paint",
                 "arguments": [
                     "the wood"
                 ]
             },
             {
-                "verb": "Paint, stain, or varnish",
+                "verb": "Stain",
+                "arguments": [
+                    "the wood"
+                ]
+            },
+            {
+                "verb": "Varnish",
                 "arguments": [
                     "the wood"
                 ]
@@ -33921,12 +33995,6 @@
                 "arguments": [
                     "items",
                     "off-center and partially submerged"
-                ]
-            },
-            {
-                "verb": "Add",
-                "arguments": [
-                    "statues or other additions"
                 ]
             },
             {
@@ -34711,126 +34779,133 @@
         ],
         "prediction": [
             {
-                "verb": "find",
+                "verb": "Find",
                 "arguments": [
                     "an old weathered sign"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "a distinctive sign",
-                    "your mantle piece or shelf"
+                    "your mantle piece or on your shelf"
                 ]
             },
             {
-                "verb": "make",
+                "verb": "Make",
                 "arguments": [
                     "your own sign"
                 ]
             },
             {
-                "verb": "ask",
+                "verb": "Ask",
                 "arguments": [
                     "a local painter",
-                    "to make a sign for you"
+                    "to make one for you"
                 ]
             },
             {
-                "verb": "brighten up",
+                "verb": "Brighten up",
                 "arguments": [
                     "the room",
                     "some flowers"
                 ]
             },
             {
-                "verb": "leave",
+                "verb": "Leave",
                 "arguments": [
                     "the walls and background furniture",
                     "in soft light colors"
                 ]
             },
             {
-                "verb": "focus",
+                "verb": "Focus",
                 "arguments": [
                     "the energy in a room",
                     "around the fresh flowers"
                 ]
             },
             {
-                "verb": "have",
+                "verb": "Have",
                 "arguments": [
                     "house plants"
                 ]
             },
             {
-                "verb": "use",
+                "verb": "Use",
                 "arguments": [
                     "freshly cut flowers",
                     "a vase on your kitchen table"
                 ]
             },
             {
-                "verb": "put",
+                "verb": "Put",
                 "arguments": [
-                    "flowers",
+                    "the flowers",
                     "blue mason jars or Industrial style metal containers"
                 ]
             },
             {
-                "verb": "shop for",
+                "verb": "Shop for",
                 "arguments": [
                     "natural fabrics"
                 ]
             },
             {
-                "verb": "prioritize",
+                "verb": "Prioritize",
                 "arguments": [
                     "natural materials"
                 ]
             },
             {
-                "verb": "get",
+                "verb": "Get",
                 "arguments": [
                     "wire baskets"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "wire baskets",
                     "around your living room, in the mud room, or other parts of your house"
                 ]
             },
             {
-                "verb": "keep",
+                "verb": "Keep",
                 "arguments": [
                     "books, magazines, pillows, or gardening tools",
                     "in the wire baskets"
                 ]
             },
             {
-                "verb": "store",
+                "verb": "Put",
+                "arguments": [
+                    "wire baskets",
+                    "underneath a bench in your mud room"
+                ]
+            },
+            {
+                "verb": "Store",
                 "arguments": [
                     "gloves, hats, and mitts",
                     "in the wire baskets"
                 ]
             },
             {
-                "verb": "use",
+                "verb": "Use",
                 "arguments": [
                     "wire baskets",
-                    "to store fruits and vegetables in your cold storage room or kitchen"
+                    "to store fruits and vegetables"
                 ]
             },
             {
-                "verb": "find",
+                "verb": "Find",
                 "arguments": [
                     "industrial style accessories"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "an industrial style clock, vase, frame, or other accessory",
                     "in your Farmhouse style house"
@@ -35449,57 +35524,60 @@
         ],
         "prediction": [
             {
-                "verb": "divide",
+                "verb": "use",
                 "arguments": [
-                    "apartment",
-                    "sub-rooms"
+                    "furniture"
                 ]
             },
             {
-                "verb": "use",
+                "verb": "create",
                 "arguments": [
-                    "furniture",
-                    "areas"
+                    "the feeling of three separate rooms"
                 ]
             },
             {
                 "verb": "box off",
                 "arguments": [
-                    "couches, armchairs, or loveseats",
-                    "living room area"
+                    "a living room area",
+                    "couches",
+                    "armchairs",
+                    "loveseats"
                 ]
             },
             {
                 "verb": "separate",
                 "arguments": [
-                    "bed",
-                    "sleeping area"
+                    "your sleeping area",
+                    "bed"
                 ]
             },
             {
                 "verb": "anchor",
                 "arguments": [
-                    "rugs, coffee tables, or shelves",
-                    "apartment furniture"
+                    "apartment furniture",
+                    "rugs",
+                    "coffee tables",
+                    "shelves"
                 ]
             },
             {
                 "verb": "place",
                 "arguments": [
-                    "bed",
-                    "wall"
+                    "the bed",
+                    "a wall"
                 ]
             },
             {
                 "verb": "invest",
                 "arguments": [
-                    "day bed or pull-out bed"
+                    "a day bed",
+                    "pull-out bed"
                 ]
             },
             {
                 "verb": "choose",
                 "arguments": [
-                    "low-rise bed without a frame"
+                    "a low-rise bed"
                 ]
             },
             {
@@ -35509,15 +35587,16 @@
                 ]
             },
             {
-                "verb": "divide off",
+                "verb": "divide",
                 "arguments": [
-                    "sleeping area"
+                    "your studio apartment",
+                    "separate areas"
                 ]
             },
             {
                 "verb": "section off",
                 "arguments": [
-                    "room",
+                    "the room",
                     "aesthetically pleasing ratios"
                 ]
             },
@@ -35531,32 +35610,27 @@
                 "verb": "place",
                 "arguments": [
                     "high shelves",
-                    "above doorways or windows"
-                ]
-            },
-            {
-                "verb": "choose",
-                "arguments": [
-                    "furniture with visible legs"
+                    "doorways",
+                    "windows"
                 ]
             },
             {
                 "verb": "clear",
                 "arguments": [
-                    "pathway"
+                    "a pathway"
                 ]
             },
             {
                 "verb": "push",
                 "arguments": [
                     "furniture",
-                    "edges"
+                    "the edges"
                 ]
             },
             {
                 "verb": "assess",
                 "arguments": [
-                    "pathway"
+                    "the pathway"
                 ]
             },
             {
@@ -36205,7 +36279,7 @@
             {
                 "verb": "Hang",
                 "arguments": [
-                    "the festive banner at the tops of columns and around the columns"
+                    "the festive banner at the tops of columns and around the columns for a child's birthday party"
                 ]
             },
             {
@@ -36217,25 +36291,19 @@
             {
                 "verb": "Wrap",
                 "arguments": [
-                    "wire stems around a leafy garland to create a floral arrangement"
+                    "wire stems around a leafy garland to create a floral arrangement that can be twisted around a column"
                 ]
             },
             {
                 "verb": "Buy",
                 "arguments": [
-                    "light-weight fabric"
+                    "light-weight fabric and wrap your columns"
                 ]
             },
             {
                 "verb": "Wrap",
                 "arguments": [
-                    "columns with light-weight fabric"
-                ]
-            },
-            {
-                "verb": "Cross",
-                "arguments": [
-                    "fabric behind the columns to create a backdrop for a stage or ceremony"
+                    "chiffon around the columns and then cross fabric behind the columns to create a backdrop for a stage or ceremony"
                 ]
             },
             {
@@ -36253,7 +36321,7 @@
             {
                 "verb": "Buy",
                 "arguments": [
-                    "fresh cut flower garlands"
+                    "fresh cut flower garlands from many flower stores"
                 ]
             }
         ],
@@ -37280,7 +37348,9 @@
             },
             {
                 "verb": "Make sure",
-                "arguments": []
+                "arguments": [
+                    "the case is big enough to easily fit over the gemstone"
+                ]
             },
             {
                 "verb": "Use",
@@ -37298,8 +37368,8 @@
             {
                 "verb": "Put",
                 "arguments": [
-                    "a plant",
-                    "the mineral"
+                    "the plant",
+                    "inside of the mineral"
                 ]
             },
             {
@@ -37323,15 +37393,16 @@
                 ]
             },
             {
-                "verb": "Put out",
+                "verb": "Buy",
                 "arguments": [
                     "a mineral lamp"
                 ]
             },
             {
-                "verb": "Buy",
+                "verb": "Use",
                 "arguments": [
-                    "a mineral lamp"
+                    "a mineral",
+                    "an unexpected way"
                 ]
             }
         ],
@@ -37997,7 +38068,8 @@
             {
                 "verb": "Keep",
                 "arguments": [
-                    "dark walls in mind"
+                    "dark walls",
+                    "in mind"
                 ]
             },
             {
@@ -38015,13 +38087,14 @@
             {
                 "verb": "Add",
                 "arguments": [
-                    "color with cushions and throws"
+                    "color later with cushions and throws"
                 ]
             },
             {
                 "verb": "Divide",
                 "arguments": [
-                    "the room with rugs"
+                    "the room",
+                    "with rugs"
                 ]
             },
             {
@@ -38051,7 +38124,7 @@
             {
                 "verb": "Place",
                 "arguments": [
-                    "seating in a semi-circle or rectangle"
+                    "seating so it faces the focal point"
                 ]
             },
             {
@@ -38064,6 +38137,12 @@
                 "verb": "Add",
                 "arguments": [
                     "additional seating"
+                ]
+            },
+            {
+                "verb": "Address",
+                "arguments": [
+                    "other needs"
                 ]
             },
             {
@@ -38852,14 +38931,25 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "double-sided fabric tape",
-                    "dressmaker pins"
+                    "double-sided fabric tape to attach your shirt to the backing board"
                 ]
             },
             {
                 "verb": "Press down",
                 "arguments": [
                     "on the backing board"
+                ]
+            },
+            {
+                "verb": "Use",
+                "arguments": [
+                    "dressmaker pins to hold loose fabric down"
+                ]
+            },
+            {
+                "verb": "Press",
+                "arguments": [
+                    "small dressmaker pins through the jersey"
                 ]
             },
             {
@@ -38881,15 +38971,21 @@
                 ]
             },
             {
-                "verb": "Rest",
+                "verb": "Attach",
                 "arguments": [
-                    "items against the base of the shadow box"
+                    "small light objects to the backing board"
                 ]
             },
             {
-                "verb": "Attach",
+                "verb": "Use",
                 "arguments": [
-                    "objects with velcro straps or twine"
+                    "velcro straps or twine to attach larger heavier objects"
+                ]
+            },
+            {
+                "verb": "Rest",
+                "arguments": [
+                    "items against the base of the shadow box"
                 ]
             },
             {
@@ -38901,13 +38997,13 @@
             {
                 "verb": "Insert",
                 "arguments": [
-                    "a nail or whatever object the mount requires"
+                    "a nail or whatever object the mount requires into the wall"
                 ]
             },
             {
                 "verb": "Use",
                 "arguments": [
-                    "a command strip instead"
+                    "a command strip instead of a nail"
                 ]
             },
             {
@@ -38925,8 +39021,7 @@
             {
                 "verb": "Hang",
                 "arguments": [
-                    "your jersey",
-                    "the frame"
+                    "your jersey"
                 ]
             }
         ],
@@ -39950,12 +40045,6 @@
                 ]
             },
             {
-                "verb": "Paint",
-                "arguments": [
-                    "all the tubes a single solid color"
-                ]
-            },
-            {
                 "verb": "Stain",
                 "arguments": [
                     "wooden chimes"
@@ -39964,8 +40053,7 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "stain wipes",
-                    "oil finish"
+                    "stain wipes"
                 ]
             },
             {
@@ -41741,8 +41829,7 @@
             {
                 "verb": "Choose",
                 "arguments": [
-                    "a softer fabric",
-                    "furniture accessories"
+                    "a softer fabric"
                 ]
             },
             {
@@ -41774,15 +41861,13 @@
             {
                 "verb": "Arrange",
                 "arguments": [
-                    "flowers, candles, or a centerpiece",
-                    "the runner"
+                    "flowers, candles, or a centerpiece"
                 ]
             },
             {
                 "verb": "Leave",
                 "arguments": [
-                    "a long fringe",
-                    "both ends of the table runner"
+                    "a long fringe on both ends of the table runner"
                 ]
             },
             {
@@ -41807,8 +41892,7 @@
             {
                 "verb": "Remove",
                 "arguments": [
-                    "the glass and backing",
-                    "the frame"
+                    "the glass and backing from the frame"
                 ]
             }
         ],
@@ -42553,9 +42637,27 @@
                 ]
             },
             {
+                "verb": "Measure",
+                "arguments": [
+                    "towel thickness"
+                ]
+            },
+            {
                 "verb": "Select",
                 "arguments": [
                     "a soft towel"
+                ]
+            },
+            {
+                "verb": "Wash",
+                "arguments": [
+                    "towels"
+                ]
+            },
+            {
+                "verb": "Increase",
+                "arguments": [
+                    "the softness of your towels"
                 ]
             },
             {
@@ -42567,19 +42669,7 @@
             {
                 "verb": "Invest",
                 "arguments": [
-                    "towels that will not easily shred in the washer or due to use"
-                ]
-            },
-            {
-                "verb": "Increase",
-                "arguments": [
-                    "the softness of your towels"
-                ]
-            },
-            {
-                "verb": "Use",
-                "arguments": [
-                    "fabric softener"
+                    "in towels that will not easily shred in the washer or due to use"
                 ]
             },
             {
@@ -44286,26 +44376,6 @@
                 ]
             },
             {
-                "verb": "Use",
-                "arguments": [
-                    "dehumidifier"
-                ]
-            },
-            {
-                "verb": "Lower",
-                "arguments": [
-                    "humidity level"
-                ]
-            },
-            {
-                "verb": "Pay attention",
-                "arguments": [
-                    "musty or mildew smells in garages",
-                    "attics",
-                    "basements"
-                ]
-            },
-            {
                 "verb": "Reflect on",
                 "arguments": [
                     "allergies"
@@ -44829,29 +44899,28 @@
                 ]
             },
             {
-                "verb": "make",
+                "verb": "use",
                 "arguments": [
+                    "candy tins",
                     "homemade gifts"
                 ]
             },
             {
-                "verb": "use",
-                "arguments": [
-                    "candy tins",
-                    "gift card or money"
-                ]
-            },
-            {
                 "verb": "make",
                 "arguments": [
-                    "stocking gifts",
-                    "sewing kits, first aid kits, or small craft supply boxes for kids"
+                    "gift card or money box"
                 ]
             },
             {
                 "verb": "create",
                 "arguments": [
                     "mini shadowboxes"
+                ]
+            },
+            {
+                "verb": "layer",
+                "arguments": [
+                    "old digital photographs, images, and words cut from books, old jewelry, and other vintage goodies"
                 ]
             },
             {
@@ -44865,7 +44934,8 @@
             {
                 "verb": "etch",
                 "arguments": [
-                    "candy tins"
+                    "candy tins",
+                    "design"
                 ]
             },
             {
@@ -44907,6 +44977,12 @@
                 ]
             },
             {
+                "verb": "use",
+                "arguments": [
+                    "scraps of fabric, gift wrap, or book pages"
+                ]
+            },
+            {
                 "verb": "decorate",
                 "arguments": [
                     "tin",
@@ -44914,10 +44990,10 @@
                 ]
             },
             {
-                "verb": "use",
+                "verb": "cover",
                 "arguments": [
-                    "polymer clay",
-                    "cover the tin"
+                    "tin",
+                    "polymer clay"
                 ]
             },
             {
@@ -46806,7 +46882,7 @@
                 "verb": "Concentrate on",
                 "arguments": [
                     "spots with stuck-on food",
-                    "dirty areas"
+                    "areas that are particularly dirty"
                 ]
             },
             {
@@ -47781,16 +47857,20 @@
             {
                 "verb": "work",
                 "arguments": [
-                    "back end of the shipping container",
-                    "doors"
+                    "shipping container"
                 ]
             },
             {
                 "verb": "pay attention to",
                 "arguments": [
                     "corners",
-                    "seams",
-                    "floor"
+                    "seams"
+                ]
+            },
+            {
+                "verb": "keep an eye open for",
+                "arguments": [
+                    "signs of excessive wear"
                 ]
             },
             {
@@ -47802,30 +47882,26 @@
             {
                 "verb": "clean",
                 "arguments": [
-                    "outside of the shipping container"
+                    "outside of shipping container"
                 ]
             },
             {
                 "verb": "inspect",
                 "arguments": [
-                    "inside and outside of the shipping container",
-                    "signs of rust or corrosion"
+                    "inside and outside of shipping container"
                 ]
             },
             {
                 "verb": "treat",
                 "arguments": [
-                    "rust",
-                    "apple cider vinegar",
-                    "white vinegar"
+                    "rust"
                 ]
             },
             {
                 "verb": "apply",
                 "arguments": [
                     "vinegar",
-                    "cloth",
-                    "strong brush"
+                    "cloth or strong brush"
                 ]
             },
             {
@@ -47845,14 +47921,13 @@
             {
                 "verb": "use",
                 "arguments": [
-                    "orbital sander",
-                    "belt sander"
+                    "orbital sander or belt sander"
                 ]
             },
             {
                 "verb": "attack",
                 "arguments": [
-                    "spots on the shipping container where the paint is peeling, flaking, or showing signs of wear"
+                    "spots with peeling paint"
                 ]
             },
             {
@@ -47864,8 +47939,7 @@
             {
                 "verb": "apply",
                 "arguments": [
-                    "thick exterior paint",
-                    "inside and outside of the storage container"
+                    "thick exterior paint"
                 ]
             }
         ],
@@ -48827,7 +48901,7 @@
                 "verb": "leave",
                 "arguments": [
                     "the toilet cleaner",
-                    "the grout"
+                    "for five minutes"
                 ]
             },
             {
@@ -48840,8 +48914,7 @@
             {
                 "verb": "let sit",
                 "arguments": [
-                    "the toilet cleaner",
-                    "the grout"
+                    "the toilet cleaner"
                 ]
             },
             {
@@ -48855,28 +48928,35 @@
                 "verb": "allow to stay",
                 "arguments": [
                     "the toilet cleaner",
-                    "the dirty grout"
+                    "on the dirty grout"
+                ]
+            },
+            {
+                "verb": "soak in",
+                "arguments": [
+                    "the toilet cleaner",
+                    "for five minutes"
                 ]
             },
             {
                 "verb": "scrub",
                 "arguments": [
                     "the grout",
-                    "a toothbrush"
+                    "with a toothbrush"
                 ]
             },
             {
                 "verb": "rinse",
                 "arguments": [
                     "the grout",
-                    "a wet mop or a wet cloth"
+                    "with a wet mop or cloth"
                 ]
             },
             {
                 "verb": "dry",
                 "arguments": [
                     "the grout",
-                    "a towel or soft cloth"
+                    "with a towel or soft cloth"
                 ]
             }
         ],
@@ -51541,7 +51621,7 @@
                 "verb": "wash",
                 "arguments": [
                     "dirt and debris",
-                    "pavement"
+                    "oil stain on driveway"
                 ]
             },
             {
@@ -52360,12 +52440,6 @@
                 ]
             },
             {
-                "verb": "use",
-                "arguments": [
-                    "Dawn or similar dish detergent"
-                ]
-            },
-            {
                 "verb": "allow to sit",
                 "arguments": [
                     "cleaning product",
@@ -52415,13 +52489,13 @@
             {
                 "verb": "dab",
                 "arguments": [
-                    "cottons or synthetic fabrics"
+                    "stain on cottons or synthetic fabrics"
                 ]
             },
             {
                 "verb": "massage",
                 "arguments": [
-                    "cottons or synthetic fabrics"
+                    "stain on cottons or synthetic fabrics"
                 ]
             }
         ],
@@ -53005,21 +53079,21 @@
             {
                 "verb": "Scrub",
                 "arguments": [
-                    "skin",
+                    "your skin",
                     "tar or staining from tar"
                 ]
             },
             {
                 "verb": "Rub",
                 "arguments": [
-                    "skin",
-                    "washcloth or soft scrubber brush"
+                    "a clean washcloth or soft scrubber brush",
+                    "stains or lingering bits of tar"
                 ]
             },
             {
                 "verb": "Cleanse",
                 "arguments": [
-                    "skin"
+                    "your skin"
                 ]
             },
             {
@@ -53032,7 +53106,7 @@
             {
                 "verb": "Repeat",
                 "arguments": [
-                    "scrubbing process"
+                    "the scrubbing process"
                 ]
             },
             {
@@ -53044,7 +53118,7 @@
             {
                 "verb": "Rub",
                 "arguments": [
-                    "pumice stone",
+                    "a pumice stone",
                     "tar or stains"
                 ]
             },
@@ -53058,35 +53132,35 @@
             {
                 "verb": "Rinse",
                 "arguments": [
-                    "area",
+                    "the area",
                     "warm water"
                 ]
             },
             {
                 "verb": "Pat dry",
                 "arguments": [
-                    "area",
-                    "clean towel"
+                    "the area",
+                    "a clean towel"
                 ]
             },
             {
                 "verb": "Apply",
                 "arguments": [
-                    "exfoliating scrub"
+                    "an exfoliating scrub"
                 ]
             },
             {
                 "verb": "Spread",
                 "arguments": [
-                    "layer of exfoliator",
-                    "area with tar bits or stains"
+                    "exfoliator",
+                    "the area with tar bits or stains"
                 ]
             },
             {
                 "verb": "Rub",
                 "arguments": [
                     "exfoliator",
-                    "skin"
+                    "your skin"
                 ]
             },
             {
@@ -53098,7 +53172,7 @@
             {
                 "verb": "Make an appointment",
                 "arguments": [
-                    "appointment with doctor"
+                    "to see your doctor"
                 ]
             },
             {
@@ -53117,7 +53191,7 @@
                 "verb": "Administer",
                 "arguments": [
                     "treatment",
-                    "skin"
+                    "your skin"
                 ]
             }
         ],
@@ -53658,14 +53732,25 @@
             {
                 "verb": "Ask",
                 "arguments": [
-                    "around about different types of centerpieces",
                     "the parents for input"
+                ]
+            },
+            {
+                "verb": "Consider",
+                "arguments": [
+                    "what you already know about the parents"
+                ]
+            },
+            {
+                "verb": "Ask",
+                "arguments": [
+                    "the parents questions about what the parents may want or need"
                 ]
             },
             {
                 "verb": "Purchase",
                 "arguments": [
-                    "your own centerpiece"
+                    "a centerpiece"
                 ]
             },
             {
@@ -55005,7 +55090,8 @@
             {
                 "verb": "pull",
                 "arguments": [
-                    "straps downward"
+                    "straps",
+                    "downward"
                 ]
             },
             {
@@ -55062,7 +55148,7 @@
                 "verb": "sanitize",
                 "arguments": [
                     "rain barrel",
-                    "unscented household bleach diluted with water"
+                    "unscented household bleach and water"
                 ]
             }
         ],
@@ -56286,7 +56372,7 @@
         ],
         "prediction": [
             {
-                "verb": "Wipe up",
+                "verb": "Wipe",
                 "arguments": [
                     "spills"
                 ]
@@ -56341,16 +56427,7 @@
                 ]
             },
             {
-                "verb": "use",
-                "arguments": [
-                    "dish soap",
-                    "toothbrush",
-                    "oil-based cleaner",
-                    "mixture of concentrated liquid dish soap and baking soda"
-                ]
-            },
-            {
-                "verb": "inspect",
+                "verb": "check",
                 "arguments": [
                     "kitchen appliances",
                     "electrical cords",
@@ -56358,9 +56435,21 @@
                 ]
             },
             {
+                "verb": "inspect",
+                "arguments": [
+                    "kitchen appliances"
+                ]
+            },
+            {
                 "verb": "service",
                 "arguments": [
                     "kitchen appliances"
+                ]
+            },
+            {
+                "verb": "unplug",
+                "arguments": [
+                    "electric appliances"
                 ]
             },
             {
@@ -56373,12 +56462,6 @@
                 "verb": "turn on",
                 "arguments": [
                     "smoke detector"
-                ]
-            },
-            {
-                "verb": "unplug",
-                "arguments": [
-                    "electric appliances"
                 ]
             }
         ],
@@ -58857,91 +58940,7 @@
             "When you report a crime be sure to have all the details ready",
             "If you have information relating to a federal crime such as violent crime child pornography human trafficking terrorism drug trafficking and fraud contact the FBI or Department of Justice"
         ],
-        "prediction": [
-            {
-                "verb": "avoid walking",
-                "arguments": [
-                    "by yourself at night",
-                    "through poorly lit areas"
-                ]
-            },
-            {
-                "verb": "stay alert",
-                "arguments": [
-                    "to your surroundings"
-                ]
-            },
-            {
-                "verb": "watch for",
-                "arguments": [
-                    "suspicious drug activity"
-                ]
-            },
-            {
-                "verb": "take note",
-                "arguments": [
-                    "signs of drug activity surrounding a house in your neighborhood"
-                ]
-            },
-            {
-                "verb": "contact",
-                "arguments": [
-                    "the police"
-                ]
-            },
-            {
-                "verb": "watch for",
-                "arguments": [
-                    "suspicious terrorist activity"
-                ]
-            },
-            {
-                "verb": "keep an eye out for",
-                "arguments": [
-                    "strange or unusual situations that can indicate a crime or potential crime involving terrorism"
-                ]
-            },
-            {
-                "verb": "get details about",
-                "arguments": [
-                    "any crime you witness"
-                ]
-            },
-            {
-                "verb": "include",
-                "arguments": [
-                    "the crime being committed",
-                    "the crime's location",
-                    "a description of the suspect",
-                    "any items in use",
-                    "a description of the victim"
-                ]
-            },
-            {
-                "verb": "contact",
-                "arguments": [
-                    "local law enforcement"
-                ]
-            },
-            {
-                "verb": "dial",
-                "arguments": [
-                    "9-1-1"
-                ]
-            },
-            {
-                "verb": "report",
-                "arguments": [
-                    "a crime"
-                ]
-            },
-            {
-                "verb": "contact",
-                "arguments": [
-                    "the FBI or Department of Justice"
-                ]
-            }
-        ],
+        "prediction": null,
         "gold_actions": [
             {
                 "act_idx": 0,
@@ -59569,7 +59568,8 @@
             {
                 "verb": "Apply",
                 "arguments": [
-                    "a chemical stripper"
+                    "a chemical stripper",
+                    "the varnish"
                 ]
             },
             {
@@ -61764,140 +61764,171 @@
         ],
         "prediction": [
             {
-                "verb": "Punch holes",
+                "verb": "Punch",
                 "arguments": [
                     "holes"
                 ]
             },
             {
-                "verb": "poke holes",
+                "verb": "poke",
                 "arguments": [
                     "holes in the soil"
                 ]
             },
             {
-                "verb": "push the fork into the ground",
+                "verb": "push",
                 "arguments": [
-                    "the fork",
-                    "the ground"
+                    "the fork into the ground"
                 ]
             },
             {
-                "verb": "repeat the process",
-                "arguments": []
+                "verb": "repeat",
+                "arguments": [
+                    "the process"
+                ]
             },
             {
-                "verb": "Dig up compaction",
+                "verb": "Dig up",
                 "arguments": [
                     "compaction"
                 ]
             },
             {
-                "verb": "loosen the compaction",
+                "verb": "loosen",
                 "arguments": [
                     "the compaction"
                 ]
             },
             {
-                "verb": "dig up dirt",
+                "verb": "dig",
                 "arguments": [
-                    "dirt"
+                    "two or three inches of dirt"
                 ]
             },
             {
-                "verb": "divide the soil into small rows",
+                "verb": "divide",
                 "arguments": [
-                    "the soil",
-                    "small rows"
+                    "the soil into small rows"
                 ]
             },
             {
-                "verb": "dig small trenches",
+                "verb": "dig",
                 "arguments": [
-                    "trenches"
+                    "small trenches"
                 ]
             },
             {
-                "verb": "replace the dirt removed from the trenches",
+                "verb": "replace",
                 "arguments": [
-                    "the dirt",
-                    "the trenches"
+                    "the dirt removed from the trenches with the rows of soil"
                 ]
             },
             {
-                "verb": "get a rototiller with an aeration attachment",
+                "verb": "get",
                 "arguments": [
                     "a rototiller with an aeration attachment"
                 ]
             },
             {
-                "verb": "buy or rent a rototiller",
+                "verb": "buy or rent",
                 "arguments": [
                     "a rototiller"
                 ]
             },
             {
-                "verb": "run the tiller over the soil",
+                "verb": "run",
                 "arguments": [
-                    "the tiller",
-                    "the soil"
+                    "the tiller over the soil"
                 ]
             },
             {
-                "verb": "remove soil cores",
+                "verb": "till",
+                "arguments": [
+                    "the top layer of soil"
+                ]
+            },
+            {
+                "verb": "remove",
                 "arguments": [
                     "soil cores"
                 ]
             },
             {
-                "verb": "rent the machine",
+                "verb": "rent",
                 "arguments": [
-                    "the machine"
+                    "a plug aerator machine"
                 ]
             },
             {
-                "verb": "set the machine against moist soil",
+                "verb": "set",
                 "arguments": [
-                    "the machine",
-                    "moist soil"
+                    "the machine against moist soil"
                 ]
             },
             {
-                "verb": "let the removed soil plugs dry",
+                "verb": "pull out",
                 "arguments": [
-                    "soil plugs"
+                    "a core of dirt"
                 ]
             },
             {
-                "verb": "break and scatter the soil plugs",
+                "verb": "move",
                 "arguments": [
-                    "soil plugs"
+                    "the core two or three inches away"
                 ]
             },
             {
-                "verb": "mark off areas where pipes and roots run close to the surface",
+                "verb": "repeat",
+                "arguments": [
+                    "throughout the area"
+                ]
+            },
+            {
+                "verb": "let dry",
+                "arguments": [
+                    "the removed soil plugs"
+                ]
+            },
+            {
+                "verb": "break and scatter",
+                "arguments": [
+                    "the soil plugs"
+                ]
+            },
+            {
+                "verb": "mark off",
                 "arguments": [
                     "areas where pipes and roots run close to the surface"
                 ]
             },
             {
-                "verb": "dig up compacted soil",
+                "verb": "replace",
+                "arguments": [
+                    "the soil"
+                ]
+            },
+            {
+                "verb": "dig up",
                 "arguments": [
                     "compacted soil"
                 ]
             },
             {
-                "verb": "gather the soil into a planting mound nearby or bury the soil in good soil",
+                "verb": "gather",
                 "arguments": [
-                    "the soil",
-                    "a planting mound nearby or good soil"
+                    "the soil into a planting mound nearby or bury the soil in good soil"
                 ]
             },
             {
-                "verb": "bring in new topsoil and spread the topsoil over the area",
+                "verb": "bring in",
                 "arguments": [
-                    "new topsoil",
-                    "the area"
+                    "new topsoil"
+                ]
+            },
+            {
+                "verb": "spread",
+                "arguments": [
+                    "the topsoil over the area"
                 ]
             }
         ],
@@ -62841,7 +62872,9 @@
             },
             {
                 "verb": "Edit",
-                "arguments": []
+                "arguments": [
+                    "written information"
+                ]
             },
             {
                 "verb": "Let evolve",
@@ -65711,75 +65744,81 @@
         ],
         "prediction": [
             {
-                "verb": "Cut",
+                "verb": "cut",
                 "arguments": [
-                    "the stem above the leaf growth"
+                    "stem above the leaf growth"
                 ]
             },
             {
-                "verb": "Cut",
+                "verb": "cut",
                 "arguments": [
-                    "the stem from the red clover plant"
+                    "stem from the red clover plant"
                 ]
             },
             {
-                "verb": "Remove",
+                "verb": "remove",
                 "arguments": [
-                    "any remaining stem from the flower itself"
+                    "remaining stem from the flower itself"
                 ]
             },
             {
-                "verb": "Cut",
+                "verb": "cut",
                 "arguments": [
                     "leaves"
                 ]
             },
             {
-                "verb": "Cut",
+                "verb": "cut",
                 "arguments": [
-                    "the leaves in clumps of three"
+                    "leaves in clumps of three"
                 ]
             },
             {
-                "verb": "Avoid cutting",
+                "verb": "avoid cutting",
                 "arguments": [
-                    "the entire red clover plant at its base"
+                    "entire red clover plant at its base"
                 ]
             },
             {
-                "verb": "Uproot",
+                "verb": "uproot",
                 "arguments": [
                     "red clover plants with discolored flowers or leaves"
                 ]
             },
             {
-                "verb": "Place",
+                "verb": "place",
                 "arguments": [
-                    "your harvest on trays or racks to dry"
+                    "harvest on trays or racks to dry"
                 ]
             },
             {
-                "verb": "Allow",
+                "verb": "allow",
                 "arguments": [
-                    "the leaves and flowers to turn crisp"
+                    "leaves and flowers to turn crisp"
                 ]
             },
             {
-                "verb": "Put",
+                "verb": "put",
                 "arguments": [
-                    "your dried clover into an airtight container"
+                    "harvest in a dehydrator"
                 ]
             },
             {
-                "verb": "Close",
+                "verb": "place",
                 "arguments": [
-                    "the container as tight as you can"
+                    "dried clover into an airtight container"
                 ]
             },
             {
-                "verb": "Store",
+                "verb": "close",
                 "arguments": [
-                    "your red clover in a shaded, dry, and cool location"
+                    "container as tight as you can"
+                ]
+            },
+            {
+                "verb": "store",
+                "arguments": [
+                    "red clover in a shaded, dry, and cool location"
                 ]
             }
         ],
@@ -66504,12 +66543,6 @@
                 ]
             },
             {
-                "verb": "keep",
-                "arguments": [
-                    "dried basil"
-                ]
-            },
-            {
                 "verb": "hang",
                 "arguments": [
                     "basil",
@@ -66536,23 +66569,16 @@
                 ]
             },
             {
-                "verb": "make",
-                "arguments": [
-                    "basil cubes"
-                ]
-            },
-            {
                 "verb": "add",
                 "arguments": [
                     "basil leaves",
-                    "grape seed oil",
                     "food processor"
                 ]
             },
             {
                 "verb": "process",
                 "arguments": [
-                    "mixture"
+                    "mixture of basil leaves and grape seed oil"
                 ]
             },
             {
@@ -66565,7 +66591,7 @@
             {
                 "verb": "freeze",
                 "arguments": [
-                    "cubes"
+                    "mixture"
                 ]
             },
             {
@@ -68202,6 +68228,13 @@
                 ]
             },
             {
+                "verb": "build",
+                "arguments": [
+                    "circular flower beds",
+                    "an island flower bed"
+                ]
+            },
+            {
                 "verb": "prepare",
                 "arguments": [
                     "your soil"
@@ -68210,14 +68243,14 @@
             {
                 "verb": "clear out",
                 "arguments": [
-                    "any plants that are already growing in the area"
+                    "plants that are already growing in the area"
                 ]
             },
             {
                 "verb": "dig up",
                 "arguments": [
                     "the top 1-2 inches of sod",
-                    "all grass and weeds by the roots"
+                    "grass and weeds"
                 ]
             },
             {
@@ -68235,7 +68268,7 @@
             {
                 "verb": "remove",
                 "arguments": [
-                    "any rocks or other large objects that you dig up"
+                    "rocks or other large objects"
                 ]
             },
             {
@@ -68243,7 +68276,7 @@
                 "arguments": [
                     "fertilizer",
                     "compost",
-                    "or other components to the soil"
+                    "other components to the soil"
                 ]
             },
             {
@@ -68267,8 +68300,8 @@
             {
                 "verb": "place",
                 "arguments": [
-                    "the tallest flowers at the back of the bed",
-                    "the shortest flowers at the front"
+                    "tallest flowers at the back of the bed",
+                    "shortest flowers at the front"
                 ]
             },
             {
@@ -68310,7 +68343,7 @@
             {
                 "verb": "plant",
                 "arguments": [
-                    "some trailing flowers or vines in a wooden keg barrel"
+                    "trailing flowers or vines in a wooden keg barrel"
                 ]
             }
         ],
@@ -70982,9 +71015,7 @@
             },
             {
                 "verb": "Choose",
-                "arguments": [
-                    "arrangement"
-                ]
+                "arguments": []
             },
             {
                 "verb": "Create",
@@ -71081,6 +71112,18 @@
             {
                 "verb": "Hang",
                 "arguments": [
+                    "small frames"
+                ]
+            },
+            {
+                "verb": "find",
+                "arguments": [
+                    "mounting putty"
+                ]
+            },
+            {
+                "verb": "Hang",
+                "arguments": [
                     "empty frames"
                 ]
             },
@@ -71119,6 +71162,18 @@
                 "verb": "Hang",
                 "arguments": [
                     "old shutters"
+                ]
+            },
+            {
+                "verb": "Organize",
+                "arguments": [
+                    "mail"
+                ]
+            },
+            {
+                "verb": "Display",
+                "arguments": [
+                    "postcards"
                 ]
             },
             {
@@ -72085,12 +72140,6 @@
                 ]
             },
             {
-                "verb": "press",
-                "arguments": [
-                    "sandwiches"
-                ]
-            },
-            {
                 "verb": "season",
                 "arguments": [
                     "waffle iron"
@@ -72112,34 +72161,8 @@
             {
                 "verb": "press",
                 "arguments": [
-                    "citrus"
-                ]
-            },
-            {
-                "verb": "use",
-                "arguments": [
-                    "electric juicer"
-                ]
-            },
-            {
-                "verb": "put",
-                "arguments": [
-                    "ingredients",
-                    "pot"
-                ]
-            },
-            {
-                "verb": "cook",
-                "arguments": [
-                    "dish"
-                ]
-            },
-            {
-                "verb": "pressure cook",
-                "arguments": [
-                    "vegetables",
-                    "whole chickens",
-                    "roasted meats"
+                    "citrus",
+                    "sandwiches"
                 ]
             }
         ],
@@ -73046,13 +73069,13 @@
             {
                 "verb": "paint",
                 "arguments": [
-                    "a paneled room divider"
+                    "a room divider"
                 ]
             },
             {
                 "verb": "decorate",
                 "arguments": [
-                    "a paneled room divider"
+                    "a room divider"
                 ]
             },
             {
@@ -73541,31 +73564,31 @@
             {
                 "verb": "Create",
                 "arguments": [
-                    "a file with images"
+                    "a file with images you like"
                 ]
             },
             {
                 "verb": "Use",
                 "arguments": [
-                    "images as a guide"
+                    "the images as a guide"
                 ]
             },
             {
                 "verb": "Look",
                 "arguments": [
-                    "images of rooms"
+                    "images of rooms that have an overall feel that you like"
                 ]
             },
             {
                 "verb": "Save",
                 "arguments": [
-                    "images with elements or details that appeal to you"
+                    "images that have elements or details that appeal to you"
                 ]
             },
             {
                 "verb": "Make",
                 "arguments": [
-                    "notes about why you like a particular room or look"
+                    "notes to yourself about why you like a particular room or look"
                 ]
             },
             {
@@ -73589,19 +73612,7 @@
             {
                 "verb": "Pick",
                 "arguments": [
-                    "a color family"
-                ]
-            },
-            {
-                "verb": "Choose",
-                "arguments": [
-                    "coordinating colors of the same intensity"
-                ]
-            },
-            {
-                "verb": "Introduce",
-                "arguments": [
-                    "a suggestion of warmth or coolness by choosing a neutral with warm or cool colored tints"
+                    "a color family to create feeling"
                 ]
             }
         ],
@@ -74961,13 +74972,7 @@
         ],
         "prediction": [
             {
-                "verb": "add",
-                "arguments": [
-                    "a bed skirt"
-                ]
-            },
-            {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "a bed skirt",
                     "over the box-spring"
@@ -74988,77 +74993,84 @@
                 ]
             },
             {
-                "verb": "cover",
+                "verb": "Cover",
                 "arguments": [
                     "your mattress",
                     "with a mattress protector and a fitted sheet"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "a flat sheet",
                     "down onto your bed"
                 ]
             },
             {
-                "verb": "drape",
+                "verb": "Drape",
                 "arguments": [
                     "a blanket",
                     "over the top of the fitted sheet"
                 ]
             },
             {
-                "verb": "cover",
+                "verb": "Cover",
                 "arguments": [
                     "the comforter",
                     "with a duvet cover"
                 ]
             },
             {
-                "verb": "fold",
+                "verb": "Fold",
                 "arguments": [
                     "the top edge of the fitted sheet",
                     "over the blanket"
                 ]
             },
             {
-                "verb": "add",
+                "verb": "Place",
                 "arguments": [
-                    "some decorative pillows",
+                    "decorative pillows",
                     "against the headboard"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Take",
+                "arguments": [
+                    "the decorative pillows",
+                    "off when you go to sleep"
+                ]
+            },
+            {
+                "verb": "Place",
                 "arguments": [
                     "your regular pillows",
                     "down in front of the decorative pillows"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "your pillows",
                     "inside some decorative covers"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "a small decorative pillow",
                     "in front of your regular pillows"
                 ]
             },
             {
-                "verb": "place",
+                "verb": "Place",
                 "arguments": [
                     "a decorative throw or blanket",
                     "at the foot of the bed"
                 ]
             },
             {
-                "verb": "fold",
+                "verb": "Fold",
                 "arguments": [
                     "the throw or blanket",
                     "in half"
@@ -75662,19 +75674,13 @@
             {
                 "verb": "Keep",
                 "arguments": [
-                    "your eyes open",
-                    "stones"
+                    "your eyes open for stones"
                 ]
             },
             {
                 "verb": "Purchase",
                 "arguments": [
-                    "engraving stones"
-                ]
-            },
-            {
-                "verb": "Purchase",
-                "arguments": [
+                    "engraving stones",
                     "an electric engraver or rotary tool"
                 ]
             },
@@ -75724,13 +75730,8 @@
             {
                 "verb": "Purchase",
                 "arguments": [
-                    "safety goggles"
-                ]
-            },
-            {
-                "verb": "Use",
-                "arguments": [
-                    "safety goggles"
+                    "safety goggles",
+                    "beeswax and latex paint"
                 ]
             },
             {
@@ -79598,39 +79599,39 @@
             {
                 "verb": "Mix",
                 "arguments": [
-                    "concrete"
+                    "the concrete"
                 ]
             },
             {
                 "verb": "Follow",
                 "arguments": [
-                    "directions on the bags of concrete"
+                    "the directions on the bags of concrete"
                 ]
             },
             {
                 "verb": "Calculate",
                 "arguments": [
-                    "number of bags needed"
+                    "the number of bags needed"
                 ]
             },
             {
                 "verb": "Multiply",
                 "arguments": [
-                    "thickness",
-                    "width",
-                    "height of the area"
+                    "the thickness",
+                    "the width",
+                    "the height of the area"
                 ]
             },
             {
                 "verb": "Put",
                 "arguments": [
-                    "concrete mix into a mortar tub or a wheelbarrow"
+                    "the concrete mix into a mortar tub or a wheelbarrow"
                 ]
             },
             {
                 "verb": "Mix",
                 "arguments": [
-                    "concrete with a shovel or a hoe"
+                    "the concrete with a shovel or a hoe"
                 ]
             },
             {
@@ -79642,13 +79643,13 @@
             {
                 "verb": "Move",
                 "arguments": [
-                    "mixer into the area where you are building the patio"
+                    "the mixer into the area where you are building the patio"
                 ]
             },
             {
                 "verb": "Pour",
                 "arguments": [
-                    "concrete"
+                    "the concrete"
                 ]
             },
             {
@@ -79660,25 +79661,31 @@
             {
                 "verb": "Shovel",
                 "arguments": [
-                    "concrete out of the wheelbarrow"
+                    "the concrete out of the wheelbarrow"
                 ]
             },
             {
                 "verb": "Push",
                 "arguments": [
-                    "concrete into all corners with a shovel"
+                    "the concrete into all corners with a shovel"
                 ]
             },
             {
                 "verb": "Dump",
                 "arguments": [
-                    "concrete close to where you want it"
+                    "the concrete close to where you want it"
                 ]
             },
             {
-                "verb": "Use",
+                "verb": "Spread",
                 "arguments": [
-                    "a flat piece of wood or aluminum screed to level the top of the concrete"
+                    "the concrete with a longer tool or rubber boots"
+                ]
+            },
+            {
+                "verb": "Level",
+                "arguments": [
+                    "the top of the concrete with a flat piece of wood or aluminum screed"
                 ]
             },
             {
@@ -79696,17 +79703,19 @@
             {
                 "verb": "Move",
                 "arguments": [
-                    "the float back and forth to smooth the patio and to fill in low spots"
+                    "the float back and forth to smooth the patio and fill in low spots"
                 ]
             },
             {
                 "verb": "Wait",
-                "arguments": []
+                "arguments": [
+                    "until the water disappears"
+                ]
             },
             {
                 "verb": "Put",
                 "arguments": [
-                    "on the finishing touches"
+                    "on the finishing touches with an edger"
                 ]
             },
             {
@@ -79724,7 +79733,7 @@
             {
                 "verb": "Hand float",
                 "arguments": [
-                    "concrete with a steel or magnesium float to finish smoothing the surface out"
+                    "the concrete with a steel or magnesium float"
                 ]
             },
             {
@@ -79736,13 +79745,13 @@
             {
                 "verb": "Cover",
                 "arguments": [
-                    "concrete with plastic or a curing compound"
+                    "the concrete with plastic or a curing compound"
                 ]
             },
             {
                 "verb": "Remove",
                 "arguments": [
-                    "form boards"
+                    "the form boards"
                 ]
             }
         ],
@@ -80779,7 +80788,8 @@
             {
                 "verb": "Go",
                 "arguments": [
-                    "to a hardware or glass store"
+                    "to a hardware or glass store",
+                    "your measurements"
                 ]
             },
             {
@@ -80795,9 +80805,9 @@
                 ]
             },
             {
-                "verb": "Let dry",
+                "verb": "Let",
                 "arguments": [
-                    "the wood sealer"
+                    "the wood sealer dry for one or two hours"
                 ]
             },
             {
@@ -80809,7 +80819,7 @@
             {
                 "verb": "Roll",
                 "arguments": [
-                    "putty in your hands"
+                    "putty in your hands to warm it up"
                 ]
             },
             {
@@ -80833,13 +80843,25 @@
             {
                 "verb": "Push",
                 "arguments": [
-                    "the new pane of glass into the empty opening"
+                    "your new pane of glass into the empty opening"
+                ]
+            },
+            {
+                "verb": "Take",
+                "arguments": [
+                    "your new piece of glass and carefully press it into the opening"
                 ]
             },
             {
                 "verb": "Reinsert",
                 "arguments": [
-                    "nails or clips that you removed earlier"
+                    "any nails or clips that you removed earlier"
+                ]
+            },
+            {
+                "verb": "Replace",
+                "arguments": [
+                    "the clips or nails that you removed earlier by lightly tapping them back into the frame"
                 ]
             },
             {
@@ -80851,19 +80873,25 @@
             {
                 "verb": "Smooth",
                 "arguments": [
-                    "the putty out"
+                    "the putty out and let the putty dry"
                 ]
             },
             {
-                "verb": "Let dry",
+                "verb": "Use",
                 "arguments": [
-                    "the putty overnight"
+                    "a putty knife to smooth out the compound around the new window pane"
                 ]
             },
             {
                 "verb": "Remove",
                 "arguments": [
-                    "any excess putty or compound"
+                    "any excess putty or compound so that it runs flush with the frame and looks clean"
+                ]
+            },
+            {
+                "verb": "Allow",
+                "arguments": [
+                    "the putty to dry overnight so that the putty sets"
                 ]
             }
         ],
@@ -83192,15 +83220,21 @@
                 ]
             },
             {
-                "verb": "remove",
+                "verb": "turn off",
                 "arguments": [
-                    "excessive lights"
+                    "fluorescent light"
                 ]
             },
             {
-                "verb": "suggest not using",
+                "verb": "remove",
                 "arguments": [
                     "lights"
+                ]
+            },
+            {
+                "verb": "suggest",
+                "arguments": [
+                    "not using lights"
                 ]
             },
             {
@@ -83225,7 +83259,13 @@
                 ]
             },
             {
-                "verb": "clean and repair",
+                "verb": "clean",
+                "arguments": [
+                    "HVAC system"
+                ]
+            },
+            {
+                "verb": "repair",
                 "arguments": [
                     "HVAC system"
                 ]
@@ -83260,7 +83300,7 @@
             {
                 "verb": "keep",
                 "arguments": [
-                    "shades and blinds open"
+                    "shades open"
                 ]
             },
             {
@@ -83272,7 +83312,7 @@
             {
                 "verb": "increase",
                 "arguments": [
-                    "temperature of thermostat"
+                    "temperature"
                 ]
             },
             {
@@ -83839,12 +83879,6 @@
                 ]
             },
             {
-                "verb": "Sand",
-                "arguments": [
-                    "wooden furniture"
-                ]
-            },
-            {
                 "verb": "Apply",
                 "arguments": [
                     "paint stripping solution",
@@ -83879,9 +83913,19 @@
                 ]
             },
             {
-                "verb": "Sand",
+                "verb": "Consider",
+                "arguments": []
+            },
+            {
+                "verb": "Remove",
                 "arguments": [
                     "old finishes",
+                    "sanding"
+                ]
+            },
+            {
+                "verb": "Use",
+                "arguments": [
                     "sandpaper",
                     "sanding block",
                     "handheld sander"
@@ -83900,15 +83944,9 @@
                 ]
             },
             {
-                "verb": "Use",
-                "arguments": [
-                    "paint thinner"
-                ]
-            },
-            {
                 "verb": "Soak",
                 "arguments": [
-                    "old cloth",
+                    "cloth",
                     "paint thinner"
                 ]
             },
@@ -87266,9 +87304,9 @@
                 ]
             },
             {
-                "verb": "make",
+                "verb": "make a paste",
                 "arguments": [
-                    "paste of baking soda and vinegar"
+                    "baking soda and vinegar"
                 ]
             },
             {
@@ -87294,6 +87332,12 @@
                 "verb": "wash away",
                 "arguments": [
                     "paste from glass"
+                ]
+            },
+            {
+                "verb": "clean",
+                "arguments": [
+                    "glass with water or traditional glass cleaner"
                 ]
             }
         ],
@@ -88158,7 +88202,7 @@
                 "verb": "rub",
                 "arguments": [
                     "the countertop",
-                    "a cloth or sponge"
+                    "a circular motion"
                 ]
             },
             {
@@ -88168,9 +88212,9 @@
                 ]
             },
             {
-                "verb": "do a final water rinse",
+                "verb": "do",
                 "arguments": [
-                    "your countertops"
+                    "a final water rinse"
                 ]
             },
             {
@@ -88183,12 +88227,11 @@
             {
                 "verb": "rub down",
                 "arguments": [
-                    "the countertop",
-                    "a fresh cloth"
+                    "the countertop"
                 ]
             },
             {
-                "verb": "let air dry",
+                "verb": "let dry",
                 "arguments": [
                     "the countertops"
                 ]
@@ -88995,6 +89038,26 @@
                 ]
             },
             {
+                "verb": "use",
+                "arguments": [
+                    "protective gear"
+                ]
+            },
+            {
+                "verb": "wear",
+                "arguments": [
+                    "protective cleaning gloves",
+                    "goggles"
+                ]
+            },
+            {
+                "verb": "open",
+                "arguments": [
+                    "a window",
+                    "the bathroom door"
+                ]
+            },
+            {
                 "verb": "add",
                 "arguments": [
                     "cold water",
@@ -89022,29 +89085,17 @@
                 ]
             },
             {
-                "verb": "wear",
-                "arguments": [
-                    "protective cleaning gloves"
-                ]
-            },
-            {
-                "verb": "use",
-                "arguments": [
-                    "goggles"
-                ]
-            },
-            {
-                "verb": "open",
-                "arguments": [
-                    "a window",
-                    "the bathroom door"
-                ]
-            },
-            {
                 "verb": "clean",
                 "arguments": [
                     "thoroughly",
-                    "the rubber bathmat"
+                    "quickly"
+                ]
+            },
+            {
+                "verb": "leave",
+                "arguments": [
+                    "the rubber bathmat",
+                    "the diluted bleach solution"
                 ]
             },
             {
@@ -89052,13 +89103,6 @@
                 "arguments": [
                     "the rubber bathmat",
                     "a cleaning brush or scouring pad"
-                ]
-            },
-            {
-                "verb": "soak",
-                "arguments": [
-                    "the rubber bathmat",
-                    "a diluted bleach solution"
                 ]
             },
             {
@@ -89072,6 +89116,13 @@
                 "arguments": [
                     "the bathmat",
                     "the bathtub"
+                ]
+            },
+            {
+                "verb": "set",
+                "arguments": [
+                    "the bathmat",
+                    "the back of a chair or outdoors in the sun"
                 ]
             },
             {
@@ -89778,31 +89829,37 @@
         ],
         "prediction": [
             {
+                "verb": "check",
+                "arguments": [
+                    "the guide that came with the stainless steel cooktop"
+                ]
+            },
+            {
                 "verb": "mix",
                 "arguments": [
                     "water",
-                    "mild detergent"
+                    "a mild detergent"
                 ]
             },
             {
                 "verb": "dip",
                 "arguments": [
-                    "nylon scrubbie",
-                    "mixture"
+                    "a nylon scrubbie",
+                    "the mixture"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "surface",
-                    "nylon scrubbie"
+                    "the surface of the stainless steel cooktop",
+                    "the nylon scrubbie"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "surface",
-                    "dry towel"
+                    "the surface of the stainless steel cooktop",
+                    "a dry towel"
                 ]
             },
             {
@@ -89815,96 +89872,96 @@
             {
                 "verb": "scoop",
                 "arguments": [
-                    "mixture",
-                    "soft-bristled brush or dish cloth"
+                    "a bit of the mixture",
+                    "a soft-bristled brush or a dish cloth"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "stain",
-                    "brush or dishcloth"
+                    "the stain on the stainless steel cooktop",
+                    "the brush or dishcloth"
                 ]
             },
             {
                 "verb": "wash",
                 "arguments": [
-                    "baking soda mixture",
-                    "sponge or soft cloth"
+                    "the baking soda mixture",
+                    "a sponge or soft cloth dampened with warm water"
                 ]
             },
             {
                 "verb": "rub",
                 "arguments": [
-                    "baking soda paste",
-                    "hand"
+                    "the baking soda paste",
+                    "a hand"
                 ]
             },
             {
                 "verb": "spray",
                 "arguments": [
-                    "stainless steel cooktop",
+                    "the stainless steel cooktop",
                     "vinegar"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "vinegar",
-                    "soft cloth or sponge"
+                    "the vinegar on the stainless steel cooktop",
+                    "a soft cloth or sponge"
                 ]
             },
             {
                 "verb": "dab",
                 "arguments": [
-                    "soft cloth",
+                    "a soft cloth",
                     "cooking oil"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "stainless steel cooktop",
-                    "soft cloth"
+                    "the stainless steel cooktop",
+                    "the soft cloth with cooking oil"
                 ]
             },
             {
                 "verb": "let sit",
                 "arguments": [
-                    "oil"
+                    "the oil on the surface of the stainless steel cooktop"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "oil",
-                    "paper towel"
+                    "the oil on the stainless steel cooktop",
+                    "a paper towel"
                 ]
             },
             {
                 "verb": "apply",
                 "arguments": [
-                    "stainless steel cleaner"
+                    "a stainless steel cleaner"
                 ]
             },
             {
                 "verb": "direct",
                 "arguments": [
-                    "nozzle of the cleaner",
-                    "portion of the stainless steel cooktop"
+                    "the nozzle of the cleaner",
+                    "the portion of the stainless steel cooktop to be cleaned"
                 ]
             },
             {
                 "verb": "squeeze",
                 "arguments": [
-                    "handle"
+                    "the handle of the cleaner"
                 ]
             },
             {
                 "verb": "wipe",
                 "arguments": [
-                    "area",
-                    "damp cloth or sponge"
+                    "the area on the stainless steel cooktop",
+                    "a damp cloth or sponge"
                 ]
             }
         ],
@@ -92197,6 +92254,12 @@
                 ]
             },
             {
+                "verb": "Dye",
+                "arguments": [
+                    "the material"
+                ]
+            },
+            {
                 "verb": "Make",
                 "arguments": [
                     "sentimental items"
@@ -92229,7 +92292,7 @@
             {
                 "verb": "Create",
                 "arguments": [
-                    "a christening gown for future children from excess dress materials"
+                    "a christening gown for future children"
                 ]
             },
             {
@@ -92293,9 +92356,9 @@
                 ]
             },
             {
-                "verb": "Cut",
+                "verb": "Make",
                 "arguments": [
-                    "longer portions of your dress for fashionable scarves"
+                    "fashionable scarves from longer portions of your dress"
                 ]
             },
             {
@@ -92307,7 +92370,13 @@
             {
                 "verb": "Trim",
                 "arguments": [
-                    "the skirt of your dress and hung around a crib"
+                    "the skirt of your dress"
+                ]
+            },
+            {
+                "verb": "Hang",
+                "arguments": [
+                    "the trimmed skirt around a crib"
                 ]
             },
             {
@@ -93083,16 +93152,9 @@
                 ]
             },
             {
-                "verb": "Give away",
+                "verb": "Decide",
                 "arguments": [
-                    "linens"
-                ]
-            },
-            {
-                "verb": "Donate",
-                "arguments": [
-                    "linens",
-                    "local thrift store"
+                    "linens to give away or donate"
                 ]
             },
             {
@@ -93114,6 +93176,12 @@
                 ]
             },
             {
+                "verb": "Use",
+                "arguments": [
+                    "extra rinse cycle"
+                ]
+            },
+            {
                 "verb": "Rinse",
                 "arguments": [
                     "washed linens"
@@ -93128,8 +93196,7 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "cream conditioner",
-                    "white linens"
+                    "cream conditioner"
                 ]
             },
             {
@@ -93174,8 +93241,7 @@
             {
                 "verb": "Separate",
                 "arguments": [
-                    "linens",
-                    "type"
+                    "linens by type"
                 ]
             },
             {
@@ -93187,7 +93253,8 @@
             {
                 "verb": "Store",
                 "arguments": [
-                    "linens"
+                    "linens",
+                    "place that will not attract mildew"
                 ]
             },
             {
@@ -94023,19 +94090,25 @@
             {
                 "verb": "Wash",
                 "arguments": [
-                    "Merino wool"
+                    "Merino wool by itself"
+                ]
+            },
+            {
+                "verb": "Keep",
+                "arguments": [
+                    "Merino wool separate from other laundry"
                 ]
             },
             {
                 "verb": "Turn",
                 "arguments": [
-                    "garments"
+                    "garments inside-out"
                 ]
             },
             {
                 "verb": "Wash",
                 "arguments": [
-                    "Merino wool"
+                    "Merino wool inside-out"
                 ]
             },
             {
@@ -94057,15 +94130,21 @@
                 ]
             },
             {
+                "verb": "Wash",
+                "arguments": [
+                    "Merino wool at a consistent warm, low, or cold temperature"
+                ]
+            },
+            {
                 "verb": "Remove",
                 "arguments": [
-                    "garments from the machine"
+                    "garments from the machine immediately"
                 ]
             },
             {
                 "verb": "Dry",
                 "arguments": [
-                    "Merino wool"
+                    "Merino wool according to the care instructions"
                 ]
             }
         ],
@@ -94534,6 +94613,15 @@
                 ]
             },
             {
+                "verb": "Wear",
+                "arguments": [
+                    "old clothes",
+                    "rubber gloves",
+                    "safety goggles",
+                    "a respirator or dust mask"
+                ]
+            },
+            {
                 "verb": "Rent",
                 "arguments": [
                     "a pressure washer"
@@ -94543,7 +94631,8 @@
                 "verb": "Ask",
                 "arguments": [
                     "the rental agent",
-                    "how to use the pressure washer and safety precautions"
+                    "how to use the pressure washer",
+                    "safety precautions"
                 ]
             },
             {
@@ -94557,6 +94646,13 @@
                 "verb": "Inspect",
                 "arguments": [
                     "the concrete"
+                ]
+            },
+            {
+                "verb": "Rinse",
+                "arguments": [
+                    "the area",
+                    "clean water"
                 ]
             },
             {
@@ -95347,23 +95443,28 @@
                 ]
             },
             {
+                "verb": "Use",
+                "arguments": [
+                    "a vacuum cleaner with a hose and an angular nozzle attachment",
+                    "the walls, baseboard, and corners of the pantry or cupboard"
+                ]
+            },
+            {
                 "verb": "Clean",
                 "arguments": [
-                    "the walls",
-                    "baseboard",
-                    "corners of the pantry or cupboard"
+                    "under all shelving liners"
                 ]
             },
             {
                 "verb": "Remove",
                 "arguments": [
-                    "old liners"
+                    "any old liners"
                 ]
             },
             {
-                "verb": "Vacuum beneath",
+                "verb": "Vacuum",
                 "arguments": [
-                    "the old liners"
+                    "beneath the old liners"
                 ]
             },
             {
@@ -95373,36 +95474,69 @@
                 ]
             },
             {
+                "verb": "Focus on",
+                "arguments": [
+                    "areas with webbing, larvae, or adult moths"
+                ]
+            },
+            {
+                "verb": "Vacuum",
+                "arguments": [
+                    "the entire area",
+                    "all hardware, wire shelves, and pin holes in the cupboard"
+                ]
+            },
+            {
                 "verb": "Scrub",
                 "arguments": [
                     "the pantry",
-                    "walls",
-                    "floors",
-                    "doors",
-                    "shelves of the pantry or cupboard"
+                    "soap and hot water"
+                ]
+            },
+            {
+                "verb": "Wash",
+                "arguments": [
+                    "the walls, floors, doors, and shelves of the pantry or cupboard",
+                    "a dish towel or sponge"
+                ]
+            },
+            {
+                "verb": "Scrub",
+                "arguments": [
+                    "beneath any shelving liners or interior racks"
+                ]
+            },
+            {
+                "verb": "Wipe down",
+                "arguments": [
+                    "cabinetry",
+                    "a rag or paper towel soaked in bleach"
+                ]
+            },
+            {
+                "verb": "Scrub",
+                "arguments": [
+                    "cabinetry",
+                    "hot soapy water"
                 ]
             },
             {
                 "verb": "Wash",
                 "arguments": [
                     "old containers",
-                    "plastic food containers"
+                    "hot soapy water"
                 ]
             },
             {
                 "verb": "Dry",
                 "arguments": [
-                    "everything",
-                    "the inside of the pantry",
-                    "food containers"
+                    "everything"
                 ]
             },
             {
-                "verb": "Take outside",
+                "verb": "Take",
                 "arguments": [
-                    "the trash",
-                    "vacuum bag",
-                    "trash bags containing infested food"
+                    "the trash outside"
                 ]
             }
         ],
@@ -96307,13 +96441,6 @@
                 "arguments": [
                     "the area",
                     "aluminum foil or a laundry basket"
-                ]
-            },
-            {
-                "verb": "Leave",
-                "arguments": [
-                    "pillows or cushions",
-                    "out in the sun to dry"
                 ]
             }
         ],
@@ -97881,8 +98008,8 @@
             {
                 "verb": "Line",
                 "arguments": [
-                    "driveway",
-                    "low fence"
+                    "your driveway",
+                    "a low fence"
                 ]
             },
             {
@@ -97894,7 +98021,8 @@
             {
                 "verb": "Paint",
                 "arguments": [
-                    "fence"
+                    "the fence",
+                    "a new color"
                 ]
             },
             {
@@ -97907,26 +98035,27 @@
             {
                 "verb": "Repaint",
                 "arguments": [
-                    "fence"
+                    "your fence"
                 ]
             },
             {
                 "verb": "Line",
                 "arguments": [
-                    "driveway",
+                    "your driveway",
                     "ornamental trees"
                 ]
             },
             {
                 "verb": "Plant",
                 "arguments": [
-                    "ornamental trees"
+                    "the same species of ornamental tree",
+                    "along your driveway"
                 ]
             },
             {
                 "verb": "Create",
                 "arguments": [
-                    "pattern"
+                    "a pattern by alternating between species"
                 ]
             },
             {
@@ -97938,20 +98067,21 @@
             {
                 "verb": "Trim",
                 "arguments": [
-                    "shrubs"
+                    "the shrubs",
+                    "into eye-catching designs"
                 ]
             },
             {
                 "verb": "Lay",
                 "arguments": [
-                    "flower bed"
+                    "a flower bed"
                 ]
             },
             {
                 "verb": "Define",
                 "arguments": [
-                    "edges of driveway",
-                    "plants"
+                    "the edges of your driveway",
+                    "with plants that catch the eye"
                 ]
             },
             {
@@ -97963,7 +98093,14 @@
             {
                 "verb": "Add",
                 "arguments": [
-                    "unique design element"
+                    "something distinctive to curves"
+                ]
+            },
+            {
+                "verb": "Place",
+                "arguments": [
+                    "a unique design element",
+                    "at the curve(s)"
                 ]
             }
         ],
@@ -98663,7 +98800,7 @@
             {
                 "verb": "Cover",
                 "arguments": [
-                    "the bottom of the box",
+                    "the bottom",
                     "a single layer of padding"
                 ]
             },
@@ -98677,7 +98814,7 @@
             {
                 "verb": "Tape",
                 "arguments": [
-                    "the edges of each item",
+                    "down the edges",
                     "masking tape"
                 ]
             },
@@ -98699,7 +98836,7 @@
                 "verb": "Slide",
                 "arguments": [
                     "plates and picture frames",
-                    "into the box vertically"
+                    "in vertically"
                 ]
             },
             {
@@ -98712,8 +98849,8 @@
             {
                 "verb": "Add",
                 "arguments": [
-                    "packing peanuts, paper, or bubble wrap",
-                    "to fill in empty spaces"
+                    "more packing peanuts, paper, or bubble wrap",
+                    "empty spaces"
                 ]
             },
             {
@@ -98732,7 +98869,7 @@
             {
                 "verb": "Seal",
                 "arguments": [
-                    "the top and the bottom of the box",
+                    "the top and the bottom",
                     "packing tape"
                 ]
             },
@@ -98740,14 +98877,14 @@
                 "verb": "Write",
                 "arguments": [
                     "fragile",
-                    "on all 4 sides of the box"
+                    "all 4 sides of the box"
                 ]
             },
             {
                 "verb": "Draw",
                 "arguments": [
                     "arrows",
-                    "onto the box to mark which side is up"
+                    "onto the box"
                 ]
             },
             {
@@ -99574,6 +99711,12 @@
                 ]
             },
             {
+                "verb": "exit",
+                "arguments": [
+                    "outside"
+                ]
+            },
+            {
                 "verb": "stay put",
                 "arguments": []
             },
@@ -99630,7 +99773,7 @@
             {
                 "verb": "ask",
                 "arguments": [
-                    "an emergency official",
+                    "an emergency official nearby",
                     "a neighbor"
                 ]
             },
@@ -100498,13 +100641,6 @@
                 ]
             },
             {
-                "verb": "Use caution",
-                "arguments": [
-                    "holiday decorations",
-                    "Christmas trees"
-                ]
-            },
-            {
                 "verb": "Watch",
                 "arguments": [
                     "a video of a Christmas tree fire"
@@ -100527,10 +100663,15 @@
             {
                 "verb": "Unplug",
                 "arguments": [
-                    "chargers",
+                    "chargers"
+                ]
+            },
+            {
+                "verb": "Unplug",
+                "arguments": [
                     "hair straighteners",
                     "curling irons",
-                    "appliances"
+                    "other similar appliances"
                 ]
             }
         ],
@@ -101131,7 +101272,7 @@
         ],
         "prediction": [
             {
-                "verb": "talk to",
+                "verb": "talk",
                 "arguments": [
                     "neighbors"
                 ]
@@ -101158,12 +101299,7 @@
             {
                 "verb": "report",
                 "arguments": [
-                    "stolen cards"
-                ]
-            },
-            {
-                "verb": "call",
-                "arguments": [
+                    "stolen cards",
                     "bank",
                     "credit card company"
                 ]
@@ -101171,7 +101307,8 @@
             {
                 "verb": "provide",
                 "arguments": [
-                    "information to the police"
+                    "information",
+                    "police"
                 ]
             },
             {
@@ -101183,7 +101320,15 @@
             {
                 "verb": "activate",
                 "arguments": [
-                    "trackers in electronic devices"
+                    "trackers",
+                    "electronic devices"
+                ]
+            },
+            {
+                "verb": "locate",
+                "arguments": [
+                    "devices",
+                    "perpetrator"
                 ]
             },
             {
@@ -101195,13 +101340,15 @@
             {
                 "verb": "post",
                 "arguments": [
-                    "information about the burglary on social media"
+                    "information",
+                    "social media"
                 ]
             },
             {
-                "verb": "encourage",
+                "verb": "share",
                 "arguments": [
-                    "followers to share your post"
+                    "post",
+                    "followers"
                 ]
             }
         ],
@@ -102530,6 +102677,10 @@
             {
                 "verb": "Offer to return the favor",
                 "arguments": []
+            },
+            {
+                "verb": "Hold up to it",
+                "arguments": []
             }
         ],
         "gold_actions": [
@@ -103682,32 +103833,28 @@
             {
                 "verb": "add",
                 "arguments": [
-                    "some finishing touches"
-                ]
-            },
-            {
-                "verb": "move",
-                "arguments": [
-                    "the centerpiece",
-                    "the table"
+                    "roses"
                 ]
             },
             {
                 "verb": "arrange",
                 "arguments": [
-                    "short votive candles around the centerpiece"
+                    "short votive candles",
+                    "around the centerpiece"
                 ]
             },
             {
                 "verb": "scatter",
                 "arguments": [
-                    "glass gems or metallic confetti around the centerpiece"
+                    "glass gems or metallic confetti",
+                    "around the centerpiece"
                 ]
             },
             {
                 "verb": "tie",
                 "arguments": [
-                    "a satin or sheer ribbon around the base of the vessel"
+                    "a satin or sheer ribbon",
+                    "around the base of the vessel"
                 ]
             }
         ],
@@ -104573,19 +104720,16 @@
             {
                 "verb": "Find",
                 "arguments": [
-                    "water lilies at your local nursery or garden center"
+                    "water lilies at your local nursery or garden center",
+                    "clippings from a friend with lilies"
                 ]
             },
             {
-                "verb": "Ask",
+                "verb": "Look for",
                 "arguments": [
-                    "a friend with lilies for clippings"
-                ]
-            },
-            {
-                "verb": "Look",
-                "arguments": [
-                    "plants with healthy crowns or the part where the stems meet the roots"
+                    "plants with healthy crowns",
+                    "stems that easily pull away from the crown",
+                    "yellow curling or damaged leaves"
                 ]
             },
             {
@@ -104598,13 +104742,13 @@
             {
                 "verb": "Fill",
                 "arguments": [
-                    "a pot or mesh basket with aquatic soil and fertilizer"
+                    "pot or mesh basket with aquatic soil and fertilizer"
                 ]
             },
             {
                 "verb": "Line",
                 "arguments": [
-                    "your pot or aquatic basket with a coarse fabric such as hessian or burlap"
+                    "pot or aquatic basket with a coarse fabric such as hessian or burlap"
                 ]
             },
             {
@@ -104617,13 +104761,13 @@
             {
                 "verb": "Remove",
                 "arguments": [
-                    "the lily from the old container"
+                    "lily from the old container"
                 ]
             },
             {
                 "verb": "Trim",
                 "arguments": [
-                    "the lily",
+                    "lily",
                     "old fleshy roots with pruning shears"
                 ]
             },
@@ -104636,56 +104780,40 @@
             {
                 "verb": "Place",
                 "arguments": [
-                    "the root ball in the soil at a 45 degree angle"
+                    "root ball in the soil at a 45 degree angle",
+                    "lily's root ball or rhizome on top of the soil on the side of the container"
                 ]
             },
             {
                 "verb": "Set",
                 "arguments": [
-                    "the lily's root ball or rhizome on top of the soil on the side of the container"
+                    "crown or the part with the stems emerge points at a 45 degree angle toward the center of the pot"
                 ]
             },
             {
                 "verb": "Add",
                 "arguments": [
                     "more soil",
-                    "a top layer of gravel"
+                    "top layer of gravel"
                 ]
             },
             {
                 "verb": "Press",
                 "arguments": [
-                    "the soil to pack it"
+                    "soil to pack it"
                 ]
             },
             {
                 "verb": "Water",
                 "arguments": [
-                    "the lily well"
+                    "lily well"
                 ]
             },
             {
                 "verb": "Submerge",
                 "arguments": [
-                    "the container in water"
-                ]
-            },
-            {
-                "verb": "Soak",
-                "arguments": [
-                    "the pot completely with a hose"
-                ]
-            },
-            {
-                "verb": "Lower",
-                "arguments": [
-                    "the pot into your pond or aquatic planter"
-                ]
-            },
-            {
-                "verb": "Stack",
-                "arguments": [
-                    "bricks or other supports to keep the pot at the right height"
+                    "container in water",
+                    "pot into your pond or aquatic planter"
                 ]
             }
         ],
@@ -105488,7 +105616,8 @@
             {
                 "verb": "lay down",
                 "arguments": [
-                    "layer of landscape liner or fabric"
+                    "layer of landscape liner or fabric",
+                    "bottom of the sandbox"
                 ]
             },
             {
@@ -106251,7 +106380,8 @@
             {
                 "verb": "cut",
                 "arguments": [
-                    "bottle"
+                    "bottle",
+                    "halves"
                 ]
             },
             {
@@ -107111,7 +107241,7 @@
             {
                 "verb": "Cut",
                 "arguments": [
-                    "small square out of an old rubber rain boot, bicycle tire, or other rubber item"
+                    "small square out of an old rubber rain boot, bicycle tire, or any other rubber item"
                 ]
             },
             {
@@ -107904,6 +108034,18 @@
                 "verb": "Sprinkle",
                 "arguments": [
                     "lime on the soil over the roots of the lilac"
+                ]
+            },
+            {
+                "verb": "Reapply",
+                "arguments": [
+                    "every 3 to 5 years"
+                ]
+            },
+            {
+                "verb": "Space",
+                "arguments": [
+                    "the holes you dig 5–15 feet apart depending on what variety you are planting"
                 ]
             }
         ],
@@ -108853,7 +108995,7 @@
             {
                 "verb": "Examine",
                 "arguments": [
-                    "hibiscus"
+                    "your hibiscus"
                 ]
             },
             {
@@ -108869,7 +109011,7 @@
                 "verb": "Treat",
                 "arguments": [
                     "insects",
-                    "a houseplant insecticide"
+                    "with a houseplant insecticide"
                 ]
             }
         ],
@@ -109695,23 +109837,9 @@
                 ]
             },
             {
-                "verb": "Move",
-                "arguments": [
-                    "the amaryllis"
-                ]
-            },
-            {
-                "verb": "keep",
-                "arguments": [
-                    "the amaryllis",
-                    "indoors"
-                ]
-            },
-            {
                 "verb": "move",
                 "arguments": [
-                    "the amaryllis",
-                    "a windowsill with indirect sunlight"
+                    "the amaryllis"
                 ]
             },
             {
@@ -110837,15 +110965,15 @@
                 ]
             },
             {
-                "verb": "lower",
+                "verb": "purchase",
                 "arguments": [
-                    "the pH level of your soil by mixing granular sulfur with soil"
+                    "pH testing kits at your local nursery or home center"
                 ]
             },
             {
                 "verb": "mix",
                 "arguments": [
-                    "granular sulfur with soil"
+                    "granular sulfur with soil to lower the pH level"
                 ]
             }
         ],
@@ -112034,9 +112162,15 @@
                 ]
             },
             {
+                "verb": "Look for",
+                "arguments": [
+                    "areas where the jersey can hang down without touching the ground or furniture"
+                ]
+            },
+            {
                 "verb": "Hang",
                 "arguments": [
-                    "your jersey"
+                    "the shirt away from windows and rooms that get moist or humid"
                 ]
             },
             {
@@ -112060,18 +112194,24 @@
             {
                 "verb": "Stick",
                 "arguments": [
-                    "a command strip on the surface"
-                ]
-            },
-            {
-                "verb": "Put",
-                "arguments": [
-                    "the hanger on the nail or hook",
-                    "the hanger inside your jersey"
+                    "a command strip on the surface instead"
                 ]
             },
             {
                 "verb": "Hang",
+                "arguments": [
+                    "your jersey"
+                ]
+            },
+            {
+                "verb": "Place",
+                "arguments": [
+                    "the hanger inside your jersey",
+                    "the hanger on the nail or hook"
+                ]
+            },
+            {
+                "verb": "Try hanging",
                 "arguments": [
                     "a picture of yourself in uniform, your favorite player, or a piece of sporting equipment nearby"
                 ]
@@ -112079,8 +112219,7 @@
             {
                 "verb": "Use",
                 "arguments": [
-                    "small Glue Dots or similar adhesives",
-                    "the fabric"
+                    "small Glue Dots or similar adhesives to keep the fabric in place"
                 ]
             }
         ],
@@ -112614,12 +112753,16 @@
                 ]
             },
             {
+                "verb": "create",
+                "arguments": [
+                    "a flowing more soothing environment"
+                ]
+            },
+            {
                 "verb": "eliminate",
                 "arguments": [
-                    "clutter",
-                    "dust",
-                    "dirt",
-                    "objects"
+                    "dust, dirt, or objects",
+                    "clutter"
                 ]
             },
             {
@@ -112630,10 +112773,9 @@
                 ]
             },
             {
-                "verb": "avoid placing",
+                "verb": "avoid",
                 "arguments": [
-                    "bed under a window",
-                    "mirror across from bed"
+                    "placing your bed under a window or a mirror across from your bed"
                 ]
             },
             {
@@ -112647,6 +112789,10 @@
                 "arguments": [
                     "chairs and sofas in circles"
                 ]
+            },
+            {
+                "verb": "make",
+                "arguments": []
             },
             {
                 "verb": "break up",
@@ -112663,7 +112809,7 @@
             {
                 "verb": "hang",
                 "arguments": [
-                    "plants across porch or deck"
+                    "plants across a porch or deck"
                 ]
             },
             {
@@ -112688,13 +112834,13 @@
             {
                 "verb": "choose",
                 "arguments": [
-                    "areas to group photographs of children, loved ones, and certificates"
+                    "areas to group photographs of children, photographs of loved ones, and certificates or other proofs of accomplishment"
                 ]
             },
             {
                 "verb": "fill",
                 "arguments": [
-                    "home with plants, fresh flowers, candles"
+                    "your home with plants, fresh flowers, and candles"
                 ]
             }
         ],
@@ -113075,6 +113221,13 @@
                 ]
             },
             {
+                "verb": "paint",
+                "arguments": [
+                    "walls",
+                    "solid color"
+                ]
+            },
+            {
                 "verb": "paste",
                 "arguments": [
                     "narrow strip of wallpaper"
@@ -113091,7 +113244,7 @@
                 "verb": "paint",
                 "arguments": [
                     "walls",
-                    "solid color"
+                    "one color"
                 ]
             },
             {
@@ -113104,7 +113257,14 @@
             {
                 "verb": "paint",
                 "arguments": [
-                    "accent wall",
+                    "three walls",
+                    "white or off-white"
+                ]
+            },
+            {
+                "verb": "paint",
+                "arguments": [
+                    "fourth wall",
                     "darker contrasting color"
                 ]
             },
@@ -113126,7 +113286,14 @@
                 "verb": "choose",
                 "arguments": [
                     "base color",
-                    "contrasting color"
+                    "background"
+                ]
+            },
+            {
+                "verb": "choose",
+                "arguments": [
+                    "contrasting color",
+                    "designs"
                 ]
             },
             {
@@ -113899,6 +114066,12 @@
                 ]
             },
             {
+                "verb": "consider",
+                "arguments": [
+                    "creating a model of how you want the room to look"
+                ]
+            },
+            {
                 "verb": "try",
                 "arguments": [
                     "free 3-D sketching program"
@@ -113911,13 +114084,19 @@
                 ]
             },
             {
+                "verb": "think",
+                "arguments": [
+                    "what you find romantic"
+                ]
+            },
+            {
                 "verb": "go",
                 "arguments": [
                     "hardware store"
                 ]
             },
             {
-                "verb": "check out",
+                "verb": "check",
                 "arguments": [
                     "paint colors"
                 ]
@@ -114250,9 +114429,16 @@
         ],
         "prediction": [
             {
+                "verb": "Choose",
+                "arguments": [
+                    "type of stain or dirt"
+                ]
+            },
+            {
                 "verb": "Clean",
                 "arguments": [
-                    "brick"
+                    "brick",
+                    "solution of chlorine bleach"
                 ]
             },
             {
@@ -114265,7 +114451,8 @@
             {
                 "verb": "Pour",
                 "arguments": [
-                    "solution"
+                    "solution",
+                    "pump-type garden sprayer"
                 ]
             },
             {
@@ -114277,7 +114464,8 @@
             {
                 "verb": "Wet",
                 "arguments": [
-                    "section of wall"
+                    "section of wall",
+                    "water hose"
                 ]
             },
             {
@@ -114290,33 +114478,35 @@
             {
                 "verb": "Allow",
                 "arguments": [
-                    "bleach solution"
+                    "bleach solution",
+                    "stains"
                 ]
             },
             {
                 "verb": "Rinse",
                 "arguments": [
-                    "section of wall"
+                    "small section of wall"
                 ]
             },
             {
                 "verb": "Scrub",
                 "arguments": [
                     "wall",
-                    "pure bleach"
+                    "pure bleach",
+                    "acid brush"
                 ]
             },
             {
                 "verb": "Rinse",
                 "arguments": [
-                    "wall"
+                    "wall",
+                    "water"
                 ]
             },
             {
                 "verb": "Buy",
                 "arguments": [
-                    "acid-based masonry detergent",
-                    "muriatic acid"
+                    "acid-based masonry detergent or muriatic acid"
                 ]
             },
             {
@@ -114336,43 +114526,43 @@
             {
                 "verb": "Wet",
                 "arguments": [
-                    "wall"
+                    "wall or other surface",
+                    "garden hose"
                 ]
             },
             {
                 "verb": "Brush",
                 "arguments": [
                     "diluted acid solution",
-                    "wall"
+                    "wall",
+                    "acid brush"
                 ]
             },
             {
                 "verb": "Allow",
                 "arguments": [
-                    "acid solution"
-                ]
-            },
-            {
-                "verb": "Rinse",
-                "arguments": [
+                    "acid solution",
                     "wall"
                 ]
             },
             {
                 "verb": "Rinse",
                 "arguments": [
-                    "surfaces"
+                    "wall",
+                    "water"
+                ]
+            },
+            {
+                "verb": "Rinse",
+                "arguments": [
+                    "surfaces exposed to cleaning solutions",
+                    "water"
                 ]
             },
             {
                 "verb": "Seal",
                 "arguments": [
-                    "brick"
-                ]
-            },
-            {
-                "verb": "Apply",
-                "arguments": [
+                    "brick",
                     "siloxane or silicone sealant"
                 ]
             }
@@ -115207,15 +115397,15 @@
                 ]
             },
             {
-                "verb": "wipe away",
+                "verb": "wipe",
                 "arguments": [
                     "excess mortar"
                 ]
             },
             {
-                "verb": "continue laying",
+                "verb": "continue",
                 "arguments": [
-                    "bricks"
+                    "laying the bricks"
                 ]
             },
             {
@@ -115244,9 +115434,10 @@
                 ]
             },
             {
-                "verb": "build up",
+                "verb": "build",
                 "arguments": [
-                    "the outsides or leads of the wall"
+                    "up the outsides or leads of the wall",
+                    "before filling in the middle"
                 ]
             }
         ],
@@ -115995,7 +116186,7 @@
                 "verb": "Ask",
                 "arguments": [
                     "a neighbor",
-                    "the location of the circuit breaker or fuse box"
+                    "where the neighbor's circuit breaker or fuse box is"
                 ]
             },
             {
