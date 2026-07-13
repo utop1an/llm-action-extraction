@@ -1,0 +1,2 @@
+dataset,solver,model,Precision,Recall,F1,Object Precision,Object Recall,Object F1,adjusted_precision,adjusted_recall,adjusted_f1,perfect_action_argument_matches,argument_mismatch_actions,matched_action_events
+wikihow,gpt3_to_plan_reparsed,llama3-70b,0.7497840483731644,0.6348122866894198,0.6875247524752476,0.509518023491292,0.5981930575368521,0.5503062117235346,0.5631154879140555,0.72361230946218,0.6333543108873505,836,1768,2604

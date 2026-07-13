@@ -129,9 +129,9 @@ def test_match_obj_rejects_shared_modifier_or_substring_false_positives():
     assert not ev.match_obj("file", "profile")
 
 
-def test_argument_match_score_distinguishes_head_and_modifier_matches():
-    assert ev.argument_match_type("box", "square shadow box") == "head_expansion"
-    assert ev.argument_match_type("square shadow box", "box") == "head_expansion"
+def test_argument_match_score_uses_one_way_gold_token_containment():
+    assert ev.argument_match_type("box", "square shadow box") == "token_containment"
+    assert ev.argument_match_type("square shadow box", "box") == ""
     assert ev.argument_match_type("red button", "blue button") == ""
     assert ev.argument_match_type("cream cheese", "cream sauce") == ""
 
@@ -145,13 +145,15 @@ def test_argument_lemmas_are_noun_biased_for_plural_objects():
     assert ev.lemma_text("leaves") == "leave"
 
 
-def test_match_obj_strictly_requires_same_head_or_exact_lemmas():
+def test_match_obj_accepts_complete_gold_tokens_inside_predicted_phrases():
     assert ev.match_obj("box", "square shadow box")
-    assert ev.match_obj("square shadow box", "box")
+    assert not ev.match_obj("square shadow box", "box")
     assert ev.match_obj("square shadow box", "shadow square box")
-    assert not ev.match_obj("file", "file name")
+    assert ev.match_obj("file", "open file")
+    assert ev.match_obj("file", "file name")
     assert not ev.match_obj("source file", "target file")
-    assert not ev.match_obj("mushroom soup", "cream mushroom soup")
+    assert ev.match_obj("mushroom soup", "cream mushroom soup")
+    assert not ev.match_obj("file", "profile")
 
 
 def test_match_objs_scores_partial_extra_and_empty_predictions():
@@ -186,8 +188,8 @@ def test_match_objs_treats_exclusive_arguments_as_alternatives_not_extras():
 def test_arg_diff_uses_strict_one_to_one_matching():
     missing, extra = ev.arg_diff(["file", "target folder"], ["folder", "file"])
 
-    assert missing == []
-    assert extra == []
+    assert missing == ["target folder"]
+    assert extra == ["folder"]
 
 
 def test_arg_diff_does_not_match_head_mismatch_or_modifier_conflict():
@@ -225,6 +227,14 @@ def test_match_accepts_verb_phrase_and_rejects_missing_or_wrong_verb():
 
     assert ev.match(act(0, [4]), {"arguments": ["box"]}, WORDS) == (False, 0, 0, 0, 0)
     assert ev.match(act(0, [4]), {"verb": "open", "arguments": ["box"]}, WORDS) == (False, 0, 0, 0, 0)
+
+
+def test_action_matching_uses_complete_lemma_tokens_not_character_substrings():
+    words = ["press", "button"]
+
+    assert ev.match_action(act(0, [1]), {"verb": "press down"}, words)
+    assert not ev.match_action(act(0, [1]), {"verb": "surpress"}, words)
+    assert not ev.match_action(act(0, [1]), {"verb": "compress"}, words)
 
 
 def test_match_handles_bad_indices_missing_obj_idxs_and_string_arguments():
@@ -278,7 +288,7 @@ def test_classify_argument_mismatch_missing_extra_wrong_and_subtypes():
     assert "extra_arguments:preposition_argument" in preposition["candidate_llm_issue"]
 
     split = ev.classify_argument_mismatch(["square shadow box"], ["square", "shadow", "box"])
-    assert split["candidate_llm_issue"] == "extra_arguments"
+    assert split["candidate_llm_issue"] == "missing_arguments|extra_arguments|wrong_arguments"
 
 
 def test_best_verb_candidate_prefers_overlap():
@@ -394,11 +404,11 @@ def test_classify_argument_mismatch_flags_gt_split_with_pred_head_only():
 def test_classify_argument_mismatch_does_not_call_single_gold_arg_a_split():
     info = ev.classify_argument_mismatch(["lemon"], ["lemon juice"])
 
-    assert info["missing_from_pred"] == ["lemon"]
-    assert info["extra_in_pred"] == ["lemon juice"]
+    assert info["missing_from_pred"] == []
+    assert info["extra_in_pred"] == []
     assert info["candidate_dataset_issue"] == ""
     assert "extra_arguments:unnecessary_head_or_modifier_split" not in info["candidate_llm_issue"]
-    assert "wrong_arguments" in info["candidate_llm_issue"]
+    assert info["candidate_llm_issue"] == ""
 
 
 def test_classify_argument_mismatch_flags_gt_split_with_other_arguments_present():
@@ -739,7 +749,7 @@ def test_classify_argument_mismatch_does_not_call_overlong_prep_span_a_dataset_i
 
     assert info["candidate_dataset_issue"] == ""
     assert info["strong_dataset_issue"] == ""
-    assert "wrong_arguments" in info["candidate_llm_issue"]
+    assert info["candidate_llm_issue"] == ""
 
 
 def test_classify_argument_mismatch_flags_dataset_preposition_argument():
@@ -937,7 +947,7 @@ def test_evaluation_exclusive_actions_count_truth_once():
     assert diagnostics == []
 
 
-def test_evaluation_exclusive_actions_allow_multiple_group_predictions_without_fp():
+def test_evaluation_exclusive_actions_count_additional_group_predictions_as_fp():
     words = ["turn", "switch", "press", "button"]
     data = [
         sample(
@@ -956,8 +966,39 @@ def test_evaluation_exclusive_actions_allow_multiple_group_predictions_without_f
 
     metrics, diagnostics = ev.evaluation(data, names=("win2k", "nl2p_1", "gpt-5-mini"), collect_diagnostics=True)
 
-    assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
-    assert diagnostics == []
+    assert_close_tuple(metrics, (0.5, 1, 2 / 3, 1, 1, 1))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_prediction"
+
+
+def test_evaluation_exclusive_first_match_does_not_rank_by_object_f1():
+    words = ["turn", "switch", "press", "button"]
+    data = [
+        sample(
+            [
+                act(0, [1], act_type=3, related_acts=[2]),
+                act(2, [3], act_type=3, related_acts=[0]),
+            ],
+            [
+                {"verb": "turn", "arguments": ["wrong object"]},
+                {"verb": "press", "arguments": ["button"]},
+            ],
+            words=words,
+            sents=[["turn", "switch"], ["or", "press", "button"]],
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(
+        data,
+        names=("win2k", "nl2p_1", "gpt-5-mini"),
+        collect_diagnostics=True,
+    )
+
+    assert_close_tuple(metrics, (0.5, 1, 2 / 3, 0, 0, 0))
+    assert [row["mismatch_type"] for row in diagnostics] == [
+        "argument_mismatch",
+        "unmatched_prediction",
+    ]
 
 
 def test_evaluation_optional_action_can_be_omitted_without_diagnostic_or_fn():
@@ -1000,6 +1041,61 @@ def test_evaluation_optional_action_matched_adds_truth_denominator():
     metrics = ev.evaluation(data)
 
     assert_close_tuple(metrics, (1, 1, 1, 1, 1, 1))
+
+
+def test_evaluation_optional_action_scores_arguments_only_when_action_is_extracted():
+    words = ["preview", "document"]
+    omitted = [sample([act(0, [1], act_type=2)], [], words=words)]
+    extracted_with_wrong_object = [
+        sample(
+            [act(0, [1], act_type=2)],
+            [{"verb": "preview", "arguments": ["file"]}],
+            words=words,
+        )
+    ]
+
+    omitted_metrics, omitted_diagnostics = ev.evaluation(
+        omitted,
+        names=("win2k", "nl2p_1", "gpt-5-mini"),
+        collect_diagnostics=True,
+    )
+    extracted_metrics, extracted_diagnostics = ev.evaluation(
+        extracted_with_wrong_object,
+        names=("win2k", "nl2p_1", "gpt-5-mini"),
+        collect_diagnostics=True,
+    )
+
+    # EASDRL has optional actions, but no optional-object annotation type.
+    # Omitted optional actions contribute neither action nor object truth.
+    assert_close_tuple(omitted_metrics, (0, 0, 0, 0, 0, 0))
+    assert omitted_diagnostics == []
+
+    # Once the optional action is extracted, it is a normal matched action and
+    # its essential/exclusive arguments are evaluated normally.
+    assert_close_tuple(extracted_metrics, (1, 1, 1, 0, 0, 0))
+    assert len(extracted_diagnostics) == 1
+    assert extracted_diagnostics[0]["mismatch_type"] == "argument_mismatch"
+
+
+def test_evaluation_nonmatching_prediction_is_not_excused_by_optional_gold_action():
+    words = ["preview", "document"]
+    data = [
+        sample(
+            [act(0, [1], act_type=2)],
+            [{"verb": "print", "arguments": ["document"]}],
+            words=words,
+        )
+    ]
+
+    metrics, diagnostics = ev.evaluation(
+        data,
+        names=("win2k", "nl2p_1", "gpt-5-mini"),
+        collect_diagnostics=True,
+    )
+
+    assert_close_tuple(metrics, (0, 0, 0, 0, 0, 0))
+    assert len(diagnostics) == 1
+    assert diagnostics[0]["mismatch_type"] == "unmatched_prediction"
 
 
 def test_evaluation_handles_none_predictions_like_empty_predictions():

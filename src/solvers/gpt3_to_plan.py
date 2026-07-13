@@ -87,6 +87,43 @@ class GPT3ToPlan(Solver):
         text = re.split(r'(?i)\bACTIONS\s*:\s*', string)[-1].strip()
         text = re.sub(r'^```(?:text)?\s*', '', text, flags=re.IGNORECASE)
         text = re.sub(r'\s*```$', '', text)
+
+        listed_results = []
+        for raw_line in text.splitlines():
+            line = raw_line.strip()
+            list_match = re.match(r'^(?:[-*]\s+|\d+[.)]\s+)(.+)$', line)
+            is_list_item = list_match is not None
+            if is_list_item:
+                line = list_match.group(1).strip()
+
+            signature = re.match(r'^(.+?)\s*\(([^()]*)\)', line)
+            if signature:
+                act_name = re.sub(r'[*_`]', '', signature.group(1)).strip()
+                arguments = [arg.strip() for arg in signature.group(2).split(',') if arg.strip()]
+                if act_name:
+                    listed_results.append({'verb': act_name, 'arguments': arguments})
+                continue
+
+            if not is_list_item:
+                continue
+            bold_action = re.match(r'^\*\*(.+?)\*\*\s*(.*)$', line)
+            if bold_action:
+                act_name = bold_action.group(1).strip()
+                remainder = bold_action.group(2).strip(' .')
+            else:
+                plain_action = re.match(r"^([A-Za-z][A-Za-z'-]*)\s*(.*)$", line)
+                if not plain_action:
+                    continue
+                act_name = plain_action.group(1).strip()
+                remainder = plain_action.group(2).strip(' .')
+            listed_results.append({
+                'verb': act_name,
+                'arguments': [remainder] if remainder else [],
+            })
+
+        if listed_results and ';' not in text:
+            return listed_results
+
         acts = text.split(';')
         results = []
         for item in acts:

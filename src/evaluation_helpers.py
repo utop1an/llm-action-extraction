@@ -62,8 +62,7 @@ GENERIC_REFERENCE_LEMMAS = {
 ARGUMENT_MATCH_RANK = {
     "exact": 4,
     "lemma_exact": 3,
-    "modifier_exact": 2,
-    "head_expansion": 1,
+    "token_containment": 2,
 }
 
 NOUN_LOOKUP = hash_string("noun")
@@ -227,19 +226,16 @@ def argument_head_lemma(text):
 
 
 def argument_match_type(left, right):
-    """Classify how two argument strings match under the strict object rules.
+    """Classify a gold argument against a predicted argument.
 
-    Returns one of:
+    EASDRL gold objects are token positions, while LLM predictions are often
+    phrases.  A prediction therefore matches when it contains every normalized
+    gold token as a complete lemma token.  Token containment is deliberately
+    one-way: ``file`` matches ``open file``, but ``source file`` does not match
+    ``target file``.  Complete-token comparison also prevents substring false
+    positives such as ``file``/``profile``.
 
-    * `exact`: normalized lemma strings are identical;
-    * `lemma_exact`: content lemma sets are identical, ignoring order;
-    * `modifier_exact`: phrases have the same head and same modifiers;
-    * `head_expansion`: one phrase is a head-only version of the other; or
-    * `""`: no accepted match.
-
-    Shared modifiers or substrings alone are not enough to match.  For example,
-    `red button` and `blue button` share a head but conflict on modifiers, while
-    `file` and `profile` only share a substring.
+    Returns ``exact``, ``lemma_exact``, ``token_containment``, or ``""``.
     """
     left_norm = normalized_argument_text(left)
     right_norm = normalized_argument_text(right)
@@ -255,17 +251,8 @@ def argument_match_type(left, right):
     if left_lemmas == right_lemmas:
         return "lemma_exact"
 
-    left_head = argument_head_lemma(left)
-    right_head = argument_head_lemma(right)
-    if not left_head or left_head != right_head:
-        return ""
-
-    left_mods = left_lemmas - {left_head}
-    right_mods = right_lemmas - {right_head}
-    if not left_mods or not right_mods:
-        return "head_expansion"
-    if left_mods == right_mods:
-        return "modifier_exact"
+    if left_lemmas.issubset(right_lemmas):
+        return "token_containment"
     return ""
 
 
@@ -280,9 +267,7 @@ def argument_match_score(left, right):
         return 1
     if match_type == "lemma_exact":
         return 0.95
-    if match_type == "modifier_exact":
-        return 0.9
-    if match_type == "head_expansion":
+    if match_type == "token_containment":
         return 0.8
     return 0
 
@@ -290,6 +275,33 @@ def argument_match_score(left, right):
 def match_obj(gt_name, pred_name):
     """Return whether a predicted object is an accepted match for a gold object."""
     return bool(argument_match_type(gt_name, pred_name))
+
+
+def action_lemma_tokens(text):
+    """Return complete lemma tokens used for source-grounded action matching."""
+    return {
+        token.lemma_.lower()
+        for token in nlp(str(text))
+        if not token.is_space and not token.is_punct
+    }
+
+
+def match_action(act, pred, words):
+    """Match a gold action token to a predicted action phrase.
+
+    Gold actions are source-token positions.  Predicted phrases may contain the
+    gold lemma as a complete token (``open``/``start to open``), but character
+    substrings do not match (``press``/``surpress``).
+    """
+    act_idx = act.get("act_idx")
+    if not isinstance(act_idx, int) or not 0 <= act_idx < len(words):
+        return False
+    pred_name = pred.get("verb")
+    if pred_name is None:
+        return False
+    gold_tokens = action_lemma_tokens(words[act_idx])
+    pred_tokens = action_lemma_tokens(pred_name)
+    return bool(gold_tokens and gold_tokens.issubset(pred_tokens))
 
 @lru_cache(maxsize=None)
 def lemma_text(text):
@@ -824,20 +836,7 @@ def match(act, pred, words):
     Object scoring is delegated to `match_objs`, so argument precision/recall can
     still expose partial or noisy object predictions after the verb matches.
     """
-    act_idx = act.get("act_idx")
-    if not isinstance(act_idx, int) or not 0 <= act_idx < len(words):
-        return False, 0, 0, 0, 0
-    act_name = words[act_idx]
-
-    pred_act_name = pred.get("verb", None)
-    if pred_act_name is None:
-        return False, 0, 0, 0, 0
-
-    act_lemma_text = lemma_text(act_name)
-    act_lemma = act_lemma_text.split()[0] if act_lemma_text else ""
-    
-    pred_act_lemma = lemma_text(pred_act_name)
-    if not act_lemma or act_lemma not in pred_act_lemma:
+    if not match_action(act, pred, words):
         return False, 0, 0, 0, 0
 
     obj_idxs = act.get("obj_idxs", [[], []])

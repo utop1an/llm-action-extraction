@@ -26,6 +26,7 @@ from src.evaluation_helpers import (
     is_split_modifier_case,
     lemma_text,
     match,
+    match_action,
     match_obj,
     match_objs,
     normalize_args,
@@ -131,62 +132,40 @@ def _exclusive_action_key(act):
     return frozenset([act.get("act_idx"), *act.get("related_acts", [])])
 
 
-def _best_prediction_for_act(act, pred, used, words):
-    best = (None, 0, 0, 0, 0)
+ESSENTIAL_ACTION = 1
+OPTIONAL_ACTION = 2
+EXCLUSIVE_ACTION = 3
+
+
+def _gold_action_denominator_increment(act_type, matched):
+    """Return the EASDRL contribution of one action unit to TotalTruth.
+
+    EASDRL defines optionality for actions, not for arguments.  An essential
+    action or one exclusive-action group is always a gold unit.  An optional
+    action becomes a gold unit only when it is extracted; omitting it is a
+    valid output and must therefore be neutral rather than a false negative.
+    Arguments are scored separately, and only after their parent action has
+    matched.
+    """
+    if act_type == OPTIONAL_ACTION:
+        return int(matched)
+    return 1
+
+
+def _strict_first_action_match(acts, pred, used, words):
+    """Return the first unused prediction matching one gold action alternative.
+
+    Matching is action-only.  Arguments are intentionally not inspected until
+    the gold/predicted action pair has been fixed.
+    """
     for pred_idx, pred_act in enumerate(pred):
         if used[pred_idx]:
             continue
-        matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred_act, words)
-        if matched and (best[0] is None or best[4] < obj_f1):
-            best = (pred_idx, obj_right, obj_true, obj_tagged, obj_f1)
-    return best
-
-
-def _best_prediction_for_acts(acts, pred, used, words):
-    best = (None, None, 0, 0, 0, 0)
-    for act in acts:
-        candidate = _best_prediction_for_act(act, pred, used, words)
-        if candidate[0] is not None and (best[0] is None or best[5] < candidate[4]):
-            best = (candidate[0], act, candidate[1], candidate[2], candidate[3], candidate[4])
-    return best
-
-
-def _consume_neutral_exclusive_predictions(acts, pred, used, neutral, words):
-    consumed = True
-    while consumed:
-        consumed = False
-        best = _best_prediction_for_acts(acts, pred, used, words)
-        if best[0] is not None:
-            used[best[0]] = True
-            neutral[best[0]] = True
-            consumed = True
-
-
-def _strict_first_match_actions(actions, pred, used, words):
-    """Return order-preserving first matches for ordinary actions.
-
-    For each gold action, scan predictions from the previous successful match.
-    If a match is found, consume that prediction and advance both cursors.  If no
-    prediction matches the current gold action, leave predictions unconsumed and
-    try the next gold action from the same prediction cursor.
-    """
-    matches = []
-    pred_cursor = 0
-    for action_order, act in actions:
-        pred_idx = pred_cursor
-        while pred_idx < len(pred):
-            if used[pred_idx]:
-                pred_idx += 1
-                continue
-            matched, obj_right, obj_true, obj_tagged, obj_f1 = match(act, pred[pred_idx], words)
-            if not matched:
-                pred_idx += 1
-                continue
-            used[pred_idx] = True
-            matches.append((action_order, act, pred_idx, obj_right, obj_true, obj_tagged, obj_f1))
-            pred_cursor = pred_idx + 1
-            break
-    return matches
+        for act in acts:
+            if match_action(act, pred_act, words):
+                used[pred_idx] = True
+                return act, pred_idx
+    return None, None
 
 
 def _classify_matched_argument_mismatch(item, gold, pred_act):
@@ -317,63 +296,35 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             print(f"No predictions found for item {item_idx}.")
 
         used = [False] * len(pred)
-        neutral = [False] * len(pred)
         pending_unmatched_gold = []
         exclusive_groups = defaultdict(list)
         for act in acts:
-            if act.get("act_type") == 3:
+            if act.get("act_type") == EXCLUSIVE_ACTION:
                 exclusive_groups[_exclusive_action_key(act)].append(act)
 
         processed_exclusive_groups = set()
-        required_actions = []
-        optional_actions = []
+        action_units = []
         for action_order, act in enumerate(acts):
             act_type = act.get("act_type")
-            if act_type == 3:
+            if act_type == EXCLUSIVE_ACTION:
                 group_key = _exclusive_action_key(act)
                 if group_key in processed_exclusive_groups:
                     continue
                 processed_exclusive_groups.add(group_key)
-                group_acts = exclusive_groups[group_key]
-                total_truth += 1
-                best = _best_prediction_for_acts(group_acts, pred, used, words)
-                if best[0] is None:
-                    if collect_diagnostics:
-                        gold = action_record(group_acts[0], words)
-                        pending_unmatched_gold.append(gold)
-                    continue
+                action_units.append((action_order, act_type, exclusive_groups[group_key]))
+            elif act_type in {ESSENTIAL_ACTION, OPTIONAL_ACTION}:
+                action_units.append((action_order, act_type, [act]))
 
-                total_right += 1
-                obj_total_tagged += best[4]
-                obj_total_truth += best[3]
-                obj_total_right += best[2]
-                adjusted_obj_total_tagged += best[4]
-                adjusted_obj_total_truth += best[3]
-                used[best[0]] = True
-                _consume_neutral_exclusive_predictions(group_acts, pred, used, neutral, words)
-                if best[2] == best[3] and best[2] == best[4]:
-                    perfect_action_argument_matches += 1
-                else:
-                    argument_mismatch_actions += 1
-                if best[2] < best[3] or best[2] < best[4]:
-                    gold = action_record(best[1], words)
-                    arg_info = _classify_matched_argument_mismatch(item, gold, pred[best[0]])
-                    gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
-                    adjusted_obj_total_truth -= gold_deduction
-                    adjusted_obj_total_tagged -= pred_deduction
-                    if collect_diagnostics:
-                        diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[best[0]], arg_info))
-            elif act_type == 1:
-                required_actions.append((action_order, act))
-            elif act_type == 2:
-                optional_actions.append((action_order, act))
+        for _, act_type, alternatives in sorted(action_units, key=lambda unit: unit[0]):
+            matched_act, pred_idx = _strict_first_action_match(alternatives, pred, used, words)
+            total_truth += _gold_action_denominator_increment(act_type, matched_act is not None)
+            if matched_act is None:
+                if collect_diagnostics and act_type != OPTIONAL_ACTION:
+                    pending_unmatched_gold.append(action_record(alternatives[0], words))
+                continue
 
-        total_truth += len(required_actions)
-
-        matched_required = _strict_first_match_actions(required_actions, pred, used, words)
-        matched_required_orders = {action_order for action_order, *_ in matched_required}
-        for action_order, act, pred_idx, obj_right, obj_true, obj_tagged, _ in matched_required:
             total_right += 1
+            _, obj_right, obj_true, obj_tagged, _ = match(matched_act, pred[pred_idx], words)
             obj_total_tagged += obj_tagged
             obj_total_truth += obj_true
             obj_total_right += obj_right
@@ -384,7 +335,7 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
             else:
                 argument_mismatch_actions += 1
             if obj_right < obj_true or obj_right < obj_tagged:
-                gold = action_record(act, words)
+                gold = action_record(matched_act, words)
                 arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
                 gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
                 adjusted_obj_total_truth -= gold_deduction
@@ -392,34 +343,7 @@ def evaluation(preds, names=("", "", ""), collect_diagnostics=False):
                 if collect_diagnostics:
                     diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx], arg_info))
 
-        if collect_diagnostics:
-            for action_order, act in required_actions:
-                if action_order not in matched_required_orders:
-                    pending_unmatched_gold.append(action_record(act, words))
-
-        matched_optional = _strict_first_match_actions(optional_actions, pred, used, words)
-        for _, act, pred_idx, obj_right, obj_true, obj_tagged, _ in matched_optional:
-            total_truth += 1
-            total_right += 1
-            obj_total_tagged += obj_tagged
-            obj_total_truth += obj_true
-            obj_total_right += obj_right
-            adjusted_obj_total_tagged += obj_tagged
-            adjusted_obj_total_truth += obj_true
-            if obj_right == obj_true and obj_right == obj_tagged:
-                perfect_action_argument_matches += 1
-            else:
-                argument_mismatch_actions += 1
-            if obj_right < obj_true or obj_right < obj_tagged:
-                gold = action_record(act, words)
-                arg_info = _classify_matched_argument_mismatch(item, gold, pred[pred_idx])
-                gold_deduction, pred_deduction = _adjusted_object_deductions(arg_info)
-                adjusted_obj_total_truth -= gold_deduction
-                adjusted_obj_total_tagged -= pred_deduction
-                if collect_diagnostics:
-                    diagnostics.append(_diagnose_matched_argument_mismatch(names, item, item_idx, gold, pred[pred_idx], arg_info))
-
-        total_tagged += sum(1 for is_neutral in neutral if not is_neutral)
+        total_tagged += len(pred)
 
         if collect_diagnostics:
             diagnostic_used = set()

@@ -176,6 +176,21 @@ def test_gpt3_to_plan_parse_json_accepts_empty_response():
     assert solver.parse_json("") == []
 
 
+def test_gpt3_to_plan_parse_json_accepts_numbered_and_markdown_lists():
+    solver = GPT3ToPlan({}, model_name="unused")
+
+    assert solver.parse_json(
+        "Here are the actions:\n"
+        "1. Throw away (alkaline batteries)\n"
+        "2. Recycle(batteries, facility)\n"
+        "* **Check** the Earth911 website."
+    ) == [
+        {"verb": "Throw away", "arguments": ["alkaline batteries"]},
+        {"verb": "Recycle", "arguments": ["batteries", "facility"]},
+        {"verb": "Check", "arguments": ["the Earth911 website"]},
+    ]
+
+
 def test_load_llm_coref_texts_and_sample_input_replacement(tmp_path):
     coref_path = tmp_path / "toy_llm_coref.jsonl"
     coref_path.write_text(
