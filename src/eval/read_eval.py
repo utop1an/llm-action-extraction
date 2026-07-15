@@ -27,7 +27,7 @@ MODEL_ORDER = [
 
 METHOD_LABELS = {
     "nl2p_1": "NL2P-1",
-    "nl2p_1_ablation": "Ablation",
+    "nl2p_1_ablation": "Refined",
     "nl2p_1_coref": "Coref",
 }
 METHOD_ORDER = ["nl2p_1", "nl2p_1_ablation", "nl2p_1_coref"]
