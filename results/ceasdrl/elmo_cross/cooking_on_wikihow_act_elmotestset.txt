@@ -1,0 +1,11 @@
+
+
+Summary:
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 445	 right_act: 380	 tagged_act: 458
+acc: 0.969149	 rec: 0.853933	 pre: 0.829694	 f1: 0.841639
+
+cumulative reward: 237073.174000	 average reward: 50.441101
+
+
+ Test f1 value: 0.8416389811738649, recall : 0.8539325842696629, precision : 0.8296943231441049, reward: 50.441100851062984 
