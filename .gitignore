@@ -57,7 +57,7 @@ logs/
 
 miglani_data/
 !evaluation_result.csv
-!results/naruto/output/evaluation_result_sid_stack.csv
+/results/naruto/*_naruto_naruto.csv
 
 # AI directories
 .agents/
