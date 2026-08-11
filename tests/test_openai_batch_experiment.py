@@ -428,3 +428,9 @@ def test_collect_gpt3_to_plan_writes_standard_results(tmp_path, monkeypatch):
     ]
     assert set(result[0]) == {"dataset", "doc_id", "sentences", "prediction", "gold_actions"}
     assert updated_manifest["result_solver"] == "gpt3_to_plan"
+
+
+def test_module_instructions_do_not_embed_local_user_paths():
+    instructions = batch.__doc__ or ""
+    assert "C:\\Users\\" not in instructions
+    assert "Apex" + "mod" not in instructions

@@ -8,6 +8,14 @@ load_dotenv()
 
 # Model configurations
 MODELS = {
+    "gpt-5": {
+        "provider": "openai",
+        "model_name": "gpt-5",
+        "api_key": os.getenv("OPENAI_API_KEY"),
+        "base_url": os.getenv("OPENAI_BASE_URL"),
+        "supports_custom_sampling": False,
+    },
+
     "gpt-4.1": {
         "provider": "openai",
         "model_name": "gpt-4.1",

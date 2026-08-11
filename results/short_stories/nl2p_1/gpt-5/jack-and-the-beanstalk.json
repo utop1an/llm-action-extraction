@@ -1,0 +1,343 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "requested_title": "Jack and the Beanstalk",
+  "dataset_title": "Jack And The Beanstalk",
+  "model": "gpt-5",
+  "resolved_model": "gpt-5",
+  "method": "nl2p_1",
+  "generated_at_utc": "2026-08-10T18:24:03+00:00",
+  "content_sha256": "c12f2bb0c02bc85eaac498fab6472f8523dd488562bde30bec62a8fb18426e6d",
+  "content_characters": 9513,
+  "content_words": 1844,
+  "action_count": 58,
+  "actions": [
+    {
+      "verb": "sold",
+      "arguments": [
+        "almost all the furniture of the little cottage"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "milk"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "milk"
+      ]
+    },
+    {
+      "verb": "sold",
+      "arguments": [
+        "milk"
+      ]
+    },
+    {
+      "verb": "went to the market",
+      "arguments": []
+    },
+    {
+      "verb": "jumped on",
+      "arguments": [
+        "Milky White's back"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "a butcher"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "his hand",
+        "his pocket"
+      ]
+    },
+    {
+      "verb": "pulled out",
+      "arguments": [
+        "five curious-looking beans"
+      ]
+    },
+    {
+      "verb": "exchanged",
+      "arguments": [
+        "Milky White",
+        "five curious-looking beans"
+      ]
+    },
+    {
+      "verb": "ran home",
+      "arguments": []
+    },
+    {
+      "verb": "threw",
+      "arguments": [
+        "five curious-looking beans"
+      ]
+    },
+    {
+      "verb": "went to bed",
+      "arguments": []
+    },
+    {
+      "verb": "jumped out of bed",
+      "arguments": []
+    },
+    {
+      "verb": "ran to the window",
+      "arguments": []
+    },
+    {
+      "verb": "stepped onto",
+      "arguments": [
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "climbed up the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "went in",
+      "arguments": []
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a good breakfast"
+      ]
+    },
+    {
+      "verb": "lifted",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "popped",
+      "arguments": [
+        "Jack",
+        "the empty kettle"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "the greater part of the ox"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "two full bags of gold"
+      ]
+    },
+    {
+      "verb": "crept out",
+      "arguments": []
+    },
+    {
+      "verb": "snatched up",
+      "arguments": [
+        "two full bags of gold"
+      ]
+    },
+    {
+      "verb": "climbed down the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "got back to the cottage",
+      "arguments": []
+    },
+    {
+      "verb": "climbed up the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "set before him",
+      "arguments": [
+        "enough breakfast"
+      ]
+    },
+    {
+      "verb": "bundled",
+      "arguments": [
+        "Jack",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "came in",
+      "arguments": []
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "a roasted bullock"
+      ]
+    },
+    {
+      "verb": "brought in",
+      "arguments": [
+        "a little brown hen"
+      ]
+    },
+    {
+      "verb": "placed",
+      "arguments": [
+        "the little brown hen",
+        "the table"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "a golden egg"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "a golden egg"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "a golden egg"
+      ]
+    },
+    {
+      "verb": "crept out of the oven",
+      "arguments": []
+    },
+    {
+      "verb": "snatched up",
+      "arguments": [
+        "the little brown hen"
+      ]
+    },
+    {
+      "verb": "escaped from the castle",
+      "arguments": []
+    },
+    {
+      "verb": "climbed down the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "got home to his mother's cottage",
+      "arguments": []
+    },
+    {
+      "verb": "crept out of the window",
+      "arguments": []
+    },
+    {
+      "verb": "climbed up the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "slipped into the kitchen",
+      "arguments": []
+    },
+    {
+      "verb": "hid",
+      "arguments": [
+        "the oven"
+      ]
+    },
+    {
+      "verb": "brought in",
+      "arguments": [
+        "the golden harp"
+      ]
+    },
+    {
+      "verb": "placed",
+      "arguments": [
+        "the golden harp",
+        "the table"
+      ]
+    },
+    {
+      "verb": "sang",
+      "arguments": [
+        "the most beautiful songs"
+      ]
+    },
+    {
+      "verb": "crept out of the oven",
+      "arguments": []
+    },
+    {
+      "verb": "seized hold of",
+      "arguments": [
+        "the golden harp"
+      ]
+    },
+    {
+      "verb": "seized",
+      "arguments": [
+        "his oak-tree club"
+      ]
+    },
+    {
+      "verb": "slipped over",
+      "arguments": [
+        "a boulder"
+      ]
+    },
+    {
+      "verb": "climbed down the beanstalk",
+      "arguments": []
+    },
+    {
+      "verb": "hurried out with",
+      "arguments": [
+        "a chopper"
+      ]
+    },
+    {
+      "verb": "cut",
+      "arguments": [
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": []
+    }
+  ],
+  "raw_response": "[\n  {\n    \"verb\": \"sold\",\n    \"arguments\": [\"almost all the furniture of the little cottage\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"milk\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"milk\"]\n  },\n  {\n    \"verb\": \"sold\",\n    \"arguments\": [\"milk\"]\n  },\n  {\n    \"verb\": \"went to the market\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"jumped on\",\n    \"arguments\": [\"Milky White's back\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"a butcher\"]\n  },\n  {\n    \"verb\": \"put\",\n    \"arguments\": [\"his hand\", \"his pocket\"]\n  },\n  {\n    \"verb\": \"pulled out\",\n    \"arguments\": [\"five curious-looking beans\"]\n  },\n  {\n    \"verb\": \"exchanged\",\n    \"arguments\": [\"Milky White\", \"five curious-looking beans\"]\n  },\n  {\n    \"verb\": \"ran home\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"threw\",\n    \"arguments\": [\"five curious-looking beans\"]\n  },\n  {\n    \"verb\": \"went to bed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"jumped out of bed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"ran to the window\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"stepped onto\",\n    \"arguments\": [\"the beanstalk\"]\n  },\n  {\n    \"verb\": \"climbed up the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"went in\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"a good breakfast\"]\n  },\n  {\n    \"verb\": \"lifted\",\n    \"arguments\": [\"Jack\"]\n  },\n  {\n    \"verb\": \"popped\",\n    \"arguments\": [\"Jack\", \"the empty kettle\"]\n  },\n  {\n    \"verb\": \"opened\",\n    \"arguments\": [\"the door\"]\n  },\n  {\n    \"verb\": \"ate up\",\n    \"arguments\": [\"the greater part of the ox\"]\n  },\n  {\n    \"verb\": \"brought\",\n    \"arguments\": [\"two full bags of gold\"]\n  },\n  {\n    \"verb\": \"crept out\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"snatched up\",\n    \"arguments\": [\"two full bags of gold\"]\n  },\n  {\n    \"verb\": \"climbed down the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"got back to the cottage\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"climbed up the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"set before him\",\n    \"arguments\": [\"enough breakfast\"]\n  },\n  {\n    \"verb\": \"bundled\",\n    \"arguments\": [\"Jack\", \"the oven\"]\n  },\n  {\n    \"verb\": \"came in\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"ate\",\n    \"arguments\": [\"a roasted bullock\"]\n  },\n  {\n    \"verb\": \"brought in\",\n    \"arguments\": [\"a little brown hen\"]\n  },\n  {\n    \"verb\": \"placed\",\n    \"arguments\": [\"the little brown hen\", \"the table\"]\n  },\n  {\n    \"verb\": \"laid\",\n    \"arguments\": [\"a golden egg\"]\n  },\n  {\n    \"verb\": \"laid\",\n    \"arguments\": [\"a golden egg\"]\n  },\n  {\n    \"verb\": \"laid\",\n    \"arguments\": [\"a golden egg\"]\n  },\n  {\n    \"verb\": \"crept out of the oven\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"snatched up\",\n    \"arguments\": [\"the little brown hen\"]\n  },\n  {\n    \"verb\": \"escaped from the castle\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"climbed down the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"got home to his mother's cottage\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"crept out of the window\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"climbed up the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"slipped into the kitchen\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"hid\",\n    \"arguments\": [\"the oven\"]\n  },\n  {\n    \"verb\": \"brought in\",\n    \"arguments\": [\"the golden harp\"]\n  },\n  {\n    \"verb\": \"placed\",\n    \"arguments\": [\"the golden harp\", \"the table\"]\n  },\n  {\n    \"verb\": \"sang\",\n    \"arguments\": [\"the most beautiful songs\"]\n  },\n  {\n    \"verb\": \"crept out of the oven\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"seized hold of\",\n    \"arguments\": [\"the golden harp\"]\n  },\n  {\n    \"verb\": \"seized\",\n    \"arguments\": [\"his oak-tree club\"]\n  },\n  {\n    \"verb\": \"slipped over\",\n    \"arguments\": [\"a boulder\"]\n  },\n  {\n    \"verb\": \"climbed down the beanstalk\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"hurried out with\",\n    \"arguments\": [\"a chopper\"]\n  },\n  {\n    \"verb\": \"cut\",\n    \"arguments\": [\"the beanstalk\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": []\n  }\n]",
+  "usage": {
+    "completion_tokens": 9690,
+    "prompt_tokens": 2761,
+    "total_tokens": 12451,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 8448,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  },
+  "response_time_seconds": 178.31012892723083
+}

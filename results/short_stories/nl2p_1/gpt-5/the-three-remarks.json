@@ -1,0 +1,359 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "requested_title": "The Three Remarks",
+  "dataset_title": "The Three Remarks",
+  "model": "gpt-5",
+  "resolved_model": "gpt-5",
+  "method": "nl2p_1",
+  "generated_at_utc": "2026-08-10T18:26:19+00:00",
+  "content_sha256": "cbce778f59e37f3462dc747216332ca35deee113f24924502e95e8487df50424",
+  "content_characters": 12679,
+  "content_words": 2297,
+  "action_count": 55,
+  "actions": [
+    {
+      "verb": "knelt",
+      "arguments": []
+    },
+    {
+      "verb": "offered",
+      "arguments": [
+        "their hands",
+        "hearts",
+        "other possessions"
+      ]
+    },
+    {
+      "verb": "retired",
+      "arguments": []
+    },
+    {
+      "verb": "hung up",
+      "arguments": [
+        "their armor"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the vows"
+      ]
+    },
+    {
+      "verb": "flogged",
+      "arguments": [
+        "the suitors"
+      ]
+    },
+    {
+      "verb": "wore",
+      "arguments": [
+        "hair shirts"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "dry toast-crumbs",
+        "their beds"
+      ]
+    },
+    {
+      "verb": "slipped down",
+      "arguments": [
+        "the back stairs of the palace"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the back door"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": []
+    },
+    {
+      "verb": "wandered",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a fair city"
+      ]
+    },
+    {
+      "verb": "rang",
+      "arguments": [
+        "all the bells"
+      ]
+    },
+    {
+      "verb": "flung",
+      "arguments": [
+        "caps"
+      ]
+    },
+    {
+      "verb": "died",
+      "arguments": [
+        "the old king"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "the town"
+      ]
+    },
+    {
+      "verb": "polished up",
+      "arguments": [
+        "the crown"
+      ]
+    },
+    {
+      "verb": "put on",
+      "arguments": [
+        "a new tip",
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "spoiled",
+      "arguments": [
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "poked",
+      "arguments": [
+        "the fire"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "the princess",
+        "the new king"
+      ]
+    },
+    {
+      "verb": "made",
+      "arguments": [
+        "a graceful courtesy"
+      ]
+    },
+    {
+      "verb": "raised",
+      "arguments": [
+        "her head"
+      ]
+    },
+    {
+      "verb": "dropped",
+      "arguments": [
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "descended",
+      "arguments": [
+        "his throne"
+      ]
+    },
+    {
+      "verb": "closed",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the rubies"
+      ]
+    },
+    {
+      "verb": "departed",
+      "arguments": []
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "pursued",
+      "arguments": [
+        "her journey"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a deep forest"
+      ]
+    },
+    {
+      "verb": "entered",
+      "arguments": [
+        "the deep forest"
+      ]
+    },
+    {
+      "verb": "stopped",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "lowered",
+      "arguments": [
+        "their weapons"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "reached",
+      "arguments": [
+        "an open glade"
+      ]
+    },
+    {
+      "verb": "sprang",
+      "arguments": [
+        "to his feet"
+      ]
+    },
+    {
+      "verb": "drew",
+      "arguments": [
+        "a bag containing ten thousand sapphires"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the bag of sapphires"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the robber chieftain"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "the open country"
+      ]
+    },
+    {
+      "verb": "returned",
+      "arguments": [
+        "his band"
+      ]
+    },
+    {
+      "verb": "fared forward",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a fair high palace"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the palace-gates"
+      ]
+    },
+    {
+      "verb": "rode out",
+      "arguments": []
+    },
+    {
+      "verb": "leaped from",
+      "arguments": [
+        "his steed"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "a ruby",
+        "one bag"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "a sapphire",
+        "the other bag"
+      ]
+    },
+    {
+      "verb": "handed",
+      "arguments": [
+        "a ruby",
+        "the young king"
+      ]
+    },
+    {
+      "verb": "handed",
+      "arguments": [
+        "a sapphire",
+        "the young king"
+      ]
+    },
+    {
+      "verb": "raised",
+      "arguments": [
+        "her eyes"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "on his knees"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "her little white hand",
+        "the young king"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\n    \"verb\": \"knelt\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"offered\",\n    \"arguments\": [\"their hands\", \"hearts\", \"other possessions\"]\n  },\n  {\n    \"verb\": \"retired\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"hung up\",\n    \"arguments\": [\"their armor\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"the vows\"]\n  },\n  {\n    \"verb\": \"flogged\",\n    \"arguments\": [\"the suitors\"]\n  },\n  {\n    \"verb\": \"wore\",\n    \"arguments\": [\"hair shirts\"]\n  },\n  {\n    \"verb\": \"put\",\n    \"arguments\": [\"dry toast-crumbs\", \"their beds\"]\n  },\n  {\n    \"verb\": \"slipped down\",\n    \"arguments\": [\"the back stairs of the palace\"]\n  },\n  {\n    \"verb\": \"opened\",\n    \"arguments\": [\"the back door\"]\n  },\n  {\n    \"verb\": \"ran away\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"wandered\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": [\"a fair city\"]\n  },\n  {\n    \"verb\": \"rang\",\n    \"arguments\": [\"all the bells\"]\n  },\n  {\n    \"verb\": \"flung\",\n    \"arguments\": [\"caps\"]\n  },\n  {\n    \"verb\": \"died\",\n    \"arguments\": [\"the old king\"]\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": [\"the town\"]\n  },\n  {\n    \"verb\": \"polished up\",\n    \"arguments\": [\"the crown\"]\n  },\n  {\n    \"verb\": \"put on\",\n    \"arguments\": [\"a new tip\", \"the sceptre\"]\n  },\n  {\n    \"verb\": \"spoiled\",\n    \"arguments\": [\"the sceptre\"]\n  },\n  {\n    \"verb\": \"poked\",\n    \"arguments\": [\"the fire\"]\n  },\n  {\n    \"verb\": \"led\",\n    \"arguments\": [\"the princess\", \"the new king\"]\n  },\n  {\n    \"verb\": \"made\",\n    \"arguments\": [\"a graceful courtesy\"]\n  },\n  {\n    \"verb\": \"raised\",\n    \"arguments\": [\"her head\"]\n  },\n  {\n    \"verb\": \"dropped\",\n    \"arguments\": [\"the sceptre\"]\n  },\n  {\n    \"verb\": \"descended\",\n    \"arguments\": [\"his throne\"]\n  },\n  {\n    \"verb\": \"closed\",\n    \"arguments\": [\"the door\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"the rubies\"]\n  },\n  {\n    \"verb\": \"departed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"followed\",\n    \"arguments\": [\"the princess\"]\n  },\n  {\n    \"verb\": \"pursued\",\n    \"arguments\": [\"her journey\"]\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": [\"a deep forest\"]\n  },\n  {\n    \"verb\": \"entered\",\n    \"arguments\": [\"the deep forest\"]\n  },\n  {\n    \"verb\": \"stopped\",\n    \"arguments\": [\"the princess\"]\n  },\n  {\n    \"verb\": \"lowered\",\n    \"arguments\": [\"their weapons\"]\n  },\n  {\n    \"verb\": \"led\",\n    \"arguments\": [\"the princess\"]\n  },\n  {\n    \"verb\": \"reached\",\n    \"arguments\": [\"an open glade\"]\n  },\n  {\n    \"verb\": \"sprang\",\n    \"arguments\": [\"to his feet\"]\n  },\n  {\n    \"verb\": \"drew\",\n    \"arguments\": [\"a bag containing ten thousand sapphires\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"the bag of sapphires\"]\n  },\n  {\n    \"verb\": \"followed\",\n    \"arguments\": [\"the robber chieftain\"]\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": [\"the open country\"]\n  },\n  {\n    \"verb\": \"returned\",\n    \"arguments\": [\"his band\"]\n  },\n  {\n    \"verb\": \"fared forward\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": [\"a fair high palace\"]\n  },\n  {\n    \"verb\": \"opened\",\n    \"arguments\": [\"the palace-gates\"]\n  },\n  {\n    \"verb\": \"rode out\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"leaped from\",\n    \"arguments\": [\"his steed\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"a ruby\", \"one bag\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"a sapphire\", \"the other bag\"]\n  },\n  {\n    \"verb\": \"handed\",\n    \"arguments\": [\"a ruby\", \"the young king\"]\n  },\n  {\n    \"verb\": \"handed\",\n    \"arguments\": [\"a sapphire\", \"the young king\"]\n  },\n  {\n    \"verb\": \"raised\",\n    \"arguments\": [\"her eyes\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": [\"on his knees\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"her little white hand\", \"the young king\"]\n  }\n]",
+  "usage": {
+    "completion_tokens": 8723,
+    "prompt_tokens": 3328,
+    "total_tokens": 12051,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 7552,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  },
+  "response_time_seconds": 135.70594692230225
+}

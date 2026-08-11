@@ -4,16 +4,16 @@ This keeps the normal synchronous experiment path untouched. It currently
 supports one-call solvers whose output can be parsed independently per sample.
 
 prepare
-C:\Users\Apexmod\miniforge3\envs\llm\python.exe scripts\openai_batch_experiment.py prepare -s nl2p_1 -m gpt-5.4-mini --run-id full
+python scripts\openai_batch_experiment.py prepare -s nl2p_1 -m gpt-5.4-mini --run-id full
 
 submit
-C:\Users\Apexmod\miniforge3\envs\llm\python.exe scripts\openai_batch_experiment.py submit results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
+python scripts\openai_batch_experiment.py submit results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
 
 check status
-C:\Users\Apexmod\miniforge3\envs\llm\python.exe scripts\openai_batch_experiment.py status results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
+python scripts\openai_batch_experiment.py status results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
 
 collect
-C:\Users\Apexmod\miniforge3\envs\llm\python.exe scripts\openai_batch_experiment.py collect results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
+python scripts\openai_batch_experiment.py collect results\batch\nl2p_1\gpt-5.4-mini\full\manifest.json
 """
 
 from __future__ import annotations

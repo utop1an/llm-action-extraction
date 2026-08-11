@@ -1,0 +1,278 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "requested_title": "The Four Skillful Brothers",
+  "dataset_title": "The Four Skilful Brothers",
+  "model": "gpt-5",
+  "resolved_model": "gpt-5",
+  "method": "nl2p_1",
+  "generated_at_utc": "2026-08-10T18:31:55+00:00",
+  "content_sha256": "dbc046b1d172e93bb0f0712d4116724bb7e98f6b92f4ac0b599ac6da73f53bfb",
+  "content_characters": 8658,
+  "content_words": 1663,
+  "action_count": 46,
+  "actions": [
+    {
+      "verb": "took",
+      "arguments": [
+        "their sticks"
+      ]
+    },
+    {
+      "verb": "went through",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": []
+    },
+    {
+      "verb": "went",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "a man"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "a man"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a telescope"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a gun"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "a man"
+      ]
+    },
+    {
+      "verb": "went with",
+      "arguments": []
+    },
+    {
+      "verb": "learnt",
+      "arguments": []
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a needle"
+      ]
+    },
+    {
+      "verb": "arrived",
+      "arguments": []
+    },
+    {
+      "verb": "returned",
+      "arguments": []
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "his glass"
+      ]
+    },
+    {
+      "verb": "climbed",
+      "arguments": []
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the eggs"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the fifth egg"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "his needle"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the eggs",
+        "the young birds"
+      ]
+    },
+    {
+      "verb": "climbed",
+      "arguments": []
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "the eggs"
+      ]
+    },
+    {
+      "verb": "put back",
+      "arguments": [
+        "the eggs"
+      ]
+    },
+    {
+      "verb": "carried off",
+      "arguments": [
+        "the King's daughter"
+      ]
+    },
+    {
+      "verb": "looked through",
+      "arguments": [
+        "his telescope"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": []
+    },
+    {
+      "verb": "sailed",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": []
+    },
+    {
+      "verb": "crept",
+      "arguments": []
+    },
+    {
+      "verb": "stole away",
+      "arguments": [
+        "the King's daughter"
+      ]
+    },
+    {
+      "verb": "went on board",
+      "arguments": []
+    },
+    {
+      "verb": "steered",
+      "arguments": [
+        "the ship"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": []
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the dragon"
+      ]
+    },
+    {
+      "verb": "shattered",
+      "arguments": [
+        "the whole ship"
+      ]
+    },
+    {
+      "verb": "laid hold of",
+      "arguments": [
+        "a couple of planks"
+      ]
+    },
+    {
+      "verb": "swam",
+      "arguments": []
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "his wondrous needle"
+      ]
+    },
+    {
+      "verb": "sewed together",
+      "arguments": [
+        "the planks"
+      ]
+    },
+    {
+      "verb": "collected together",
+      "arguments": [
+        "all the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "sewed together",
+      "arguments": [
+        "the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "received",
+      "arguments": [
+        "half a kingdom"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"their sticks\"]\n  },\n  {\n    \"verb\": \"went through\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"a man\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"a man\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"a telescope\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"a gun\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"a man\"]\n  },\n  {\n    \"verb\": \"went with\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"learnt\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"a needle\"]\n  },\n  {\n    \"verb\": \"arrived\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"returned\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"his glass\"]\n  },\n  {\n    \"verb\": \"climbed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"the five eggs\"]\n  },\n  {\n    \"verb\": \"brought\",\n    \"arguments\": [\"the five eggs\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"the five eggs\"]\n  },\n  {\n    \"verb\": \"put\",\n    \"arguments\": [\"the eggs\"]\n  },\n  {\n    \"verb\": \"put\",\n    \"arguments\": [\"the fifth egg\"]\n  },\n  {\n    \"verb\": \"shot\",\n    \"arguments\": [\"the five eggs\"]\n  },\n  {\n    \"verb\": \"brought\",\n    \"arguments\": [\"his needle\"]\n  },\n  {\n    \"verb\": \"sewed\",\n    \"arguments\": [\"the eggs\", \"the young birds\"]\n  },\n  {\n    \"verb\": \"climbed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"carried\",\n    \"arguments\": [\"the eggs\"]\n  },\n  {\n    \"verb\": \"put back\",\n    \"arguments\": [\"the eggs\"]\n  },\n  {\n    \"verb\": \"carried off\",\n    \"arguments\": [\"the King's daughter\"]\n  },\n  {\n    \"verb\": \"looked through\",\n    \"arguments\": [\"his telescope\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"sailed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"came to\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"crept\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"stole away\",\n    \"arguments\": [\"the King's daughter\"]\n  },\n  {\n    \"verb\": \"went on board\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"steered\",\n    \"arguments\": [\"the ship\"]\n  },\n  {\n    \"verb\": \"followed\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"shot\",\n    \"arguments\": [\"the dragon\"]\n  },\n  {\n    \"verb\": \"shattered\",\n    \"arguments\": [\"the whole ship\"]\n  },\n  {\n    \"verb\": \"laid hold of\",\n    \"arguments\": [\"a couple of planks\"]\n  },\n  {\n    \"verb\": \"swam\",\n    \"arguments\": []\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"his wondrous needle\"]\n  },\n  {\n    \"verb\": \"sewed together\",\n    \"arguments\": [\"the planks\"]\n  },\n  {\n    \"verb\": \"collected together\",\n    \"arguments\": [\"all the fragments of the vessel\"]\n  },\n  {\n    \"verb\": \"sewed together\",\n    \"arguments\": [\"the fragments of the vessel\"]\n  },\n  {\n    \"verb\": \"received\",\n    \"arguments\": [\"half a kingdom\"]\n  }\n]",
+  "usage": {
+    "completion_tokens": 8522,
+    "prompt_tokens": 2465,
+    "total_tokens": 10987,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 7616,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  },
+  "response_time_seconds": 138.772114276886
+}

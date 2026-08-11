@@ -1,0 +1,186 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "requested_title": "Chicken-Licken",
+  "dataset_title": "Chicken-Licken",
+  "model": "gpt-5",
+  "resolved_model": "gpt-5",
+  "method": "nl2p_1",
+  "generated_at_utc": "2026-08-10T18:17:03+00:00",
+  "content_sha256": "1b50b59962aae9b98a1fd0e72c14ce8d7e319dc7aa7fb75d01fd69c9d9f5debb",
+  "content_characters": 3582,
+  "content_words": 610,
+  "action_count": 22,
+  "actions": [
+    {
+      "verb": "was going",
+      "arguments": [
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "an acorn"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Gander-lander"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Gander-lander"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "walked",
+      "arguments": [
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "were going along",
+      "arguments": [
+        "Turkey-lurkey",
+        "Gander-lander",
+        "Goose-loose",
+        "Drake-lake",
+        "Duck-luck",
+        "Cock-lock",
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Fox-lox"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "Chicken-licken",
+        "Hen-len",
+        "Cock-lock",
+        "Duck-luck",
+        "Drake-lake",
+        "Goose-loose",
+        "Gander-lander",
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "Chicken-licken",
+        "Hen-len",
+        "Cock-lock",
+        "Duck-luck",
+        "Drake-lake",
+        "Goose-loose",
+        "Gander-lander",
+        "Turkey-lurkey"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\n    \"verb\": \"was going\",\n    \"arguments\": [\"Chicken-licken\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": [\"an acorn\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Chicken-licken\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Hen-len\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Hen-len\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Cock-lock\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Cock-lock\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Duck-luck\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Duck-luck\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Drake-lake\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Drake-lake\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Goose-loose\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Goose-loose\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Gander-lander\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Gander-lander\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"walked\",\n    \"arguments\": [\"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"were going along\",\n    \"arguments\": [\"Turkey-lurkey\", \"Gander-lander\", \"Goose-loose\", \"Drake-lake\", \"Duck-luck\", \"Cock-lock\", \"Hen-len\", \"Chicken-licken\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Fox-lox\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"Chicken-licken\", \"Hen-len\", \"Cock-lock\", \"Duck-luck\", \"Drake-lake\", \"Goose-loose\", \"Gander-lander\", \"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"ate up\",\n    \"arguments\": [\"Chicken-licken\", \"Hen-len\", \"Cock-lock\", \"Duck-luck\", \"Drake-lake\", \"Goose-loose\", \"Gander-lander\", \"Turkey-lurkey\"]\n  }\n]",
+  "usage": {
+    "completion_tokens": 5898,
+    "prompt_tokens": 1458,
+    "total_tokens": 7356,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 5312,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  },
+  "response_time_seconds": 84.81979155540466
+}
