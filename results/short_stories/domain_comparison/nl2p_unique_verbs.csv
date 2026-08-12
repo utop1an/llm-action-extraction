@@ -1,0 +1,215 @@
+story,nl2p_verb,occurrences,observed_arities,inferred_type_signatures,best_pddl_action,name_similarity
+Chicken-Licken,was going,1,1,entity,go_to_wood,0.5
+Chicken-Licken,fell,1,1,item,inform_about_sky_fall,0.4
+Chicken-Licken,turned back,8,1,entity,turn_back,1.0
+Chicken-Licken,met,8,1,entity,meet_character,1.0
+Chicken-Licken,walked,1,1,entity,turn_back,0.0
+Chicken-Licken,were going along,1,8,entity | entity | entity | entity | entity | entity | entity | entity,go_to_wood,0.4
+Chicken-Licken,took,1,8,entity | entity | entity | entity | entity | entity | entity | entity,turn_back,0.0
+Chicken-Licken,ate up,1,8,entity | entity | entity | entity | entity | entity | entity | entity,be_eaten_by_fox,0.667
+Hansel and Gretel,fell upon,1,2,unknown | unknown,witch_captures_children,0.0
+Hansel and Gretel,slipped on,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,opened,3,1,location,witch_captures_children,0.0
+Hansel and Gretel,went out,1,1,entity,wander_forest_seeking_way_out,0.286
+Hansel and Gretel,filled,2,2,unknown | item,witch_captures_children,0.0
+Hansel and Gretel,went back,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,jumped,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,fell asleep,2,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,wakened,2,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,gave,2,1,item,witch_captures_children,0.0
+Hansel and Gretel,carried,4,1,entity; item; unknown,witch_captures_children,0.0
+Hansel and Gretel,set out,1,4,unknown | unknown | entity | unknown,wander_forest_seeking_way_out,0.286
+Hansel and Gretel,dropped,2,1,item; unknown,witch_captures_children,0.0
+Hansel and Gretel,gathered,1,1,item,witch_captures_children,0.0
+Hansel and Gretel,left,2,1,entity; unknown,leave_children_at_fire,0.667
+Hansel and Gretel,bound,1,2,location | location,witch_captures_children,0.0
+Hansel and Gretel,ate,4,1,item; unknown,witch_captures_children,0.0
+Hansel and Gretel,came to,3,1 | 2,entity; entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,knocked at,1,1,location,witch_captures_children,0.0
+Hansel and Gretel,stole down,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,crumbled,1,1,item,witch_captures_children,0.0
+Hansel and Gretel,strewed,1,1,item,witch_captures_children,0.0
+Hansel and Gretel,kindled,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,divided,1,1,item,witch_captures_children,0.0
+Hansel and Gretel,went to sleep,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,traveled,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,slept,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,flew away,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,followed,1,1,entity,follow_pebbles_home,0.5
+Hansel and Gretel,reached,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,perched,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,nibbled,1,1,location,witch_captures_children,0.0
+Hansel and Gretel,flew open,1,1,location,witch_captures_children,0.0
+Hansel and Gretel,came out,1,1,unknown,wander_forest_seeking_way_out,0.286
+Hansel and Gretel,led,2,1,entity; unknown,witch_captures_children,0.0
+Hansel and Gretel,set before,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,shut,2,1,entity; location,witch_captures_children,0.0
+Hansel and Gretel,shook,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,cooked,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,held out,1,1,unknown,wander_forest_seeking_way_out,0.286
+Hansel and Gretel,lit,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,hung,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,kneaded,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,heated,1,1,item,witch_captures_children,0.0
+Hansel and Gretel,popped,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,pushed,1,1,entity,push_witch_into_oven,0.667
+Hansel and Gretel,shot,1,1,unknown,witch_captures_children,0.0
+Hansel and Gretel,flew from,1,1,entity,witch_captures_children,0.0
+Hansel and Gretel,entered,1,2,entity | unknown,enter_witch_house,0.667
+Hansel and Gretel,stuffed,1,2,unknown | unknown,witch_captures_children,0.0
+Hansel and Gretel,ran,3,1 | 2,entity | unknown; unknown,witch_captures_children,0.0
+Hansel and Gretel,rushed into,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,flung themselves into,1,2,entity | unknown,witch_captures_children,0.0
+Hansel and Gretel,shook out,1,1,unknown,wander_forest_seeking_way_out,0.286
+Hansel and Gretel,emptied,1,1,unknown,witch_captures_children,0.0
+Jack and the Beanstalk,sold,2,1,location; unknown,sell_cow_for_beans,0.5
+Jack and the Beanstalk,gave,2,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,took,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,went to the market,1,0,,steal_hen,0.0
+Jack and the Beanstalk,jumped on,1,1,entity,steal_hen,0.0
+Jack and the Beanstalk,met,1,1,entity,steal_hen,0.0
+Jack and the Beanstalk,put,1,2,unknown | unknown,steal_hen,0.0
+Jack and the Beanstalk,pulled out,1,1,item,steal_hen,0.0
+Jack and the Beanstalk,exchanged,1,2,entity | item,steal_hen,0.0
+Jack and the Beanstalk,ran home,1,0,,steal_hen,0.0
+Jack and the Beanstalk,threw,1,1,item,steal_hen,0.0
+Jack and the Beanstalk,went to bed,1,0,,steal_hen,0.0
+Jack and the Beanstalk,jumped out of bed,1,0,,steal_hen,0.0
+Jack and the Beanstalk,ran to the window,1,0,,steal_hen,0.0
+Jack and the Beanstalk,stepped onto,1,1,location,steal_hen,0.0
+Jack and the Beanstalk,climbed up the beanstalk,3,0,,climb_beanstalk,0.8
+Jack and the Beanstalk,went in,1,0,,steal_hen,0.0
+Jack and the Beanstalk,lifted,1,1,entity,steal_hen,0.0
+Jack and the Beanstalk,popped,1,2,entity | location,steal_hen,0.0
+Jack and the Beanstalk,opened,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,ate up,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,brought,3,1,entity; item,steal_hen,0.0
+Jack and the Beanstalk,crept out,1,0,,steal_hen,0.0
+Jack and the Beanstalk,snatched up,2,1,entity; item,steal_hen,0.0
+Jack and the Beanstalk,climbed down the beanstalk,3,0,,climb_beanstalk,0.8
+Jack and the Beanstalk,got back to the cottage,1,0,,steal_hen,0.0
+Jack and the Beanstalk,set before him,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,bundled,1,2,entity | location,steal_hen,0.0
+Jack and the Beanstalk,came in,1,0,,steal_hen,0.0
+Jack and the Beanstalk,ate,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,placed,2,2,entity | unknown; item | unknown,steal_hen,0.0
+Jack and the Beanstalk,laid,3,1,item,steal_hen,0.0
+Jack and the Beanstalk,crept out of the oven,2,0,,hide_in_oven,0.4
+Jack and the Beanstalk,escaped from the castle,1,0,,steal_hen,0.0
+Jack and the Beanstalk,got home to his mother's cottage,1,0,,steal_hen,0.0
+Jack and the Beanstalk,crept out of the window,1,0,,steal_hen,0.0
+Jack and the Beanstalk,slipped into the kitchen,1,0,,steal_hen,0.0
+Jack and the Beanstalk,hid,1,1,location,hide_in_oven,0.667
+Jack and the Beanstalk,sang,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,seized hold of,1,1,item,steal_hen,0.0
+Jack and the Beanstalk,seized,1,1,item,steal_hen,0.0
+Jack and the Beanstalk,slipped over,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,hurried out with,1,1,unknown,steal_hen,0.0
+Jack and the Beanstalk,cut,1,1,location,cut_beanstalk,0.667
+Jack and the Beanstalk,fell,1,0,,steal_hen,0.0
+The Three Remarks,knelt,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,offered,1,3,unknown | unknown | unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,retired,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,hung up,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,took,5,1 | 2,item; item | item; unknown; unknown | item,utter_phrase_price_of_butter,0.0
+The Three Remarks,flogged,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,wore,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,put,2,2,unknown | item; unknown | unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,slipped down,1,1,location,utter_phrase_price_of_butter,0.0
+The Three Remarks,opened,2,1,location,utter_phrase_price_of_butter,0.0
+The Three Remarks,ran away,1,0,,run_away_from_palace,0.8
+The Three Remarks,wandered,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,came to,5,1,location; unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,rang,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,flung,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,died,1,1,entity,utter_phrase_price_of_butter,0.0
+The Three Remarks,polished up,1,1,item,utter_phrase_price_of_butter,0.0
+The Three Remarks,spoiled,1,1,item,utter_phrase_price_of_butter,0.0
+The Three Remarks,poked,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,led,2,1 | 2,entity; entity | entity,utter_phrase_price_of_butter,0.0
+The Three Remarks,made,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,raised,2,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,dropped,1,1,item,utter_phrase_price_of_butter,0.0
+The Three Remarks,descended,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,closed,1,1,location,utter_phrase_price_of_butter,0.0
+The Three Remarks,departed,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,followed,2,1,entity,utter_phrase_price_of_butter,0.0
+The Three Remarks,pursued,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,entered,1,1,location,utter_phrase_price_of_butter,0.0
+The Three Remarks,stopped,1,1,entity,utter_phrase_price_of_butter,0.0
+The Three Remarks,lowered,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,reached,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,sprang,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,drew,1,1,item,utter_phrase_price_of_butter,0.0
+The Three Remarks,returned,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,fared forward,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,rode out,1,0,,utter_phrase_price_of_butter,0.0
+The Three Remarks,leaped from,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,handed,2,2,item | entity; unknown | entity,utter_phrase_price_of_butter,0.0
+The Three Remarks,fell,1,1,unknown,utter_phrase_price_of_butter,0.0
+The Three Remarks,gave,1,2,unknown | entity,utter_phrase_price_of_butter,0.0
+The Three Little Pigs,failed,1,1,unknown,wolf_fails_to_blow_house,0.5
+The Three Little Pigs,kissed,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,set out,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,gave,3,2,item | unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,built,3,1,location,build_house,0.667
+The Three Little Pigs,came along,2,1,entity,wolf_promises_turnip_field,0.0
+The Three Little Pigs,knocked at,1,1,unknown,wolf_knocks_and_requests_entry,0.5
+The Three Little Pigs,blew in,2,1,location,wolf_promises_turnip_field,0.0
+The Three Little Pigs,ate up,1,1,unknown,wolf_eats_pig,0.667
+The Three Little Pigs,gobbled up,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,came,3,1,entity,wolf_promises_turnip_field,0.0
+The Three Little Pigs,sat down,1,1,entity,wolf_blows_house_down,0.4
+The Three Little Pigs,got up,2,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,scampered away,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,brought home,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,boiling,2,1,entity; unknown,wolf_falls_into_pot_and_is_boiled,0.4
+The Three Little Pigs,was off and away,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,brought,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,picked,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,threw,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,jumped down,1,1,unknown,wolf_blows_house_down,0.4
+The Three Little Pigs,scampered away home,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,went,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,bought,1,1,item,pig_buys_butter_churn_and_hides,0.4
+The Three Little Pigs,crept into,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,started rolling,1,1,item,wolf_flees_from_rolling_object,0.5
+The Three Little Pigs,rolled down the hill,1,1,item,pig_rolls_churn_down_hill,0.857
+The Three Little Pigs,ran away home,1,1,entity,wolf_promises_turnip_field,0.0
+The Three Little Pigs,went to the little pig's house,1,1,entity,build_house,0.286
+The Three Little Pigs,hung,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,made,1,1,item,wolf_promises_turnip_field,0.0
+The Three Little Pigs,took off,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,fell in,1,1,entity,wolf_falls_into_pot_and_is_boiled,0.4
+The Three Little Pigs,popped on again,1,1,unknown,wolf_promises_turnip_field,0.0
+The Three Little Pigs,ate,1,1,entity,wolf_eats_pig,1.0
+The Four Skillful Brothers,took,5,1,item; unknown,swim_after_ship_break,0.0
+The Four Skillful Brothers,went through,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,came to,2,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,went,3,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,met,3,1,unknown,swim_after_ship_break,0.0
+The Four Skillful Brothers,gave,3,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,learnt,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,arrived,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,returned,1,0,,return_home_with_princess,0.667
+The Four Skillful Brothers,climbed,2,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,brought,2,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,put,2,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,shot,2,1,entity; item,shoot_dragon,1.0
+The Four Skillful Brothers,sewed,1,2,item | unknown,sew_eggs,0.667
+The Four Skillful Brothers,carried,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,put back,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,carried off,1,1,entity,swim_after_ship_break,0.0
+The Four Skillful Brothers,looked through,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,sailed,1,0,,sail_to_rock,0.667
+The Four Skillful Brothers,crept,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,stole away,1,1,entity,steal_princess,0.667
+The Four Skillful Brothers,went on board,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,steered,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,followed,1,0,,swim_after_ship_break,0.0
+The Four Skillful Brothers,shattered,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,laid hold of,1,1,item,swim_after_ship_break,0.0
+The Four Skillful Brothers,swam,1,0,,swim_after_ship_break,0.4
+The Four Skillful Brothers,sewed together,2,1,item; unknown,sew_eggs,0.5
+The Four Skillful Brothers,collected together,1,1,unknown,swim_after_ship_break,0.0
+The Four Skillful Brothers,received,1,1,location,swim_after_ship_break,0.0

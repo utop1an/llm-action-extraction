@@ -1,0 +1,89 @@
+story,pddl_action,pddl_parameter_types,best_nl2p_verb,nl2p_occurrences,name_similarity,lexically_linked,nl2p_inferred_type_signatures
+Chicken-Licken,go_to_wood,entity,was going,1,0.5,True,entity
+Chicken-Licken,turn_back,entity,turned back,8,1.0,True,entity
+Chicken-Licken,meet_character,entity | entity | location,met,8,1.0,True,entity
+Chicken-Licken,inform_about_sky_fall,entity | entity,fell,1,0.4,False,item
+Chicken-Licken,decide_to_tell_king,entity,were going along,1,0.0,False,entity | entity | entity | entity | entity | entity | entity | entity
+Chicken-Licken,follow_fox,entity,were going along,1,0.0,False,entity | entity | entity | entity | entity | entity | entity | entity
+Chicken-Licken,be_eaten_by_fox,entity | location,ate up,1,0.667,True,entity | entity | entity | entity | entity | entity | entity | entity
+Hansel and Gretel,abandon_children_in_forest,entity | entity | entity | entity | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,leave_children_at_fire,entity | entity | entity | entity | location,left,2,0.667,True,entity; unknown
+Hansel and Gretel,drop_pebble_on_path,entity | item | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,follow_pebbles_home,entity | entity | location | location,followed,1,0.5,True,entity
+Hansel and Gretel,drop_breadcrumb_on_path,entity | item | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,follow_breadcrumbs_home,entity | entity | location | location,followed,1,0.5,True,entity
+Hansel and Gretel,wander_forest_seeking_way_out,entity | entity | location,went out,1,0.286,False,entity
+Hansel and Gretel,hear_bird_and_follow_to_witch_house,entity | entity | entity | location | location,followed,1,0.4,False,entity
+Hansel and Gretel,enter_witch_house,entity | entity | location,entered,1,0.667,True,entity | unknown
+Hansel and Gretel,witch_captures_children,entity | entity | entity | location | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,push_witch_into_oven,entity | entity | item | location,pushed,1,0.667,True,entity
+Hansel and Gretel,escape_from_stable,entity | entity | location | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,collect_treasure,entity | entity | item | item | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,call_duck_for_crossing,entity | entity | entity | location,went to sleep,1,0.0,False,entity | unknown
+Hansel and Gretel,return_home_and_reunite_with_father,entity | entity | entity | location,went to sleep,1,0.0,False,entity | unknown
+Jack and the Beanstalk,sell_cow_for_beans,entity | entity | entity | item | location,sold,2,0.5,True,location; unknown
+Jack and the Beanstalk,plant_beans,item | location,went to the market,1,0.0,False,
+Jack and the Beanstalk,grow_beanstalk,item,climbed up the beanstalk,3,0.4,False,
+Jack and the Beanstalk,climb_beanstalk,entity,climbed up the beanstalk,3,0.8,True,
+Jack and the Beanstalk,ask_giant_wife_for_breakfast,entity | entity,went to the market,1,0.0,False,
+Jack and the Beanstalk,hide_in_kettle,entity | item,hid,1,0.667,True,location
+Jack and the Beanstalk,steal_gold_bags,entity | item | item,went to the market,1,0.0,False,
+Jack and the Beanstalk,return_down_beanstalk,entity,climbed down the beanstalk,3,0.667,True,
+Jack and the Beanstalk,hide_in_oven,entity | item,hid,1,0.667,True,location
+Jack and the Beanstalk,steal_hen,entity | entity | item,went to the market,1,0.0,False,
+Jack and the Beanstalk,steal_harp,entity | entity | item,went to the market,1,0.0,False,
+Jack and the Beanstalk,cut_beanstalk,entity | entity | item,cut,1,0.667,True,location
+The Three Remarks,run_away_from_palace,entity,ran away,1,0.8,True,
+The Three Remarks,encounter_impostor_king,entity | entity,wore,1,0.0,False,unknown
+The Three Remarks,utter_phrase_price_of_butter,entity,wore,1,0.0,False,unknown
+The Three Remarks,receive_rubies_from_impostor,entity | entity | item,wore,1,0.0,False,unknown
+The Three Remarks,encounter_robbers_in_forest,entity,wore,1,0.0,False,unknown
+The Three Remarks,utter_phrase_grandmother_mangle,entity,wore,1,0.0,False,unknown
+The Three Remarks,receive_sapphires_from_robber_chief,entity | entity | item,wore,1,0.0,False,unknown
+The Three Remarks,arrive_at_marble_palace,entity,wore,1,0.0,False,unknown
+The Three Remarks,king_requests_information_and_gifts,entity | entity | item | item,wore,1,0.0,False,unknown
+The Three Remarks,king_proposes_marriage,entity | entity,wore,1,0.0,False,unknown
+The Three Remarks,princess_accepts_with_heart,entity | entity,wore,1,0.0,False,unknown
+The Three Remarks,suitors_retire_due_to_phrase,entity,wore,1,0.0,False,unknown
+The Three Little Pigs,send_sons_on_journey,entity | entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,ask_for_material,entity | entity | item,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,receive_material,entity | entity | item,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,build_house,entity | item | location,built,3,0.667,True,location
+The Three Little Pigs,wolf_knocks_and_requests_entry,entity | location,knocked at,1,0.5,True,unknown
+The Three Little Pigs,pig_refuses_entry,entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,wolf_huff_and_puff,entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,wolf_blows_house_down,entity | item | location,sat down,1,0.4,False,entity
+The Three Little Pigs,wolf_eats_pig,entity | entity | location,ate,1,1.0,True,entity
+The Three Little Pigs,wolf_fails_to_blow_house,entity | item | location,failed,1,0.5,True,unknown
+The Three Little Pigs,wolf_promises_turnip_field,entity | entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,pig_collects_turnips,entity | item | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,wolf_promises_apple_orchard,entity | entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,pig_collects_apples_and_escapes,entity | item | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,wolf_promises_fair_trip,entity | entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,pig_buys_butter_churn_and_hides,entity | item,bought,1,0.4,False,item
+The Three Little Pigs,pig_rolls_churn_down_hill,entity | item,rolled down the hill,1,0.857,True,item
+The Three Little Pigs,wolf_flees_from_rolling_object,entity | item,started rolling,1,0.5,True,item
+The Three Little Pigs,wolf_attempts_chimney_entry,entity | location,went to the little pig's house,1,0.0,False,entity
+The Three Little Pigs,pig_prepares_boiling_pot_and_fire,entity | item | item | location,boiling,2,0.4,False,entity; unknown
+The Three Little Pigs,wolf_falls_into_pot_and_is_boiled,entity | item,fell in,1,0.4,False,entity
+The Four Skillful Brothers,leave_home,entity,went through,1,0.0,False,
+The Four Skillful Brothers,separate_at_crossroads,entity,went through,1,0.0,False,
+The Four Skillful Brothers,learn_thief_trade,entity,went through,1,0.0,False,
+The Four Skillful Brothers,learn_astronomer_trade,entity,went through,1,0.0,False,
+The Four Skillful Brothers,learn_hunter_trade,entity,went through,1,0.0,False,
+The Four Skillful Brothers,learn_tailor_trade,entity,went through,1,0.0,False,
+The Four Skillful Brothers,reunite_at_crossroads,entity,went through,1,0.0,False,
+The Four Skillful Brothers,count_eggs,entity,went through,1,0.0,False,
+The Four Skillful Brothers,fetch_eggs,entity,went through,1,0.0,False,
+The Four Skillful Brothers,shoot_eggs,entity,shot,2,0.667,True,entity; item
+The Four Skillful Brothers,sew_eggs,entity,sewed,1,0.667,True,item | unknown
+The Four Skillful Brothers,return_eggs_to_nest,entity,returned,1,0.5,True,
+The Four Skillful Brothers,locate_princess,entity,went through,1,0.0,False,
+The Four Skillful Brothers,obtain_ship,entity,went through,1,0.0,False,
+The Four Skillful Brothers,sail_to_rock,entity,sailed,1,0.667,True,
+The Four Skillful Brothers,steal_princess,entity,stole away,1,0.667,True,entity
+The Four Skillful Brothers,shoot_dragon,entity,shot,2,1.0,True,entity; item
+The Four Skillful Brothers,swim_after_ship_break,entity,swam,1,0.4,False,
+The Four Skillful Brothers,repair_ship,entity,went through,1,0.0,False,
+The Four Skillful Brothers,return_home_with_princess,entity,returned,1,0.667,True,
+The Four Skillful Brothers,receive_reward,entity,went through,1,0.0,False,

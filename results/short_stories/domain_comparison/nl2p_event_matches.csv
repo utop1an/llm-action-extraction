@@ -1,0 +1,302 @@
+story,event_index,nl2p_verb,nl2p_arguments,inferred_argument_types,matched_constants,best_pddl_action,name_similarity,pddl_parameter_types,type_overlap
+Chicken-Licken,1,was going,Chicken-licken,entity,chicken-licken,go_to_wood,0.5,entity,1.0
+Chicken-Licken,2,fell,an acorn,item,acorn,inform_about_sky_fall,0.4,entity | entity,0.0
+Chicken-Licken,3,turned back,Chicken-licken,entity,chicken-licken,turn_back,1.0,entity,1.0
+Chicken-Licken,4,met,Hen-len,entity,hen-len,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,5,turned back,Hen-len,entity,hen-len,turn_back,1.0,entity,1.0
+Chicken-Licken,6,met,Cock-lock,entity,cock-lock,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,7,turned back,Cock-lock,entity,cock-lock,turn_back,1.0,entity,1.0
+Chicken-Licken,8,met,Duck-luck,entity,duck-luck,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,9,turned back,Duck-luck,entity,duck-luck,turn_back,1.0,entity,1.0
+Chicken-Licken,10,met,Drake-lake,entity,drake-lake,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,11,turned back,Drake-lake,entity,drake-lake,turn_back,1.0,entity,1.0
+Chicken-Licken,12,met,Goose-loose,entity,goose-loose,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,13,turned back,Goose-loose,entity,goose-loose,turn_back,1.0,entity,1.0
+Chicken-Licken,14,met,Gander-lander,entity,gander-lander,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,15,turned back,Gander-lander,entity,gander-lander,turn_back,1.0,entity,1.0
+Chicken-Licken,16,met,Turkey-lurkey,entity,turkey-lurkey,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,17,turned back,Turkey-lurkey,entity,turkey-lurkey,turn_back,1.0,entity,1.0
+Chicken-Licken,18,walked,Turkey-lurkey,entity,turkey-lurkey,turn_back,0.0,entity,1.0
+Chicken-Licken,19,were going along,Turkey-lurkey | Gander-lander | Goose-loose | Drake-lake | Duck-luck | Cock-lock | Hen-len | Chicken-licken,entity | entity | entity | entity | entity | entity | entity | entity,turkey-lurkey | gander-lander | goose-loose | drake-lake | duck-luck | cock-lock | hen-len | chicken-licken,go_to_wood,0.4,entity,0.222
+Chicken-Licken,20,met,Fox-lox,entity,fox-lox,meet_character,1.0,entity | entity | location,0.5
+Chicken-Licken,21,took,Chicken-licken | Hen-len | Cock-lock | Duck-luck | Drake-lake | Goose-loose | Gander-lander | Turkey-lurkey,entity | entity | entity | entity | entity | entity | entity | entity,chicken-licken | hen-len | cock-lock | duck-luck | drake-lake | goose-loose | gander-lander | turkey-lurkey,turn_back,0.0,entity,0.222
+Chicken-Licken,22,ate up,Chicken-licken | Hen-len | Cock-lock | Duck-luck | Drake-lake | Goose-loose | Gander-lander | Turkey-lurkey,entity | entity | entity | entity | entity | entity | entity | entity,chicken-licken | hen-len | cock-lock | duck-luck | drake-lake | goose-loose | gander-lander | turkey-lurkey,be_eaten_by_fox,0.667,entity | location,0.2
+Hansel and Gretel,1,fell upon,a famine | the land,unknown | unknown, | ,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,2,slipped on,his coat,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,3,opened,the door,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,4,went out,Hansel,entity,hansel,wander_forest_seeking_way_out,0.286,entity | entity | location,0.5
+Hansel and Gretel,5,filled,his pockets | little white pebbles,unknown | item, | pebble,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,6,went back,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,7,jumped,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,8,fell asleep,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,9,wakened,the children,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,10,gave,each a piece of bread,item,bread_piece,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,11,carried,the bread,item,bread_piece,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,12,set out,the father | the stepmother | Hansel | Gretel,unknown | unknown | entity | unknown, |  | hansel | ,wander_forest_seeking_way_out,0.286,entity | entity | location,0.5
+Hansel and Gretel,13,dropped,the pebbles,item,pebble,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,14,gathered,a pile of brushwood and twigs,item,brushwood,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,15,left,the children,unknown,,leave_children_at_fire,0.667,entity | entity | entity | entity | location,
+Hansel and Gretel,16,bound,a dry branch | a tree,location | location,branch | dead_tree,witch_captures_children,0.0,entity | entity | entity | location | location,0.571
+Hansel and Gretel,17,ate,their bread,item,bread_piece,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,18,fell asleep,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,19,came to,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,20,knocked at,the door,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,21,opened,the door,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,22,stole down,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,23,wakened,the children,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,24,gave,a small piece of bread,item,bread_piece,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,25,crumbled,his morsel of bread,item,,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,26,strewed,the crumbs,item,crumb,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,27,kindled,a great fire,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,28,divided,her piece of bread,item,bread_piece,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,29,went to sleep,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,30,ate,the crumbs,item,crumb,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,31,traveled,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,32,slept,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,33,flew away,the little snow-white bird,entity,bird,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,34,followed,the little snow-white bird,entity,bird,follow_pebbles_home,0.5,entity | entity | location | location,0.4
+Hansel and Gretel,35,reached,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,36,perched,the little snow-white bird,entity,bird,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,37,nibbled,one of the window-panes,location,window,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,38,ate,the cake of which the roof was made,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,39,ate,the barley-sugar window-panes,item,,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,40,flew open,the door of the cottage,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,41,came out,the old woman,unknown,,wander_forest_seeking_way_out,0.286,entity | entity | location,
+Hansel and Gretel,42,dropped,their food,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,43,led,the children,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,44,set before,all kinds of delicious foods,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,45,led,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,46,shut,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,47,left,Hansel,entity,hansel,leave_children_at_fire,0.667,entity | entity | entity | entity | location,0.333
+Hansel and Gretel,48,shook,Gretel,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,49,cooked,the choicest food,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,50,held out,a bone,unknown,,wander_forest_seeking_way_out,0.286,entity | entity | location,
+Hansel and Gretel,51,carried in,the water,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,52,lit,the fire,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,53,hung,the great pot of water,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,54,kneaded,the dough,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,55,heated,the oven,item,oven,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,56,popped,her head,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,57,pushed,the old witch,entity,witch,push_witch_into_oven,0.667,entity | entity | item | location,0.4
+Hansel and Gretel,58,shut,the iron door,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,59,shot,the bolt,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,60,opened,the door of the stable,location,door,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,61,flew from,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,62,entered,Hansel | Gretel,entity | unknown,hansel | ,enter_witch_house,0.667,entity | entity | location,0.5
+Hansel and Gretel,63,stuffed,his pockets | the jewels,unknown | unknown, | ,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,64,filled,her pinafore | precious gems,unknown | item, | precious_stone,witch_captures_children,0.0,entity | entity | entity | location | location,0.0
+Hansel and Gretel,65,ran,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,66,came to,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,67,came,the duck,entity,duck,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,68,carried,Hansel,entity,hansel,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,69,carried,Gretel,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,70,ran,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,71,rushed into,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,72,flung themselves into,Hansel | Gretel,entity | unknown,hansel | ,witch_captures_children,0.0,entity | entity | entity | location | location,0.333
+Hansel and Gretel,73,shook out,her pinafore,unknown,,wander_forest_seeking_way_out,0.286,entity | entity | location,
+Hansel and Gretel,74,emptied,his pockets,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Hansel and Gretel,75,runs,a little mouse,unknown,,witch_captures_children,0.0,entity | entity | entity | location | location,
+Jack and the Beanstalk,1,sold,almost all the furniture of the little cottage,location,cottage,sell_cow_for_beans,0.5,entity | entity | entity | item | location,0.333
+Jack and the Beanstalk,2,gave,milk,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,3,took,milk,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,4,sold,milk,unknown,,sell_cow_for_beans,0.5,entity | entity | entity | item | location,
+Jack and the Beanstalk,5,went to the market,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,6,jumped on,Milky White's back,entity,milky_white,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,7,met,a butcher,entity,butcher,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,8,put,his hand | his pocket,unknown | unknown, | ,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,9,pulled out,five curious-looking beans,item,,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,10,exchanged,Milky White | five curious-looking beans,entity | item,milky_white | ,steal_hen,0.0,entity | entity | item,0.8
+Jack and the Beanstalk,11,ran home,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,12,threw,five curious-looking beans,item,,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,13,went to bed,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,14,jumped out of bed,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,15,ran to the window,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,16,stepped onto,the beanstalk,location,beanstalk,steal_hen,0.0,entity | entity | item,0.0
+Jack and the Beanstalk,17,climbed up the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,18,went in,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,19,gave,a good breakfast,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,20,lifted,Jack,entity,jack_mother,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,21,popped,Jack | the empty kettle,entity | location,jack_mother | kettle,steal_hen,0.0,entity | entity | item,0.4
+Jack and the Beanstalk,22,opened,the door,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,23,ate up,the greater part of the ox,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,24,brought,two full bags of gold,item,gold_bag_2,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,25,crept out,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,26,snatched up,two full bags of gold,item,gold_bag_2,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,27,climbed down the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,28,got back to the cottage,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,29,climbed up the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,30,set before him,enough breakfast,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,31,bundled,Jack | the oven,entity | location,jack_mother | oven,steal_hen,0.0,entity | entity | item,0.4
+Jack and the Beanstalk,32,came in,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,33,ate,a roasted bullock,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,34,brought in,a little brown hen,entity,brown_hen,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,35,placed,the little brown hen | the table,entity | unknown,brown_hen | ,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,36,laid,a golden egg,item,golden_harp,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,37,laid,a golden egg,item,golden_harp,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,38,laid,a golden egg,item,golden_harp,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,39,crept out of the oven,,,,hide_in_oven,0.4,entity | item,
+Jack and the Beanstalk,40,snatched up,the little brown hen,entity,brown_hen,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,41,escaped from the castle,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,42,climbed down the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,43,got home to his mother's cottage,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,44,crept out of the window,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,45,climbed up the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,46,slipped into the kitchen,,,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,47,hid,the oven,location,oven,hide_in_oven,0.667,entity | item,0.0
+Jack and the Beanstalk,48,brought in,the golden harp,item,golden_harp,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,49,placed,the golden harp | the table,item | unknown,golden_harp | ,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,50,sang,the most beautiful songs,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,51,crept out of the oven,,,,hide_in_oven,0.4,entity | item,
+Jack and the Beanstalk,52,seized hold of,the golden harp,item,golden_harp,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,53,seized,his oak-tree club,item,oak_tree_club,steal_hen,0.0,entity | entity | item,0.5
+Jack and the Beanstalk,54,slipped over,a boulder,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,55,climbed down the beanstalk,,,,climb_beanstalk,0.8,entity,
+Jack and the Beanstalk,56,hurried out with,a chopper,unknown,,steal_hen,0.0,entity | entity | item,
+Jack and the Beanstalk,57,cut,the beanstalk,location,beanstalk,cut_beanstalk,0.667,entity | entity | item,0.0
+Jack and the Beanstalk,58,fell,,,,steal_hen,0.0,entity | entity | item,
+The Three Remarks,1,knelt,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,2,offered,their hands | hearts | other possessions,unknown | unknown | unknown, |  | ,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,3,retired,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,4,hung up,their armor,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,5,took,the vows,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,6,flogged,the suitors,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,7,wore,hair shirts,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,8,put,dry toast-crumbs | their beds,unknown | unknown, | ,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,9,slipped down,the back stairs of the palace,location,palace,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,10,opened,the back door,location,back_door,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,11,ran away,,,,run_away_from_palace,0.8,entity,
+The Three Remarks,12,wandered,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,13,came to,a fair city,location,city,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,14,rang,all the bells,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,15,flung,caps,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,16,died,the old king,entity,king_at_palace,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,17,came to,the town,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,18,polished up,the crown,item,crown,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,19,put on,a new tip | the sceptre,unknown | item, | sceptre,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,20,spoiled,the sceptre,item,sceptre,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,21,poked,the fire,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,22,led,the princess | the new king,entity | entity,princess | king_at_palace,utter_phrase_price_of_butter,0.0,entity,0.667
+The Three Remarks,23,made,a graceful courtesy,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,24,raised,her head,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,25,dropped,the sceptre,item,sceptre,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,26,descended,his throne,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,27,closed,the door,location,back_door,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,28,took,the rubies,item,bag_of_rubies,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,29,departed,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,30,followed,the princess,entity,princess,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,31,pursued,her journey,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,32,came to,a deep forest,location,forest,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,33,entered,the deep forest,location,forest,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,34,stopped,the princess,entity,princess,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,35,lowered,their weapons,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,36,led,the princess,entity,princess,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,37,reached,an open glade,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,38,sprang,to his feet,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,39,drew,a bag containing ten thousand sapphires,item,bag_of_sapphires,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,40,took,the bag of sapphires,item,bag_of_sapphires,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,41,followed,the robber chieftain,entity,robber_chief,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,42,came to,the open country,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,43,returned,his band,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,44,fared forward,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,45,came to,a fair high palace,location,palace,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,46,opened,the palace-gates,location,palace,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,47,rode out,,,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,48,leaped from,his steed,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,49,took,a ruby | one bag,unknown | item, | bag_of_sapphires,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,50,took,a sapphire | the other bag,item | item,bag_of_sapphires | bag_of_sapphires,utter_phrase_price_of_butter,0.0,entity,0.0
+The Three Remarks,51,handed,a ruby | the young king,unknown | entity, | king_at_palace,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Remarks,52,handed,a sapphire | the young king,item | entity,bag_of_sapphires | king_at_palace,utter_phrase_price_of_butter,0.0,entity,0.667
+The Three Remarks,53,raised,her eyes,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,54,fell,on his knees,unknown,,utter_phrase_price_of_butter,0.0,entity,
+The Three Remarks,55,gave,her little white hand | the young king,unknown | entity, | king_at_palace,utter_phrase_price_of_butter,0.0,entity,1.0
+The Three Little Pigs,1,failed,the acorn crop,unknown,,wolf_fails_to_blow_house,0.5,entity | item | location,
+The Three Little Pigs,2,kissed,her sons,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,3,set out,the three little pigs,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,4,gave,the bundle of straw | the first little pig,item | unknown,straw_bundle | ,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,5,built,a pretty little house,location,,build_house,0.667,entity | item | location,0.5
+The Three Little Pigs,6,came along,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,7,knocked at,the door,unknown,,wolf_knocks_and_requests_entry,0.5,entity | location,
+The Three Little Pigs,8,blew in,the little pig's house,location,,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,9,ate up,the first little pig,unknown,,wolf_eats_pig,0.667,entity | entity | location,
+The Three Little Pigs,10,built,a snug little house,location,,build_house,0.667,entity | item | location,0.5
+The Three Little Pigs,11,came along,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,12,blew in,the house,location,straw_house,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,13,gobbled up,the second little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,14,gave,the bricks and mortar | the third little pig,item | unknown,mortar | ,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,15,gave,a little trowel | the third little pig,item | unknown,trowel | ,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,16,built,a nice strong little house,location,,build_house,0.667,entity | item | location,0.5
+The Three Little Pigs,17,came,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,18,sat down,the wolf,entity,wolf,wolf_blows_house_down,0.4,entity | item | location,0.5
+The Three Little Pigs,19,got up,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,20,scampered away,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,21,brought home,a fine load of turnips,item,turnips_load,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,22,came,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,23,boiling,a potful of turnips,unknown,,wolf_falls_into_pot_and_is_boiled,0.4,entity | item,
+The Three Little Pigs,24,got up,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,25,was off and away,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,26,brought,a sack,item,sack,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,27,picked,an apple,item,apple,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,28,threw,the apple,item,apple,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,29,jumped down,the third little pig,unknown,,wolf_blows_house_down,0.4,entity | item | location,
+The Three Little Pigs,30,scampered away home,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,31,came again,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,32,went,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,33,bought,a fine large butter-churn,item,butter_churn,pig_buys_butter_churn_and_hides,0.4,entity | item,0.667
+The Three Little Pigs,34,crept into,the third little pig,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,35,started rolling,the butter-churn,item,butter_churn,wolf_flees_from_rolling_object,0.5,entity | item,0.667
+The Three Little Pigs,36,rolled down the hill,the butter-churn,item,butter_churn,pig_rolls_churn_down_hill,0.857,entity | item,0.667
+The Three Little Pigs,37,ran away home,the wolf,entity,wolf,wolf_promises_turnip_field,0.0,entity | entity | location,0.5
+The Three Little Pigs,38,went to the little pig's house,the wolf,entity,wolf,build_house,0.286,entity | item | location,0.5
+The Three Little Pigs,39,hung,a pot full of water,item,pot_of_water,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,40,made,a blazing fire,item,fire,wolf_promises_turnip_field,0.0,entity | entity | location,0.0
+The Three Little Pigs,41,took off,the cover,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,42,fell in,the wolf,entity,wolf,wolf_falls_into_pot_and_is_boiled,0.4,entity | item,0.667
+The Three Little Pigs,43,popped on again,the lid,unknown,,wolf_promises_turnip_field,0.0,entity | entity | location,
+The Three Little Pigs,44,boiled,the wolf,entity,wolf,wolf_falls_into_pot_and_is_boiled,0.4,entity | item,0.667
+The Three Little Pigs,45,ate,the wolf,entity,wolf,wolf_eats_pig,1.0,entity | entity | location,0.5
+The Four Skillful Brothers,1,took,their sticks,item,sticks,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,2,went through,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,3,came to,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,4,went,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,5,met,a man,unknown,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,6,met,a man,unknown,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,7,gave,a telescope,item,telescope,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,8,gave,a gun,item,gun,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,9,met,a man,unknown,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,10,went with,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,11,learnt,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,12,gave,a needle,item,needle,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,13,arrived,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,14,returned,,,,return_home_with_princess,0.667,entity,
+The Four Skillful Brothers,15,took,his glass,unknown,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,16,climbed,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,17,took,the five eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,18,brought,the five eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,19,took,the five eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,20,put,the eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,21,put,the fifth egg,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,22,shot,the five eggs,item,eggs,shoot_dragon,1.0,entity,0.0
+The Four Skillful Brothers,23,brought,his needle,item,needle,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,24,sewed,the eggs | the young birds,item | unknown,eggs | ,sew_eggs,0.667,entity,0.0
+The Four Skillful Brothers,25,climbed,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,26,carried,the eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,27,put back,the eggs,item,eggs,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,28,carried off,the King's daughter,entity,king,swim_after_ship_break,0.0,entity,1.0
+The Four Skillful Brothers,29,looked through,his telescope,item,telescope,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,30,went,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,31,sailed,,,,sail_to_rock,0.667,entity,
+The Four Skillful Brothers,32,came to,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,33,crept,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,34,stole away,the King's daughter,entity,king,steal_princess,0.667,entity,1.0
+The Four Skillful Brothers,35,went on board,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,36,steered,the ship,item,ship,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,37,followed,,,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,38,shot,the dragon,entity,dragon,shoot_dragon,1.0,entity,1.0
+The Four Skillful Brothers,39,shattered,the whole ship,item,ship,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,40,laid hold of,a couple of planks,item,planks,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,41,swam,,,,swim_after_ship_break,0.4,entity,
+The Four Skillful Brothers,42,took,his wondrous needle,item,needle,swim_after_ship_break,0.0,entity,0.0
+The Four Skillful Brothers,43,sewed together,the planks,item,planks,sew_eggs,0.5,entity,0.0
+The Four Skillful Brothers,44,collected together,all the fragments of the vessel,unknown,,swim_after_ship_break,0.0,entity,
+The Four Skillful Brothers,45,sewed together,the fragments of the vessel,unknown,,sew_eggs,0.5,entity,
+The Four Skillful Brothers,46,received,half a kingdom,location,kingdom,swim_after_ship_break,0.0,entity,0.0
