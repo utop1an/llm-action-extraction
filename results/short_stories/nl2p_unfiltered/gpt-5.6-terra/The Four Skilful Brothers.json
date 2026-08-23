@@ -1,0 +1,437 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Four Skilful Brothers",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_unfiltered",
+  "content_words": 1663,
+  "action_count": 59,
+  "actions": [
+    {
+      "verb": "took",
+      "arguments": [
+        "the four brothers",
+        "their sticks"
+      ]
+    },
+    {
+      "verb": "bade farewell",
+      "arguments": [
+        "the four brothers",
+        "their father"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the four brothers",
+        "the town-gate"
+      ]
+    },
+    {
+      "verb": "travelled",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the four brothers",
+        "a cross-way"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "each of them",
+        "his way"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the eldest",
+        "a man"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the second brother",
+        "a man"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "his master",
+        "the second brother",
+        "a telescope"
+      ]
+    },
+    {
+      "verb": "took into training",
+      "arguments": [
+        "a huntsman",
+        "the third brother"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a huntsman",
+        "the third brother",
+        "excellent instruction"
+      ]
+    },
+    {
+      "verb": "went away",
+      "arguments": [
+        "the third brother"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "his master",
+        "the third brother",
+        "a gun"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the youngest brother",
+        "a man"
+      ]
+    },
+    {
+      "verb": "went with",
+      "arguments": [
+        "the youth",
+        "the man"
+      ]
+    },
+    {
+      "verb": "learnt",
+      "arguments": [
+        "the youth",
+        "his art"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the man",
+        "the youth",
+        "a needle"
+      ]
+    },
+    {
+      "verb": "arrived",
+      "arguments": [
+        "the four brothers",
+        "the cross-roads"
+      ]
+    },
+    {
+      "verb": "embraced",
+      "arguments": [
+        "the four brothers",
+        "each other"
+      ]
+    },
+    {
+      "verb": "kissed",
+      "arguments": [
+        "the four brothers",
+        "each other"
+      ]
+    },
+    {
+      "verb": "returned",
+      "arguments": [
+        "the four brothers",
+        "their father"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the astronomer",
+        "his glass"
+      ]
+    },
+    {
+      "verb": "looked up",
+      "arguments": [
+        "the astronomer"
+      ]
+    },
+    {
+      "verb": "climbed up",
+      "arguments": [
+        "the skillful thief"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the skillful thief",
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought down",
+      "arguments": [
+        "the skillful thief",
+        "the five eggs",
+        "his father"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the father",
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the father",
+        "one of the eggs",
+        "each corner of the table"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the father",
+        "the fifth egg",
+        "the middle of the table"
+      ]
+    },
+    {
+      "verb": "aimed",
+      "arguments": [
+        "the huntsman"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the huntsman",
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "the tailor",
+        "his needle"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the tailor",
+        "the eggs"
+      ]
+    },
+    {
+      "verb": "climbed up",
+      "arguments": [
+        "the thief",
+        "the tree"
+      ]
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "the thief",
+        "the eggs",
+        "the nest"
+      ]
+    },
+    {
+      "verb": "put back",
+      "arguments": [
+        "the thief",
+        "the eggs",
+        "under the bird"
+      ]
+    },
+    {
+      "verb": "crept out",
+      "arguments": [
+        "the young ones"
+      ]
+    },
+    {
+      "verb": "carried off",
+      "arguments": [
+        "a dragon",
+        "the King's daughter"
+      ]
+    },
+    {
+      "verb": "looked through",
+      "arguments": [
+        "the astronomer",
+        "his telescope"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the astronomer",
+        "the King"
+      ]
+    },
+    {
+      "verb": "sailed",
+      "arguments": [
+        "the astronomer and his brothers",
+        "the rock"
+      ]
+    },
+    {
+      "verb": "crept",
+      "arguments": [
+        "the thief"
+      ]
+    },
+    {
+      "verb": "stole away",
+      "arguments": [
+        "the thief",
+        "the King's daughter",
+        "from under the dragon"
+      ]
+    },
+    {
+      "verb": "hurried off",
+      "arguments": [
+        "the four brothers and the King's daughter",
+        "on board ship"
+      ]
+    },
+    {
+      "verb": "steered",
+      "arguments": [
+        "the four brothers",
+        "the open sea"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the dragon",
+        "the four brothers and the King's daughter"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the dragon",
+        "above the ship"
+      ]
+    },
+    {
+      "verb": "shouldered",
+      "arguments": [
+        "the huntsman",
+        "his gun"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the huntsman",
+        "the dragon"
+      ]
+    },
+    {
+      "verb": "fell down",
+      "arguments": [
+        "the monster"
+      ]
+    },
+    {
+      "verb": "shattered",
+      "arguments": [
+        "the monster",
+        "the whole ship"
+      ]
+    },
+    {
+      "verb": "laid hold of",
+      "arguments": [
+        "the four brothers and the King's daughter",
+        "a couple of planks"
+      ]
+    },
+    {
+      "verb": "swam",
+      "arguments": [
+        "the four brothers and the King's daughter",
+        "the wide sea"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the tailor",
+        "his wondrous needle"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the tailor",
+        "the planks"
+      ]
+    },
+    {
+      "verb": "seated themselves",
+      "arguments": [
+        "the four brothers and the King's daughter",
+        "the planks"
+      ]
+    },
+    {
+      "verb": "collected together",
+      "arguments": [
+        "the four brothers and the King's daughter",
+        "all the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the tailor",
+        "all the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "received",
+      "arguments": [
+        "each of the brothers",
+        "half a kingdom"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"took\",\"arguments\":[\"the four brothers\",\"their sticks\"]},\n  {\"verb\":\"bade farewell\",\"arguments\":[\"the four brothers\",\"their father\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the four brothers\",\"the town-gate\"]},\n  {\"verb\":\"travelled\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the four brothers\",\"a cross-way\"]},\n  {\"verb\":\"went\",\"arguments\":[\"each of them\",\"his way\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the eldest\",\"a man\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the second brother\",\"a man\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"his master\",\"the second brother\",\"a telescope\"]},\n  {\"verb\":\"took into training\",\"arguments\":[\"a huntsman\",\"the third brother\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a huntsman\",\"the third brother\",\"excellent instruction\"]},\n  {\"verb\":\"went away\",\"arguments\":[\"the third brother\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"his master\",\"the third brother\",\"a gun\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the youngest brother\",\"a man\"]},\n  {\"verb\":\"went with\",\"arguments\":[\"the youth\",\"the man\"]},\n  {\"verb\":\"learnt\",\"arguments\":[\"the youth\",\"his art\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the man\",\"the youth\",\"a needle\"]},\n  {\"verb\":\"arrived\",\"arguments\":[\"the four brothers\",\"the cross-roads\"]},\n  {\"verb\":\"embraced\",\"arguments\":[\"the four brothers\",\"each other\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"the four brothers\",\"each other\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"the four brothers\",\"their father\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the astronomer\",\"his glass\"]},\n  {\"verb\":\"looked up\",\"arguments\":[\"the astronomer\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"the skillful thief\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the skillful thief\",\"the five eggs\"]},\n  {\"verb\":\"brought down\",\"arguments\":[\"the skillful thief\",\"the five eggs\",\"his father\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the father\",\"the five eggs\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the father\",\"one of the eggs\",\"each corner of the table\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the father\",\"the fifth egg\",\"the middle of the table\"]},\n  {\"verb\":\"aimed\",\"arguments\":[\"the huntsman\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the huntsman\",\"the five eggs\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"the tailor\",\"his needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"the eggs\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"the thief\",\"the tree\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the thief\",\"the eggs\",\"the nest\"]},\n  {\"verb\":\"put back\",\"arguments\":[\"the thief\",\"the eggs\",\"under the bird\"]},\n  {\"verb\":\"crept out\",\"arguments\":[\"the young ones\"]},\n  {\"verb\":\"carried off\",\"arguments\":[\"a dragon\",\"the King's daughter\"]},\n  {\"verb\":\"looked through\",\"arguments\":[\"the astronomer\",\"his telescope\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the astronomer\",\"the King\"]},\n  {\"verb\":\"sailed\",\"arguments\":[\"the astronomer and his brothers\",\"the rock\"]},\n  {\"verb\":\"crept\",\"arguments\":[\"the thief\"]},\n  {\"verb\":\"stole away\",\"arguments\":[\"the thief\",\"the King's daughter\",\"from under the dragon\"]},\n  {\"verb\":\"hurried off\",\"arguments\":[\"the four brothers and the King's daughter\",\"on board ship\"]},\n  {\"verb\":\"steered\",\"arguments\":[\"the four brothers\",\"the open sea\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the dragon\",\"the four brothers and the King's daughter\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the dragon\",\"above the ship\"]},\n  {\"verb\":\"shouldered\",\"arguments\":[\"the huntsman\",\"his gun\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the huntsman\",\"the dragon\"]},\n  {\"verb\":\"fell down\",\"arguments\":[\"the monster\"]},\n  {\"verb\":\"shattered\",\"arguments\":[\"the monster\",\"the whole ship\"]},\n  {\"verb\":\"laid hold of\",\"arguments\":[\"the four brothers and the King's daughter\",\"a couple of planks\"]},\n  {\"verb\":\"swam\",\"arguments\":[\"the four brothers and the King's daughter\",\"the wide sea\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the tailor\",\"his wondrous needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"the planks\"]},\n  {\"verb\":\"seated themselves\",\"arguments\":[\"the four brothers and the King's daughter\",\"the planks\"]},\n  {\"verb\":\"collected together\",\"arguments\":[\"the four brothers and the King's daughter\",\"all the fragments of the vessel\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"all the fragments of the vessel\"]},\n  {\"verb\":\"received\",\"arguments\":[\"each of the brothers\",\"half a kingdom\"]}\n]",
+  "usage": {
+    "input_tokens": 16515,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2105,
+    "reasoning_output_tokens": 1034
+  },
+  "response_time_seconds": 47.27226912998594
+}

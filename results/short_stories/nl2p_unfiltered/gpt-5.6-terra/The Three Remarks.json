@@ -1,0 +1,584 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Three Remarks",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_unfiltered",
+  "content_words": 2297,
+  "action_count": 78,
+  "actions": [
+    {
+      "verb": "used",
+      "arguments": [
+        "the princess",
+        "her favorite phrase"
+      ]
+    },
+    {
+      "verb": "put an end",
+      "arguments": [
+        "the princess",
+        "any conversation that did not please her"
+      ]
+    },
+    {
+      "verb": "offered",
+      "arguments": [
+        "Emperors, kings, princes, dukes, earls, marquises, viscounts, baronets, and many other lofty personages",
+        "their hands",
+        "hearts",
+        "other possessions of greater or less value"
+      ]
+    },
+    {
+      "verb": "retired",
+      "arguments": [
+        "the suitors",
+        "a neighboring monastery"
+      ]
+    },
+    {
+      "verb": "hung up",
+      "arguments": [
+        "the suitors",
+        "their armor",
+        "the chapel"
+      ]
+    },
+    {
+      "verb": "taking",
+      "arguments": [
+        "the suitors",
+        "the vows"
+      ]
+    },
+    {
+      "verb": "flogging",
+      "arguments": [
+        "the suitors",
+        "themselves"
+      ]
+    },
+    {
+      "verb": "wearing",
+      "arguments": [
+        "the suitors",
+        "hair shirts"
+      ]
+    },
+    {
+      "verb": "putting",
+      "arguments": [
+        "the suitors",
+        "dry toast-crumbs",
+        "their beds"
+      ]
+    },
+    {
+      "verb": "turning into",
+      "arguments": [
+        "all his best nobles",
+        "monks"
+      ]
+    },
+    {
+      "verb": "slipped down",
+      "arguments": [
+        "the princess",
+        "the back stairs of the palace"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the princess",
+        "the back door"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": [
+        "the princess",
+        "the wide world"
+      ]
+    },
+    {
+      "verb": "wandered",
+      "arguments": [
+        "the princess",
+        "mountain and moor",
+        "fen",
+        "forest"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the princess",
+        "a fair city"
+      ]
+    },
+    {
+      "verb": "ringing",
+      "arguments": [
+        "all the bells"
+      ]
+    },
+    {
+      "verb": "flinging",
+      "arguments": [
+        "the people",
+        "caps",
+        "the air"
+      ]
+    },
+    {
+      "verb": "died",
+      "arguments": [
+        "their old king"
+      ]
+    },
+    {
+      "verb": "rule over",
+      "arguments": [
+        "the new king",
+        "the people"
+      ]
+    },
+    {
+      "verb": "left",
+      "arguments": [
+        "the late king",
+        "no heir"
+      ]
+    },
+    {
+      "verb": "polished up",
+      "arguments": [
+        "the crown"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "an unspecified person",
+        "a new tip",
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "spoiled",
+      "arguments": [
+        "the old king",
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "poking",
+      "arguments": [
+        "the old king",
+        "the fire",
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "welcomed",
+      "arguments": [
+        "the people",
+        "the beautiful princess"
+      ]
+    },
+    {
+      "verb": "leading",
+      "arguments": [
+        "the people",
+        "the princess",
+        "the new king"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "the princess",
+        "the market-place"
+      ]
+    },
+    {
+      "verb": "raised",
+      "arguments": [
+        "the princess",
+        "her head"
+      ]
+    },
+    {
+      "verb": "looked",
+      "arguments": [
+        "the princess",
+        "the red-faced king"
+      ]
+    },
+    {
+      "verb": "faded",
+      "arguments": [
+        "the red",
+        "a livid green"
+      ]
+    },
+    {
+      "verb": "dropped",
+      "arguments": [
+        "the sceptre",
+        "the princess's feet"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sceptre",
+        "the princess's feet"
+      ]
+    },
+    {
+      "verb": "laid by",
+      "arguments": [
+        "the retired butterman",
+        "a little money"
+      ]
+    },
+    {
+      "verb": "setting up",
+      "arguments": [
+        "the retired butterman",
+        "a public house"
+      ]
+    },
+    {
+      "verb": "pass through",
+      "arguments": [
+        "the retired butterman",
+        "this city"
+      ]
+    },
+    {
+      "verb": "fill",
+      "arguments": [
+        "the retired butterman",
+        "the vacant place"
+      ]
+    },
+    {
+      "verb": "fixed",
+      "arguments": [
+        "the princess",
+        "her clear eyes",
+        "the butterman"
+      ]
+    },
+    {
+      "verb": "shook",
+      "arguments": [
+        "the guilty butterman",
+        "his guilty shoes"
+      ]
+    },
+    {
+      "verb": "descending",
+      "arguments": [
+        "the butterman",
+        "his throne"
+      ]
+    },
+    {
+      "verb": "beckoned",
+      "arguments": [
+        "the butterman",
+        "the princess",
+        "a side-chamber"
+      ]
+    },
+    {
+      "verb": "closing",
+      "arguments": [
+        "the butterman",
+        "the door"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the princess",
+        "the rubies"
+      ]
+    },
+    {
+      "verb": "departed",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "all the people",
+        "the princess",
+        "the gates of the city"
+      ]
+    },
+    {
+      "verb": "waving",
+      "arguments": [
+        "all the people",
+        "their hats",
+        "kerchiefs"
+      ]
+    },
+    {
+      "verb": "pursued",
+      "arguments": [
+        "the princess",
+        "her journey"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the princess",
+        "a deep forest"
+      ]
+    },
+    {
+      "verb": "entered",
+      "arguments": [
+        "the princess",
+        "a deep forest"
+      ]
+    },
+    {
+      "verb": "stopped",
+      "arguments": [
+        "a band of robbers",
+        "the princess"
+      ]
+    },
+    {
+      "verb": "started back",
+      "arguments": [
+        "the robbers"
+      ]
+    },
+    {
+      "verb": "lowered",
+      "arguments": [
+        "the robbers",
+        "their weapons"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "the cringing, trembling bandits",
+        "the princess",
+        "an open glade"
+      ]
+    },
+    {
+      "verb": "hastening",
+      "arguments": [
+        "the robbers",
+        "their chief"
+      ]
+    },
+    {
+      "verb": "conveyed",
+      "arguments": [
+        "the robbers",
+        "the circumstance of their meeting the princess",
+        "the chieftain"
+      ]
+    },
+    {
+      "verb": "sprang",
+      "arguments": [
+        "the gigantic chieftain",
+        "his feet"
+      ]
+    },
+    {
+      "verb": "advancing",
+      "arguments": [
+        "the gigantic chieftain",
+        "the princess"
+      ]
+    },
+    {
+      "verb": "turned",
+      "arguments": [
+        "the robber chief",
+        "deadly pale"
+      ]
+    },
+    {
+      "verb": "staggered",
+      "arguments": [
+        "the robber chief",
+        "a tree"
+      ]
+    },
+    {
+      "verb": "drawing",
+      "arguments": [
+        "the robber chief",
+        "something",
+        "a hole in the oak-tree"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the princess",
+        "the bag of sapphires"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the princess",
+        "their leader",
+        "the farther end of the forest"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the princess and the robber chieftain",
+        "the open country"
+      ]
+    },
+    {
+      "verb": "returned",
+      "arguments": [
+        "the robber chieftain",
+        "his band"
+      ]
+    },
+    {
+      "verb": "preparing",
+      "arguments": [
+        "the robbers",
+        "to plunge into the impenetrable thickets of the midforest"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the princess",
+        "a fair high palace"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the palace-gates"
+      ]
+    },
+    {
+      "verb": "rode out",
+      "arguments": [
+        "the young king and his court",
+        "the palace-gate"
+      ]
+    },
+    {
+      "verb": "leaping",
+      "arguments": [
+        "the king",
+        "his steed"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the princess",
+        "a ruby",
+        "one bag"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the princess",
+        "a sapphire",
+        "the other"
+      ]
+    },
+    {
+      "verb": "handed",
+      "arguments": [
+        "the princess",
+        "a ruby",
+        "the king"
+      ]
+    },
+    {
+      "verb": "handed",
+      "arguments": [
+        "the princess",
+        "a sapphire",
+        "the king"
+      ]
+    },
+    {
+      "verb": "raised",
+      "arguments": [
+        "the princess",
+        "her clear dark eyes"
+      ]
+    },
+    {
+      "verb": "looked",
+      "arguments": [
+        "the princess",
+        "the king"
+      ]
+    },
+    {
+      "verb": "smiled",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "pierced",
+      "arguments": [
+        "the glance of her eyes",
+        "his heart"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the king",
+        "his knees"
+      ]
+    },
+    {
+      "verb": "giving",
+      "arguments": [
+        "the princess",
+        "her little white hand",
+        "the king"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"used\",\"arguments\":[\"the princess\",\"her favorite phrase\"]},\n  {\"verb\":\"put an end\",\"arguments\":[\"the princess\",\"any conversation that did not please her\"]},\n  {\"verb\":\"offered\",\"arguments\":[\"Emperors, kings, princes, dukes, earls, marquises, viscounts, baronets, and many other lofty personages\",\"their hands\",\"hearts\",\"other possessions of greater or less value\"]},\n  {\"verb\":\"retired\",\"arguments\":[\"the suitors\",\"a neighboring monastery\"]},\n  {\"verb\":\"hung up\",\"arguments\":[\"the suitors\",\"their armor\",\"the chapel\"]},\n  {\"verb\":\"taking\",\"arguments\":[\"the suitors\",\"the vows\"]},\n  {\"verb\":\"flogging\",\"arguments\":[\"the suitors\",\"themselves\"]},\n  {\"verb\":\"wearing\",\"arguments\":[\"the suitors\",\"hair shirts\"]},\n  {\"verb\":\"putting\",\"arguments\":[\"the suitors\",\"dry toast-crumbs\",\"their beds\"]},\n  {\"verb\":\"turning into\",\"arguments\":[\"all his best nobles\",\"monks\"]},\n  {\"verb\":\"slipped down\",\"arguments\":[\"the princess\",\"the back stairs of the palace\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the princess\",\"the back door\"]},\n  {\"verb\":\"ran away\",\"arguments\":[\"the princess\",\"the wide world\"]},\n  {\"verb\":\"wandered\",\"arguments\":[\"the princess\",\"mountain and moor\",\"fen\",\"forest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a fair city\"]},\n  {\"verb\":\"ringing\",\"arguments\":[\"all the bells\"]},\n  {\"verb\":\"flinging\",\"arguments\":[\"the people\",\"caps\",\"the air\"]},\n  {\"verb\":\"died\",\"arguments\":[\"their old king\"]},\n  {\"verb\":\"rule over\",\"arguments\":[\"the new king\",\"the people\"]},\n  {\"verb\":\"left\",\"arguments\":[\"the late king\",\"no heir\"]},\n  {\"verb\":\"polished up\",\"arguments\":[\"the crown\"]},\n  {\"verb\":\"put\",\"arguments\":[\"an unspecified person\",\"a new tip\",\"the sceptre\"]},\n  {\"verb\":\"spoiled\",\"arguments\":[\"the old king\",\"the sceptre\"]},\n  {\"verb\":\"poking\",\"arguments\":[\"the old king\",\"the fire\",\"the sceptre\"]},\n  {\"verb\":\"welcomed\",\"arguments\":[\"the people\",\"the beautiful princess\"]},\n  {\"verb\":\"leading\",\"arguments\":[\"the people\",\"the princess\",\"the new king\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the princess\",\"the market-place\"]},\n  {\"verb\":\"raised\",\"arguments\":[\"the princess\",\"her head\"]},\n  {\"verb\":\"looked\",\"arguments\":[\"the princess\",\"the red-faced king\"]},\n  {\"verb\":\"faded\",\"arguments\":[\"the red\",\"a livid green\"]},\n  {\"verb\":\"dropped\",\"arguments\":[\"the sceptre\",\"the princess's feet\"]},\n  {\"verb\":\"fell\",\"arguments\":[\"the sceptre\",\"the princess's feet\"]},\n  {\"verb\":\"laid by\",\"arguments\":[\"the retired butterman\",\"a little money\"]},\n  {\"verb\":\"setting up\",\"arguments\":[\"the retired butterman\",\"a public house\"]},\n  {\"verb\":\"pass through\",\"arguments\":[\"the retired butterman\",\"this city\"]},\n  {\"verb\":\"fill\",\"arguments\":[\"the retired butterman\",\"the vacant place\"]},\n  {\"verb\":\"fixed\",\"arguments\":[\"the princess\",\"her clear eyes\",\"the butterman\"]},\n  {\"verb\":\"shook\",\"arguments\":[\"the guilty butterman\",\"his guilty shoes\"]},\n  {\"verb\":\"descending\",\"arguments\":[\"the butterman\",\"his throne\"]},\n  {\"verb\":\"beckoned\",\"arguments\":[\"the butterman\",\"the princess\",\"a side-chamber\"]},\n  {\"verb\":\"closing\",\"arguments\":[\"the butterman\",\"the door\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"the rubies\"]},\n  {\"verb\":\"departed\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"all the people\",\"the princess\",\"the gates of the city\"]},\n  {\"verb\":\"waving\",\"arguments\":[\"all the people\",\"their hats\",\"kerchiefs\"]},\n  {\"verb\":\"pursued\",\"arguments\":[\"the princess\",\"her journey\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a deep forest\"]},\n  {\"verb\":\"entered\",\"arguments\":[\"the princess\",\"a deep forest\"]},\n  {\"verb\":\"stopped\",\"arguments\":[\"a band of robbers\",\"the princess\"]},\n  {\"verb\":\"started back\",\"arguments\":[\"the robbers\"]},\n  {\"verb\":\"lowered\",\"arguments\":[\"the robbers\",\"their weapons\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the cringing, trembling bandits\",\"the princess\",\"an open glade\"]},\n  {\"verb\":\"hastening\",\"arguments\":[\"the robbers\",\"their chief\"]},\n  {\"verb\":\"conveyed\",\"arguments\":[\"the robbers\",\"the circumstance of their meeting the princess\",\"the chieftain\"]},\n  {\"verb\":\"sprang\",\"arguments\":[\"the gigantic chieftain\",\"his feet\"]},\n  {\"verb\":\"advancing\",\"arguments\":[\"the gigantic chieftain\",\"the princess\"]},\n  {\"verb\":\"turned\",\"arguments\":[\"the robber chief\",\"deadly pale\"]},\n  {\"verb\":\"staggered\",\"arguments\":[\"the robber chief\",\"a tree\"]},\n  {\"verb\":\"drawing\",\"arguments\":[\"the robber chief\",\"something\",\"a hole in the oak-tree\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"the bag of sapphires\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the princess\",\"their leader\",\"the farther end of the forest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess and the robber chieftain\",\"the open country\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"the robber chieftain\",\"his band\"]},\n  {\"verb\":\"preparing\",\"arguments\":[\"the robbers\",\"to plunge into the impenetrable thickets of the midforest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a fair high palace\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the palace-gates\"]},\n  {\"verb\":\"rode out\",\"arguments\":[\"the young king and his court\",\"the palace-gate\"]},\n  {\"verb\":\"leaping\",\"arguments\":[\"the king\",\"his steed\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"a ruby\",\"one bag\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"a sapphire\",\"the other\"]},\n  {\"verb\":\"handed\",\"arguments\":[\"the princess\",\"a ruby\",\"the king\"]},\n  {\"verb\":\"handed\",\"arguments\":[\"the princess\",\"a sapphire\",\"the king\"]},\n  {\"verb\":\"raised\",\"arguments\":[\"the princess\",\"her clear dark eyes\"]},\n  {\"verb\":\"looked\",\"arguments\":[\"the princess\",\"the king\"]},\n  {\"verb\":\"smiled\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"pierced\",\"arguments\":[\"the glance of her eyes\",\"his heart\"]},\n  {\"verb\":\"fell\",\"arguments\":[\"the king\",\"his knees\"]},\n  {\"verb\":\"giving\",\"arguments\":[\"the princess\",\"her little white hand\",\"the king\"]}\n]",
+  "usage": {
+    "input_tokens": 17378,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1911,
+    "reasoning_output_tokens": 429
+  },
+  "response_time_seconds": 38.781984063010896
+}

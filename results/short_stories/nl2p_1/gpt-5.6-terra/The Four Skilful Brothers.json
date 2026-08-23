@@ -1,0 +1,305 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Four Skilful Brothers",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_1",
+  "content_words": 1663,
+  "action_count": 47,
+  "actions": [
+    {
+      "verb": "took",
+      "arguments": [
+        "their sticks"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "separate",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "each of the four brothers"
+      ]
+    },
+    {
+      "verb": "became",
+      "arguments": [
+        "an accomplished thief"
+      ]
+    },
+    {
+      "verb": "became",
+      "arguments": [
+        "a skillful astronomer"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a telescope"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the third brother"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "excellent instruction"
+      ]
+    },
+    {
+      "verb": "became",
+      "arguments": [
+        "an experienced hunter"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a gun"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the youngest brother"
+      ]
+    },
+    {
+      "verb": "learnt",
+      "arguments": [
+        "his art"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a needle"
+      ]
+    },
+    {
+      "verb": "arrived",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "embraced",
+      "arguments": [
+        "each other"
+      ]
+    },
+    {
+      "verb": "kissed",
+      "arguments": [
+        "each other"
+      ]
+    },
+    {
+      "verb": "returned",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "his glass"
+      ]
+    },
+    {
+      "verb": "climbed",
+      "arguments": [
+        "the skillful thief"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "aimed",
+      "arguments": [
+        "the gun"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "his needle"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the five eggs",
+        "the young birds"
+      ]
+    },
+    {
+      "verb": "climb up",
+      "arguments": [
+        "the thief"
+      ]
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the five eggs"
+      ]
+    },
+    {
+      "verb": "crept out",
+      "arguments": [
+        "the young ones"
+      ]
+    },
+    {
+      "verb": "carried off",
+      "arguments": [
+        "the King’s daughter"
+      ]
+    },
+    {
+      "verb": "sailed",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "stole away",
+      "arguments": [
+        "the King’s daughter"
+      ]
+    },
+    {
+      "verb": "steered",
+      "arguments": [
+        "the ship"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the dragon"
+      ]
+    },
+    {
+      "verb": "shattered",
+      "arguments": [
+        "the whole ship"
+      ]
+    },
+    {
+      "verb": "laid hold of",
+      "arguments": [
+        "a couple of planks"
+      ]
+    },
+    {
+      "verb": "swam",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "his wondrous needle"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "the planks"
+      ]
+    },
+    {
+      "verb": "seated",
+      "arguments": [
+        "the four brothers"
+      ]
+    },
+    {
+      "verb": "collected",
+      "arguments": [
+        "all the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "sewed",
+      "arguments": [
+        "all the fragments of the vessel"
+      ]
+    },
+    {
+      "verb": "received",
+      "arguments": [
+        "half a kingdom"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"took\",\"arguments\":[\"their sticks\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"separate\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"went\",\"arguments\":[\"each of the four brothers\"]},\n  {\"verb\":\"became\",\"arguments\":[\"an accomplished thief\"]},\n  {\"verb\":\"became\",\"arguments\":[\"a skillful astronomer\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a telescope\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the third brother\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"excellent instruction\"]},\n  {\"verb\":\"became\",\"arguments\":[\"an experienced hunter\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a gun\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the youngest brother\"]},\n  {\"verb\":\"learnt\",\"arguments\":[\"his art\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a needle\"]},\n  {\"verb\":\"arrived\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"embraced\",\"arguments\":[\"each other\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"each other\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"took\",\"arguments\":[\"his glass\"]},\n  {\"verb\":\"climbed\",\"arguments\":[\"the skillful thief\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"aimed\",\"arguments\":[\"the gun\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"his needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the five eggs\",\"the young birds\"]},\n  {\"verb\":\"climb up\",\"arguments\":[\"the thief\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the five eggs\"]},\n  {\"verb\":\"crept out\",\"arguments\":[\"the young ones\"]},\n  {\"verb\":\"carried off\",\"arguments\":[\"the King’s daughter\"]},\n  {\"verb\":\"sailed\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"stole away\",\"arguments\":[\"the King’s daughter\"]},\n  {\"verb\":\"steered\",\"arguments\":[\"the ship\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the dragon\"]},\n  {\"verb\":\"shattered\",\"arguments\":[\"the whole ship\"]},\n  {\"verb\":\"laid hold of\",\"arguments\":[\"a couple of planks\"]},\n  {\"verb\":\"swam\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"took\",\"arguments\":[\"his wondrous needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the planks\"]},\n  {\"verb\":\"seated\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"collected\",\"arguments\":[\"all the fragments of the vessel\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"all the fragments of the vessel\"]},\n  {\"verb\":\"received\",\"arguments\":[\"half a kingdom\"]}\n]",
+  "usage": {
+    "input_tokens": 16389,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2044,
+    "reasoning_output_tokens": 1380
+  },
+  "response_time_seconds": 40.12837777601089
+}

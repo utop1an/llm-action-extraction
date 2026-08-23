@@ -360,6 +360,46 @@ PROMPTS = {
         """),
         "parameters": ["nl"]
     },
+    "nl2p_unfiltered": {
+        "template": Template("""
+            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
+
+            Your task is to extract the executable actions explicitly described in the paragraph.
+            
+            Definition:
+            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
+            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
+            - An argument is a noun phrase denoting an entity directly affected by the action. Consider up to these three roles, in this order. An entity fills at most one slot; DOER wins.
+                1. DOER. Who performs it. ("the technician tightened the bolt" -> the technician)
+                2. CHANGED. Whose property the text says is different afterward ("the technician tightened the bolt" -> the bolt)
+                3. NEW VALUE. What the changed property becomes. ("moved the crate to the loading bay" -> the loading bay)
+
+            Rules:
+            - Use only actions explicitly supported by the paragraph.
+            - Preserve action order.
+            - Do not invent actions, arguments, object types, or hidden preconditions.
+            - Extract concrete eventive verbs (e.g., "open", "cut", "install"), not modal (e.g., "can"), auxiliary (e.g., "has"), linking (e.g., "is"), reporting (e.g., "said"), advisory (e.g., "should"), or purely descriptive (e.g., "seems") verbs.
+            - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity. ("began removing the panel" -> removing.)
+            - Resolve pronouns (e.g., it, them, this, these, those, he, she, they, one, everything) to the nearest unambiguous entity or entity set in the preceding context.
+            - Keep a complete noun phrase as one argument when it denotes one object.
+            - Keep coordinated entities fill the same role as separate arguments when they are separate objects. 
+            - When coordinated verbs express separate actions, create a separate record for each action. ("washed and dried the beakers" -> two items, each with "the beakers".)
+            - Use concise surface forms from the text for arguments unless it is a pronoun.
+            - Output valid JSON only.
+
+            Return a JSON array. Each item must have exactly this form:
+            [
+                {
+                    "verb": "trigger verb or verb phrase",
+                    "arguments": ["argument 1", "argument 2" ...]
+                }
+            ]
+
+            Paragraph:
+            $nl
+            """),
+        "parameters": ["nl"]
+        }
 }
 
 DOMAINS = {

@@ -1,0 +1,159 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "Chicken-Licken",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_1",
+  "content_words": 610,
+  "action_count": 22,
+  "actions": [
+    {
+      "verb": "fell",
+      "arguments": [
+        "an acorn",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Gander-lander"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": []
+    },
+    {
+      "verb": "walked",
+      "arguments": [
+        "Gander-lander",
+        "Goose-loose",
+        "Drake-lake",
+        "Duck-luck",
+        "Cock-lock",
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Fox-lox"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": []
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "Chicken-licken",
+        "Hen-len",
+        "Cock-lock",
+        "Duck-luck",
+        "Drake-lake",
+        "Goose-loose",
+        "Gander-lander",
+        "Turkey-lurkey",
+        "the fox's hole"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "Chicken-licken",
+        "Hen-len",
+        "Cock-lock",
+        "Duck-luck",
+        "Drake-lake",
+        "Goose-loose",
+        "Gander-lander",
+        "Turkey-lurkey"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"fell\",\"arguments\":[\"an acorn\",\"Chicken-licken's head\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Hen-len\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Cock-lock\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Duck-luck\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Drake-lake\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Goose-loose\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Gander-lander\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"met\",\"arguments\":[\"Turkey-lurkey\"]},\n  {\"verb\":\"turned back\",\"arguments\":[]},\n  {\"verb\":\"walked\",\"arguments\":[\"Gander-lander\",\"Goose-loose\",\"Drake-lake\",\"Duck-luck\",\"Cock-lock\",\"Hen-len\",\"Chicken-licken\"]},\n  {\"verb\":\"met\",\"arguments\":[\"Fox-lox\"]},\n  {\"verb\":\"went\",\"arguments\":[]},\n  {\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},\n  {\"verb\":\"took\",\"arguments\":[\"Chicken-licken\",\"Hen-len\",\"Cock-lock\",\"Duck-luck\",\"Drake-lake\",\"Goose-loose\",\"Gander-lander\",\"Turkey-lurkey\",\"the fox's hole\"]},\n  {\"verb\":\"ate up\",\"arguments\":[\"Chicken-licken\",\"Hen-len\",\"Cock-lock\",\"Duck-luck\",\"Drake-lake\",\"Goose-loose\",\"Gander-lander\",\"Turkey-lurkey\"]}\n]",
+  "usage": {
+    "input_tokens": 15382,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1163,
+    "reasoning_output_tokens": 788
+  },
+  "response_time_seconds": 23.90927692700643
+}

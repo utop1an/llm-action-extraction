@@ -1,0 +1,656 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "Hansel And Gretel",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_1",
+  "content_words": 2771,
+  "action_count": 111,
+  "actions": [
+    {
+      "verb": "fell",
+      "arguments": [
+        "a famine"
+      ]
+    },
+    {
+      "verb": "buy",
+      "arguments": [
+        "sufficient food"
+      ]
+    },
+    {
+      "verb": "take",
+      "arguments": [
+        "our children"
+      ]
+    },
+    {
+      "verb": "light",
+      "arguments": [
+        "a fire"
+      ]
+    },
+    {
+      "verb": "give",
+      "arguments": [
+        "a piece of bread"
+      ]
+    },
+    {
+      "verb": "leave",
+      "arguments": [
+        "our children"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "her husband"
+      ]
+    },
+    {
+      "verb": "promised",
+      "arguments": []
+    },
+    {
+      "verb": "consented",
+      "arguments": []
+    },
+    {
+      "verb": "slipped on",
+      "arguments": [
+        "his coat"
+      ]
+    },
+    {
+      "verb": "opening",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "went out",
+      "arguments": []
+    },
+    {
+      "verb": "filled",
+      "arguments": [
+        "his pockets"
+      ]
+    },
+    {
+      "verb": "went back",
+      "arguments": [
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "jumped into",
+      "arguments": [
+        "bed"
+      ]
+    },
+    {
+      "verb": "fell asleep",
+      "arguments": []
+    },
+    {
+      "verb": "wakened",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "a piece of bread"
+      ]
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "the bread"
+      ]
+    },
+    {
+      "verb": "set out",
+      "arguments": []
+    },
+    {
+      "verb": "drop",
+      "arguments": [
+        "the pebbles"
+      ]
+    },
+    {
+      "verb": "gathered",
+      "arguments": [
+        "a pile of brushwood and twigs"
+      ]
+    },
+    {
+      "verb": "kindled",
+      "arguments": [
+        "a fire"
+      ]
+    },
+    {
+      "verb": "left",
+      "arguments": [
+        "Hansel and Gretel"
+      ]
+    },
+    {
+      "verb": "sat down",
+      "arguments": []
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "their bread"
+      ]
+    },
+    {
+      "verb": "bound",
+      "arguments": [
+        "a dry branch"
+      ]
+    },
+    {
+      "verb": "fell asleep",
+      "arguments": []
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "his arms"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "his little sister"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the track of the little white pebbles"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "their father's house"
+      ]
+    },
+    {
+      "verb": "knocked",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "take",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "lose",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "gave way",
+      "arguments": []
+    },
+    {
+      "verb": "stole down",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "locked",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "bolted",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "wakened",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "giving",
+      "arguments": [
+        "a small piece of bread"
+      ]
+    },
+    {
+      "verb": "crumbled",
+      "arguments": [
+        "his morsel of bread"
+      ]
+    },
+    {
+      "verb": "strewed",
+      "arguments": [
+        "the crumbs"
+      ]
+    },
+    {
+      "verb": "kindled",
+      "arguments": [
+        "a great fire"
+      ]
+    },
+    {
+      "verb": "divided",
+      "arguments": [
+        "her piece of bread"
+      ]
+    },
+    {
+      "verb": "scattered",
+      "arguments": [
+        "all his share"
+      ]
+    },
+    {
+      "verb": "went to sleep",
+      "arguments": []
+    },
+    {
+      "verb": "eaten",
+      "arguments": [
+        "the crumbs"
+      ]
+    },
+    {
+      "verb": "lay down",
+      "arguments": []
+    },
+    {
+      "verb": "slept",
+      "arguments": []
+    },
+    {
+      "verb": "spread",
+      "arguments": [
+        "his wings"
+      ]
+    },
+    {
+      "verb": "flew away",
+      "arguments": []
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "him"
+      ]
+    },
+    {
+      "verb": "reached",
+      "arguments": [
+        "a little house"
+      ]
+    },
+    {
+      "verb": "perched",
+      "arguments": [
+        "the roof"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the strange little house"
+      ]
+    },
+    {
+      "verb": "stretched out",
+      "arguments": [
+        "his hand"
+      ]
+    },
+    {
+      "verb": "nibble",
+      "arguments": [
+        "one of the window-panes"
+      ]
+    },
+    {
+      "verb": "went on eating",
+      "arguments": []
+    },
+    {
+      "verb": "dropped",
+      "arguments": [
+        "their food"
+      ]
+    },
+    {
+      "verb": "clung",
+      "arguments": [
+        "each other"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "their hands"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "Hansel and Gretel"
+      ]
+    },
+    {
+      "verb": "set before",
+      "arguments": [
+        "all kinds of delicious foods"
+      ]
+    },
+    {
+      "verb": "showed",
+      "arguments": [
+        "two cosy little white beds"
+      ]
+    },
+    {
+      "verb": "tucked up",
+      "arguments": [
+        "Hansel and Gretel"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the little house of bread and cakes"
+      ]
+    },
+    {
+      "verb": "catch",
+      "arguments": [
+        "little children"
+      ]
+    },
+    {
+      "verb": "cooked",
+      "arguments": [
+        "him"
+      ]
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "him"
+      ]
+    },
+    {
+      "verb": "seizing",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "shut up",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "left",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "shook",
+      "arguments": [
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "carry",
+      "arguments": [
+        "food and drink"
+      ]
+    },
+    {
+      "verb": "fatten",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "cooked",
+      "arguments": [
+        "the choicest food"
+      ]
+    },
+    {
+      "verb": "visited",
+      "arguments": [
+        "the stable"
+      ]
+    },
+    {
+      "verb": "held out",
+      "arguments": [
+        "a bone"
+      ]
+    },
+    {
+      "verb": "mistook",
+      "arguments": [
+        "the bone"
+      ]
+    },
+    {
+      "verb": "fill",
+      "arguments": [
+        "the pot"
+      ]
+    },
+    {
+      "verb": "carried in",
+      "arguments": [
+        "the water"
+      ]
+    },
+    {
+      "verb": "light",
+      "arguments": [
+        "the fire"
+      ]
+    },
+    {
+      "verb": "hang",
+      "arguments": [
+        "the great pot of water"
+      ]
+    },
+    {
+      "verb": "kneaded",
+      "arguments": [
+        "the dough"
+      ]
+    },
+    {
+      "verb": "heated",
+      "arguments": [
+        "the oven"
+      ]
+    },
+    {
+      "verb": "popped",
+      "arguments": [
+        "her head"
+      ]
+    },
+    {
+      "verb": "pushed",
+      "arguments": [
+        "the old witch"
+      ]
+    },
+    {
+      "verb": "shut",
+      "arguments": [
+        "the iron door"
+      ]
+    },
+    {
+      "verb": "shot",
+      "arguments": [
+        "the bolt"
+      ]
+    },
+    {
+      "verb": "ran off",
+      "arguments": []
+    },
+    {
+      "verb": "opening",
+      "arguments": [
+        "the door of the stable"
+      ]
+    },
+    {
+      "verb": "flew from",
+      "arguments": [
+        "his prison"
+      ]
+    },
+    {
+      "verb": "kissed",
+      "arguments": [
+        "each other"
+      ]
+    },
+    {
+      "verb": "entered",
+      "arguments": [
+        "the house"
+      ]
+    },
+    {
+      "verb": "stuffed",
+      "arguments": [
+        "his pockets"
+      ]
+    },
+    {
+      "verb": "filled",
+      "arguments": [
+        "her pinafore"
+      ]
+    },
+    {
+      "verb": "ran",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a lake"
+      ]
+    },
+    {
+      "verb": "taking",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "carried",
+      "arguments": [
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "found",
+      "arguments": [
+        "themselves"
+      ]
+    },
+    {
+      "verb": "began to run",
+      "arguments": []
+    },
+    {
+      "verb": "rushed into",
+      "arguments": [
+        "the cottage"
+      ]
+    },
+    {
+      "verb": "flung",
+      "arguments": [
+        "themselves"
+      ]
+    },
+    {
+      "verb": "shook out",
+      "arguments": [
+        "her pinafore"
+      ]
+    },
+    {
+      "verb": "emptied",
+      "arguments": [
+        "his pockets"
+      ]
+    },
+    {
+      "verb": "covered",
+      "arguments": [
+        "the floor of the little room"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"fell\",\"arguments\":[\"a famine\"]},\n  {\"verb\":\"buy\",\"arguments\":[\"sufficient food\"]},\n  {\"verb\":\"take\",\"arguments\":[\"our children\"]},\n  {\"verb\":\"light\",\"arguments\":[\"a fire\"]},\n  {\"verb\":\"give\",\"arguments\":[\"a piece of bread\"]},\n  {\"verb\":\"leave\",\"arguments\":[\"our children\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"her husband\"]},\n  {\"verb\":\"promised\",\"arguments\":[]},\n  {\"verb\":\"consented\",\"arguments\":[]},\n  {\"verb\":\"slipped on\",\"arguments\":[\"his coat\"]},\n  {\"verb\":\"opening\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"went out\",\"arguments\":[]},\n  {\"verb\":\"filled\",\"arguments\":[\"his pockets\"]},\n  {\"verb\":\"went back\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"jumped into\",\"arguments\":[\"bed\"]},\n  {\"verb\":\"fell asleep\",\"arguments\":[]},\n  {\"verb\":\"wakened\",\"arguments\":[\"the children\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a piece of bread\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the bread\"]},\n  {\"verb\":\"set out\",\"arguments\":[]},\n  {\"verb\":\"drop\",\"arguments\":[\"the pebbles\"]},\n  {\"verb\":\"gathered\",\"arguments\":[\"a pile of brushwood and twigs\"]},\n  {\"verb\":\"kindled\",\"arguments\":[\"a fire\"]},\n  {\"verb\":\"left\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"sat down\",\"arguments\":[]},\n  {\"verb\":\"ate\",\"arguments\":[\"their bread\"]},\n  {\"verb\":\"bound\",\"arguments\":[\"a dry branch\"]},\n  {\"verb\":\"fell asleep\",\"arguments\":[]},\n  {\"verb\":\"put\",\"arguments\":[\"his arms\"]},\n  {\"verb\":\"took\",\"arguments\":[\"his little sister\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the track of the little white pebbles\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"their father's house\"]},\n  {\"verb\":\"knocked\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"take\",\"arguments\":[\"the children\"]},\n  {\"verb\":\"lose\",\"arguments\":[\"the children\"]},\n  {\"verb\":\"gave way\",\"arguments\":[]},\n  {\"verb\":\"stole down\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"locked\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"bolted\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"wakened\",\"arguments\":[\"the children\"]},\n  {\"verb\":\"giving\",\"arguments\":[\"a small piece of bread\"]},\n  {\"verb\":\"crumbled\",\"arguments\":[\"his morsel of bread\"]},\n  {\"verb\":\"strewed\",\"arguments\":[\"the crumbs\"]},\n  {\"verb\":\"kindled\",\"arguments\":[\"a great fire\"]},\n  {\"verb\":\"divided\",\"arguments\":[\"her piece of bread\"]},\n  {\"verb\":\"scattered\",\"arguments\":[\"all his share\"]},\n  {\"verb\":\"went to sleep\",\"arguments\":[]},\n  {\"verb\":\"eaten\",\"arguments\":[\"the crumbs\"]},\n  {\"verb\":\"lay down\",\"arguments\":[]},\n  {\"verb\":\"slept\",\"arguments\":[]},\n  {\"verb\":\"spread\",\"arguments\":[\"his wings\"]},\n  {\"verb\":\"flew away\",\"arguments\":[]},\n  {\"verb\":\"followed\",\"arguments\":[\"him\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"a little house\"]},\n  {\"verb\":\"perched\",\"arguments\":[\"the roof\"]},\n  {\"verb\":\"built\",\"arguments\":[\"the strange little house\"]},\n  {\"verb\":\"stretched out\",\"arguments\":[\"his hand\"]},\n  {\"verb\":\"nibble\",\"arguments\":[\"one of the window-panes\"]},\n  {\"verb\":\"went on eating\",\"arguments\":[]},\n  {\"verb\":\"dropped\",\"arguments\":[\"their food\"]},\n  {\"verb\":\"clung\",\"arguments\":[\"each other\"]},\n  {\"verb\":\"took\",\"arguments\":[\"their hands\"]},\n  {\"verb\":\"led\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"set before\",\"arguments\":[\"all kinds of delicious foods\"]},\n  {\"verb\":\"showed\",\"arguments\":[\"two cosy little white beds\"]},\n  {\"verb\":\"tucked up\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"built\",\"arguments\":[\"the little house of bread and cakes\"]},\n  {\"verb\":\"catch\",\"arguments\":[\"little children\"]},\n  {\"verb\":\"cooked\",\"arguments\":[\"him\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"him\"]},\n  {\"verb\":\"seizing\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"led\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"shut up\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"left\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"shook\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"carry\",\"arguments\":[\"food and drink\"]},\n  {\"verb\":\"fatten\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"cooked\",\"arguments\":[\"the choicest food\"]},\n  {\"verb\":\"visited\",\"arguments\":[\"the stable\"]},\n  {\"verb\":\"held out\",\"arguments\":[\"a bone\"]},\n  {\"verb\":\"mistook\",\"arguments\":[\"the bone\"]},\n  {\"verb\":\"fill\",\"arguments\":[\"the pot\"]},\n  {\"verb\":\"carried in\",\"arguments\":[\"the water\"]},\n  {\"verb\":\"light\",\"arguments\":[\"the fire\"]},\n  {\"verb\":\"hang\",\"arguments\":[\"the great pot of water\"]},\n  {\"verb\":\"kneaded\",\"arguments\":[\"the dough\"]},\n  {\"verb\":\"heated\",\"arguments\":[\"the oven\"]},\n  {\"verb\":\"popped\",\"arguments\":[\"her head\"]},\n  {\"verb\":\"pushed\",\"arguments\":[\"the old witch\"]},\n  {\"verb\":\"shut\",\"arguments\":[\"the iron door\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the bolt\"]},\n  {\"verb\":\"ran off\",\"arguments\":[]},\n  {\"verb\":\"opening\",\"arguments\":[\"the door of the stable\"]},\n  {\"verb\":\"flew from\",\"arguments\":[\"his prison\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"each other\"]},\n  {\"verb\":\"entered\",\"arguments\":[\"the house\"]},\n  {\"verb\":\"stuffed\",\"arguments\":[\"his pockets\"]},\n  {\"verb\":\"filled\",\"arguments\":[\"her pinafore\"]},\n  {\"verb\":\"ran\",\"arguments\":[]},\n  {\"verb\":\"came to\",\"arguments\":[\"a lake\"]},\n  {\"verb\":\"taking\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"found\",\"arguments\":[\"themselves\"]},\n  {\"verb\":\"began to run\",\"arguments\":[]},\n  {\"verb\":\"rushed into\",\"arguments\":[\"the cottage\"]},\n  {\"verb\":\"flung\",\"arguments\":[\"themselves\"]},\n  {\"verb\":\"shook out\",\"arguments\":[\"her pinafore\"]},\n  {\"verb\":\"emptied\",\"arguments\":[\"his pockets\"]},\n  {\"verb\":\"covered\",\"arguments\":[\"the floor of the little room\"]}\n]",
+  "usage": {
+    "input_tokens": 17827,
+    "cached_input_tokens": 9984,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1560,
+    "reasoning_output_tokens": 102
+  },
+  "response_time_seconds": 31.157090801018057
+}

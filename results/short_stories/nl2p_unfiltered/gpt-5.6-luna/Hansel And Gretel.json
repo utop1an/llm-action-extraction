@@ -1,0 +1,594 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "Hansel And Gretel",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "high",
+  "method": "nl2p_unfiltered",
+  "content_words": 2771,
+  "action_count": 101,
+  "actions": [
+    {
+      "verb": "toss",
+      "arguments": []
+    },
+    {
+      "verb": "slip on",
+      "arguments": [
+        "his coat"
+      ]
+    },
+    {
+      "verb": "open",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "go out",
+      "arguments": [
+        "the garden"
+      ]
+    },
+    {
+      "verb": "stoop",
+      "arguments": []
+    },
+    {
+      "verb": "fill",
+      "arguments": [
+        "his pockets"
+      ]
+    },
+    {
+      "verb": "go back",
+      "arguments": [
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "jump",
+      "arguments": [
+        "bed"
+      ]
+    },
+    {
+      "verb": "come",
+      "arguments": []
+    },
+    {
+      "verb": "waken",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "give",
+      "arguments": [
+        "a piece of bread",
+        "the children"
+      ]
+    },
+    {
+      "verb": "carry",
+      "arguments": [
+        "the bread",
+        "her pinafore"
+      ]
+    },
+    {
+      "verb": "set out",
+      "arguments": [
+        "the wood"
+      ]
+    },
+    {
+      "verb": "trudge",
+      "arguments": []
+    },
+    {
+      "verb": "turn back",
+      "arguments": []
+    },
+    {
+      "verb": "drop",
+      "arguments": [
+        "the pebbles",
+        "the path"
+      ]
+    },
+    {
+      "verb": "reach",
+      "arguments": [
+        "the thickest part of the forest"
+      ]
+    },
+    {
+      "verb": "gather",
+      "arguments": [
+        "a pile of brushwood and twigs"
+      ]
+    },
+    {
+      "verb": "leave",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "eat",
+      "arguments": [
+        "their bread"
+      ]
+    },
+    {
+      "verb": "bind",
+      "arguments": [
+        "a dry branch",
+        "a tree"
+      ]
+    },
+    {
+      "verb": "swing",
+      "arguments": [
+        "a dry branch"
+      ]
+    },
+    {
+      "verb": "awake",
+      "arguments": []
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "his arms",
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "rise",
+      "arguments": []
+    },
+    {
+      "verb": "take",
+      "arguments": [
+        "his little sister"
+      ]
+    },
+    {
+      "verb": "follow",
+      "arguments": []
+    },
+    {
+      "verb": "come",
+      "arguments": [
+        "their father's house"
+      ]
+    },
+    {
+      "verb": "open",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "steal down",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "waken",
+      "arguments": [
+        "the children"
+      ]
+    },
+    {
+      "verb": "give",
+      "arguments": [
+        "a small piece of bread",
+        "the children"
+      ]
+    },
+    {
+      "verb": "go",
+      "arguments": []
+    },
+    {
+      "verb": "crumble",
+      "arguments": [
+        "his morsel of bread",
+        "his pocket"
+      ]
+    },
+    {
+      "verb": "strew",
+      "arguments": [
+        "the crumbs",
+        "the path"
+      ]
+    },
+    {
+      "verb": "strew",
+      "arguments": [
+        "his crumbs"
+      ]
+    },
+    {
+      "verb": "go",
+      "arguments": [
+        "the wood"
+      ]
+    },
+    {
+      "verb": "kindle",
+      "arguments": []
+    },
+    {
+      "verb": "divide",
+      "arguments": [
+        "her piece of bread",
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "awake",
+      "arguments": []
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "his arms",
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "rise",
+      "arguments": []
+    },
+    {
+      "verb": "set out",
+      "arguments": []
+    },
+    {
+      "verb": "travel",
+      "arguments": []
+    },
+    {
+      "verb": "lie down",
+      "arguments": [
+        "a tree"
+      ]
+    },
+    {
+      "verb": "walk",
+      "arguments": []
+    },
+    {
+      "verb": "get into",
+      "arguments": [
+        "the wood"
+      ]
+    },
+    {
+      "verb": "spread",
+      "arguments": [
+        "his wings"
+      ]
+    },
+    {
+      "verb": "fly away",
+      "arguments": []
+    },
+    {
+      "verb": "follow",
+      "arguments": []
+    },
+    {
+      "verb": "reach",
+      "arguments": [
+        "a little house"
+      ]
+    },
+    {
+      "verb": "build",
+      "arguments": []
+    },
+    {
+      "verb": "stretch out",
+      "arguments": [
+        "his hand"
+      ]
+    },
+    {
+      "verb": "nibble",
+      "arguments": [
+        "one of the window-panes"
+      ]
+    },
+    {
+      "verb": "eat",
+      "arguments": [
+        "one of the window-panes"
+      ]
+    },
+    {
+      "verb": "open",
+      "arguments": []
+    },
+    {
+      "verb": "come out",
+      "arguments": []
+    },
+    {
+      "verb": "drop",
+      "arguments": [
+        "their food"
+      ]
+    },
+    {
+      "verb": "cling to",
+      "arguments": [
+        "each other"
+      ]
+    },
+    {
+      "verb": "nod",
+      "arguments": [
+        "her head"
+      ]
+    },
+    {
+      "verb": "take",
+      "arguments": [
+        "their hands"
+      ]
+    },
+    {
+      "verb": "lead",
+      "arguments": [
+        "the children",
+        "the house"
+      ]
+    },
+    {
+      "verb": "set",
+      "arguments": [
+        "all kinds of delicious foods",
+        "the children"
+      ]
+    },
+    {
+      "verb": "finish",
+      "arguments": [
+        "their meal"
+      ]
+    },
+    {
+      "verb": "come into",
+      "arguments": [
+        "her neighborhood"
+      ]
+    },
+    {
+      "verb": "seize",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "lead",
+      "arguments": [
+        "Hansel",
+        "a little stable"
+      ]
+    },
+    {
+      "verb": "shut up",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "leave",
+      "arguments": [
+        "Hansel"
+      ]
+    },
+    {
+      "verb": "shake",
+      "arguments": [
+        "Gretel"
+      ]
+    },
+    {
+      "verb": "cook",
+      "arguments": [
+        "the choicest food"
+      ]
+    },
+    {
+      "verb": "visit",
+      "arguments": [
+        "the stable"
+      ]
+    },
+    {
+      "verb": "hold out",
+      "arguments": [
+        "a bone"
+      ]
+    },
+    {
+      "verb": "carry in",
+      "arguments": [
+        "the water"
+      ]
+    },
+    {
+      "verb": "light",
+      "arguments": [
+        "the fire"
+      ]
+    },
+    {
+      "verb": "hang",
+      "arguments": [
+        "the great pot of water",
+        "the fire"
+      ]
+    },
+    {
+      "verb": "knead",
+      "arguments": [
+        "the dough"
+      ]
+    },
+    {
+      "verb": "heat",
+      "arguments": [
+        "the oven"
+      ]
+    },
+    {
+      "verb": "pop",
+      "arguments": [
+        "her head",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "spring",
+      "arguments": [
+        "the witch"
+      ]
+    },
+    {
+      "verb": "push inside",
+      "arguments": [
+        "the witch"
+      ]
+    },
+    {
+      "verb": "shut",
+      "arguments": [
+        "the iron door"
+      ]
+    },
+    {
+      "verb": "shoot",
+      "arguments": [
+        "the bolt"
+      ]
+    },
+    {
+      "verb": "run off",
+      "arguments": []
+    },
+    {
+      "verb": "run",
+      "arguments": [
+        "her brother"
+      ]
+    },
+    {
+      "verb": "open",
+      "arguments": [
+        "the door of the stable"
+      ]
+    },
+    {
+      "verb": "fly",
+      "arguments": []
+    },
+    {
+      "verb": "jump",
+      "arguments": []
+    },
+    {
+      "verb": "enter",
+      "arguments": [
+        "the house"
+      ]
+    },
+    {
+      "verb": "stuff",
+      "arguments": [
+        "the jewels",
+        "his pockets"
+      ]
+    },
+    {
+      "verb": "fill",
+      "arguments": [
+        "her pinafore"
+      ]
+    },
+    {
+      "verb": "run",
+      "arguments": []
+    },
+    {
+      "verb": "come",
+      "arguments": [
+        "a lake"
+      ]
+    },
+    {
+      "verb": "take",
+      "arguments": [
+        "Hansel",
+        "her back"
+      ]
+    },
+    {
+      "verb": "carry over",
+      "arguments": [
+        "Hansel",
+        "the other side"
+      ]
+    },
+    {
+      "verb": "go",
+      "arguments": []
+    },
+    {
+      "verb": "run",
+      "arguments": []
+    },
+    {
+      "verb": "rush",
+      "arguments": [
+        "the cottage"
+      ]
+    },
+    {
+      "verb": "fling",
+      "arguments": [
+        "their father's arms"
+      ]
+    },
+    {
+      "verb": "shake out",
+      "arguments": [
+        "her pinafore"
+      ]
+    },
+    {
+      "verb": "empty",
+      "arguments": [
+        "his pockets"
+      ]
+    }
+  ],
+  "raw_response": "[{\"verb\":\"toss\",\"arguments\":[]},{\"verb\":\"slip on\",\"arguments\":[\"his coat\"]},{\"verb\":\"open\",\"arguments\":[\"the door\"]},{\"verb\":\"go out\",\"arguments\":[\"the garden\"]},{\"verb\":\"stoop\",\"arguments\":[]},{\"verb\":\"fill\",\"arguments\":[\"his pockets\"]},{\"verb\":\"go back\",\"arguments\":[\"Gretel\"]},{\"verb\":\"jump\",\"arguments\":[\"bed\"]},{\"verb\":\"come\",\"arguments\":[]},{\"verb\":\"waken\",\"arguments\":[\"the children\"]},{\"verb\":\"give\",\"arguments\":[\"a piece of bread\",\"the children\"]},{\"verb\":\"carry\",\"arguments\":[\"the bread\",\"her pinafore\"]},{\"verb\":\"set out\",\"arguments\":[\"the wood\"]},{\"verb\":\"trudge\",\"arguments\":[]},{\"verb\":\"turn back\",\"arguments\":[]},{\"verb\":\"drop\",\"arguments\":[\"the pebbles\",\"the path\"]},{\"verb\":\"reach\",\"arguments\":[\"the thickest part of the forest\"]},{\"verb\":\"gather\",\"arguments\":[\"a pile of brushwood and twigs\"]},{\"verb\":\"leave\",\"arguments\":[\"the children\"]},{\"verb\":\"eat\",\"arguments\":[\"their bread\"]},{\"verb\":\"bind\",\"arguments\":[\"a dry branch\",\"a tree\"]},{\"verb\":\"swing\",\"arguments\":[\"a dry branch\"]},{\"verb\":\"awake\",\"arguments\":[]},{\"verb\":\"put\",\"arguments\":[\"his arms\",\"Gretel\"]},{\"verb\":\"rise\",\"arguments\":[]},{\"verb\":\"take\",\"arguments\":[\"his little sister\"]},{\"verb\":\"follow\",\"arguments\":[]},{\"verb\":\"come\",\"arguments\":[\"their father's house\"]},{\"verb\":\"open\",\"arguments\":[\"the door\"]},{\"verb\":\"steal down\",\"arguments\":[\"the door\"]},{\"verb\":\"waken\",\"arguments\":[\"the children\"]},{\"verb\":\"give\",\"arguments\":[\"a small piece of bread\",\"the children\"]},{\"verb\":\"go\",\"arguments\":[]},{\"verb\":\"crumble\",\"arguments\":[\"his morsel of bread\",\"his pocket\"]},{\"verb\":\"strew\",\"arguments\":[\"the crumbs\",\"the path\"]},{\"verb\":\"strew\",\"arguments\":[\"his crumbs\"]},{\"verb\":\"go\",\"arguments\":[\"the wood\"]},{\"verb\":\"kindle\",\"arguments\":[]},{\"verb\":\"divide\",\"arguments\":[\"her piece of bread\",\"Hansel\"]},{\"verb\":\"awake\",\"arguments\":[]},{\"verb\":\"put\",\"arguments\":[\"his arms\",\"Gretel\"]},{\"verb\":\"rise\",\"arguments\":[]},{\"verb\":\"set out\",\"arguments\":[]},{\"verb\":\"travel\",\"arguments\":[]},{\"verb\":\"lie down\",\"arguments\":[\"a tree\"]},{\"verb\":\"walk\",\"arguments\":[]},{\"verb\":\"get into\",\"arguments\":[\"the wood\"]},{\"verb\":\"spread\",\"arguments\":[\"his wings\"]},{\"verb\":\"fly away\",\"arguments\":[]},{\"verb\":\"follow\",\"arguments\":[]},{\"verb\":\"reach\",\"arguments\":[\"a little house\"]},{\"verb\":\"build\",\"arguments\":[]},{\"verb\":\"stretch out\",\"arguments\":[\"his hand\"]},{\"verb\":\"nibble\",\"arguments\":[\"one of the window-panes\"]},{\"verb\":\"eat\",\"arguments\":[\"one of the window-panes\"]},{\"verb\":\"open\",\"arguments\":[]},{\"verb\":\"come out\",\"arguments\":[]},{\"verb\":\"drop\",\"arguments\":[\"their food\"]},{\"verb\":\"cling to\",\"arguments\":[\"each other\"]},{\"verb\":\"nod\",\"arguments\":[\"her head\"]},{\"verb\":\"take\",\"arguments\":[\"their hands\"]},{\"verb\":\"lead\",\"arguments\":[\"the children\",\"the house\"]},{\"verb\":\"set\",\"arguments\":[\"all kinds of delicious foods\",\"the children\"]},{\"verb\":\"finish\",\"arguments\":[\"their meal\"]},{\"verb\":\"come into\",\"arguments\":[\"her neighborhood\"]},{\"verb\":\"seize\",\"arguments\":[\"Hansel\"]},{\"verb\":\"lead\",\"arguments\":[\"Hansel\",\"a little stable\"]},{\"verb\":\"shut up\",\"arguments\":[\"Hansel\"]},{\"verb\":\"leave\",\"arguments\":[\"Hansel\"]},{\"verb\":\"shake\",\"arguments\":[\"Gretel\"]},{\"verb\":\"cook\",\"arguments\":[\"the choicest food\"]},{\"verb\":\"visit\",\"arguments\":[\"the stable\"]},{\"verb\":\"hold out\",\"arguments\":[\"a bone\"]},{\"verb\":\"carry in\",\"arguments\":[\"the water\"]},{\"verb\":\"light\",\"arguments\":[\"the fire\"]},{\"verb\":\"hang\",\"arguments\":[\"the great pot of water\",\"the fire\"]},{\"verb\":\"knead\",\"arguments\":[\"the dough\"]},{\"verb\":\"heat\",\"arguments\":[\"the oven\"]},{\"verb\":\"pop\",\"arguments\":[\"her head\",\"the oven\"]},{\"verb\":\"spring\",\"arguments\":[\"the witch\"]},{\"verb\":\"push inside\",\"arguments\":[\"the witch\"]},{\"verb\":\"shut\",\"arguments\":[\"the iron door\"]},{\"verb\":\"shoot\",\"arguments\":[\"the bolt\"]},{\"verb\":\"run off\",\"arguments\":[]},{\"verb\":\"run\",\"arguments\":[\"her brother\"]},{\"verb\":\"open\",\"arguments\":[\"the door of the stable\"]},{\"verb\":\"fly\",\"arguments\":[]},{\"verb\":\"jump\",\"arguments\":[]},{\"verb\":\"enter\",\"arguments\":[\"the house\"]},{\"verb\":\"stuff\",\"arguments\":[\"the jewels\",\"his pockets\"]},{\"verb\":\"fill\",\"arguments\":[\"her pinafore\"]},{\"verb\":\"run\",\"arguments\":[]},{\"verb\":\"come\",\"arguments\":[\"a lake\"]},{\"verb\":\"take\",\"arguments\":[\"Hansel\",\"her back\"]},{\"verb\":\"carry over\",\"arguments\":[\"Hansel\",\"the other side\"]},{\"verb\":\"go\",\"arguments\":[]},{\"verb\":\"run\",\"arguments\":[]},{\"verb\":\"rush\",\"arguments\":[\"the cottage\"]},{\"verb\":\"fling\",\"arguments\":[\"their father's arms\"]},{\"verb\":\"shake out\",\"arguments\":[\"her pinafore\"]},{\"verb\":\"empty\",\"arguments\":[\"his pockets\"]}]",
+  "usage": {
+    "input_tokens": 16988,
+    "cached_input_tokens": 8960,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 20350,
+    "reasoning_output_tokens": 19258
+  },
+  "response_time_seconds": 369.0077418190049
+}

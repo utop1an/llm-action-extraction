@@ -1,0 +1,811 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "Jack And The Beanstalk",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_unfiltered",
+  "content_words": 1844,
+  "action_count": 115,
+  "actions": [
+    {
+      "verb": "sold",
+      "arguments": [
+        "Almost all the furniture of the little cottage"
+      ]
+    },
+    {
+      "verb": "buy",
+      "arguments": [
+        "bread"
+      ]
+    },
+    {
+      "verb": "remained",
+      "arguments": [
+        "the good cow, Milky White"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "Milky White",
+        "milk"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "they",
+        "milk",
+        "market"
+      ]
+    },
+    {
+      "verb": "sold",
+      "arguments": [
+        "they",
+        "milk"
+      ]
+    },
+    {
+      "verb": "sell",
+      "arguments": [
+        "Jack",
+        "Milky White"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "Jack",
+        "the market"
+      ]
+    },
+    {
+      "verb": "jumped",
+      "arguments": [
+        "Jack",
+        "her back"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Jack",
+        "a butcher"
+      ]
+    },
+    {
+      "verb": "going",
+      "arguments": [
+        "Jack",
+        "market"
+      ]
+    },
+    {
+      "verb": "sell",
+      "arguments": [
+        "Jack",
+        "the cow"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "the butcher",
+        "his hand",
+        "his pocket"
+      ]
+    },
+    {
+      "verb": "pulled out",
+      "arguments": [
+        "the butcher",
+        "five curious-looking beans"
+      ]
+    },
+    {
+      "verb": "plant",
+      "arguments": [
+        "them"
+      ]
+    },
+    {
+      "verb": "grow up",
+      "arguments": [
+        "they"
+      ]
+    },
+    {
+      "verb": "reach",
+      "arguments": [
+        "they",
+        "the sky"
+      ]
+    },
+    {
+      "verb": "exchanging",
+      "arguments": [
+        "the butcher",
+        "them",
+        "that cow of yours"
+      ]
+    },
+    {
+      "verb": "ran",
+      "arguments": [
+        "Jack",
+        "all the way home"
+      ]
+    },
+    {
+      "verb": "threw",
+      "arguments": [
+        "the poor widow",
+        "the beans",
+        "the garden"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "Jack",
+        "bed"
+      ]
+    },
+    {
+      "verb": "cried",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "woke up",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "jumped out of",
+      "arguments": [
+        "Jack",
+        "bed"
+      ]
+    },
+    {
+      "verb": "ran",
+      "arguments": [
+        "Jack",
+        "the window"
+      ]
+    },
+    {
+      "verb": "growing",
+      "arguments": [
+        "a great beanstalk",
+        "the ground beside his window"
+      ]
+    },
+    {
+      "verb": "stretched",
+      "arguments": [
+        "a great beanstalk",
+        "the sky"
+      ]
+    },
+    {
+      "verb": "stepped out of",
+      "arguments": [
+        "Jack",
+        "the window"
+      ]
+    },
+    {
+      "verb": "began to climb",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "climbed",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "ended",
+      "arguments": [
+        "the stalk"
+      ]
+    },
+    {
+      "verb": "found himself",
+      "arguments": [
+        "Jack",
+        "a new and beautiful country"
+      ]
+    },
+    {
+      "verb": "standing",
+      "arguments": [
+        "a beautiful maiden",
+        "beside him"
+      ]
+    },
+    {
+      "verb": "had been slain",
+      "arguments": [
+        "his father, a gallant knight",
+        "the giant"
+      ]
+    },
+    {
+      "verb": "lived",
+      "arguments": [
+        "the giant",
+        "yonder castle"
+      ]
+    },
+    {
+      "verb": "disappeared",
+      "arguments": [
+        "she"
+      ]
+    },
+    {
+      "verb": "drew near",
+      "arguments": [
+        "Jack",
+        "the castle"
+      ]
+    },
+    {
+      "verb": "standing",
+      "arguments": [
+        "the giant's wife",
+        "the door"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "Jack",
+        "inside"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the giant's wife",
+        "Jack",
+        "a good breakfast"
+      ]
+    },
+    {
+      "verb": "lifted",
+      "arguments": [
+        "the giantess",
+        "Jack"
+      ]
+    },
+    {
+      "verb": "popped",
+      "arguments": [
+        "the giantess",
+        "Jack",
+        "the empty kettle"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the giant's wife",
+        "the door"
+      ]
+    },
+    {
+      "verb": "sat down",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "the giant",
+        "the greater part of the ox"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "his wife",
+        "two full bags of gold",
+        "the giant"
+      ]
+    },
+    {
+      "verb": "began to count",
+      "arguments": [
+        "the giant",
+        "his money"
+      ]
+    },
+    {
+      "verb": "began to snore",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "crept out",
+      "arguments": [
+        "Jack",
+        "the empty kettle"
+      ]
+    },
+    {
+      "verb": "snatched up",
+      "arguments": [
+        "Jack",
+        "the two bags"
+      ]
+    },
+    {
+      "verb": "barked",
+      "arguments": [
+        "the giant's dog"
+      ]
+    },
+    {
+      "verb": "made his way down",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "awoke",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "climbed up",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "got to",
+      "arguments": [
+        "Jack",
+        "the top of the beanstalk"
+      ]
+    },
+    {
+      "verb": "allowed",
+      "arguments": [
+        "the giantess",
+        "Jack",
+        "the kitchen"
+      ]
+    },
+    {
+      "verb": "set before",
+      "arguments": [
+        "the giantess",
+        "Jack",
+        "enough breakfast to last him a week"
+      ]
+    },
+    {
+      "verb": "bundle",
+      "arguments": [
+        "the giantess",
+        "Jack",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the giant",
+        "the room"
+      ]
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "the giant",
+        "a roasted bullock"
+      ]
+    },
+    {
+      "verb": "brought in",
+      "arguments": [
+        "the giantess",
+        "a little brown hen"
+      ]
+    },
+    {
+      "verb": "placed",
+      "arguments": [
+        "the giantess",
+        "a little brown hen",
+        "the table"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "the hen",
+        "a golden egg"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "the hen",
+        "another golden egg"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "the hen",
+        "a third golden egg"
+      ]
+    },
+    {
+      "verb": "stretched himself out",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "began to snore",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "crept out of",
+      "arguments": [
+        "Jack",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "Jack",
+        "the table"
+      ]
+    },
+    {
+      "verb": "snatched up",
+      "arguments": [
+        "Jack",
+        "the little brown hen"
+      ]
+    },
+    {
+      "verb": "made a dash for",
+      "arguments": [
+        "Jack",
+        "the door"
+      ]
+    },
+    {
+      "verb": "began to cackle",
+      "arguments": [
+        "the hen"
+      ]
+    },
+    {
+      "verb": "began to wake up",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "escaped",
+      "arguments": [
+        "Jack",
+        "the castle"
+      ]
+    },
+    {
+      "verb": "climbed down",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "got",
+      "arguments": [
+        "Jack",
+        "his mother's cottage"
+      ]
+    },
+    {
+      "verb": "laid",
+      "arguments": [
+        "the little brown hen",
+        "so many golden eggs"
+      ]
+    },
+    {
+      "verb": "crept out of",
+      "arguments": [
+        "Jack",
+        "the window"
+      ]
+    },
+    {
+      "verb": "climbed up",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "reached",
+      "arguments": [
+        "Jack",
+        "the top"
+      ]
+    },
+    {
+      "verb": "crept round",
+      "arguments": [
+        "Jack",
+        "the back of the castle"
+      ]
+    },
+    {
+      "verb": "went out",
+      "arguments": [
+        "the giant's wife"
+      ]
+    },
+    {
+      "verb": "slipped into",
+      "arguments": [
+        "Jack",
+        "the kitchen"
+      ]
+    },
+    {
+      "verb": "hid",
+      "arguments": [
+        "Jack",
+        "himself",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "sat down",
+      "arguments": [
+        "the giant",
+        "breakfast"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "looked in",
+      "arguments": [
+        "the giant",
+        "the kettle"
+      ]
+    },
+    {
+      "verb": "finished",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "brought in",
+      "arguments": [
+        "she",
+        "the golden harp"
+      ]
+    },
+    {
+      "verb": "placed",
+      "arguments": [
+        "she",
+        "the golden harp",
+        "the table"
+      ]
+    },
+    {
+      "verb": "began to sing",
+      "arguments": [
+        "the harp",
+        "the most beautiful songs"
+      ]
+    },
+    {
+      "verb": "fell fast asleep",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "crept out of",
+      "arguments": [
+        "Jack",
+        "the oven"
+      ]
+    },
+    {
+      "verb": "going",
+      "arguments": [
+        "Jack",
+        "the table"
+      ]
+    },
+    {
+      "verb": "seized hold of",
+      "arguments": [
+        "Jack",
+        "the golden harp"
+      ]
+    },
+    {
+      "verb": "called out",
+      "arguments": [
+        "the harp"
+      ]
+    },
+    {
+      "verb": "woke up",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "running out of",
+      "arguments": [
+        "Jack",
+        "the kitchen-door"
+      ]
+    },
+    {
+      "verb": "seized",
+      "arguments": [
+        "the giant",
+        "his oak-tree club"
+      ]
+    },
+    {
+      "verb": "dashed after",
+      "arguments": [
+        "the giant",
+        "Jack"
+      ]
+    },
+    {
+      "verb": "held",
+      "arguments": [
+        "Jack",
+        "the harp"
+      ]
+    },
+    {
+      "verb": "ran",
+      "arguments": [
+        "Jack"
+      ]
+    },
+    {
+      "verb": "gained on",
+      "arguments": [
+        "the giant",
+        "Jack"
+      ]
+    },
+    {
+      "verb": "slipped over",
+      "arguments": [
+        "the giant",
+        "a boulder"
+      ]
+    },
+    {
+      "verb": "picked himself up",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "began to climb down",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "arrived",
+      "arguments": [
+        "the giant",
+        "the edge"
+      ]
+    },
+    {
+      "verb": "began to climb down",
+      "arguments": [
+        "the giant",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "saw",
+      "arguments": [
+        "Jack",
+        "him"
+      ]
+    },
+    {
+      "verb": "hurried out",
+      "arguments": [
+        "the widow",
+        "a chopper"
+      ]
+    },
+    {
+      "verb": "reached",
+      "arguments": [
+        "Jack",
+        "the ground"
+      ]
+    },
+    {
+      "verb": "cut",
+      "arguments": [
+        "Jack",
+        "the beanstalk"
+      ]
+    },
+    {
+      "verb": "came down",
+      "arguments": [
+        "the giant"
+      ]
+    },
+    {
+      "verb": "grew",
+      "arguments": [
+        "Jack and his mother",
+        "very rich"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"sold\",\"arguments\":[\"Almost all the furniture of the little cottage\"]},\n  {\"verb\":\"buy\",\"arguments\":[\"bread\"]},\n  {\"verb\":\"remained\",\"arguments\":[\"the good cow, Milky White\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"Milky White\",\"milk\"]},\n  {\"verb\":\"took\",\"arguments\":[\"they\",\"milk\",\"market\"]},\n  {\"verb\":\"sold\",\"arguments\":[\"they\",\"milk\"]},\n  {\"verb\":\"sell\",\"arguments\":[\"Jack\",\"Milky White\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"the market\"]},\n  {\"verb\":\"jumped\",\"arguments\":[\"Jack\",\"her back\"]},\n  {\"verb\":\"met\",\"arguments\":[\"Jack\",\"a butcher\"]},\n  {\"verb\":\"going\",\"arguments\":[\"Jack\",\"market\"]},\n  {\"verb\":\"sell\",\"arguments\":[\"Jack\",\"the cow\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the butcher\",\"his hand\",\"his pocket\"]},\n  {\"verb\":\"pulled out\",\"arguments\":[\"the butcher\",\"five curious-looking beans\"]},\n  {\"verb\":\"plant\",\"arguments\":[\"them\"]},\n  {\"verb\":\"grow up\",\"arguments\":[\"they\"]},\n  {\"verb\":\"reach\",\"arguments\":[\"they\",\"the sky\"]},\n  {\"verb\":\"exchanging\",\"arguments\":[\"the butcher\",\"them\",\"that cow of yours\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\",\"all the way home\"]},\n  {\"verb\":\"threw\",\"arguments\":[\"the poor widow\",\"the beans\",\"the garden\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"bed\"]},\n  {\"verb\":\"cried\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"woke up\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"jumped out of\",\"arguments\":[\"Jack\",\"bed\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"growing\",\"arguments\":[\"a great beanstalk\",\"the ground beside his window\"]},\n  {\"verb\":\"stretched\",\"arguments\":[\"a great beanstalk\",\"the sky\"]},\n  {\"verb\":\"stepped out of\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"began to climb\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"climbed\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"ended\",\"arguments\":[\"the stalk\"]},\n  {\"verb\":\"found himself\",\"arguments\":[\"Jack\",\"a new and beautiful country\"]},\n  {\"verb\":\"standing\",\"arguments\":[\"a beautiful maiden\",\"beside him\"]},\n  {\"verb\":\"had been slain\",\"arguments\":[\"his father, a gallant knight\",\"the giant\"]},\n  {\"verb\":\"lived\",\"arguments\":[\"the giant\",\"yonder castle\"]},\n  {\"verb\":\"disappeared\",\"arguments\":[\"she\"]},\n  {\"verb\":\"drew near\",\"arguments\":[\"Jack\",\"the castle\"]},\n  {\"verb\":\"standing\",\"arguments\":[\"the giant's wife\",\"the door\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"inside\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the giant's wife\",\"Jack\",\"a good breakfast\"]},\n  {\"verb\":\"lifted\",\"arguments\":[\"the giantess\",\"Jack\"]},\n  {\"verb\":\"popped\",\"arguments\":[\"the giantess\",\"Jack\",\"the empty kettle\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the giant's wife\",\"the door\"]},\n  {\"verb\":\"sat down\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"ate up\",\"arguments\":[\"the giant\",\"the greater part of the ox\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"his wife\",\"two full bags of gold\",\"the giant\"]},\n  {\"verb\":\"began to count\",\"arguments\":[\"the giant\",\"his money\"]},\n  {\"verb\":\"began to snore\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out\",\"arguments\":[\"Jack\",\"the empty kettle\"]},\n  {\"verb\":\"snatched up\",\"arguments\":[\"Jack\",\"the two bags\"]},\n  {\"verb\":\"barked\",\"arguments\":[\"the giant's dog\"]},\n  {\"verb\":\"made his way down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"awoke\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"got to\",\"arguments\":[\"Jack\",\"the top of the beanstalk\"]},\n  {\"verb\":\"allowed\",\"arguments\":[\"the giantess\",\"Jack\",\"the kitchen\"]},\n  {\"verb\":\"set before\",\"arguments\":[\"the giantess\",\"Jack\",\"enough breakfast to last him a week\"]},\n  {\"verb\":\"bundle\",\"arguments\":[\"the giantess\",\"Jack\",\"the oven\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the giant\",\"the room\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"the giant\",\"a roasted bullock\"]},\n  {\"verb\":\"brought in\",\"arguments\":[\"the giantess\",\"a little brown hen\"]},\n  {\"verb\":\"placed\",\"arguments\":[\"the giantess\",\"a little brown hen\",\"the table\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"a golden egg\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"another golden egg\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"a third golden egg\"]},\n  {\"verb\":\"stretched himself out\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"began to snore\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the oven\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"the table\"]},\n  {\"verb\":\"snatched up\",\"arguments\":[\"Jack\",\"the little brown hen\"]},\n  {\"verb\":\"made a dash for\",\"arguments\":[\"Jack\",\"the door\"]},\n  {\"verb\":\"began to cackle\",\"arguments\":[\"the hen\"]},\n  {\"verb\":\"began to wake up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"escaped\",\"arguments\":[\"Jack\",\"the castle\"]},\n  {\"verb\":\"climbed down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"got\",\"arguments\":[\"Jack\",\"his mother's cottage\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the little brown hen\",\"so many golden eggs\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"Jack\",\"the top\"]},\n  {\"verb\":\"crept round\",\"arguments\":[\"Jack\",\"the back of the castle\"]},\n  {\"verb\":\"went out\",\"arguments\":[\"the giant's wife\"]},\n  {\"verb\":\"slipped into\",\"arguments\":[\"Jack\",\"the kitchen\"]},\n  {\"verb\":\"hid\",\"arguments\":[\"Jack\",\"himself\",\"the oven\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"sat down\",\"arguments\":[\"the giant\",\"breakfast\"]},\n  {\"verb\":\"got up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"looked in\",\"arguments\":[\"the giant\",\"the kettle\"]},\n  {\"verb\":\"finished\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"brought in\",\"arguments\":[\"she\",\"the golden harp\"]},\n  {\"verb\":\"placed\",\"arguments\":[\"she\",\"the golden harp\",\"the table\"]},\n  {\"verb\":\"began to sing\",\"arguments\":[\"the harp\",\"the most beautiful songs\"]},\n  {\"verb\":\"fell fast asleep\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the oven\"]},\n  {\"verb\":\"going\",\"arguments\":[\"Jack\",\"the table\"]},\n  {\"verb\":\"seized hold of\",\"arguments\":[\"Jack\",\"the golden harp\"]},\n  {\"verb\":\"called out\",\"arguments\":[\"the harp\"]},\n  {\"verb\":\"woke up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"running out of\",\"arguments\":[\"Jack\",\"the kitchen-door\"]},\n  {\"verb\":\"seized\",\"arguments\":[\"the giant\",\"his oak-tree club\"]},\n  {\"verb\":\"dashed after\",\"arguments\":[\"the giant\",\"Jack\"]},\n  {\"verb\":\"held\",\"arguments\":[\"Jack\",\"the harp\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"gained on\",\"arguments\":[\"the giant\",\"Jack\"]},\n  {\"verb\":\"slipped over\",\"arguments\":[\"the giant\",\"a boulder\"]},\n  {\"verb\":\"picked himself up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"began to climb down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"arrived\",\"arguments\":[\"the giant\",\"the edge\"]},\n  {\"verb\":\"began to climb down\",\"arguments\":[\"the giant\",\"the beanstalk\"]},\n  {\"verb\":\"saw\",\"arguments\":[\"Jack\",\"him\"]},\n  {\"verb\":\"hurried out\",\"arguments\":[\"the widow\",\"a chopper\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"Jack\",\"the ground\"]},\n  {\"verb\":\"cut\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"came down\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"grew\",\"arguments\":[\"Jack and his mother\",\"very rich\"]}\n]",
+  "usage": {
+    "input_tokens": 16811,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2380,
+    "reasoning_output_tokens": 500
+  },
+  "response_time_seconds": 45.818696058995556
+}

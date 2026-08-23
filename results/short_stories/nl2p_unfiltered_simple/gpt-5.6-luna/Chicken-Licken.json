@@ -1,0 +1,344 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "Chicken-Licken",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "high",
+  "method": "nl2p_unfiltered_simple",
+  "content_words": 610,
+  "action_count": 47,
+  "actions": [
+    {
+      "verb": "going",
+      "arguments": [
+        "Chicken-licken",
+        "the wood"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "an acorn",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Chicken-licken",
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock",
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck",
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock",
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake",
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake",
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck",
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock",
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Goose-loose",
+        "Gander-lander"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Goose-loose",
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake",
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck",
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock",
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Gander-lander"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Gander-lander",
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Gander-lander",
+        "Goose-loose"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Goose-loose",
+        "Drake-lake"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Drake-lake",
+        "Duck-luck"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Duck-luck",
+        "Cock-lock"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Cock-lock",
+        "Hen-len"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Hen-len",
+        "Chicken-licken"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "turned back",
+      "arguments": [
+        "Turkey-lurkey"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "Turkey-lurkey, Gander-lander, Goose-loose, Drake-lake, Duck-luck, Cock-lock, Hen-len, and Chicken-licken",
+        "Fox-lox"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "Chicken-licken",
+        "the wood"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sky",
+        "Chicken-licken's head"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "Fox-lox",
+        "Turkey-lurkey, Gander-lander, Goose-loose, Drake-lake, Duck-luck, Cock-lock, Hen-len, and Chicken-licken",
+        "the fox's hole"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "Fox-lox and Fox-lox's young ones",
+        "poor Chicken-licken, Hen-len, Cock-lock, Duck-luck, Drake-lake, Goose-loose, Gander-lander, and Turkey-lurkey"
+      ]
+    }
+  ],
+  "raw_response": "[{\"verb\":\"going\",\"arguments\":[\"Chicken-licken\",\"the wood\"]},{\"verb\":\"fell\",\"arguments\":[\"an acorn\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Chicken-licken\"]},{\"verb\":\"met\",\"arguments\":[\"Chicken-licken\",\"Hen-len\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Hen-len\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Cock-lock\"]},{\"verb\":\"turned back\",\"arguments\":[\"Cock-lock\"]},{\"verb\":\"met\",\"arguments\":[\"Cock-lock\",\"Duck-luck\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Duck-luck\"]},{\"verb\":\"met\",\"arguments\":[\"Duck-luck\",\"Drake-lake\"]},{\"verb\":\"met\",\"arguments\":[\"Cock-lock\",\"Hen-len\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Drake-lake\"]},{\"verb\":\"met\",\"arguments\":[\"Drake-lake\",\"Goose-loose\"]},{\"verb\":\"met\",\"arguments\":[\"Drake-lake\",\"Duck-luck\"]},{\"verb\":\"met\",\"arguments\":[\"Duck-luck\",\"Cock-lock\"]},{\"verb\":\"met\",\"arguments\":[\"Cock-lock\",\"Hen-len\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Goose-loose\"]},{\"verb\":\"met\",\"arguments\":[\"Goose-loose\",\"Gander-lander\"]},{\"verb\":\"met\",\"arguments\":[\"Goose-loose\",\"Drake-lake\"]},{\"verb\":\"met\",\"arguments\":[\"Drake-lake\",\"Duck-luck\"]},{\"verb\":\"met\",\"arguments\":[\"Duck-luck\",\"Cock-lock\"]},{\"verb\":\"met\",\"arguments\":[\"Cock-lock\",\"Hen-len\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Gander-lander\"]},{\"verb\":\"met\",\"arguments\":[\"Gander-lander\",\"Turkey-lurkey\"]},{\"verb\":\"met\",\"arguments\":[\"Gander-lander\",\"Goose-loose\"]},{\"verb\":\"met\",\"arguments\":[\"Goose-loose\",\"Drake-lake\"]},{\"verb\":\"met\",\"arguments\":[\"Drake-lake\",\"Duck-luck\"]},{\"verb\":\"met\",\"arguments\":[\"Duck-luck\",\"Cock-lock\"]},{\"verb\":\"met\",\"arguments\":[\"Cock-lock\",\"Hen-len\"]},{\"verb\":\"met\",\"arguments\":[\"Hen-len\",\"Chicken-licken\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"turned back\",\"arguments\":[\"Turkey-lurkey\"]},{\"verb\":\"met\",\"arguments\":[\"Turkey-lurkey, Gander-lander, Goose-loose, Drake-lake, Duck-luck, Cock-lock, Hen-len, and Chicken-licken\",\"Fox-lox\"]},{\"verb\":\"went\",\"arguments\":[\"Chicken-licken\",\"the wood\"]},{\"verb\":\"fell\",\"arguments\":[\"the sky\",\"Chicken-licken's head\"]},{\"verb\":\"took\",\"arguments\":[\"Fox-lox\",\"Turkey-lurkey, Gander-lander, Goose-loose, Drake-lake, Duck-luck, Cock-lock, Hen-len, and Chicken-licken\",\"the fox's hole\"]},{\"verb\":\"ate up\",\"arguments\":[\"Fox-lox and Fox-lox's young ones\",\"poor Chicken-licken, Hen-len, Cock-lock, Duck-luck, Drake-lake, Goose-loose, Gander-lander, and Turkey-lurkey\"]}]",
+  "usage": {
+    "input_tokens": 14060,
+    "cached_input_tokens": 8960,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7025,
+    "reasoning_output_tokens": 6214
+  },
+  "response_time_seconds": 132.98861964300158
+}

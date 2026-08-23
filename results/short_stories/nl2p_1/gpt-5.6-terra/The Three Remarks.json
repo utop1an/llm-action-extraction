@@ -1,0 +1,293 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Three Remarks",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_1",
+  "content_words": 2297,
+  "action_count": 47,
+  "actions": [
+    {
+      "verb": "knelt",
+      "arguments": []
+    },
+    {
+      "verb": "hung up",
+      "arguments": [
+        "their armor"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the vows"
+      ]
+    },
+    {
+      "verb": "flogging",
+      "arguments": [
+        "themselves"
+      ]
+    },
+    {
+      "verb": "wearing",
+      "arguments": [
+        "hair shirts"
+      ]
+    },
+    {
+      "verb": "putting",
+      "arguments": [
+        "dry toast-crumbs"
+      ]
+    },
+    {
+      "verb": "slipped down",
+      "arguments": []
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the back door"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": []
+    },
+    {
+      "verb": "wandered",
+      "arguments": []
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a fair city"
+      ]
+    },
+    {
+      "verb": "flinging",
+      "arguments": [
+        "caps"
+      ]
+    },
+    {
+      "verb": "polished up",
+      "arguments": [
+        "the crown"
+      ]
+    },
+    {
+      "verb": "put",
+      "arguments": [
+        "a new tip"
+      ]
+    },
+    {
+      "verb": "spoiled",
+      "arguments": [
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "leading",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "was led",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "made",
+      "arguments": [
+        "a graceful courtesy"
+      ]
+    },
+    {
+      "verb": "dropped",
+      "arguments": [
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the sceptre"
+      ]
+    },
+    {
+      "verb": "laid by",
+      "arguments": [
+        "a little money"
+      ]
+    },
+    {
+      "verb": "descending",
+      "arguments": []
+    },
+    {
+      "verb": "closing",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the rubies"
+      ]
+    },
+    {
+      "verb": "departed",
+      "arguments": []
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "pursued",
+      "arguments": [
+        "her journey"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a deep forest"
+      ]
+    },
+    {
+      "verb": "entered",
+      "arguments": [
+        "a deep forest"
+      ]
+    },
+    {
+      "verb": "stopped",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "lowered",
+      "arguments": [
+        "their weapons"
+      ]
+    },
+    {
+      "verb": "led",
+      "arguments": [
+        "the princess"
+      ]
+    },
+    {
+      "verb": "reached",
+      "arguments": [
+        "an open glade"
+      ]
+    },
+    {
+      "verb": "sprang to",
+      "arguments": [
+        "his feet"
+      ]
+    },
+    {
+      "verb": "staggered against",
+      "arguments": [
+        "a tree"
+      ]
+    },
+    {
+      "verb": "drawing",
+      "arguments": [
+        "a bag containing ten thousand sapphires"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "the bag of sapphires"
+      ]
+    },
+    {
+      "verb": "followed",
+      "arguments": [
+        "their leader"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "the open country"
+      ]
+    },
+    {
+      "verb": "returned",
+      "arguments": [
+        "his band"
+      ]
+    },
+    {
+      "verb": "came to",
+      "arguments": [
+        "a fair high palace"
+      ]
+    },
+    {
+      "verb": "opened",
+      "arguments": [
+        "the palace-gates"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "a ruby"
+      ]
+    },
+    {
+      "verb": "took",
+      "arguments": [
+        "a sapphire"
+      ]
+    },
+    {
+      "verb": "handed",
+      "arguments": [
+        "a ruby",
+        "a sapphire"
+      ]
+    },
+    {
+      "verb": "fell on",
+      "arguments": [
+        "his knees"
+      ]
+    },
+    {
+      "verb": "giving",
+      "arguments": [
+        "her little white hand"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"knelt\",\"arguments\":[]},\n  {\"verb\":\"hung up\",\"arguments\":[\"their armor\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the vows\"]},\n  {\"verb\":\"flogging\",\"arguments\":[\"themselves\"]},\n  {\"verb\":\"wearing\",\"arguments\":[\"hair shirts\"]},\n  {\"verb\":\"putting\",\"arguments\":[\"dry toast-crumbs\"]},\n  {\"verb\":\"slipped down\",\"arguments\":[]},\n  {\"verb\":\"opened\",\"arguments\":[\"the back door\"]},\n  {\"verb\":\"ran away\",\"arguments\":[]},\n  {\"verb\":\"wandered\",\"arguments\":[]},\n  {\"verb\":\"came to\",\"arguments\":[\"a fair city\"]},\n  {\"verb\":\"flinging\",\"arguments\":[\"caps\"]},\n  {\"verb\":\"polished up\",\"arguments\":[\"the crown\"]},\n  {\"verb\":\"put\",\"arguments\":[\"a new tip\"]},\n  {\"verb\":\"spoiled\",\"arguments\":[\"the sceptre\"]},\n  {\"verb\":\"leading\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"was led\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"made\",\"arguments\":[\"a graceful courtesy\"]},\n  {\"verb\":\"dropped\",\"arguments\":[\"the sceptre\"]},\n  {\"verb\":\"fell\",\"arguments\":[\"the sceptre\"]},\n  {\"verb\":\"laid by\",\"arguments\":[\"a little money\"]},\n  {\"verb\":\"descending\",\"arguments\":[]},\n  {\"verb\":\"closing\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the rubies\"]},\n  {\"verb\":\"departed\",\"arguments\":[]},\n  {\"verb\":\"followed\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"pursued\",\"arguments\":[\"her journey\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"a deep forest\"]},\n  {\"verb\":\"entered\",\"arguments\":[\"a deep forest\"]},\n  {\"verb\":\"stopped\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"lowered\",\"arguments\":[\"their weapons\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"an open glade\"]},\n  {\"verb\":\"sprang to\",\"arguments\":[\"his feet\"]},\n  {\"verb\":\"staggered against\",\"arguments\":[\"a tree\"]},\n  {\"verb\":\"drawing\",\"arguments\":[\"a bag containing ten thousand sapphires\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the bag of sapphires\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"their leader\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"the open country\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"his band\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"a fair high palace\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the palace-gates\"]},\n  {\"verb\":\"took\",\"arguments\":[\"a ruby\"]},\n  {\"verb\":\"took\",\"arguments\":[\"a sapphire\"]},\n  {\"verb\":\"handed\",\"arguments\":[\"a ruby\",\"a sapphire\"]},\n  {\"verb\":\"fell on\",\"arguments\":[\"his knees\"]},\n  {\"verb\":\"giving\",\"arguments\":[\"her little white hand\"]}\n]",
+  "usage": {
+    "input_tokens": 17252,
+    "cached_input_tokens": 9984,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1922,
+    "reasoning_output_tokens": 1292
+  },
+  "response_time_seconds": 37.52883664899855
+}

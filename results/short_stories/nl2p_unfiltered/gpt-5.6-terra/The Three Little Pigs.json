@@ -1,0 +1,438 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Three Little Pigs",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_unfiltered",
+  "content_words": 1320,
+  "action_count": 60,
+  "actions": [
+    {
+      "verb": "failed",
+      "arguments": [
+        "the acorn crop"
+      ]
+    },
+    {
+      "verb": "called",
+      "arguments": [
+        "Mrs. Piggy-wiggy",
+        "her sons"
+      ]
+    },
+    {
+      "verb": "send",
+      "arguments": [
+        "Mrs. Piggy-wiggy",
+        "her three little sons",
+        "the wide world"
+      ]
+    },
+    {
+      "verb": "kissed",
+      "arguments": [
+        "Mrs. Piggy-wiggy",
+        "her three little sons"
+      ]
+    },
+    {
+      "verb": "set out",
+      "arguments": [
+        "the three little pigs",
+        "their travels"
+      ]
+    },
+    {
+      "verb": "taking",
+      "arguments": [
+        "each little pig",
+        "a different road"
+      ]
+    },
+    {
+      "verb": "carrying",
+      "arguments": [
+        "each little pig",
+        "a bundle slung on a stick"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the first little pig",
+        "a man carrying a bundle of straw"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the man",
+        "the bundle of straw",
+        "the first little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the first little pig",
+        "a pretty little house"
+      ]
+    },
+    {
+      "verb": "came along",
+      "arguments": [
+        "a wolf"
+      ]
+    },
+    {
+      "verb": "knocked",
+      "arguments": [
+        "a wolf",
+        "the door"
+      ]
+    },
+    {
+      "verb": "huffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "puffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "blew",
+      "arguments": [
+        "the wolf",
+        "the first little pig's house",
+        "in"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "the wolf",
+        "the first little pig"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the second little pig",
+        "a man"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the second little pig",
+        "a snug little house"
+      ]
+    },
+    {
+      "verb": "came along",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "huffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "puffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "blew",
+      "arguments": [
+        "the wolf",
+        "the second little pig's house",
+        "in"
+      ]
+    },
+    {
+      "verb": "gobbled up",
+      "arguments": [
+        "the wolf",
+        "the second little pig"
+      ]
+    },
+    {
+      "verb": "met",
+      "arguments": [
+        "the third little pig",
+        "a man with a load of bricks and mortar"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the man",
+        "the bricks and mortar",
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the man",
+        "a little trowel",
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the third little pig",
+        "a nice strong little house"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the wolf",
+        "the third little pig's house"
+      ]
+    },
+    {
+      "verb": "huffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "puffed",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "sat down",
+      "arguments": [
+        "the wolf",
+        "outside the little pig's house"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": [
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "scampered away",
+      "arguments": [
+        "the third little pig",
+        "the field"
+      ]
+    },
+    {
+      "verb": "brought home",
+      "arguments": [
+        "the third little pig",
+        "a fine load of turnips",
+        "home"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the wolf",
+        "the third little pig's house"
+      ]
+    },
+    {
+      "verb": "boiling",
+      "arguments": [
+        "the third little pig",
+        "a potful of turnips"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": [
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "was off and away",
+      "arguments": [
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "climb",
+      "arguments": [
+        "the third little pig",
+        "the tree"
+      ]
+    },
+    {
+      "verb": "brought",
+      "arguments": [
+        "the third little pig",
+        "a sack"
+      ]
+    },
+    {
+      "verb": "picked",
+      "arguments": [
+        "the third little pig",
+        "an apple"
+      ]
+    },
+    {
+      "verb": "threw",
+      "arguments": [
+        "the third little pig",
+        "an apple",
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "running",
+      "arguments": [
+        "the wolf",
+        "the apple"
+      ]
+    },
+    {
+      "verb": "jump down",
+      "arguments": [
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "scamper away",
+      "arguments": [
+        "the third little pig",
+        "home"
+      ]
+    },
+    {
+      "verb": "started",
+      "arguments": [
+        "the third little pig"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the third little pig",
+        "the fair"
+      ]
+    },
+    {
+      "verb": "bought",
+      "arguments": [
+        "the third little pig",
+        "a fine large butter-churn"
+      ]
+    },
+    {
+      "verb": "crept",
+      "arguments": [
+        "the third little pig",
+        "the churn"
+      ]
+    },
+    {
+      "verb": "started",
+      "arguments": [
+        "the third little pig",
+        "the churn",
+        "rolling"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the churn",
+        "down the hill"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": [
+        "the wolf",
+        "home"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the wolf",
+        "the third little pig's house"
+      ]
+    },
+    {
+      "verb": "hung",
+      "arguments": [
+        "the third little pig",
+        "a pot full of water",
+        "over the hearth"
+      ]
+    },
+    {
+      "verb": "made",
+      "arguments": [
+        "the third little pig",
+        "a blazing fire"
+      ]
+    },
+    {
+      "verb": "took off",
+      "arguments": [
+        "the third little pig",
+        "the cover"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the wolf",
+        "the pot full of water"
+      ]
+    },
+    {
+      "verb": "popped",
+      "arguments": [
+        "the third little pig",
+        "the lid"
+      ]
+    },
+    {
+      "verb": "boiled",
+      "arguments": [
+        "the third little pig",
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "the third little pig",
+        "the wolf"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\n    \"verb\": \"failed\",\n    \"arguments\": [\"the acorn crop\"]\n  },\n  {\n    \"verb\": \"called\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her sons\"]\n  },\n  {\n    \"verb\": \"send\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her three little sons\", \"the wide world\"]\n  },\n  {\n    \"verb\": \"kissed\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her three little sons\"]\n  },\n  {\n    \"verb\": \"set out\",\n    \"arguments\": [\"the three little pigs\", \"their travels\"]\n  },\n  {\n    \"verb\": \"taking\",\n    \"arguments\": [\"each little pig\", \"a different road\"]\n  },\n  {\n    \"verb\": \"carrying\",\n    \"arguments\": [\"each little pig\", \"a bundle slung on a stick\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the first little pig\", \"a man carrying a bundle of straw\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"the bundle of straw\", \"the first little pig\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the first little pig\", \"a pretty little house\"]\n  },\n  {\n    \"verb\": \"came along\",\n    \"arguments\": [\"a wolf\"]\n  },\n  {\n    \"verb\": \"knocked\",\n    \"arguments\": [\"a wolf\", \"the door\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"blew\",\n    \"arguments\": [\"the wolf\", \"the first little pig's house\", \"in\"]\n  },\n  {\n    \"verb\": \"ate up\",\n    \"arguments\": [\"the wolf\", \"the first little pig\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the second little pig\", \"a man\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the second little pig\", \"a snug little house\"]\n  },\n  {\n    \"verb\": \"came along\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"blew\",\n    \"arguments\": [\"the wolf\", \"the second little pig's house\", \"in\"]\n  },\n  {\n    \"verb\": \"gobbled up\",\n    \"arguments\": [\"the wolf\", \"the second little pig\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the third little pig\", \"a man with a load of bricks and mortar\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"the bricks and mortar\", \"the third little pig\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"a little trowel\", \"the third little pig\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the third little pig\", \"a nice strong little house\"]\n  },\n  {\n    \"verb\": \"came\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"sat down\",\n    \"arguments\": [\"the wolf\", \"outside the little pig's house\"]\n  },\n  {\n    \"verb\": \"got up\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"scampered away\",\n    \"arguments\": [\"the third little pig\", \"the field\"]\n  },\n  {\n    \"verb\": \"brought home\",\n    \"arguments\": [\"the third little pig\", \"a fine load of turnips\", \"home\"]\n  },\n  {\n    \"verb\": \"came\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"boiling\",\n    \"arguments\": [\"the third little pig\", \"a potful of turnips\"]\n  },\n  {\n    \"verb\": \"got up\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"was off and away\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"climb\",\n    \"arguments\": [\"the third little pig\", \"the tree\"]\n  },\n  {\n    \"verb\": \"brought\",\n    \"arguments\": [\"the third little pig\", \"a sack\"]\n  },\n  {\n    \"verb\": \"picked\",\n    \"arguments\": [\"the third little pig\", \"an apple\"]\n  },\n  {\n    \"verb\": \"threw\",\n    \"arguments\": [\"the third little pig\", \"an apple\", \"the wolf\"]\n  },\n  {\n    \"verb\": \"running\",\n    \"arguments\": [\"the wolf\", \"the apple\"]\n  },\n  {\n    \"verb\": \"jump down\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"scamper away\",\n    \"arguments\": [\"the third little pig\", \"home\"]\n  },\n  {\n    \"verb\": \"started\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the third little pig\", \"the fair\"]\n  },\n  {\n    \"verb\": \"bought\",\n    \"arguments\": [\"the third little pig\", \"a fine large butter-churn\"]\n  },\n  {\n    \"verb\": \"crept\",\n    \"arguments\": [\"the third little pig\", \"the churn\"]\n  },\n  {\n    \"verb\": \"started\",\n    \"arguments\": [\"the third little pig\", \"the churn\", \"rolling\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the churn\", \"down the hill\"]\n  },\n  {\n    \"verb\": \"ran away\",\n    \"arguments\": [\"the wolf\", \"home\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"hung\",\n    \"arguments\": [\"the third little pig\", \"a pot full of water\", \"over the hearth\"]\n  },\n  {\n    \"verb\": \"made\",\n    \"arguments\": [\"the third little pig\", \"a blazing fire\"]\n  },\n  {\n    \"verb\": \"took off\",\n    \"arguments\": [\"the third little pig\", \"the cover\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": [\"the wolf\", \"the pot full of water\"]\n  },\n  {\n    \"verb\": \"popped\",\n    \"arguments\": [\"the third little pig\", \"the lid\"]\n  },\n  {\n    \"verb\": \"boiled\",\n    \"arguments\": [\"the third little pig\", \"the wolf\"]\n  },\n  {\n    \"verb\": \"ate\",\n    \"arguments\": [\"the third little pig\", \"the wolf\"]\n  }\n]",
+  "usage": {
+    "input_tokens": 16151,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1761,
+    "reasoning_output_tokens": 180
+  },
+  "response_time_seconds": 35.32749998100917
+}

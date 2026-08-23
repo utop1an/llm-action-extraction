@@ -1,0 +1,252 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Three Little Pigs",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_1",
+  "content_words": 1320,
+  "action_count": 41,
+  "actions": [
+    {
+      "verb": "send",
+      "arguments": [
+        "her three little sons"
+      ]
+    },
+    {
+      "verb": "kissed",
+      "arguments": [
+        "her three little sons"
+      ]
+    },
+    {
+      "verb": "set out",
+      "arguments": []
+    },
+    {
+      "verb": "taking",
+      "arguments": [
+        "a different road",
+        "a bundle"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the bundle of straw"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "a pretty little house"
+      ]
+    },
+    {
+      "verb": "knocked",
+      "arguments": [
+        "the door"
+      ]
+    },
+    {
+      "verb": "blew",
+      "arguments": [
+        "the little pig's house"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "a snug little house"
+      ]
+    },
+    {
+      "verb": "blew",
+      "arguments": [
+        "the house"
+      ]
+    },
+    {
+      "verb": "gobbled up",
+      "arguments": [
+        "the second little pig"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the bricks and mortar",
+        "a little trowel"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "a nice strong little house"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": []
+    },
+    {
+      "verb": "scampered away",
+      "arguments": []
+    },
+    {
+      "verb": "brought home",
+      "arguments": [
+        "a fine load of turnips"
+      ]
+    },
+    {
+      "verb": "boiling",
+      "arguments": [
+        "a potful of turnips"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": []
+    },
+    {
+      "verb": "climb",
+      "arguments": [
+        "the tree"
+      ]
+    },
+    {
+      "verb": "filled",
+      "arguments": [
+        "the sack"
+      ]
+    },
+    {
+      "verb": "picked",
+      "arguments": [
+        "an apple"
+      ]
+    },
+    {
+      "verb": "threw",
+      "arguments": [
+        "an apple"
+      ]
+    },
+    {
+      "verb": "jump down",
+      "arguments": []
+    },
+    {
+      "verb": "scamper away",
+      "arguments": []
+    },
+    {
+      "verb": "started",
+      "arguments": []
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the fair"
+      ]
+    },
+    {
+      "verb": "bought",
+      "arguments": [
+        "a fine large butter-churn"
+      ]
+    },
+    {
+      "verb": "crept into",
+      "arguments": [
+        "the churn"
+      ]
+    },
+    {
+      "verb": "started",
+      "arguments": [
+        "the churn"
+      ]
+    },
+    {
+      "verb": "rolled down",
+      "arguments": [
+        "the churn"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": []
+    },
+    {
+      "verb": "got inside",
+      "arguments": [
+        "the butter-churn"
+      ]
+    },
+    {
+      "verb": "rolled down",
+      "arguments": [
+        "the butter-churn"
+      ]
+    },
+    {
+      "verb": "hung",
+      "arguments": [
+        "a pot full of water"
+      ]
+    },
+    {
+      "verb": "made",
+      "arguments": [
+        "a blazing fire"
+      ]
+    },
+    {
+      "verb": "took off",
+      "arguments": [
+        "the cover"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": []
+    },
+    {
+      "verb": "popped",
+      "arguments": [
+        "the lid"
+      ]
+    },
+    {
+      "verb": "boiled",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "the wolf"
+      ]
+    }
+  ],
+  "raw_response": "[\n  {\"verb\":\"send\",\"arguments\":[\"her three little sons\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"her three little sons\"]},\n  {\"verb\":\"set out\",\"arguments\":[]},\n  {\"verb\":\"taking\",\"arguments\":[\"a different road\",\"a bundle\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the bundle of straw\"]},\n  {\"verb\":\"built\",\"arguments\":[\"a pretty little house\"]},\n  {\"verb\":\"knocked\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"blew\",\"arguments\":[\"the little pig's house\"]},\n  {\"verb\":\"ate up\",\"arguments\":[\"the little pig\"]},\n  {\"verb\":\"built\",\"arguments\":[\"a snug little house\"]},\n  {\"verb\":\"blew\",\"arguments\":[\"the house\"]},\n  {\"verb\":\"gobbled up\",\"arguments\":[\"the second little pig\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the bricks and mortar\",\"a little trowel\"]},\n  {\"verb\":\"built\",\"arguments\":[\"a nice strong little house\"]},\n  {\"verb\":\"got up\",\"arguments\":[]},\n  {\"verb\":\"scampered away\",\"arguments\":[]},\n  {\"verb\":\"brought home\",\"arguments\":[\"a fine load of turnips\"]},\n  {\"verb\":\"boiling\",\"arguments\":[\"a potful of turnips\"]},\n  {\"verb\":\"got up\",\"arguments\":[]},\n  {\"verb\":\"climb\",\"arguments\":[\"the tree\"]},\n  {\"verb\":\"filled\",\"arguments\":[\"the sack\"]},\n  {\"verb\":\"picked\",\"arguments\":[\"an apple\"]},\n  {\"verb\":\"threw\",\"arguments\":[\"an apple\"]},\n  {\"verb\":\"jump down\",\"arguments\":[]},\n  {\"verb\":\"scamper away\",\"arguments\":[]},\n  {\"verb\":\"started\",\"arguments\":[]},\n  {\"verb\":\"went\",\"arguments\":[\"the fair\"]},\n  {\"verb\":\"bought\",\"arguments\":[\"a fine large butter-churn\"]},\n  {\"verb\":\"crept into\",\"arguments\":[\"the churn\"]},\n  {\"verb\":\"started\",\"arguments\":[\"the churn\"]},\n  {\"verb\":\"rolled down\",\"arguments\":[\"the churn\"]},\n  {\"verb\":\"ran away\",\"arguments\":[]},\n  {\"verb\":\"got inside\",\"arguments\":[\"the butter-churn\"]},\n  {\"verb\":\"rolled down\",\"arguments\":[\"the butter-churn\"]},\n  {\"verb\":\"hung\",\"arguments\":[\"a pot full of water\"]},\n  {\"verb\":\"made\",\"arguments\":[\"a blazing fire\"]},\n  {\"verb\":\"took off\",\"arguments\":[\"the cover\"]},\n  {\"verb\":\"fell\",\"arguments\":[]},\n  {\"verb\":\"popped\",\"arguments\":[\"the lid\"]},\n  {\"verb\":\"boiled\",\"arguments\":[\"the wolf\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"the wolf\"]}\n]",
+  "usage": {
+    "input_tokens": 16025,
+    "cached_input_tokens": 12032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 814,
+    "reasoning_output_tokens": 257
+  },
+  "response_time_seconds": 17.595016170002054
+}

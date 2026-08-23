@@ -1,0 +1,3462 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "method": "nl2p_unfiltered",
+  "story_count": 6,
+  "total_actions": 471,
+  "results": [
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "Hansel And Gretel",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 2771,
+      "action_count": 138,
+      "actions": [
+        {
+          "verb": "fell upon",
+          "arguments": [
+            "a famine",
+            "the land"
+          ]
+        },
+        {
+          "verb": "buy",
+          "arguments": [
+            "the woodcutter and his wife",
+            "sufficient food"
+          ]
+        },
+        {
+          "verb": "cried aloud",
+          "arguments": [
+            "the poor man"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the wife",
+            "her husband",
+            "no peace"
+          ]
+        },
+        {
+          "verb": "promised",
+          "arguments": [
+            "the woodcutter"
+          ]
+        },
+        {
+          "verb": "consented",
+          "arguments": [
+            "the woodcutter"
+          ]
+        },
+        {
+          "verb": "overheard",
+          "arguments": [
+            "the two children",
+            "all that their parents were saying"
+          ]
+        },
+        {
+          "verb": "wept",
+          "arguments": [
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "comfort",
+          "arguments": [
+            "Hansel",
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "slipped on",
+          "arguments": [
+            "Hansel",
+            "his coat"
+          ]
+        },
+        {
+          "verb": "opening",
+          "arguments": [
+            "Hansel",
+            "the door"
+          ]
+        },
+        {
+          "verb": "went out",
+          "arguments": [
+            "Hansel",
+            "the garden"
+          ]
+        },
+        {
+          "verb": "stooped",
+          "arguments": [
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "filled",
+          "arguments": [
+            "Hansel",
+            "his pockets",
+            "little white pebbles"
+          ]
+        },
+        {
+          "verb": "went back",
+          "arguments": [
+            "Hansel",
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "jumped into",
+          "arguments": [
+            "Hansel",
+            "bed"
+          ]
+        },
+        {
+          "verb": "fell asleep",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "wakened",
+          "arguments": [
+            "the stepmother",
+            "the children"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the stepmother",
+            "the children",
+            "a piece of bread"
+          ]
+        },
+        {
+          "verb": "carried",
+          "arguments": [
+            "Gretel",
+            "the bread",
+            "her pinafore"
+          ]
+        },
+        {
+          "verb": "set out",
+          "arguments": [
+            "the woodcutter, his wife, Hansel, and Gretel",
+            "the wood"
+          ]
+        },
+        {
+          "verb": "turning back",
+          "arguments": [
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "stayed behind",
+          "arguments": [
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "drop",
+          "arguments": [
+            "Hansel",
+            "the pebbles",
+            "the path"
+          ]
+        },
+        {
+          "verb": "reached",
+          "arguments": [
+            "the woodcutter, his wife, Hansel, and Gretel",
+            "the thickest part of the forest"
+          ]
+        },
+        {
+          "verb": "gathered",
+          "arguments": [
+            "Hansel and Gretel",
+            "a pile of brushwood and twigs"
+          ]
+        },
+        {
+          "verb": "kindled",
+          "arguments": [
+            "the woodcutter",
+            "a fire"
+          ]
+        },
+        {
+          "verb": "left",
+          "arguments": [
+            "the parents",
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "sat down",
+          "arguments": [
+            "Hansel and Gretel",
+            "by the fire"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "Hansel and Gretel",
+            "their bread"
+          ]
+        },
+        {
+          "verb": "bound",
+          "arguments": [
+            "the man",
+            "a dry branch",
+            "a tree"
+          ]
+        },
+        {
+          "verb": "fell asleep",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "awoke",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "began to cry",
+          "arguments": [
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "put",
+          "arguments": [
+            "Hansel",
+            "his arms",
+            "around Gretel"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "Hansel",
+            "his little sister",
+            "by the hand"
+          ]
+        },
+        {
+          "verb": "followed",
+          "arguments": [
+            "Hansel and Gretel",
+            "the track of the little white pebbles"
+          ]
+        },
+        {
+          "verb": "came to",
+          "arguments": [
+            "Hansel and Gretel",
+            "their father's house"
+          ]
+        },
+        {
+          "verb": "knocked",
+          "arguments": [
+            "Hansel and Gretel",
+            "the door"
+          ]
+        },
+        {
+          "verb": "open",
+          "arguments": [
+            "the stepmother",
+            "the door"
+          ]
+        },
+        {
+          "verb": "scold",
+          "arguments": [
+            "the stepmother",
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "greeted",
+          "arguments": [
+            "the father",
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "overheard",
+          "arguments": [
+            "the children",
+            "all that was said"
+          ]
+        },
+        {
+          "verb": "stole down",
+          "arguments": [
+            "Hansel",
+            "the door"
+          ]
+        },
+        {
+          "verb": "locked",
+          "arguments": [
+            "the door"
+          ]
+        },
+        {
+          "verb": "bolted",
+          "arguments": [
+            "the door"
+          ]
+        },
+        {
+          "verb": "wakened",
+          "arguments": [
+            "the woman",
+            "the children"
+          ]
+        },
+        {
+          "verb": "giving",
+          "arguments": [
+            "the woman",
+            "the children",
+            "a small piece of bread"
+          ]
+        },
+        {
+          "verb": "crumbled",
+          "arguments": [
+            "Hansel",
+            "his morsel of bread"
+          ]
+        },
+        {
+          "verb": "strewed",
+          "arguments": [
+            "Hansel",
+            "the crumbs",
+            "the path"
+          ]
+        },
+        {
+          "verb": "went on",
+          "arguments": [
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "strewed",
+          "arguments": [
+            "Hansel",
+            "his crumbs"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the woodcutter, the woman, Hansel, and Gretel",
+            "deeper into the wood"
+          ]
+        },
+        {
+          "verb": "kindled",
+          "arguments": [
+            "the parents",
+            "a great fire"
+          ]
+        },
+        {
+          "verb": "divided",
+          "arguments": [
+            "Gretel",
+            "her piece of bread",
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "went to sleep",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "awakened",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "set out",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "the little birds",
+            "the crumbs"
+          ]
+        },
+        {
+          "verb": "traveled",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "Hansel and Gretel",
+            "the berries"
+          ]
+        },
+        {
+          "verb": "lay down",
+          "arguments": [
+            "Hansel and Gretel",
+            "beneath a tree"
+          ]
+        },
+        {
+          "verb": "slept",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "walked",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "noticed",
+          "arguments": [
+            "Hansel and Gretel",
+            "a little snow-white bird"
+          ]
+        },
+        {
+          "verb": "sang",
+          "arguments": [
+            "a little snow-white bird"
+          ]
+        },
+        {
+          "verb": "spread",
+          "arguments": [
+            "the bird",
+            "his wings"
+          ]
+        },
+        {
+          "verb": "flew away",
+          "arguments": [
+            "the bird"
+          ]
+        },
+        {
+          "verb": "followed",
+          "arguments": [
+            "Hansel and Gretel",
+            "the bird"
+          ]
+        },
+        {
+          "verb": "reached",
+          "arguments": [
+            "Hansel and Gretel",
+            "a little house"
+          ]
+        },
+        {
+          "verb": "perched",
+          "arguments": [
+            "the bird",
+            "the roof"
+          ]
+        },
+        {
+          "verb": "built",
+          "arguments": [
+            "the old witch",
+            "the little house",
+            "bread and cakes"
+          ]
+        },
+        {
+          "verb": "stretched out",
+          "arguments": [
+            "Hansel",
+            "his hand"
+          ]
+        },
+        {
+          "verb": "nibble",
+          "arguments": [
+            "Gretel",
+            "one of the window-panes"
+          ]
+        },
+        {
+          "verb": "went on eating",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "flew open",
+          "arguments": [
+            "the door of the cottage"
+          ]
+        },
+        {
+          "verb": "came out",
+          "arguments": [
+            "an old woman",
+            "the cottage"
+          ]
+        },
+        {
+          "verb": "dropped",
+          "arguments": [
+            "Hansel and Gretel",
+            "their food"
+          ]
+        },
+        {
+          "verb": "clung",
+          "arguments": [
+            "Hansel and Gretel",
+            "to each other"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the old woman",
+            "their hands"
+          ]
+        },
+        {
+          "verb": "led",
+          "arguments": [
+            "the old woman",
+            "Hansel and Gretel",
+            "the house"
+          ]
+        },
+        {
+          "verb": "set before",
+          "arguments": [
+            "the old woman",
+            "Hansel and Gretel",
+            "delicious foods"
+          ]
+        },
+        {
+          "verb": "showed",
+          "arguments": [
+            "the old woman",
+            "Hansel and Gretel",
+            "two cosy little white beds"
+          ]
+        },
+        {
+          "verb": "tucked up",
+          "arguments": [
+            "Hansel and Gretel",
+            "in the beds"
+          ]
+        },
+        {
+          "verb": "caught",
+          "arguments": [
+            "the old witch",
+            "little children"
+          ]
+        },
+        {
+          "verb": "entice",
+          "arguments": [
+            "the old witch",
+            "little children",
+            "the little house"
+          ]
+        },
+        {
+          "verb": "cooked",
+          "arguments": [
+            "the old witch",
+            "anyone who came into her power"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "the old witch",
+            "anyone who came into her power"
+          ]
+        },
+        {
+          "verb": "came into",
+          "arguments": [
+            "Hansel and Gretel",
+            "the witch's neighborhood"
+          ]
+        },
+        {
+          "verb": "stood",
+          "arguments": [
+            "the old witch",
+            "beside Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "admired",
+          "arguments": [
+            "the old witch",
+            "their rosy cheeks and soft round limbs"
+          ]
+        },
+        {
+          "verb": "seizing",
+          "arguments": [
+            "the old witch",
+            "Hansel",
+            "by the hand"
+          ]
+        },
+        {
+          "verb": "led",
+          "arguments": [
+            "the old witch",
+            "Hansel",
+            "a little stable"
+          ]
+        },
+        {
+          "verb": "shut up",
+          "arguments": [
+            "the old witch",
+            "Hansel",
+            "a little stable"
+          ]
+        },
+        {
+          "verb": "left",
+          "arguments": [
+            "the old witch",
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "shook",
+          "arguments": [
+            "the old witch",
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "carry",
+          "arguments": [
+            "Gretel",
+            "food and drink",
+            "her brother"
+          ]
+        },
+        {
+          "verb": "fatten",
+          "arguments": [
+            "the old witch",
+            "Hansel"
+          ]
+        },
+        {
+          "verb": "cooked",
+          "arguments": [
+            "Gretel",
+            "the choicest food",
+            "her brother"
+          ]
+        },
+        {
+          "verb": "lived upon",
+          "arguments": [
+            "Gretel",
+            "oyster-shells"
+          ]
+        },
+        {
+          "verb": "visited",
+          "arguments": [
+            "the old woman",
+            "the stable"
+          ]
+        },
+        {
+          "verb": "held out",
+          "arguments": [
+            "Hansel",
+            "a bone"
+          ]
+        },
+        {
+          "verb": "mistook",
+          "arguments": [
+            "the old witch",
+            "the bone",
+            "the boy's finger"
+          ]
+        },
+        {
+          "verb": "filled",
+          "arguments": [
+            "Gretel",
+            "the pot",
+            "water"
+          ]
+        },
+        {
+          "verb": "carried in",
+          "arguments": [
+            "Gretel",
+            "the water"
+          ]
+        },
+        {
+          "verb": "light",
+          "arguments": [
+            "Gretel",
+            "the fire"
+          ]
+        },
+        {
+          "verb": "hang",
+          "arguments": [
+            "Gretel",
+            "the great pot of water",
+            "over the fire"
+          ]
+        },
+        {
+          "verb": "kneaded",
+          "arguments": [
+            "the witch",
+            "the dough"
+          ]
+        },
+        {
+          "verb": "heated",
+          "arguments": [
+            "the witch",
+            "the oven"
+          ]
+        },
+        {
+          "verb": "popped",
+          "arguments": [
+            "the witch",
+            "her head",
+            "into the oven"
+          ]
+        },
+        {
+          "verb": "sprang",
+          "arguments": [
+            "Gretel",
+            "towards the witch"
+          ]
+        },
+        {
+          "verb": "pushed",
+          "arguments": [
+            "Gretel",
+            "the witch",
+            "inside the oven"
+          ]
+        },
+        {
+          "verb": "shut",
+          "arguments": [
+            "Gretel",
+            "the iron door"
+          ]
+        },
+        {
+          "verb": "shot",
+          "arguments": [
+            "Gretel",
+            "the bolt"
+          ]
+        },
+        {
+          "verb": "ran off",
+          "arguments": [
+            "Gretel"
+          ]
+        },
+        {
+          "verb": "ran",
+          "arguments": [
+            "Gretel",
+            "her brother"
+          ]
+        },
+        {
+          "verb": "opening",
+          "arguments": [
+            "Gretel",
+            "the door of the stable"
+          ]
+        },
+        {
+          "verb": "flew from",
+          "arguments": [
+            "Hansel",
+            "his prison"
+          ]
+        },
+        {
+          "verb": "kissed",
+          "arguments": [
+            "Hansel and Gretel",
+            "each other"
+          ]
+        },
+        {
+          "verb": "jumped",
+          "arguments": [
+            "Hansel and Gretel",
+            "for joy"
+          ]
+        },
+        {
+          "verb": "entered",
+          "arguments": [
+            "Hansel and Gretel",
+            "the house"
+          ]
+        },
+        {
+          "verb": "stuffed",
+          "arguments": [
+            "Hansel",
+            "his pockets",
+            "the jewels"
+          ]
+        },
+        {
+          "verb": "filled",
+          "arguments": [
+            "Gretel",
+            "her pinafore",
+            "the jewels"
+          ]
+        },
+        {
+          "verb": "ran",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "came to",
+          "arguments": [
+            "Hansel and Gretel",
+            "a lake"
+          ]
+        },
+        {
+          "verb": "swam",
+          "arguments": [
+            "a large white duck",
+            "the lake"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the duck"
+          ]
+        },
+        {
+          "verb": "taking",
+          "arguments": [
+            "the duck",
+            "Hansel",
+            "upon her back"
+          ]
+        },
+        {
+          "verb": "carried",
+          "arguments": [
+            "the duck",
+            "Hansel",
+            "the other side"
+          ]
+        },
+        {
+          "verb": "carried",
+          "arguments": [
+            "the duck",
+            "Gretel",
+            "the other side"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "found themselves",
+          "arguments": [
+            "Hansel and Gretel",
+            "a part of the wood they knew quite well"
+          ]
+        },
+        {
+          "verb": "began to run",
+          "arguments": [
+            "Hansel and Gretel"
+          ]
+        },
+        {
+          "verb": "rushed",
+          "arguments": [
+            "Hansel and Gretel",
+            "into the cottage"
+          ]
+        },
+        {
+          "verb": "flung themselves",
+          "arguments": [
+            "Hansel and Gretel",
+            "into their father's arms"
+          ]
+        },
+        {
+          "verb": "shook out",
+          "arguments": [
+            "Gretel",
+            "her pinafore"
+          ]
+        },
+        {
+          "verb": "emptied",
+          "arguments": [
+            "Hansel",
+            "his pockets"
+          ]
+        },
+        {
+          "verb": "covered",
+          "arguments": [
+            "the glittering precious stones",
+            "the floor of the little room"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\"verb\":\"fell upon\",\"arguments\":[\"a famine\",\"the land\"]},\n  {\"verb\":\"buy\",\"arguments\":[\"the woodcutter and his wife\",\"sufficient food\"]},\n  {\"verb\":\"cried aloud\",\"arguments\":[\"the poor man\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the wife\",\"her husband\",\"no peace\"]},\n  {\"verb\":\"promised\",\"arguments\":[\"the woodcutter\"]},\n  {\"verb\":\"consented\",\"arguments\":[\"the woodcutter\"]},\n  {\"verb\":\"overheard\",\"arguments\":[\"the two children\",\"all that their parents were saying\"]},\n  {\"verb\":\"wept\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"comfort\",\"arguments\":[\"Hansel\",\"Gretel\"]},\n  {\"verb\":\"slipped on\",\"arguments\":[\"Hansel\",\"his coat\"]},\n  {\"verb\":\"opening\",\"arguments\":[\"Hansel\",\"the door\"]},\n  {\"verb\":\"went out\",\"arguments\":[\"Hansel\",\"the garden\"]},\n  {\"verb\":\"stooped\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"filled\",\"arguments\":[\"Hansel\",\"his pockets\",\"little white pebbles\"]},\n  {\"verb\":\"went back\",\"arguments\":[\"Hansel\",\"Gretel\"]},\n  {\"verb\":\"jumped into\",\"arguments\":[\"Hansel\",\"bed\"]},\n  {\"verb\":\"fell asleep\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"wakened\",\"arguments\":[\"the stepmother\",\"the children\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the stepmother\",\"the children\",\"a piece of bread\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"Gretel\",\"the bread\",\"her pinafore\"]},\n  {\"verb\":\"set out\",\"arguments\":[\"the woodcutter, his wife, Hansel, and Gretel\",\"the wood\"]},\n  {\"verb\":\"turning back\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"stayed behind\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"drop\",\"arguments\":[\"Hansel\",\"the pebbles\",\"the path\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"the woodcutter, his wife, Hansel, and Gretel\",\"the thickest part of the forest\"]},\n  {\"verb\":\"gathered\",\"arguments\":[\"Hansel and Gretel\",\"a pile of brushwood and twigs\"]},\n  {\"verb\":\"kindled\",\"arguments\":[\"the woodcutter\",\"a fire\"]},\n  {\"verb\":\"left\",\"arguments\":[\"the parents\",\"Hansel and Gretel\"]},\n  {\"verb\":\"sat down\",\"arguments\":[\"Hansel and Gretel\",\"by the fire\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"Hansel and Gretel\",\"their bread\"]},\n  {\"verb\":\"bound\",\"arguments\":[\"the man\",\"a dry branch\",\"a tree\"]},\n  {\"verb\":\"fell asleep\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"awoke\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"began to cry\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"put\",\"arguments\":[\"Hansel\",\"his arms\",\"around Gretel\"]},\n  {\"verb\":\"took\",\"arguments\":[\"Hansel\",\"his little sister\",\"by the hand\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"Hansel and Gretel\",\"the track of the little white pebbles\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"Hansel and Gretel\",\"their father's house\"]},\n  {\"verb\":\"knocked\",\"arguments\":[\"Hansel and Gretel\",\"the door\"]},\n  {\"verb\":\"open\",\"arguments\":[\"the stepmother\",\"the door\"]},\n  {\"verb\":\"scold\",\"arguments\":[\"the stepmother\",\"Hansel and Gretel\"]},\n  {\"verb\":\"greeted\",\"arguments\":[\"the father\",\"Hansel and Gretel\"]},\n  {\"verb\":\"overheard\",\"arguments\":[\"the children\",\"all that was said\"]},\n  {\"verb\":\"stole down\",\"arguments\":[\"Hansel\",\"the door\"]},\n  {\"verb\":\"locked\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"bolted\",\"arguments\":[\"the door\"]},\n  {\"verb\":\"wakened\",\"arguments\":[\"the woman\",\"the children\"]},\n  {\"verb\":\"giving\",\"arguments\":[\"the woman\",\"the children\",\"a small piece of bread\"]},\n  {\"verb\":\"crumbled\",\"arguments\":[\"Hansel\",\"his morsel of bread\"]},\n  {\"verb\":\"strewed\",\"arguments\":[\"Hansel\",\"the crumbs\",\"the path\"]},\n  {\"verb\":\"went on\",\"arguments\":[\"Hansel\"]},\n  {\"verb\":\"strewed\",\"arguments\":[\"Hansel\",\"his crumbs\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the woodcutter, the woman, Hansel, and Gretel\",\"deeper into the wood\"]},\n  {\"verb\":\"kindled\",\"arguments\":[\"the parents\",\"a great fire\"]},\n  {\"verb\":\"divided\",\"arguments\":[\"Gretel\",\"her piece of bread\",\"Hansel\"]},\n  {\"verb\":\"went to sleep\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"awakened\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"set out\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"the little birds\",\"the crumbs\"]},\n  {\"verb\":\"traveled\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"Hansel and Gretel\",\"the berries\"]},\n  {\"verb\":\"lay down\",\"arguments\":[\"Hansel and Gretel\",\"beneath a tree\"]},\n  {\"verb\":\"slept\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"walked\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"noticed\",\"arguments\":[\"Hansel and Gretel\",\"a little snow-white bird\"]},\n  {\"verb\":\"sang\",\"arguments\":[\"a little snow-white bird\"]},\n  {\"verb\":\"spread\",\"arguments\":[\"the bird\",\"his wings\"]},\n  {\"verb\":\"flew away\",\"arguments\":[\"the bird\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"Hansel and Gretel\",\"the bird\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"Hansel and Gretel\",\"a little house\"]},\n  {\"verb\":\"perched\",\"arguments\":[\"the bird\",\"the roof\"]},\n  {\"verb\":\"built\",\"arguments\":[\"the old witch\",\"the little house\",\"bread and cakes\"]},\n  {\"verb\":\"stretched out\",\"arguments\":[\"Hansel\",\"his hand\"]},\n  {\"verb\":\"nibble\",\"arguments\":[\"Gretel\",\"one of the window-panes\"]},\n  {\"verb\":\"went on eating\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"flew open\",\"arguments\":[\"the door of the cottage\"]},\n  {\"verb\":\"came out\",\"arguments\":[\"an old woman\",\"the cottage\"]},\n  {\"verb\":\"dropped\",\"arguments\":[\"Hansel and Gretel\",\"their food\"]},\n  {\"verb\":\"clung\",\"arguments\":[\"Hansel and Gretel\",\"to each other\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the old woman\",\"their hands\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the old woman\",\"Hansel and Gretel\",\"the house\"]},\n  {\"verb\":\"set before\",\"arguments\":[\"the old woman\",\"Hansel and Gretel\",\"delicious foods\"]},\n  {\"verb\":\"showed\",\"arguments\":[\"the old woman\",\"Hansel and Gretel\",\"two cosy little white beds\"]},\n  {\"verb\":\"tucked up\",\"arguments\":[\"Hansel and Gretel\",\"in the beds\"]},\n  {\"verb\":\"caught\",\"arguments\":[\"the old witch\",\"little children\"]},\n  {\"verb\":\"entice\",\"arguments\":[\"the old witch\",\"little children\",\"the little house\"]},\n  {\"verb\":\"cooked\",\"arguments\":[\"the old witch\",\"anyone who came into her power\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"the old witch\",\"anyone who came into her power\"]},\n  {\"verb\":\"came into\",\"arguments\":[\"Hansel and Gretel\",\"the witch's neighborhood\"]},\n  {\"verb\":\"stood\",\"arguments\":[\"the old witch\",\"beside Hansel and Gretel\"]},\n  {\"verb\":\"admired\",\"arguments\":[\"the old witch\",\"their rosy cheeks and soft round limbs\"]},\n  {\"verb\":\"seizing\",\"arguments\":[\"the old witch\",\"Hansel\",\"by the hand\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the old witch\",\"Hansel\",\"a little stable\"]},\n  {\"verb\":\"shut up\",\"arguments\":[\"the old witch\",\"Hansel\",\"a little stable\"]},\n  {\"verb\":\"left\",\"arguments\":[\"the old witch\",\"Hansel\"]},\n  {\"verb\":\"shook\",\"arguments\":[\"the old witch\",\"Gretel\"]},\n  {\"verb\":\"carry\",\"arguments\":[\"Gretel\",\"food and drink\",\"her brother\"]},\n  {\"verb\":\"fatten\",\"arguments\":[\"the old witch\",\"Hansel\"]},\n  {\"verb\":\"cooked\",\"arguments\":[\"Gretel\",\"the choicest food\",\"her brother\"]},\n  {\"verb\":\"lived upon\",\"arguments\":[\"Gretel\",\"oyster-shells\"]},\n  {\"verb\":\"visited\",\"arguments\":[\"the old woman\",\"the stable\"]},\n  {\"verb\":\"held out\",\"arguments\":[\"Hansel\",\"a bone\"]},\n  {\"verb\":\"mistook\",\"arguments\":[\"the old witch\",\"the bone\",\"the boy's finger\"]},\n  {\"verb\":\"filled\",\"arguments\":[\"Gretel\",\"the pot\",\"water\"]},\n  {\"verb\":\"carried in\",\"arguments\":[\"Gretel\",\"the water\"]},\n  {\"verb\":\"light\",\"arguments\":[\"Gretel\",\"the fire\"]},\n  {\"verb\":\"hang\",\"arguments\":[\"Gretel\",\"the great pot of water\",\"over the fire\"]},\n  {\"verb\":\"kneaded\",\"arguments\":[\"the witch\",\"the dough\"]},\n  {\"verb\":\"heated\",\"arguments\":[\"the witch\",\"the oven\"]},\n  {\"verb\":\"popped\",\"arguments\":[\"the witch\",\"her head\",\"into the oven\"]},\n  {\"verb\":\"sprang\",\"arguments\":[\"Gretel\",\"towards the witch\"]},\n  {\"verb\":\"pushed\",\"arguments\":[\"Gretel\",\"the witch\",\"inside the oven\"]},\n  {\"verb\":\"shut\",\"arguments\":[\"Gretel\",\"the iron door\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"Gretel\",\"the bolt\"]},\n  {\"verb\":\"ran off\",\"arguments\":[\"Gretel\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Gretel\",\"her brother\"]},\n  {\"verb\":\"opening\",\"arguments\":[\"Gretel\",\"the door of the stable\"]},\n  {\"verb\":\"flew from\",\"arguments\":[\"Hansel\",\"his prison\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"Hansel and Gretel\",\"each other\"]},\n  {\"verb\":\"jumped\",\"arguments\":[\"Hansel and Gretel\",\"for joy\"]},\n  {\"verb\":\"entered\",\"arguments\":[\"Hansel and Gretel\",\"the house\"]},\n  {\"verb\":\"stuffed\",\"arguments\":[\"Hansel\",\"his pockets\",\"the jewels\"]},\n  {\"verb\":\"filled\",\"arguments\":[\"Gretel\",\"her pinafore\",\"the jewels\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"came to\",\"arguments\":[\"Hansel and Gretel\",\"a lake\"]},\n  {\"verb\":\"swam\",\"arguments\":[\"a large white duck\",\"the lake\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the duck\"]},\n  {\"verb\":\"taking\",\"arguments\":[\"the duck\",\"Hansel\",\"upon her back\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the duck\",\"Hansel\",\"the other side\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the duck\",\"Gretel\",\"the other side\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"found themselves\",\"arguments\":[\"Hansel and Gretel\",\"a part of the wood they knew quite well\"]},\n  {\"verb\":\"began to run\",\"arguments\":[\"Hansel and Gretel\"]},\n  {\"verb\":\"rushed\",\"arguments\":[\"Hansel and Gretel\",\"into the cottage\"]},\n  {\"verb\":\"flung themselves\",\"arguments\":[\"Hansel and Gretel\",\"into their father's arms\"]},\n  {\"verb\":\"shook out\",\"arguments\":[\"Gretel\",\"her pinafore\"]},\n  {\"verb\":\"emptied\",\"arguments\":[\"Hansel\",\"his pockets\"]},\n  {\"verb\":\"covered\",\"arguments\":[\"the glittering precious stones\",\"the floor of the little room\"]}\n]",
+      "usage": {
+        "input_tokens": 17953,
+        "cached_input_tokens": 9984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2780,
+        "reasoning_output_tokens": 207
+      },
+      "response_time_seconds": 53.47428891499294
+    },
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "Chicken-Licken",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 610,
+      "action_count": 21,
+      "actions": [
+        {
+          "verb": "going",
+          "arguments": [
+            "Chicken-licken",
+            "the wood"
+          ]
+        },
+        {
+          "verb": "fell",
+          "arguments": [
+            "an acorn",
+            "his head"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Chicken-licken"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Chicken-licken",
+            "Hen-len"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Hen-len"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Hen-len",
+            "Cock-lock"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Cock-lock"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Cock-lock",
+            "Duck-luck"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Duck-luck"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Duck-luck",
+            "Drake-lake"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Drake-lake"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Drake-lake",
+            "Goose-loose"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Goose-loose"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Goose-loose",
+            "Gander-lander"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Gander-lander"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Gander-lander",
+            "Turkey-lurkey"
+          ]
+        },
+        {
+          "verb": "turned back",
+          "arguments": [
+            "Turkey-lurkey"
+          ]
+        },
+        {
+          "verb": "walked with",
+          "arguments": [
+            "Turkey-lurkey",
+            "Gander-lander",
+            "Goose-loose",
+            "Drake-lake",
+            "Duck-luck",
+            "Cock-lock",
+            "Hen-len",
+            "Chicken-licken"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Turkey-lurkey",
+            "Gander-lander",
+            "Goose-loose",
+            "Drake-lake",
+            "Duck-luck",
+            "Cock-lock",
+            "Hen-len",
+            "Chicken-licken",
+            "Fox-lox"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "Fox-lox",
+            "Chicken-licken",
+            "Hen-len",
+            "Cock-lock",
+            "Duck-luck",
+            "Drake-lake",
+            "Goose-loose",
+            "Gander-lander",
+            "Turkey-lurkey",
+            "the fox's hole"
+          ]
+        },
+        {
+          "verb": "ate up",
+          "arguments": [
+            "Fox-lox",
+            "his young ones",
+            "poor Chicken-licken",
+            "Hen-len",
+            "Cock-lock",
+            "Duck-luck",
+            "Drake-lake",
+            "Goose-loose",
+            "Gander-lander",
+            "Turkey-lurkey"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\n    \"verb\": \"going\",\n    \"arguments\": [\"Chicken-licken\", \"the wood\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": [\"an acorn\", \"his head\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Chicken-licken\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Chicken-licken\", \"Hen-len\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Hen-len\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Hen-len\", \"Cock-lock\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Cock-lock\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Cock-lock\", \"Duck-luck\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Duck-luck\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Duck-luck\", \"Drake-lake\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Drake-lake\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Drake-lake\", \"Goose-loose\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Goose-loose\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Goose-loose\", \"Gander-lander\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Gander-lander\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Gander-lander\", \"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"turned back\",\n    \"arguments\": [\"Turkey-lurkey\"]\n  },\n  {\n    \"verb\": \"walked with\",\n    \"arguments\": [\"Turkey-lurkey\", \"Gander-lander\", \"Goose-loose\", \"Drake-lake\", \"Duck-luck\", \"Cock-lock\", \"Hen-len\", \"Chicken-licken\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"Turkey-lurkey\", \"Gander-lander\", \"Goose-loose\", \"Drake-lake\", \"Duck-luck\", \"Cock-lock\", \"Hen-len\", \"Chicken-licken\", \"Fox-lox\"]\n  },\n  {\n    \"verb\": \"took\",\n    \"arguments\": [\"Fox-lox\", \"Chicken-licken\", \"Hen-len\", \"Cock-lock\", \"Duck-luck\", \"Drake-lake\", \"Goose-loose\", \"Gander-lander\", \"Turkey-lurkey\", \"the fox's hole\"]\n  },\n  {\n    \"verb\": \"ate up\",\n    \"arguments\": [\"Fox-lox\", \"his young ones\", \"poor Chicken-licken\", \"Hen-len\", \"Cock-lock\", \"Duck-luck\", \"Drake-lake\", \"Goose-loose\", \"Gander-lander\", \"Turkey-lurkey\"]\n  }\n]",
+      "usage": {
+        "input_tokens": 15508,
+        "cached_input_tokens": 12032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1186,
+        "reasoning_output_tokens": 516
+      },
+      "response_time_seconds": 24.874578755989205
+    },
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "Jack And The Beanstalk",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 1844,
+      "action_count": 115,
+      "actions": [
+        {
+          "verb": "sold",
+          "arguments": [
+            "Almost all the furniture of the little cottage"
+          ]
+        },
+        {
+          "verb": "buy",
+          "arguments": [
+            "bread"
+          ]
+        },
+        {
+          "verb": "remained",
+          "arguments": [
+            "the good cow, Milky White"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "Milky White",
+            "milk"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "they",
+            "milk",
+            "market"
+          ]
+        },
+        {
+          "verb": "sold",
+          "arguments": [
+            "they",
+            "milk"
+          ]
+        },
+        {
+          "verb": "sell",
+          "arguments": [
+            "Jack",
+            "Milky White"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "Jack",
+            "the market"
+          ]
+        },
+        {
+          "verb": "jumped",
+          "arguments": [
+            "Jack",
+            "her back"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "Jack",
+            "a butcher"
+          ]
+        },
+        {
+          "verb": "going",
+          "arguments": [
+            "Jack",
+            "market"
+          ]
+        },
+        {
+          "verb": "sell",
+          "arguments": [
+            "Jack",
+            "the cow"
+          ]
+        },
+        {
+          "verb": "put",
+          "arguments": [
+            "the butcher",
+            "his hand",
+            "his pocket"
+          ]
+        },
+        {
+          "verb": "pulled out",
+          "arguments": [
+            "the butcher",
+            "five curious-looking beans"
+          ]
+        },
+        {
+          "verb": "plant",
+          "arguments": [
+            "them"
+          ]
+        },
+        {
+          "verb": "grow up",
+          "arguments": [
+            "they"
+          ]
+        },
+        {
+          "verb": "reach",
+          "arguments": [
+            "they",
+            "the sky"
+          ]
+        },
+        {
+          "verb": "exchanging",
+          "arguments": [
+            "the butcher",
+            "them",
+            "that cow of yours"
+          ]
+        },
+        {
+          "verb": "ran",
+          "arguments": [
+            "Jack",
+            "all the way home"
+          ]
+        },
+        {
+          "verb": "threw",
+          "arguments": [
+            "the poor widow",
+            "the beans",
+            "the garden"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "Jack",
+            "bed"
+          ]
+        },
+        {
+          "verb": "cried",
+          "arguments": [
+            "Jack"
+          ]
+        },
+        {
+          "verb": "woke up",
+          "arguments": [
+            "Jack"
+          ]
+        },
+        {
+          "verb": "jumped out of",
+          "arguments": [
+            "Jack",
+            "bed"
+          ]
+        },
+        {
+          "verb": "ran",
+          "arguments": [
+            "Jack",
+            "the window"
+          ]
+        },
+        {
+          "verb": "growing",
+          "arguments": [
+            "a great beanstalk",
+            "the ground beside his window"
+          ]
+        },
+        {
+          "verb": "stretched",
+          "arguments": [
+            "a great beanstalk",
+            "the sky"
+          ]
+        },
+        {
+          "verb": "stepped out of",
+          "arguments": [
+            "Jack",
+            "the window"
+          ]
+        },
+        {
+          "verb": "began to climb",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "climbed",
+          "arguments": [
+            "Jack"
+          ]
+        },
+        {
+          "verb": "ended",
+          "arguments": [
+            "the stalk"
+          ]
+        },
+        {
+          "verb": "found himself",
+          "arguments": [
+            "Jack",
+            "a new and beautiful country"
+          ]
+        },
+        {
+          "verb": "standing",
+          "arguments": [
+            "a beautiful maiden",
+            "beside him"
+          ]
+        },
+        {
+          "verb": "had been slain",
+          "arguments": [
+            "his father, a gallant knight",
+            "the giant"
+          ]
+        },
+        {
+          "verb": "lived",
+          "arguments": [
+            "the giant",
+            "yonder castle"
+          ]
+        },
+        {
+          "verb": "disappeared",
+          "arguments": [
+            "she"
+          ]
+        },
+        {
+          "verb": "drew near",
+          "arguments": [
+            "Jack",
+            "the castle"
+          ]
+        },
+        {
+          "verb": "standing",
+          "arguments": [
+            "the giant's wife",
+            "the door"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "Jack",
+            "inside"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the giant's wife",
+            "Jack",
+            "a good breakfast"
+          ]
+        },
+        {
+          "verb": "lifted",
+          "arguments": [
+            "the giantess",
+            "Jack"
+          ]
+        },
+        {
+          "verb": "popped",
+          "arguments": [
+            "the giantess",
+            "Jack",
+            "the empty kettle"
+          ]
+        },
+        {
+          "verb": "opened",
+          "arguments": [
+            "the giant's wife",
+            "the door"
+          ]
+        },
+        {
+          "verb": "sat down",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "ate up",
+          "arguments": [
+            "the giant",
+            "the greater part of the ox"
+          ]
+        },
+        {
+          "verb": "brought",
+          "arguments": [
+            "his wife",
+            "two full bags of gold",
+            "the giant"
+          ]
+        },
+        {
+          "verb": "began to count",
+          "arguments": [
+            "the giant",
+            "his money"
+          ]
+        },
+        {
+          "verb": "began to snore",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "crept out",
+          "arguments": [
+            "Jack",
+            "the empty kettle"
+          ]
+        },
+        {
+          "verb": "snatched up",
+          "arguments": [
+            "Jack",
+            "the two bags"
+          ]
+        },
+        {
+          "verb": "barked",
+          "arguments": [
+            "the giant's dog"
+          ]
+        },
+        {
+          "verb": "made his way down",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "awoke",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "climbed up",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "got to",
+          "arguments": [
+            "Jack",
+            "the top of the beanstalk"
+          ]
+        },
+        {
+          "verb": "allowed",
+          "arguments": [
+            "the giantess",
+            "Jack",
+            "the kitchen"
+          ]
+        },
+        {
+          "verb": "set before",
+          "arguments": [
+            "the giantess",
+            "Jack",
+            "enough breakfast to last him a week"
+          ]
+        },
+        {
+          "verb": "bundle",
+          "arguments": [
+            "the giantess",
+            "Jack",
+            "the oven"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the giant",
+            "the room"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "the giant",
+            "a roasted bullock"
+          ]
+        },
+        {
+          "verb": "brought in",
+          "arguments": [
+            "the giantess",
+            "a little brown hen"
+          ]
+        },
+        {
+          "verb": "placed",
+          "arguments": [
+            "the giantess",
+            "a little brown hen",
+            "the table"
+          ]
+        },
+        {
+          "verb": "laid",
+          "arguments": [
+            "the hen",
+            "a golden egg"
+          ]
+        },
+        {
+          "verb": "laid",
+          "arguments": [
+            "the hen",
+            "another golden egg"
+          ]
+        },
+        {
+          "verb": "laid",
+          "arguments": [
+            "the hen",
+            "a third golden egg"
+          ]
+        },
+        {
+          "verb": "stretched himself out",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "began to snore",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "crept out of",
+          "arguments": [
+            "Jack",
+            "the oven"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "Jack",
+            "the table"
+          ]
+        },
+        {
+          "verb": "snatched up",
+          "arguments": [
+            "Jack",
+            "the little brown hen"
+          ]
+        },
+        {
+          "verb": "made a dash for",
+          "arguments": [
+            "Jack",
+            "the door"
+          ]
+        },
+        {
+          "verb": "began to cackle",
+          "arguments": [
+            "the hen"
+          ]
+        },
+        {
+          "verb": "began to wake up",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "escaped",
+          "arguments": [
+            "Jack",
+            "the castle"
+          ]
+        },
+        {
+          "verb": "climbed down",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "got",
+          "arguments": [
+            "Jack",
+            "his mother's cottage"
+          ]
+        },
+        {
+          "verb": "laid",
+          "arguments": [
+            "the little brown hen",
+            "so many golden eggs"
+          ]
+        },
+        {
+          "verb": "crept out of",
+          "arguments": [
+            "Jack",
+            "the window"
+          ]
+        },
+        {
+          "verb": "climbed up",
+          "arguments": [
+            "Jack"
+          ]
+        },
+        {
+          "verb": "reached",
+          "arguments": [
+            "Jack",
+            "the top"
+          ]
+        },
+        {
+          "verb": "crept round",
+          "arguments": [
+            "Jack",
+            "the back of the castle"
+          ]
+        },
+        {
+          "verb": "went out",
+          "arguments": [
+            "the giant's wife"
+          ]
+        },
+        {
+          "verb": "slipped into",
+          "arguments": [
+            "Jack",
+            "the kitchen"
+          ]
+        },
+        {
+          "verb": "hid",
+          "arguments": [
+            "Jack",
+            "himself",
+            "the oven"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "sat down",
+          "arguments": [
+            "the giant",
+            "breakfast"
+          ]
+        },
+        {
+          "verb": "got up",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "looked in",
+          "arguments": [
+            "the giant",
+            "the kettle"
+          ]
+        },
+        {
+          "verb": "finished",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "brought in",
+          "arguments": [
+            "she",
+            "the golden harp"
+          ]
+        },
+        {
+          "verb": "placed",
+          "arguments": [
+            "she",
+            "the golden harp",
+            "the table"
+          ]
+        },
+        {
+          "verb": "began to sing",
+          "arguments": [
+            "the harp",
+            "the most beautiful songs"
+          ]
+        },
+        {
+          "verb": "fell fast asleep",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "crept out of",
+          "arguments": [
+            "Jack",
+            "the oven"
+          ]
+        },
+        {
+          "verb": "going",
+          "arguments": [
+            "Jack",
+            "the table"
+          ]
+        },
+        {
+          "verb": "seized hold of",
+          "arguments": [
+            "Jack",
+            "the golden harp"
+          ]
+        },
+        {
+          "verb": "called out",
+          "arguments": [
+            "the harp"
+          ]
+        },
+        {
+          "verb": "woke up",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "running out of",
+          "arguments": [
+            "Jack",
+            "the kitchen-door"
+          ]
+        },
+        {
+          "verb": "seized",
+          "arguments": [
+            "the giant",
+            "his oak-tree club"
+          ]
+        },
+        {
+          "verb": "dashed after",
+          "arguments": [
+            "the giant",
+            "Jack"
+          ]
+        },
+        {
+          "verb": "held",
+          "arguments": [
+            "Jack",
+            "the harp"
+          ]
+        },
+        {
+          "verb": "ran",
+          "arguments": [
+            "Jack"
+          ]
+        },
+        {
+          "verb": "gained on",
+          "arguments": [
+            "the giant",
+            "Jack"
+          ]
+        },
+        {
+          "verb": "slipped over",
+          "arguments": [
+            "the giant",
+            "a boulder"
+          ]
+        },
+        {
+          "verb": "picked himself up",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "began to climb down",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "arrived",
+          "arguments": [
+            "the giant",
+            "the edge"
+          ]
+        },
+        {
+          "verb": "began to climb down",
+          "arguments": [
+            "the giant",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "saw",
+          "arguments": [
+            "Jack",
+            "him"
+          ]
+        },
+        {
+          "verb": "hurried out",
+          "arguments": [
+            "the widow",
+            "a chopper"
+          ]
+        },
+        {
+          "verb": "reached",
+          "arguments": [
+            "Jack",
+            "the ground"
+          ]
+        },
+        {
+          "verb": "cut",
+          "arguments": [
+            "Jack",
+            "the beanstalk"
+          ]
+        },
+        {
+          "verb": "came down",
+          "arguments": [
+            "the giant"
+          ]
+        },
+        {
+          "verb": "grew",
+          "arguments": [
+            "Jack and his mother",
+            "very rich"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\"verb\":\"sold\",\"arguments\":[\"Almost all the furniture of the little cottage\"]},\n  {\"verb\":\"buy\",\"arguments\":[\"bread\"]},\n  {\"verb\":\"remained\",\"arguments\":[\"the good cow, Milky White\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"Milky White\",\"milk\"]},\n  {\"verb\":\"took\",\"arguments\":[\"they\",\"milk\",\"market\"]},\n  {\"verb\":\"sold\",\"arguments\":[\"they\",\"milk\"]},\n  {\"verb\":\"sell\",\"arguments\":[\"Jack\",\"Milky White\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"the market\"]},\n  {\"verb\":\"jumped\",\"arguments\":[\"Jack\",\"her back\"]},\n  {\"verb\":\"met\",\"arguments\":[\"Jack\",\"a butcher\"]},\n  {\"verb\":\"going\",\"arguments\":[\"Jack\",\"market\"]},\n  {\"verb\":\"sell\",\"arguments\":[\"Jack\",\"the cow\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the butcher\",\"his hand\",\"his pocket\"]},\n  {\"verb\":\"pulled out\",\"arguments\":[\"the butcher\",\"five curious-looking beans\"]},\n  {\"verb\":\"plant\",\"arguments\":[\"them\"]},\n  {\"verb\":\"grow up\",\"arguments\":[\"they\"]},\n  {\"verb\":\"reach\",\"arguments\":[\"they\",\"the sky\"]},\n  {\"verb\":\"exchanging\",\"arguments\":[\"the butcher\",\"them\",\"that cow of yours\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\",\"all the way home\"]},\n  {\"verb\":\"threw\",\"arguments\":[\"the poor widow\",\"the beans\",\"the garden\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"bed\"]},\n  {\"verb\":\"cried\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"woke up\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"jumped out of\",\"arguments\":[\"Jack\",\"bed\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"growing\",\"arguments\":[\"a great beanstalk\",\"the ground beside his window\"]},\n  {\"verb\":\"stretched\",\"arguments\":[\"a great beanstalk\",\"the sky\"]},\n  {\"verb\":\"stepped out of\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"began to climb\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"climbed\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"ended\",\"arguments\":[\"the stalk\"]},\n  {\"verb\":\"found himself\",\"arguments\":[\"Jack\",\"a new and beautiful country\"]},\n  {\"verb\":\"standing\",\"arguments\":[\"a beautiful maiden\",\"beside him\"]},\n  {\"verb\":\"had been slain\",\"arguments\":[\"his father, a gallant knight\",\"the giant\"]},\n  {\"verb\":\"lived\",\"arguments\":[\"the giant\",\"yonder castle\"]},\n  {\"verb\":\"disappeared\",\"arguments\":[\"she\"]},\n  {\"verb\":\"drew near\",\"arguments\":[\"Jack\",\"the castle\"]},\n  {\"verb\":\"standing\",\"arguments\":[\"the giant's wife\",\"the door\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"inside\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the giant's wife\",\"Jack\",\"a good breakfast\"]},\n  {\"verb\":\"lifted\",\"arguments\":[\"the giantess\",\"Jack\"]},\n  {\"verb\":\"popped\",\"arguments\":[\"the giantess\",\"Jack\",\"the empty kettle\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the giant's wife\",\"the door\"]},\n  {\"verb\":\"sat down\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"ate up\",\"arguments\":[\"the giant\",\"the greater part of the ox\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"his wife\",\"two full bags of gold\",\"the giant\"]},\n  {\"verb\":\"began to count\",\"arguments\":[\"the giant\",\"his money\"]},\n  {\"verb\":\"began to snore\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out\",\"arguments\":[\"Jack\",\"the empty kettle\"]},\n  {\"verb\":\"snatched up\",\"arguments\":[\"Jack\",\"the two bags\"]},\n  {\"verb\":\"barked\",\"arguments\":[\"the giant's dog\"]},\n  {\"verb\":\"made his way down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"awoke\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"got to\",\"arguments\":[\"Jack\",\"the top of the beanstalk\"]},\n  {\"verb\":\"allowed\",\"arguments\":[\"the giantess\",\"Jack\",\"the kitchen\"]},\n  {\"verb\":\"set before\",\"arguments\":[\"the giantess\",\"Jack\",\"enough breakfast to last him a week\"]},\n  {\"verb\":\"bundle\",\"arguments\":[\"the giantess\",\"Jack\",\"the oven\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the giant\",\"the room\"]},\n  {\"verb\":\"ate\",\"arguments\":[\"the giant\",\"a roasted bullock\"]},\n  {\"verb\":\"brought in\",\"arguments\":[\"the giantess\",\"a little brown hen\"]},\n  {\"verb\":\"placed\",\"arguments\":[\"the giantess\",\"a little brown hen\",\"the table\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"a golden egg\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"another golden egg\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the hen\",\"a third golden egg\"]},\n  {\"verb\":\"stretched himself out\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"began to snore\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the oven\"]},\n  {\"verb\":\"went\",\"arguments\":[\"Jack\",\"the table\"]},\n  {\"verb\":\"snatched up\",\"arguments\":[\"Jack\",\"the little brown hen\"]},\n  {\"verb\":\"made a dash for\",\"arguments\":[\"Jack\",\"the door\"]},\n  {\"verb\":\"began to cackle\",\"arguments\":[\"the hen\"]},\n  {\"verb\":\"began to wake up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"escaped\",\"arguments\":[\"Jack\",\"the castle\"]},\n  {\"verb\":\"climbed down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"got\",\"arguments\":[\"Jack\",\"his mother's cottage\"]},\n  {\"verb\":\"laid\",\"arguments\":[\"the little brown hen\",\"so many golden eggs\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the window\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"Jack\",\"the top\"]},\n  {\"verb\":\"crept round\",\"arguments\":[\"Jack\",\"the back of the castle\"]},\n  {\"verb\":\"went out\",\"arguments\":[\"the giant's wife\"]},\n  {\"verb\":\"slipped into\",\"arguments\":[\"Jack\",\"the kitchen\"]},\n  {\"verb\":\"hid\",\"arguments\":[\"Jack\",\"himself\",\"the oven\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"sat down\",\"arguments\":[\"the giant\",\"breakfast\"]},\n  {\"verb\":\"got up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"looked in\",\"arguments\":[\"the giant\",\"the kettle\"]},\n  {\"verb\":\"finished\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"brought in\",\"arguments\":[\"she\",\"the golden harp\"]},\n  {\"verb\":\"placed\",\"arguments\":[\"she\",\"the golden harp\",\"the table\"]},\n  {\"verb\":\"began to sing\",\"arguments\":[\"the harp\",\"the most beautiful songs\"]},\n  {\"verb\":\"fell fast asleep\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"crept out of\",\"arguments\":[\"Jack\",\"the oven\"]},\n  {\"verb\":\"going\",\"arguments\":[\"Jack\",\"the table\"]},\n  {\"verb\":\"seized hold of\",\"arguments\":[\"Jack\",\"the golden harp\"]},\n  {\"verb\":\"called out\",\"arguments\":[\"the harp\"]},\n  {\"verb\":\"woke up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"running out of\",\"arguments\":[\"Jack\",\"the kitchen-door\"]},\n  {\"verb\":\"seized\",\"arguments\":[\"the giant\",\"his oak-tree club\"]},\n  {\"verb\":\"dashed after\",\"arguments\":[\"the giant\",\"Jack\"]},\n  {\"verb\":\"held\",\"arguments\":[\"Jack\",\"the harp\"]},\n  {\"verb\":\"ran\",\"arguments\":[\"Jack\"]},\n  {\"verb\":\"gained on\",\"arguments\":[\"the giant\",\"Jack\"]},\n  {\"verb\":\"slipped over\",\"arguments\":[\"the giant\",\"a boulder\"]},\n  {\"verb\":\"picked himself up\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"began to climb down\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"arrived\",\"arguments\":[\"the giant\",\"the edge\"]},\n  {\"verb\":\"began to climb down\",\"arguments\":[\"the giant\",\"the beanstalk\"]},\n  {\"verb\":\"saw\",\"arguments\":[\"Jack\",\"him\"]},\n  {\"verb\":\"hurried out\",\"arguments\":[\"the widow\",\"a chopper\"]},\n  {\"verb\":\"reached\",\"arguments\":[\"Jack\",\"the ground\"]},\n  {\"verb\":\"cut\",\"arguments\":[\"Jack\",\"the beanstalk\"]},\n  {\"verb\":\"came down\",\"arguments\":[\"the giant\"]},\n  {\"verb\":\"grew\",\"arguments\":[\"Jack and his mother\",\"very rich\"]}\n]",
+      "usage": {
+        "input_tokens": 16811,
+        "cached_input_tokens": 12032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2380,
+        "reasoning_output_tokens": 500
+      },
+      "response_time_seconds": 45.818696058995556
+    },
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "The Three Remarks",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 2297,
+      "action_count": 78,
+      "actions": [
+        {
+          "verb": "used",
+          "arguments": [
+            "the princess",
+            "her favorite phrase"
+          ]
+        },
+        {
+          "verb": "put an end",
+          "arguments": [
+            "the princess",
+            "any conversation that did not please her"
+          ]
+        },
+        {
+          "verb": "offered",
+          "arguments": [
+            "Emperors, kings, princes, dukes, earls, marquises, viscounts, baronets, and many other lofty personages",
+            "their hands",
+            "hearts",
+            "other possessions of greater or less value"
+          ]
+        },
+        {
+          "verb": "retired",
+          "arguments": [
+            "the suitors",
+            "a neighboring monastery"
+          ]
+        },
+        {
+          "verb": "hung up",
+          "arguments": [
+            "the suitors",
+            "their armor",
+            "the chapel"
+          ]
+        },
+        {
+          "verb": "taking",
+          "arguments": [
+            "the suitors",
+            "the vows"
+          ]
+        },
+        {
+          "verb": "flogging",
+          "arguments": [
+            "the suitors",
+            "themselves"
+          ]
+        },
+        {
+          "verb": "wearing",
+          "arguments": [
+            "the suitors",
+            "hair shirts"
+          ]
+        },
+        {
+          "verb": "putting",
+          "arguments": [
+            "the suitors",
+            "dry toast-crumbs",
+            "their beds"
+          ]
+        },
+        {
+          "verb": "turning into",
+          "arguments": [
+            "all his best nobles",
+            "monks"
+          ]
+        },
+        {
+          "verb": "slipped down",
+          "arguments": [
+            "the princess",
+            "the back stairs of the palace"
+          ]
+        },
+        {
+          "verb": "opened",
+          "arguments": [
+            "the princess",
+            "the back door"
+          ]
+        },
+        {
+          "verb": "ran away",
+          "arguments": [
+            "the princess",
+            "the wide world"
+          ]
+        },
+        {
+          "verb": "wandered",
+          "arguments": [
+            "the princess",
+            "mountain and moor",
+            "fen",
+            "forest"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the princess",
+            "a fair city"
+          ]
+        },
+        {
+          "verb": "ringing",
+          "arguments": [
+            "all the bells"
+          ]
+        },
+        {
+          "verb": "flinging",
+          "arguments": [
+            "the people",
+            "caps",
+            "the air"
+          ]
+        },
+        {
+          "verb": "died",
+          "arguments": [
+            "their old king"
+          ]
+        },
+        {
+          "verb": "rule over",
+          "arguments": [
+            "the new king",
+            "the people"
+          ]
+        },
+        {
+          "verb": "left",
+          "arguments": [
+            "the late king",
+            "no heir"
+          ]
+        },
+        {
+          "verb": "polished up",
+          "arguments": [
+            "the crown"
+          ]
+        },
+        {
+          "verb": "put",
+          "arguments": [
+            "an unspecified person",
+            "a new tip",
+            "the sceptre"
+          ]
+        },
+        {
+          "verb": "spoiled",
+          "arguments": [
+            "the old king",
+            "the sceptre"
+          ]
+        },
+        {
+          "verb": "poking",
+          "arguments": [
+            "the old king",
+            "the fire",
+            "the sceptre"
+          ]
+        },
+        {
+          "verb": "welcomed",
+          "arguments": [
+            "the people",
+            "the beautiful princess"
+          ]
+        },
+        {
+          "verb": "leading",
+          "arguments": [
+            "the people",
+            "the princess",
+            "the new king"
+          ]
+        },
+        {
+          "verb": "led",
+          "arguments": [
+            "the princess",
+            "the market-place"
+          ]
+        },
+        {
+          "verb": "raised",
+          "arguments": [
+            "the princess",
+            "her head"
+          ]
+        },
+        {
+          "verb": "looked",
+          "arguments": [
+            "the princess",
+            "the red-faced king"
+          ]
+        },
+        {
+          "verb": "faded",
+          "arguments": [
+            "the red",
+            "a livid green"
+          ]
+        },
+        {
+          "verb": "dropped",
+          "arguments": [
+            "the sceptre",
+            "the princess's feet"
+          ]
+        },
+        {
+          "verb": "fell",
+          "arguments": [
+            "the sceptre",
+            "the princess's feet"
+          ]
+        },
+        {
+          "verb": "laid by",
+          "arguments": [
+            "the retired butterman",
+            "a little money"
+          ]
+        },
+        {
+          "verb": "setting up",
+          "arguments": [
+            "the retired butterman",
+            "a public house"
+          ]
+        },
+        {
+          "verb": "pass through",
+          "arguments": [
+            "the retired butterman",
+            "this city"
+          ]
+        },
+        {
+          "verb": "fill",
+          "arguments": [
+            "the retired butterman",
+            "the vacant place"
+          ]
+        },
+        {
+          "verb": "fixed",
+          "arguments": [
+            "the princess",
+            "her clear eyes",
+            "the butterman"
+          ]
+        },
+        {
+          "verb": "shook",
+          "arguments": [
+            "the guilty butterman",
+            "his guilty shoes"
+          ]
+        },
+        {
+          "verb": "descending",
+          "arguments": [
+            "the butterman",
+            "his throne"
+          ]
+        },
+        {
+          "verb": "beckoned",
+          "arguments": [
+            "the butterman",
+            "the princess",
+            "a side-chamber"
+          ]
+        },
+        {
+          "verb": "closing",
+          "arguments": [
+            "the butterman",
+            "the door"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the princess",
+            "the rubies"
+          ]
+        },
+        {
+          "verb": "departed",
+          "arguments": [
+            "the princess"
+          ]
+        },
+        {
+          "verb": "followed",
+          "arguments": [
+            "all the people",
+            "the princess",
+            "the gates of the city"
+          ]
+        },
+        {
+          "verb": "waving",
+          "arguments": [
+            "all the people",
+            "their hats",
+            "kerchiefs"
+          ]
+        },
+        {
+          "verb": "pursued",
+          "arguments": [
+            "the princess",
+            "her journey"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the princess",
+            "a deep forest"
+          ]
+        },
+        {
+          "verb": "entered",
+          "arguments": [
+            "the princess",
+            "a deep forest"
+          ]
+        },
+        {
+          "verb": "stopped",
+          "arguments": [
+            "a band of robbers",
+            "the princess"
+          ]
+        },
+        {
+          "verb": "started back",
+          "arguments": [
+            "the robbers"
+          ]
+        },
+        {
+          "verb": "lowered",
+          "arguments": [
+            "the robbers",
+            "their weapons"
+          ]
+        },
+        {
+          "verb": "led",
+          "arguments": [
+            "the cringing, trembling bandits",
+            "the princess",
+            "an open glade"
+          ]
+        },
+        {
+          "verb": "hastening",
+          "arguments": [
+            "the robbers",
+            "their chief"
+          ]
+        },
+        {
+          "verb": "conveyed",
+          "arguments": [
+            "the robbers",
+            "the circumstance of their meeting the princess",
+            "the chieftain"
+          ]
+        },
+        {
+          "verb": "sprang",
+          "arguments": [
+            "the gigantic chieftain",
+            "his feet"
+          ]
+        },
+        {
+          "verb": "advancing",
+          "arguments": [
+            "the gigantic chieftain",
+            "the princess"
+          ]
+        },
+        {
+          "verb": "turned",
+          "arguments": [
+            "the robber chief",
+            "deadly pale"
+          ]
+        },
+        {
+          "verb": "staggered",
+          "arguments": [
+            "the robber chief",
+            "a tree"
+          ]
+        },
+        {
+          "verb": "drawing",
+          "arguments": [
+            "the robber chief",
+            "something",
+            "a hole in the oak-tree"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the princess",
+            "the bag of sapphires"
+          ]
+        },
+        {
+          "verb": "followed",
+          "arguments": [
+            "the princess",
+            "their leader",
+            "the farther end of the forest"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the princess and the robber chieftain",
+            "the open country"
+          ]
+        },
+        {
+          "verb": "returned",
+          "arguments": [
+            "the robber chieftain",
+            "his band"
+          ]
+        },
+        {
+          "verb": "preparing",
+          "arguments": [
+            "the robbers",
+            "to plunge into the impenetrable thickets of the midforest"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the princess",
+            "a fair high palace"
+          ]
+        },
+        {
+          "verb": "opened",
+          "arguments": [
+            "the palace-gates"
+          ]
+        },
+        {
+          "verb": "rode out",
+          "arguments": [
+            "the young king and his court",
+            "the palace-gate"
+          ]
+        },
+        {
+          "verb": "leaping",
+          "arguments": [
+            "the king",
+            "his steed"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the princess",
+            "a ruby",
+            "one bag"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the princess",
+            "a sapphire",
+            "the other"
+          ]
+        },
+        {
+          "verb": "handed",
+          "arguments": [
+            "the princess",
+            "a ruby",
+            "the king"
+          ]
+        },
+        {
+          "verb": "handed",
+          "arguments": [
+            "the princess",
+            "a sapphire",
+            "the king"
+          ]
+        },
+        {
+          "verb": "raised",
+          "arguments": [
+            "the princess",
+            "her clear dark eyes"
+          ]
+        },
+        {
+          "verb": "looked",
+          "arguments": [
+            "the princess",
+            "the king"
+          ]
+        },
+        {
+          "verb": "smiled",
+          "arguments": [
+            "the princess"
+          ]
+        },
+        {
+          "verb": "pierced",
+          "arguments": [
+            "the glance of her eyes",
+            "his heart"
+          ]
+        },
+        {
+          "verb": "fell",
+          "arguments": [
+            "the king",
+            "his knees"
+          ]
+        },
+        {
+          "verb": "giving",
+          "arguments": [
+            "the princess",
+            "her little white hand",
+            "the king"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\"verb\":\"used\",\"arguments\":[\"the princess\",\"her favorite phrase\"]},\n  {\"verb\":\"put an end\",\"arguments\":[\"the princess\",\"any conversation that did not please her\"]},\n  {\"verb\":\"offered\",\"arguments\":[\"Emperors, kings, princes, dukes, earls, marquises, viscounts, baronets, and many other lofty personages\",\"their hands\",\"hearts\",\"other possessions of greater or less value\"]},\n  {\"verb\":\"retired\",\"arguments\":[\"the suitors\",\"a neighboring monastery\"]},\n  {\"verb\":\"hung up\",\"arguments\":[\"the suitors\",\"their armor\",\"the chapel\"]},\n  {\"verb\":\"taking\",\"arguments\":[\"the suitors\",\"the vows\"]},\n  {\"verb\":\"flogging\",\"arguments\":[\"the suitors\",\"themselves\"]},\n  {\"verb\":\"wearing\",\"arguments\":[\"the suitors\",\"hair shirts\"]},\n  {\"verb\":\"putting\",\"arguments\":[\"the suitors\",\"dry toast-crumbs\",\"their beds\"]},\n  {\"verb\":\"turning into\",\"arguments\":[\"all his best nobles\",\"monks\"]},\n  {\"verb\":\"slipped down\",\"arguments\":[\"the princess\",\"the back stairs of the palace\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the princess\",\"the back door\"]},\n  {\"verb\":\"ran away\",\"arguments\":[\"the princess\",\"the wide world\"]},\n  {\"verb\":\"wandered\",\"arguments\":[\"the princess\",\"mountain and moor\",\"fen\",\"forest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a fair city\"]},\n  {\"verb\":\"ringing\",\"arguments\":[\"all the bells\"]},\n  {\"verb\":\"flinging\",\"arguments\":[\"the people\",\"caps\",\"the air\"]},\n  {\"verb\":\"died\",\"arguments\":[\"their old king\"]},\n  {\"verb\":\"rule over\",\"arguments\":[\"the new king\",\"the people\"]},\n  {\"verb\":\"left\",\"arguments\":[\"the late king\",\"no heir\"]},\n  {\"verb\":\"polished up\",\"arguments\":[\"the crown\"]},\n  {\"verb\":\"put\",\"arguments\":[\"an unspecified person\",\"a new tip\",\"the sceptre\"]},\n  {\"verb\":\"spoiled\",\"arguments\":[\"the old king\",\"the sceptre\"]},\n  {\"verb\":\"poking\",\"arguments\":[\"the old king\",\"the fire\",\"the sceptre\"]},\n  {\"verb\":\"welcomed\",\"arguments\":[\"the people\",\"the beautiful princess\"]},\n  {\"verb\":\"leading\",\"arguments\":[\"the people\",\"the princess\",\"the new king\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the princess\",\"the market-place\"]},\n  {\"verb\":\"raised\",\"arguments\":[\"the princess\",\"her head\"]},\n  {\"verb\":\"looked\",\"arguments\":[\"the princess\",\"the red-faced king\"]},\n  {\"verb\":\"faded\",\"arguments\":[\"the red\",\"a livid green\"]},\n  {\"verb\":\"dropped\",\"arguments\":[\"the sceptre\",\"the princess's feet\"]},\n  {\"verb\":\"fell\",\"arguments\":[\"the sceptre\",\"the princess's feet\"]},\n  {\"verb\":\"laid by\",\"arguments\":[\"the retired butterman\",\"a little money\"]},\n  {\"verb\":\"setting up\",\"arguments\":[\"the retired butterman\",\"a public house\"]},\n  {\"verb\":\"pass through\",\"arguments\":[\"the retired butterman\",\"this city\"]},\n  {\"verb\":\"fill\",\"arguments\":[\"the retired butterman\",\"the vacant place\"]},\n  {\"verb\":\"fixed\",\"arguments\":[\"the princess\",\"her clear eyes\",\"the butterman\"]},\n  {\"verb\":\"shook\",\"arguments\":[\"the guilty butterman\",\"his guilty shoes\"]},\n  {\"verb\":\"descending\",\"arguments\":[\"the butterman\",\"his throne\"]},\n  {\"verb\":\"beckoned\",\"arguments\":[\"the butterman\",\"the princess\",\"a side-chamber\"]},\n  {\"verb\":\"closing\",\"arguments\":[\"the butterman\",\"the door\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"the rubies\"]},\n  {\"verb\":\"departed\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"all the people\",\"the princess\",\"the gates of the city\"]},\n  {\"verb\":\"waving\",\"arguments\":[\"all the people\",\"their hats\",\"kerchiefs\"]},\n  {\"verb\":\"pursued\",\"arguments\":[\"the princess\",\"her journey\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a deep forest\"]},\n  {\"verb\":\"entered\",\"arguments\":[\"the princess\",\"a deep forest\"]},\n  {\"verb\":\"stopped\",\"arguments\":[\"a band of robbers\",\"the princess\"]},\n  {\"verb\":\"started back\",\"arguments\":[\"the robbers\"]},\n  {\"verb\":\"lowered\",\"arguments\":[\"the robbers\",\"their weapons\"]},\n  {\"verb\":\"led\",\"arguments\":[\"the cringing, trembling bandits\",\"the princess\",\"an open glade\"]},\n  {\"verb\":\"hastening\",\"arguments\":[\"the robbers\",\"their chief\"]},\n  {\"verb\":\"conveyed\",\"arguments\":[\"the robbers\",\"the circumstance of their meeting the princess\",\"the chieftain\"]},\n  {\"verb\":\"sprang\",\"arguments\":[\"the gigantic chieftain\",\"his feet\"]},\n  {\"verb\":\"advancing\",\"arguments\":[\"the gigantic chieftain\",\"the princess\"]},\n  {\"verb\":\"turned\",\"arguments\":[\"the robber chief\",\"deadly pale\"]},\n  {\"verb\":\"staggered\",\"arguments\":[\"the robber chief\",\"a tree\"]},\n  {\"verb\":\"drawing\",\"arguments\":[\"the robber chief\",\"something\",\"a hole in the oak-tree\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"the bag of sapphires\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the princess\",\"their leader\",\"the farther end of the forest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess and the robber chieftain\",\"the open country\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"the robber chieftain\",\"his band\"]},\n  {\"verb\":\"preparing\",\"arguments\":[\"the robbers\",\"to plunge into the impenetrable thickets of the midforest\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the princess\",\"a fair high palace\"]},\n  {\"verb\":\"opened\",\"arguments\":[\"the palace-gates\"]},\n  {\"verb\":\"rode out\",\"arguments\":[\"the young king and his court\",\"the palace-gate\"]},\n  {\"verb\":\"leaping\",\"arguments\":[\"the king\",\"his steed\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"a ruby\",\"one bag\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the princess\",\"a sapphire\",\"the other\"]},\n  {\"verb\":\"handed\",\"arguments\":[\"the princess\",\"a ruby\",\"the king\"]},\n  {\"verb\":\"handed\",\"arguments\":[\"the princess\",\"a sapphire\",\"the king\"]},\n  {\"verb\":\"raised\",\"arguments\":[\"the princess\",\"her clear dark eyes\"]},\n  {\"verb\":\"looked\",\"arguments\":[\"the princess\",\"the king\"]},\n  {\"verb\":\"smiled\",\"arguments\":[\"the princess\"]},\n  {\"verb\":\"pierced\",\"arguments\":[\"the glance of her eyes\",\"his heart\"]},\n  {\"verb\":\"fell\",\"arguments\":[\"the king\",\"his knees\"]},\n  {\"verb\":\"giving\",\"arguments\":[\"the princess\",\"her little white hand\",\"the king\"]}\n]",
+      "usage": {
+        "input_tokens": 17378,
+        "cached_input_tokens": 12032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1911,
+        "reasoning_output_tokens": 429
+      },
+      "response_time_seconds": 38.781984063010896
+    },
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "The Three Little Pigs",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 1320,
+      "action_count": 60,
+      "actions": [
+        {
+          "verb": "failed",
+          "arguments": [
+            "the acorn crop"
+          ]
+        },
+        {
+          "verb": "called",
+          "arguments": [
+            "Mrs. Piggy-wiggy",
+            "her sons"
+          ]
+        },
+        {
+          "verb": "send",
+          "arguments": [
+            "Mrs. Piggy-wiggy",
+            "her three little sons",
+            "the wide world"
+          ]
+        },
+        {
+          "verb": "kissed",
+          "arguments": [
+            "Mrs. Piggy-wiggy",
+            "her three little sons"
+          ]
+        },
+        {
+          "verb": "set out",
+          "arguments": [
+            "the three little pigs",
+            "their travels"
+          ]
+        },
+        {
+          "verb": "taking",
+          "arguments": [
+            "each little pig",
+            "a different road"
+          ]
+        },
+        {
+          "verb": "carrying",
+          "arguments": [
+            "each little pig",
+            "a bundle slung on a stick"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the first little pig",
+            "a man carrying a bundle of straw"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the man",
+            "the bundle of straw",
+            "the first little pig"
+          ]
+        },
+        {
+          "verb": "built",
+          "arguments": [
+            "the first little pig",
+            "a pretty little house"
+          ]
+        },
+        {
+          "verb": "came along",
+          "arguments": [
+            "a wolf"
+          ]
+        },
+        {
+          "verb": "knocked",
+          "arguments": [
+            "a wolf",
+            "the door"
+          ]
+        },
+        {
+          "verb": "huffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "puffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "blew",
+          "arguments": [
+            "the wolf",
+            "the first little pig's house",
+            "in"
+          ]
+        },
+        {
+          "verb": "ate up",
+          "arguments": [
+            "the wolf",
+            "the first little pig"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the second little pig",
+            "a man"
+          ]
+        },
+        {
+          "verb": "built",
+          "arguments": [
+            "the second little pig",
+            "a snug little house"
+          ]
+        },
+        {
+          "verb": "came along",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "huffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "puffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "blew",
+          "arguments": [
+            "the wolf",
+            "the second little pig's house",
+            "in"
+          ]
+        },
+        {
+          "verb": "gobbled up",
+          "arguments": [
+            "the wolf",
+            "the second little pig"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the third little pig",
+            "a man with a load of bricks and mortar"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the man",
+            "the bricks and mortar",
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the man",
+            "a little trowel",
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "built",
+          "arguments": [
+            "the third little pig",
+            "a nice strong little house"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the wolf",
+            "the third little pig's house"
+          ]
+        },
+        {
+          "verb": "huffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "puffed",
+          "arguments": [
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "sat down",
+          "arguments": [
+            "the wolf",
+            "outside the little pig's house"
+          ]
+        },
+        {
+          "verb": "got up",
+          "arguments": [
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "scampered away",
+          "arguments": [
+            "the third little pig",
+            "the field"
+          ]
+        },
+        {
+          "verb": "brought home",
+          "arguments": [
+            "the third little pig",
+            "a fine load of turnips",
+            "home"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the wolf",
+            "the third little pig's house"
+          ]
+        },
+        {
+          "verb": "boiling",
+          "arguments": [
+            "the third little pig",
+            "a potful of turnips"
+          ]
+        },
+        {
+          "verb": "got up",
+          "arguments": [
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "was off and away",
+          "arguments": [
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "climb",
+          "arguments": [
+            "the third little pig",
+            "the tree"
+          ]
+        },
+        {
+          "verb": "brought",
+          "arguments": [
+            "the third little pig",
+            "a sack"
+          ]
+        },
+        {
+          "verb": "picked",
+          "arguments": [
+            "the third little pig",
+            "an apple"
+          ]
+        },
+        {
+          "verb": "threw",
+          "arguments": [
+            "the third little pig",
+            "an apple",
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "running",
+          "arguments": [
+            "the wolf",
+            "the apple"
+          ]
+        },
+        {
+          "verb": "jump down",
+          "arguments": [
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "scamper away",
+          "arguments": [
+            "the third little pig",
+            "home"
+          ]
+        },
+        {
+          "verb": "started",
+          "arguments": [
+            "the third little pig"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the third little pig",
+            "the fair"
+          ]
+        },
+        {
+          "verb": "bought",
+          "arguments": [
+            "the third little pig",
+            "a fine large butter-churn"
+          ]
+        },
+        {
+          "verb": "crept",
+          "arguments": [
+            "the third little pig",
+            "the churn"
+          ]
+        },
+        {
+          "verb": "started",
+          "arguments": [
+            "the third little pig",
+            "the churn",
+            "rolling"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the churn",
+            "down the hill"
+          ]
+        },
+        {
+          "verb": "ran away",
+          "arguments": [
+            "the wolf",
+            "home"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the wolf",
+            "the third little pig's house"
+          ]
+        },
+        {
+          "verb": "hung",
+          "arguments": [
+            "the third little pig",
+            "a pot full of water",
+            "over the hearth"
+          ]
+        },
+        {
+          "verb": "made",
+          "arguments": [
+            "the third little pig",
+            "a blazing fire"
+          ]
+        },
+        {
+          "verb": "took off",
+          "arguments": [
+            "the third little pig",
+            "the cover"
+          ]
+        },
+        {
+          "verb": "fell",
+          "arguments": [
+            "the wolf",
+            "the pot full of water"
+          ]
+        },
+        {
+          "verb": "popped",
+          "arguments": [
+            "the third little pig",
+            "the lid"
+          ]
+        },
+        {
+          "verb": "boiled",
+          "arguments": [
+            "the third little pig",
+            "the wolf"
+          ]
+        },
+        {
+          "verb": "ate",
+          "arguments": [
+            "the third little pig",
+            "the wolf"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\n    \"verb\": \"failed\",\n    \"arguments\": [\"the acorn crop\"]\n  },\n  {\n    \"verb\": \"called\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her sons\"]\n  },\n  {\n    \"verb\": \"send\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her three little sons\", \"the wide world\"]\n  },\n  {\n    \"verb\": \"kissed\",\n    \"arguments\": [\"Mrs. Piggy-wiggy\", \"her three little sons\"]\n  },\n  {\n    \"verb\": \"set out\",\n    \"arguments\": [\"the three little pigs\", \"their travels\"]\n  },\n  {\n    \"verb\": \"taking\",\n    \"arguments\": [\"each little pig\", \"a different road\"]\n  },\n  {\n    \"verb\": \"carrying\",\n    \"arguments\": [\"each little pig\", \"a bundle slung on a stick\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the first little pig\", \"a man carrying a bundle of straw\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"the bundle of straw\", \"the first little pig\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the first little pig\", \"a pretty little house\"]\n  },\n  {\n    \"verb\": \"came along\",\n    \"arguments\": [\"a wolf\"]\n  },\n  {\n    \"verb\": \"knocked\",\n    \"arguments\": [\"a wolf\", \"the door\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"blew\",\n    \"arguments\": [\"the wolf\", \"the first little pig's house\", \"in\"]\n  },\n  {\n    \"verb\": \"ate up\",\n    \"arguments\": [\"the wolf\", \"the first little pig\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the second little pig\", \"a man\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the second little pig\", \"a snug little house\"]\n  },\n  {\n    \"verb\": \"came along\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"blew\",\n    \"arguments\": [\"the wolf\", \"the second little pig's house\", \"in\"]\n  },\n  {\n    \"verb\": \"gobbled up\",\n    \"arguments\": [\"the wolf\", \"the second little pig\"]\n  },\n  {\n    \"verb\": \"met\",\n    \"arguments\": [\"the third little pig\", \"a man with a load of bricks and mortar\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"the bricks and mortar\", \"the third little pig\"]\n  },\n  {\n    \"verb\": \"gave\",\n    \"arguments\": [\"the man\", \"a little trowel\", \"the third little pig\"]\n  },\n  {\n    \"verb\": \"built\",\n    \"arguments\": [\"the third little pig\", \"a nice strong little house\"]\n  },\n  {\n    \"verb\": \"came\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"huffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"puffed\",\n    \"arguments\": [\"the wolf\"]\n  },\n  {\n    \"verb\": \"sat down\",\n    \"arguments\": [\"the wolf\", \"outside the little pig's house\"]\n  },\n  {\n    \"verb\": \"got up\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"scampered away\",\n    \"arguments\": [\"the third little pig\", \"the field\"]\n  },\n  {\n    \"verb\": \"brought home\",\n    \"arguments\": [\"the third little pig\", \"a fine load of turnips\", \"home\"]\n  },\n  {\n    \"verb\": \"came\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"boiling\",\n    \"arguments\": [\"the third little pig\", \"a potful of turnips\"]\n  },\n  {\n    \"verb\": \"got up\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"was off and away\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"climb\",\n    \"arguments\": [\"the third little pig\", \"the tree\"]\n  },\n  {\n    \"verb\": \"brought\",\n    \"arguments\": [\"the third little pig\", \"a sack\"]\n  },\n  {\n    \"verb\": \"picked\",\n    \"arguments\": [\"the third little pig\", \"an apple\"]\n  },\n  {\n    \"verb\": \"threw\",\n    \"arguments\": [\"the third little pig\", \"an apple\", \"the wolf\"]\n  },\n  {\n    \"verb\": \"running\",\n    \"arguments\": [\"the wolf\", \"the apple\"]\n  },\n  {\n    \"verb\": \"jump down\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"scamper away\",\n    \"arguments\": [\"the third little pig\", \"home\"]\n  },\n  {\n    \"verb\": \"started\",\n    \"arguments\": [\"the third little pig\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the third little pig\", \"the fair\"]\n  },\n  {\n    \"verb\": \"bought\",\n    \"arguments\": [\"the third little pig\", \"a fine large butter-churn\"]\n  },\n  {\n    \"verb\": \"crept\",\n    \"arguments\": [\"the third little pig\", \"the churn\"]\n  },\n  {\n    \"verb\": \"started\",\n    \"arguments\": [\"the third little pig\", \"the churn\", \"rolling\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the churn\", \"down the hill\"]\n  },\n  {\n    \"verb\": \"ran away\",\n    \"arguments\": [\"the wolf\", \"home\"]\n  },\n  {\n    \"verb\": \"went\",\n    \"arguments\": [\"the wolf\", \"the third little pig's house\"]\n  },\n  {\n    \"verb\": \"hung\",\n    \"arguments\": [\"the third little pig\", \"a pot full of water\", \"over the hearth\"]\n  },\n  {\n    \"verb\": \"made\",\n    \"arguments\": [\"the third little pig\", \"a blazing fire\"]\n  },\n  {\n    \"verb\": \"took off\",\n    \"arguments\": [\"the third little pig\", \"the cover\"]\n  },\n  {\n    \"verb\": \"fell\",\n    \"arguments\": [\"the wolf\", \"the pot full of water\"]\n  },\n  {\n    \"verb\": \"popped\",\n    \"arguments\": [\"the third little pig\", \"the lid\"]\n  },\n  {\n    \"verb\": \"boiled\",\n    \"arguments\": [\"the third little pig\", \"the wolf\"]\n  },\n  {\n    \"verb\": \"ate\",\n    \"arguments\": [\"the third little pig\", \"the wolf\"]\n  }\n]",
+      "usage": {
+        "input_tokens": 16151,
+        "cached_input_tokens": 12032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1761,
+        "reasoning_output_tokens": 180
+      },
+      "response_time_seconds": 35.32749998100917
+    },
+    {
+      "dataset": "mulab/short-stories",
+      "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+      "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+      "dataset_title": "The Four Skilful Brothers",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "method": "nl2p_unfiltered",
+      "content_words": 1663,
+      "action_count": 59,
+      "actions": [
+        {
+          "verb": "took",
+          "arguments": [
+            "the four brothers",
+            "their sticks"
+          ]
+        },
+        {
+          "verb": "bade farewell",
+          "arguments": [
+            "the four brothers",
+            "their father"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the four brothers",
+            "the town-gate"
+          ]
+        },
+        {
+          "verb": "travelled",
+          "arguments": [
+            "the four brothers"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the four brothers",
+            "a cross-way"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "each of them",
+            "his way"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the eldest",
+            "a man"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the second brother",
+            "a man"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "his master",
+            "the second brother",
+            "a telescope"
+          ]
+        },
+        {
+          "verb": "took into training",
+          "arguments": [
+            "a huntsman",
+            "the third brother"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "a huntsman",
+            "the third brother",
+            "excellent instruction"
+          ]
+        },
+        {
+          "verb": "went away",
+          "arguments": [
+            "the third brother"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "his master",
+            "the third brother",
+            "a gun"
+          ]
+        },
+        {
+          "verb": "met",
+          "arguments": [
+            "the youngest brother",
+            "a man"
+          ]
+        },
+        {
+          "verb": "went with",
+          "arguments": [
+            "the youth",
+            "the man"
+          ]
+        },
+        {
+          "verb": "learnt",
+          "arguments": [
+            "the youth",
+            "his art"
+          ]
+        },
+        {
+          "verb": "gave",
+          "arguments": [
+            "the man",
+            "the youth",
+            "a needle"
+          ]
+        },
+        {
+          "verb": "arrived",
+          "arguments": [
+            "the four brothers",
+            "the cross-roads"
+          ]
+        },
+        {
+          "verb": "embraced",
+          "arguments": [
+            "the four brothers",
+            "each other"
+          ]
+        },
+        {
+          "verb": "kissed",
+          "arguments": [
+            "the four brothers",
+            "each other"
+          ]
+        },
+        {
+          "verb": "returned",
+          "arguments": [
+            "the four brothers",
+            "their father"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the astronomer",
+            "his glass"
+          ]
+        },
+        {
+          "verb": "looked up",
+          "arguments": [
+            "the astronomer"
+          ]
+        },
+        {
+          "verb": "climbed up",
+          "arguments": [
+            "the skillful thief"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the skillful thief",
+            "the five eggs"
+          ]
+        },
+        {
+          "verb": "brought down",
+          "arguments": [
+            "the skillful thief",
+            "the five eggs",
+            "his father"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the father",
+            "the five eggs"
+          ]
+        },
+        {
+          "verb": "put",
+          "arguments": [
+            "the father",
+            "one of the eggs",
+            "each corner of the table"
+          ]
+        },
+        {
+          "verb": "put",
+          "arguments": [
+            "the father",
+            "the fifth egg",
+            "the middle of the table"
+          ]
+        },
+        {
+          "verb": "aimed",
+          "arguments": [
+            "the huntsman"
+          ]
+        },
+        {
+          "verb": "shot",
+          "arguments": [
+            "the huntsman",
+            "the five eggs"
+          ]
+        },
+        {
+          "verb": "brought",
+          "arguments": [
+            "the tailor",
+            "his needle"
+          ]
+        },
+        {
+          "verb": "sewed",
+          "arguments": [
+            "the tailor",
+            "the eggs"
+          ]
+        },
+        {
+          "verb": "climbed up",
+          "arguments": [
+            "the thief",
+            "the tree"
+          ]
+        },
+        {
+          "verb": "carried",
+          "arguments": [
+            "the thief",
+            "the eggs",
+            "the nest"
+          ]
+        },
+        {
+          "verb": "put back",
+          "arguments": [
+            "the thief",
+            "the eggs",
+            "under the bird"
+          ]
+        },
+        {
+          "verb": "crept out",
+          "arguments": [
+            "the young ones"
+          ]
+        },
+        {
+          "verb": "carried off",
+          "arguments": [
+            "a dragon",
+            "the King's daughter"
+          ]
+        },
+        {
+          "verb": "looked through",
+          "arguments": [
+            "the astronomer",
+            "his telescope"
+          ]
+        },
+        {
+          "verb": "went",
+          "arguments": [
+            "the astronomer",
+            "the King"
+          ]
+        },
+        {
+          "verb": "sailed",
+          "arguments": [
+            "the astronomer and his brothers",
+            "the rock"
+          ]
+        },
+        {
+          "verb": "crept",
+          "arguments": [
+            "the thief"
+          ]
+        },
+        {
+          "verb": "stole away",
+          "arguments": [
+            "the thief",
+            "the King's daughter",
+            "from under the dragon"
+          ]
+        },
+        {
+          "verb": "hurried off",
+          "arguments": [
+            "the four brothers and the King's daughter",
+            "on board ship"
+          ]
+        },
+        {
+          "verb": "steered",
+          "arguments": [
+            "the four brothers",
+            "the open sea"
+          ]
+        },
+        {
+          "verb": "followed",
+          "arguments": [
+            "the dragon",
+            "the four brothers and the King's daughter"
+          ]
+        },
+        {
+          "verb": "came",
+          "arguments": [
+            "the dragon",
+            "above the ship"
+          ]
+        },
+        {
+          "verb": "shouldered",
+          "arguments": [
+            "the huntsman",
+            "his gun"
+          ]
+        },
+        {
+          "verb": "shot",
+          "arguments": [
+            "the huntsman",
+            "the dragon"
+          ]
+        },
+        {
+          "verb": "fell down",
+          "arguments": [
+            "the monster"
+          ]
+        },
+        {
+          "verb": "shattered",
+          "arguments": [
+            "the monster",
+            "the whole ship"
+          ]
+        },
+        {
+          "verb": "laid hold of",
+          "arguments": [
+            "the four brothers and the King's daughter",
+            "a couple of planks"
+          ]
+        },
+        {
+          "verb": "swam",
+          "arguments": [
+            "the four brothers and the King's daughter",
+            "the wide sea"
+          ]
+        },
+        {
+          "verb": "took",
+          "arguments": [
+            "the tailor",
+            "his wondrous needle"
+          ]
+        },
+        {
+          "verb": "sewed",
+          "arguments": [
+            "the tailor",
+            "the planks"
+          ]
+        },
+        {
+          "verb": "seated themselves",
+          "arguments": [
+            "the four brothers and the King's daughter",
+            "the planks"
+          ]
+        },
+        {
+          "verb": "collected together",
+          "arguments": [
+            "the four brothers and the King's daughter",
+            "all the fragments of the vessel"
+          ]
+        },
+        {
+          "verb": "sewed",
+          "arguments": [
+            "the tailor",
+            "all the fragments of the vessel"
+          ]
+        },
+        {
+          "verb": "received",
+          "arguments": [
+            "each of the brothers",
+            "half a kingdom"
+          ]
+        }
+      ],
+      "raw_response": "[\n  {\"verb\":\"took\",\"arguments\":[\"the four brothers\",\"their sticks\"]},\n  {\"verb\":\"bade farewell\",\"arguments\":[\"the four brothers\",\"their father\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the four brothers\",\"the town-gate\"]},\n  {\"verb\":\"travelled\",\"arguments\":[\"the four brothers\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the four brothers\",\"a cross-way\"]},\n  {\"verb\":\"went\",\"arguments\":[\"each of them\",\"his way\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the eldest\",\"a man\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the second brother\",\"a man\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"his master\",\"the second brother\",\"a telescope\"]},\n  {\"verb\":\"took into training\",\"arguments\":[\"a huntsman\",\"the third brother\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"a huntsman\",\"the third brother\",\"excellent instruction\"]},\n  {\"verb\":\"went away\",\"arguments\":[\"the third brother\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"his master\",\"the third brother\",\"a gun\"]},\n  {\"verb\":\"met\",\"arguments\":[\"the youngest brother\",\"a man\"]},\n  {\"verb\":\"went with\",\"arguments\":[\"the youth\",\"the man\"]},\n  {\"verb\":\"learnt\",\"arguments\":[\"the youth\",\"his art\"]},\n  {\"verb\":\"gave\",\"arguments\":[\"the man\",\"the youth\",\"a needle\"]},\n  {\"verb\":\"arrived\",\"arguments\":[\"the four brothers\",\"the cross-roads\"]},\n  {\"verb\":\"embraced\",\"arguments\":[\"the four brothers\",\"each other\"]},\n  {\"verb\":\"kissed\",\"arguments\":[\"the four brothers\",\"each other\"]},\n  {\"verb\":\"returned\",\"arguments\":[\"the four brothers\",\"their father\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the astronomer\",\"his glass\"]},\n  {\"verb\":\"looked up\",\"arguments\":[\"the astronomer\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"the skillful thief\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the skillful thief\",\"the five eggs\"]},\n  {\"verb\":\"brought down\",\"arguments\":[\"the skillful thief\",\"the five eggs\",\"his father\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the father\",\"the five eggs\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the father\",\"one of the eggs\",\"each corner of the table\"]},\n  {\"verb\":\"put\",\"arguments\":[\"the father\",\"the fifth egg\",\"the middle of the table\"]},\n  {\"verb\":\"aimed\",\"arguments\":[\"the huntsman\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the huntsman\",\"the five eggs\"]},\n  {\"verb\":\"brought\",\"arguments\":[\"the tailor\",\"his needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"the eggs\"]},\n  {\"verb\":\"climbed up\",\"arguments\":[\"the thief\",\"the tree\"]},\n  {\"verb\":\"carried\",\"arguments\":[\"the thief\",\"the eggs\",\"the nest\"]},\n  {\"verb\":\"put back\",\"arguments\":[\"the thief\",\"the eggs\",\"under the bird\"]},\n  {\"verb\":\"crept out\",\"arguments\":[\"the young ones\"]},\n  {\"verb\":\"carried off\",\"arguments\":[\"a dragon\",\"the King's daughter\"]},\n  {\"verb\":\"looked through\",\"arguments\":[\"the astronomer\",\"his telescope\"]},\n  {\"verb\":\"went\",\"arguments\":[\"the astronomer\",\"the King\"]},\n  {\"verb\":\"sailed\",\"arguments\":[\"the astronomer and his brothers\",\"the rock\"]},\n  {\"verb\":\"crept\",\"arguments\":[\"the thief\"]},\n  {\"verb\":\"stole away\",\"arguments\":[\"the thief\",\"the King's daughter\",\"from under the dragon\"]},\n  {\"verb\":\"hurried off\",\"arguments\":[\"the four brothers and the King's daughter\",\"on board ship\"]},\n  {\"verb\":\"steered\",\"arguments\":[\"the four brothers\",\"the open sea\"]},\n  {\"verb\":\"followed\",\"arguments\":[\"the dragon\",\"the four brothers and the King's daughter\"]},\n  {\"verb\":\"came\",\"arguments\":[\"the dragon\",\"above the ship\"]},\n  {\"verb\":\"shouldered\",\"arguments\":[\"the huntsman\",\"his gun\"]},\n  {\"verb\":\"shot\",\"arguments\":[\"the huntsman\",\"the dragon\"]},\n  {\"verb\":\"fell down\",\"arguments\":[\"the monster\"]},\n  {\"verb\":\"shattered\",\"arguments\":[\"the monster\",\"the whole ship\"]},\n  {\"verb\":\"laid hold of\",\"arguments\":[\"the four brothers and the King's daughter\",\"a couple of planks\"]},\n  {\"verb\":\"swam\",\"arguments\":[\"the four brothers and the King's daughter\",\"the wide sea\"]},\n  {\"verb\":\"took\",\"arguments\":[\"the tailor\",\"his wondrous needle\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"the planks\"]},\n  {\"verb\":\"seated themselves\",\"arguments\":[\"the four brothers and the King's daughter\",\"the planks\"]},\n  {\"verb\":\"collected together\",\"arguments\":[\"the four brothers and the King's daughter\",\"all the fragments of the vessel\"]},\n  {\"verb\":\"sewed\",\"arguments\":[\"the tailor\",\"all the fragments of the vessel\"]},\n  {\"verb\":\"received\",\"arguments\":[\"each of the brothers\",\"half a kingdom\"]}\n]",
+      "usage": {
+        "input_tokens": 16515,
+        "cached_input_tokens": 12032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2105,
+        "reasoning_output_tokens": 1034
+      },
+      "response_time_seconds": 47.27226912998594
+    }
+  ]
+}

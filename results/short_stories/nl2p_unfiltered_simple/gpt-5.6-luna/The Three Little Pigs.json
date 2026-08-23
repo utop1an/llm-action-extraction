@@ -1,0 +1,315 @@
+{
+  "dataset": "mulab/short-stories",
+  "source_url": "https://huggingface.co/datasets/mulab/short-stories",
+  "source_manifest": "data/short_stories/mulab_short_stories/selected_stories.json",
+  "dataset_title": "The Three Little Pigs",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "high",
+  "method": "nl2p_unfiltered_simple",
+  "content_words": 1320,
+  "action_count": 42,
+  "actions": [
+    {
+      "verb": "gave",
+      "arguments": [
+        "The man",
+        "the bundle of straw",
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the little pig",
+        "a pretty little house"
+      ]
+    },
+    {
+      "verb": "blew in",
+      "arguments": [
+        "the wolf",
+        "the little pig's house"
+      ]
+    },
+    {
+      "verb": "ate up",
+      "arguments": [
+        "the wolf",
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "piggy",
+        "a snug little house"
+      ]
+    },
+    {
+      "verb": "blew in",
+      "arguments": [
+        "the wolf",
+        "the house"
+      ]
+    },
+    {
+      "verb": "gobbled up",
+      "arguments": [
+        "the wolf",
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "gave",
+      "arguments": [
+        "the man",
+        "the bricks and mortar, and a little trowel",
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "built",
+      "arguments": [
+        "the little pig",
+        "a nice strong little house"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "the wolf",
+        "the little pig's house"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": [
+        "the wise little pig"
+      ]
+    },
+    {
+      "verb": "scampered away",
+      "arguments": [
+        "the wise little pig",
+        "the field"
+      ]
+    },
+    {
+      "verb": "brought home",
+      "arguments": [
+        "the wise little pig",
+        "a fine load of turnips",
+        "home"
+      ]
+    },
+    {
+      "verb": "been",
+      "arguments": [
+        "the little pig",
+        "the field"
+      ]
+    },
+    {
+      "verb": "come back",
+      "arguments": [
+        "the little pig"
+      ]
+    },
+    {
+      "verb": "boiling",
+      "arguments": [
+        "the little pig",
+        "a potful of turnips"
+      ]
+    },
+    {
+      "verb": "got up",
+      "arguments": [
+        "piggy"
+      ]
+    },
+    {
+      "verb": "picked",
+      "arguments": [
+        "piggy",
+        "an apple"
+      ]
+    },
+    {
+      "verb": "threw",
+      "arguments": [
+        "piggy",
+        "an apple"
+      ]
+    },
+    {
+      "verb": "jump down",
+      "arguments": [
+        "piggy"
+      ]
+    },
+    {
+      "verb": "scampered away",
+      "arguments": [
+        "piggy",
+        "home"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the little pig",
+        "the fair"
+      ]
+    },
+    {
+      "verb": "bought",
+      "arguments": [
+        "the little pig",
+        "a fine large butter-churn"
+      ]
+    },
+    {
+      "verb": "crept",
+      "arguments": [
+        "the little pig",
+        "the churn"
+      ]
+    },
+    {
+      "verb": "rolling",
+      "arguments": [
+        "the little pig",
+        "the churn"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the churn",
+        "the hill"
+      ]
+    },
+    {
+      "verb": "ran away",
+      "arguments": [
+        "the wolf",
+        "home"
+      ]
+    },
+    {
+      "verb": "went",
+      "arguments": [
+        "the wolf",
+        "the little pig's house"
+      ]
+    },
+    {
+      "verb": "came",
+      "arguments": [
+        "a large round thing",
+        "the hill"
+      ]
+    },
+    {
+      "verb": "rolling",
+      "arguments": [
+        "a large round thing",
+        "the hill"
+      ]
+    },
+    {
+      "verb": "been",
+      "arguments": [
+        "the little pig",
+        "the fair"
+      ]
+    },
+    {
+      "verb": "bought",
+      "arguments": [
+        "the little pig",
+        "a butter-churn"
+      ]
+    },
+    {
+      "verb": "got",
+      "arguments": [
+        "the little pig",
+        "a butter-churn"
+      ]
+    },
+    {
+      "verb": "rolled",
+      "arguments": [
+        "the little pig",
+        "the hill"
+      ]
+    },
+    {
+      "verb": "hung",
+      "arguments": [
+        "the clever little pig",
+        "a pot full of water",
+        "the hearth"
+      ]
+    },
+    {
+      "verb": "made",
+      "arguments": [
+        "the clever little pig",
+        "a blazing fire"
+      ]
+    },
+    {
+      "verb": "coming",
+      "arguments": [
+        "the wolf",
+        "the chimney"
+      ]
+    },
+    {
+      "verb": "took off",
+      "arguments": [
+        "the little pig",
+        "the cover"
+      ]
+    },
+    {
+      "verb": "fell",
+      "arguments": [
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "popped on",
+      "arguments": [
+        "the little pig",
+        "the lid"
+      ]
+    },
+    {
+      "verb": "boiled",
+      "arguments": [
+        "the little pig",
+        "the wolf"
+      ]
+    },
+    {
+      "verb": "ate",
+      "arguments": [
+        "the little pig",
+        "the wolf"
+      ]
+    }
+  ],
+  "raw_response": "[{\"verb\":\"gave\",\"arguments\":[\"The man\",\"the bundle of straw\",\"the little pig\"]},{\"verb\":\"built\",\"arguments\":[\"the little pig\",\"a pretty little house\"]},{\"verb\":\"blew in\",\"arguments\":[\"the wolf\",\"the little pig's house\"]},{\"verb\":\"ate up\",\"arguments\":[\"the wolf\",\"the little pig\"]},{\"verb\":\"built\",\"arguments\":[\"piggy\",\"a snug little house\"]},{\"verb\":\"blew in\",\"arguments\":[\"the wolf\",\"the house\"]},{\"verb\":\"gobbled up\",\"arguments\":[\"the wolf\",\"the little pig\"]},{\"verb\":\"gave\",\"arguments\":[\"the man\",\"the bricks and mortar, and a little trowel\",\"the little pig\"]},{\"verb\":\"built\",\"arguments\":[\"the little pig\",\"a nice strong little house\"]},{\"verb\":\"came\",\"arguments\":[\"the wolf\",\"the little pig's house\"]},{\"verb\":\"got up\",\"arguments\":[\"the wise little pig\"]},{\"verb\":\"scampered away\",\"arguments\":[\"the wise little pig\",\"the field\"]},{\"verb\":\"brought home\",\"arguments\":[\"the wise little pig\",\"a fine load of turnips\",\"home\"]},{\"verb\":\"been\",\"arguments\":[\"the little pig\",\"the field\"]},{\"verb\":\"come back\",\"arguments\":[\"the little pig\"]},{\"verb\":\"boiling\",\"arguments\":[\"the little pig\",\"a potful of turnips\"]},{\"verb\":\"got up\",\"arguments\":[\"piggy\"]},{\"verb\":\"picked\",\"arguments\":[\"piggy\",\"an apple\"]},{\"verb\":\"threw\",\"arguments\":[\"piggy\",\"an apple\"]},{\"verb\":\"jump down\",\"arguments\":[\"piggy\"]},{\"verb\":\"scampered away\",\"arguments\":[\"piggy\",\"home\"]},{\"verb\":\"went\",\"arguments\":[\"the little pig\",\"the fair\"]},{\"verb\":\"bought\",\"arguments\":[\"the little pig\",\"a fine large butter-churn\"]},{\"verb\":\"crept\",\"arguments\":[\"the little pig\",\"the churn\"]},{\"verb\":\"rolling\",\"arguments\":[\"the little pig\",\"the churn\"]},{\"verb\":\"went\",\"arguments\":[\"the churn\",\"the hill\"]},{\"verb\":\"ran away\",\"arguments\":[\"the wolf\",\"home\"]},{\"verb\":\"went\",\"arguments\":[\"the wolf\",\"the little pig's house\"]},{\"verb\":\"came\",\"arguments\":[\"a large round thing\",\"the hill\"]},{\"verb\":\"rolling\",\"arguments\":[\"a large round thing\",\"the hill\"]},{\"verb\":\"been\",\"arguments\":[\"the little pig\",\"the fair\"]},{\"verb\":\"bought\",\"arguments\":[\"the little pig\",\"a butter-churn\"]},{\"verb\":\"got\",\"arguments\":[\"the little pig\",\"a butter-churn\"]},{\"verb\":\"rolled\",\"arguments\":[\"the little pig\",\"the hill\"]},{\"verb\":\"hung\",\"arguments\":[\"the clever little pig\",\"a pot full of water\",\"the hearth\"]},{\"verb\":\"made\",\"arguments\":[\"the clever little pig\",\"a blazing fire\"]},{\"verb\":\"coming\",\"arguments\":[\"the wolf\",\"the chimney\"]},{\"verb\":\"took off\",\"arguments\":[\"the little pig\",\"the cover\"]},{\"verb\":\"fell\",\"arguments\":[\"the wolf\"]},{\"verb\":\"popped on\",\"arguments\":[\"the little pig\",\"the lid\"]},{\"verb\":\"boiled\",\"arguments\":[\"the little pig\",\"the wolf\"]},{\"verb\":\"ate\",\"arguments\":[\"the little pig\",\"the wolf\"]}]",
+  "usage": {
+    "input_tokens": 14703,
+    "cached_input_tokens": 8960,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 16160,
+    "reasoning_output_tokens": 15499
+  },
+  "response_time_seconds": 293.58781705101137
+}
