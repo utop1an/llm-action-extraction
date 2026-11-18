@@ -1,0 +1,95 @@
+GPT-5.4: three-repeat Minimal versus full NL2P
+
+All scores are percentages; differences are percentage points; standard deviation uses ddof=1.
+Three repeats are descriptive and do not alone establish statistical significance.
+Adjusted metrics are argument-only, prediction-dependent diagnostics on evaluator-matched actions; they do not replace strict scores.
+Exemptions are raw denominator deductions before the evaluator true-positive floor, not independently verified annotation errors.
+The original request bodies contain only model and messages, retaining the original model snapshot and omitted sampling fields.
+Retain original successes and the first successful authorized repair; no best-of selection, no fourth round, no successful sample reruns.
+All 569 executed repairs address exact HTTP429 insufficient_quota / credit_balance_exhausted failures; no server failures were repaired.
+Repairs occurred later than the original batches; the legacy _server_repaired directory name does not imply server errors.
+
+Final coverage: 2520/2520 (100%); 0 API failures remaining; 0 parse failures.
+Original successes preserved: 1951. Executed repair requests: 569.
+Repair submission attempts: 4; 3 executed, 1 rejected with explicit 0/0/0 counts.
+
+Strict metrics: mean +/- sample SD across three repeats
+Dataset | Condition | Action P | Action R | Action F1 | Argument P | Argument R | Argument F1
+WHS | minimal | 97.60 +/- 0.21 | 88.03 +/- 0.34 | 92.57 +/- 0.15 | 69.87 +/- 0.16 | 57.49 +/- 0.11 | 63.08 +/- 0.09
+WHS | full | 95.75 +/- 0.35 | 89.01 +/- 0.35 | 92.26 +/- 0.28 | 79.32 +/- 1.24 | 52.55 +/- 1.02 | 63.22 +/- 1.13
+CT | minimal | 93.72 +/- 0.16 | 79.33 +/- 0.25 | 85.93 +/- 0.08 | 49.58 +/- 0.20 | 70.42 +/- 0.62 | 58.19 +/- 0.30
+CT | full | 91.16 +/- 0.66 | 81.85 +/- 0.31 | 86.25 +/- 0.22 | 66.36 +/- 0.34 | 73.31 +/- 0.27 | 69.66 +/- 0.30
+WHG | minimal | 87.65 +/- 0.33 | 75.91 +/- 0.39 | 81.36 +/- 0.19 | 52.97 +/- 0.54 | 57.06 +/- 0.20 | 54.94 +/- 0.38
+WHG | full | 75.50 +/- 0.13 | 84.58 +/- 0.53 | 79.78 +/- 0.18 | 69.12 +/- 0.34 | 58.80 +/- 0.22 | 63.54 +/- 0.13
+
+Adjusted argument diagnostics: mean +/- sample SD
+Dataset | Condition | Adjusted argument P | Adjusted argument R | Adjusted argument F1
+WHS | minimal | 74.15 +/- 0.16 | 87.30 +/- 0.40 | 80.19 +/- 0.25
+WHS | full | 82.95 +/- 1.19 | 80.50 +/- 2.44 | 81.70 +/- 1.83
+CT | minimal | 50.05 +/- 0.20 | 85.53 +/- 0.31 | 63.15 +/- 0.09
+CT | full | 75.86 +/- 0.28 | 87.81 +/- 0.33 | 81.40 +/- 0.30
+WHG | minimal | 53.26 +/- 0.59 | 79.89 +/- 0.44 | 63.91 +/- 0.54
+WHG | full | 73.72 +/- 0.24 | 80.20 +/- 0.44 | 76.82 +/- 0.27
+
+Paired full-minus-minimal differences (rounds 1, 2, 3; percentage points)
+Dataset | Metric | Round 1 | Round 2 | Round 3 | Mean +/- SD | Positive rounds
+WHS | action_precision | -2.2376 | -2.0508 | -1.2391 | -1.84 +/- 0.53 | 0/3
+WHS | action_recall | +1.4796 | +0.4980 | +0.9402 | 0.97 +/- 0.49 | 3/3
+WHS | action_f1 | -0.2160 | -0.6627 | -0.0565 | -0.31 +/- 0.31 | 0/3
+WHS | argument_precision | +8.2616 | +9.6667 | +10.4020 | 9.44 +/- 1.09 | 3/3
+WHS | argument_recall | -5.9996 | -4.8186 | -3.9867 | -4.93 +/- 1.01 | 0/3
+WHS | argument_f1 | -0.9975 | +0.3092 | +1.1089 | 0.14 +/- 1.06 | 2/3
+WHS | adjusted_argument_precision | +7.4975 | +8.9170 | +9.9752 | 8.80 +/- 1.24 | 3/3
+WHS | adjusted_argument_recall | -9.8071 | -5.9833 | -4.6206 | -6.80 +/- 2.69 | 0/3
+WHS | adjusted_argument_f1 | -0.6503 | +1.9987 | +3.1816 | 1.51 +/- 1.96 | 2/3
+CT | action_precision | -1.9980 | -2.5322 | -3.1345 | -2.55 +/- 0.57 | 0/3
+CT | action_recall | +2.5884 | +2.0341 | +2.9173 | 2.51 +/- 0.45 | 3/3
+CT | action_f1 | +0.6268 | +0.0582 | +0.2898 | 0.32 +/- 0.29 | 3/3
+CT | argument_precision | +16.5021 | +16.6886 | +17.1634 | 16.78 +/- 0.34 | 3/3
+CT | argument_recall | +2.2163 | +2.5461 | +3.9073 | 2.89 +/- 0.90 | 3/3
+CT | argument_f1 | +11.0798 | +11.2629 | +12.0822 | 11.47 +/- 0.53 | 3/3
+CT | adjusted_argument_precision | +25.6410 | +25.6493 | +26.1385 | 25.81 +/- 0.28 | 3/3
+CT | adjusted_argument_recall | +1.6301 | +2.5942 | +2.6225 | 2.28 +/- 0.56 | 3/3
+CT | adjusted_argument_f1 | +17.9564 | +18.1953 | +18.6046 | 18.25 +/- 0.33 | 3/3
+WHG | action_precision | -11.8153 | -12.5992 | -12.0470 | -12.15 +/- 0.40 | 0/3
+WHG | action_recall | +8.2909 | +9.7018 | +8.0373 | 8.68 +/- 0.90 | 3/3
+WHG | action_f1 | -1.6054 | -1.2738 | -1.8455 | -1.57 +/- 0.29 | 0/3
+WHG | argument_precision | +15.4853 | +16.5898 | +16.3759 | 16.15 +/- 0.59 | 3/3
+WHG | argument_recall | +1.7453 | +1.6319 | +1.8441 | 1.74 +/- 0.11 | 3/3
+WHG | argument_f1 | +8.2890 | +8.7233 | +8.8029 | 8.61 +/- 0.28 | 3/3
+WHG | adjusted_argument_precision | +19.8495 | +20.7523 | +20.7874 | 20.46 +/- 0.53 | 3/3
+WHG | adjusted_argument_recall | +0.5745 | -0.0705 | +0.4198 | 0.31 +/- 0.34 | 2/3
+WHG | adjusted_argument_f1 | +12.6237 | +12.9468 | +13.1714 | 12.91 +/- 0.28 | 3/3
+
+Adjustment audit (raw deductions; three repeats)
+Dataset | Condition | Gold deductions r1/r2/r3 | Prediction deductions r1/r2/r3 | Affected matched actions r1/r2/r3
+WHS | minimal | 613/613/608 | 88/88/79 | 526/526/515
+WHS | full | 626/650/649 | 55/54/52 | 520/530/534
+CT | minimal | 472/467/501 | 34/37/39 | 402/410/413
+CT | full | 464/470/469 | 396/387/392 | 688/685/689
+WHG | minimal | 1472/1487/1470 | 33/31/25 | 1204/1220/1190
+WHG | full | 1549/1573/1530 | 314/298/313 | 1455/1475/1464
+
+Failure and repair audit (Australia/Sydney timestamps)
+Run | Original successes | Original exact credit-429 failures | Repair attempts | Executed repair requests | Final coverage
+r1 minimal | 212 | 208 | 1 | 208 | 420/420
+  Attempt 1: batch_6ae187b61c348190a85b2c7d4eeef802; submitted 208; counts {'completed': 208, 'failed': 0, 'total': 208}; created 2026-10-28T16:27:18+11:00; completed 2026-10-28T17:12:19+11:00; failed None; zero-execution capacity rejection=False
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r1-minimal\merged\provenance.json
+r1 full | 212 | 208 | 1 | 208 | 420/420
+  Attempt 1: batch_6ae187bb363081908d5749adcf10de52; submitted 208; counts {'completed': 208, 'failed': 0, 'total': 208}; created 2026-10-28T16:27:23+11:00; completed 2026-10-28T17:10:54+11:00; failed None; zero-execution capacity rejection=False
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r1-full\merged\provenance.json
+r2 minimal | 267 | 153 | 2 | 153 | 420/420
+  Attempt 1: batch_6ae187bfa1548190a608bd309852b25f; submitted 153; counts {'completed': 0, 'failed': 0, 'total': 0}; created 2026-10-28T16:27:27+11:00; completed None; failed 2026-10-28T16:28:28+11:00; zero-execution capacity rejection=True
+  Attempt 2: batch_6ae1945450488190ae41c3dee98fa3c9; submitted 153; counts {'completed': 153, 'failed': 0, 'total': 153}; created 2026-10-28T17:21:08+11:00; completed 2026-10-28T17:25:54+11:00; failed None; zero-execution capacity rejection=False
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r2-minimal\merged\provenance.json
+r2 full | 420 | 0 | 0 | 0 | 420/420
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r2-full\merged\provenance.json
+r3 minimal | 420 | 0 | 0 | 0 | 420/420
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r3-minimal\merged\provenance.json
+r3 full | 420 | 0 | 0 | 0 | 420/420
+  Provenance: C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\r3-full\merged\provenance.json
+
+Sources:
+C:\anu\llm-action-extraction\results\nl2p_repeats_20261027_v1\repaired\gpt-5.4\comparison.json SHA256=093768c1610d5deae6884ba536c46f28261d217c644672c21e1f851d0380c767
+C:\anu\llm-action-extraction\results\nl2p_repeats_20261027_v1\repaired\gpt-5.4\comparison_adjusted.json SHA256=58ad3cc85247f5881f6b88176f79e641e3c901fd9662c6775ade8224255e11e0
+C:\anu\llm-action-extraction\results\batch\nl2p_repeats_20261027_v1\repairs\completion_audit_20261028.json SHA256=b00b794a1f1d9d3ae8d551881d4095b0aa92320f0e6cb5326687af6eff6e0052

@@ -1,0 +1,1619 @@
+{
+  "model": "gpt-5.4",
+  "snapshot": "gpt-5.4-2026-03-05",
+  "created_at": "2026-10-28T17:48:15+11:00",
+  "summary": [
+    {
+      "dataset": "win2k",
+      "label": "WHS",
+      "condition": "minimal",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          97.66666666666667,
+          97.75933609958506,
+          97.36191261335532
+        ],
+        "mean": 97.59597179320235,
+        "sample_sd_ddof1": 0.20792950897444262
+      },
+      "action_recall": {
+        "values": [
+          87.65893792071803,
+          88.1077038145101,
+          88.33208676140613
+        ],
+        "mean": 88.03290949887808,
+        "sample_sd_ddof1": 0.3427506129361102
+      },
+      "action_f1": {
+        "values": [
+          92.39258967284195,
+          92.6829268292683,
+          92.62745098039215
+        ],
+        "mean": 92.5676558275008,
+        "sample_sd_ddof1": 0.15412823016050473
+      },
+      "argument_precision": {
+        "values": [
+          69.70728386657589,
+          69.89174560216509,
+          70.02039428959891
+        ],
+        "mean": 69.87314125277996,
+        "sample_sd_ddof1": 0.1573821006768125
+      },
+      "argument_recall": {
+        "values": [
+          57.43129556926528,
+          57.612939208031236,
+          57.41360089186176
+        ],
+        "mean": 57.48594522305276,
+        "sample_sd_ddof1": 0.11033530517308926
+      },
+      "argument_f1": {
+        "values": [
+          62.976629766297656,
+          63.161112809538366,
+          63.09341500765697
+        ],
+        "mean": 63.077052527831,
+        "sample_sd_ddof1": 0.0933236110016112
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          74.14916727009413,
+          74.31654676258994,
+          73.99425287356321
+        ],
+        "mean": 74.15332230208243,
+        "sample_sd_ddof1": 0.16118711469627614
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          87.52136752136752,
+          87.54237288135593,
+          86.84654300168634
+        ],
+        "mean": 87.30342780146994,
+        "sample_sd_ddof1": 0.3958132090924062
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          80.28224225793807,
+          80.38910505836576,
+          79.90690457719161
+        ],
+        "mean": 80.19275063116514,
+        "sample_sd_ddof1": 0.253250645523348
+      }
+    },
+    {
+      "dataset": "win2k",
+      "label": "WHS",
+      "condition": "full",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          95.42902967121091,
+          95.70850202429149,
+          96.12277867528272
+        ],
+        "mean": 95.7534367902617,
+        "sample_sd_ddof1": 0.349050526510495
+      },
+      "action_recall": {
+        "values": [
+          89.13857677902621,
+          88.6056971514243,
+          89.27231807951988
+        ],
+        "mean": 89.00553066999012,
+        "sample_sd_ddof1": 0.35266388501090495
+      },
+      "action_f1": {
+        "values": [
+          92.1766072811774,
+          92.02024133904241,
+          92.5709840528977
+        ],
+        "mean": 92.2559442243725,
+        "sample_sd_ddof1": 0.2838135781333038
+      },
+      "argument_precision": {
+        "values": [
+          77.96887796887798,
+          79.55846279640228,
+          80.42242079610074
+        ],
+        "mean": 79.316587187127,
+        "sample_sd_ddof1": 1.2445263994892928
+      },
+      "argument_recall": {
+        "values": [
+          51.431658562938956,
+          52.79435702658709,
+          53.42687533729088
+        ],
+        "mean": 52.55096364227231,
+        "sample_sd_ddof1": 1.0196336346011625
+      },
+      "argument_f1": {
+        "values": [
+          61.979166666666664,
+          63.4703196347032,
+          64.2023346303502
+        ],
+        "mean": 63.21727364390669,
+        "sample_sd_ddof1": 1.1329797675955362
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          81.6466552315609,
+          83.23353293413174,
+          83.96946564885496
+        ],
+        "mean": 82.9498846048492,
+        "sample_sd_ddof1": 1.1870991280011285
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          77.71428571428571,
+          81.5590947191953,
+          82.22591362126246
+        ],
+        "mean": 80.4997646849145,
+        "sample_sd_ddof1": 2.435227234551203
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          79.6319531576746,
+          82.3878069432684,
+          83.08854385228703
+        ],
+        "mean": 81.70276798441002,
+        "sample_sd_ddof1": 1.827283116784493
+      }
+    },
+    {
+      "dataset": "cooking",
+      "label": "CT",
+      "condition": "minimal",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          93.87755102040816,
+          93.56078808265256,
+          93.71069182389937
+        ],
+        "mean": 93.71634364232003,
+        "sample_sd_ddof1": 0.15845708243080955
+      },
+      "action_recall": {
+        "values": [
+          79.11547911547912,
+          79.59934587080949,
+          79.28776094965207
+        ],
+        "mean": 79.33419531198022,
+        "sample_sd_ddof1": 0.24525266916407132
+      },
+      "action_f1": {
+        "values": [
+          85.86666666666666,
+          86.01722995361168,
+          85.89800443458981
+        ],
+        "mean": 85.92730035162272,
+        "sample_sd_ddof1": 0.0794418901463262
+      },
+      "argument_precision": {
+        "values": [
+          49.47096774193548,
+          49.80675083741304,
+          49.45026178010471
+        ],
+        "mean": 49.57599345315108,
+        "sample_sd_ddof1": 0.20010974990590003
+      },
+      "argument_recall": {
+        "values": [
+          70.86876155268023,
+          70.6764168190128,
+          69.70479704797047
+        ],
+        "mean": 70.41665847322116,
+        "sample_sd_ddof1": 0.6239464245529096
+      },
+      "argument_f1": {
+        "values": [
+          58.26747720364741,
+          58.43409915356711,
+          57.85604900459417
+        ],
+        "mean": 58.185875120602894,
+        "sample_sd_ddof1": 0.29753935647206864
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          49.90887789638115,
+          50.28616024973985,
+          49.960327955567315
+        ],
+        "mean": 50.051788700562774,
+        "sample_sd_ddof1": 0.20459544092015577
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          85.84863412449619,
+          85.22927689594356,
+          85.51380715255772
+        ],
+        "mean": 85.53057272433249,
+        "sample_sd_ddof1": 0.31001880174886154
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          63.12150148172538,
+          63.25261780104713,
+          63.07178631051753
+        ],
+        "mean": 63.14863519776335,
+        "sample_sd_ddof1": 0.09341940859002913
+      }
+    },
+    {
+      "dataset": "cooking",
+      "label": "CT",
+      "condition": "full",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          91.87956204379562,
+          91.02854553692795,
+          90.5761500669942
+        ],
+        "mean": 91.16141921590592,
+        "sample_sd_ddof1": 0.6617871683866333
+      },
+      "action_recall": {
+        "values": [
+          81.70385395537525,
+          81.63348232425844,
+          82.2051074179165
+        ],
+        "mean": 81.84748123251673,
+        "sample_sd_ddof1": 0.31170564316226507
+      },
+      "action_f1": {
+        "values": [
+          86.49345071934722,
+          86.07540702656384,
+          86.18784530386739
+        ],
+        "mean": 86.25223434992616,
+        "sample_sd_ddof1": 0.21633213863931575
+      },
+      "argument_precision": {
+        "values": [
+          65.97311139564661,
+          66.49534211371667,
+          66.61367249602543
+        ],
+        "mean": 66.3607086684629,
+        "sample_sd_ddof1": 0.3408434453899697
+      },
+      "argument_recall": {
+        "values": [
+          73.08510638297872,
+          73.22249734701096,
+          73.6120871398454
+        ],
+        "mean": 73.30656362327836,
+        "sample_sd_ddof1": 0.273363372877649
+      },
+      "argument_f1": {
+        "values": [
+          69.3472409152086,
+          69.69696969696969,
+          69.9382406943749
+        ],
+        "mean": 69.6608171021844,
+        "sample_sd_ddof1": 0.29715390343378434
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          75.54985337243401,
+          75.93543653705062,
+          76.09880130766436
+        ],
+        "mean": 75.86136373904966,
+        "sample_sd_ddof1": 0.28187061473516967
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          87.47877758913413,
+          87.82350445481545,
+          88.13630626840555
+        ],
+        "mean": 87.81286277078505,
+        "sample_sd_ddof1": 0.32889348594242107
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          81.07789142407553,
+          81.44796380090499,
+          81.67641325536061
+        ],
+        "mean": 81.40075616011372,
+        "sample_sd_ddof1": 0.3020405877411528
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "label": "WHG",
+      "condition": "minimal",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          87.31323010051617,
+          87.96806167400881,
+          87.66937669376695
+        ],
+        "mean": 87.65022282276398,
+        "sample_sd_ddof1": 0.32783570655362076
+      },
+      "action_recall": {
+        "values": [
+          75.94517958412098,
+          75.49621928166351,
+          76.27917943881161
+        ],
+        "mean": 75.90685943486537,
+        "sample_sd_ddof1": 0.3928841779705212
+      },
+      "action_f1": {
+        "values": [
+          81.23341337040313,
+          81.25635808748729,
+          81.57861555919808
+        ],
+        "mean": 81.35612900569616,
+        "sample_sd_ddof1": 0.1930202447345604
+      },
+      "argument_precision": {
+        "values": [
+          53.543022415039765,
+          52.91033984092552,
+          52.45872536836499
+        ],
+        "mean": 52.97069587477676,
+        "sample_sd_ddof1": 0.5446624270808476
+      },
+      "argument_recall": {
+        "values": [
+          57.29206963249517,
+          56.978781389916286,
+          56.91448382126348
+        ],
+        "mean": 57.06177828122498,
+        "sample_sd_ddof1": 0.20201268323066648
+      },
+      "argument_f1": {
+        "values": [
+          55.35413941319379,
+          54.86924735214173,
+          54.59584295612009
+        ],
+        "mean": 54.9397432404852,
+        "sample_sd_ddof1": 0.38403207145710505
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          53.864338970721946,
+          53.20850754408289,
+          52.6925820256776
+        ],
+        "mean": 53.25514284682748,
+        "sample_sd_ddof1": 0.587268867863326
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          80.09734991887507,
+          80.19178082191782,
+          79.39279957012359
+        ],
+        "mean": 79.89397677030549,
+        "sample_sd_ddof1": 0.4365927603030046
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          64.4123083614222,
+          63.97115069391324,
+          63.344051446945336
+        ],
+        "mean": 63.90917016742693,
+        "sample_sd_ddof1": 0.5368187758262098
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "label": "WHG",
+      "condition": "full",
+      "n": 3,
+      "action_precision": {
+        "values": [
+          75.49792531120332,
+          75.3688524590164,
+          75.62240663900414
+        ],
+        "mean": 75.49639480307462,
+        "sample_sd_ddof1": 0.12678401866427588
+      },
+      "action_recall": {
+        "values": [
+          84.23611111111111,
+          85.19805420430855,
+          84.31644691186676
+        ],
+        "mean": 84.58353740909547,
+        "sample_sd_ddof1": 0.5337008796320015
+      },
+      "action_f1": {
+        "values": [
+          79.62800875273524,
+          79.9826030227248,
+          79.73312916985671
+        ],
+        "mean": 79.78124698177226,
+        "sample_sd_ddof1": 0.18212843530051018
+      },
+      "argument_precision": {
+        "values": [
+          69.02834008097166,
+          69.50010119409026,
+          68.83457887295495
+        ],
+        "mean": 69.12100671600562,
+        "sample_sd_ddof1": 0.34230150294546213
+      },
+      "argument_recall": {
+        "values": [
+          59.03739612188366,
+          58.61068441713603,
+          58.758620689655174
+        ],
+        "mean": 58.80223374289162,
+        "sample_sd_ddof1": 0.21667324142960379
+      },
+      "argument_f1": {
+        "values": [
+          63.64315042926466,
+          63.5925925925926,
+          63.39875360431587
+        ],
+        "mean": 63.54483220872438,
+        "sample_sd_ddof1": 0.12900869238811832
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          73.7137916126243,
+          73.96080120611673,
+          73.47994825355757
+        ],
+        "mean": 73.71818035743287,
+        "sample_sd_ddof1": 0.2404565164576782
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          80.67187130352495,
+          80.12132524498367,
+          79.81264637002342
+        ],
+        "mean": 80.20194763951068,
+        "sample_sd_ddof1": 0.43524918088622744
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          77.03603298316956,
+          76.91790794041886,
+          76.51549169286037
+        ],
+        "mean": 76.82314420548293,
+        "sample_sd_ddof1": 0.272902790061674
+      }
+    }
+  ],
+  "paired_differences": [
+    {
+      "dataset": "win2k",
+      "label": "WHS",
+      "comparison": "full minus minimal",
+      "action_precision": {
+        "values": [
+          -2.2376369954557607,
+          -2.0508340752935617,
+          -1.2391339380726007
+        ],
+        "mean": -1.842535002940641,
+        "sample_sd_ddof1": 0.5308422237898893,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -2.2376369954557607,
+          -1.2391339380726007
+        ]
+      },
+      "action_recall": {
+        "values": [
+          1.4796388583081854,
+          0.4979933369141931,
+          0.9402313181137378
+        ],
+        "mean": 0.9726211711120388,
+        "sample_sd_ddof1": 0.49162364604558983,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          0.4979933369141931,
+          1.4796388583081854
+        ]
+      },
+      "action_f1": {
+        "values": [
+          -0.2159823916645598,
+          -0.6626854902258783,
+          -0.056466927494458474
+        ],
+        "mean": -0.3117116031282989,
+        "sample_sd_ddof1": 0.31424241899469757,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -0.6626854902258783,
+          -0.056466927494458474
+        ]
+      },
+      "argument_precision": {
+        "values": [
+          8.261594102302073,
+          9.666717194237195,
+          10.402026506501826
+        ],
+        "mean": 9.443445934347032,
+        "sample_sd_ddof1": 1.0875432225234958,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          8.261594102302073,
+          10.402026506501826
+        ]
+      },
+      "argument_recall": {
+        "values": [
+          -5.9996370063263305,
+          -4.8185821814441425,
+          -3.98672555457088
+        ],
+        "mean": -4.934981580780451,
+        "sample_sd_ddof1": 1.011491346120395,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -5.9996370063263305,
+          -3.98672555457088
+        ]
+      },
+      "argument_f1": {
+        "values": [
+          -0.9974630996309908,
+          0.30920682516483167,
+          1.1089196226932274
+        ],
+        "mean": 0.14022111607568943,
+        "sample_sd_ddof1": 1.0633104770638566,
+        "positive_rounds": 2,
+        "negative_rounds": 1,
+        "range_pp": [
+          -0.9974630996309908,
+          1.1089196226932274
+        ]
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          7.497487961466764,
+          8.916986171541808,
+          9.975212775291741
+        ],
+        "mean": 8.796562302766771,
+        "sample_sd_ddof1": 1.243244342190651,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          7.497487961466764,
+          9.975212775291741
+        ]
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          -9.807081807081808,
+          -5.983278162160632,
+          -4.62062938042388
+        ],
+        "mean": -6.80366311655544,
+        "sample_sd_ddof1": 2.6887907688298296,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -9.807081807081808,
+          -4.62062938042388
+        ]
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          -0.650289100263457,
+          1.9987018849026428,
+          3.181639275095416
+        ],
+        "mean": 1.5100173532448673,
+        "sample_sd_ddof1": 1.9621488723033498,
+        "positive_rounds": 2,
+        "negative_rounds": 1,
+        "range_pp": [
+          -0.650289100263457,
+          3.181639275095416
+        ]
+      }
+    },
+    {
+      "dataset": "cooking",
+      "label": "CT",
+      "comparison": "full minus minimal",
+      "action_precision": {
+        "values": [
+          -1.9979889766125525,
+          -2.5322425457246167,
+          -3.1345417569051737
+        ],
+        "mean": -2.5549244264141144,
+        "sample_sd_ddof1": 0.5686157809817023,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -3.1345417569051737,
+          -1.9979889766125525
+        ]
+      },
+      "action_recall": {
+        "values": [
+          2.588374839896135,
+          2.0341364534489426,
+          2.9173464682644368
+        ],
+        "mean": 2.5132859205365046,
+        "sample_sd_ddof1": 0.4463672724624243,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          2.0341364534489426,
+          2.9173464682644368
+        ]
+      },
+      "action_f1": {
+        "values": [
+          0.6267840526805624,
+          0.05817707295217023,
+          0.2898408692775911
+        ],
+        "mean": 0.3249339983034412,
+        "sample_sd_ddof1": 0.28592327664529127,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          0.05817707295217023,
+          0.6267840526805624
+        ]
+      },
+      "argument_precision": {
+        "values": [
+          16.502143653711126,
+          16.688591276303633,
+          17.163410715920723
+        ],
+        "mean": 16.784715215311827,
+        "sample_sd_ddof1": 0.3409521823198464,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          16.502143653711126,
+          17.163410715920723
+        ]
+      },
+      "argument_recall": {
+        "values": [
+          2.2163448302985,
+          2.5460805279981624,
+          3.9072900918749154
+        ],
+        "mean": 2.8899051500571926,
+        "sample_sd_ddof1": 0.896373525636751,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          2.2163448302985,
+          3.9072900918749154
+        ]
+      },
+      "argument_f1": {
+        "values": [
+          11.079763711561197,
+          11.262870543402581,
+          12.08219168978073
+        ],
+        "mean": 11.474941981581503,
+        "sample_sd_ddof1": 0.5338035069646716,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          11.079763711561197,
+          12.08219168978073
+        ]
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          25.64097547605287,
+          25.649276287310773,
+          26.13847335209705
+        ],
+        "mean": 25.809575038486898,
+        "sample_sd_ddof1": 0.2848645316437043,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          25.64097547605287,
+          26.13847335209705
+        ]
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          1.6301434646379342,
+          2.5942275588718866,
+          2.6224991158478317
+        ],
+        "mean": 2.282290046452551,
+        "sample_sd_ddof1": 0.5649523815002706,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          1.6301434646379342,
+          2.6224991158478317
+        ]
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          17.95638994235015,
+          18.19534599985786,
+          18.604626944843083
+        ],
+        "mean": 18.252120962350364,
+        "sample_sd_ddof1": 0.32782670746108367,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          17.95638994235015,
+          18.604626944843083
+        ]
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "label": "WHG",
+      "comparison": "full minus minimal",
+      "action_precision": {
+        "values": [
+          -11.815304789312842,
+          -12.599209214992424,
+          -12.046970054762795
+        ],
+        "mean": -12.153828019689353,
+        "sample_sd_ddof1": 0.4027288239637101,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -12.599209214992424,
+          -11.815304789312842
+        ]
+      },
+      "action_recall": {
+        "values": [
+          8.29093152699013,
+          9.701834922645036,
+          8.037267473055154
+        ],
+        "mean": 8.676677974230106,
+        "sample_sd_ddof1": 0.896825757729582,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          8.037267473055154,
+          9.701834922645036
+        ]
+      },
+      "action_f1": {
+        "values": [
+          -1.6054046176678938,
+          -1.273755064762483,
+          -1.8454863893413775
+        ],
+        "mean": -1.574882023923918,
+        "sample_sd_ddof1": 0.28708517625058455,
+        "positive_rounds": 0,
+        "negative_rounds": 3,
+        "range_pp": [
+          -1.8454863893413775,
+          -1.273755064762483
+        ]
+      },
+      "argument_precision": {
+        "values": [
+          15.485317665931897,
+          16.589761353164747,
+          16.375853504589966
+        ],
+        "mean": 16.15031084122887,
+        "sample_sd_ddof1": 0.5857483114052792,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          15.485317665931897,
+          16.589761353164747
+        ]
+      },
+      "argument_recall": {
+        "values": [
+          1.745326489388488,
+          1.6319030272197388,
+          1.8441368683916881
+        ],
+        "mean": 1.7404554616666383,
+        "sample_sd_ddof1": 0.10620073454524843,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          1.6319030272197388,
+          1.8441368683916881
+        ]
+      },
+      "argument_f1": {
+        "values": [
+          8.28901101607087,
+          8.723345240450875,
+          8.802910648195784
+        ],
+        "mean": 8.605088968239176,
+        "sample_sd_ddof1": 0.27660733434344476,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          8.28901101607087,
+          8.802910648195784
+        ]
+      },
+      "adjusted_argument_precision": {
+        "values": [
+          19.849452641902353,
+          20.75229366203384,
+          20.787366227879968
+        ],
+        "mean": 20.463037510605385,
+        "sample_sd_ddof1": 0.5316693658137048,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          19.849452641902353,
+          20.787366227879968
+        ]
+      },
+      "adjusted_argument_recall": {
+        "values": [
+          0.5745213846498842,
+          -0.0704555769341475,
+          0.41984679989983675
+        ],
+        "mean": 0.3079708692051912,
+        "sample_sd_ddof1": 0.3367283595795537,
+        "positive_rounds": 2,
+        "negative_rounds": 1,
+        "range_pp": [
+          -0.0704555769341475,
+          0.5745213846498842
+        ]
+      },
+      "adjusted_argument_f1": {
+        "values": [
+          12.623724621747346,
+          12.946757246505625,
+          13.171440245915022
+        ],
+        "mean": 12.913974038055997,
+        "sample_sd_ddof1": 0.2753255442317975,
+        "positive_rounds": 3,
+        "negative_rounds": 0,
+        "range_pp": [
+          12.623724621747346,
+          13.171440245915022
+        ]
+      }
+    }
+  ],
+  "adjustment_exemptions": [
+    {
+      "dataset": "win2k",
+      "label": "WHS",
+      "condition": "minimal",
+      "per_repeat": [
+        {
+          "gold_deductions": 613,
+          "prediction_deductions": 88,
+          "affected_matched_actions": 526,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 88
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 592
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 21
+            }
+          }
+        },
+        {
+          "gold_deductions": 613,
+          "prediction_deductions": 88,
+          "affected_matched_actions": 526,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 88
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 589
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 24
+            }
+          }
+        },
+        {
+          "gold_deductions": 608,
+          "prediction_deductions": 79,
+          "affected_matched_actions": 515,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 79
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 585
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 23
+            }
+          }
+        }
+      ],
+      "gold_deductions": 1834,
+      "prediction_deductions": 255,
+      "affected_matched_actions": 1567
+    },
+    {
+      "dataset": "win2k",
+      "label": "WHS",
+      "condition": "full",
+      "per_repeat": [
+        {
+          "gold_deductions": 626,
+          "prediction_deductions": 55,
+          "affected_matched_actions": 520,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 55
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 587
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 39
+            }
+          }
+        },
+        {
+          "gold_deductions": 650,
+          "prediction_deductions": 54,
+          "affected_matched_actions": 530,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 54
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 612
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 38
+            }
+          }
+        },
+        {
+          "gold_deductions": 649,
+          "prediction_deductions": 52,
+          "affected_matched_actions": 534,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 612
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 52
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 37
+            }
+          }
+        }
+      ],
+      "gold_deductions": 1925,
+      "prediction_deductions": 161,
+      "affected_matched_actions": 1584
+    },
+    {
+      "dataset": "cooking",
+      "label": "CT",
+      "condition": "minimal",
+      "per_repeat": [
+        {
+          "gold_deductions": 472,
+          "prediction_deductions": 34,
+          "affected_matched_actions": 402,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 34
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 115
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 357
+            }
+          }
+        },
+        {
+          "gold_deductions": 467,
+          "prediction_deductions": 37,
+          "affected_matched_actions": 410,
+          "deductions_by_rule": {
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 37
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 112
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 355
+            }
+          }
+        },
+        {
+          "gold_deductions": 501,
+          "prediction_deductions": 39,
+          "affected_matched_actions": 413,
+          "deductions_by_rule": {
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 123
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 378
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 39
+            }
+          }
+        }
+      ],
+      "gold_deductions": 1440,
+      "prediction_deductions": 110,
+      "affected_matched_actions": 1225
+    },
+    {
+      "dataset": "cooking",
+      "label": "CT",
+      "condition": "full",
+      "per_repeat": [
+        {
+          "gold_deductions": 464,
+          "prediction_deductions": 396,
+          "affected_matched_actions": 688,
+          "deductions_by_rule": {
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 116
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 396
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 348
+            }
+          }
+        },
+        {
+          "gold_deductions": 470,
+          "prediction_deductions": 387,
+          "affected_matched_actions": 685,
+          "deductions_by_rule": {
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 114
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 387
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 356
+            }
+          }
+        },
+        {
+          "gold_deductions": 469,
+          "prediction_deductions": 392,
+          "affected_matched_actions": 689,
+          "deductions_by_rule": {
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 114
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 392
+            },
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 355
+            }
+          }
+        }
+      ],
+      "gold_deductions": 1403,
+      "prediction_deductions": 1175,
+      "affected_matched_actions": 2062
+    },
+    {
+      "dataset": "wikihow",
+      "label": "WHG",
+      "condition": "minimal",
+      "per_repeat": [
+        {
+          "gold_deductions": 1472,
+          "prediction_deductions": 33,
+          "affected_matched_actions": 1204,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1151
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 321
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 33
+            }
+          }
+        },
+        {
+          "gold_deductions": 1487,
+          "prediction_deductions": 31,
+          "affected_matched_actions": 1220,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1165
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 322
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 31
+            }
+          }
+        },
+        {
+          "gold_deductions": 1470,
+          "prediction_deductions": 25,
+          "affected_matched_actions": 1190,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1141
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 329
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 25
+            }
+          }
+        }
+      ],
+      "gold_deductions": 4429,
+      "prediction_deductions": 89,
+      "affected_matched_actions": 3614
+    },
+    {
+      "dataset": "wikihow",
+      "label": "WHG",
+      "condition": "full",
+      "per_repeat": [
+        {
+          "gold_deductions": 1549,
+          "prediction_deductions": 314,
+          "affected_matched_actions": 1455,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1160
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 389
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 314
+            }
+          }
+        },
+        {
+          "gold_deductions": 1573,
+          "prediction_deductions": 298,
+          "affected_matched_actions": 1475,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1180
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 393
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 298
+            }
+          }
+        },
+        {
+          "gold_deductions": 1530,
+          "prediction_deductions": 313,
+          "affected_matched_actions": 1464,
+          "deductions_by_rule": {
+            "extra_arguments:unnecessary_head_or_modifier_split": {
+              "side": "gold",
+              "count": 1141
+            },
+            "extra_arguments:preposition_object": {
+              "side": "gold",
+              "count": 389
+            },
+            "missing_arguments:preposition_object": {
+              "side": "prediction",
+              "count": 313
+            }
+          }
+        }
+      ],
+      "gold_deductions": 4652,
+      "prediction_deductions": 925,
+      "affected_matched_actions": 4394
+    }
+  ],
+  "completion_audit": {
+    "campaign": "nl2p_repeats_20261027_v1",
+    "model": "gpt-5.4",
+    "snapshot": "gpt-5.4-2026-03-05",
+    "checked_at": "2026-10-28T17:36:27+11:00",
+    "request_body_keys": [
+      "model",
+      "messages"
+    ],
+    "sampling_parameters_sent": [],
+    "runs": [
+      {
+        "repeat": 1,
+        "condition": "minimal",
+        "original_batch_id": "batch_6ae05f002be48190936b953bfad17565",
+        "original_successes_preserved": 212,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 208,
+        "original_server_failures": 0,
+        "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+        "original_created_at": "2026-10-27T19:21:20+11:00",
+        "original_completed_at": "2026-10-28T04:41:20+11:00",
+        "repair_attempt_count": 1,
+        "repair_attempts": [
+          {
+            "attempt": 1,
+            "batch_id": "batch_6ae187b61c348190a85b2c7d4eeef802",
+            "submitted_requests": 208,
+            "zero_execution_capacity_rejection": false,
+            "request_counts": {
+              "completed": 208,
+              "failed": 0,
+              "total": 208
+            },
+            "created_at": "2026-10-28T16:27:18+11:00",
+            "completed_at": "2026-10-28T17:12:19+11:00",
+            "failed_at": null,
+            "input_sha256": "250d2c4ae75214c75168e36f0434dfc14cdab02638724c2578242f190d3a8bad",
+            "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+            "retry_reasons": {
+              "credit_balance_exhausted_429": 208
+            }
+          }
+        ],
+        "repair_requests_executed": 208,
+        "repaired_samples": 208,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-minimal\\merged\\provenance.json",
+        "provenance_sha256": "2a9fc079c0ffea2dedc3d89a3d75a0af90ddeac0fd14bf490985bf1388b7d6d0",
+        "merged_output_sha256": "16003ba09c3a9c9d10c4bf6827b1bcb18f33e8cf6c2f8aa1e0206ceadc6c31c5",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      },
+      {
+        "repeat": 1,
+        "condition": "full",
+        "original_batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+        "original_successes_preserved": 212,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 208,
+        "original_server_failures": 0,
+        "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+        "original_created_at": "2026-10-27T19:09:06+11:00",
+        "original_completed_at": "2026-10-28T04:39:38+11:00",
+        "repair_attempt_count": 1,
+        "repair_attempts": [
+          {
+            "attempt": 1,
+            "batch_id": "batch_6ae187bb363081908d5749adcf10de52",
+            "submitted_requests": 208,
+            "zero_execution_capacity_rejection": false,
+            "request_counts": {
+              "completed": 208,
+              "failed": 0,
+              "total": 208
+            },
+            "created_at": "2026-10-28T16:27:23+11:00",
+            "completed_at": "2026-10-28T17:10:54+11:00",
+            "failed_at": null,
+            "input_sha256": "be9d036490828a47b465082e361d6cf8197870bcae8b8d8ece4d2ef39841df65",
+            "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+            "retry_reasons": {
+              "credit_balance_exhausted_429": 208
+            }
+          }
+        ],
+        "repair_requests_executed": 208,
+        "repaired_samples": 208,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-full\\merged\\provenance.json",
+        "provenance_sha256": "2c049c60b6d41c72d3504be4de3a009113db36e725241477b15f129d279f2a70",
+        "merged_output_sha256": "be33ad6ce194525a42f463da61dc960f6847bb6de50bd39bd4764e5c1fc537f0",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      },
+      {
+        "repeat": 2,
+        "condition": "minimal",
+        "original_batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+        "original_successes_preserved": 267,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 153,
+        "original_server_failures": 0,
+        "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+        "original_created_at": "2026-10-27T16:40:42+11:00",
+        "original_completed_at": "2026-10-28T11:10:09+11:00",
+        "repair_attempt_count": 2,
+        "repair_attempts": [
+          {
+            "attempt": 1,
+            "batch_id": "batch_6ae187bfa1548190a608bd309852b25f",
+            "submitted_requests": 153,
+            "zero_execution_capacity_rejection": true,
+            "request_counts": {
+              "completed": 0,
+              "failed": 0,
+              "total": 0
+            },
+            "created_at": "2026-10-28T16:27:27+11:00",
+            "completed_at": null,
+            "failed_at": "2026-10-28T16:28:28+11:00",
+            "input_sha256": "f2723d37074df7280af30e5be9dcff6418242a6b432110ff32eed2c8d363c6f5",
+            "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+            "retry_reasons": {
+              "credit_balance_exhausted_429": 153
+            }
+          },
+          {
+            "attempt": 2,
+            "batch_id": "batch_6ae1945450488190ae41c3dee98fa3c9",
+            "submitted_requests": 153,
+            "zero_execution_capacity_rejection": false,
+            "request_counts": {
+              "completed": 153,
+              "failed": 0,
+              "total": 153
+            },
+            "created_at": "2026-10-28T17:21:08+11:00",
+            "completed_at": "2026-10-28T17:25:54+11:00",
+            "failed_at": null,
+            "input_sha256": "f2723d37074df7280af30e5be9dcff6418242a6b432110ff32eed2c8d363c6f5",
+            "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+            "retry_reasons": {
+              "credit_balance_exhausted_429": 153
+            }
+          }
+        ],
+        "repair_requests_executed": 153,
+        "repaired_samples": 153,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-minimal\\merged\\provenance.json",
+        "provenance_sha256": "acb44bb0283c9d17fbd0d4273d7eea5a29bdd099bdc588fa6bce437a898fc51f",
+        "merged_output_sha256": "f44f4fe3e4f230c060c4ad58368ed9d313d5119710170237b24fd46a100b6b95",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      },
+      {
+        "repeat": 2,
+        "condition": "full",
+        "original_batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+        "original_successes_preserved": 420,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+        "original_server_failures": 0,
+        "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+        "original_created_at": "2026-10-28T16:27:31+11:00",
+        "original_completed_at": "2026-10-28T17:13:00+11:00",
+        "repair_attempt_count": 0,
+        "repair_attempts": [],
+        "repair_requests_executed": 0,
+        "repaired_samples": 0,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-full\\merged\\provenance.json",
+        "provenance_sha256": "58b5e9ebeb7c7ce36220efb12438ba855579cfb3e67528203f128b4bd30066d6",
+        "merged_output_sha256": "b79e50d73b7d0425793a66f4074bd199da15ad3f614b15c951631968f0a578b0",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      },
+      {
+        "repeat": 3,
+        "condition": "minimal",
+        "original_batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+        "original_successes_preserved": 420,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+        "original_server_failures": 0,
+        "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+        "original_created_at": "2026-10-28T16:27:32+11:00",
+        "original_completed_at": "2026-10-28T17:09:21+11:00",
+        "repair_attempt_count": 0,
+        "repair_attempts": [],
+        "repair_requests_executed": 0,
+        "repaired_samples": 0,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-minimal\\merged\\provenance.json",
+        "provenance_sha256": "66b069c176c1b598884afdee43e0e3d440ed699cab587ba37e96ea99387ae97d",
+        "merged_output_sha256": "787d8f750daa22aeb6684d853b35f3fc2d537fe711a47bf71f38b4b0011cbf9e",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      },
+      {
+        "repeat": 3,
+        "condition": "full",
+        "original_batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+        "original_successes_preserved": 420,
+        "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+        "original_server_failures": 0,
+        "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+        "original_created_at": "2026-10-28T16:27:36+11:00",
+        "original_completed_at": "2026-10-28T17:13:02+11:00",
+        "repair_attempt_count": 0,
+        "repair_attempts": [],
+        "repair_requests_executed": 0,
+        "repaired_samples": 0,
+        "final_successes": 420,
+        "parse_failures": 0,
+        "coverage": 1.0,
+        "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-full\\merged\\provenance.json",
+        "provenance_sha256": "c851fc3d69f75d477e3bfd1c5326eb41267251d018c9a463d1f90dbf0246154a",
+        "merged_output_sha256": "a1731d413a87a2e36a6337767c15370b82a725b87e0a58cd2bdb50419b641254",
+        "first_success_preserved": true,
+        "successful_sample_reruns": 0
+      }
+    ],
+    "total_successes": 2520,
+    "original_successes_preserved": 1951,
+    "confirmed_original_credit_failures": 569,
+    "repair_attempts": 4,
+    "repair_requests_executed": 569,
+    "zero_execution_repair_attempts": 1,
+    "parse_failures": 0,
+    "successful_sample_reruns": 0,
+    "new_rounds": 0,
+    "final_coverage": 1.0
+  },
+  "notes": [
+    "All scores are percentages; differences are percentage points; standard deviation uses ddof=1.",
+    "Three repeats are descriptive and do not alone establish statistical significance.",
+    "Adjusted metrics are argument-only, prediction-dependent diagnostics on evaluator-matched actions; they do not replace strict scores.",
+    "Exemptions are raw denominator deductions before the evaluator true-positive floor, not independently verified annotation errors.",
+    "The original request bodies contain only model and messages, retaining the original model snapshot and omitted sampling fields.",
+    "Retain original successes and the first successful authorized repair; no best-of selection, no fourth round, no successful sample reruns.",
+    "All 569 executed repairs address exact HTTP429 insufficient_quota / credit_balance_exhausted failures; no server failures were repaired.",
+    "Repairs occurred later than the original batches; the legacy _server_repaired directory name does not imply server errors."
+  ],
+  "sources": [
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_repeats_20261027_v1\\repaired\\gpt-5.4\\comparison.json",
+      "sha256": "093768c1610d5deae6884ba536c46f28261d217c644672c21e1f851d0380c767"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_repeats_20261027_v1\\repaired\\gpt-5.4\\comparison_adjusted.json",
+      "sha256": "58ad3cc85247f5881f6b88176f79e641e3c901fd9662c6775ade8224255e11e0"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\completion_audit_20261028.json",
+      "sha256": "b00b794a1f1d9d3ae8d551881d4095b0aa92320f0e6cb5326687af6eff6e0052"
+    }
+  ]
+}

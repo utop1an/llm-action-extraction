@@ -1,0 +1,240 @@
+{
+  "campaign": "nl2p_repeats_20261027_v1",
+  "model": "gpt-5.4",
+  "snapshot": "gpt-5.4-2026-03-05",
+  "checked_at": "2026-10-28T17:36:27+11:00",
+  "request_body_keys": [
+    "model",
+    "messages"
+  ],
+  "sampling_parameters_sent": [],
+  "runs": [
+    {
+      "repeat": 1,
+      "condition": "minimal",
+      "original_batch_id": "batch_6ae05f002be48190936b953bfad17565",
+      "original_successes_preserved": 212,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 208,
+      "original_server_failures": 0,
+      "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+      "original_created_at": "2026-10-27T19:21:20+11:00",
+      "original_completed_at": "2026-10-28T04:41:20+11:00",
+      "repair_attempt_count": 1,
+      "repair_attempts": [
+        {
+          "attempt": 1,
+          "batch_id": "batch_6ae187b61c348190a85b2c7d4eeef802",
+          "submitted_requests": 208,
+          "zero_execution_capacity_rejection": false,
+          "request_counts": {
+            "completed": 208,
+            "failed": 0,
+            "total": 208
+          },
+          "created_at": "2026-10-28T16:27:18+11:00",
+          "completed_at": "2026-10-28T17:12:19+11:00",
+          "failed_at": null,
+          "input_sha256": "250d2c4ae75214c75168e36f0434dfc14cdab02638724c2578242f190d3a8bad",
+          "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+          "retry_reasons": {
+            "credit_balance_exhausted_429": 208
+          }
+        }
+      ],
+      "repair_requests_executed": 208,
+      "repaired_samples": 208,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-minimal\\merged\\provenance.json",
+      "provenance_sha256": "2a9fc079c0ffea2dedc3d89a3d75a0af90ddeac0fd14bf490985bf1388b7d6d0",
+      "merged_output_sha256": "16003ba09c3a9c9d10c4bf6827b1bcb18f33e8cf6c2f8aa1e0206ceadc6c31c5",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "full",
+      "original_batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+      "original_successes_preserved": 212,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 208,
+      "original_server_failures": 0,
+      "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+      "original_created_at": "2026-10-27T19:09:06+11:00",
+      "original_completed_at": "2026-10-28T04:39:38+11:00",
+      "repair_attempt_count": 1,
+      "repair_attempts": [
+        {
+          "attempt": 1,
+          "batch_id": "batch_6ae187bb363081908d5749adcf10de52",
+          "submitted_requests": 208,
+          "zero_execution_capacity_rejection": false,
+          "request_counts": {
+            "completed": 208,
+            "failed": 0,
+            "total": 208
+          },
+          "created_at": "2026-10-28T16:27:23+11:00",
+          "completed_at": "2026-10-28T17:10:54+11:00",
+          "failed_at": null,
+          "input_sha256": "be9d036490828a47b465082e361d6cf8197870bcae8b8d8ece4d2ef39841df65",
+          "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+          "retry_reasons": {
+            "credit_balance_exhausted_429": 208
+          }
+        }
+      ],
+      "repair_requests_executed": 208,
+      "repaired_samples": 208,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-full\\merged\\provenance.json",
+      "provenance_sha256": "2c049c60b6d41c72d3504be4de3a009113db36e725241477b15f129d279f2a70",
+      "merged_output_sha256": "be33ad6ce194525a42f463da61dc960f6847bb6de50bd39bd4764e5c1fc537f0",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "minimal",
+      "original_batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+      "original_successes_preserved": 267,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 153,
+      "original_server_failures": 0,
+      "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+      "original_created_at": "2026-10-27T16:40:42+11:00",
+      "original_completed_at": "2026-10-28T11:10:09+11:00",
+      "repair_attempt_count": 2,
+      "repair_attempts": [
+        {
+          "attempt": 1,
+          "batch_id": "batch_6ae187bfa1548190a608bd309852b25f",
+          "submitted_requests": 153,
+          "zero_execution_capacity_rejection": true,
+          "request_counts": {
+            "completed": 0,
+            "failed": 0,
+            "total": 0
+          },
+          "created_at": "2026-10-28T16:27:27+11:00",
+          "completed_at": null,
+          "failed_at": "2026-10-28T16:28:28+11:00",
+          "input_sha256": "f2723d37074df7280af30e5be9dcff6418242a6b432110ff32eed2c8d363c6f5",
+          "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+          "retry_reasons": {
+            "credit_balance_exhausted_429": 153
+          }
+        },
+        {
+          "attempt": 2,
+          "batch_id": "batch_6ae1945450488190ae41c3dee98fa3c9",
+          "submitted_requests": 153,
+          "zero_execution_capacity_rejection": false,
+          "request_counts": {
+            "completed": 153,
+            "failed": 0,
+            "total": 153
+          },
+          "created_at": "2026-10-28T17:21:08+11:00",
+          "completed_at": "2026-10-28T17:25:54+11:00",
+          "failed_at": null,
+          "input_sha256": "f2723d37074df7280af30e5be9dcff6418242a6b432110ff32eed2c8d363c6f5",
+          "authorization_sha256": "574e9be7a84ea226407c3a5286d501c1a463010ff08c08c073173d29574eee3d",
+          "retry_reasons": {
+            "credit_balance_exhausted_429": 153
+          }
+        }
+      ],
+      "repair_requests_executed": 153,
+      "repaired_samples": 153,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-minimal\\merged\\provenance.json",
+      "provenance_sha256": "acb44bb0283c9d17fbd0d4273d7eea5a29bdd099bdc588fa6bce437a898fc51f",
+      "merged_output_sha256": "f44f4fe3e4f230c060c4ad58368ed9d313d5119710170237b24fd46a100b6b95",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "full",
+      "original_batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+      "original_successes_preserved": 420,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+      "original_server_failures": 0,
+      "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+      "original_created_at": "2026-10-28T16:27:31+11:00",
+      "original_completed_at": "2026-10-28T17:13:00+11:00",
+      "repair_attempt_count": 0,
+      "repair_attempts": [],
+      "repair_requests_executed": 0,
+      "repaired_samples": 0,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-full\\merged\\provenance.json",
+      "provenance_sha256": "58b5e9ebeb7c7ce36220efb12438ba855579cfb3e67528203f128b4bd30066d6",
+      "merged_output_sha256": "b79e50d73b7d0425793a66f4074bd199da15ad3f614b15c951631968f0a578b0",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "minimal",
+      "original_batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+      "original_successes_preserved": 420,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+      "original_server_failures": 0,
+      "original_input_sha256": "d3c880fd13fd567c55c50a90aa6c30459340ab6f950ab48d9644c78e9433e31c",
+      "original_created_at": "2026-10-28T16:27:32+11:00",
+      "original_completed_at": "2026-10-28T17:09:21+11:00",
+      "repair_attempt_count": 0,
+      "repair_attempts": [],
+      "repair_requests_executed": 0,
+      "repaired_samples": 0,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-minimal\\merged\\provenance.json",
+      "provenance_sha256": "66b069c176c1b598884afdee43e0e3d440ed699cab587ba37e96ea99387ae97d",
+      "merged_output_sha256": "787d8f750daa22aeb6684d853b35f3fc2d537fe711a47bf71f38b4b0011cbf9e",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "full",
+      "original_batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+      "original_successes_preserved": 420,
+      "original_http429_insufficient_quota_credit_balance_exhausted": 0,
+      "original_server_failures": 0,
+      "original_input_sha256": "0683d76a41290b59aaa2468acc5f8574c73ffc2211cad55db32c0f65ede3d5e6",
+      "original_created_at": "2026-10-28T16:27:36+11:00",
+      "original_completed_at": "2026-10-28T17:13:02+11:00",
+      "repair_attempt_count": 0,
+      "repair_attempts": [],
+      "repair_requests_executed": 0,
+      "repaired_samples": 0,
+      "final_successes": 420,
+      "parse_failures": 0,
+      "coverage": 1.0,
+      "provenance_path": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-full\\merged\\provenance.json",
+      "provenance_sha256": "c851fc3d69f75d477e3bfd1c5326eb41267251d018c9a463d1f90dbf0246154a",
+      "merged_output_sha256": "a1731d413a87a2e36a6337767c15370b82a725b87e0a58cd2bdb50419b641254",
+      "first_success_preserved": true,
+      "successful_sample_reruns": 0
+    }
+  ],
+  "total_successes": 2520,
+  "original_successes_preserved": 1951,
+  "confirmed_original_credit_failures": 569,
+  "repair_attempts": 4,
+  "repair_requests_executed": 569,
+  "zero_execution_repair_attempts": 1,
+  "parse_failures": 0,
+  "successful_sample_reruns": 0,
+  "new_rounds": 0,
+  "final_coverage": 1.0
+}

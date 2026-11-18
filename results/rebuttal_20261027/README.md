@@ -35,3 +35,28 @@ Each model contributed 2,520 predictions to the repeated prompt ablation. The fi
 - [Open-weight HPC runner](../../scripts/run_hpc_rebuttal.py) and [Slurm jobs](../../hpc). The local Gemma preflight checked 36 baseline metrics. The tables above report the completed hosted-model experiments.
 
 The historical batch scripts expect the original campaign manifests and saved predictions. The CSVs provide the complete per-domain metrics for the comparisons above and can be read without these artifacts or model API access.
+
+### Saved predictions and evaluation reports
+
+The [archives](archives) preserve the original relative paths and file bytes. Extract the archives you need from the repository root. Each prediction group contains document-level JSON, its evaluator-ready PKL and per-domain metadata.
+
+| Archive prefix | Contents |
+| --- | --- |
+| `repeats_final` | Three Full and three Minimal runs for each model. Use these for the reported prompt ablation. |
+| `repeats_before_repair` | Original GPT-5.4 outputs, including the 569 quota failures. These overlap with the final runs. |
+| `rand2` | Saved random two-shot runs. The complete five-seed comparison is for mini. The GPT-5.4 archive contains the available outputs for seeds 0–2. |
+| `minimal_control` | Historical single-run minimal controls, separate from the three fresh repeats. |
+| `minimal_case_analysis` | Complete case-level analysis for the historical mini control. |
+
+For example, to replay the strict scores of the first GPT-5.4 Full run on Cooking with the project's evaluation dependencies installed:
+
+```sh
+python -m tarfile -e results/rebuttal_20261027/archives/repeats_final_gpt-5.4.tar.xz .
+python -c "from pathlib import Path; from scripts.evaluate_nl2p_repeats import score; s='nl2p_full_repeat1_20261027_v1_server_repaired'; m='gpt-5.4'; p=Path('results')/s/m/f'cooking_{s}_{m}'; r,_=score(p,'cooking',s,m,116); print(r['action_f1'],r['argument_f1'])"
+```
+
+Expected action and argument F1 are 0.8649345072 and 0.6934724092. Historical JSON reports retain the original machine paths and hashes. When locating files in another checkout, use the path starting at `results/`.
+
+- [GPT-5.4 final report and repair audit](../nl2p_repeats_20261027_v1/repaired/gpt-5.4/completion_summary_20261028.json)
+- [GPT-5.4-mini repeat report](../nl2p_repeats_20261027_v1/gpt-5.4-mini/comparison_adjusted.json)
+- [Mini five-seed report](gpt-5.4-mini/rand2_adjusted_20261028.json) and [selected cases](gpt-5.4-mini/minimal_selected_cases.json)

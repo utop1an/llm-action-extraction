@@ -1,0 +1,1084 @@
+{
+  "model": "gpt-5.4-mini",
+  "model_snapshot": "gpt-5.4-mini-2026-03-17",
+  "created_at": "2026-10-28T16:40:05+11:00",
+  "method": "GPT3-to-Plan with two randomly selected demonstrations per query, excluding that query",
+  "selection_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "requests": 2100,
+  "source_strict_report": "C:\\anu\\llm-action-extraction\\results\\rebuttal_20261027\\gpt-5.4-mini\\comparison.json",
+  "source_strict_sha256": "2c99ab20a269ba8b70f1365ab5903d181ea469b36974132ca863ce0bdfef14d1",
+  "evaluator_sha256": "501a291863d8715ac8d5890b7cacabcd2f1d0f7b80e25eb2b5c2c57b4084e6a6",
+  "helpers_sha256": "388f4bf52f30af7e9f544a9e07946144bdcb84c7740671296ad204a1ca836c44",
+  "scoring_wrapper_sha256": "70357643017f56b1d63d6b1bae0e18a1b6ea78f5deadbabbd1a1a8975ce55d78",
+  "analysis_script_sha256": "7955b886d9dc1e32cd44b501634bb32c67870ba595e500ef63ac9a515a2f63de",
+  "metrics": [
+    {
+      "condition": "random-seed0",
+      "selection_seed": 0,
+      "dataset": "cooking",
+      "batch_id": "batch_6adf6106f428819084b64275d0d306a1",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8917501192179303,
+      "action_recall": 0.7623318385650224,
+      "action_f1": 0.821978021978022,
+      "argument_precision": 0.7483898668956633,
+      "argument_recall": 0.6619825294341056,
+      "argument_f1": 0.7025392986698912,
+      "perfect_action_argument_matches": 1056,
+      "argument_mismatch_actions": 814,
+      "matched_action_events": 1870,
+      "adjusted_argument_precision": 0.7729490022172949,
+      "adjusted_argument_recall": 0.7922727272727272,
+      "adjusted_argument_f1": 0.7824915824915825,
+      "adjustment_audit": {
+        "gold_deductions": 433,
+        "prediction_deductions": 74,
+        "affected_matched_actions": 403,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 147
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 74
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 286
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed0",
+      "selection_seed": 0,
+      "dataset": "wikihow",
+      "batch_id": "batch_6adf6106f428819084b64275d0d306a1",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8306107954545454,
+      "action_recall": 0.57539975399754,
+      "action_f1": 0.6798430460688853,
+      "argument_precision": 0.5178178618565772,
+      "argument_recall": 0.628068303094984,
+      "argument_f1": 0.5676392572944297,
+      "perfect_action_argument_matches": 793,
+      "argument_mismatch_actions": 1546,
+      "matched_action_events": 2339,
+      "adjusted_argument_precision": 0.5766780989710926,
+      "adjusted_argument_recall": 0.7278911564625851,
+      "adjusted_argument_f1": 0.643521049753964,
+      "adjustment_audit": {
+        "gold_deductions": 514,
+        "prediction_deductions": 464,
+        "affected_matched_actions": 702,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 258
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 464
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 256
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed0",
+      "selection_seed": 0,
+      "dataset": "win2k",
+      "batch_id": "batch_6adf6106f428819084b64275d0d306a1",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8930957683741648,
+      "action_recall": 0.9004491017964071,
+      "action_f1": 0.8967573611628774,
+      "argument_precision": 0.5668896321070234,
+      "argument_recall": 0.7669683257918553,
+      "argument_f1": 0.6519230769230769,
+      "perfect_action_argument_matches": 776,
+      "argument_mismatch_actions": 427,
+      "matched_action_events": 1203,
+      "adjusted_argument_precision": 0.5885416666666666,
+      "adjusted_argument_recall": 0.7883720930232558,
+      "adjusted_argument_f1": 0.6739562624254473,
+      "adjustment_audit": {
+        "gold_deductions": 48,
+        "prediction_deductions": 88,
+        "affected_matched_actions": 76,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 26
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 88
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 22
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed1",
+      "selection_seed": 1,
+      "dataset": "cooking",
+      "batch_id": "batch_6adf610982848190a92d4d82915d5829",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.889995258416311,
+      "action_recall": 0.7683176422431437,
+      "action_f1": 0.8246924428822496,
+      "argument_precision": 0.6254716981132076,
+      "argument_recall": 0.7548387096774194,
+      "argument_f1": 0.6840928632846088,
+      "perfect_action_argument_matches": 894,
+      "argument_mismatch_actions": 983,
+      "matched_action_events": 1877,
+      "adjusted_argument_precision": 0.724326292789512,
+      "adjusted_argument_recall": 0.82875,
+      "adjusted_argument_f1": 0.7730275942479595,
+      "adjustment_audit": {
+        "gold_deductions": 235,
+        "prediction_deductions": 434,
+        "affected_matched_actions": 517,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 93
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 434
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 142
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed1",
+      "selection_seed": 1,
+      "dataset": "wikihow",
+      "batch_id": "batch_6adf610982848190a92d4d82915d5829",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7904646219252961,
+      "action_recall": 0.6333333333333333,
+      "action_f1": 0.7032284209104417,
+      "argument_precision": 0.6430288461538461,
+      "argument_recall": 0.5128205128205128,
+      "argument_f1": 0.5705905879216104,
+      "perfect_action_argument_matches": 930,
+      "argument_mismatch_actions": 1673,
+      "matched_action_events": 2603,
+      "adjusted_argument_precision": 0.6921086675291074,
+      "adjusted_argument_recall": 0.6896551724137931,
+      "adjusted_argument_f1": 0.6908797417271995,
+      "adjustment_audit": {
+        "gold_deductions": 1070,
+        "prediction_deductions": 236,
+        "affected_matched_actions": 990,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 673
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 397
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 236
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed1",
+      "selection_seed": 1,
+      "dataset": "win2k",
+      "batch_id": "batch_6adf610982848190a92d4d82915d5829",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9266467065868264,
+      "action_recall": 0.9252615844544095,
+      "action_f1": 0.9259536275243082,
+      "argument_precision": 0.5844582269244801,
+      "argument_recall": 0.8701792504073873,
+      "argument_f1": 0.6992579659537321,
+      "perfect_action_argument_matches": 871,
+      "argument_mismatch_actions": 367,
+      "matched_action_events": 1238,
+      "adjusted_argument_precision": 0.6065884134797426,
+      "adjusted_argument_recall": 0.8855721393034826,
+      "adjusted_argument_f1": 0.72,
+      "adjustment_audit": {
+        "gold_deductions": 32,
+        "prediction_deductions": 100,
+        "affected_matched_actions": 64,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 100
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 10
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 22
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed2",
+      "selection_seed": 2,
+      "dataset": "cooking",
+      "batch_id": "batch_6adf610bd8dc819089ece69f79bcddb3",
+      "num_docs": 116,
+      "empty_predictions": 1,
+      "missing_predictions": 0,
+      "action_precision": 0.921505376344086,
+      "action_recall": 0.7065127782357791,
+      "action_f1": 0.7998133457769482,
+      "argument_precision": 0.6641045349730976,
+      "argument_recall": 0.72090112640801,
+      "argument_f1": 0.6913382676535307,
+      "perfect_action_argument_matches": 924,
+      "argument_mismatch_actions": 790,
+      "matched_action_events": 1714,
+      "adjusted_argument_precision": 0.7212020033388982,
+      "adjusted_argument_recall": 0.8044692737430168,
+      "adjusted_argument_f1": 0.7605633802816902,
+      "adjustment_audit": {
+        "gold_deductions": 249,
+        "prediction_deductions": 206,
+        "affected_matched_actions": 354,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 105
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 144
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 206
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed2",
+      "selection_seed": 2,
+      "dataset": "wikihow",
+      "batch_id": "batch_6adf610bd8dc819089ece69f79bcddb3",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7644217107132708,
+      "action_recall": 0.6540238268903477,
+      "action_f1": 0.7049266247379455,
+      "argument_precision": 0.6174918321186228,
+      "argument_recall": 0.5662595067988015,
+      "argument_f1": 0.5907670113007935,
+      "perfect_action_argument_matches": 1121,
+      "argument_mismatch_actions": 1569,
+      "matched_action_events": 2690,
+      "adjusted_argument_precision": 0.651033386327504,
+      "adjusted_argument_recall": 0.6978131212723658,
+      "adjusted_argument_f1": 0.6736120630568883,
+      "adjustment_audit": {
+        "gold_deductions": 818,
+        "prediction_deductions": 205,
+        "affected_matched_actions": 781,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 394
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 205
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 424
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed2",
+      "selection_seed": 2,
+      "dataset": "win2k",
+      "batch_id": "batch_6adf610bd8dc819089ece69f79bcddb3",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9151154132539091,
+      "action_recall": 0.9199101796407185,
+      "action_f1": 0.9175065322881673,
+      "argument_precision": 0.5982623086470832,
+      "argument_recall": 0.7901639344262295,
+      "argument_f1": 0.6809512597127385,
+      "perfect_action_argument_matches": 814,
+      "argument_mismatch_actions": 415,
+      "matched_action_events": 1229,
+      "adjusted_argument_precision": 0.6190068493150684,
+      "adjusted_argument_recall": 0.8087248322147651,
+      "adjusted_argument_f1": 0.7012609117361785,
+      "adjustment_audit": {
+        "gold_deductions": 42,
+        "prediction_deductions": 81,
+        "affected_matched_actions": 73,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 29
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 81
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 13
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed3",
+      "selection_seed": 3,
+      "dataset": "cooking",
+      "batch_id": "batch_6adf610e4da88190927af6b7b38c04e4",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.837893864013267,
+      "action_recall": 0.8238891153689359,
+      "action_f1": 0.8308324768756423,
+      "argument_precision": 0.7117486338797814,
+      "argument_recall": 0.7358757062146892,
+      "argument_f1": 0.723611111111111,
+      "perfect_action_argument_matches": 1179,
+      "argument_mismatch_actions": 842,
+      "matched_action_events": 2021,
+      "adjusted_argument_precision": 0.7534345625451916,
+      "adjusted_argument_recall": 0.8266560888536295,
+      "adjusted_argument_f1": 0.78834878002648,
+      "adjustment_audit": {
+        "gold_deductions": 311,
+        "prediction_deductions": 162,
+        "affected_matched_actions": 359,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 138
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 162
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 173
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed3",
+      "selection_seed": 3,
+      "dataset": "wikihow",
+      "batch_id": "batch_6adf610e4da88190927af6b7b38c04e4",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8026666666666666,
+      "action_recall": 0.6564090138114853,
+      "action_f1": 0.7222074113569714,
+      "argument_precision": 0.5898004434589801,
+      "argument_recall": 0.542242355605889,
+      "argument_f1": 0.5650224215246636,
+      "perfect_action_argument_matches": 979,
+      "argument_mismatch_actions": 1730,
+      "matched_action_events": 2709,
+      "adjusted_argument_precision": 0.6343402225755167,
+      "adjusted_argument_recall": 0.671152228763667,
+      "adjusted_argument_f1": 0.6522272170004086,
+      "adjustment_audit": {
+        "gold_deductions": 848,
+        "prediction_deductions": 285,
+        "affected_matched_actions": 846,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 455
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 393
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 285
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed3",
+      "selection_seed": 3,
+      "dataset": "win2k",
+      "batch_id": "batch_6adf610e4da88190927af6b7b38c04e4",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9428789032749428,
+      "action_recall": 0.9315274642588413,
+      "action_f1": 0.9371688115064345,
+      "argument_precision": 0.672967032967033,
+      "argument_recall": 0.8152289669861554,
+      "argument_f1": 0.7372983385504454,
+      "perfect_action_argument_matches": 856,
+      "argument_mismatch_actions": 382,
+      "matched_action_events": 1238,
+      "adjusted_argument_precision": 0.6978122151321786,
+      "adjusted_argument_recall": 0.8402854006586169,
+      "adjusted_argument_f1": 0.7624501992031871,
+      "adjustment_audit": {
+        "gold_deductions": 56,
+        "prediction_deductions": 81,
+        "affected_matched_actions": 85,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 40
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 16
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 81
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed4",
+      "selection_seed": 4,
+      "dataset": "cooking",
+      "batch_id": "batch_6adf611071788190857af74f6bcee7cb",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9133095359510454,
+      "action_recall": 0.7394715111478117,
+      "action_f1": 0.8172484599589321,
+      "argument_precision": 0.6306818181818182,
+      "argument_recall": 0.7423288749016522,
+      "argument_f1": 0.6819660281893748,
+      "perfect_action_argument_matches": 868,
+      "argument_mismatch_actions": 923,
+      "matched_action_events": 1791,
+      "adjusted_argument_precision": 0.7107344632768362,
+      "adjusted_argument_recall": 0.825098382160035,
+      "adjusted_argument_f1": 0.763658437879401,
+      "adjustment_audit": {
+        "gold_deductions": 255,
+        "prediction_deductions": 337,
+        "affected_matched_actions": 451,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 337
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 91
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 164
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed4",
+      "selection_seed": 4,
+      "dataset": "wikihow",
+      "batch_id": "batch_6adf611071788190857af74f6bcee7cb",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7924073516119313,
+      "action_recall": 0.6403700998295593,
+      "action_f1": 0.7083221115001347,
+      "argument_precision": 0.6618372379778051,
+      "argument_recall": 0.5045828437132786,
+      "argument_f1": 0.5726096812908388,
+      "perfect_action_argument_matches": 1020,
+      "argument_mismatch_actions": 1610,
+      "matched_action_events": 2630,
+      "adjusted_argument_precision": 0.6916881443298969,
+      "adjusted_argument_recall": 0.6745208922400251,
+      "adjusted_argument_f1": 0.682996659774137,
+      "adjustment_audit": {
+        "gold_deductions": 1072,
+        "prediction_deductions": 140,
+        "affected_matched_actions": 926,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 648
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 424
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 140
+          }
+        }
+      }
+    },
+    {
+      "condition": "random-seed4",
+      "selection_seed": 4,
+      "dataset": "win2k",
+      "batch_id": "batch_6adf611071788190857af74f6bcee7cb",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9283047050037341,
+      "action_recall": 0.9296933433059088,
+      "action_f1": 0.928998505231689,
+      "argument_precision": 0.5842084791909763,
+      "argument_recall": 0.8075268817204301,
+      "argument_f1": 0.6779508011735501,
+      "perfect_action_argument_matches": 813,
+      "argument_mismatch_actions": 430,
+      "matched_action_events": 1243,
+      "adjusted_argument_precision": 0.6063786838918046,
+      "adjusted_argument_recall": 0.8207650273224044,
+      "adjusted_argument_f1": 0.6974692361272348,
+      "adjustment_audit": {
+        "gold_deductions": 30,
+        "prediction_deductions": 94,
+        "affected_matched_actions": 72,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 18
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 94
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 12
+          }
+        }
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "4aee0f00ea8ebb348067ce770c83f607cb1a98f40e3de4409ee5224856070cc3",
+      "pkl_sha256": "4bd71a9c96609b676d2c45f8958ae94e8cf470e793f99f0d25ac6308f66cff72"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "590249780807d94fcc2f4501ace97b71b45d235aeefda80b266f544f70ecc2ae",
+      "pkl_sha256": "a32e21e728b094750de2f2b878b9eac988f608ec5a901681e13d8adf49b2495c"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "f1bb55bb192eb576bfa6306499142c908a3222a65cc6be85776ff2c3242b1e49",
+      "pkl_sha256": "37794ca3954707aacbd6bf5ea44a5fa02063a3e5315713636fb6083798f5a527"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "d8e2137a8bb3c055a4e15af49d3cf60e78cae3a056a4a31db53068f6e5684361",
+      "pkl_sha256": "20ed78a3a04d937cf00ebb82eda89921629c2150b98b602f4d028dd465ec7e69"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "613c1d364be333c4b465bc8b4f4595a818f4f597598c91c0233168e434b2baf2",
+      "pkl_sha256": "cf275d4ebc9700f3ea5134856f2d468aebd37ee35b509e9464c60c381064dae4"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "64348d38371456432df0a8791bf0ae6a5888288db99a5d586e80a655e1d3d878",
+      "pkl_sha256": "89d82d608581c7460f501721a986b1da336e0121c7a25036344634c35843f830"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "f35b325570769e1c6de30fe55b31033cbcaadda67e54aeea642a5a0cfb302472",
+      "pkl_sha256": "1c6b3f347fc3e6553224273367ded46861c4294660e6417c2f4e1a2d4c14132a"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "b14a81100a600b881ee6917fd861694031153179ed82f20d4413c1da03f99d5f",
+      "pkl_sha256": "5d955c93fdc6e026ff51067176747cdce54d83cdbc489369c26ba9418a0a4fce"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "5402fb8c8459464808a894cf55470b314e55d226809d0d4a51e3547cbca21f05",
+      "pkl_sha256": "fab4ecf4dd51a0c45fe7b005fe3529aa71f712570942c28e0b4f47b8ff30431d"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "6757ac97df18057ddf5743859d67aad0002f26891cc127cc637b48845baa80fe",
+      "pkl_sha256": "04acf9872a4aed0147ad6ee8792a992debaaea54d04eea34e8025c2901fdaaf9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "2a49039d24843482e89c2f186ca3cb77537df902aed730a1037665c1526e9fdd",
+      "pkl_sha256": "b868252c8d97fbb7aa0b99afb436cd2585bbd05dbbeff7c5bacef0506d91c7cc"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "011e44d866f099e523dc015df1626179638090291b4fe095c6c1d6bc8000ed5e",
+      "pkl_sha256": "3b3d05019b388c4e56961bf4aff86df3b6731d9224f70c98f68658931befe129"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "dc181e4106155353a5d269d93839abe93869f8c2a77e9f6ab16213220b793920",
+      "pkl_sha256": "b6554bee4c03d0c5a7dda32b8b896a9ffc25cd7366fc883fcabcd93ee4a7ead8"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "fc1c7d7ef962fa5c9ff00a1fc51f677f629d3889a76b9d5b714f64b4bc84f0c1",
+      "pkl_sha256": "a15c742400697003a646dcb8403126a666b201589ac961549c49977ab6476578"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "json_sha256": "06b874fe271821e1d8f010afa19c62e6a0920deddc1e9f970e91f20fc350f425",
+      "pkl_sha256": "a768421d545186d3d35312549026a58b3f59ef85ad07f579fadd7eda082fceea"
+    }
+  ],
+  "summary": [
+    {
+      "dataset": "win2k",
+      "action_precision": {
+        "seeds": [
+          89.30957683741649,
+          92.66467065868264,
+          91.51154132539091,
+          94.28789032749428,
+          92.83047050037341
+        ],
+        "mean": 92.12082992987155,
+        "sample_std": 1.8553894333770538
+      },
+      "action_recall": {
+        "seeds": [
+          90.04491017964071,
+          92.52615844544096,
+          91.99101796407186,
+          93.15274642588413,
+          92.96933433059088
+        ],
+        "mean": 92.1368334691257,
+        "sample_std": 1.2524092749413644
+      },
+      "action_f1": {
+        "seeds": [
+          89.67573611628774,
+          92.59536275243082,
+          91.75065322881673,
+          93.71688115064345,
+          92.89985052316891
+        ],
+        "mean": 92.12769675426952,
+        "sample_std": 1.5406745896390635
+      },
+      "argument_precision": {
+        "seeds": [
+          56.68896321070234,
+          58.44582269244801,
+          59.82623086470832,
+          67.2967032967033,
+          58.42084791909763
+        ],
+        "mean": 60.13571359673192,
+        "sample_std": 4.154880769312809
+      },
+      "argument_recall": {
+        "seeds": [
+          76.69683257918552,
+          87.01792504073873,
+          79.01639344262294,
+          81.52289669861554,
+          80.75268817204301
+        ],
+        "mean": 81.00134718664115,
+        "sample_std": 3.8406360685793266
+      },
+      "argument_f1": {
+        "seeds": [
+          65.1923076923077,
+          69.92579659537321,
+          68.09512597127384,
+          73.72983385504453,
+          67.79508011735501
+        ],
+        "mean": 68.94762884627086,
+        "sample_std": 3.1616397480235996
+      },
+      "adjusted_argument_precision": {
+        "seeds": [
+          58.854166666666664,
+          60.65884134797426,
+          61.900684931506845,
+          69.78122151321786,
+          60.63786838918046
+        ],
+        "mean": 62.36655656970922,
+        "sample_std": 4.2847353927289875
+      },
+      "adjusted_argument_recall": {
+        "seeds": [
+          78.83720930232559,
+          88.55721393034825,
+          80.87248322147651,
+          84.02854006586169,
+          82.07650273224044
+        ],
+        "mean": 82.8743898504505,
+        "sample_std": 3.693563084119897
+      },
+      "adjusted_argument_f1": {
+        "seeds": [
+          67.39562624254472,
+          72.0,
+          70.12609117361785,
+          76.24501992031871,
+          69.74692361272348
+        ],
+        "mean": 71.10273218984095,
+        "sample_std": 3.3084320947770482
+      },
+      "raw_adjustment_audit": {
+        "gold_deductions": [
+          48,
+          32,
+          42,
+          56,
+          30
+        ],
+        "prediction_deductions": [
+          88,
+          100,
+          81,
+          81,
+          94
+        ],
+        "affected_matched_actions": [
+          76,
+          64,
+          73,
+          85,
+          72
+        ]
+      }
+    },
+    {
+      "dataset": "cooking",
+      "action_precision": {
+        "seeds": [
+          89.17501192179303,
+          88.9995258416311,
+          92.15053763440861,
+          83.78938640132671,
+          91.33095359510453
+        ],
+        "mean": 89.0890830788528,
+        "sample_std": 3.2596271468505846
+      },
+      "action_recall": {
+        "seeds": [
+          76.23318385650224,
+          76.83176422431437,
+          70.65127782357791,
+          82.38891153689359,
+          73.94715111478118
+        ],
+        "mean": 76.01045771121386,
+        "sample_std": 4.312391091654053
+      },
+      "action_f1": {
+        "seeds": [
+          82.1978021978022,
+          82.46924428822496,
+          79.98133457769482,
+          83.08324768756424,
+          81.72484599589322
+        ],
+        "mean": 81.89129494943589,
+        "sample_std": 1.1751996997527907
+      },
+      "argument_precision": {
+        "seeds": [
+          74.83898668956634,
+          62.54716981132076,
+          66.41045349730976,
+          71.17486338797814,
+          63.06818181818182
+        ],
+        "mean": 67.60793104087136,
+        "sample_std": 5.307206229696736
+      },
+      "argument_recall": {
+        "seeds": [
+          66.19825294341057,
+          75.48387096774194,
+          72.090112640801,
+          73.58757062146893,
+          74.23288749016523
+        ],
+        "mean": 72.31853893271753,
+        "sample_std": 3.6333379240085453
+      },
+      "argument_f1": {
+        "seeds": [
+          70.25392986698911,
+          68.40928632846088,
+          69.13382676535306,
+          72.3611111111111,
+          68.19660281893748
+        ],
+        "mean": 69.67095137817033,
+        "sample_std": 1.7052000270221834
+      },
+      "adjusted_argument_precision": {
+        "seeds": [
+          77.29490022172949,
+          72.4326292789512,
+          72.12020033388981,
+          75.34345625451915,
+          71.07344632768363
+        ],
+        "mean": 73.65292648335466,
+        "sample_std": 2.5794358011023615
+      },
+      "adjusted_argument_recall": {
+        "seeds": [
+          79.22727272727272,
+          82.875,
+          80.44692737430168,
+          82.66560888536296,
+          82.5098382160035
+        ],
+        "mean": 81.54492944058818,
+        "sample_std": 1.622744606690615
+      },
+      "adjusted_argument_f1": {
+        "seeds": [
+          78.24915824915824,
+          77.30275942479595,
+          76.05633802816902,
+          78.834878002648,
+          76.36584378794011
+        ],
+        "mean": 77.36179549854226,
+        "sample_std": 1.1892233799723262
+      },
+      "raw_adjustment_audit": {
+        "gold_deductions": [
+          433,
+          235,
+          249,
+          311,
+          255
+        ],
+        "prediction_deductions": [
+          74,
+          434,
+          206,
+          162,
+          337
+        ],
+        "affected_matched_actions": [
+          403,
+          517,
+          354,
+          359,
+          451
+        ]
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "action_precision": {
+        "seeds": [
+          83.06107954545455,
+          79.0464621925296,
+          76.44217107132708,
+          80.26666666666667,
+          79.24073516119313
+        ],
+        "mean": 79.6114229274342,
+        "sample_std": 2.3890491057907366
+      },
+      "action_recall": {
+        "seeds": [
+          57.539975399754,
+          63.33333333333333,
+          65.40238268903477,
+          65.64090138114852,
+          64.03700998295592
+        ],
+        "mean": 63.19072055724531,
+        "sample_std": 3.30008713846692
+      },
+      "action_f1": {
+        "seeds": [
+          67.98430460688853,
+          70.32284209104417,
+          70.49266247379455,
+          72.22074113569714,
+          70.83221115001346
+        ],
+        "mean": 70.37055229148757,
+        "sample_std": 1.528699842431196
+      },
+      "argument_precision": {
+        "seeds": [
+          51.78178618565772,
+          64.30288461538461,
+          61.74918321186228,
+          58.98004434589801,
+          66.18372379778052
+        ],
+        "mean": 60.59952443131663,
+        "sample_std": 5.625724354362395
+      },
+      "argument_recall": {
+        "seeds": [
+          62.806830309498395,
+          51.28205128205128,
+          56.625950679880155,
+          54.224235560588895,
+          50.458284371327856
+        ],
+        "mean": 55.07947044066932,
+        "sample_std": 4.965150333234655
+      },
+      "argument_f1": {
+        "seeds": [
+          56.76392572944297,
+          57.059058792161046,
+          59.07670113007934,
+          56.502242152466366,
+          57.26096812908388
+        ],
+        "mean": 57.33257918664672,
+        "sample_std": 1.0167016829003068
+      },
+      "adjusted_argument_precision": {
+        "seeds": [
+          57.66780989710926,
+          69.21086675291073,
+          65.1033386327504,
+          63.43402225755167,
+          69.16881443298969
+        ],
+        "mean": 64.91697039466234,
+        "sample_std": 4.777549577933513
+      },
+      "adjusted_argument_recall": {
+        "seeds": [
+          72.78911564625851,
+          68.96551724137932,
+          69.78131212723659,
+          67.1152228763667,
+          67.4520892240025
+        ],
+        "mean": 69.22065142304872,
+        "sample_std": 2.273434208707365
+      },
+      "adjusted_argument_f1": {
+        "seeds": [
+          64.3521049753964,
+          69.08797417271995,
+          67.36120630568882,
+          65.22272170004086,
+          68.29966597741371
+        ],
+        "mean": 66.86473462625194,
+        "sample_std": 2.016049379616718
+      },
+      "raw_adjustment_audit": {
+        "gold_deductions": [
+          514,
+          1070,
+          818,
+          848,
+          1072
+        ],
+        "prediction_deductions": [
+          464,
+          236,
+          205,
+          285,
+          140
+        ],
+        "affected_matched_actions": [
+          702,
+          990,
+          781,
+          846,
+          926
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "Only existing saved predictions are scored; no inference requests or retries.",
+    "Original evaluator and matching are unchanged; every strict metric must reproduce the saved strict report.",
+    "Mean and sample standard deviation (ddof=1) over five corpus-level seed scores, not three same-prompt repetitions.",
+    "Adjusted argument scores are prediction-dependent diagnostics on evaluator-matched actions, not adjusted action F1.",
+    "Audit counts are raw denominator deductions before the original true-positive lower-bound clamp, not independent annotation-error counts."
+  ],
+  "complete": true
+}

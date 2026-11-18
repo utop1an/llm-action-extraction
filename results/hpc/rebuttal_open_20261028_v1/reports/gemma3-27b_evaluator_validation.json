@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-28T06:23:46+00:00",
+  "configurations": [
+    {
+      "dataset": "cooking",
+      "solver": "gpt3_to_plan"
+    },
+    {
+      "dataset": "wikihow",
+      "solver": "gpt3_to_plan"
+    },
+    {
+      "dataset": "win2k",
+      "solver": "gpt3_to_plan"
+    },
+    {
+      "dataset": "cooking",
+      "solver": "nl2p_1"
+    },
+    {
+      "dataset": "wikihow",
+      "solver": "nl2p_1"
+    },
+    {
+      "dataset": "win2k",
+      "solver": "nl2p_1"
+    }
+  ],
+  "strict_metric_checks": 36
+}

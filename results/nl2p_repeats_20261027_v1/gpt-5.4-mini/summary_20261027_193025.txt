@@ -1,0 +1,105 @@
+GPT-5.4-mini: three fresh repeats, minimal vs full NL2P
+Generated: 2026-10-27T19:30:25+11:00
+2520/2520 collected; zero request/parse failures.
+Snapshot: gpt-5.4-mini-2026-03-17
+All scores are percentages; mean +/- sample SD (ddof=1). Each repeat is scored separately on the full corpus.
+
+WHS (154 documents)
+minimal
+  action_precision: 98.86 +/- 0.27
+  action_recall: 86.54 +/- 0.04
+  action_f1: 92.29 +/- 0.10
+  argument_precision: 76.74 +/- 0.52
+  argument_recall: 59.51 +/- 0.39
+  argument_f1: 67.04 +/- 0.39
+  adjusted_argument_precision: 80.96 +/- 0.77
+  adjusted_argument_recall: 91.98 +/- 1.04
+  adjusted_argument_f1: 86.11 +/- 0.75
+full
+  action_precision: 98.11 +/- 0.34
+  action_recall: 86.75 +/- 0.35
+  action_f1: 92.08 +/- 0.34
+  argument_precision: 87.94 +/- 0.31
+  argument_recall: 58.46 +/- 0.16
+  argument_f1: 70.23 +/- 0.20
+  adjusted_argument_precision: 88.90 +/- 0.12
+  adjusted_argument_recall: 91.48 +/- 0.55
+  adjusted_argument_f1: 90.17 +/- 0.24
+  full - minimal action_precision, rounds 1/2/3 (percentage points): -0.76, -1.00, -0.49; mean -0.75 +/- 0.25
+  full - minimal action_recall, rounds 1/2/3 (percentage points): -0.22, +0.30, +0.54; mean +0.21 +/- 0.39
+  full - minimal action_f1, rounds 1/2/3 (percentage points): -0.46, -0.27, +0.09; mean -0.21 +/- 0.28
+  full - minimal argument_precision, rounds 1/2/3 (percentage points): +11.73, +11.57, +10.28; mean +11.19 +/- 0.79
+  full - minimal argument_recall, rounds 1/2/3 (percentage points): -0.42, -1.35, -1.40; mean -1.06 +/- 0.55
+  full - minimal argument_f1, rounds 1/2/3 (percentage points): +3.79, +3.14, +2.64; mean +3.19 +/- 0.58
+  full - minimal adjusted_argument_f1, rounds 1/2/3 (percentage points): +4.66, +4.01, +3.49; mean +4.05 +/- 0.59
+  minimal raw deductions, gold by round: [613, 619, 623]; prediction by round: [71, 67, 74]; affected matched actions: [513, 513, 526]
+  full raw deductions, gold by round: [630, 631, 647]; prediction by round: [7, 14, 17]; affected matched actions: [471, 477, 491]
+
+CT (116 documents)
+minimal
+  action_precision: 92.91 +/- 0.44
+  action_recall: 77.52 +/- 0.39
+  action_f1: 84.52 +/- 0.40
+  argument_precision: 49.05 +/- 0.18
+  argument_recall: 68.85 +/- 0.27
+  argument_f1: 57.29 +/- 0.13
+  adjusted_argument_precision: 50.41 +/- 0.11
+  adjusted_argument_recall: 84.66 +/- 0.32
+  adjusted_argument_f1: 63.19 +/- 0.12
+full
+  action_precision: 92.69 +/- 0.33
+  action_recall: 78.78 +/- 0.29
+  action_f1: 85.17 +/- 0.07
+  argument_precision: 63.58 +/- 0.21
+  argument_recall: 69.89 +/- 0.30
+  argument_f1: 66.59 +/- 0.25
+  adjusted_argument_precision: 73.33 +/- 0.39
+  adjusted_argument_recall: 85.12 +/- 0.17
+  adjusted_argument_f1: 78.79 +/- 0.22
+  full - minimal action_precision, rounds 1/2/3 (percentage points): -0.26, +0.19, -0.56; mean -0.21 +/- 0.38
+  full - minimal action_recall, rounds 1/2/3 (percentage points): +0.82, +1.61, +1.34; mean +1.26 +/- 0.40
+  full - minimal action_f1, rounds 1/2/3 (percentage points): +0.38, +1.03, +0.55; mean +0.65 +/- 0.34
+  full - minimal argument_precision, rounds 1/2/3 (percentage points): +14.96, +14.22, +14.42; mean +14.53 +/- 0.38
+  full - minimal argument_recall, rounds 1/2/3 (percentage points): +1.17, +0.80, +1.14; mean +1.04 +/- 0.21
+  full - minimal argument_f1, rounds 1/2/3 (percentage points): +9.64, +9.01, +9.25; mean +9.30 +/- 0.32
+  full - minimal adjusted_argument_f1, rounds 1/2/3 (percentage points): +15.84, +15.31, +15.64; mean +15.60 +/- 0.27
+  minimal raw deductions, gold by round: [496, 489, 498]; prediction by round: [108, 95, 97]; affected matched actions: [480, 468, 474]
+  full raw deductions, gold by round: [475, 495, 489]; prediction by round: [400, 389, 402]; affected matched actions: [690, 686, 693]
+
+WHG (150 documents)
+minimal
+  action_precision: 86.30 +/- 0.13
+  action_recall: 73.90 +/- 0.51
+  action_f1: 79.62 +/- 0.34
+  argument_precision: 54.89 +/- 0.36
+  argument_recall: 54.70 +/- 0.37
+  argument_f1: 54.79 +/- 0.30
+  adjusted_argument_precision: 55.46 +/- 0.34
+  adjusted_argument_recall: 76.82 +/- 0.38
+  adjusted_argument_f1: 64.41 +/- 0.28
+full
+  action_precision: 78.95 +/- 0.38
+  action_recall: 76.55 +/- 1.06
+  action_f1: 77.73 +/- 0.39
+  argument_precision: 65.45 +/- 0.80
+  argument_recall: 54.47 +/- 0.25
+  argument_f1: 59.46 +/- 0.44
+  adjusted_argument_precision: 70.18 +/- 0.94
+  adjusted_argument_recall: 75.11 +/- 0.42
+  adjusted_argument_f1: 72.56 +/- 0.69
+  full - minimal action_precision, rounds 1/2/3 (percentage points): -6.85, -7.57, -7.61; mean -7.34 +/- 0.43
+  full - minimal action_recall, rounds 1/2/3 (percentage points): +1.43, +2.86, +3.68; mean +2.65 +/- 1.13
+  full - minimal action_f1, rounds 1/2/3 (percentage points): -2.29, -1.92, -1.46; mean -1.89 +/- 0.42
+  full - minimal argument_precision, rounds 1/2/3 (percentage points): +10.72, +9.78, +11.18; mean +10.56 +/- 0.72
+  full - minimal argument_recall, rounds 1/2/3 (percentage points): -0.43, +0.15, -0.40; mean -0.23 +/- 0.33
+  full - minimal argument_f1, rounds 1/2/3 (percentage points): +4.64, +4.52, +4.83; mean +4.66 +/- 0.16
+  full - minimal adjusted_argument_f1, rounds 1/2/3 (percentage points): +8.26, +7.54, +8.63; mean +8.15 +/- 0.56
+  minimal raw deductions, gold by round: [1449, 1465, 1432]; prediction by round: [53, 57, 44]; affected matched actions: [1186, 1209, 1171]
+  full raw deductions, gold by round: [1431, 1412, 1441]; prediction by round: [285, 294, 296]; affected matched actions: [1346, 1338, 1368]
+
+Interpretation: WHG minimal action F1 is higher in all three repeats; CT full action F1 is higher in all three; WHS action differences change sign. Full argument F1 is higher for all datasets in every repeat, under both strict and adjusted scoring.
+WHG full action precision falls by 7.34 pp while recall rises by 2.65 pp relative to minimal. The precision loss outweighs the recall gain.
+Three repeats assess run-to-run stability for these fixed conditions; they do not alone establish statistical significance.
+Strict is the primary result; adjusted is argument-only and secondary. Deductions are prediction-dependent heuristics, not independently validated annotation errors. Raw counts are before the original evaluator true-positive lower-bound clamp.
+Argument metrics are conditional on evaluator-matched actions. No inference or scoring rules were changed.
+Historical results are excluded from these repeat means.
