@@ -1,5 +1,7 @@
 # LLM-based Action (State) Extraction
 
+[Supplementary experiments: NL2P prompt ablation and random two-shot comparisons](results/rebuttal_20261027/README.md)
+
 # Input
 A natural language description of a sequence of actions (possibly no state descriptions)
 

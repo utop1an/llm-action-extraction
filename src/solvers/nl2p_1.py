@@ -46,4 +46,9 @@ class NL2P_1(Solver):
 class NL2P_1_Ablation(NL2P_1):
     prompt_name = "nl2p_1_ablation"
     log_prefix = "nl2p_1_ablation"
+
+
+class NL2P_Minimal(NL2P_1):
+    prompt_name = "nl2p_minimal"
+    log_prefix = "nl2p_minimal"
     
