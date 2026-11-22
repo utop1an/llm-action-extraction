@@ -168,25 +168,25 @@ silver label. See `data/procedural/openpi_a/release_audit.json` for the counts.
 Run from the repository root. Use a fresh output directory for each run:
 
 ```powershell
-python scripts/prepare_procedural_data.py --format risec --input data/procedural/risec_smoke/data --output data/procedural/risec_smoke/converted
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl_local.py --data data/procedural/risec_smoke/converted --output results/ceasdrl_new_run/act --mode act --max-steps 128 --check-pretrained
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl_local.py --data data/procedural/risec_smoke/converted --output results/ceasdrl_new_run/arg --mode arg --max-steps 128 --check-pretrained
+python scripts/ceasdrl/prepare_procedural_data.py --format risec --input data/procedural/risec_smoke/data --output data/procedural/risec_smoke/converted
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/ceasdrl_local.py --data data/procedural/risec_smoke/converted --output results/ceasdrl_new_run/act --mode act --max-steps 128 --check-pretrained
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/ceasdrl_local.py --data data/procedural/risec_smoke/converted --output results/ceasdrl_new_run/arg --mode arg --max-steps 128 --check-pretrained
 python -m pytest tests/test_procedural_data.py -q -p no:cacheprovider
 ```
 
 To reproduce the OpenPI-A pilot with the downloaded release:
 
 ```powershell
-python scripts/prepare_procedural_data.py --format openpi-a --input data/procedural/openpi_a/data/silver_standard.jsonl --output data/procedural/openpi_a/converted
-python scripts/audit_openpi_a.py
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl_local.py --data data/procedural/openpi_a/converted --output results/ceasdrl_new_run/openpi_a_act --mode act --max-steps 512 --check-pretrained
+python scripts/ceasdrl/prepare_procedural_data.py --format openpi-a --input data/procedural/openpi_a/data/silver_standard.jsonl --output data/procedural/openpi_a/converted
+python scripts/ceasdrl/audit_openpi_a.py
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/ceasdrl_local.py --data data/procedural/openpi_a/converted --output results/ceasdrl_new_run/openpi_a_act --mode act --max-steps 512 --check-pretrained
 ```
 
 After independently downloading the official `recifinegold.jsonl`:
 
 ```powershell
-python scripts/prepare_procedural_data.py --format recifinegold --input data/procedural/recifinegold.jsonl --output data/procedural/recifinegold_converted
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl_local.py --data data/procedural/recifinegold_converted --output results/recifinegold_pilot --mode act --epochs 20 --max-steps 0
+python scripts/ceasdrl/prepare_procedural_data.py --format recifinegold --input data/procedural/recifinegold.jsonl --output data/procedural/recifinegold_converted
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/ceasdrl_local.py --data data/procedural/recifinegold_converted --output results/recifinegold_pilot --mode act --epochs 20 --max-steps 0
 ```
 
 ReciFineGold argument mode deliberately fails: no argument links are annotated.

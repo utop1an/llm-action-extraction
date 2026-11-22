@@ -16,6 +16,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from src.result_paths import recorded_path
 from scripts.evaluate_rebuttal_batch import METRICS, STRICT_EVALUATION, sha
 import evaluation as original_evaluation
 
@@ -136,7 +137,7 @@ def main(model, adjusted=False):
             "raw_output_sha256": sha(output), "response_models": dict(response_models)})
         for ds, count in matrix["datasets"].items():
             solver = manifest["result_solver"]
-            stem = Path(manifest["result_dir"]) / f"{ds}_{solver}_{model}"
+            stem = recorded_path(manifest["result_dir"]) / f"{ds}_{solver}_{model}"
             print(f"Evaluating {run['condition']} repeat {run['repeat']}: {ds}, adjusted={adjusted}", flush=True)
             metrics, provenance = score(stem, ds, solver, model, count, adjusted=adjusted)
             report["metrics"].append({**label, "dataset": ds, **metrics})

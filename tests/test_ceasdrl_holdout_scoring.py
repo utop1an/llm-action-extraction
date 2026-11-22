@@ -2,9 +2,9 @@ from copy import deepcopy
 
 import pytest
 
-from scripts.evaluate_ceasdrl_holdout import independent_char_scores
-from scripts.evaluate_ceasdrl_spans import assemble_predictions, evaluate_predictions
-from scripts.risec_spans import make_span_examples
+from scripts.ceasdrl.evaluate_ceasdrl_holdout import independent_char_scores
+from scripts.ceasdrl.evaluate_ceasdrl_spans import assemble_predictions, evaluate_predictions
+from scripts.ceasdrl.risec_spans import make_span_examples
 
 
 def gold_and_predictions():

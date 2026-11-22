@@ -20,6 +20,8 @@ from typing import BinaryIO
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from src.result_paths import run_directory
 DEFAULT_SOLVERS = ("nl2p_1", "nl2p_1_ablation", "nl2p_1_coref", "gpt3_to_plan")
 DEFAULT_MODELS = (
     "gpt-5.4",
@@ -62,7 +64,7 @@ def build_jobs(prefix: Path, solvers: list[str], models: list[str], strict: bool
     missing = []
     for solver in solvers:
         for model in models:
-            result_dir = prefix / solver / model
+            result_dir = run_directory(prefix, solver) / model
             if result_dir.is_dir():
                 jobs.append(EvaluationJob(solver=solver, model=model, result_dir=result_dir))
             else:

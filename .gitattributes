@@ -4,3 +4,9 @@ data/procedural/risec/**/*.ann text eol=lf
 data/procedural/risec_smoke/**/*.txt text eol=lf
 data/procedural/risec_smoke/**/*.ann text eol=lf
 results/source-variants-20261123/** -text
+
+# Preserve the exact published bytes of the regrouped experiment outputs.
+results/nl2p_four_conditions_20261122/** -text
+results/gpt3toplan_trainpool_20261122/** -text
+results/nl2p_repeats_20261027_v1/runs/** -text
+results/rebuttal_20261027/random_two_shot/** -text

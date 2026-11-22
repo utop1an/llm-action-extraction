@@ -3,7 +3,7 @@ import json
 
 import pytest
 
-from scripts.prepare_ricoreca_split import load_primary_records, make_split
+from scripts.ceasdrl.prepare_ricoreca_split import load_primary_records, make_split
 
 
 def records():

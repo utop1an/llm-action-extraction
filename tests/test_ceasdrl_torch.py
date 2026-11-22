@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from scripts.ceasdrl_torch import CnnDqn, Replay, binary_rewards, dqn_loss, evaluate
-from scripts.prepare_ceasdrl_pipeline import predicted_contexts
+from scripts.ceasdrl.ceasdrl_torch import CnnDqn, Replay, binary_rewards, dqn_loss, evaluate
+from scripts.ceasdrl.prepare_ceasdrl_pipeline import predicted_contexts
 
 
 def test_contracted_channels_match_literal_upstream_forward_and_gradients():

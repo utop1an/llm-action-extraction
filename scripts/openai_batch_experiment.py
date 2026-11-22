@@ -47,6 +47,7 @@ from src.solvers import GPT3ToPlan, NL2P_1, NL2P_1_Ablation, NL2P_Minimal  # noq
 from src.solvers.nl2p_1 import NL2P_WithoutDefinitions, NL2P_WithoutRules
 
 
+from src.result_paths import run_directory
 BATCH_ROOT = ROOT / "results" / "batch"
 SUPPORTED_SOLVERS = {
     "gpt3_to_plan": GPT3ToPlan,
@@ -426,7 +427,7 @@ def collect(args: argparse.Namespace) -> None:
         )
 
     output_solver = result_solver_name(manifest, getattr(args, "result_solver", None))
-    result_root = ROOT / RESULTS_DIR / output_solver / safe_name(manifest["model"])
+    result_root = run_directory(ROOT / RESULTS_DIR, output_solver) / safe_name(manifest["model"])
     result_root.mkdir(parents=True, exist_ok=True)
     for ds_name, results in grouped_results.items():
         results.sort(key=lambda item: item["doc_id"])

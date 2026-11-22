@@ -39,7 +39,7 @@ the current anchor-trained checkpoints, not a completed full-name baseline.
 
 Receipts: `results/ceasdrl_risec_20261118/pipeline_seed0_epoch3/receipt.json`
 and `name_evaluation.json`. Reproducible strict-name scoring is implemented in
-`scripts/evaluate_risec_names.py`; its three tests cover partial names, incorrect
+`scripts/ceasdrl/evaluate_risec_names.py`; its three tests cover partial names, incorrect
 argument ownership, missed actions and repeated action names.
 
 To meet the clarified task, future training must predict complete names/spans
@@ -144,13 +144,13 @@ exact historical-paper reproduction.
 Run from the repository root:
 
 ```powershell
-python scripts/materialize_risec.py
-python scripts/prepare_procedural_data.py --format risec --input data/procedural/risec/upstream/data --output data/procedural/risec/converted
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/export_ceasdrl_features.py --data data/procedural/risec/converted --output data/procedural/risec/features_v1
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/export_ceasdrl_parity.py --output results/ceasdrl_risec_20261118/parity
-python scripts/check_ceasdrl_parity.py --fixtures results/ceasdrl_risec_20261118/parity
-python -u scripts/train_ceasdrl_risec.py --features data/procedural/risec/features_v1 --output results/ceasdrl_risec_new/act_seed0 --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode act --epochs 5 --patience 3
-python -u scripts/train_ceasdrl_risec.py --features data/procedural/risec/features_v1 --output results/ceasdrl_risec_new/arg_seed0 --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode arg --epochs 5 --patience 3
+python scripts/ceasdrl/materialize_risec.py
+python scripts/ceasdrl/prepare_procedural_data.py --format risec --input data/procedural/risec/upstream/data --output data/procedural/risec/converted
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/export_ceasdrl_features.py --data data/procedural/risec/converted --output data/procedural/risec/features_v1
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/export_ceasdrl_parity.py --output results/ceasdrl_risec_20261118/parity
+python scripts/ceasdrl/check_ceasdrl_parity.py --fixtures results/ceasdrl_risec_20261118/parity
+python -u scripts/ceasdrl/train_ceasdrl_risec.py --features data/procedural/risec/features_v1 --output results/ceasdrl_risec_new/act_seed0 --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode act --epochs 5 --patience 3
+python -u scripts/ceasdrl/train_ceasdrl_risec.py --features data/procedural/risec/features_v1 --output results/ceasdrl_risec_new/arg_seed0 --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode arg --epochs 5 --patience 3
 python -m pytest tests/test_procedural_data.py tests/test_ceasdrl_torch.py -q -p no:cacheprovider
 ```
 
@@ -160,17 +160,17 @@ and feature hashes, source hashes, raw test predictions, and final receipts.
 After both training jobs complete, evaluate the actual two-stage pipeline:
 
 ```powershell
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/prepare_ceasdrl_pipeline.py --data data/procedural/risec/converted/test.jsonl --action-predictions results/ceasdrl_risec_20261118/act_seed0/test_predictions.json --existing-features data/procedural/risec/features_v1 --output data/procedural/risec/pipeline_features_seed0
-python scripts/evaluate_ceasdrl_pipeline.py --data data/procedural/risec/converted/test.jsonl --features data/procedural/risec/pipeline_features_seed0 --argument-run results/ceasdrl_risec_20261118/arg_seed0 --output results/ceasdrl_risec_20261118/pipeline_seed0
-python scripts/summarize_risec_training.py
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/prepare_ceasdrl_pipeline.py --data data/procedural/risec/converted/test.jsonl --action-predictions results/ceasdrl_risec_20261118/act_seed0/test_predictions.json --existing-features data/procedural/risec/features_v1 --output data/procedural/risec/pipeline_features_seed0
+python scripts/ceasdrl/evaluate_ceasdrl_pipeline.py --data data/procedural/risec/converted/test.jsonl --features data/procedural/risec/pipeline_features_seed0 --argument-run results/ceasdrl_risec_20261118/arg_seed0 --output results/ceasdrl_risec_20261118/pipeline_seed0
+python scripts/ceasdrl/summarize_risec_training.py
 ```
 
 Use a fresh destination for evaluations and model exports. Export a selected
 checkpoint for the original Keras network with:
 
 ```powershell
-python scripts/export_ceasdrl_checkpoint.py --run results/ceasdrl_risec_20261118/act_seed0 --features data/procedural/risec/features_v1
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/check_ceasdrl_trained_keras.py --run results/ceasdrl_risec_20261118/act_seed0
+python scripts/ceasdrl/export_ceasdrl_checkpoint.py --run results/ceasdrl_risec_20261118/act_seed0 --features data/procedural/risec/features_v1
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe -u scripts/ceasdrl/check_ceasdrl_trained_keras.py --run results/ceasdrl_risec_20261118/act_seed0
 ```
 
 Replace `act_seed0` with `arg_seed0` for the argument model. The `.pt` and `.h5`

@@ -18,6 +18,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from src.result_paths import recorded_path, run_directory
 from scripts import openai_batch_experiment as batch
 
 CAMPAIGN = "nl2p_repeats_20261027_v1"
@@ -78,7 +79,7 @@ def prepare():
             assert len(rows) == 420
             references[(model, condition)] = {r["custom_id"]: r for r in rows}
             matrix["reference_inputs"].append({"path": str(input_path), "sha256": digest(input_path)})
-            result_dir = Path(manifest["result_dir"]) if manifest.get("result_dir") else None
+            result_dir = recorded_path(manifest["result_dir"]) if manifest.get("result_dir") else None
             if result_dir and result_dir.is_dir():
                 for result in sorted(result_dir.glob("*")):
                     if result.is_file() and result.suffix in {".json", ".pkl"}:
@@ -90,7 +91,7 @@ def prepare():
             for condition, solver in [("minimal", "nl2p_minimal"), ("full", "nl2p_1")]:
                 run_id = f"repeat-20261027-v1-r{repeat}-{condition}"
                 result_solver = f"nl2p_{condition}_repeat{repeat}_20261027_v1"
-                result_dir = ROOT / "results" / result_solver / model
+                result_dir = run_directory(ROOT / "results", result_solver) / model
                 if result_dir.exists():
                     raise FileExistsError(result_dir)
                 args = SimpleNamespace(s=solver, m=model, d=None, l=None, t=0, coref="none",
@@ -130,7 +131,7 @@ def prepare():
     assert len(matrix["runs"]) == 12
     for path in ["scripts/run_nl2p_repeats_batch.py", "scripts/openai_batch_experiment.py",
                  "src/llm/config.py", "src/solvers/nl2p_1.py", "src/solvers/__init__.py",
-                 "experiment.py", "evaluation.py", "src/evaluation_helpers.py"]:
+                 "experiment.py", "evaluation.py", "src/evaluation_helpers.py", "src/result_paths.py"]:
         source = ROOT / path
         destination = DIRECTORY / "source_snapshot" / path
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -159,7 +160,7 @@ def verify_frozen(matrix):
         manifest = batch.load_manifest(Path(run["manifest"]))
         if digest(manifest["input_jsonl"]) != run["input_sha256"]:
             raise RuntimeError(f"Prepared input changed: {run['manifest']}")
-        if str(ROOT / "results" / batch.result_solver_name(manifest) / run["model"]) != run["result_dir"]:
+        if run_directory(ROOT / "results", batch.result_solver_name(manifest)) / run["model"] != recorded_path(run["result_dir"]):
             raise RuntimeError("Result namespace changed")
         for dataset, expected in manifest["dataset_sha256"].items():
             if digest(batch.dataset_path(batch.DATASETS[dataset])) != expected:
@@ -198,7 +199,7 @@ def refresh_and_collect(run, client):
                 batch.collect(SimpleNamespace(manifest=str(path), output_jsonl=str(output),
                     output_file_id=None, result_solver=None))
             manifest = batch.load_manifest(path)
-            assert manifest["result_dir"] == run["result_dir"]
+            assert recorded_path(manifest["result_dir"]) == recorded_path(run["result_dir"])
             response_models = Counter((r.get("response") or {}).get("body", {}).get("model") for r in rows)
             run["collection"] = {"collected_at": manifest["collected_at"],
                 "failure_count": manifest["failure_count"], "output_sha256": digest(output),
@@ -238,7 +239,7 @@ def cycle(clients):
         raise RuntimeError("Non-capacity terminal failure; preserved partial outputs and stopped without rerunning inference")
     if matrix["status"] == "completed":
         for item in matrix["protected_results"]:
-            if digest(item["path"]) != item["sha256"]:
+            if digest(recorded_path(item["path"])) != item["sha256"]:
                 raise RuntimeError(f"Historical result changed: {item['path']}")
         return True
     # Retry at most one round's pair per model, once other queued work has drained.

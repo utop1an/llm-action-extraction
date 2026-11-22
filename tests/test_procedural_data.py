@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from scripts.prepare_procedural_data import audit, read_openpi_a, read_recifinegold, read_risec, span_tokens, tokenize
-from scripts.ceasdrl_local import make_examples
+from scripts.ceasdrl.prepare_procedural_data import audit, read_openpi_a, read_recifinegold, read_risec, span_tokens, tokenize
+from scripts.ceasdrl.ceasdrl_local import make_examples
 
 
 def test_brat_offsets_links_and_implicit_targets(tmp_path):

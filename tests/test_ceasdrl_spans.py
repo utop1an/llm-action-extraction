@@ -6,10 +6,10 @@ import numpy as np
 import pytest
 import torch
 
-from scripts.ceasdrl_spans import SpanDqn, evaluate_spans, span_rewards, span_starts, BalancedSpanReplay
-from scripts.ceasdrl_torch import binary_rewards, dqn_loss
-from scripts.risec_spans import encode_bio, decode_bio, make_span_examples, predicted_span_contexts
-from scripts.evaluate_ceasdrl_spans import assemble_predictions, evaluate_predictions
+from scripts.ceasdrl.ceasdrl_spans import SpanDqn, evaluate_spans, span_rewards, span_starts, BalancedSpanReplay
+from scripts.ceasdrl.ceasdrl_torch import binary_rewards, dqn_loss
+from scripts.ceasdrl.risec_spans import encode_bio, decode_bio, make_span_examples, predicted_span_contexts
+from scripts.ceasdrl.evaluate_ceasdrl_spans import assemble_predictions, evaluate_predictions
 
 
 def test_adjacent_multiword_spans_roundtrip_and_invalid_spans_fail():

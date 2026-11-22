@@ -24,6 +24,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from src.result_paths import recorded_path
 import evaluation
 import src.evaluation_helpers as helpers
 
@@ -80,7 +81,7 @@ def main():
     for rel in ["evaluation.py", "src/evaluation_helpers.py"]:
         assert sha(ROOT / rel) == sha(matrix_path.parent / "source_snapshot" / rel), rel
     for record in matrix["baseline_files"]:
-        assert sha(record["path"]) == record["sha256"], record["path"]
+        assert sha(recorded_path(record["path"])) == record["sha256"], record["path"]
     with (ROOT / "dist/code_data_supplement/expected_metrics.csv").open(encoding="utf-8", newline="") as f:
         frozen = {(r["solver"], r["dataset"]): r for r in csv.DictReader(f) if r["model"] == args.model}
 
@@ -97,7 +98,7 @@ def main():
         assert manifest["model_name"] == matrix["models"][args.model]
         assert manifest["failure_count"] == 0, (run["condition"], manifest["failure_count"])
         conditions.append({"condition": run["condition"], "solver": manifest["result_solver"],
-            "directory": Path(manifest["result_dir"]), "batch_id": manifest["batch_id"]})
+            "directory": recorded_path(manifest["result_dir"]), "batch_id": manifest["batch_id"]})
 
     report = {
         "model": args.model, "api_model": matrix["models"][args.model],

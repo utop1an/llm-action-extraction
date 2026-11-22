@@ -7,7 +7,7 @@ from types import SimpleNamespace
 import numpy as np
 import pytest
 
-from scripts.risec_spans import make_span_examples
+from scripts.ceasdrl.risec_spans import make_span_examples
 
 
 def test_feature_preparation_needs_no_test_file(tmp_path):
@@ -21,7 +21,7 @@ def test_feature_preparation_needs_no_test_file(tmp_path):
         for mode in ('act', 'arg'):
             for ex in make_span_examples([row], mode):
                 np.save(cache/(ex['embedding_key']+'.npy'),np.zeros((3,868),dtype=np.float32))
-    subprocess.run([sys.executable,'scripts/prepare_ceasdrl_holdout.py','--data',str(data),'--output',str(out),
+    subprocess.run([sys.executable,'scripts/ceasdrl/prepare_ceasdrl_holdout.py','--data',str(data),'--output',str(out),
                     '--existing-features',str(cache)],check=True,capture_output=True)
     manifest=json.loads((out/'manifest.json').read_text())
     assert set(manifest['dataset_sha256']) == {'train','dev'}
@@ -30,7 +30,7 @@ def test_feature_preparation_needs_no_test_file(tmp_path):
 
 
 def test_trainer_rejects_test_features_and_document_leakage():
-    sys.path.insert(0,str(Path('scripts').resolve()))
+    sys.path.insert(0,str(Path('scripts/ceasdrl').resolve()))
     from train_ceasdrl_holdout import validate_holdout
     f=SimpleNamespace(examples={'train':[{'doc_id':'a'}],'dev':[{'doc_id':'b'}],'test':[]},
                       manifest={'dataset_sha256':{'train':'x','dev':'y'}})

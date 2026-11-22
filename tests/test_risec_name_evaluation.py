@@ -1,4 +1,4 @@
-from scripts.evaluate_risec_names import evaluate_names
+from scripts.ceasdrl.evaluate_risec_names import evaluate_names
 
 
 def test_first_token_is_not_credited_as_complete_argument_name():

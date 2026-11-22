@@ -128,19 +128,19 @@ fresh feature preparation, first run `prepare_ceasdrl_spans.py` as below only
 if its output directory does not already exist:
 
 ```powershell
-python scripts/prepare_ceasdrl_spans.py --data data/procedural/risec/converted --existing-features data/procedural/risec/features_v1 --output data/procedural/risec/features_spans_v2
+python scripts/ceasdrl/prepare_ceasdrl_spans.py --data data/procedural/risec/converted --existing-features data/procedural/risec/features_v1 --output data/procedural/risec/features_spans_v2
 ```
 
 ```powershell
 $run = "results/ceasdrl_risec_rerun_seed0"
 
-python scripts/train_ceasdrl_risec.py --features data/procedural/risec/features_spans_v2 --output "$run/act_balanced_seed0" --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode act --span-labels --span-replay balanced --span-rate mentions --epochs 10 --patience 3 --seed 0
+python scripts/ceasdrl/train_ceasdrl_risec.py --features data/procedural/risec/features_spans_v2 --output "$run/act_balanced_seed0" --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode act --span-labels --span-replay balanced --span-rate mentions --epochs 10 --patience 3 --seed 0
 
-python scripts/train_ceasdrl_risec.py --features data/procedural/risec/features_spans_v2 --output "$run/arg_balanced_seed0" --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode arg --span-labels --span-replay balanced --span-rate mentions --epochs 10 --patience 3 --seed 0
+python scripts/ceasdrl/train_ceasdrl_risec.py --features data/procedural/risec/features_spans_v2 --output "$run/arg_balanced_seed0" --parity-report results/ceasdrl_risec_20261118/parity/parity_report.json --mode arg --span-labels --span-replay balanced --span-rate mentions --epochs 10 --patience 3 --seed 0
 
-& C:\Users\Apexmod\miniforge3\envs\py36\python.exe scripts/prepare_ceasdrl_spans.py --data data/procedural/risec/converted/test.jsonl --action-predictions "$run/act_balanced_seed0/test_predictions.json" --existing-features data/procedural/risec/features_v1 --output "$run/pipeline_features"
+& C:\Users\Apexmod\miniforge3\envs\py36\python.exe scripts/ceasdrl/prepare_ceasdrl_spans.py --data data/procedural/risec/converted/test.jsonl --action-predictions "$run/act_balanced_seed0/test_predictions.json" --existing-features data/procedural/risec/features_v1 --output "$run/pipeline_features"
 
-python scripts/evaluate_ceasdrl_spans.py --data data/procedural/risec/converted/test.jsonl --features "$run/pipeline_features" --action-run "$run/act_balanced_seed0" --argument-run "$run/arg_balanced_seed0" --output "$run/pipeline_seed0"
+python scripts/ceasdrl/evaluate_ceasdrl_spans.py --data data/procedural/risec/converted/test.jsonl --features "$run/pipeline_features" --action-run "$run/act_balanced_seed0" --argument-run "$run/arg_balanced_seed0" --output "$run/pipeline_seed0"
 ```
 
 Existing output directories are protected from overwrite. For an interrupted
@@ -159,7 +159,7 @@ For a new unannotated text file, use the trained checkpoint paths recorded in
 the final report:
 
 ```powershell
-python scripts/predict_ceasdrl_text.py --text-file recipe.txt --action-checkpoint ACTION_RUN/best.pt --argument-checkpoint ARGUMENT_RUN/best.pt --legacy-python C:\Users\Apexmod\miniforge3\envs\py36\python.exe --embedding-cache data/procedural/risec/features_v1 --output prediction_example
+python scripts/ceasdrl/predict_ceasdrl_text.py --text-file recipe.txt --action-checkpoint ACTION_RUN/best.pt --argument-checkpoint ARGUMENT_RUN/best.pt --legacy-python C:\Users\Apexmod\miniforge3\envs\py36\python.exe --embedding-cache data/procedural/risec/features_v1 --output prediction_example
 ```
 
 This entry point reads only the supplied text, predicts both stages, and writes

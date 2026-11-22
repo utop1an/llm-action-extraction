@@ -16,6 +16,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from src.result_paths import recorded_path, run_directory
 import evaluation as ev
 import src.evaluation_helpers as helpers
 
@@ -84,7 +85,7 @@ def main():
     for rel, key in [('evaluation.py', 'evaluator_sha256'), ('src/evaluation_helpers.py', 'helpers_sha256')]:
         assert hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == previous[key]
     for record in previous['inputs']:
-        assert hashlib.sha256(Path(record['path']).read_bytes()).hexdigest() == record['sha256']
+        assert hashlib.sha256(recorded_path(record['path']).read_bytes()).hexdigest() == record['sha256']
     report = {'model': args.model, 'created_at': datetime.now(ZoneInfo('Australia/Sydney')).isoformat(timespec='seconds'),
         'bootstrap': {'replicates': 10000, 'seed': 20261027, 'unit': 'paired document',
             'interval': 'percentile 95%, no multiple-comparison adjustment',
@@ -95,7 +96,7 @@ def main():
         dataset = {}
         traced = {}
         for condition, solver in [('minimal', 'nl2p_minimal_rebuttal_20261027'), ('nl2p_full', 'nl2p_1')]:
-            path = ROOT / f'results/{solver}/{args.model}/{ds}_{solver}_{args.model}.pkl'
+            path = run_directory(ROOT / 'results', solver) / args.model / f'{ds}_{solver}_{args.model}.pkl'
             with path.open('rb') as f:
                 dataset[condition] = pickle.load(f)
             traced[condition] = [trace(item) for item in dataset[condition]]

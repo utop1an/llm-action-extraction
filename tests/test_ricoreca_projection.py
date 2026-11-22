@@ -2,8 +2,8 @@ import copy
 
 import pytest
 
-from scripts.prepare_ricoreca_data import convert_record, parse_published
-from scripts.risec_spans import make_span_examples, decode_bio
+from scripts.ceasdrl.prepare_ricoreca_data import convert_record, parse_published
+from scripts.ceasdrl.risec_spans import make_span_examples, decode_bio
 
 
 def fixture():

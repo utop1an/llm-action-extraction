@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from experiment import sample_to_sentences
+from src.result_paths import recorded_path
 from scripts.evaluate_rebuttal_batch import METRICS, STRICT_EVALUATION, sha
 
 SPLIT = ROOT / "data/easdrl/indices/ceasdrl_two_source_v1.json"
@@ -63,7 +64,7 @@ def main():
     parser.add_argument("result_dir", type=Path, help="Collected results/<solver>/<model>")
     parser.add_argument("--report-unscorable", action="store_true", help="Preserve the full denominator and return null metrics for a scope the original evaluator cannot score")
     args = parser.parse_args()
-    directory = args.result_dir.resolve()
+    directory = recorded_path(args.result_dir).resolve()
     split = json.loads(SPLIT.read_text(encoding="utf-8"))
     report = {
         "split_sha256": sha(SPLIT),
