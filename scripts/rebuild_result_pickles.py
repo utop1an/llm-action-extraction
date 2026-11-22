@@ -8,7 +8,6 @@ the derived PKL files expected by ``evaluation.py`` without model inference.
 from __future__ import annotations
 
 import argparse
-import copy
 import json
 import pickle
 from pathlib import Path
@@ -63,7 +62,6 @@ def rebuild_result_file(
     dataset_path = data_dir / DATASET_FILES[dataset_name]
     with dataset_path.open("rb") as handle:
         samples = pickle.load(handle)
-    samples = copy.deepcopy(samples)
 
     with result_json.open("r", encoding="utf-8") as handle:
         results = json.load(handle)

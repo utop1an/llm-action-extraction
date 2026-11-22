@@ -1,0 +1,21 @@
+{
+  "comparison_scope": "Previous first-token checkpoints re-scored by the new complete-span evaluator. Old argument training stopped after three completed epochs. This is a repair comparison, not a controlled training-budget ablation.",
+  "metrics": {
+    "action_name": {
+      "precision": 0.8850056369785795,
+      "recall": 0.8920454545454546,
+      "f1": 0.8885116015846066,
+      "right": 785,
+      "predicted": 887,
+      "gold": 880
+    },
+    "linked_argument_name": {
+      "precision": 0.28210526315789475,
+      "recall": 0.24876237623762376,
+      "f1": 0.26438671489641563,
+      "right": 402,
+      "predicted": 1425,
+      "gold": 1616
+    }
+  }
+}

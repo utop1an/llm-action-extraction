@@ -1,0 +1,23 @@
+{
+  "features": "data\\procedural\\risec\\features_v1",
+  "output": "results\\ceasdrl_risec_20261118\\act_seed0",
+  "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+  "mode": "act",
+  "epochs": 5,
+  "patience": 3,
+  "seed": 0,
+  "env_batch": 16,
+  "batch_size": 32,
+  "train_frequency": 4,
+  "target_updates": 100,
+  "learning_rate": 0.001,
+  "max_vector_steps": 0,
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "gamma": 0.9,
+  "epsilon_decay_steps": 15285,
+  "num_words": 600,
+  "initialization": "from scratch",
+  "task": "Binary occurrence extraction; no ES/OP/EX",
+  "argument_task": null
+}

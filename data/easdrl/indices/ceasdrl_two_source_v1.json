@@ -1,0 +1,604 @@
+{
+  "protocol": "ceasdrl_two_source_v1",
+  "id_convention": "domain plus zero-based row in the listed labeled pickle",
+  "split_method": "Group texts whose lowercase word 5-gram set Jaccard >= 0.75 (connected components). Sort each domain by SHA256 of v1|domain|comma-separated ascending IDs. Fill test, validation, train in that order, skipping groups too large for remaining quota.",
+  "domains": {
+    "win2k": {
+      "source": "data/easdrl/win2k_labeled_text_data.pkl",
+      "sha256": "c1010fe963d7c8b74f4d94d5722f0907e7e1a12c9b55fc896d01627abb3bfff1",
+      "doc_ids": {
+        "test": [
+          1,
+          5,
+          16,
+          18,
+          19,
+          27,
+          40,
+          49,
+          53,
+          57,
+          58,
+          59,
+          63,
+          82,
+          89,
+          91,
+          92,
+          94,
+          95,
+          100,
+          101,
+          108,
+          110,
+          112,
+          119,
+          126,
+          135,
+          139,
+          141,
+          143,
+          145
+        ],
+        "val": [
+          2,
+          7,
+          11,
+          17,
+          21,
+          22,
+          23,
+          39,
+          41,
+          44,
+          47,
+          56,
+          64,
+          68,
+          69,
+          76,
+          78,
+          81,
+          90,
+          93,
+          104,
+          117,
+          118,
+          151,
+          152
+        ],
+        "train": [
+          0,
+          3,
+          4,
+          6,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          20,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          42,
+          43,
+          45,
+          46,
+          48,
+          50,
+          51,
+          52,
+          54,
+          55,
+          60,
+          61,
+          62,
+          65,
+          66,
+          67,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          77,
+          79,
+          80,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          96,
+          97,
+          98,
+          99,
+          102,
+          103,
+          105,
+          106,
+          107,
+          109,
+          111,
+          113,
+          114,
+          115,
+          116,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          136,
+          137,
+          138,
+          140,
+          142,
+          144,
+          146,
+          147,
+          148,
+          149,
+          150,
+          153
+        ]
+      }
+    },
+    "cooking": {
+      "source": "data/easdrl/cooking_labeled_text_data.pkl",
+      "sha256": "002a67ce3022c13ba77792eb123043b79e1b8befbb0043273b88f2434cbe4694",
+      "doc_ids": {
+        "test": [
+          0,
+          4,
+          15,
+          24,
+          25,
+          29,
+          41,
+          43,
+          50,
+          60,
+          67,
+          68,
+          71,
+          81,
+          84,
+          86,
+          91,
+          95,
+          96,
+          97,
+          99,
+          108,
+          111
+        ],
+        "val": [
+          1,
+          3,
+          5,
+          6,
+          11,
+          23,
+          36,
+          52,
+          53,
+          56,
+          59,
+          65,
+          66,
+          70,
+          79,
+          88,
+          89,
+          101,
+          114
+        ],
+        "train": [
+          2,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          37,
+          38,
+          39,
+          40,
+          42,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          54,
+          55,
+          57,
+          58,
+          61,
+          62,
+          63,
+          64,
+          69,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          80,
+          82,
+          83,
+          85,
+          87,
+          90,
+          92,
+          93,
+          94,
+          98,
+          100,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          109,
+          110,
+          112,
+          113,
+          115
+        ]
+      }
+    },
+    "wikihow": {
+      "source": "data/easdrl/wikihow_labeled_text_data.pkl",
+      "sha256": "55dc24c54eb92597292fe4933b052cc9c998fb6736f627f5a2cc20a2ad51008b",
+      "doc_ids": {
+        "test": [
+          2,
+          5,
+          11,
+          20,
+          34,
+          40,
+          42,
+          54,
+          55,
+          62,
+          69,
+          72,
+          84,
+          85,
+          86,
+          88,
+          90,
+          95,
+          98,
+          101,
+          102,
+          106,
+          111,
+          118,
+          119,
+          122,
+          129,
+          137,
+          146,
+          149
+        ],
+        "val": [
+          1,
+          3,
+          4,
+          13,
+          15,
+          23,
+          25,
+          26,
+          31,
+          38,
+          41,
+          45,
+          58,
+          73,
+          74,
+          79,
+          89,
+          96,
+          117,
+          124,
+          131,
+          138,
+          141,
+          147
+        ],
+        "train": [
+          0,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          16,
+          17,
+          18,
+          19,
+          21,
+          22,
+          24,
+          27,
+          28,
+          29,
+          30,
+          32,
+          33,
+          35,
+          36,
+          37,
+          39,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          56,
+          57,
+          59,
+          60,
+          61,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          70,
+          71,
+          75,
+          76,
+          77,
+          78,
+          80,
+          81,
+          82,
+          83,
+          87,
+          91,
+          92,
+          93,
+          94,
+          97,
+          99,
+          100,
+          103,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110,
+          112,
+          113,
+          114,
+          115,
+          116,
+          120,
+          121,
+          123,
+          125,
+          126,
+          127,
+          128,
+          130,
+          132,
+          133,
+          134,
+          135,
+          136,
+          139,
+          140,
+          142,
+          143,
+          144,
+          145,
+          148
+        ]
+      }
+    }
+  },
+  "near_duplicate_groups": [
+    {
+      "domain": "win2k",
+      "doc_ids": [
+        53,
+        141
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        41,
+        81
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        52,
+        65
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        5,
+        89
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        3,
+        23
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        36,
+        88
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        20,
+        76
+      ]
+    },
+    {
+      "domain": "cooking",
+      "doc_ids": [
+        8,
+        74
+      ]
+    },
+    {
+      "domain": "wikihow",
+      "doc_ids": [
+        10,
+        18
+      ]
+    }
+  ],
+  "target_runs": {
+    "win2k": {
+      "ceasdrl_id": {
+        "train": [
+          "win2k.train"
+        ],
+        "val": [
+          "win2k.val"
+        ]
+      },
+      "ceasdrl_ood": {
+        "train": [
+          "cooking.train",
+          "wikihow.train"
+        ],
+        "val": [
+          "cooking.val",
+          "wikihow.val"
+        ]
+      },
+      "test_for_all_three_methods": "win2k.test"
+    },
+    "cooking": {
+      "ceasdrl_id": {
+        "train": [
+          "cooking.train"
+        ],
+        "val": [
+          "cooking.val"
+        ]
+      },
+      "ceasdrl_ood": {
+        "train": [
+          "win2k.train",
+          "wikihow.train"
+        ],
+        "val": [
+          "win2k.val",
+          "wikihow.val"
+        ]
+      },
+      "test_for_all_three_methods": "cooking.test"
+    },
+    "wikihow": {
+      "ceasdrl_id": {
+        "train": [
+          "wikihow.train"
+        ],
+        "val": [
+          "wikihow.val"
+        ]
+      },
+      "ceasdrl_ood": {
+        "train": [
+          "win2k.train",
+          "cooking.train"
+        ],
+        "val": [
+          "win2k.val",
+          "cooking.val"
+        ]
+      },
+      "test_for_all_three_methods": "wikihow.test"
+    }
+  },
+  "nl2p_alignment_checked": {
+    "method": "nl2p_1",
+    "models": [
+      "gemma3-12b",
+      "gemma3-27b",
+      "llama3-70b",
+      "gpt-5.4",
+      "gpt-5.4-mini"
+    ],
+    "checks": "one record per domain/doc_id and exact sentence list equality with labeled document"
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "model": "gpt-5.4-mini",
+  "api_model": "gpt-5.4-mini-2026-03-17",
+  "created_at": "2026-10-27T15:59:08+11:00",
+  "evaluator_sha256": "501a291863d8715ac8d5890b7cacabcd2f1d0f7b80e25eb2b5c2c57b4084e6a6",
+  "helpers_sha256": "388f4bf52f30af7e9f544a9e07946144bdcb84c7740671296ad204a1ca836c44",
+  "analysis_script_sha256": "cbab2f57b6e61a35616511c76fc771fd67f7e069aae44c4b4b68efd4e43adfcf",
+  "data_counts": {
+    "cooking": 116,
+    "wikihow": 150,
+    "win2k": 154
+  },
+  "inputs": [
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan\\gpt-5.4-mini\\cooking_gpt3_to_plan_gpt-5.4-mini.json",
+      "sha256": "d5fb287319622dcc5b1edbc1999144bafd02eb088095f100038fa0f83cbef14a",
+      "pkl_sha256": "f63456d206d2679480603c94357a7050936392fdd288d18264e3365a79d19133"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan\\gpt-5.4-mini\\wikihow_gpt3_to_plan_gpt-5.4-mini.json",
+      "sha256": "6ad3dc33a64379e39a198a24f8602917bd6bf69b8588d6dac9103b8b5a4dd6ee",
+      "pkl_sha256": "da9f03fd3f711e623b96cd07ad9080fa27c0030de685d10b5803c2e41de67d11"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan\\gpt-5.4-mini\\win2k_gpt3_to_plan_gpt-5.4-mini.json",
+      "sha256": "d4c054819731478117172613dd877cd4244a33224e90701711e933108cabe6e1",
+      "pkl_sha256": "7cd062d725932668bb482d911ec2fa3db9ccb84ad1f57cec4d69e492e76c3688"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_1\\gpt-5.4-mini\\cooking_nl2p_1_gpt-5.4-mini.json",
+      "sha256": "7ed134912e0abf02d81c1da7b7254ed2d84aaf7b518cd9a2b58bbbe4152eb407",
+      "pkl_sha256": "c76e6d444fdbb22620eec2b9b24b99a39c55f3be8bb4c2f59d4235389951e59b"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_1\\gpt-5.4-mini\\wikihow_nl2p_1_gpt-5.4-mini.json",
+      "sha256": "5b9488e014977476d096ba9774e1f46e6e3dacbb1f3343b468c2cc69c5825065",
+      "pkl_sha256": "690b286e6ca681af9813292f10d4008a5f862df79513efad21ba8f9c5c65b22a"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_1\\gpt-5.4-mini\\win2k_nl2p_1_gpt-5.4-mini.json",
+      "sha256": "d0d9dc18e4a2dc1c651effcbb502fdf70df3c27a599f153f457d8fa3fa408180",
+      "pkl_sha256": "66dc6c9112cf7af7d126c5ac5b8b3c151f457124f3864f7e22bbc3763bb16e40"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "4aee0f00ea8ebb348067ce770c83f607cb1a98f40e3de4409ee5224856070cc3",
+      "pkl_sha256": "4bd71a9c96609b676d2c45f8958ae94e8cf470e793f99f0d25ac6308f66cff72"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "590249780807d94fcc2f4501ace97b71b45d235aeefda80b266f544f70ecc2ae",
+      "pkl_sha256": "a32e21e728b094750de2f2b878b9eac988f608ec5a901681e13d8adf49b2495c"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed0_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed0_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "f1bb55bb192eb576bfa6306499142c908a3222a65cc6be85776ff2c3242b1e49",
+      "pkl_sha256": "37794ca3954707aacbd6bf5ea44a5fa02063a3e5315713636fb6083798f5a527"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "d8e2137a8bb3c055a4e15af49d3cf60e78cae3a056a4a31db53068f6e5684361",
+      "pkl_sha256": "20ed78a3a04d937cf00ebb82eda89921629c2150b98b602f4d028dd465ec7e69"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "613c1d364be333c4b465bc8b4f4595a818f4f597598c91c0233168e434b2baf2",
+      "pkl_sha256": "cf275d4ebc9700f3ea5134856f2d468aebd37ee35b509e9464c60c381064dae4"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed1_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed1_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "64348d38371456432df0a8791bf0ae6a5888288db99a5d586e80a655e1d3d878",
+      "pkl_sha256": "89d82d608581c7460f501721a986b1da336e0121c7a25036344634c35843f830"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "f35b325570769e1c6de30fe55b31033cbcaadda67e54aeea642a5a0cfb302472",
+      "pkl_sha256": "1c6b3f347fc3e6553224273367ded46861c4294660e6417c2f4e1a2d4c14132a"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "b14a81100a600b881ee6917fd861694031153179ed82f20d4413c1da03f99d5f",
+      "pkl_sha256": "5d955c93fdc6e026ff51067176747cdce54d83cdbc489369c26ba9418a0a4fce"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed2_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed2_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "5402fb8c8459464808a894cf55470b314e55d226809d0d4a51e3547cbca21f05",
+      "pkl_sha256": "fab4ecf4dd51a0c45fe7b005fe3529aa71f712570942c28e0b4f47b8ff30431d"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "6757ac97df18057ddf5743859d67aad0002f26891cc127cc637b48845baa80fe",
+      "pkl_sha256": "04acf9872a4aed0147ad6ee8792a992debaaea54d04eea34e8025c2901fdaaf9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "2a49039d24843482e89c2f186ca3cb77537df902aed730a1037665c1526e9fdd",
+      "pkl_sha256": "b868252c8d97fbb7aa0b99afb436cd2585bbd05dbbeff7c5bacef0506d91c7cc"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed3_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed3_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "011e44d866f099e523dc015df1626179638090291b4fe095c6c1d6bc8000ed5e",
+      "pkl_sha256": "3b3d05019b388c4e56961bf4aff86df3b6731d9224f70c98f68658931befe129"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\cooking_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "dc181e4106155353a5d269d93839abe93869f8c2a77e9f6ab16213220b793920",
+      "pkl_sha256": "b6554bee4c03d0c5a7dda32b8b896a9ffc25cd7366fc883fcabcd93ee4a7ead8"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\wikihow_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "fc1c7d7ef962fa5c9ff00a1fc51f677f629d3889a76b9d5b714f64b4bc84f0c1",
+      "pkl_sha256": "a15c742400697003a646dcb8403126a666b201589ac961549c49977ab6476578"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\gpt3_to_plan_random_seed4_rebuttal_20261027\\gpt-5.4-mini\\win2k_gpt3_to_plan_random_seed4_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "06b874fe271821e1d8f010afa19c62e6a0920deddc1e9f970e91f20fc350f425",
+      "pkl_sha256": "a768421d545186d3d35312549026a58b3f59ef85ad07f579fadd7eda082fceea"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_rebuttal_20261027\\gpt-5.4-mini\\cooking_nl2p_minimal_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "3c83ffb459f7e4ce8b2ed45d66eb2321f611e3e95916484a1733ef5127ece143",
+      "pkl_sha256": "f2d62cdb58c3e2369f6b99569e2040562955795f593c55176753e79e8e0b9dbf"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_rebuttal_20261027\\gpt-5.4-mini\\wikihow_nl2p_minimal_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "fedb134ac4b28772ac39dc690403550171965c43e03ca73fb44ab247b808bf4e",
+      "pkl_sha256": "b5bd940eb3862bdcc0b987640f49b612f7f0b0c33bcdceb2f8f69fafcf333dd4"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_rebuttal_20261027\\gpt-5.4-mini\\win2k_nl2p_minimal_rebuttal_20261027_gpt-5.4-mini.json",
+      "sha256": "b547afd376c1bc81bf631842b113cb4a6e72807cef5864113ec1798e2d3d9d1e",
+      "pkl_sha256": "04c9dcdedde058e3df9f0d7ace4483a63202c5d81a09828a7aba3644b1a416bb"
+    }
+  ],
+  "metrics": [
+    {
+      "condition": "gpt3_ranked",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.7907630522088354,
+      "action_recall": 0.8007320048800325,
+      "action_f1": 0.79571630632451,
+      "argument_precision": 0.6451182939020327,
+      "argument_recall": 0.7081199707388441,
+      "argument_f1": 0.6751525719267654,
+      "perfect_action_argument_matches": 978,
+      "argument_mismatch_actions": 991,
+      "matched_action_events": 1969
+    },
+    {
+      "condition": "gpt3_ranked",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.7665476517440264,
+      "action_recall": 0.6686631528509823,
+      "action_f1": 0.7142674344209853,
+      "argument_precision": 0.6264677103718199,
+      "argument_recall": 0.569364161849711,
+      "argument_f1": 0.5965525273701373,
+      "perfect_action_argument_matches": 1107,
+      "argument_mismatch_actions": 1684,
+      "matched_action_events": 2791
+    },
+    {
+      "condition": "gpt3_ranked",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9464958553127355,
+      "action_recall": 0.9415292353823088,
+      "action_f1": 0.9440060127771516,
+      "argument_precision": 0.6483386075949367,
+      "argument_recall": 0.859916054564533,
+      "argument_f1": 0.7392873252142534,
+      "perfect_action_argument_matches": 875,
+      "argument_mismatch_actions": 381,
+      "matched_action_events": 1256
+    },
+    {
+      "condition": "nl2p_full",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.9224586288416076,
+      "action_recall": 0.7937347436940602,
+      "action_f1": 0.8532691887163788,
+      "argument_precision": 0.6268951878707977,
+      "argument_recall": 0.6961932650073206,
+      "argument_f1": 0.659729448491155,
+      "perfect_action_argument_matches": 777,
+      "argument_mismatch_actions": 1174,
+      "matched_action_events": 1951
+    },
+    {
+      "condition": "nl2p_full",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.7597917138329183,
+      "action_recall": 0.7844787283777466,
+      "action_f1": 0.7719378953421506,
+      "argument_precision": 0.6379159369527145,
+      "argument_recall": 0.5444693572496263,
+      "argument_f1": 0.5875,
+      "perfect_action_argument_matches": 1142,
+      "argument_mismatch_actions": 2214,
+      "matched_action_events": 3356
+    },
+    {
+      "condition": "nl2p_full",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9805084745762712,
+      "action_recall": 0.8653702318623785,
+      "action_f1": 0.9193484306714343,
+      "argument_precision": 0.8467465753424658,
+      "argument_recall": 0.5632118451025057,
+      "argument_f1": 0.6764705882352942,
+      "perfect_action_argument_matches": 504,
+      "argument_mismatch_actions": 653,
+      "matched_action_events": 1157
+    },
+    {
+      "condition": "random-seed0",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.8917501192179303,
+      "action_recall": 0.7623318385650224,
+      "action_f1": 0.821978021978022,
+      "argument_precision": 0.7483898668956633,
+      "argument_recall": 0.6619825294341056,
+      "argument_f1": 0.7025392986698912,
+      "perfect_action_argument_matches": 1056,
+      "argument_mismatch_actions": 814,
+      "matched_action_events": 1870
+    },
+    {
+      "condition": "random-seed0",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.8306107954545454,
+      "action_recall": 0.57539975399754,
+      "action_f1": 0.6798430460688853,
+      "argument_precision": 0.5178178618565772,
+      "argument_recall": 0.628068303094984,
+      "argument_f1": 0.5676392572944297,
+      "perfect_action_argument_matches": 793,
+      "argument_mismatch_actions": 1546,
+      "matched_action_events": 2339
+    },
+    {
+      "condition": "random-seed0",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.8930957683741648,
+      "action_recall": 0.9004491017964071,
+      "action_f1": 0.8967573611628774,
+      "argument_precision": 0.5668896321070234,
+      "argument_recall": 0.7669683257918553,
+      "argument_f1": 0.6519230769230769,
+      "perfect_action_argument_matches": 776,
+      "argument_mismatch_actions": 427,
+      "matched_action_events": 1203
+    },
+    {
+      "condition": "random-seed1",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.889995258416311,
+      "action_recall": 0.7683176422431437,
+      "action_f1": 0.8246924428822496,
+      "argument_precision": 0.6254716981132076,
+      "argument_recall": 0.7548387096774194,
+      "argument_f1": 0.6840928632846088,
+      "perfect_action_argument_matches": 894,
+      "argument_mismatch_actions": 983,
+      "matched_action_events": 1877
+    },
+    {
+      "condition": "random-seed1",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.7904646219252961,
+      "action_recall": 0.6333333333333333,
+      "action_f1": 0.7032284209104417,
+      "argument_precision": 0.6430288461538461,
+      "argument_recall": 0.5128205128205128,
+      "argument_f1": 0.5705905879216104,
+      "perfect_action_argument_matches": 930,
+      "argument_mismatch_actions": 1673,
+      "matched_action_events": 2603
+    },
+    {
+      "condition": "random-seed1",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9266467065868264,
+      "action_recall": 0.9252615844544095,
+      "action_f1": 0.9259536275243082,
+      "argument_precision": 0.5844582269244801,
+      "argument_recall": 0.8701792504073873,
+      "argument_f1": 0.6992579659537321,
+      "perfect_action_argument_matches": 871,
+      "argument_mismatch_actions": 367,
+      "matched_action_events": 1238
+    },
+    {
+      "condition": "random-seed2",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 1,
+      "action_precision": 0.921505376344086,
+      "action_recall": 0.7065127782357791,
+      "action_f1": 0.7998133457769482,
+      "argument_precision": 0.6641045349730976,
+      "argument_recall": 0.72090112640801,
+      "argument_f1": 0.6913382676535307,
+      "perfect_action_argument_matches": 924,
+      "argument_mismatch_actions": 790,
+      "matched_action_events": 1714
+    },
+    {
+      "condition": "random-seed2",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.7644217107132708,
+      "action_recall": 0.6540238268903477,
+      "action_f1": 0.7049266247379455,
+      "argument_precision": 0.6174918321186228,
+      "argument_recall": 0.5662595067988015,
+      "argument_f1": 0.5907670113007935,
+      "perfect_action_argument_matches": 1121,
+      "argument_mismatch_actions": 1569,
+      "matched_action_events": 2690
+    },
+    {
+      "condition": "random-seed2",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9151154132539091,
+      "action_recall": 0.9199101796407185,
+      "action_f1": 0.9175065322881673,
+      "argument_precision": 0.5982623086470832,
+      "argument_recall": 0.7901639344262295,
+      "argument_f1": 0.6809512597127385,
+      "perfect_action_argument_matches": 814,
+      "argument_mismatch_actions": 415,
+      "matched_action_events": 1229
+    },
+    {
+      "condition": "random-seed3",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.837893864013267,
+      "action_recall": 0.8238891153689359,
+      "action_f1": 0.8308324768756423,
+      "argument_precision": 0.7117486338797814,
+      "argument_recall": 0.7358757062146892,
+      "argument_f1": 0.723611111111111,
+      "perfect_action_argument_matches": 1179,
+      "argument_mismatch_actions": 842,
+      "matched_action_events": 2021
+    },
+    {
+      "condition": "random-seed3",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.8026666666666666,
+      "action_recall": 0.6564090138114853,
+      "action_f1": 0.7222074113569714,
+      "argument_precision": 0.5898004434589801,
+      "argument_recall": 0.542242355605889,
+      "argument_f1": 0.5650224215246636,
+      "perfect_action_argument_matches": 979,
+      "argument_mismatch_actions": 1730,
+      "matched_action_events": 2709
+    },
+    {
+      "condition": "random-seed3",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9428789032749428,
+      "action_recall": 0.9315274642588413,
+      "action_f1": 0.9371688115064345,
+      "argument_precision": 0.672967032967033,
+      "argument_recall": 0.8152289669861554,
+      "argument_f1": 0.7372983385504454,
+      "perfect_action_argument_matches": 856,
+      "argument_mismatch_actions": 382,
+      "matched_action_events": 1238
+    },
+    {
+      "condition": "random-seed4",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.9133095359510454,
+      "action_recall": 0.7394715111478117,
+      "action_f1": 0.8172484599589321,
+      "argument_precision": 0.6306818181818182,
+      "argument_recall": 0.7423288749016522,
+      "argument_f1": 0.6819660281893748,
+      "perfect_action_argument_matches": 868,
+      "argument_mismatch_actions": 923,
+      "matched_action_events": 1791
+    },
+    {
+      "condition": "random-seed4",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.7924073516119313,
+      "action_recall": 0.6403700998295593,
+      "action_f1": 0.7083221115001347,
+      "argument_precision": 0.6618372379778051,
+      "argument_recall": 0.5045828437132786,
+      "argument_f1": 0.5726096812908388,
+      "perfect_action_argument_matches": 1020,
+      "argument_mismatch_actions": 1610,
+      "matched_action_events": 2630
+    },
+    {
+      "condition": "random-seed4",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9283047050037341,
+      "action_recall": 0.9296933433059088,
+      "action_f1": 0.928998505231689,
+      "argument_precision": 0.5842084791909763,
+      "argument_recall": 0.8075268817204301,
+      "argument_f1": 0.6779508011735501,
+      "perfect_action_argument_matches": 813,
+      "argument_mismatch_actions": 430,
+      "matched_action_events": 1243
+    },
+    {
+      "condition": "minimal",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "action_precision": 0.9374384236453202,
+      "action_recall": 0.7786415711947627,
+      "action_f1": 0.8506928922664282,
+      "argument_precision": 0.49226594301221166,
+      "argument_recall": 0.6832391713747646,
+      "argument_f1": 0.5722397476340694,
+      "perfect_action_argument_matches": 347,
+      "argument_mismatch_actions": 1556,
+      "matched_action_events": 1903
+    },
+    {
+      "condition": "minimal",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "action_precision": 0.8642797668609492,
+      "action_recall": 0.7391407548065512,
+      "action_f1": 0.7968270214943705,
+      "argument_precision": 0.5592503022974608,
+      "argument_recall": 0.5517995625372838,
+      "argument_f1": 0.5554999499549594,
+      "perfect_action_argument_matches": 702,
+      "argument_mismatch_actions": 2412,
+      "matched_action_events": 3114
+    },
+    {
+      "condition": "minimal",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "action_precision": 0.9889173060528559,
+      "action_recall": 0.8695652173913043,
+      "action_f1": 0.9254088552054248,
+      "argument_precision": 0.7722551928783383,
+      "argument_recall": 0.5948571428571429,
+      "argument_f1": 0.672046481601033,
+      "perfect_action_argument_matches": 469,
+      "argument_mismatch_actions": 691,
+      "matched_action_events": 1160
+    }
+  ],
+  "notes": [
+    "F1 values are corpus micro-F1 from the unchanged original evaluator.",
+    "Random summaries average the five corpus-level scores; std uses ddof=1.",
+    "Argument scores are conditional on evaluator-matched actions.",
+    "No significance testing; selection-run variability also includes model output variation.",
+    "Original baselines are saved historical outputs from the same API snapshot.",
+    "Memoized the deterministic action-token operation; all six strict baseline metrics are checked against the frozen table.",
+    "Skipped only the adjusted-argument diagnostic branch; no adjusted metrics reported."
+  ],
+  "summary": [
+    {
+      "dataset": "cooking",
+      "action_f1": {
+        "gpt3_ranked": 0.79571630632451,
+        "random_mean": 0.8189129494943589,
+        "random_std": 0.011751996997527926,
+        "random_min": 0.7998133457769482,
+        "random_max": 0.8308324768756423,
+        "random_minus_ranked_pp": 2.319664316984893,
+        "minimal": 0.8506928922664282,
+        "nl2p_full": 0.8532691887163788,
+        "full_minus_minimal_pp": 0.257629644995061,
+        "full_minus_random_mean_pp": 3.4356239222019913
+      },
+      "argument_f1": {
+        "gpt3_ranked": 0.6751525719267654,
+        "random_mean": 0.6967095137817033,
+        "random_std": 0.01705200027022182,
+        "random_min": 0.6819660281893748,
+        "random_max": 0.723611111111111,
+        "random_minus_ranked_pp": 2.155694185493795,
+        "minimal": 0.5722397476340694,
+        "nl2p_full": 0.659729448491155,
+        "full_minus_minimal_pp": 8.748970085708564,
+        "full_minus_random_mean_pp": -3.6980065290548314
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "action_f1": {
+        "gpt3_ranked": 0.7142674344209853,
+        "random_mean": 0.7037055229148758,
+        "random_std": 0.015286998424311946,
+        "random_min": 0.6798430460688853,
+        "random_max": 0.7222074113569714,
+        "random_minus_ranked_pp": -1.0561911506109523,
+        "minimal": 0.7968270214943705,
+        "nl2p_full": 0.7719378953421506,
+        "full_minus_minimal_pp": -2.488912615221983,
+        "full_minus_random_mean_pp": 6.823237242727487
+      },
+      "argument_f1": {
+        "gpt3_ranked": 0.5965525273701373,
+        "random_mean": 0.5733257918664671,
+        "random_std": 0.010167016829003086,
+        "random_min": 0.5650224215246636,
+        "random_max": 0.5907670113007935,
+        "random_minus_ranked_pp": -2.322673550367016,
+        "minimal": 0.5554999499549594,
+        "nl2p_full": 0.5875,
+        "full_minus_minimal_pp": 3.2000050045040584,
+        "full_minus_random_mean_pp": 1.4174208133532873
+      }
+    },
+    {
+      "dataset": "win2k",
+      "action_f1": {
+        "gpt3_ranked": 0.9440060127771516,
+        "random_mean": 0.9212769675426953,
+        "random_std": 0.015406745896390633,
+        "random_min": 0.8967573611628774,
+        "random_max": 0.9371688115064345,
+        "random_minus_ranked_pp": -2.272904523445629,
+        "minimal": 0.9254088552054248,
+        "nl2p_full": 0.9193484306714343,
+        "full_minus_minimal_pp": -0.6060424533990472,
+        "full_minus_random_mean_pp": -0.1928536871260933
+      },
+      "argument_f1": {
+        "gpt3_ranked": 0.7392873252142534,
+        "random_mean": 0.6894762884627086,
+        "random_std": 0.031616397480236,
+        "random_min": 0.6519230769230769,
+        "random_max": 0.7372983385504454,
+        "random_minus_ranked_pp": -4.981103675154486,
+        "minimal": 0.672046481601033,
+        "nl2p_full": 0.6764705882352942,
+        "full_minus_minimal_pp": 0.44241066342611823,
+        "full_minus_random_mean_pp": -1.300570022741443
+      }
+    }
+  ]
+}

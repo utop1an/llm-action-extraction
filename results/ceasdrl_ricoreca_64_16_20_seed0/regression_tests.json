@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "passed": 32,
+  "warnings": 1,
+  "warning": "Installed SciPy warns numpy 2.5.2 is outside its declared <2.3 range; split and all tests nevertheless completed.",
+  "command": "python -m pytest -q -p no:cacheprovider --basetemp=tmp/ricoreca_final_regression_20261122 tests/test_ceasdrl_holdout.py tests/test_ceasdrl_holdout_scoring.py tests/test_ricoreca_projection.py tests/test_ricoreca_split.py tests/test_ceasdrl_spans.py tests/test_ceasdrl_torch.py",
+  "test_source_sha256": {
+    "tests/test_ceasdrl_holdout.py": "4f142d6abe09824e927efbbb7fbea1e4d12b4defe953d84a23fc13cd36e918e1",
+    "tests/test_ceasdrl_holdout_scoring.py": "6e71e96e40ec22b2c4cb6823460eaa27f925657e9a2a86246da66a2737106d98",
+    "tests/test_ricoreca_projection.py": "e39b72ec65b45d1010eda19fe101494273d46b8d9d96e056da40a1b13ea7577c",
+    "tests/test_ricoreca_split.py": "45458c741efa721515302947f719a8460fdbc399f3abb52092543119ba464299",
+    "tests/test_ceasdrl_spans.py": "0350a0c45b620275d599812c7b606e3a364732ae2a9eb38612711378bb1715cb",
+    "tests/test_ceasdrl_torch.py": "cce73cac1f8bf750f8b92a1047b5622bd3a59d408ffcc7b2645add6cb3cde0c5"
+  }
+}

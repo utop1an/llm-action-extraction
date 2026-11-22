@@ -1,0 +1,14 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,butter,garlic,wine,oregano,parsley,red pepper flakes,clams,large skillet,soup bowls,stove,Notes,,Action_start,Action_end,Sentence_Id
+Melt,Melt butter in a large skillet over medium heat.,1,,,,,,,1,,1,,,0,4,0
+Cook,Cook garlic in butter briefly.,1,1,,,,,,1,,1,,,49,53,1
+Stir,"Stir in wine, and season with oregano, parsley, and red pepper flakes.",1,1,1,,,,,1,,1,,,80,84,2
+season,"Stir in wine, and season with oregano, parsley, and red pepper flakes.",1,1,1,1,1,1,,1,,1,,,98,104,2
+Place,Place clams in the wine mixture.,1,1,1,1,1,1,1,1,,1,,,151,156,3
+Cover,"Cover, and steam until all the clams have opened: discard any that do not open.",1,1,1,1,1,1,1,1,,1,,,184,189,4
+steam,"Cover, and steam until all the clams have opened: discard any that do not open.",1,1,1,1,1,1,1,1,,1,,,195,200,4
+discard,"Cover, and steam until all the clams have opened: discard any that do not open.",1,1,1,1,1,1,1,1,,1,,,234,241,4
+Serve,"Serve in soup bowls, and ladle broth generously over them.",1,1,1,1,1,1,1,,1,,,,264,269,5
+ladle,"Serve in soup bowls, and ladle broth generously over them.",1,1,1,1,1,1,1,,1,,,,289,294,5
+Duplicate of: ,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,1,,,,,

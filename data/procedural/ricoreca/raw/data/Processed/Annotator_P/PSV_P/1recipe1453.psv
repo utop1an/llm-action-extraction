@@ -1,0 +1,17 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	flour	oats	sugar	baking powder	salt	egg yolks	egg whites	buttermilk	milk	melted butter	vanilla extract	waffle iron	large bowl	another bowl	third bowl	glass	metal bowl	paper towel-lined plate		Notes		Action_start	Action_end	Sentence_Id
+Preheat	Preheat a waffle iron according to manufacturer's instructions.												1										0	7	0
+Mix	"Mix flour, oats, sugar, baking powder, and salt in a large bowl."	1	1	1	1	1								1									64	67	1
+Beat	"Beat egg yolks in another bowl, reserving egg whites in a third bowl."						1								1								129	133	2
+reserving	"Beat egg yolks in another bowl, reserving egg whites in a third bowl."							1								1							161	170	2
+Add	"Add buttermilk, milk, and melted butter to egg yolks; beat until well mixed."						1		1	1	1				1								199	202	3
+beat	"Add buttermilk, milk, and melted butter to egg yolks; beat until well mixed."						1		1	1	1				1								253	257	3
+Pour	Pour buttermilk mixture into flour mixture; beat until batter is blended.	1	1	1	1	1	1		1	1	1			1	1								276	280	4
+beat	Pour buttermilk mixture into flour mixture; beat until batter is blended.	1	1	1	1	1	1		1	1	1			1									320	324	4
+Beat	Beat egg whites and vanilla extract in a glass or metal bowl until soft peaks form.							1				1					1	1					350	354	5
+Fold	Fold half the egg whites into the buttermilk batter until egg whites are incorporated; repeat with remaining half.	1	1	1	1	1	1	1	1	1	1	1		1			1	1					434	438	6
+Ladle	Ladle batter into preheated waffle iron.	1	1	1	1	1	1	1	1	1	1	1	1	1									549	554	7
+Cook	"Cook until waffles are golden and crisp, about 5 minutes."	1	1	1	1	1	1	1	1	1	1	1	1										590	594	8
+Transfer	Transfer waffle to a paper towel-lined plate to prevent sogginess and repeat with remaining batter.	1	1	1	1	1	1	1	1	1	1	1							1				648	656	9
+Duplicate of: 																									
+Annotator added: 																									

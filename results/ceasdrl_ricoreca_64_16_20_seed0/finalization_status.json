@@ -1,0 +1,22 @@
+{
+  "phase": "completed",
+  "updated_at_utc": "2026-11-21T19:33:58.015372+00:00",
+  "metrics": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  }
+}

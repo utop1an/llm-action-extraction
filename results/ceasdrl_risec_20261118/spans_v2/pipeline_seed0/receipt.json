@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "claim": "cEASDRL adapted with BIO span decisions; not original paper reproduction.",
+  "metrics": {
+    "action_name": {
+      "precision": 0.9556541019955654,
+      "recall": 0.9795454545454545,
+      "f1": 0.9674523007856342,
+      "right": 862,
+      "predicted": 902,
+      "gold": 880
+    },
+    "linked_argument_name": {
+      "precision": 0.7532535137948985,
+      "recall": 0.8954207920792079,
+      "f1": 0.8182075204975968,
+      "right": 1447,
+      "predicted": 1921,
+      "gold": 1616
+    }
+  },
+  "test_documents": 78,
+  "split_documents": {
+    "train": 126,
+    "dev": 56,
+    "test": 78
+  },
+  "matching": "Micro F1; complete normalized name and exact occurrence boundaries.",
+  "argument_matching": "Both action and linked argument must match; missing actions retain all their gold arguments as false negatives.",
+  "gold_scope": "Explicit argument links in canonical RISeC conversion; no roles or ES/EX/OP; implicit and condition-clause links excluded.",
+  "inference_uses_gold_labels": false,
+  "gold_name_expansion": false,
+  "best_epochs": {
+    "act": 8,
+    "arg": 10
+  },
+  "completed_epochs": {
+    "act": 10,
+    "arg": 10
+  },
+  "selection": "Each stage selected by official dev exact-span F1; test never used for checkpoint selection.",
+  "dataset_sha256": "1885e90a3df0ac550186b5f2f529f08fee5475ecee2f831f1bf4e433caa985e6",
+  "checkpoint_sha256": {
+    "act": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2",
+    "arg": "43a5294336df9be178714d37cecac7315c155fad7e464af38acac120f01ca28c"
+  },
+  "feature_manifest_sha256": "736717481c92a8450e47dd0f1e9cb4821b8067a447f42f0a3be6c65ca0a4e0a2",
+  "source_sha256": {
+    "evaluate_ceasdrl_spans.py": "06ed029bd7b7379d347d5c972af6e66329e07ee43406b537dddad9225b219315",
+    "risec_spans.py": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab",
+    "ceasdrl_spans.py": "0715817ec185a6ac45fc58e7a5e88a33a639301b71cb791b1d030f7e280a9e25"
+  }
+}

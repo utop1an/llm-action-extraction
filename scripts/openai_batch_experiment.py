@@ -19,6 +19,7 @@ python scripts\openai_batch_experiment.py collect results\batch\nl2p_1\gpt-5.4-m
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import pickle
@@ -42,13 +43,15 @@ from experiment import (  # noqa: E402
     sample_to_input_text,
 )
 from src.llm import MODELS, generate_prompt  # noqa: E402
-from src.solvers import GPT3ToPlan, NL2P_1, NL2P_1_Ablation  # noqa: E402
+from src.solvers import GPT3ToPlan, NL2P_1, NL2P_1_Ablation, NL2P_Minimal  # noqa: E402
 
 
 BATCH_ROOT = ROOT / "results" / "batch"
 SUPPORTED_SOLVERS = {
     "gpt3_to_plan": GPT3ToPlan,
+    "gpt3_to_plan_random": GPT3ToPlan,
     "nl2p_1": NL2P_1,
+    "nl2p_minimal": NL2P_Minimal,
     "nl2p_1_ablation": NL2P_1_Ablation,
 }
 
@@ -64,7 +67,11 @@ def run_dir(solver_name: str, model_name: str, run_id: str) -> Path:
 def result_solver_name(manifest: dict[str, Any], override: str | None = None) -> str:
     if override:
         return safe_name(override)
+    if manifest.get("result_solver"):
+        return safe_name(manifest["result_solver"])
     solver_name = manifest["solver"]
+    if solver_name == "gpt3_to_plan_random":
+        solver_name += f"_seed{manifest['selection_seed']}"
     coref_mode = manifest.get("coref") or "none"
     if coref_mode == "none":
         return solver_name
@@ -98,10 +105,10 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
-def build_chat_body(model_key: str, prompt: str, temperature: float) -> dict[str, Any]:
+def build_chat_body(model_key: str, prompt: str, temperature: float, api_model: str | None = None) -> dict[str, Any]:
     model_config = MODELS[model_key]
     body: dict[str, Any] = {
-        "model": model_config["model_name"],
+        "model": api_model or model_config["model_name"],
         "messages": [{"role": "user", "content": prompt}],
     }
     if model_config.get("supports_custom_sampling", True):
@@ -118,9 +125,13 @@ def build_chat_body(model_key: str, prompt: str, temperature: float) -> dict[str
     return body
 
 
-def build_solver(solver_name: str, model_name: str, datasets: dict[str, list[dict[str, Any]]] | None = None):
-    if solver_name == "gpt3_to_plan":
-        return GPT3ToPlan(datasets=datasets or {}, model_name=model_name)
+def build_solver(solver_name: str, model_name: str, datasets: dict[str, list[dict[str, Any]]] | None = None, selection_seed: int | None = None):
+    if solver_name in {"gpt3_to_plan", "gpt3_to_plan_random"}:
+        return GPT3ToPlan(
+            datasets=datasets or {}, model_name=model_name,
+            example_selection="random" if solver_name == "gpt3_to_plan_random" else "op_ex",
+            selection_seed=selection_seed,
+        )
     return SUPPORTED_SOLVERS[solver_name](model_name=model_name)
 
 
@@ -163,6 +174,14 @@ def prepare(args: argparse.Namespace) -> None:
 
     run_id = args.run_id or datetime.now().strftime("%Y%m%d-%H%M%S")
     out_dir = run_dir(args.s, args.m, run_id)
+    if (out_dir / "manifest.json").exists() or (out_dir / "input.jsonl").exists():
+        raise FileExistsError(f"Run already exists; use its manifest or a new run id: {out_dir}")
+    selection_seed = getattr(args, "selection_seed", None)
+    if args.s == "gpt3_to_plan_random" and selection_seed is None:
+        raise ValueError("gpt3_to_plan_random requires --selection-seed")
+    if args.s != "gpt3_to_plan_random" and selection_seed is not None:
+        raise ValueError("--selection-seed is only valid for gpt3_to_plan_random")
+    api_model = getattr(args, "api_model", None)
     coref_by_domain = {
         ds_name: load_coref_texts(ds_name, coref=args.coref, coref_dir=args.coref_dir)
         for ds_name in target_datasets
@@ -171,7 +190,9 @@ def prepare(args: argparse.Namespace) -> None:
         ds_name: read_from_labeled_dataset(DATASETS[ds_name], limit=args.l)
         for ds_name in target_datasets
     }
-    solver = build_solver(args.s, args.m, datasets=datasets)
+    solver = build_solver(args.s, args.m, datasets=datasets, selection_seed=selection_seed)
+    if isinstance(solver, GPT3ToPlan) and any(len(ds) < 3 for ds in datasets.values()):
+        raise ValueError("Two demonstrations with query exclusion require at least three documents per dataset")
 
     requests = []
     records = []
@@ -188,7 +209,7 @@ def prepare(args: argparse.Namespace) -> None:
                     "custom_id": custom_id,
                     "method": "POST",
                     "url": "/v1/chat/completions",
-                    "body": build_chat_body(args.m, prompt, temperature=args.t),
+                    "body": build_chat_body(args.m, prompt, temperature=args.t, api_model=api_model),
                 }
             )
             records.append(
@@ -200,15 +221,26 @@ def prepare(args: argparse.Namespace) -> None:
                     "original_text": paragraph,
                 }
             )
+            records[-1]["prompt_sha256"] = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+            if isinstance(solver, GPT3ToPlan):
+                records[-1]["example_doc_ids"] = solver.selected_example_indices(ds_name, doc_id)
 
     manifest = {
         "solver": args.s,
         "prompt_name": solver.prompt_name,
         "model": args.m,
-        "model_name": MODELS[args.m]["model_name"],
+        "model_name": api_model or MODELS[args.m]["model_name"],
         "datasets": target_datasets,
         "limit": args.l,
         "temperature": args.t,
+        "request_parameters": {k: v for k, v in requests[0]["body"].items() if k != "messages"} if requests else {},
+        "selection_seed": selection_seed,
+        "example_selection": solver.example_selection if isinstance(solver, GPT3ToPlan) else None,
+        "example_permutations": solver.ranked_example_indices if isinstance(solver, GPT3ToPlan) else None,
+        "dataset_sha256": {
+            name: hashlib.sha256(Path(dataset_path(DATASETS[name])).read_bytes()).hexdigest()
+            for name in target_datasets if Path(dataset_path(DATASETS[name])).is_file()
+        },
         "coref": args.coref,
         "coref_dir": args.coref_dir,
         "run_id": run_id,
@@ -218,7 +250,9 @@ def prepare(args: argparse.Namespace) -> None:
         "request_count": len(requests),
         "created_at": datetime.now().isoformat(timespec="seconds"),
     }
+    manifest["result_solver"] = result_solver_name(manifest, getattr(args, "result_solver", None))
     write_jsonl(out_dir / "input.jsonl", requests)
+    manifest["input_sha256"] = hashlib.sha256((out_dir / "input.jsonl").read_bytes()).hexdigest()
     write_json(out_dir / "manifest.json", manifest)
     print(f"Prepared {len(requests)} requests")
     print(f"Input: {out_dir / 'input.jsonl'}")
@@ -228,15 +262,36 @@ def prepare(args: argparse.Namespace) -> None:
 def submit(args: argparse.Namespace) -> None:
     manifest_path = Path(args.manifest).resolve()
     manifest = load_manifest(manifest_path)
-    client = get_openai_client(manifest["model"])
+    if manifest.get("batch_id"):
+        print(f"Already submitted: {manifest['batch_id']} ({manifest.get('batch_status')})")
+        return
+    client = get_openai_client(manifest["model"]).with_options(max_retries=0, timeout=60)
 
     input_path = Path(manifest["input_jsonl"])
     if not input_path.is_absolute():
         input_path = (manifest_path.parent / input_path).resolve()
-    with input_path.open("rb") as f:
-        batch_file = client.files.create(file=f, purpose="batch")
+    if manifest.get("input_sha256") and hashlib.sha256(input_path.read_bytes()).hexdigest() != manifest["input_sha256"]:
+        raise ValueError("Input JSONL changed after preparation; refusing to submit")
+    if not manifest.get("input_file_id"):
+        with input_path.open("rb") as f:
+            batch_file = client.files.create(file=f, purpose="batch")
+        manifest["input_file_id"] = batch_file.id
+        write_json(manifest_path, manifest)
+    if manifest.get("submission_started_at"):
+        # A previous create may have succeeded before the response was lost.
+        # Recover the matching remote job before allowing another create.
+        for previous in client.batches.list(limit=100):
+            if previous.input_file_id == manifest["input_file_id"]:
+                manifest["batch_id"] = previous.id
+                manifest["batch_status"] = previous.status
+                write_json(manifest_path, manifest)
+                print(f"Recovered submitted batch {previous.id}")
+                return
+        raise RuntimeError("Unresolved prior submission attempt; inspect remote batches before resubmitting")
+    manifest["submission_started_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+    write_json(manifest_path, manifest)
     batch = client.batches.create(
-        input_file_id=batch_file.id,
+        input_file_id=manifest["input_file_id"],
         endpoint=manifest["endpoint"],
         completion_window="24h",
         metadata={
@@ -246,12 +301,11 @@ def submit(args: argparse.Namespace) -> None:
         },
     )
 
-    manifest["input_file_id"] = batch_file.id
     manifest["batch_id"] = batch.id
     manifest["batch_status"] = batch.status
     manifest["submitted_at"] = datetime.now().isoformat(timespec="seconds")
     write_json(manifest_path, manifest)
-    print(f"Submitted batch {batch.id} with input file {batch_file.id}")
+    print(f"Submitted batch {batch.id} with input file {manifest['input_file_id']}")
     print(f"Status: {batch.status}")
 
 
@@ -307,7 +361,7 @@ def collect(args: argparse.Namespace) -> None:
 
     output_rows = {row["custom_id"]: row for row in read_jsonl(output_path)}
     record_map = {record["custom_id"]: record for record in manifest["records"]}
-    solver = build_solver(manifest["solver"], manifest["model"])
+    solver = build_solver(manifest["solver"], manifest["model"], selection_seed=manifest.get("selection_seed"))
 
     grouped_results: dict[str, list[dict[str, Any]]] = {ds_name: [] for ds_name in manifest["datasets"]}
     grouped_samples: dict[str, list[dict[str, Any]]] = {}
@@ -320,9 +374,8 @@ def collect(args: argparse.Namespace) -> None:
         row = output_rows.get(custom_id)
         if row is None:
             failures.append({"custom_id": custom_id, "error": "missing_output"})
-            continue
-        content = parse_response_content(row)
-        if content is None:
+            prediction = None
+        elif (content := parse_response_content(row)) is None:
             failures.append({"custom_id": custom_id, "error": row.get("error") or row.get("response")})
             prediction = None
         else:
@@ -397,6 +450,9 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_parser.add_argument("--coref", choices=["none", "llm", "nlp"], default="none", help="Use precomputed coreference-resolved input text")
     prepare_parser.add_argument("--coref-dir", help="Directory containing *_llm_coref.jsonl or *_coref.json files")
     prepare_parser.add_argument("--run-id", help="Stable run id; defaults to timestamp")
+    prepare_parser.add_argument("--selection-seed", type=int, help="Required fixed demonstration seed for gpt3_to_plan_random")
+    prepare_parser.add_argument("--api-model", help="Exact API model snapshot; retains the model key for configuration and output paths")
+    prepare_parser.add_argument("--result-solver", help="Separate result namespace to use when collecting this run")
     prepare_parser.set_defaults(func=prepare)
 
     submit_parser = subparsers.add_parser("submit", help="Upload input JSONL and create OpenAI batch")

@@ -1,0 +1,23 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,bread crumbs,flour,salt,pepper,egg,oil,pork steaks,onion,mushrooms,water,bouillon cube,cornstarch,sour cream,shallow dish,separate dish,large skillet,platter,stove,Notes,,Action_start,Action_end,Sentence_Id
+mix,"In a shallow dish, mix together the bread crumbs and flour.",1,1,,,,,,,,,,,,1,,,,,,,19,22,0
+Season,Season with salt and pepper.,1,1,1,1,,,,,,,,,,1,,,,,,,60,66,1
+Place,Place the egg in a separate dish.,,,,,1,,,,,,,,,,1,,,,,,89,94,2
+Heat,Heat oil in a large skillet over medium-high heat.,,,,,,1,,,,,,,,,,1,,1,,,123,127,3
+Dip,"Dip pork steaks in egg, then coat with the bread crumb mixture.",,,,,1,,1,,,,,,,,1,,,,,,174,177,4
+coat,"Dip pork steaks in egg, then coat with the bread crumb mixture.",1,1,1,1,1,,1,,,,,,,1,,,,,,,203,207,4
+Fry,"Fry in the hot oil until browned on both sides and cooked through, about 5 minutes per side.",1,1,1,1,1,1,1,,,,,,,,,1,,1,,,238,241,5
+Remove,Remove the pork to a platter and keep warm.,1,1,1,1,1,,1,,,,,,,,,,1,,,,331,337,6
+keep,Remove the pork to a platter and keep warm.,1,1,1,1,1,,1,,,,,,,,,,1,,,,364,368,6
+Add,Add onion and mushrooms to the skillet and cook until lightly browned.,,,,,,1,,1,1,,,,,,,1,,1,,,375,378,7
+cook,Add onion and mushrooms to the skillet and cook until lightly browned.,,,,,,1,,1,1,,,,,,,1,,1,,,418,422,7
+Pour,Pour in water and dissolve the bouillon cube.,,,,,,1,,1,1,1,,,,,,1,,1,,,446,450,8
+dissolve,Pour in water and dissolve the bouillon cube.,,,,,,1,,1,1,1,1,,,,,1,,1,,,464,472,8
+Simmer,Simmer for about 20 minutes.,,,,,,1,,1,1,1,1,,,,,1,,1,,,492,498,9
+Stir,Stir together the cornstarch and sour cream; stir into the skillet.,,,,,,1,,1,1,1,1,1,1,,,1,,1,,,521,525,10
+stir,Stir together the cornstarch and sour cream; stir into the skillet.,,,,,,,,1,1,1,1,1,1,,,1,,1,,,566,570,10
+Cook,Cook over low heat until thickened but do not boil.,,,,,,1,,1,1,1,1,1,1,,,1,,1,,,589,593,11
+Spoon,Spoon over the pork cutlets and serve immediately.,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,1,,,,641,646,12
+serve,Spoon over the pork cutlets and serve immediately.,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,1,,,,673,678,12
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,,,,1,,,,,

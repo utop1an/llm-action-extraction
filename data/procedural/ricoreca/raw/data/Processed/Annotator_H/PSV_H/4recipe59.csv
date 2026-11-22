@@ -1,0 +1,13 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,water,salt,ground black pepper,oregano,basil,onion salt,parsley,garlic powder,bay leaf,salad dressing mix,roast,saucepan,slow cooker,fork,stove,Notes,,Action_start,Action_end,Sentence_Id
+Combine,"Combine water with salt, ground black pepper, oregano, basil, onion salt, parsley, garlic powder, bay leaf, and salad dressing mix in a saucepan.",1,1,1,1,1,1,1,1,1,1,,1,,,,,,0,7,0
+Stir,"Stir well, and bring to a boil.",1,1,1,1,1,1,1,1,1,1,,1,,,1,,,146,150,1
+bring,"Stir well, and bring to a boil.",1,1,1,1,1,1,1,1,1,1,,1,,,1,,,161,166,1
+Place,"Place roast in slow cooker, and pour salad dressing mixture over the meat.",1,1,1,1,1,1,1,1,1,1,1,,1,,,,,178,183,2
+pour,"Place roast in slow cooker, and pour salad dressing mixture over the meat.",1,1,1,1,1,1,1,1,1,1,1,,1,,,,,210,214,2
+Cover,"Cover, and cook on Low for 10 to 12 hours, or on High for 4 to 5 hours.",1,1,1,1,1,1,1,1,1,1,1,,1,,,,,253,258,3
+cook,"Cover, and cook on Low for 10 to 12 hours, or on High for 4 to 5 hours.",1,1,1,1,1,1,1,1,1,1,1,,1,,,,,264,268,3
+remove,"When done, remove bay leaf, and shred meat with a fork.",1,1,1,1,1,1,1,1,,1,1,,,,,,,336,342,4
+shred,"When done, remove bay leaf, and shred meat with a fork.",1,1,1,1,1,1,1,1,,1,1,,,1,,,,357,362,4
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,1,,,,,

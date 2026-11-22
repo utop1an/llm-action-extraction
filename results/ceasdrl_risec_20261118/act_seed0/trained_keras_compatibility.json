@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "real_test_contexts": 4,
+  "mode": "act",
+  "max_absolute_q_error": 0.00030517578125,
+  "weights": "best.keras.weights.h5",
+  "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with GPU checkpoint."
+}

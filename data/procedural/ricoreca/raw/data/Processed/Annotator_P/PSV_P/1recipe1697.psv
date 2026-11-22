@@ -1,0 +1,16 @@
+		INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	apples	brown sugar	cinnamon	apple	bacon	campfire	coals	outdoor grill	loaf pan	bowl		Notes		Action_start	Action_end	Sentence_Id
+Build	Build a campfire and allow the fire to burn until it has accumulated a bed of coals.						1								0	5	0
+allow	Build a campfire and allow the fire to burn until it has accumulated a bed of coals.						1	1							21	26	0
+Rake	Rake the coals into a flat bed on one side of the fire.						1	1							85	89	1
+preheat	"Alternatively, preheat an outdoor grill."								1						156	163	2
+Place	Place apples in a loaf pan.	1								1					182	187	3
+Combine	Combine brown sugar and cinnamon in a bowl; spoon into each apple.		1	1							1				210	217	4
+spoon	Combine brown sugar and cinnamon in a bowl; spoon into each apple.	1	1	1	1					1	1				254	259	4
+Place	Place the loaf pan into the campfire or on the grill; cook for about 3 minutes.	1	1	1	1		1	1	1	1					277	282	5
+cook	Place the loaf pan into the campfire or on the grill; cook for about 3 minutes.	1	1	1	1		1	1	1	1					331	335	5
+remove	Carefully remove the pan from the fire and sprinkle bacon over apples.	1	1	1	1		1	1	1	1					367	373	6
+sprinkle	Carefully remove the pan from the fire and sprinkle bacon over apples.	1	1	1	1	1				1					400	408	6
+Place	Place in the fire or on the grill for about 5 minutes more.	1	1	1	1	1	1	1	1	1					428	433	7
+Duplicate of: 																	
+Annotator added: 																	

@@ -1,0 +1,14 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,TOOL,TOOL,TOOL,,,,Metadata,Metadata,Metadata
+Actions,Sentences,chicken thighs,garlic salt,onion salt,oregano,thyme,paprika,pepper,oven,cooking spray,baking sheet,aluminum foil,small container,lid,instant-read thermometer,,Notes,,Action_start,Action_end,Sentence_Id
+Preheat,Preheat oven to 350 degrees F (175 degrees C).,,,,,,,,1,,,,,,,,,,0,7,0
+Line,Line a baking sheet with aluminum foil and spray with cooking spray.,,,,,,,,,,1,1,,,,,,,47,51,1
+spray,Line a baking sheet with aluminum foil and spray with cooking spray.,,,,,,,,,1,1,1,,,,,,,90,95,1
+Arrange,Arrange chicken thighs on prepared baking sheet.,1,,,,,,,,1,1,1,,,,,,,116,123,2
+Combine,"Combine garlic salt, onion salt, oregano, thyme, paprika, and pepper together in a small container with a lid.",,1,1,1,1,1,1,,,,,1,1,,,,,165,172,3
+Close,Close the lid and shake container until spices are thoroughly mixed.,,,,,,,,,,,,,1,,,,,276,281,4
+shake,Close the lid and shake container until spices are thoroughly mixed.,1,1,1,1,1,1,1,,,,,1,1,,,,,294,299,4
+Sprinkle,Sprinkle spice mixture liberally over chicken thighs.,1,1,1,1,1,1,1,,,,,,,,,,,345,353,5
+Bake,"Bake chicken in the preheated oven until skin is crispy, thighs are no longer pink at the bone, and the juices run clear, about 1 hour.",1,1,1,1,1,1,1,1,,,,,,,,,,399,403,6
+read,An instant-read thermometer inserted near the bone should read 165 degrees F (74 degrees C).,1,1,1,1,1,1,1,,,,,,,1,,,,593,597,7
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,,,,,,

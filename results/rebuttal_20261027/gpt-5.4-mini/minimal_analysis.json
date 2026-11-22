@@ -1,0 +1,1563 @@
+{
+  "model": "gpt-5.4-mini",
+  "created_at": "2026-10-27T16:05:11+11:00",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261027,
+    "unit": "paired document",
+    "interval": "percentile 95%, no multiple-comparison adjustment",
+    "scope": "fixed saved outputs; excludes model-run and prompt-development variability"
+  },
+  "datasets": [
+    {
+      "dataset": "win2k",
+      "num_docs": 154,
+      "counts": {
+        "minimal": [
+          1160,
+          1334,
+          1173,
+          1041,
+          1750,
+          1348
+        ],
+        "nl2p_full": [
+          1157,
+          1337,
+          1180,
+          989,
+          1756,
+          1168
+        ]
+      },
+      "f1_delta_full_minus_minimal_pp": {
+        "action": {
+          "delta": -0.6060424533990556,
+          "ci95": [
+            -1.2189518199613314,
+            -0.008205917698973525
+          ]
+        },
+        "argument": {
+          "delta": 0.44241066342611646,
+          "ci95": [
+            -2.4728044124389252,
+            3.2705590634797157
+          ]
+        }
+      },
+      "unit_match_comparison_by_type": {
+        "type1_both": 1062,
+        "type1_neither": 153,
+        "type2_both": 66,
+        "type3_neither": 1,
+        "type1_minimal_only": 26,
+        "type3_both": 5,
+        "type2_full_only": 4,
+        "type2_neither": 6,
+        "type1_full_only": 20,
+        "type2_minimal_only": 1
+      },
+      "common_matched_argument_counts": {
+        "minimal": [
+          1016,
+          1711,
+          1315
+        ],
+        "nl2p_full": [
+          969,
+          1711,
+          1142
+        ]
+      },
+      "common_matched_argument_prf": {
+        "minimal": [
+          77.26235741444867,
+          59.38047925189947,
+          67.15135492399207
+        ],
+        "nl2p_full": [
+          84.85113835376532,
+          56.63354763296318,
+          67.92849631966351
+        ]
+      },
+      "unmatched_predicted_verbs": {
+        "minimal": [
+          [
+            "click",
+            7
+          ],
+          [
+            "verify",
+            2
+          ],
+          [
+            "set",
+            1
+          ],
+          [
+            "point to",
+            1
+          ],
+          [
+            "make sure",
+            1
+          ],
+          [
+            "leave click",
+            1
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "click",
+            17
+          ],
+          [
+            "set",
+            2
+          ],
+          [
+            "point to",
+            1
+          ],
+          [
+            "action menu",
+            1
+          ],
+          [
+            "leave click",
+            1
+          ],
+          [
+            "verify",
+            1
+          ]
+        ]
+      },
+      "matched_predicted_verbs": {
+        "minimal": [
+          [
+            "click",
+            817
+          ],
+          [
+            "double - click",
+            109
+          ],
+          [
+            "right - click",
+            73
+          ],
+          [
+            "click to select",
+            25
+          ],
+          [
+            "type",
+            25
+          ],
+          [
+            "click to clear",
+            23
+          ],
+          [
+            "point to",
+            17
+          ],
+          [
+            "expand",
+            14
+          ],
+          [
+            "select",
+            12
+          ],
+          [
+            "start",
+            11
+          ],
+          [
+            "open",
+            5
+          ],
+          [
+            "change",
+            4
+          ],
+          [
+            "clear",
+            3
+          ],
+          [
+            "close",
+            2
+          ],
+          [
+            "click to expand",
+            2
+          ],
+          [
+            "locate and click",
+            2
+          ],
+          [
+            "locate",
+            2
+          ],
+          [
+            "replace",
+            1
+          ],
+          [
+            "restart",
+            1
+          ],
+          [
+            "quit",
+            1
+          ],
+          [
+            "choose",
+            1
+          ],
+          [
+            "minimize",
+            1
+          ],
+          [
+            "reboot",
+            1
+          ],
+          [
+            "insert",
+            1
+          ],
+          [
+            "configure",
+            1
+          ],
+          [
+            "decrease",
+            1
+          ],
+          [
+            "go to",
+            1
+          ],
+          [
+            "find and select",
+            1
+          ],
+          [
+            "set",
+            1
+          ],
+          [
+            "double - click to expand",
+            1
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "click",
+            755
+          ],
+          [
+            "double - click",
+            110
+          ],
+          [
+            "right - click",
+            72
+          ],
+          [
+            "click to select",
+            31
+          ],
+          [
+            "type",
+            25
+          ],
+          [
+            "click to clear",
+            16
+          ],
+          [
+            "click ok",
+            16
+          ],
+          [
+            "click property",
+            16
+          ],
+          [
+            "expand",
+            15
+          ],
+          [
+            "start",
+            10
+          ],
+          [
+            "point to",
+            9
+          ],
+          [
+            "select",
+            9
+          ],
+          [
+            "clear",
+            7
+          ],
+          [
+            "change",
+            5
+          ],
+          [
+            "click add",
+            5
+          ],
+          [
+            "open",
+            4
+          ],
+          [
+            "locate",
+            4
+          ],
+          [
+            "click start",
+            3
+          ],
+          [
+            "click run",
+            3
+          ],
+          [
+            "close",
+            3
+          ],
+          [
+            "click to expand",
+            2
+          ],
+          [
+            "click next",
+            2
+          ],
+          [
+            "click to clear or select",
+            1
+          ],
+          [
+            "replace",
+            1
+          ],
+          [
+            "restart",
+            1
+          ],
+          [
+            "quit",
+            1
+          ],
+          [
+            "click client for microsoft network",
+            1
+          ],
+          [
+            "choose",
+            1
+          ],
+          [
+            "minimize",
+            1
+          ],
+          [
+            "reboot",
+            1
+          ]
+        ]
+      },
+      "source_verb_presence": {
+        "minimal": {
+          "all_lemma_tokens_present": 13
+        },
+        "nl2p_full": {
+          "all_lemma_tokens_present": 23
+        }
+      },
+      "common_matched_argument_delta_ci95": [
+        -2.1627300356604833,
+        3.6310188799455956
+      ]
+    },
+    {
+      "dataset": "cooking",
+      "num_docs": 116,
+      "counts": {
+        "minimal": [
+          1903,
+          2444,
+          2030,
+          1814,
+          2655,
+          3685
+        ],
+        "nl2p_full": [
+          1951,
+          2458,
+          2115,
+          1902,
+          2732,
+          3034
+        ]
+      },
+      "f1_delta_full_minus_minimal_pp": {
+        "action": {
+          "delta": 0.25762964499504903,
+          "ci95": [
+            -0.7022983656815924,
+            1.2431025047267534
+          ]
+        },
+        "argument": {
+          "delta": 8.748970085708564,
+          "ci95": [
+            7.015044413810086,
+            10.484407724121846
+          ]
+        }
+      },
+      "unit_match_comparison_by_type": {
+        "type1_minimal_only": 95,
+        "type1_both": 1717,
+        "type1_neither": 406,
+        "type3_both": 13,
+        "type2_both": 73,
+        "type2_neither": 39,
+        "type2_full_only": 18,
+        "type3_neither": 5,
+        "type1_full_only": 129,
+        "type2_minimal_only": 4,
+        "type3_minimal_only": 1,
+        "type3_full_only": 1
+      },
+      "common_matched_argument_counts": {
+        "minimal": [
+          1747,
+          2539,
+          3528
+        ],
+        "nl2p_full": [
+          1785,
+          2538,
+          2849
+        ]
+      },
+      "common_matched_argument_prf": {
+        "minimal": [
+          49.518140589569164,
+          68.80661677825915,
+          57.59024229437943
+        ],
+        "nl2p_full": [
+          62.65356265356265,
+          70.33096926713948,
+          66.27065156859105
+        ]
+      },
+      "unmatched_predicted_verbs": {
+        "minimal": [
+          [
+            "allow",
+            16
+          ],
+          [
+            "make sure",
+            10
+          ],
+          [
+            "add",
+            9
+          ],
+          [
+            "let",
+            6
+          ],
+          [
+            "bring",
+            4
+          ],
+          [
+            "use",
+            3
+          ],
+          [
+            "give",
+            3
+          ],
+          [
+            "ensure",
+            2
+          ],
+          [
+            "raise",
+            2
+          ],
+          [
+            "leave",
+            2
+          ],
+          [
+            "lower",
+            2
+          ],
+          [
+            "top",
+            2
+          ],
+          [
+            "wipe",
+            2
+          ],
+          [
+            "lie",
+            2
+          ],
+          [
+            "place",
+            2
+          ],
+          [
+            "cover",
+            2
+          ],
+          [
+            "put",
+            2
+          ],
+          [
+            "coat",
+            1
+          ],
+          [
+            "aim for",
+            1
+          ],
+          [
+            "turn off",
+            1
+          ],
+          [
+            "continue",
+            1
+          ],
+          [
+            "brown",
+            1
+          ],
+          [
+            "do not allow",
+            1
+          ],
+          [
+            "dip",
+            1
+          ],
+          [
+            "crush",
+            1
+          ],
+          [
+            "slowly add",
+            1
+          ],
+          [
+            "continue heat",
+            1
+          ],
+          [
+            "let stand",
+            1
+          ],
+          [
+            "let sit",
+            1
+          ],
+          [
+            "take it out",
+            1
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "allow",
+            13
+          ],
+          [
+            "let",
+            8
+          ],
+          [
+            "bring",
+            6
+          ],
+          [
+            "add",
+            5
+          ],
+          [
+            "simmer",
+            4
+          ],
+          [
+            "turn",
+            3
+          ],
+          [
+            "leave",
+            3
+          ],
+          [
+            "give",
+            3
+          ],
+          [
+            "make",
+            3
+          ],
+          [
+            "wipe",
+            3
+          ],
+          [
+            "put",
+            3
+          ],
+          [
+            "form",
+            3
+          ],
+          [
+            "cover",
+            3
+          ],
+          [
+            "brown",
+            2
+          ],
+          [
+            "boil",
+            2
+          ],
+          [
+            "dip",
+            2
+          ],
+          [
+            "raise",
+            2
+          ],
+          [
+            "refrigerate",
+            2
+          ],
+          [
+            "top",
+            2
+          ],
+          [
+            "shre",
+            2
+          ],
+          [
+            "reach",
+            2
+          ],
+          [
+            "absorb",
+            2
+          ],
+          [
+            "coat",
+            1
+          ],
+          [
+            "uncoil",
+            1
+          ],
+          [
+            "ensure",
+            1
+          ],
+          [
+            "break",
+            1
+          ],
+          [
+            "blend",
+            1
+          ],
+          [
+            "turn off",
+            1
+          ],
+          [
+            "continue",
+            1
+          ],
+          [
+            "curdle",
+            1
+          ]
+        ]
+      },
+      "matched_predicted_verbs": {
+        "minimal": [
+          [
+            "add",
+            191
+          ],
+          [
+            "place",
+            95
+          ],
+          [
+            "pour",
+            58
+          ],
+          [
+            "mix",
+            54
+          ],
+          [
+            "use",
+            47
+          ],
+          [
+            "put",
+            47
+          ],
+          [
+            "cook",
+            46
+          ],
+          [
+            "serve",
+            43
+          ],
+          [
+            "remove",
+            43
+          ],
+          [
+            "bake",
+            40
+          ],
+          [
+            "stir",
+            32
+          ],
+          [
+            "preheat",
+            30
+          ],
+          [
+            "heat",
+            24
+          ],
+          [
+            "cut",
+            22
+          ],
+          [
+            "prepare",
+            22
+          ],
+          [
+            "sprinkle",
+            21
+          ],
+          [
+            "beat",
+            21
+          ],
+          [
+            "cover",
+            21
+          ],
+          [
+            "transfer",
+            20
+          ],
+          [
+            "take",
+            19
+          ],
+          [
+            "combine",
+            18
+          ],
+          [
+            "season",
+            18
+          ],
+          [
+            "set aside",
+            17
+          ],
+          [
+            "take out",
+            17
+          ],
+          [
+            "leave",
+            16
+          ],
+          [
+            "drain",
+            16
+          ],
+          [
+            "stir in",
+            14
+          ],
+          [
+            "add in",
+            13
+          ],
+          [
+            "spread",
+            13
+          ],
+          [
+            "slice",
+            13
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "add",
+            191
+          ],
+          [
+            "place",
+            103
+          ],
+          [
+            "mix",
+            64
+          ],
+          [
+            "pour",
+            57
+          ],
+          [
+            "remove",
+            56
+          ],
+          [
+            "cook",
+            52
+          ],
+          [
+            "put",
+            51
+          ],
+          [
+            "serve",
+            45
+          ],
+          [
+            "stir",
+            42
+          ],
+          [
+            "bake",
+            41
+          ],
+          [
+            "preheat",
+            30
+          ],
+          [
+            "use",
+            28
+          ],
+          [
+            "add in",
+            27
+          ],
+          [
+            "heat",
+            25
+          ],
+          [
+            "cover",
+            25
+          ],
+          [
+            "sprinkle",
+            21
+          ],
+          [
+            "cut",
+            21
+          ],
+          [
+            "beat",
+            21
+          ],
+          [
+            "transfer",
+            20
+          ],
+          [
+            "take",
+            20
+          ],
+          [
+            "combine",
+            20
+          ],
+          [
+            "prepare",
+            18
+          ],
+          [
+            "drain",
+            16
+          ],
+          [
+            "spread",
+            16
+          ],
+          [
+            "pour in",
+            16
+          ],
+          [
+            "season",
+            16
+          ],
+          [
+            "top",
+            15
+          ],
+          [
+            "simmer",
+            15
+          ],
+          [
+            "slice",
+            14
+          ],
+          [
+            "leave",
+            14
+          ]
+        ]
+      },
+      "source_verb_presence": {
+        "minimal": {
+          "all_lemma_tokens_present": 116,
+          "some_lemma_tokens_absent": 11
+        },
+        "nl2p_full": {
+          "all_lemma_tokens_present": 160,
+          "some_lemma_tokens_absent": 4
+        }
+      },
+      "common_matched_argument_delta_ci95": [
+        6.935709914294406,
+        10.42798498821312
+      ]
+    },
+    {
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "counts": {
+        "minimal": [
+          3114,
+          4213,
+          3603,
+          2775,
+          5029,
+          4962
+        ],
+        "nl2p_full": [
+          3356,
+          4278,
+          4417,
+          2914,
+          5352,
+          4568
+        ]
+      },
+      "f1_delta_full_minus_minimal_pp": {
+        "action": {
+          "delta": -2.4889126152219774,
+          "ci95": [
+            -4.018752830835959,
+            -1.0440833483261636
+          ]
+        },
+        "argument": {
+          "delta": 3.2000050045040567,
+          "ci95": [
+            1.4731929130265473,
+            4.913034384134256
+          ]
+        }
+      },
+      "unit_match_comparison_by_type": {
+        "type3_both": 150,
+        "type2_neither": 153,
+        "type1_both": 2235,
+        "type1_minimal_only": 278,
+        "type2_both": 403,
+        "type1_full_only": 428,
+        "type2_full_only": 111,
+        "type1_neither": 628,
+        "type3_full_only": 29,
+        "type2_minimal_only": 46,
+        "type3_neither": 14,
+        "type3_minimal_only": 2
+      },
+      "common_matched_argument_counts": {
+        "minimal": [
+          2520,
+          4496,
+          4478
+        ],
+        "nl2p_full": [
+          2480,
+          4493,
+          3852
+        ]
+      },
+      "common_matched_argument_prf": {
+        "minimal": [
+          56.2751228226887,
+          56.04982206405694,
+          56.1622464898596
+        ],
+        "nl2p_full": [
+          64.38213914849429,
+          55.196973069218785,
+          59.43678849610545
+        ]
+      },
+      "unmatched_predicted_verbs": {
+        "minimal": [
+          [
+            "make sure",
+            28
+          ],
+          [
+            "use",
+            22
+          ],
+          [
+            "allow",
+            15
+          ],
+          [
+            "let",
+            11
+          ],
+          [
+            "choose",
+            10
+          ],
+          [
+            "avoid",
+            9
+          ],
+          [
+            "place",
+            8
+          ],
+          [
+            "have",
+            8
+          ],
+          [
+            "remove",
+            7
+          ],
+          [
+            "decide",
+            7
+          ],
+          [
+            "add",
+            7
+          ],
+          [
+            "make",
+            7
+          ],
+          [
+            "hang",
+            7
+          ],
+          [
+            "keep",
+            7
+          ],
+          [
+            "paint",
+            6
+          ],
+          [
+            "wash",
+            6
+          ],
+          [
+            "lie",
+            6
+          ],
+          [
+            "ask",
+            5
+          ],
+          [
+            "ensure",
+            5
+          ],
+          [
+            "check",
+            5
+          ],
+          [
+            "wear",
+            4
+          ],
+          [
+            "apply",
+            4
+          ],
+          [
+            "do not leave",
+            4
+          ],
+          [
+            "display",
+            4
+          ],
+          [
+            "create",
+            4
+          ],
+          [
+            "leave",
+            4
+          ],
+          [
+            "water",
+            4
+          ],
+          [
+            "lie out",
+            3
+          ],
+          [
+            "work",
+            3
+          ],
+          [
+            "consider",
+            3
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "make",
+            33
+          ],
+          [
+            "remove",
+            22
+          ],
+          [
+            "use",
+            21
+          ],
+          [
+            "keep",
+            20
+          ],
+          [
+            "have",
+            20
+          ],
+          [
+            "leave",
+            19
+          ],
+          [
+            "allow",
+            18
+          ],
+          [
+            "let",
+            17
+          ],
+          [
+            "place",
+            14
+          ],
+          [
+            "create",
+            11
+          ],
+          [
+            "be",
+            11
+          ],
+          [
+            "choose",
+            10
+          ],
+          [
+            "add",
+            10
+          ],
+          [
+            "wash",
+            10
+          ],
+          [
+            "paint",
+            9
+          ],
+          [
+            "clean",
+            9
+          ],
+          [
+            "make sure",
+            9
+          ],
+          [
+            "hold",
+            8
+          ],
+          [
+            "put",
+            8
+          ],
+          [
+            "apply",
+            7
+          ],
+          [
+            "plant",
+            7
+          ],
+          [
+            "cut",
+            7
+          ],
+          [
+            "cause",
+            6
+          ],
+          [
+            "ensure",
+            6
+          ],
+          [
+            "buy",
+            6
+          ],
+          [
+            "work",
+            6
+          ],
+          [
+            "divide",
+            6
+          ],
+          [
+            "find",
+            5
+          ],
+          [
+            "purchase",
+            5
+          ],
+          [
+            "change",
+            5
+          ]
+        ]
+      },
+      "matched_predicted_verbs": {
+        "minimal": [
+          [
+            "use",
+            273
+          ],
+          [
+            "place",
+            114
+          ],
+          [
+            "add",
+            79
+          ],
+          [
+            "choose",
+            67
+          ],
+          [
+            "remove",
+            64
+          ],
+          [
+            "keep",
+            56
+          ],
+          [
+            "apply",
+            45
+          ],
+          [
+            "make",
+            42
+          ],
+          [
+            "create",
+            36
+          ],
+          [
+            "hang",
+            36
+          ],
+          [
+            "cover",
+            36
+          ],
+          [
+            "put",
+            34
+          ],
+          [
+            "clean",
+            34
+          ],
+          [
+            "find",
+            32
+          ],
+          [
+            "look for",
+            32
+          ],
+          [
+            "paint",
+            29
+          ],
+          [
+            "buy",
+            28
+          ],
+          [
+            "check",
+            27
+          ],
+          [
+            "cut",
+            27
+          ],
+          [
+            "wash",
+            24
+          ],
+          [
+            "scrub",
+            24
+          ],
+          [
+            "purchase",
+            23
+          ],
+          [
+            "take",
+            21
+          ],
+          [
+            "try",
+            21
+          ],
+          [
+            "leave",
+            21
+          ],
+          [
+            "rinse",
+            21
+          ],
+          [
+            "fill",
+            20
+          ],
+          [
+            "ask",
+            20
+          ],
+          [
+            "wear",
+            19
+          ],
+          [
+            "get",
+            19
+          ]
+        ],
+        "nl2p_full": [
+          [
+            "use",
+            231
+          ],
+          [
+            "place",
+            117
+          ],
+          [
+            "add",
+            88
+          ],
+          [
+            "remove",
+            85
+          ],
+          [
+            "keep",
+            72
+          ],
+          [
+            "choose",
+            65
+          ],
+          [
+            "make",
+            59
+          ],
+          [
+            "apply",
+            57
+          ],
+          [
+            "create",
+            42
+          ],
+          [
+            "clean",
+            41
+          ],
+          [
+            "find",
+            40
+          ],
+          [
+            "paint",
+            40
+          ],
+          [
+            "put",
+            39
+          ],
+          [
+            "cover",
+            36
+          ],
+          [
+            "hang",
+            35
+          ],
+          [
+            "dry",
+            35
+          ],
+          [
+            "buy",
+            33
+          ],
+          [
+            "wash",
+            30
+          ],
+          [
+            "scrub",
+            29
+          ],
+          [
+            "cut",
+            28
+          ],
+          [
+            "check",
+            27
+          ],
+          [
+            "get",
+            26
+          ],
+          [
+            "look for",
+            25
+          ],
+          [
+            "purchase",
+            25
+          ],
+          [
+            "plant",
+            24
+          ],
+          [
+            "set",
+            24
+          ],
+          [
+            "leave",
+            24
+          ],
+          [
+            "rinse",
+            23
+          ],
+          [
+            "ask",
+            22
+          ],
+          [
+            "take",
+            21
+          ]
+        ]
+      },
+      "source_verb_presence": {
+        "minimal": {
+          "all_lemma_tokens_present": 459,
+          "some_lemma_tokens_absent": 30
+        },
+        "nl2p_full": {
+          "all_lemma_tokens_present": 1049,
+          "some_lemma_tokens_absent": 12
+        }
+      },
+      "common_matched_argument_delta_ci95": [
+        1.681834654557823,
+        4.919497917102356
+      ]
+    }
+  ]
+}

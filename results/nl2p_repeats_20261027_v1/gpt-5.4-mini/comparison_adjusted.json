@@ -1,0 +1,1780 @@
+{
+  "model": "gpt-5.4-mini",
+  "api_model": "gpt-5.4-mini-2026-03-17",
+  "created_at": "2026-10-27T19:11:42+11:00",
+  "matrix": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\matrix.json",
+  "matrix_sha256_at_start": "7b0fad92a3b7c2c9ffc7ac87193e237809c3cf0192ae7b255b3674d6e1e065e0",
+  "evaluator_sha256": "501a291863d8715ac8d5890b7cacabcd2f1d0f7b80e25eb2b5c2c57b4084e6a6",
+  "helpers_sha256": "388f4bf52f30af7e9f544a9e07946144bdcb84c7740671296ad204a1ca836c44",
+  "analysis_script_sha256": "70357643017f56b1d63d6b1bae0e18a1b6ea78f5deadbabbd1a1a8975ce55d78",
+  "adjusted_argument_enabled": true,
+  "inputs": [
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_minimal_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "498dfdc27cec4d4ddb82510e10d68cae0e23687ef6df6287e1b59da08c7e9d13",
+      "pkl_sha256": "10a5e07069d669944a8daf2f614bc11bf9231bfd14fd61e8ced0f5291e1ba51d"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_minimal_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "f66589e906cf4cad6679c458be95a7bc1935de5ddb0c9aa02c5a3cdec271d40d",
+      "pkl_sha256": "e2ff88f689e0fcf92911e598a76d409331953c857ca267bbba0ec075affd3e73"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_minimal_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "f7ee116be5d111d7c2375657ae247046c448482d05507945ac37c8e1cbf2194e",
+      "pkl_sha256": "85807d78a6c6097d6f61e28013ca60cdb01444c59b35c56f6ce93011321bcc7d"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_full_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "b988832a5bcee8ac088a6c5083e5cc2a1ed9c8b8d1a0be3c4007df291669454c",
+      "pkl_sha256": "645ce036f2dce74dd5106155c35c1aa51b1ebe9b16b378ceddd511a4ce0b92fc"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_full_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "6a4ccafad7bf2858c5f4da2ce7f30a02c70b775c2de62a36d03b2e144437e593",
+      "pkl_sha256": "01afab320e411973dcaa880afd861d6dabeefa8b3bf842348a9a3616945a55e9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_full_repeat1_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "7bd5d244a4902807bce614b9ce1dc64e78162673bb120a372510c1c5611025ce",
+      "pkl_sha256": "eea76822c35da02269ca774f6084427471666eed399f09ae2aa897005e77f3ab"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_minimal_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "a43ab2429f98b4143078bee4ce69f3fd92c00684efcef52c56e272c44b44998e",
+      "pkl_sha256": "ead15b0efb898d90619f73d4f1d5f3ffd064e9a5ed1d42636f687227defe6d56"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_minimal_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "05e84ad15004c6a7f15df6067af9e792ba5cde5732bddf0ed96b7da4c5e6a0a2",
+      "pkl_sha256": "01c81f02877682859981964e323aca458607ae91c6e9e1ed11d5e17bfecaa2da"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_minimal_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "7872987dfc7004fd5330f5d3053b65f9a50bf419c71a0b7af59da36c075fa84f",
+      "pkl_sha256": "804457836b3eca4f06570df529138907318f18a9e795e767a840b81664e0f962"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_full_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "d45f4d92e9ae70311ceb74a1d3240c7c5e6fed25235df12c2dd7e16ac105d6f9",
+      "pkl_sha256": "3a738b9934c9bfa6ff47356729c1d3d33161591191ca65eab170346167389bb9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_full_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "274857740eaceed5220de247c4ab42f9876953002f85d899de553c94fe0c7051",
+      "pkl_sha256": "64b59ec69bf133a5c7c05ec0dd701727f23146e4c4347496d207fb663eaba4c9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_full_repeat2_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "62907e3835ade4bbf67a3cf8a5b669dc11b53b9765f46e523d2f40d8c08c1a8f",
+      "pkl_sha256": "e141fabce867a20553665785d4ce4704574926f28331cba5f823d34bb9569485"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_minimal_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "b6cbdb26d8cba48076133020683321f83b3a4d71caec4ad41918480276522070",
+      "pkl_sha256": "92c680a297056889b1936bbbe13fdc23ee5eebf923310544fea861d8331c7dfc"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_minimal_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "85a34f530eca2cc28b5c0ac836e6876a5cae681714551016bf434eb0a78c2a87",
+      "pkl_sha256": "fdca6bbea8e3e89eb9e00c3ccb842ae2a07cc77d241db90d8ce1b1e5fb4f5274"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_minimal_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "3b0d2966ec5eb73cecdb3cbbe804d98fb6bf3d2409e40eb4e1c95025dd47bc78",
+      "pkl_sha256": "7c84962328db8cff3762662964e7ef0aef768cf7117f2d747e85eba6ad0cdb9b"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1\\gpt-5.4-mini\\cooking_nl2p_full_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "957cd33e5e9405aabfaa7345eef68e2ea123e7c33d24d1222e3fabd1154165d9",
+      "pkl_sha256": "cb643766ca403f0a891bd597019b8581c630a9c479a4d72852eaae350cba3d1c"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1\\gpt-5.4-mini\\wikihow_nl2p_full_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "1505ffd552374e97e08f78a220287a4c922b3af28fd232507eed81cc65b9d956",
+      "pkl_sha256": "3af9df422e715070a5fbe34aa8f84eaf03a67562bdefa2e67e6538057929a3a1"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1\\gpt-5.4-mini\\win2k_nl2p_full_repeat3_20261027_v1_gpt-5.4-mini.json",
+      "json_sha256": "34b799630361795595b9241fc3a40aaedd34683510a727a64bfe5a7e5431198d",
+      "pkl_sha256": "edd2a193f789f799e8ebba9a2559a9945cd707ff34e5871bf5d7111020fd4533"
+    }
+  ],
+  "metrics": [
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae039563e708190994c02570b3d9e84",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9331366764995084,
+      "action_recall": 0.7772317772317773,
+      "action_f1": 0.8480786416443253,
+      "argument_precision": 0.48866968808317784,
+      "argument_recall": 0.6906556141672946,
+      "argument_f1": 0.5723653395784544,
+      "perfect_action_argument_matches": 337,
+      "argument_mismatch_actions": 1561,
+      "matched_action_events": 1898,
+      "adjusted_argument_precision": 0.5031567389514137,
+      "adjusted_argument_recall": 0.8493975903614458,
+      "adjusted_argument_f1": 0.6319600068953628,
+      "adjustment_audit": {
+        "gold_deductions": 496,
+        "prediction_deductions": 108,
+        "affected_matched_actions": 480,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 117
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 108
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 379
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae039563e708190994c02570b3d9e84",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8622123648461325,
+      "action_recall": 0.7390684410646388,
+      "action_f1": 0.7959053103007038,
+      "argument_precision": 0.5448590710599445,
+      "argument_recall": 0.5462686567164179,
+      "argument_f1": 0.5455629533936202,
+      "perfect_action_argument_matches": 687,
+      "argument_mismatch_actions": 2423,
+      "matched_action_events": 3110,
+      "adjusted_argument_precision": 0.5506519558676028,
+      "adjusted_argument_recall": 0.7676174496644296,
+      "adjusted_argument_f1": 0.6412802242728655,
+      "adjustment_audit": {
+        "gold_deductions": 1449,
+        "prediction_deductions": 53,
+        "affected_matched_actions": 1186,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1116
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 333
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 53
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae039563e708190994c02570b3d9e84",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9855072463768116,
+      "action_recall": 0.8659176029962546,
+      "action_f1": 0.9218500797448166,
+      "argument_precision": 0.7651403249630724,
+      "argument_recall": 0.5906499429874572,
+      "argument_f1": 0.6666666666666666,
+      "perfect_action_argument_matches": 457,
+      "argument_mismatch_actions": 699,
+      "matched_action_events": 1156,
+      "adjusted_argument_precision": 0.8074824629773967,
+      "adjusted_argument_recall": 0.9079754601226994,
+      "adjusted_argument_f1": 0.8547854785478547,
+      "adjustment_audit": {
+        "gold_deductions": 613,
+        "prediction_deductions": 71,
+        "affected_matched_actions": 513,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 71
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 596
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 17
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae0395842548190a724256a18811ac0",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9305354558610709,
+      "action_recall": 0.7854234527687296,
+      "action_f1": 0.8518436741002429,
+      "argument_precision": 0.6382550335570469,
+      "argument_recall": 0.7023633677991138,
+      "argument_f1": 0.6687763713080168,
+      "perfect_action_argument_matches": 802,
+      "argument_mismatch_actions": 1127,
+      "matched_action_events": 1929,
+      "adjusted_argument_precision": 0.7372093023255814,
+      "adjusted_argument_recall": 0.851768920734438,
+      "adjusted_argument_f1": 0.7903594431747352,
+      "adjustment_audit": {
+        "gold_deductions": 475,
+        "prediction_deductions": 400,
+        "affected_matched_actions": 690,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 122
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 400
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 353
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae0395842548190a724256a18811ac0",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7936899186591078,
+      "action_recall": 0.7533926064576509,
+      "action_f1": 0.7730164446044894,
+      "argument_precision": 0.6520823584464203,
+      "argument_recall": 0.5420070011668612,
+      "argument_f1": 0.5919711129991505,
+      "perfect_action_argument_matches": 1116,
+      "argument_mismatch_actions": 2104,
+      "matched_action_events": 3220,
+      "adjusted_argument_precision": 0.6986713462020556,
+      "adjusted_argument_recall": 0.7510105092966856,
+      "adjusted_argument_f1": 0.7238961038961038,
+      "adjustment_audit": {
+        "gold_deductions": 1431,
+        "prediction_deductions": 285,
+        "affected_matched_actions": 1346,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1050
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 381
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 285
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae0395842548190a724256a18811ac0",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9779474130619169,
+      "action_recall": 0.8636704119850187,
+      "action_f1": 0.9172633253778839,
+      "argument_precision": 0.8824034334763948,
+      "argument_recall": 0.5864232743867656,
+      "argument_f1": 0.704592186429061,
+      "perfect_action_argument_matches": 553,
+      "argument_mismatch_actions": 600,
+      "matched_action_events": 1153,
+      "adjusted_argument_precision": 0.8877374784110535,
+      "adjusted_argument_recall": 0.9154051647373108,
+      "adjusted_argument_f1": 0.9013590530469092,
+      "adjustment_audit": {
+        "gold_deductions": 630,
+        "prediction_deductions": 7,
+        "affected_matched_actions": 471,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 7
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 608
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 22
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395d76f88190a9f1b28cb424ae75",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9243986254295533,
+      "action_recall": 0.7707736389684814,
+      "action_f1": 0.8406250000000001,
+      "argument_precision": 0.4922448979591837,
+      "argument_recall": 0.6894054878048781,
+      "argument_f1": 0.5743768852198762,
+      "perfect_action_argument_matches": 335,
+      "argument_mismatch_actions": 1548,
+      "matched_action_events": 1883,
+      "adjusted_argument_precision": 0.5053072625698324,
+      "adjusted_argument_recall": 0.8473067915690866,
+      "adjusted_argument_f1": 0.6330708661417322,
+      "adjustment_audit": {
+        "gold_deductions": 489,
+        "prediction_deductions": 95,
+        "affected_matched_actions": 468,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 118
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 95
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 371
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395d76f88190a9f1b28cb424ae75",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8644020988677161,
+      "action_recall": 0.7439980984074163,
+      "action_f1": 0.7996934082779766,
+      "argument_precision": 0.5502497502497502,
+      "argument_recall": 0.5436241610738255,
+      "argument_f1": 0.546916890080429,
+      "perfect_action_argument_matches": 703,
+      "argument_mismatch_actions": 2427,
+      "matched_action_events": 3130,
+      "adjusted_argument_precision": 0.5565885206143897,
+      "adjusted_argument_recall": 0.7647875590113857,
+      "adjusted_argument_f1": 0.6442858813896362,
+      "adjustment_audit": {
+        "gold_deductions": 1465,
+        "prediction_deductions": 57,
+        "affected_matched_actions": 1209,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1133
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 332
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 57
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395d76f88190a9f1b28cb424ae75",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9905741216795202,
+      "action_recall": 0.8652694610778443,
+      "action_f1": 0.9236915701158609,
+      "argument_precision": 0.7637161667885881,
+      "argument_recall": 0.5969125214408233,
+      "argument_f1": 0.6700898587933247,
+      "perfect_action_argument_matches": 466,
+      "argument_mismatch_actions": 690,
+      "matched_action_events": 1156,
+      "adjusted_argument_precision": 0.803076923076923,
+      "adjusted_argument_recall": 0.9238938053097345,
+      "adjusted_argument_f1": 0.8592592592592593,
+      "adjustment_audit": {
+        "gold_deductions": 619,
+        "prediction_deductions": 67,
+        "affected_matched_actions": 513,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 67
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 600
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 19
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395f09e481909e320d25432247fa",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9262805169937769,
+      "action_recall": 0.7869052460349736,
+      "action_f1": 0.8509234828496042,
+      "argument_precision": 0.6344481605351171,
+      "argument_recall": 0.6974264705882353,
+      "argument_f1": 0.6644483362521892,
+      "perfect_action_argument_matches": 800,
+      "argument_mismatch_actions": 1135,
+      "matched_action_events": 1935,
+      "adjusted_argument_precision": 0.7293348712033834,
+      "adjusted_argument_recall": 0.8525842696629213,
+      "adjusted_argument_f1": 0.7861583091587235,
+      "adjustment_audit": {
+        "gold_deductions": 495,
+        "prediction_deductions": 389,
+        "affected_matched_actions": 686,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 129
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 389
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 366
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395f09e481909e320d25432247fa",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7886783401295274,
+      "action_recall": 0.7725563909774437,
+      "action_f1": 0.7805341246290801,
+      "argument_precision": 0.6480218281036835,
+      "argument_recall": 0.545141545524101,
+      "argument_f1": 0.5921462705173489,
+      "perfect_action_argument_matches": 1171,
+      "argument_mismatch_actions": 2117,
+      "matched_action_events": 3288,
+      "adjusted_argument_precision": 0.6944444444444444,
+      "adjusted_argument_recall": 0.7468553459119497,
+      "adjusted_argument_f1": 0.7196969696969697,
+      "adjustment_audit": {
+        "gold_deductions": 1412,
+        "prediction_deductions": 294,
+        "affected_matched_actions": 1338,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1036
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 376
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 294
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395f09e481909e320d25432247fa",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9805579036348268,
+      "action_recall": 0.8682634730538922,
+      "action_f1": 0.9210003969829298,
+      "argument_precision": 0.8793840889649273,
+      "argument_recall": 0.583427922814983,
+      "argument_f1": 0.701467076083248,
+      "perfect_action_argument_matches": 551,
+      "argument_mismatch_actions": 609,
+      "matched_action_events": 1160,
+      "adjusted_argument_precision": 0.8900432900432901,
+      "adjusted_argument_recall": 0.9089301503094607,
+      "adjusted_argument_f1": 0.8993875765529309,
+      "adjustment_audit": {
+        "gold_deductions": 631,
+        "prediction_deductions": 14,
+        "affected_matched_actions": 477,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 607
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 24
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 14
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396478188190ba824fa23b14e248",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9296531509526136,
+      "action_recall": 0.7776869636289334,
+      "action_f1": 0.846906987093903,
+      "argument_precision": 0.4906015037593985,
+      "argument_recall": 0.6855534709193246,
+      "argument_f1": 0.5719204883393333,
+      "perfect_action_argument_matches": 336,
+      "argument_mismatch_actions": 1567,
+      "matched_action_events": 1903,
+      "adjusted_argument_precision": 0.5037220843672456,
+      "adjusted_argument_recall": 0.843101061375173,
+      "adjusted_argument_f1": 0.6306523990334829,
+      "adjustment_audit": {
+        "gold_deductions": 498,
+        "prediction_deductions": 97,
+        "affected_matched_actions": 474,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 117
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 97
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 381
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396478188190ba824fa23b14e248",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8622520257055043,
+      "action_recall": 0.7338882282996433,
+      "action_f1": 0.7929085303186021,
+      "argument_precision": 0.5515722010815142,
+      "argument_recall": 0.5510204081632653,
+      "argument_f1": 0.5512961665498949,
+      "perfect_action_argument_matches": 684,
+      "argument_mismatch_actions": 2402,
+      "matched_action_events": 3086,
+      "adjusted_argument_precision": 0.5564760557688422,
+      "adjusted_argument_recall": 0.7722938867077959,
+      "adjusted_argument_f1": 0.646858485026424,
+      "adjustment_audit": {
+        "gold_deductions": 1432,
+        "prediction_deductions": 44,
+        "affected_matched_actions": 1171,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1106
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 326
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 44
+          }
+        }
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396478188190ba824fa23b14e248",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9897084048027445,
+      "action_recall": 0.8650674662668666,
+      "action_f1": 0.9231999999999999,
+      "argument_precision": 0.7734317343173431,
+      "argument_recall": 0.5978322875071307,
+      "argument_f1": 0.6743886743886744,
+      "perfect_action_argument_matches": 454,
+      "argument_mismatch_actions": 700,
+      "matched_action_events": 1154,
+      "adjusted_argument_precision": 0.8181108508977362,
+      "adjusted_argument_recall": 0.9274336283185841,
+      "adjusted_argument_f1": 0.8693488179178765,
+      "adjustment_audit": {
+        "gold_deductions": 623,
+        "prediction_deductions": 74,
+        "affected_matched_actions": 526,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 74
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 606
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 17
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396639fc81909a4d594a91196597",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9240265906932573,
+      "action_recall": 0.7910569105691057,
+      "action_f1": 0.8523872098116513,
+      "argument_precision": 0.6348145673237554,
+      "argument_recall": 0.6969919295671313,
+      "argument_f1": 0.6644518272425249,
+      "perfect_action_argument_matches": 797,
+      "argument_mismatch_actions": 1149,
+      "matched_action_events": 1946,
+      "adjusted_argument_precision": 0.7333076032419915,
+      "adjusted_argument_recall": 0.8493518104604381,
+      "adjusted_argument_f1": 0.7870753935376967,
+      "adjustment_audit": {
+        "gold_deductions": 489,
+        "prediction_deductions": 402,
+        "affected_matched_actions": 693,
+        "deductions_by_rule": {
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 117
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 402
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 372
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396639fc81909a4d594a91196597",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7861771058315334,
+      "action_recall": 0.7706422018348624,
+      "action_f1": 0.7783321454027085,
+      "argument_precision": 0.6634168987929434,
+      "argument_recall": 0.5469856459330144,
+      "argument_f1": 0.5996013846637993,
+      "perfect_action_argument_matches": 1155,
+      "argument_mismatch_actions": 2121,
+      "matched_action_events": 3276,
+      "adjusted_argument_precision": 0.7123629112662014,
+      "adjusted_argument_recall": 0.7552854122621564,
+      "adjusted_argument_f1": 0.733196511031298,
+      "adjustment_audit": {
+        "gold_deductions": 1441,
+        "prediction_deductions": 296,
+        "affected_matched_actions": 1368,
+        "deductions_by_rule": {
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 1059
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 382
+          },
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 296
+          }
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396639fc81909a4d594a91196597",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9847586790855207,
+      "action_recall": 0.8705089820359282,
+      "action_f1": 0.9241160111243544,
+      "argument_precision": 0.8762711864406779,
+      "argument_recall": 0.5838509316770186,
+      "argument_f1": 0.700779396814639,
+      "perfect_action_argument_matches": 540,
+      "argument_mismatch_actions": 623,
+      "matched_action_events": 1163,
+      "adjusted_argument_precision": 0.8890799656061908,
+      "adjusted_argument_recall": 0.9199288256227758,
+      "adjusted_argument_f1": 0.904241364232619,
+      "adjustment_audit": {
+        "gold_deductions": 647,
+        "prediction_deductions": 17,
+        "affected_matched_actions": 491,
+        "deductions_by_rule": {
+          "missing_arguments:preposition_object": {
+            "side": "prediction",
+            "count": 17
+          },
+          "extra_arguments:unnecessary_head_or_modifier_split": {
+            "side": "gold",
+            "count": 622
+          },
+          "extra_arguments:preposition_object": {
+            "side": "gold",
+            "count": 25
+          }
+        }
+      }
+    }
+  ],
+  "completed_runs": [
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae039563e708190994c02570b3d9e84",
+      "failure_count": 0,
+      "raw_output_sha256": "b2a9eceb2b60a643ddd652d24bcdde82ec536c062ff67902dc333dc5746423f4",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae0395842548190a724256a18811ac0",
+      "failure_count": 0,
+      "raw_output_sha256": "e1c08f1e09793f8ffce9fba1ac5b8ae8dff54f5fe91c5f69e129c934729348ac",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395d76f88190a9f1b28cb424ae75",
+      "failure_count": 0,
+      "raw_output_sha256": "731a951cced3c07be8827b2f6be192598a1addbaef1394e496085e35b4f43631",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395f09e481909e320d25432247fa",
+      "failure_count": 0,
+      "raw_output_sha256": "5aa16cb1241f17461107d8f5fa5418458ac85fc493b72643492dd85be81b307a",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396478188190ba824fa23b14e248",
+      "failure_count": 0,
+      "raw_output_sha256": "4d5338c7eb4b66cb1fe2a07fd61bc81f7a7866e76495736679006fd1266df1f8",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae0396639fc81909a4d594a91196597",
+      "failure_count": 0,
+      "raw_output_sha256": "b321d86306286f40e641bcec07aee63bc571cb10f1d23b59a2bc6f1fcf134d96",
+      "response_models": {
+        "gpt-5.4-mini-2026-03-17": 420
+      }
+    }
+  ],
+  "pending_runs": [],
+  "summary": [
+    {
+      "dataset": "cooking",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            93.31366764995084,
+            92.43986254295532,
+            92.96531509526136
+          ],
+          "mean": 92.90628176272251,
+          "sample_std": 0.43988355506411525
+        },
+        "full": {
+          "runs": [
+            93.05354558610709,
+            92.62805169937769,
+            92.40265906932574
+          ],
+          "mean": 92.69475211827017,
+          "sample_std": 0.33052991368749923
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.26012206384375247,
+            0.1881891564223679,
+            -0.5626560259356239
+          ],
+          "mean": -0.21152964445233616,
+          "sample_std": 0.3777737939353191,
+          "full_higher_runs": 1,
+          "minimal_higher_runs": 2,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            77.72317772317773,
+            77.07736389684814,
+            77.76869636289334
+          ],
+          "mean": 77.52307932763973,
+          "sample_std": 0.3866712693939029
+        },
+        "full": {
+          "runs": [
+            78.54234527687296,
+            78.69052460349735,
+            79.10569105691056
+          ],
+          "mean": 78.77952031242695,
+          "sample_std": 0.29202704348647857
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            0.8191675536952374,
+            1.6131607066492109,
+            1.3369946940172213
+          ],
+          "mean": 1.256440984787223,
+          "sample_std": 0.40307934304238574,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            84.80786416443253,
+            84.0625,
+            84.6906987093903
+          ],
+          "mean": 84.52035429127427,
+          "sample_std": 0.4008177266445642
+        },
+        "full": {
+          "runs": [
+            85.1843674100243,
+            85.09234828496042,
+            85.23872098116513
+          ],
+          "mean": 85.17181222538328,
+          "sample_std": 0.07398963471045335
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            0.3765032455917634,
+            1.0298482849604227,
+            0.5480222717748262
+          ],
+          "mean": 0.6514579341090041,
+          "sample_std": 0.3387316597231373,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            48.866968808317786,
+            49.224489795918366,
+            49.06015037593985
+          ],
+          "mean": 49.050536326725336,
+          "sample_std": 0.1789542863427637
+        },
+        "full": {
+          "runs": [
+            63.8255033557047,
+            63.44481605351171,
+            63.48145673237554
+          ],
+          "mean": 63.58392538053065,
+          "sample_std": 0.21001326958979388
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            14.958534547386911,
+            14.220326257593342,
+            14.421306356435693
+          ],
+          "mean": 14.533389053805315,
+          "sample_std": 0.38165398997943706,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            69.06556141672947,
+            68.9405487804878,
+            68.55534709193246
+          ],
+          "mean": 68.85381909638325,
+          "sample_std": 0.265934565045
+        },
+        "full": {
+          "runs": [
+            70.23633677991138,
+            69.74264705882352,
+            69.69919295671313
+          ],
+          "mean": 69.89272559848268,
+          "sample_std": 0.2983681413114964
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            1.1707753631819173,
+            0.8020982783357198,
+            1.1438458647806726
+          ],
+          "mean": 1.0389065020994366,
+          "sample_std": 0.20552347944366497,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            57.23653395784544,
+            57.43768852198762,
+            57.19204883393333
+          ],
+          "mean": 57.2887571045888,
+          "sample_std": 0.13088222522056145
+        },
+        "full": {
+          "runs": [
+            66.87763713080169,
+            66.44483362521892,
+            66.44518272425249
+          ],
+          "mean": 66.5892178267577,
+          "sample_std": 0.24977850523303224
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            9.64110317295625,
+            9.007145103231302,
+            9.253133890319162
+          ],
+          "mean": 9.300460722168905,
+          "sample_std": 0.31961786605577236,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_precision": {
+        "minimal": {
+          "runs": [
+            50.315673895141366,
+            50.530726256983236,
+            50.37220843672456
+          ],
+          "mean": 50.40620286294972,
+          "sample_std": 0.1114836102044825
+        },
+        "full": {
+          "runs": [
+            73.72093023255813,
+            72.93348712033834,
+            73.33076032419915
+          ],
+          "mean": 73.32839255903187,
+          "sample_std": 0.39372689580407494
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            23.405256337416766,
+            22.402760863355105,
+            22.958551887474584
+          ],
+          "mean": 22.922189696082153,
+          "sample_std": 0.5022359511232478,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_recall": {
+        "minimal": {
+          "runs": [
+            84.93975903614458,
+            84.73067915690866,
+            84.31010613751731
+          ],
+          "mean": 84.66018144352351,
+          "sample_std": 0.32069165701937374
+        },
+        "full": {
+          "runs": [
+            85.1768920734438,
+            85.25842696629213,
+            84.93518104604381
+          ],
+          "mean": 85.12350002859324,
+          "sample_std": 0.16810715058940537
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            0.2371330372992162,
+            0.5277478093834702,
+            0.6250749085264999
+          ],
+          "mean": 0.4633185850697288,
+          "sample_std": 0.20183673494209226,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_f1": {
+        "minimal": {
+          "runs": [
+            63.19600068953628,
+            63.30708661417322,
+            63.06523990334829
+          ],
+          "mean": 63.1894424023526,
+          "sample_std": 0.12105666537740527
+        },
+        "full": {
+          "runs": [
+            79.03594431747352,
+            78.61583091587235,
+            78.70753935376968
+          ],
+          "mean": 78.78643819570519,
+          "sample_std": 0.22089044342229877
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            15.839943627937245,
+            15.308744301699129,
+            15.642299450421383
+          ],
+          "mean": 15.596995793352585,
+          "sample_std": 0.26848183748032683,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            86.22123648461326,
+            86.44020988677161,
+            86.22520257055044
+          ],
+          "mean": 86.29554964731177,
+          "sample_std": 0.1252951360582273
+        },
+        "full": {
+          "runs": [
+            79.36899186591077,
+            78.86783401295274,
+            78.61771058315334
+          ],
+          "mean": 78.95151215400561,
+          "sample_std": 0.38256687640589326
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -6.8522446187024855,
+            -7.572375873818871,
+            -7.607491987397097
+          ],
+          "mean": -7.344037493306151,
+          "sample_std": 0.4262668870454428,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            73.90684410646388,
+            74.39980984074163,
+            73.38882282996433
+          ],
+          "mean": 73.89849225905661,
+          "sample_std": 0.5055452492175556
+        },
+        "full": {
+          "runs": [
+            75.3392606457651,
+            77.25563909774436,
+            77.06422018348624
+          ],
+          "mean": 76.55303997566523,
+          "sample_std": 1.0555119594081173
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            1.4324165393012152,
+            2.855829257002739,
+            3.675397353521916
+          ],
+          "mean": 2.6545477166086235,
+          "sample_std": 1.1349565749922375,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            79.59053103007038,
+            79.96934082779767,
+            79.29085303186021
+          ],
+          "mean": 79.61690829657609,
+          "sample_std": 0.3400121210343122
+        },
+        "full": {
+          "runs": [
+            77.30164446044894,
+            78.05341246290801,
+            77.83321454027084
+          ],
+          "mean": 77.72942382120927,
+          "sample_std": 0.38648178146300227
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -2.2888865696214395,
+            -1.915928364889652,
+            -1.457638491589364
+          ],
+          "mean": -1.8874844753668185,
+          "sample_std": 0.416353375087071,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            54.48590710599445,
+            55.02497502497502,
+            55.157220108151414
+          ],
+          "mean": 54.8893674130403,
+          "sample_std": 0.3556084293534511
+        },
+        "full": {
+          "runs": [
+            65.20823584464203,
+            64.80218281036835,
+            66.34168987929434
+          ],
+          "mean": 65.45070284476824,
+          "sample_std": 0.7978804349217501
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            10.722328738647583,
+            9.77720778539333,
+            11.184469771142922
+          ],
+          "mean": 10.561335431727946,
+          "sample_std": 0.7173114440664264,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            54.62686567164179,
+            54.36241610738255,
+            55.10204081632652
+          ],
+          "mean": 54.69710753178362,
+          "sample_std": 0.3747820922979806
+        },
+        "full": {
+          "runs": [
+            54.20070011668612,
+            54.5141545524101,
+            54.698564593301434
+          ],
+          "mean": 54.47113975413255,
+          "sample_std": 0.25170411979545204
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.42616555495566644,
+            0.1517384450275472,
+            -0.4034762230250877
+          ],
+          "mean": -0.22596777765106899,
+          "sample_std": 0.3272998540077207,
+          "full_higher_runs": 1,
+          "minimal_higher_runs": 2,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            54.556295339362016,
+            54.6916890080429,
+            55.12961665498949
+          ],
+          "mean": 54.7925336674648,
+          "sample_std": 0.2996690954013178
+        },
+        "full": {
+          "runs": [
+            59.19711129991505,
+            59.214627051734894,
+            59.96013846637993
+          ],
+          "mean": 59.457292272676625,
+          "sample_std": 0.4355656337245633
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            4.640815960553034,
+            4.522938043691994,
+            4.83052181139044
+          ],
+          "mean": 4.664758605211823,
+          "sample_std": 0.1551833793060188,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_precision": {
+        "minimal": {
+          "runs": [
+            55.06519558676028,
+            55.65885206143897,
+            55.64760557688422
+          ],
+          "mean": 55.45721774169449,
+          "sample_std": 0.33954771140909656
+        },
+        "full": {
+          "runs": [
+            69.86713462020556,
+            69.44444444444444,
+            71.23629112662015
+          ],
+          "mean": 70.18262339709005,
+          "sample_std": 0.9366581603557782
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            14.80193903344528,
+            13.785592383005472,
+            15.588685549735928
+          ],
+          "mean": 14.72540565539556,
+          "sample_std": 0.9039796792208836,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_recall": {
+        "minimal": {
+          "runs": [
+            76.76174496644296,
+            76.47875590113857,
+            77.22938867077958
+          ],
+          "mean": 76.82329651278704,
+          "sample_std": 0.37908288454867717
+        },
+        "full": {
+          "runs": [
+            75.10105092966856,
+            74.68553459119497,
+            75.52854122621564
+          ],
+          "mean": 75.10504224902638,
+          "sample_std": 0.4215174903190626
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -1.6606940367744016,
+            -1.793221309943604,
+            -1.7008474445639479
+          ],
+          "mean": -1.7182542637606513,
+          "sample_std": 0.06795673292122084,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_f1": {
+        "minimal": {
+          "runs": [
+            64.12802242728655,
+            64.42858813896362,
+            64.6858485026424
+          ],
+          "mean": 64.41415302296419,
+          "sample_std": 0.27919305510195774
+        },
+        "full": {
+          "runs": [
+            72.38961038961038,
+            71.96969696969697,
+            73.3196511031298
+          ],
+          "mean": 72.55965282081239,
+          "sample_std": 0.6908544433525141
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            8.26158796232383,
+            7.54110883073335,
+            8.6338026004874
+          ],
+          "mean": 8.145499797848194,
+          "sample_std": 0.5555198151851298,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      }
+    },
+    {
+      "dataset": "win2k",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            98.55072463768117,
+            99.05741216795202,
+            98.97084048027445
+          ],
+          "mean": 98.85965909530255,
+          "sample_std": 0.27102405540135427
+        },
+        "full": {
+          "runs": [
+            97.7947413061917,
+            98.05579036348267,
+            98.47586790855208
+          ],
+          "mean": 98.10879985940882,
+          "sample_std": 0.3436435174777874
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.7559833314894746,
+            -1.0016218044693517,
+            -0.4949725717223714
+          ],
+          "mean": -0.7508592358937326,
+          "sample_std": 0.25336348104557543,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            86.59176029962546,
+            86.52694610778443,
+            86.50674662668666
+          ],
+          "mean": 86.54181767803219,
+          "sample_std": 0.04441513084368675
+        },
+        "full": {
+          "runs": [
+            86.36704119850187,
+            86.82634730538922,
+            87.05089820359282
+          ],
+          "mean": 86.74809556916131,
+          "sample_std": 0.3485794048993799
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.22471910112359694,
+            0.29940119760479433,
+            0.5441515769061596
+          ],
+          "mean": 0.20627789112911898,
+          "sample_std": 0.39280337643687113,
+          "full_higher_runs": 2,
+          "minimal_higher_runs": 1,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            92.18500797448166,
+            92.36915701158608,
+            92.32
+          ],
+          "mean": 92.29138832868925,
+          "sample_std": 0.09535034225432439
+        },
+        "full": {
+          "runs": [
+            91.7263325377884,
+            92.10003969829297,
+            92.41160111243543
+          ],
+          "mean": 92.0793244495056,
+          "sample_std": 0.34310362282980705
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.4586754366932695,
+            -0.2691173132931084,
+            0.09160111243544122
+          ],
+          "mean": -0.21206387918364555,
+          "sample_std": 0.2795396052226101,
+          "full_higher_runs": 1,
+          "minimal_higher_runs": 2,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            76.51403249630724,
+            76.37161667885881,
+            77.34317343173431
+          ],
+          "mean": 76.74294086896678,
+          "sample_std": 0.5246712430843999
+        },
+        "full": {
+          "runs": [
+            88.24034334763948,
+            87.93840889649273,
+            87.62711864406779
+          ],
+          "mean": 87.93529029606667,
+          "sample_std": 0.30662424646317427
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            11.726310851332244,
+            11.566792217633918,
+            10.283945212333478
+          ],
+          "mean": 11.19234942709988,
+          "sample_std": 0.7907339702316243,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            59.064994298745724,
+            59.69125214408233,
+            59.78322875071307
+          ],
+          "mean": 59.51315839784704,
+          "sample_std": 0.39083656281660495
+        },
+        "full": {
+          "runs": [
+            58.64232743867655,
+            58.342792281498305,
+            58.38509316770186
+          ],
+          "mean": 58.45673762929224,
+          "sample_std": 0.1621111478396253
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.422666860069171,
+            -1.348459862584022,
+            -1.3981355830112108
+          ],
+          "mean": -1.0564207685548013,
+          "sample_std": 0.5494087109708031,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            66.66666666666666,
+            67.00898587933247,
+            67.43886743886745
+          ],
+          "mean": 67.03817332828886,
+          "sample_std": 0.3869269162636666
+        },
+        "full": {
+          "runs": [
+            70.4592186429061,
+            70.1467076083248,
+            70.0779396814639
+          ],
+          "mean": 70.22795531089827,
+          "sample_std": 0.20320999849837257
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            3.7925519762394373,
+            3.1377217289923323,
+            2.6390722425964555
+          ],
+          "mean": 3.1897819826094085,
+          "sample_std": 0.5784994178789438,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_precision": {
+        "minimal": {
+          "runs": [
+            80.74824629773967,
+            80.3076923076923,
+            81.81108508977361
+          ],
+          "mean": 80.95567456506853,
+          "sample_std": 0.7728630725224439
+        },
+        "full": {
+          "runs": [
+            88.77374784110536,
+            89.00432900432901,
+            88.90799656061908
+          ],
+          "mean": 88.89535780201781,
+          "sample_std": 0.11580898873847538
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            8.025501543365692,
+            8.696636696636702,
+            7.09691147084547
+          ],
+          "mean": 7.939683236949288,
+          "sample_std": 0.8033080267215915,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_recall": {
+        "minimal": {
+          "runs": [
+            90.79754601226993,
+            92.38938053097345,
+            92.7433628318584
+          ],
+          "mean": 91.97676312503393,
+          "sample_std": 1.0364557957826979
+        },
+        "full": {
+          "runs": [
+            91.54051647373109,
+            90.89301503094606,
+            91.99288256227757
+          ],
+          "mean": 91.47547135565158,
+          "sample_std": 0.5528112672140484
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            0.7429704614611552,
+            -1.4963655000273945,
+            -0.7504802695808337
+          ],
+          "mean": -0.5012917693823576,
+          "sample_std": 1.1402752161550018,
+          "full_higher_runs": 1,
+          "minimal_higher_runs": 2,
+          "tied_runs": 0
+        }
+      },
+      "adjusted_argument_f1": {
+        "minimal": {
+          "runs": [
+            85.47854785478548,
+            85.92592592592592,
+            86.93488179178766
+          ],
+          "mean": 86.11311852416635,
+          "sample_std": 0.7459945949154545
+        },
+        "full": {
+          "runs": [
+            90.13590530469092,
+            89.93875765529309,
+            90.4241364232619
+          ],
+          "mean": 90.16626646108197,
+          "sample_std": 0.24410957982385997
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            4.657357449905447,
+            4.012831729367164,
+            3.489254631474239
+          ],
+          "mean": 4.053147936915617,
+          "sample_std": 0.5850940916212114,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Corpus micro scores from the unchanged evaluator.",
+    "Argument metrics are conditional on evaluator-matched actions.",
+    "Only terminal, collected runs are scored; no partial-output subset is scored.",
+    "Means and standard deviations are emitted only when both conditions have all three repeats.",
+    "Historical outputs are calibration only, excluded from the fresh-repeat summaries.",
+    "Adjusted F1 is argument-only and leaves action scores and strict argument true positives unchanged.",
+    "Frozen heuristic exclusions are prediction-dependent, not independent semantic gold labels.",
+    "Adjustment audits report raw denominator deductions before the evaluator's true-positive lower-bound clamp."
+  ],
+  "historical_calibration": "All six strict metrics reproduced for each of the three full-NL2P historical datasets. All three adjusted argument metrics also reproduced against the frozen table.",
+  "complete_three_repeat_comparison": true,
+  "paired_completed_rounds": [
+    1,
+    2,
+    3
+  ]
+}

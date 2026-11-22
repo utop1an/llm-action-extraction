@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "metrics": {
+    "action_name": {
+      "precision": 0.8850056369785795,
+      "recall": 0.8920454545454546,
+      "f1": 0.8885116015846066,
+      "right": 785,
+      "predicted": 887,
+      "gold": 880
+    },
+    "linked_argument_name": {
+      "precision": 0.28210526315789475,
+      "recall": 0.24876237623762376,
+      "f1": 0.26438671489641563,
+      "right": 402,
+      "predicted": 1425,
+      "gold": 1616
+    }
+  },
+  "matching": "Complete name, casefold and whitespace normalization; occurrence-aware exact matching.",
+  "argument_matching": "Correct action name AND correct linked argument name; all gold links are in recall denominator.",
+  "prediction_scope": "Existing checkpoints output one token per action/argument; names are NOT expanded using gold spans.",
+  "gold_scope": "Full annotated action names and explicit argument names; no ES/EX/OP or role categories.",
+  "argument_training": "Uses best checkpoint from three completed epochs; training interrupted during epoch four.",
+  "dataset_sha256": "1885e90a3df0ac550186b5f2f529f08fee5475ecee2f831f1bf4e433caa985e6",
+  "prediction_sha256": "474dc841bb6597d53b9b2bea683f2a256a542b3057487d94d683af0538f8d5cb"
+}

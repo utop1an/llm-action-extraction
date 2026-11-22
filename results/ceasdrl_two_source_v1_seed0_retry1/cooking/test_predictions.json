@@ -1,0 +1,3145 @@
+[
+  {
+    "dataset": "cooking",
+    "doc_id": 0,
+    "prediction": [
+      {
+        "verb": "MAKE",
+        "arguments": []
+      },
+      {
+        "verb": "Start",
+        "arguments": []
+      },
+      {
+        "verb": "mixing",
+        "arguments": [
+          "cream"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "hash",
+          "browns"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "gently"
+        ]
+      },
+      {
+        "verb": "Spray",
+        "arguments": [
+          "slow",
+          "cooker"
+        ]
+      },
+      {
+        "verb": "clean",
+        "arguments": []
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "hash",
+          "brown",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "put",
+        "arguments": [
+          "cover"
+        ]
+      },
+      {
+        "verb": "Turn",
+        "arguments": [
+          "slow",
+          "cooker"
+        ]
+      },
+      {
+        "verb": "leave",
+        "arguments": []
+      },
+      {
+        "verb": "turn",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "leave",
+        "arguments": []
+      },
+      {
+        "verb": "Turn",
+        "arguments": [
+          "slow",
+          "cooker"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "right"
+        ]
+      },
+      {
+        "verb": "Keep",
+        "arguments": []
+      },
+      {
+        "verb": "served",
+        "arguments": [
+          "eggs"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "favorite",
+          "vegetables"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "them"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "sausage",
+          "bacon"
+        ]
+      },
+      {
+        "verb": "put",
+        "arguments": []
+      },
+      {
+        "verb": "change",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": []
+      },
+      {
+        "verb": "do",
+        "arguments": [
+          "everything"
+        ]
+      },
+      {
+        "verb": "adding",
+        "arguments": [
+          "garlic"
+        ]
+      },
+      {
+        "verb": "switching",
+        "arguments": [
+          "flavor"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 4,
+    "prediction": [
+      {
+        "verb": "How",
+        "arguments": []
+      },
+      {
+        "verb": "Preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "prepare",
+        "arguments": [
+          "greased",
+          "9",
+          "inch",
+          "pan"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "non-stick",
+          "baking",
+          "paper"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "butter"
+        ]
+      },
+      {
+        "verb": "aim",
+        "arguments": [
+          "texture"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "pinch",
+          "salt"
+        ]
+      },
+      {
+        "verb": "bring",
+        "arguments": [
+          "sweetness"
+        ]
+      },
+      {
+        "verb": "get",
+        "arguments": [
+          "rounder",
+          "flavor"
+        ]
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "oats",
+          "fruits"
+        ]
+      },
+      {
+        "verb": "dried",
+        "arguments": [
+          "fruits",
+          "almonds"
+        ]
+      },
+      {
+        "verb": "fold",
+        "arguments": []
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "course",
+          "batter"
+        ]
+      },
+      {
+        "verb": "stick",
+        "arguments": []
+      },
+      {
+        "verb": "cook",
+        "arguments": []
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "remaining",
+          "tablespoon",
+          "syrup"
+        ]
+      },
+      {
+        "verb": "sweeten",
+        "arguments": [
+          "lemon",
+          "juice"
+        ]
+      },
+      {
+        "verb": "take",
+        "arguments": []
+      },
+      {
+        "verb": "slice",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "lemon",
+          "juice",
+          "mixture"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 15,
+    "prediction": [
+      {
+        "verb": "How",
+        "arguments": [
+          "vegetable",
+          "moussaka"
+        ]
+      },
+      {
+        "verb": "Line",
+        "arguments": [
+          "baking",
+          "sheets"
+        ]
+      },
+      {
+        "verb": "Sprinkle",
+        "arguments": [
+          "salt"
+        ]
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "eggplant",
+          "slices"
+        ]
+      },
+      {
+        "verb": "Leave",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "Arrange",
+        "arguments": [
+          "oven",
+          "racks"
+        ]
+      },
+      {
+        "verb": "preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "eggplant",
+          "slices"
+        ]
+      },
+      {
+        "verb": "pat",
+        "arguments": []
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "paper",
+          "towels"
+        ]
+      },
+      {
+        "verb": "Grease",
+        "arguments": [
+          "baking",
+          "sheets"
+        ]
+      },
+      {
+        "verb": "brush",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "Arrange",
+        "arguments": [
+          "eggplant",
+          "rounds"
+        ]
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "baking",
+          "sheet"
+        ]
+      },
+      {
+        "verb": "bake",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "exchange",
+        "arguments": [
+          "baking",
+          "sheets'",
+          "positions"
+        ]
+      },
+      {
+        "verb": "bake",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "Leave",
+        "arguments": []
+      },
+      {
+        "verb": "Lower",
+        "arguments": [
+          "oven",
+          "temperature"
+        ]
+      },
+      {
+        "verb": "Heat",
+        "arguments": [
+          "1/4",
+          "cup",
+          "olive",
+          "oil"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "carrots",
+          "celery",
+          "onions"
+        ]
+      },
+      {
+        "verb": "Saute",
+        "arguments": [
+          "onions"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "mushrooms",
+          "garlic"
+        ]
+      },
+      {
+        "verb": "Keep",
+        "arguments": [
+          "sauteing"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "cinnamon",
+          "oregano"
+        ]
+      },
+      {
+        "verb": "Cook",
+        "arguments": []
+      },
+      {
+        "verb": "taste",
+        "arguments": [
+          "salt",
+          "pepper"
+        ]
+      },
+      {
+        "verb": "Grease",
+        "arguments": [
+          "glass",
+          "baking",
+          "dish"
+        ]
+      },
+      {
+        "verb": "arrange",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "spoon",
+        "arguments": [
+          "vegetable"
+        ]
+      },
+      {
+        "verb": "mixture",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "third",
+          "layer"
+        ]
+      },
+      {
+        "verb": "Repeat",
+        "arguments": [
+          "process"
+        ]
+      },
+      {
+        "verb": "make",
+        "arguments": [
+          "second",
+          "layer"
+        ]
+      },
+      {
+        "verb": "using",
+        "arguments": [
+          "remaining",
+          "eggplant",
+          "vegetable",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "Melt",
+        "arguments": [
+          "butter"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "flour"
+        ]
+      },
+      {
+        "verb": "stir",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "milk"
+        ]
+      },
+      {
+        "verb": "whisk",
+        "arguments": [
+          "egg",
+          "yolks"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "Finally",
+        "arguments": []
+      },
+      {
+        "verb": "top",
+        "arguments": [
+          "everything"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": [
+          "moussaka"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 24,
+    "prediction": [
+      {
+        "verb": "How",
+        "arguments": []
+      },
+      {
+        "verb": "Crack",
+        "arguments": [
+          "eggs"
+        ]
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "contents"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "milk",
+          "salt"
+        ]
+      },
+      {
+        "verb": "Whisk",
+        "arguments": [
+          "egg",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "using",
+        "arguments": [
+          "upward",
+          "tilted",
+          "circular",
+          "direction"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "fluffiness"
+        ]
+      },
+      {
+        "verb": "Keep",
+        "arguments": []
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "egg",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "Heat",
+        "arguments": [
+          "frying",
+          "pan"
+        ]
+      },
+      {
+        "verb": "avoid",
+        "arguments": [
+          "burning"
+        ]
+      },
+      {
+        "verb": "lifting",
+        "arguments": [
+          "pan"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "oil"
+        ]
+      },
+      {
+        "verb": "Lower",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "egg",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "settle",
+        "arguments": []
+      },
+      {
+        "verb": "Tilt",
+        "arguments": [
+          "skillet"
+        ]
+      },
+      {
+        "verb": "distribute",
+        "arguments": [
+          "runny",
+          "parts"
+        ]
+      },
+      {
+        "verb": "break",
+        "arguments": [
+          "large",
+          "pieces"
+        ]
+      },
+      {
+        "verb": "form",
+        "arguments": []
+      },
+      {
+        "verb": "Flip",
+        "arguments": [
+          "eggs"
+        ]
+      },
+      {
+        "verb": "cook",
+        "arguments": []
+      },
+      {
+        "verb": "Lift",
+        "arguments": [
+          "pan"
+        ]
+      },
+      {
+        "verb": "avoid",
+        "arguments": [
+          "browning",
+          "eggs"
+        ]
+      },
+      {
+        "verb": "stay",
+        "arguments": [
+          "fluffy",
+          "yellow"
+        ]
+      },
+      {
+        "verb": "transfer",
+        "arguments": [
+          "scrambled",
+          "eggs"
+        ]
+      },
+      {
+        "verb": "sprinkle",
+        "arguments": [
+          "salt"
+        ]
+      },
+      {
+        "verb": "serving",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 25,
+    "prediction": [
+      {
+        "verb": "Easy",
+        "arguments": [
+          "steps"
+        ]
+      },
+      {
+        "verb": "Prepare",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "preheating",
+        "arguments": []
+      },
+      {
+        "verb": "Use",
+        "arguments": [
+          "large",
+          "oven-safe",
+          "skillet"
+        ]
+      },
+      {
+        "verb": "fry",
+        "arguments": [
+          "bacon",
+          "slices"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "garlic",
+          "onions"
+        ]
+      },
+      {
+        "verb": "cook",
+        "arguments": []
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "ground",
+          "meat"
+        ]
+      },
+      {
+        "verb": "stir",
+        "arguments": []
+      },
+      {
+        "verb": "prevent",
+        "arguments": []
+      },
+      {
+        "verb": "Cook",
+        "arguments": [
+          "meat"
+        ]
+      },
+      {
+        "verb": "light",
+        "arguments": [
+          "brown"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "white",
+          "flour"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "absorbed",
+        "arguments": [
+          "meat"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "tomato",
+          "sauce",
+          "broth"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "rosemary",
+          "celery",
+          "carrots"
+        ]
+      },
+      {
+        "verb": "Stir",
+        "arguments": [
+          "well"
+        ]
+      },
+      {
+        "verb": "Bring",
+        "arguments": []
+      },
+      {
+        "verb": "boil",
+        "arguments": []
+      },
+      {
+        "verb": "simmer",
+        "arguments": []
+      },
+      {
+        "verb": "thickened",
+        "arguments": [
+          "sauce"
+        ]
+      },
+      {
+        "verb": "Spread",
+        "arguments": [
+          "mashed",
+          "potatoes"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "grated",
+          "cheese"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": []
+      },
+      {
+        "verb": "Let",
+        "arguments": [
+          "dish"
+        ]
+      },
+      {
+        "verb": "cool",
+        "arguments": []
+      },
+      {
+        "verb": "slicing",
+        "arguments": []
+      },
+      {
+        "verb": "sprinkle",
+        "arguments": [
+          "parsley",
+          "paprika"
+        ]
+      },
+      {
+        "verb": "baking",
+        "arguments": [
+          "dish"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "herbs"
+        ]
+      },
+      {
+        "verb": "make",
+        "arguments": [
+          "mashed",
+          "potatoes"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 29,
+    "prediction": [
+      {
+        "verb": "How",
+        "arguments": [
+          "peanut",
+          "butter",
+          "cookies"
+        ]
+      },
+      {
+        "verb": "thoroughly",
+        "arguments": [
+          "peanut",
+          "butter"
+        ]
+      },
+      {
+        "verb": "cream",
+        "arguments": [
+          "peanut",
+          "butter"
+        ]
+      },
+      {
+        "verb": "using",
+        "arguments": [
+          "spatula"
+        ]
+      },
+      {
+        "verb": "Mix",
+        "arguments": [
+          "brown",
+          "sugar"
+        ]
+      },
+      {
+        "verb": "keep",
+        "arguments": [
+          "creaming"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "vanilla",
+          "extract"
+        ]
+      },
+      {
+        "verb": "Beat",
+        "arguments": []
+      },
+      {
+        "verb": "set",
+        "arguments": [
+          "bowl"
+        ]
+      },
+      {
+        "verb": "sift",
+        "arguments": [
+          "baking",
+          "soda",
+          "baking",
+          "powder"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "dry",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "Optional:",
+        "arguments": [
+          "semisweet",
+          "chocolate",
+          "chips"
+        ]
+      },
+      {
+        "verb": "Drop",
+        "arguments": [
+          "semisweet",
+          "chocolate",
+          "chips"
+        ]
+      },
+      {
+        "verb": "skip",
+        "arguments": [
+          "chocolate",
+          "chips"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "mashed",
+          "bananas"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "crushed",
+          "nuts"
+        ]
+      },
+      {
+        "verb": "Cover",
+        "arguments": [
+          "bowl"
+        ]
+      },
+      {
+        "verb": "Refrigerate",
+        "arguments": [
+          "batter"
+        ]
+      },
+      {
+        "verb": "Preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "Divide",
+        "arguments": [
+          "dough"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "ungreased",
+          "cookie",
+          "sheet"
+        ]
+      },
+      {
+        "verb": "Arrange",
+        "arguments": [
+          "balls"
+        ]
+      },
+      {
+        "verb": "leaving",
+        "arguments": []
+      },
+      {
+        "verb": "Using",
+        "arguments": [
+          "fork"
+        ]
+      },
+      {
+        "verb": "flatten",
+        "arguments": [
+          "ball"
+        ]
+      },
+      {
+        "verb": "create",
+        "arguments": [
+          "crisscross",
+          "patterns"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": [
+          "cookies"
+        ]
+      },
+      {
+        "verb": "take",
+        "arguments": [
+          "cookies"
+        ]
+      },
+      {
+        "verb": "wait",
+        "arguments": []
+      },
+      {
+        "verb": "taking",
+        "arguments": [
+          "big",
+          "bite"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 41,
+    "prediction": [
+      {
+        "verb": "If",
+        "arguments": []
+      },
+      {
+        "verb": "Check",
+        "arguments": []
+      },
+      {
+        "verb": "preparing",
+        "arguments": [
+          "coleslaw"
+        ]
+      },
+      {
+        "verb": "Use",
+        "arguments": [
+          "guide"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "shredded",
+          "cabbage"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "chopped",
+          "onions"
+        ]
+      },
+      {
+        "verb": "going",
+        "arguments": [
+          "chunky",
+          "version"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "bowl",
+        "arguments": [
+          "cup",
+          "mayonnaise"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "create",
+        "arguments": [
+          "creamy",
+          "dressing"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "dressing"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "covered",
+        "arguments": []
+      },
+      {
+        "verb": "Transfer",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "cover",
+        "arguments": [
+          "clingfilm"
+        ]
+      },
+      {
+        "verb": "sit",
+        "arguments": [
+          "fridge"
+        ]
+      },
+      {
+        "verb": "Serve",
+        "arguments": [
+          "chilled"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "tablespoon",
+          "mayonnaise"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 43,
+    "prediction": [
+      {
+        "verb": "Cooking",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "rinse",
+        "arguments": [
+          "water"
+        ]
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "bring",
+        "arguments": [
+          "boil"
+        ]
+      },
+      {
+        "verb": "uncovered",
+        "arguments": []
+      },
+      {
+        "verb": "turn",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "lid"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "small",
+          "amount",
+          "butter",
+          "olive"
+        ]
+      },
+      {
+        "verb": "Checks",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "see",
+        "arguments": [
+          "holes"
+        ]
+      },
+      {
+        "verb": "drop",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "Leave",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "removes",
+        "arguments": [
+          "heat"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 50,
+    "prediction": [
+      {
+        "verb": "To",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "prepare",
+        "arguments": [
+          "croutons"
+        ]
+      },
+      {
+        "verb": "melt",
+        "arguments": [
+          "butter"
+        ]
+      },
+      {
+        "verb": "cook",
+        "arguments": [
+          "butter",
+          "foams"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "garlic"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "bread-cubes"
+        ]
+      },
+      {
+        "verb": "toss",
+        "arguments": []
+      },
+      {
+        "verb": "coated",
+        "arguments": [
+          "butter",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "sprinkle",
+        "arguments": [
+          "cheese"
+        ]
+      },
+      {
+        "verb": "toss",
+        "arguments": []
+      },
+      {
+        "verb": "Stir",
+        "arguments": [
+          "contents"
+        ]
+      },
+      {
+        "verb": "staying",
+        "arguments": [
+          "soft"
+        ]
+      },
+      {
+        "verb": "Store",
+        "arguments": [
+          "crisp",
+          "croutons"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "soup"
+        ]
+      },
+      {
+        "verb": "drizzled",
+        "arguments": [
+          "cherry-tomatoes",
+          "mixture"
+        ]
+      },
+      {
+        "verb": "used",
+        "arguments": [
+          "olive",
+          "oil"
+        ]
+      },
+      {
+        "verb": "Enjoy",
+        "arguments": [
+          "recipe"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 60,
+    "prediction": [
+      {
+        "verb": "Marinade",
+        "arguments": [
+          "shrimp"
+        ]
+      },
+      {
+        "verb": "sit",
+        "arguments": []
+      },
+      {
+        "verb": "Drain",
+        "arguments": []
+      },
+      {
+        "verb": "save",
+        "arguments": [
+          "marinating",
+          "liquid"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "tablespoons",
+          "corn",
+          "starch"
+        ]
+      },
+      {
+        "verb": "cup",
+        "arguments": [
+          "water"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "starch"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "minced",
+          "garlic",
+          "ginger",
+          "chilli"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "bell",
+          "peppers"
+        ]
+      },
+      {
+        "verb": "soften",
+        "arguments": []
+      },
+      {
+        "verb": "Stir",
+        "arguments": [
+          "shrimps"
+        ]
+      },
+      {
+        "verb": "cook",
+        "arguments": []
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "corn",
+          "starch",
+          "soy",
+          "sauce"
+        ]
+      },
+      {
+        "verb": "Mix",
+        "arguments": []
+      },
+      {
+        "verb": "let",
+        "arguments": [
+          "sauce"
+        ]
+      },
+      {
+        "verb": "thicken",
+        "arguments": [
+          "sauce"
+        ]
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "rice"
+        ]
+      },
+      {
+        "verb": "top",
+        "arguments": []
+      },
+      {
+        "verb": "Garnish",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 67,
+    "prediction": [
+      {
+        "verb": "How",
+        "arguments": [
+          "chicken"
+        ]
+      },
+      {
+        "verb": "Be",
+        "arguments": [
+          "chef"
+        ]
+      },
+      {
+        "verb": "Follow",
+        "arguments": [
+          "simple",
+          "steps"
+        ]
+      },
+      {
+        "verb": "wow",
+        "arguments": [
+          "guests"
+        ]
+      },
+      {
+        "verb": "Preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "Season",
+        "arguments": [
+          "chicken",
+          "breasts"
+        ]
+      },
+      {
+        "verb": "taste",
+        "arguments": []
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "bake",
+        "arguments": []
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "chicken",
+          "breasts"
+        ]
+      },
+      {
+        "verb": "preheat",
+        "arguments": []
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "butter"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "mushroom",
+          "soup",
+          "garlic",
+          "lemon",
+          "juice"
+        ]
+      },
+      {
+        "verb": "stir",
+        "arguments": [
+          "cheese"
+        ]
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "set",
+        "arguments": []
+      },
+      {
+        "verb": "cover",
+        "arguments": [
+          "base"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "mushrooms"
+        ]
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "prepared",
+        "arguments": []
+      },
+      {
+        "verb": "pour",
+        "arguments": [
+          "spinach"
+        ]
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "chicken",
+          "breasts"
+        ]
+      },
+      {
+        "verb": "Use",
+        "arguments": [
+          "rest"
+        ]
+      },
+      {
+        "verb": "cover",
+        "arguments": [
+          "chicken"
+        ]
+      },
+      {
+        "verb": "Sprinkle",
+        "arguments": []
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "preheated",
+          "oven"
+        ]
+      },
+      {
+        "verb": "bake",
+        "arguments": []
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "platter"
+        ]
+      },
+      {
+        "verb": "prepare",
+        "arguments": [
+          "Chicken",
+          "Florentine"
+        ]
+      },
+      {
+        "verb": "Try",
+        "arguments": []
+      },
+      {
+        "verb": "serve",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 68,
+    "prediction": [
+      {
+        "verb": "When",
+        "arguments": [
+          "pina",
+          "colada"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "ice"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "rum"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "ice"
+        ]
+      },
+      {
+        "verb": "include",
+        "arguments": []
+      },
+      {
+        "verb": "blend",
+        "arguments": [
+          "concoction"
+        ]
+      },
+      {
+        "verb": "increase",
+        "arguments": [
+          "pineapple",
+          "juice"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "rum"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 71,
+    "prediction": [
+      {
+        "verb": "Gently",
+        "arguments": [
+          "cream"
+        ]
+      },
+      {
+        "verb": "whisk",
+        "arguments": [
+          "cream"
+        ]
+      },
+      {
+        "verb": "Cover",
+        "arguments": []
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "refrigerator"
+        ]
+      },
+      {
+        "verb": "used",
+        "arguments": []
+      },
+      {
+        "verb": "combine",
+        "arguments": [
+          "vanilla",
+          "sugar",
+          "milk"
+        ]
+      },
+      {
+        "verb": "bring",
+        "arguments": []
+      },
+      {
+        "verb": "boil",
+        "arguments": []
+      },
+      {
+        "verb": "stirring",
+        "arguments": []
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "medium",
+          "temperature"
+        ]
+      },
+      {
+        "verb": "Divide",
+        "arguments": [
+          "chocolate",
+          "squares"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "milk"
+        ]
+      },
+      {
+        "verb": "fill",
+        "arguments": [
+          "glasses"
+        ]
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "cream"
+        ]
+      },
+      {
+        "verb": "Prepared",
+        "arguments": []
+      },
+      {
+        "verb": "pour",
+        "arguments": []
+      },
+      {
+        "verb": "Serve",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 81,
+    "prediction": [
+      {
+        "verb": "Check",
+        "arguments": [
+          "steps"
+        ]
+      },
+      {
+        "verb": "preparing",
+        "arguments": [
+          "coleslaw"
+        ]
+      },
+      {
+        "verb": "Use",
+        "arguments": [
+          "guide"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "shredded",
+          "cabbage"
+        ]
+      },
+      {
+        "verb": "play",
+        "arguments": []
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "chopped",
+          "onions"
+        ]
+      },
+      {
+        "verb": "going",
+        "arguments": [
+          "chunky",
+          "version"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "bowl",
+        "arguments": [
+          "cup",
+          "mayonnaise"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "create",
+        "arguments": [
+          "creamy",
+          "dressing"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "dressing"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": []
+      },
+      {
+        "verb": "covered",
+        "arguments": []
+      },
+      {
+        "verb": "Transfer",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "cover",
+        "arguments": [
+          "clingfilm"
+        ]
+      },
+      {
+        "verb": "sit",
+        "arguments": [
+          "fridge"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "tablespoon",
+          "mayonnaise"
+        ]
+      },
+      {
+        "verb": "Makes",
+        "arguments": [
+          "servings"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 84,
+    "prediction": [
+      {
+        "verb": "Pre-heat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "Spray",
+        "arguments": [
+          "large",
+          "13"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "onion",
+          "turkey"
+        ]
+      },
+      {
+        "verb": "heat",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "medium",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "Minimize",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "stir",
+        "arguments": [
+          "oregano",
+          "tomato",
+          "sauce",
+          "cayenne",
+          "cinnamon"
+        ]
+      },
+      {
+        "verb": "Cook",
+        "arguments": []
+      },
+      {
+        "verb": "stirring",
+        "arguments": []
+      },
+      {
+        "verb": "Simmer",
+        "arguments": []
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "beat",
+        "arguments": [
+          "floor",
+          "cup"
+        ]
+      },
+      {
+        "verb": "low",
+        "arguments": [
+          "fat",
+          "milk"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "milk"
+        ]
+      },
+      {
+        "verb": "bring",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "boil",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "stirring",
+        "arguments": []
+      },
+      {
+        "verb": "Minimize",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "seethe",
+        "arguments": []
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "egg"
+        ]
+      },
+      {
+        "verb": "beat",
+        "arguments": [
+          "cup",
+          "milk"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "cup",
+          "hot",
+          "milk"
+        ]
+      },
+      {
+        "verb": "Whip",
+        "arguments": [
+          "milk",
+          "egg"
+        ]
+      },
+      {
+        "verb": "combination",
+        "arguments": [
+          "pan",
+          "heat"
+        ]
+      },
+      {
+        "verb": "thickened",
+        "arguments": []
+      },
+      {
+        "verb": "Mix",
+        "arguments": [
+          "hot",
+          "water",
+          "potato",
+          "flakes"
+        ]
+      },
+      {
+        "verb": "Layer",
+        "arguments": [
+          "eggplant",
+          "pieces"
+        ]
+      },
+      {
+        "verb": "Spoon",
+        "arguments": [
+          "meat"
+        ]
+      },
+      {
+        "verb": "blend",
+        "arguments": [
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "pour",
+        "arguments": [
+          "white",
+          "sauce"
+        ]
+      },
+      {
+        "verb": "Layer",
+        "arguments": [
+          "rest",
+          "eggplant"
+        ]
+      },
+      {
+        "verb": "cover",
+        "arguments": [
+          "sauce"
+        ]
+      },
+      {
+        "verb": "Cover",
+        "arguments": [
+          "foil"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": [
+          "minutes"
+        ]
+      },
+      {
+        "verb": "Uncover",
+        "arguments": [
+          "drizzle"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": []
+      },
+      {
+        "verb": "Cool",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 86,
+    "prediction": [
+      {
+        "verb": "Using",
+        "arguments": [
+          "chopper",
+          "onions"
+        ]
+      },
+      {
+        "verb": "chop",
+        "arguments": [
+          "onions",
+          "ginger"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "water"
+        ]
+      },
+      {
+        "verb": "help",
+        "arguments": [
+          "machine",
+          "chopper"
+        ]
+      },
+      {
+        "verb": "Chop",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "chop",
+        "arguments": []
+      },
+      {
+        "verb": "Cut",
+        "arguments": [
+          "chicken"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "pieces"
+        ]
+      },
+      {
+        "verb": "pour",
+        "arguments": [
+          "yogurt",
+          "salt",
+          "garlic"
+        ]
+      },
+      {
+        "verb": "Mix",
+        "arguments": [
+          "everything"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "oil"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "onions"
+        ]
+      },
+      {
+        "verb": "Stir",
+        "arguments": [
+          "onions"
+        ]
+      },
+      {
+        "verb": "fry",
+        "arguments": [
+          "onions"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "garlic",
+          "ginger"
+        ]
+      },
+      {
+        "verb": "stirring",
+        "arguments": []
+      },
+      {
+        "verb": "Mix",
+        "arguments": [
+          "tumeric",
+          "cumin",
+          "garam",
+          "masala",
+          "coriander",
+          "salt"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "Keep",
+        "arguments": []
+      },
+      {
+        "verb": "put",
+        "arguments": [
+          "tomatoes"
+        ]
+      },
+      {
+        "verb": "saute",
+        "arguments": []
+      },
+      {
+        "verb": "Now",
+        "arguments": [
+          "chicken",
+          "yogurt"
+        ]
+      },
+      {
+        "verb": "pour",
+        "arguments": []
+      },
+      {
+        "verb": "Mix",
+        "arguments": []
+      },
+      {
+        "verb": "close",
+        "arguments": [
+          "lid"
+        ]
+      },
+      {
+        "verb": "Turn",
+        "arguments": [
+          "heat"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "garam",
+          "masala"
+        ]
+      },
+      {
+        "verb": "serving",
+        "arguments": []
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "rice"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 91,
+    "prediction": [
+      {
+        "verb": "Steak",
+        "arguments": [
+          "preference",
+          "Salt",
+          "Pepper"
+        ]
+      },
+      {
+        "verb": "Let",
+        "arguments": [
+          "steak",
+          "room"
+        ]
+      },
+      {
+        "verb": "reach",
+        "arguments": [
+          "room",
+          "temperature"
+        ]
+      },
+      {
+        "verb": "Trim",
+        "arguments": [
+          "steak",
+          "excess",
+          "fat"
+        ]
+      },
+      {
+        "verb": "Season",
+        "arguments": [
+          "steak",
+          "salt",
+          "pepper",
+          "garlic"
+        ]
+      },
+      {
+        "verb": "Preheat",
+        "arguments": [
+          "gas",
+          "grill"
+        ]
+      },
+      {
+        "verb": "using",
+        "arguments": [
+          "charcoal"
+        ]
+      },
+      {
+        "verb": "Brush",
+        "arguments": [
+          "hot",
+          "rack"
+        ]
+      },
+      {
+        "verb": "prevent",
+        "arguments": [
+          "sticking",
+          "optional"
+        ]
+      },
+      {
+        "verb": "Step",
+        "arguments": [
+          "6"
+        ]
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "steak"
+        ]
+      },
+      {
+        "verb": "close",
+        "arguments": [
+          "lid"
+        ]
+      },
+      {
+        "verb": "Open",
+        "arguments": [
+          "cover"
+        ]
+      },
+      {
+        "verb": "flip",
+        "arguments": [
+          "steak"
+        ]
+      },
+      {
+        "verb": "cook",
+        "arguments": []
+      },
+      {
+        "verb": "Check",
+        "arguments": [
+          "doneness"
+        ]
+      },
+      {
+        "verb": "Remove",
+        "arguments": [
+          "steak"
+        ]
+      },
+      {
+        "verb": "place",
+        "arguments": [
+          "foil",
+          "tent"
+        ]
+      },
+      {
+        "verb": "carving",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 95,
+    "prediction": [
+      {
+        "verb": "Who",
+        "arguments": [
+          "blueberry",
+          "muffins"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "snack"
+        ]
+      },
+      {
+        "verb": "learning",
+        "arguments": [
+          "how"
+        ]
+      },
+      {
+        "verb": "Preheat",
+        "arguments": [
+          "oven"
+        ]
+      },
+      {
+        "verb": "Whip",
+        "arguments": [
+          "baking",
+          "powder",
+          "soda",
+          "flour"
+        ]
+      },
+      {
+        "verb": "baking",
+        "arguments": [
+          "soda",
+          "flour"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "butter",
+          "sugar"
+        ]
+      },
+      {
+        "verb": "Beat",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "eggs"
+        ]
+      },
+      {
+        "verb": "Beat",
+        "arguments": [
+          "mixture"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "another"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "lemon"
+        ]
+      },
+      {
+        "verb": "peel",
+        "arguments": [
+          "lemon"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "dry",
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "yogurt"
+        ]
+      },
+      {
+        "verb": "beating",
+        "arguments": []
+      },
+      {
+        "verb": "Beat",
+        "arguments": []
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "remaining",
+          "dry",
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "Beat",
+        "arguments": [
+          "remaining",
+          "yogurt"
+        ]
+      },
+      {
+        "verb": "Beat",
+        "arguments": [
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "Using",
+        "arguments": [
+          "spoon"
+        ]
+      },
+      {
+        "verb": "fold",
+        "arguments": [
+          "blueberries"
+        ]
+      },
+      {
+        "verb": "Take",
+        "arguments": [
+          "muffin",
+          "tins"
+        ]
+      },
+      {
+        "verb": "Put",
+        "arguments": [
+          "paper",
+          "liner"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "muffin",
+          "batter"
+        ]
+      },
+      {
+        "verb": "Bake",
+        "arguments": [
+          "muffins"
+        ]
+      },
+      {
+        "verb": "Use",
+        "arguments": [
+          "toothpick"
+        ]
+      },
+      {
+        "verb": "check",
+        "arguments": []
+      },
+      {
+        "verb": "Place",
+        "arguments": [
+          "muffin",
+          "tins"
+        ]
+      },
+      {
+        "verb": "Let",
+        "arguments": [
+          "muffins"
+        ]
+      },
+      {
+        "verb": "cool",
+        "arguments": [
+          "muffins"
+        ]
+      },
+      {
+        "verb": "remove",
+        "arguments": [
+          "muffin",
+          "tins"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 96,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "small",
+          "bowl",
+          "vanilla"
+        ]
+      },
+      {
+        "verb": "combine",
+        "arguments": [
+          "vanilla",
+          "layer",
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "combine",
+        "arguments": [
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "Pour",
+        "arguments": [
+          "tablespoon",
+          "vanilla"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "bottom"
+        ]
+      },
+      {
+        "verb": "Freeze",
+        "arguments": []
+      },
+      {
+        "verb": "Sprinkle",
+        "arguments": [
+          "chocolate",
+          "chips"
+        ]
+      },
+      {
+        "verb": "followed",
+        "arguments": [
+          "cookie",
+          "dough"
+        ]
+      },
+      {
+        "verb": "mix",
+        "arguments": [
+          "dough"
+        ]
+      },
+      {
+        "verb": "Freeze",
+        "arguments": []
+      },
+      {
+        "verb": "Insert",
+        "arguments": [
+          "wood",
+          "sticks"
+        ]
+      },
+      {
+        "verb": "Repeat",
+        "arguments": [
+          "process",
+          "alternating",
+          "layers"
+        ]
+      },
+      {
+        "verb": "Serve",
+        "arguments": []
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 97,
+    "prediction": [
+      {
+        "verb": "This",
+        "arguments": [
+          "recipe"
+        ]
+      },
+      {
+        "verb": "entertaining",
+        "arguments": [
+          "large",
+          "group"
+        ]
+      },
+      {
+        "verb": "bring",
+        "arguments": [
+          "party"
+        ]
+      },
+      {
+        "verb": "Cook",
+        "arguments": [
+          "tortellini"
+        ]
+      },
+      {
+        "verb": "drain",
+        "arguments": [
+          "well"
+        ]
+      },
+      {
+        "verb": "combine",
+        "arguments": [
+          "tortellini",
+          "salad",
+          "salami"
+        ]
+      },
+      {
+        "verb": "dressing",
+        "arguments": [
+          "salami",
+          "mozzarella",
+          "mushrooms"
+        ]
+      },
+      {
+        "verb": "Mix",
+        "arguments": []
+      },
+      {
+        "verb": "coat",
+        "arguments": [
+          "ingredients"
+        ]
+      },
+      {
+        "verb": "thread",
+        "arguments": [
+          "tortellini",
+          "slice",
+          "salami"
+        ]
+      },
+      {
+        "verb": "Transfer",
+        "arguments": [
+          "prepared",
+          "skewers"
+        ]
+      },
+      {
+        "verb": "keep",
+        "arguments": [
+          "refrigerated"
+        ]
+      },
+      {
+        "verb": "serve",
+        "arguments": [
+          "skewers"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 99,
+    "prediction": [
+      {
+        "verb": "Making",
+        "arguments": [
+          "homemade",
+          "glass",
+          "mirror"
+        ]
+      },
+      {
+        "verb": "fill",
+        "arguments": [
+          "container"
+        ]
+      },
+      {
+        "verb": "find",
+        "arguments": [
+          "towelettes"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "high",
+          "quality",
+          "disposable",
+          "napkins"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "pull"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": []
+      },
+      {
+        "verb": "clean",
+        "arguments": [
+          "surface"
+        ]
+      },
+      {
+        "verb": "dry",
+        "arguments": []
+      },
+      {
+        "verb": "left",
+        "arguments": [
+          "condensation"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 108,
+    "prediction": [
+      {
+        "verb": "Baking",
+        "arguments": []
+      },
+      {
+        "verb": "save",
+        "arguments": [
+          "burned",
+          "baking",
+          "pans"
+        ]
+      },
+      {
+        "verb": "using",
+        "arguments": [
+          "harsh",
+          "chemicals"
+        ]
+      },
+      {
+        "verb": "clean",
+        "arguments": [
+          "pan"
+        ]
+      },
+      {
+        "verb": "loosen",
+        "arguments": []
+      },
+      {
+        "verb": "form",
+        "arguments": [
+          "strong",
+          "grease",
+          "removing",
+          "paste"
+        ]
+      },
+      {
+        "verb": "Add",
+        "arguments": [
+          "Castile",
+          "soap"
+        ]
+      },
+      {
+        "verb": "baking",
+        "arguments": [
+          "soda"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "scrub",
+          "sponge"
+        ]
+      },
+      {
+        "verb": "remove",
+        "arguments": [
+          "burned"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "cooking",
+    "doc_id": 111,
+    "prediction": [
+      {
+        "verb": "Step",
+        "arguments": [
+          "packet",
+          "onion"
+        ]
+      },
+      {
+        "verb": "warn",
+        "arguments": []
+      },
+      {
+        "verb": "Using",
+        "arguments": [
+          "mixer",
+          "food",
+          "processor"
+        ]
+      },
+      {
+        "verb": "Refrigerate",
+        "arguments": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "epoch": 1,
+    "complete": false,
+    "training_steps": 192,
+    "optimizer_updates": 3,
+    "mean_loss": 1953.8460286458333,
+    "dev": {
+      "precision": 0.8,
+      "recall": 0.021164021164021163,
+      "f1": 0.041237113402061855,
+      "right": 8,
+      "predicted": 10,
+      "gold": 378
+    },
+    "train_probe": {
+      "precision": 0.8,
+      "recall": 0.02168021680216802,
+      "f1": 0.04221635883905013,
+      "right": 8,
+      "predicted": 10,
+      "gold": 369
+    },
+    "seconds": 1.4532818794250488
+  }
+]

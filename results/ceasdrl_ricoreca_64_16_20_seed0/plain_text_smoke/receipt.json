@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "input_sha256": "1d02673288403887af7c1ebbadb1af56ceac9bee746fa78c1eb2e751c519d18a",
+  "checkpoint_sha256": {
+    "act": "92cea7d67742782de90a76dfe22a1e23ec8e9ad0adea93c399e855c8501f9a50",
+    "arg": "283c842534b3f1aee4e7f699f4be2fc5e29d088b69e3d9e78204c69d6b81baf1"
+  },
+  "devices": {
+    "act": "cpu",
+    "arg": "cuda"
+  },
+  "inference_uses_gold_labels": false,
+  "source_sha256": "b81e7b4b5472ae2d1d5dbc7c506d02071daec6defeab1b1594dd684fbad8d7eb"
+}

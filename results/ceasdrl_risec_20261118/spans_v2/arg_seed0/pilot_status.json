@@ -1,0 +1,7 @@
+{
+  "status": "development_pilot_stopped",
+  "completed_epochs": 3,
+  "best_dev_f1": 0.14892787524366471,
+  "reason": "BIO positive replay is dominated by background; introduce a separate balanced replay and mention-rate candidate. This pilot is not the final test result.",
+  "used_for_final_test": false
+}

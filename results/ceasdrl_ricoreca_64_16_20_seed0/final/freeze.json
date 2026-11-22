@@ -1,0 +1,30 @@
+{
+  "checkpoint_sha256": {
+    "act": "92cea7d67742782de90a76dfe22a1e23ec8e9ad0adea93c399e855c8501f9a50",
+    "arg": "283c842534b3f1aee4e7f699f4be2fc5e29d088b69e3d9e78204c69d6b81baf1"
+  },
+  "dataset_sha256": {
+    "train": "12c5e133b57963d3d6b98445c0ee34942b02a5327396ce6d8bcf1d60f0ed60d7",
+    "dev": "d4e68d5d11cd6cb6aee27e1e05679cb9596a6a2e9ffe87891753e1bd9de88a16",
+    "test": "5829799da957a2ca8f6db80a696af68e45ae773aa493d723a9871876c6011d39"
+  },
+  "split_sha256": "b73c8eba08b9ec5bfcebec853062a6ebeea0b1d495f679de7f6a0522da12f2a8",
+  "training_receipt_sha256": {
+    "act": "bee07ce775f504097eef2ed80954d3e881cb9871ff1b4eecf56808b6010ed23c",
+    "arg": "73c75909c9bf76ecef99dfdfdc01604634d0f21c6f103a3d3cd01fcebc0cfe35"
+  },
+  "best_epochs": {
+    "act": 10,
+    "arg": 9
+  },
+  "evaluation_source_sha256": {
+    "evaluate_ceasdrl_holdout.py": "4a181ccd3aeba07b4fa3a4c1ca3b9b98273ce19b5e862bfe83a231c43a29487c",
+    "evaluate_ceasdrl_spans.py": "06ed029bd7b7379d347d5c972af6e66329e07ee43406b537dddad9225b219315",
+    "predict_ceasdrl_text.py": "f1fc5234388f1e337e8988aa9531ec42cc58bd98f72cc969580af57c67e570ec",
+    "risec_spans.py": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab",
+    "ceasdrl_spans.py": "0715817ec185a6ac45fc58e7a5e88a33a639301b71cb791b1d030f7e280a9e25",
+    "ceasdrl_torch.py": "937a90d27576935dce70bbd06f0df2b4216d209d2bc1944e04af062422806f7a",
+    "prepare_procedural_data.py": "1c04734420b21c02535aa7c3ab4b66667db26285cd1f2c8d5d4995a941b31807"
+  },
+  "frozen_at_utc": "2026-11-21T19:33:05.614636+00:00"
+}

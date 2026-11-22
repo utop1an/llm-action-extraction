@@ -1,0 +1,20 @@
+{
+  "documents": 515,
+  "split_documents": {
+    "train": 412,
+    "dev": 51,
+    "test": 52
+  },
+  "actions": 515,
+  "multi_token_actions": 32,
+  "explicit_argument_links": 0,
+  "implicit_argument_links": 0,
+  "max_document_tokens": 49,
+  "es_op_ex_available": false,
+  "source_documents": 327,
+  "annotation_scopes": [
+    "One selected state-change trigger per step; not exhaustive planning actions."
+  ],
+  "projection": "First annotated token of each action/explicit argument span. All annotations retained.",
+  "warning": "Observed action occurrences are extraction targets, not planning-essential labels."
+}

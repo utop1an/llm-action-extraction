@@ -1,0 +1,1136 @@
+{
+  "model": "gpt-5.4",
+  "api_model": "gpt-5.4-2026-03-05",
+  "created_at": "2026-10-28T17:34:18+11:00",
+  "matrix": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\matrix.json",
+  "matrix_sha256_at_start": "6bf8eb7cde6d55f9d4d4becd2931106532c8d3de7c9fa39336c379107264e4aa",
+  "evaluator_sha256": "501a291863d8715ac8d5890b7cacabcd2f1d0f7b80e25eb2b5c2c57b4084e6a6",
+  "helpers_sha256": "388f4bf52f30af7e9f544a9e07946144bdcb84c7740671296ad204a1ca836c44",
+  "analysis_script_sha256": "70357643017f56b1d63d6b1bae0e18a1b6ea78f5deadbabbd1a1a8975ce55d78",
+  "adjusted_argument_enabled": false,
+  "inputs": [
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_minimal_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "4a2443ca63580877287cc4dbe0f259ec17db9f1790f9105239da0dc52f4a2493",
+      "pkl_sha256": "9305df4b80726fdb8bd675af4c3a7cde65502ff5ebeaba008989fd695e4284e6"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_minimal_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "d3227a64280a28e8ea898823b9c7f6d35d1443f75d44cf0a9d04d7f4e7d552f4",
+      "pkl_sha256": "43ee8ebea2e63770226832c23813ab5f148462bc7ba837618d6b00745ccdd1b3"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat1_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_minimal_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "0419a994badd21143e3644474333a2eeb487a3aeef44bf331dd3141e974b6811",
+      "pkl_sha256": "8ad3c6d33633a651c08f1d351c07f318a8a70e05165d5f1e164c55a327033b52"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_full_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "7d41fe5b70b40197c211fd718a58d721597d815548c5c1d57f4952fe25856cc9",
+      "pkl_sha256": "c386785ec1d00fb2d9e717a5c9f97c3e0ebb4eebb4c418501ff2cf26d0636698"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_full_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "f505936936a5535e6a07fda123eb1942024b1156dcb645512441e217653a4077",
+      "pkl_sha256": "327d2a4edd8234c4169f31d9bf4b37d8f571306909696c849810c9ff0b3e8290"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat1_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_full_repeat1_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "0f55c82b17d6d5126f33d09a4a1bf093cd9a4403b18e4ed85e6bf2d1143dbcc5",
+      "pkl_sha256": "7d84045b9330a2ed1656df6c13bcafe0592be131a28f4a469e522d7aef4a4f20"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_minimal_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "e5649c6fdfe24164fe31f36583adcb46104c78a5b9cd5b57efaeee38cc5b6905",
+      "pkl_sha256": "3ffe56875a2d6133b423f8ec17ac5783bbb0a255d00fff918ea61c0c9d7e6b5a"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_minimal_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "fcde1373872e497b4e20e976f3b3a59981103087e6d1ea3979cb3668620137c8",
+      "pkl_sha256": "fab3eff5b118afe30b4e25bf3034d9aa744a198ec6fd399adb01e0351f383509"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat2_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_minimal_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "8a7151b590d9e78a87db058895b4ded6960fd87f26ea9bbe77f4e11bce713e36",
+      "pkl_sha256": "593cb42c38f99d6027e6fe0ddd096cb85db4ec6b4ea0a13714254fc9a635b8e3"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_full_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "b0a84d7b96a383ac2e632d5112b270b43e41e1df891def68a671092e62310751",
+      "pkl_sha256": "76ea85983a6703f7fc853e456aea9da95e038d23fbaf5b8075d3781dae0449d5"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_full_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "512a72f939e5c801574a4a7b772cafb32d7f7da15d2cd8a310de33b80080b632",
+      "pkl_sha256": "8c97bea810bfe256bece05e85056c9c55cca393b806fe4844e49cb52841701e3"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat2_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_full_repeat2_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "0df116902b4b013e8bf251c1f3c113dbc5140e6f6198a978b8c911b6a5fc3bb9",
+      "pkl_sha256": "0d079e9d7c948fb92f31e9263cb051fec88d7fd1143eac686b73f1225886c9d9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_minimal_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "6ea809a25ceb6f7f52d2d07f43f4296bd06e5c4a7a5334fd55d975f52fde0e82",
+      "pkl_sha256": "559d34da974985eb4d8077d335dce1bbbb4c0ddcc38708fbe8f0a1b0e07ef0b9"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_minimal_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "51e75c3acef6f6fe6227821a34d3bcaf36bc4512626401f8135bdcc37a18a9ed",
+      "pkl_sha256": "fe7539bade9bbd5db0c0ce33d9baa0ab9eb5051a1891e459f6709577d8b6bde6"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_minimal_repeat3_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_minimal_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "e228bccfb5c4d4ba6aa3c4eb6301e90e574cd5481bed2eb3d331449e87906bd2",
+      "pkl_sha256": "d65610e428a7acb7f8b52bf0b7ed2de978407c73cf4436813a0217a7e223feb0"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1_server_repaired\\gpt-5.4\\cooking_nl2p_full_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "8997eed90a1ce68b5a3705f7f70689e3829feec42604ed8cdce93a548c334d52",
+      "pkl_sha256": "b7d1626609de95619c7946d3d7e23ae00cb7f92c358d7e1464da9e9b9ae9b4e0"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1_server_repaired\\gpt-5.4\\wikihow_nl2p_full_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "5f35f39e25e4021acc9051203f449380c000a5e25b115e58d558c0799db69e89",
+      "pkl_sha256": "e584518f900f06d82cd6ab895b057e5d2377cb2f9b47ce8b9216df199555c196"
+    },
+    {
+      "path": "C:\\anu\\llm-action-extraction\\results\\nl2p_full_repeat3_20261027_v1_server_repaired\\gpt-5.4\\win2k_nl2p_full_repeat3_20261027_v1_server_repaired_gpt-5.4.json",
+      "json_sha256": "20901c1c2cd774a3e6e2042025cfe1c2c8cf4ad1b614fe2445b0854327fbc080",
+      "pkl_sha256": "f3409733358ff7bba6d60c8011d3200f0f3b65805bee1b438a2cacad94b9d6f3"
+    }
+  ],
+  "metrics": [
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae05f002be48190936b953bfad17565",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9387755102040817,
+      "action_recall": 0.7911547911547911,
+      "action_f1": 0.8586666666666666,
+      "argument_precision": 0.49470967741935484,
+      "argument_recall": 0.7086876155268023,
+      "argument_f1": 0.5826747720364741,
+      "perfect_action_argument_matches": 358,
+      "argument_mismatch_actions": 1574,
+      "matched_action_events": 1932
+    },
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae05f002be48190936b953bfad17565",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8731323010051616,
+      "action_recall": 0.7594517958412098,
+      "action_f1": 0.8123341337040313,
+      "argument_precision": 0.5354302241503976,
+      "argument_recall": 0.5729206963249517,
+      "argument_f1": 0.5535413941319379,
+      "perfect_action_argument_matches": 671,
+      "argument_mismatch_actions": 2543,
+      "matched_action_events": 3214
+    },
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae05f002be48190936b953bfad17565",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9766666666666667,
+      "action_recall": 0.8765893792071803,
+      "action_f1": 0.9239258967284195,
+      "argument_precision": 0.697072838665759,
+      "argument_recall": 0.5743129556926528,
+      "argument_f1": 0.6297662976629765,
+      "perfect_action_argument_matches": 425,
+      "argument_mismatch_actions": 747,
+      "matched_action_events": 1172
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9187956204379562,
+      "action_recall": 0.8170385395537525,
+      "action_f1": 0.8649345071934722,
+      "argument_precision": 0.6597311139564661,
+      "argument_recall": 0.7308510638297873,
+      "argument_f1": 0.6934724091520861,
+      "perfect_action_argument_matches": 928,
+      "argument_mismatch_actions": 1086,
+      "matched_action_events": 2014
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7549792531120332,
+      "action_recall": 0.8423611111111111,
+      "action_f1": 0.7962800875273524,
+      "argument_precision": 0.6902834008097166,
+      "argument_recall": 0.5903739612188366,
+      "argument_f1": 0.6364315042926466,
+      "perfect_action_argument_matches": 1424,
+      "argument_mismatch_actions": 2215,
+      "matched_action_events": 3639
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9542902967121091,
+      "action_recall": 0.8913857677902621,
+      "action_f1": 0.9217660728117739,
+      "argument_precision": 0.7796887796887797,
+      "argument_recall": 0.5143165856293895,
+      "argument_f1": 0.6197916666666666,
+      "perfect_action_argument_matches": 468,
+      "argument_mismatch_actions": 722,
+      "matched_action_events": 1190
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9356078808265257,
+      "action_recall": 0.7959934587080949,
+      "action_f1": 0.8601722995361167,
+      "argument_precision": 0.4980675083741304,
+      "argument_recall": 0.706764168190128,
+      "argument_f1": 0.5843409915356711,
+      "perfect_action_argument_matches": 375,
+      "argument_mismatch_actions": 1572,
+      "matched_action_events": 1947
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8796806167400881,
+      "action_recall": 0.7549621928166351,
+      "action_f1": 0.8125635808748728,
+      "argument_precision": 0.5291033984092552,
+      "argument_recall": 0.5697878138991629,
+      "argument_f1": 0.5486924735214173,
+      "perfect_action_argument_matches": 631,
+      "argument_mismatch_actions": 2564,
+      "matched_action_events": 3195
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9775933609958506,
+      "action_recall": 0.881077038145101,
+      "action_f1": 0.926829268292683,
+      "argument_precision": 0.6989174560216509,
+      "argument_recall": 0.5761293920803123,
+      "argument_f1": 0.6316111280953837,
+      "perfect_action_argument_matches": 429,
+      "argument_mismatch_actions": 749,
+      "matched_action_events": 1178
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9102854553692795,
+      "action_recall": 0.8163348232425843,
+      "action_f1": 0.8607540702656384,
+      "argument_precision": 0.6649534211371667,
+      "argument_recall": 0.7322249734701096,
+      "argument_f1": 0.6969696969696969,
+      "perfect_action_argument_matches": 922,
+      "argument_mismatch_actions": 1087,
+      "matched_action_events": 2009
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7536885245901639,
+      "action_recall": 0.8519805420430855,
+      "action_f1": 0.799826030227248,
+      "argument_precision": 0.6950010119409027,
+      "argument_recall": 0.5861068441713603,
+      "argument_f1": 0.635925925925926,
+      "perfect_action_argument_matches": 1446,
+      "argument_mismatch_actions": 2232,
+      "matched_action_events": 3678
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.957085020242915,
+      "action_recall": 0.8860569715142429,
+      "action_f1": 0.9202024133904242,
+      "argument_precision": 0.7955846279640229,
+      "argument_recall": 0.5279435702658709,
+      "argument_f1": 0.634703196347032,
+      "perfect_action_argument_matches": 469,
+      "argument_mismatch_actions": 713,
+      "matched_action_events": 1182
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9371069182389937,
+      "action_recall": 0.7928776094965206,
+      "action_f1": 0.858980044345898,
+      "argument_precision": 0.4945026178010471,
+      "argument_recall": 0.6970479704797048,
+      "argument_f1": 0.5785604900459417,
+      "perfect_action_argument_matches": 367,
+      "argument_mismatch_actions": 1570,
+      "matched_action_events": 1937
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.8766937669376694,
+      "action_recall": 0.7627917943881161,
+      "action_f1": 0.8157861555919809,
+      "argument_precision": 0.5245872536836499,
+      "argument_recall": 0.5691448382126348,
+      "argument_f1": 0.5459584295612009,
+      "perfect_action_argument_matches": 655,
+      "argument_mismatch_actions": 2580,
+      "matched_action_events": 3235
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9736191261335532,
+      "action_recall": 0.8833208676140614,
+      "action_f1": 0.9262745098039216,
+      "argument_precision": 0.7002039428959891,
+      "argument_recall": 0.5741360089186176,
+      "argument_f1": 0.6309341500765697,
+      "perfect_action_argument_matches": 438,
+      "argument_mismatch_actions": 743,
+      "matched_action_events": 1181
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+      "dataset": "cooking",
+      "num_docs": 116,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.905761500669942,
+      "action_recall": 0.822051074179165,
+      "action_f1": 0.8618784530386739,
+      "argument_precision": 0.6661367249602543,
+      "argument_recall": 0.736120871398454,
+      "argument_f1": 0.699382406943749,
+      "perfect_action_argument_matches": 934,
+      "argument_mismatch_actions": 1094,
+      "matched_action_events": 2028
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+      "dataset": "wikihow",
+      "num_docs": 150,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.7562240663900415,
+      "action_recall": 0.8431644691186676,
+      "action_f1": 0.7973312916985671,
+      "argument_precision": 0.6883457887295495,
+      "argument_recall": 0.5875862068965517,
+      "argument_f1": 0.6339875360431587,
+      "perfect_action_argument_matches": 1430,
+      "argument_mismatch_actions": 2215,
+      "matched_action_events": 3645
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+      "dataset": "win2k",
+      "num_docs": 154,
+      "empty_predictions": 0,
+      "missing_predictions": 0,
+      "action_precision": 0.9612277867528272,
+      "action_recall": 0.8927231807951987,
+      "action_f1": 0.925709840528977,
+      "argument_precision": 0.8042242079610074,
+      "argument_recall": 0.5342687533729088,
+      "argument_f1": 0.642023346303502,
+      "perfect_action_argument_matches": 479,
+      "argument_mismatch_actions": 711,
+      "matched_action_events": 1190
+    }
+  ],
+  "completed_runs": [
+    {
+      "condition": "minimal",
+      "repeat": 1,
+      "batch_id": "batch_6ae05f002be48190936b953bfad17565",
+      "failure_count": 0,
+      "raw_output_sha256": "16003ba09c3a9c9d10c4bf6827b1bcb18f33e8cf6c2f8aa1e0206ceadc6c31c5",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 1,
+      "batch_id": "batch_6ae05c224ca4819091b60c0b53e9b43d",
+      "failure_count": 0,
+      "raw_output_sha256": "be33ad6ce194525a42f463da61dc960f6847bb6de50bd39bd4764e5c1fc537f0",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 2,
+      "batch_id": "batch_6ae0395a04c48190ac73cc1b3634a30e",
+      "failure_count": 0,
+      "raw_output_sha256": "f44f4fe3e4f230c060c4ad58368ed9d313d5119710170237b24fd46a100b6b95",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 2,
+      "batch_id": "batch_6ae187c3bcf08190a764f03c986af7d2",
+      "failure_count": 0,
+      "raw_output_sha256": "b79e50d73b7d0425793a66f4074bd199da15ad3f614b15c951631968f0a578b0",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    },
+    {
+      "condition": "minimal",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c4b3bc81908d3031133dadcee9",
+      "failure_count": 0,
+      "raw_output_sha256": "787d8f750daa22aeb6684d853b35f3fc2d537fe711a47bf71f38b4b0011cbf9e",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    },
+    {
+      "condition": "full",
+      "repeat": 3,
+      "batch_id": "batch_6ae187c895cc819098553619fc5c5f49",
+      "failure_count": 0,
+      "raw_output_sha256": "a1731d413a87a2e36a6337767c15370b82a725b87e0a58cd2bdb50419b641254",
+      "response_models": {
+        "gpt-5.4-2026-03-05": 420
+      }
+    }
+  ],
+  "pending_runs": [],
+  "summary": [
+    {
+      "dataset": "cooking",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            93.87755102040816,
+            93.56078808265256,
+            93.71069182389937
+          ],
+          "mean": 93.71634364232003,
+          "sample_std": 0.15845708243080955
+        },
+        "full": {
+          "runs": [
+            91.87956204379562,
+            91.02854553692795,
+            90.5761500669942
+          ],
+          "mean": 91.16141921590592,
+          "sample_std": 0.6617871683866333
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -1.9979889766125467,
+            -2.532242545724614,
+            -3.134541756905165
+          ],
+          "mean": -2.5549244264141087,
+          "sample_std": 0.5686157809817006,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            79.11547911547912,
+            79.59934587080949,
+            79.28776094965207
+          ],
+          "mean": 79.33419531198022,
+          "sample_std": 0.24525266916407132
+        },
+        "full": {
+          "runs": [
+            81.70385395537525,
+            81.63348232425844,
+            82.2051074179165
+          ],
+          "mean": 81.84748123251673,
+          "sample_std": 0.31170564316226507
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            2.588374839896133,
+            2.0341364534489514,
+            2.9173464682644266
+          ],
+          "mean": 2.5132859205365037,
+          "sample_std": 0.4463672724624148,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            85.86666666666666,
+            86.01722995361168,
+            85.89800443458981
+          ],
+          "mean": 85.92730035162272,
+          "sample_std": 0.0794418901463262
+        },
+        "full": {
+          "runs": [
+            86.49345071934722,
+            86.07540702656384,
+            86.18784530386739
+          ],
+          "mean": 86.25223434992616,
+          "sample_std": 0.21633213863931575
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            0.6267840526805628,
+            0.058177072952162234,
+            0.2898408692775831
+          ],
+          "mean": 0.32493399830343606,
+          "sample_std": 0.2859232766452957,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            49.47096774193548,
+            49.80675083741304,
+            49.45026178010471
+          ],
+          "mean": 49.57599345315108,
+          "sample_std": 0.20010974990590003
+        },
+        "full": {
+          "runs": [
+            65.97311139564661,
+            66.49534211371667,
+            66.61367249602543
+          ],
+          "mean": 66.3607086684629,
+          "sample_std": 0.3408434453899697
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            16.50214365371113,
+            16.688591276303633,
+            17.16341071592072
+          ],
+          "mean": 16.784715215311827,
+          "sample_std": 0.340952182319843,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            70.86876155268023,
+            70.6764168190128,
+            69.70479704797047
+          ],
+          "mean": 70.41665847322116,
+          "sample_std": 0.6239464245529096
+        },
+        "full": {
+          "runs": [
+            73.08510638297872,
+            73.22249734701096,
+            73.6120871398454
+          ],
+          "mean": 73.30656362327836,
+          "sample_std": 0.273363372877649
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            2.216344830298496,
+            2.546080527998157,
+            3.907290091874927
+          ],
+          "mean": 2.8899051500571935,
+          "sample_std": 0.8963735256367601,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            58.26747720364741,
+            58.43409915356711,
+            57.85604900459417
+          ],
+          "mean": 58.185875120602894,
+          "sample_std": 0.29753935647206864
+        },
+        "full": {
+          "runs": [
+            69.3472409152086,
+            69.69696969696969,
+            69.9382406943749
+          ],
+          "mean": 69.6608171021844,
+          "sample_std": 0.29715390343378434
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            11.079763711561192,
+            11.262870543402578,
+            12.082191689780728
+          ],
+          "mean": 11.4749419815815,
+          "sample_std": 0.5338035069646733,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      }
+    },
+    {
+      "dataset": "wikihow",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            87.31323010051617,
+            87.96806167400881,
+            87.66937669376695
+          ],
+          "mean": 87.65022282276398,
+          "sample_std": 0.32783570655362076
+        },
+        "full": {
+          "runs": [
+            75.49792531120332,
+            75.3688524590164,
+            75.62240663900414
+          ],
+          "mean": 75.49639480307462,
+          "sample_std": 0.12678401866427588
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -11.815304789312847,
+            -12.599209214992413,
+            -12.04697005476281
+          ],
+          "mean": -12.153828019689357,
+          "sample_std": 0.40272882396370013,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            75.94517958412098,
+            75.49621928166351,
+            76.27917943881161
+          ],
+          "mean": 75.90685943486537,
+          "sample_std": 0.3928841779705212
+        },
+        "full": {
+          "runs": [
+            84.23611111111111,
+            85.19805420430855,
+            84.31644691186676
+          ],
+          "mean": 84.58353740909547,
+          "sample_std": 0.5337008796320015
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            8.290931526990136,
+            9.701834922645034,
+            8.037267473055152
+          ],
+          "mean": 8.676677974230108,
+          "sample_std": 0.8968257577295804,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            81.23341337040313,
+            81.25635808748729,
+            81.57861555919808
+          ],
+          "mean": 81.35612900569616,
+          "sample_std": 0.1930202447345604
+        },
+        "full": {
+          "runs": [
+            79.62800875273524,
+            79.9826030227248,
+            79.73312916985671
+          ],
+          "mean": 79.78124698177226,
+          "sample_std": 0.18212843530051018
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -1.6054046176678867,
+            -1.273755064762483,
+            -1.8454863893413744
+          ],
+          "mean": -1.5748820239239147,
+          "sample_std": 0.28708517625058266,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            53.543022415039765,
+            52.91033984092552,
+            52.45872536836499
+          ],
+          "mean": 52.97069587477676,
+          "sample_std": 0.5446624270808476
+        },
+        "full": {
+          "runs": [
+            69.02834008097166,
+            69.50010119409026,
+            68.83457887295495
+          ],
+          "mean": 69.12100671600562,
+          "sample_std": 0.34230150294546213
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            15.485317665931895,
+            16.58976135316474,
+            16.375853504589962
+          ],
+          "mean": 16.150310841228865,
+          "sample_std": 0.5857483114052768,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            57.29206963249517,
+            56.978781389916286,
+            56.91448382126348
+          ],
+          "mean": 57.06177828122498,
+          "sample_std": 0.20201268323066648
+        },
+        "full": {
+          "runs": [
+            59.03739612188366,
+            58.61068441713603,
+            58.758620689655174
+          ],
+          "mean": 58.80223374289162,
+          "sample_std": 0.21667324142960379
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            1.7453264893884892,
+            1.6319030272197423,
+            1.8441368683916934
+          ],
+          "mean": 1.7404554616666417,
+          "sample_std": 0.10620073454524925,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            55.35413941319379,
+            54.86924735214173,
+            54.59584295612009
+          ],
+          "mean": 54.9397432404852,
+          "sample_std": 0.38403207145710505
+        },
+        "full": {
+          "runs": [
+            63.64315042926466,
+            63.5925925925926,
+            63.39875360431587
+          ],
+          "mean": 63.54483220872438,
+          "sample_std": 0.12900869238811832
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            8.289011016070866,
+            8.723345240450875,
+            8.802910648195784
+          ],
+          "mean": 8.605088968239174,
+          "sample_std": 0.27660733434344675,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      }
+    },
+    {
+      "dataset": "win2k",
+      "action_precision": {
+        "minimal": {
+          "runs": [
+            97.66666666666667,
+            97.75933609958506,
+            97.36191261335532
+          ],
+          "mean": 97.59597179320235,
+          "sample_std": 0.20792950897444262
+        },
+        "full": {
+          "runs": [
+            95.42902967121091,
+            95.70850202429149,
+            96.12277867528272
+          ],
+          "mean": 95.7534367902617,
+          "sample_std": 0.349050526510495
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -2.237636995455759,
+            -2.050834075293565,
+            -1.239133938072598
+          ],
+          "mean": -1.8425350029406407,
+          "sample_std": 0.5308422237898909,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "action_recall": {
+        "minimal": {
+          "runs": [
+            87.65893792071803,
+            88.1077038145101,
+            88.33208676140613
+          ],
+          "mean": 88.03290949887808,
+          "sample_std": 0.3427506129361102
+        },
+        "full": {
+          "runs": [
+            89.13857677902621,
+            88.6056971514243,
+            89.27231807951988
+          ],
+          "mean": 89.00553066999012,
+          "sample_std": 0.35266388501090495
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            1.4796388583081779,
+            0.4979933369141918,
+            0.9402313181137458
+          ],
+          "mean": 0.9726211711120385,
+          "sample_std": 0.49162364604558634,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "action_f1": {
+        "minimal": {
+          "runs": [
+            92.39258967284195,
+            92.6829268292683,
+            92.62745098039215
+          ],
+          "mean": 92.5676558275008,
+          "sample_std": 0.15412823016050473
+        },
+        "full": {
+          "runs": [
+            92.1766072811774,
+            92.02024133904241,
+            92.5709840528977
+          ],
+          "mean": 92.2559442243725,
+          "sample_std": 0.2838135781333038
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.21598239166455357,
+            -0.6626854902258827,
+            -0.05646692749445492
+          ],
+          "mean": -0.3117116031282971,
+          "sample_std": 0.3142424189947024,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "argument_precision": {
+        "minimal": {
+          "runs": [
+            69.70728386657589,
+            69.89174560216509,
+            70.02039428959891
+          ],
+          "mean": 69.87314125277996,
+          "sample_std": 0.1573821006768125
+        },
+        "full": {
+          "runs": [
+            77.96887796887798,
+            79.55846279640228,
+            80.42242079610074
+          ],
+          "mean": 79.316587187127,
+          "sample_std": 1.2445263994892928
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            8.261594102302084,
+            9.666717194237194,
+            10.402026506501826
+          ],
+          "mean": 9.443445934347034,
+          "sample_std": 1.0875432225234898,
+          "full_higher_runs": 3,
+          "minimal_higher_runs": 0,
+          "tied_runs": 0
+        }
+      },
+      "argument_recall": {
+        "minimal": {
+          "runs": [
+            57.43129556926528,
+            57.612939208031236,
+            57.41360089186176
+          ],
+          "mean": 57.48594522305276,
+          "sample_std": 0.11033530517308926
+        },
+        "full": {
+          "runs": [
+            51.431658562938956,
+            52.79435702658709,
+            53.42687533729088
+          ],
+          "mean": 52.55096364227231,
+          "sample_std": 1.0196336346011625
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -5.999637006326324,
+            -4.8185821814441425,
+            -3.9867255545708815
+          ],
+          "mean": -4.934981580780449,
+          "sample_std": 1.0114913461203912,
+          "full_higher_runs": 0,
+          "minimal_higher_runs": 3,
+          "tied_runs": 0
+        }
+      },
+      "argument_f1": {
+        "minimal": {
+          "runs": [
+            62.976629766297656,
+            63.161112809538366,
+            63.09341500765697
+          ],
+          "mean": 63.077052527831,
+          "sample_std": 0.0933236110016112
+        },
+        "full": {
+          "runs": [
+            61.979166666666664,
+            63.4703196347032,
+            64.2023346303502
+          ],
+          "mean": 63.21727364390669,
+          "sample_std": 1.1329797675955362
+        },
+        "full_minus_minimal_pp": {
+          "runs": [
+            -0.9974630996309912,
+            0.30920682516483566,
+            1.1089196226932216
+          ],
+          "mean": 0.14022111607568868,
+          "sample_std": 1.0633104770638544,
+          "full_higher_runs": 2,
+          "minimal_higher_runs": 1,
+          "tied_runs": 0
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Corpus micro scores from the unchanged evaluator.",
+    "Argument metrics are conditional on evaluator-matched actions.",
+    "Only terminal, collected runs are scored; no partial-output subset is scored.",
+    "Means and standard deviations are emitted only when both conditions have all three repeats.",
+    "Historical outputs are calibration only, excluded from the fresh-repeat summaries.",
+    "Adjusted argument metrics omitted in this strict-only report."
+  ],
+  "complete_three_repeat_comparison": true,
+  "paired_completed_rounds": [
+    1,
+    2,
+    3
+  ],
+  "authorized_failure_recovery": {
+    "authorization": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\authorization.json",
+    "selection": "Keep original successes; retry only explicitly authorized confirmed failures; distinguish server errors from credit exhaustion 429; retain first success, never best-of.",
+    "runs": [
+      {
+        "repeat": 1,
+        "condition": "minimal",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-minimal\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-minimal\\merged\\provenance.json"
+      },
+      {
+        "repeat": 1,
+        "condition": "full",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-full\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r1-full\\merged\\provenance.json"
+      },
+      {
+        "repeat": 2,
+        "condition": "minimal",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-minimal\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-minimal\\merged\\provenance.json"
+      },
+      {
+        "repeat": 2,
+        "condition": "full",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-full\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r2-full\\merged\\provenance.json"
+      },
+      {
+        "repeat": 3,
+        "condition": "minimal",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-minimal\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-minimal\\merged\\provenance.json"
+      },
+      {
+        "repeat": 3,
+        "condition": "full",
+        "merged_manifest": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-full\\merged\\manifest.json",
+        "sample_provenance": "C:\\anu\\llm-action-extraction\\results\\batch\\nl2p_repeats_20261027_v1\\repairs\\r3-full\\merged\\provenance.json"
+      }
+    ],
+    "limitation": "Repairs occur at later times; disclose repair counts and timing with the three-repeat comparison."
+  }
+}

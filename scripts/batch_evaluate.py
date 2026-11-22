@@ -97,26 +97,6 @@ def format_duration(seconds: float) -> str:
     return f"{seconds}s"
 
 
-def run_job(job: EvaluationJob, python: str, evaluator: Path, diagnostics: bool) -> EvaluationResult:
-    command = evaluation_command(python, evaluator, job, diagnostics)
-    started_at = time.monotonic()
-    completed = subprocess.run(
-        command,
-        cwd=ROOT,
-        capture_output=True,
-        check=False,
-    )
-    duration = time.monotonic() - started_at
-    return EvaluationResult(
-        job=job,
-        returncode=completed.returncode,
-        command=command,
-        stdout=completed.stdout.decode("utf-8", errors="replace"),
-        stderr=completed.stderr.decode("utf-8", errors="replace"),
-        duration=duration,
-    )
-
-
 def print_result(result: EvaluationResult) -> None:
     job = result.job
     label = f"{job.solver}/{job.model}"

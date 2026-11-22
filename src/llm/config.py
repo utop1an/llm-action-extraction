@@ -402,6 +402,17 @@ PROMPTS = {
         }
 }
 
+# Minimal zero-shot is a deletion-only ablation of the original NL2P prompt.
+# Keep its task statement and output contract byte-for-byte, including the
+# JSON-only requirement; remove the definitions and semantic extraction rules.
+_nl2p_template = PROMPTS['nl2p_1']['template'].template
+_definition_start = _nl2p_template.index('            Definition:')
+_output_start = _nl2p_template.index('            - Output valid JSON only.', _definition_start)
+PROMPTS['nl2p_minimal'] = {
+    'template': Template(_nl2p_template[:_definition_start] + _nl2p_template[_output_start:]),
+    'parameters': ['nl'],
+}
+
 DOMAINS = {
     "transport": {
         "description": "Tasks related to transportation and logistics.",

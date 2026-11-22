@@ -1,0 +1,13 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	soy sauce	hoisin sauce	sesame oil	sugar	garlic	red pepper flakes	beef	peanut oil	green onions	bowl	wok	"large, nonstick skillet"	stove	fridge		Notes		Action_start	Action_end	Sentence_Id
+Whisk	"Whisk together soy sauce, hoisin sauce, sesame oil, sugar, garlic, and red pepper flakes in a bowl."	1	1	1	1	1	1				1								0	5	0
+Toss	"Toss beef with marinade, cover, and refrigerate 1 hour to overnight."	1	1	1	1	1	1	1											100	104	1
+cover	"Toss beef with marinade, cover, and refrigerate 1 hour to overnight."																		125	130	1
+refrigerate	"Toss beef with marinade, cover, and refrigerate 1 hour to overnight."														1				136	147	1
+Heat	"Heat peanut oil in a wok or large, nonstick skillet over high heat."								1			1		1					169	173	2
+Add	"Add the green onions, and cook for 5 to 10 seconds before stirring in the beef."							1	1	1									237	240	3
+cook	"Add the green onions, and cook for 5 to 10 seconds before stirring in the beef."																		263	267	3
+Cook	"Cook and stir until the beef is no longer pink and is beginning to brown, about 5 minutes."	1	1	1	1	1	1	1	1	1				1					317	321	4
+stir	"Cook and stir until the beef is no longer pink and is beginning to brown, about 5 minutes."	1	1	1	1	1	1							1					326	330	4
+Duplicate of: 														1	1						
+Annotator added: 																					

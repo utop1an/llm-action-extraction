@@ -1,0 +1,12 @@
+{
+  "phase": "training",
+  "epoch": 4,
+  "training_steps": 507124,
+  "optimizer_updates": 8464,
+  "epoch_examples_completed": 944,
+  "epoch_examples_total": 1487,
+  "epsilon": 0.1,
+  "recent_loss_mean": 307.05963861465455,
+  "elapsed_seconds": 682.0867068767548,
+  "best_dev_f1": 0.8373310074138683
+}

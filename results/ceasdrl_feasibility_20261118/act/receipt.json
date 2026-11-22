@@ -1,0 +1,111 @@
+{
+  "status": "smoke_pass",
+  "claim": "Feasibility only; short training on a nonrepresentative subset, not paper reproduction.",
+  "mode": "act",
+  "embedding": "GloVe-100 + ELMo-small-768",
+  "embedding_dim": 868,
+  "seed": 0,
+  "target_mode": "independent",
+  "upstream_target_shared_weights_observed": true,
+  "python": "3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)]",
+  "tensorflow": "1.14.0",
+  "keras": "2.3.1",
+  "torch": "1.5.0+cpu",
+  "device": "CPU",
+  "num_words": 500,
+  "batch_size": 4,
+  "dataset_documents": {
+    "train": [
+      "000_English_Walnut_Pie",
+      "001_Broccoli_Cheese_Crepes",
+      "002_Cake_Doughnuts",
+      "003_Basil_Burgers",
+      "004_Dads_BBQ_Roast",
+      "005_Broiled_Slow_Roasted_Butterflied_Leg_of_Lamb_With_Cumin_and_Garlic",
+      "006_Cinnamon_Bread_I",
+      "007_Baked_Chicken_Breasts_Supreme"
+    ],
+    "dev": [
+      "126_Apple_Pie_2",
+      "127_Cabbage_Rolls_II"
+    ],
+    "test": [
+      "182_BBQ_Chuck_Roast",
+      "183_Armadillo_Eggs"
+    ]
+  },
+  "dataset_sha256": {
+    "train": "01c3a4186b6d09a2c4ab21c5da96813943944c1a9dfb6f13dd918ec0e8d41999",
+    "dev": "34d0047a1bb28cd13e3ce3258697ad93527d1df0533bda653574b6a8f8793187",
+    "test": "7867a04d752fa8c41f61dc4f664bccb7da730cac75c896507f3c0e2bc35f4c30"
+  },
+  "examples": {
+    "train": 8,
+    "dev": 2,
+    "test": 2
+  },
+  "skipped_examples": {
+    "train": [],
+    "dev": [],
+    "test": []
+  },
+  "training_steps": 128,
+  "optimizer_updates": 124,
+  "loss_first": 1251.2540283203125,
+  "loss_last": 2594.345703125,
+  "losses_finite": true,
+  "weights_changed": true,
+  "checkpoint_reload_predictions_equal": true,
+  "pretrained_compatibility": {
+    "path": "C:\\anu\\llm-action-extraction\\data\\ceasdrl\\weights\\cooking_act_elmo.h5",
+    "q_shape": [
+      1,
+      2
+    ],
+    "finite": true,
+    "purpose": "Weight/architecture compatibility only; not a benchmark score."
+  },
+  "dev": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "right": 0,
+    "predicted": 0,
+    "gold": 17
+  },
+  "test": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "right": 0,
+    "predicted": 0,
+    "gold": 24
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "step": 128,
+      "dev": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "right": 0,
+        "predicted": 0,
+        "gold": 17
+      }
+    }
+  ],
+  "argument_evaluation": null,
+  "train_and_eval_seconds": 66.78881239891052,
+  "total_seconds": 92.2226619720459,
+  "deviations": [
+    "Independent target network by default",
+    "Document-disjoint official RISeC splits",
+    "Compact replay with explicit pre/post states",
+    "Batch size 4 for local smoke",
+    "Whole-example contextual embedding",
+    "First-token span projection",
+    "Centered argument context; implicit arguments excluded and recorded",
+    "No inferred ES/OP/EX labels; every annotated occurrence is an extraction target"
+  ]
+}

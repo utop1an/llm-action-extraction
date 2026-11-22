@@ -1,0 +1,119 @@
+{
+  "note": "Raw denominator deductions before the original evaluator lower-bound clamp; not independently adjudicated annotation errors.",
+  "rows": [
+    {
+      "dataset": "win2k",
+      "condition": "minimal",
+      "gold_deductions_each_run": [
+        613,
+        619,
+        623
+      ],
+      "prediction_deductions_each_run": [
+        71,
+        67,
+        74
+      ],
+      "affected_matched_actions_each_run": [
+        513,
+        513,
+        526
+      ]
+    },
+    {
+      "dataset": "win2k",
+      "condition": "full",
+      "gold_deductions_each_run": [
+        630,
+        631,
+        647
+      ],
+      "prediction_deductions_each_run": [
+        7,
+        14,
+        17
+      ],
+      "affected_matched_actions_each_run": [
+        471,
+        477,
+        491
+      ]
+    },
+    {
+      "dataset": "cooking",
+      "condition": "minimal",
+      "gold_deductions_each_run": [
+        496,
+        489,
+        498
+      ],
+      "prediction_deductions_each_run": [
+        108,
+        95,
+        97
+      ],
+      "affected_matched_actions_each_run": [
+        480,
+        468,
+        474
+      ]
+    },
+    {
+      "dataset": "cooking",
+      "condition": "full",
+      "gold_deductions_each_run": [
+        475,
+        495,
+        489
+      ],
+      "prediction_deductions_each_run": [
+        400,
+        389,
+        402
+      ],
+      "affected_matched_actions_each_run": [
+        690,
+        686,
+        693
+      ]
+    },
+    {
+      "dataset": "wikihow",
+      "condition": "minimal",
+      "gold_deductions_each_run": [
+        1449,
+        1465,
+        1432
+      ],
+      "prediction_deductions_each_run": [
+        53,
+        57,
+        44
+      ],
+      "affected_matched_actions_each_run": [
+        1186,
+        1209,
+        1171
+      ]
+    },
+    {
+      "dataset": "wikihow",
+      "condition": "full",
+      "gold_deductions_each_run": [
+        1431,
+        1412,
+        1441
+      ],
+      "prediction_deductions_each_run": [
+        285,
+        294,
+        296
+      ],
+      "affected_matched_actions_each_run": [
+        1346,
+        1338,
+        1368
+      ]
+    }
+  ]
+}

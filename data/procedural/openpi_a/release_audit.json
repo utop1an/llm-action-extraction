@@ -1,0 +1,32 @@
+{
+  "silver_rows": 515,
+  "silver_source_documents": 327,
+  "silver_unique_steps": 515,
+  "topics": {
+    "Sports and Fitness": 61,
+    "Hobbies and Crafts": 116,
+    "Home and Garden": 141,
+    "Cars & Other Vehicles": 34,
+    "Food and Entertaining": 163
+  },
+  "validation_units": 452,
+  "annotator_actions": {
+    "A": {
+      "confirm": 446,
+      "trash": 6
+    },
+    "B": {
+      "confirm": 440,
+      "trash": 12
+    }
+  },
+  "changed_trigger_among_nontrashed": {
+    "A": 109,
+    "B": 104
+  },
+  "common_units": 452,
+  "both_not_trashed": 439,
+  "identical_selected_span_objects_among_retained": 406,
+  "scope": "Silver file is one selected trigger per step; validation units associate entities and state changes. Neither supplies all planning-action occurrences.",
+  "adjudication": "None. Original responses retained. Object equality here is an audit count, not a reproduction of the paper agreement metric."
+}

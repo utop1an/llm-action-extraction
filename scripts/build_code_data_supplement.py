@@ -15,6 +15,7 @@ from pathlib import Path
 
 
 METHODS = ("gpt3_to_plan", "nl2p_1", "nl2p_1_ablation", "nl2p_1_coref")
+MODELS = ("gemma3-12b", "gemma3-27b", "llama3-70b", "gpt-5.4", "gpt-5.4-mini")
 DATASETS = ("cooking", "wikihow", "win2k")
 DATA_FILES = tuple(f"{name}_labeled_text_data.pkl" for name in DATASETS)
 COREF_FILES = tuple(f"{name}_llm_coref.jsonl" for name in DATASETS)
@@ -41,25 +42,9 @@ def copy_python_tree(source: Path, destination: Path) -> None:
         copy_file(path, destination / path.relative_to(source))
 
 
-def build_expected_metrics(source_results: Path, output_path: Path) -> int:
-    rows: list[dict[str, str]] = []
-    fieldnames: list[str] | None = None
-    for method in METHODS:
-        for path in sorted((source_results / method).glob("*/evaluation_result.csv")):
-            with path.open("r", encoding="utf-8", newline="") as handle:
-                reader = csv.DictReader(handle)
-                if fieldnames is None:
-                    fieldnames = list(reader.fieldnames or [])
-                rows.extend(row for row in reader if row.get("solver") == method and row.get("model") == path.parent.name and row.get("dataset") in DATASETS)
-    if not fieldnames:
-        raise FileNotFoundError("No evaluation_result.csv files were found")
-    rows.sort(key=lambda row: (row["solver"], row["model"], row["dataset"]))
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-    return len(rows)
+def metric_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        return list(csv.DictReader(handle))
 
 
 def scan_archive_tree(root: Path) -> list[str]:
@@ -163,37 +148,36 @@ def main() -> None:
         "reproduce_supplement.py",
     ):
         copy_file(root / "scripts" / filename, output_dir / "scripts" / filename)
-    for path in sorted(path for path in (root / "tests").glob("test_*.py") if path.name != "test_prompts.py"):
-        copy_file(path, output_dir / "tests" / path.name)
+    for filename in (
+        "test_batch_evaluate.py",
+        "test_evaluation.py",
+        "test_ollama_client.py",
+        "test_openai_batch_experiment.py",
+    ):
+        copy_file(root / "tests" / filename, output_dir / "tests" / filename)
     for filename in DATA_FILES:
         copy_file(root / "data/easdrl" / filename, output_dir / "data/easdrl" / filename)
     for filename in COREF_FILES:
         copy_file(root / "data/coref_llm" / filename, output_dir / "data/coref_llm" / filename)
 
-    model_count = 0
-    prediction_count = 0
-    for method in METHODS:
-        method_dir = root / "results" / method
-        for model_dir in sorted(path for path in method_dir.iterdir() if path.is_dir()):
-            copied_here = 0
-            for path in sorted(model_dir.glob("*.json")):
-                if path.name.endswith("_summary.json"):
-                    continue
-                if not path.name.startswith(tuple(f"{name}_" for name in DATASETS)):
-                    continue
-                copy_file(path, output_dir / "results" / method / model_dir.name / path.name)
-                prediction_count += 1
-                copied_here += 1
-            if copied_here:
-                if copied_here != len(DATASETS):
-                    raise ValueError(f"Expected three result JSON files in {model_dir}, found {copied_here}")
-                model_count += 1
+    frozen_table = root / "supplement/expected_metrics.csv"
+    frozen = metric_rows(frozen_table)
+    keys = {(row["solver"], row["model"], row["dataset"]) for row in frozen}
+    expected_keys = {(method, model, dataset) for method in METHODS for model in MODELS for dataset in DATASETS}
+    if keys != expected_keys or len(frozen) != len(expected_keys):
+        raise ValueError("The frozen table must contain one row for every method, model and dataset")
 
-    metric_count = build_expected_metrics(root / "results", output_dir / "expected_metrics.csv")
-    if model_count != 20 or prediction_count != 60 or metric_count != 60:
-        raise ValueError(
-            f"Incomplete matrix: model_dirs={model_count}, predictions={prediction_count}, metrics={metric_count}"
-        )
+    for method in METHODS:
+        for model in MODELS:
+            directory = Path("results") / method / model
+            expected = [row for row in frozen if row["solver"] == method and row["model"] == model]
+            actual = metric_rows(root / directory / "evaluation_result.csv")
+            if sorted(actual, key=lambda r: r["dataset"]) != sorted(expected, key=lambda r: r["dataset"]):
+                raise ValueError(f"Saved metrics differ from the frozen table in {directory}")
+            for dataset in DATASETS:
+                prediction = directory / f"{dataset}_{method}_{model}.json"
+                copy_file(root / prediction, output_dir / prediction)
+    copy_file(frozen_table, output_dir / "expected_metrics.csv")
 
     package_info = {
         "archive_type": "anonymous code and data supplement",
@@ -201,9 +185,9 @@ def main() -> None:
         "python_recommended": "3.12",
         "methods": list(METHODS),
         "datasets": list(DATASETS),
-        "method_model_configurations": model_count,
-        "prediction_files": prediction_count,
-        "expected_metric_rows": metric_count,
+        "method_model_configurations": len(METHODS) * len(MODELS),
+        "prediction_files": len(expected_keys),
+        "expected_metric_rows": len(frozen),
     }
     (output_dir / "PACKAGE_INFO.json").write_text(
         json.dumps(package_info, indent=2) + "\n", encoding="utf-8"

@@ -1,0 +1,16 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	butter	pork chops	black pepper	garlic powder	whipping cream	blue cheese	sauce	large skillet	plate	stove		Notes		Action_start	Action_end	Sentence_Id
+Melt	"Melt butter in a large skillet, over medium heat."	1							1		1				0	4	0
+Season	Season the pork chops with black pepper and garlic powder.	1	1	1	1										50	56	1
+Fry	"Fry the chops in butter until no longer pink and the juices run clear, about 20 to 25 minutes."	1	1	1	1				1						109	112	2
+Turn	Turn occasionally to brown evenly.	1	1	1	1										204	208	3
+Remove	Remove chops to a plate and keep warm.		1	1	1					1					239	245	4
+keep	Remove chops to a plate and keep warm.		1	1	1					1					267	271	4
+Stir	"Stir the whipping cream into the skillet, loosening any bits of meat stuck to the bottom."					1		1	1						278	282	5
+loosening	"Stir the whipping cream into the skillet, loosening any bits of meat stuck to the bottom."					1		1	1						320	329	5
+Stir	Stir in blue cheese.					1	1	1	1						368	372	6
+Cook	"Cook, stirring constantly until sauce thickens, about 5 minutes."			1	1	1	1	1	1		1				389	393	7
+stirring	"Cook, stirring constantly until sauce thickens, about 5 minutes."			1	1	1	1	1	1		1				395	403	7
+Pour	Pour sauce over warm pork chops.		1	1	1	1	1	1		1					454	458	8
+Duplicate of: 																	
+Annotator added: 											1						

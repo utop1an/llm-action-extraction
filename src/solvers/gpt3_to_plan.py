@@ -1,6 +1,7 @@
 
 import json
 import re
+import random
 from .solver import Solver
 from src.llm import generate_prompt, generate_responses
 
@@ -8,11 +9,29 @@ class GPT3ToPlan(Solver):
 
     prompt_name = "gpt3_to_plan"
 
-    def __init__(self, datasets, model_name = 'gpt-4o-mini'):
+    def __init__(self, datasets, model_name = 'gpt-4o-mini', example_selection='op_ex', selection_seed=None):
+        if example_selection not in {'op_ex', 'random'}:
+            raise ValueError(f'Unknown example selection: {example_selection}')
+        if example_selection == 'random' and selection_seed is None:
+            raise ValueError('Random example selection requires an explicit selection_seed')
         self.model_name = model_name
         self.datasets = datasets
-        self.ranked_example_indices = self.rank_examples(datasets)
+        self.example_selection = example_selection
+        self.selection_seed = selection_seed
+        if example_selection == 'random':
+            self.ranked_example_indices = {}
+            for ds_name, dataset in datasets.items():
+                indices = list(range(len(dataset)))
+                # A separate deterministic permutation per domain, independent of
+                # model, dataset iteration order, and annotations.
+                random.Random(f'{selection_seed}:{ds_name}').shuffle(indices)
+                self.ranked_example_indices[ds_name] = indices
+        else:
+            self.ranked_example_indices = self.rank_examples(datasets)
         self.examples = self.generate_examples(datasets)
+
+    def selected_example_indices(self, ds_name, doc_id=None):
+        return [i for i in self.ranked_example_indices.get(ds_name, []) if i != doc_id][:2]
 
     def rank_examples(self, datasets):
         ranked = {}
@@ -55,10 +74,7 @@ class GPT3ToPlan(Solver):
         examples = {}
         for ds_name, dataset in datasets.items():
             excluded = exclude_doc_ids.get(ds_name)
-            top2_indices = [
-                i for i in self.ranked_example_indices.get(ds_name, [])
-                if i != excluded
-            ][:2]
+            top2_indices = self.selected_example_indices(ds_name, excluded)
             example_text = ""
             for i in top2_indices:
                 example_text += self.format_example(dataset[i])

@@ -1,0 +1,10603 @@
+[
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 7,
+    "action_token": "mix",
+    "argument_indices": [
+      3,
+      8,
+      11,
+      14,
+      16,
+      18
+    ],
+    "argument_first_tokens": [
+      "a",
+      "barbeque",
+      "teriyaki",
+      "beer",
+      "garlic",
+      "ginger"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 30,
+    "action_token": "Place",
+    "argument_indices": [
+      31,
+      34
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 37,
+    "action_token": "cover",
+    "argument_indices": [
+      41
+    ],
+    "argument_first_tokens": [
+      "six"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 39,
+    "action_token": "refrigerate",
+    "argument_indices": [
+      41
+    ],
+    "argument_first_tokens": [
+      "six"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 44,
+    "action_token": "turning",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 49,
+    "action_token": "Preheat",
+    "argument_indices": [
+      50,
+      54
+    ],
+    "argument_first_tokens": [
+      "an",
+      "indirect"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 59,
+    "action_token": "Remove",
+    "argument_indices": [
+      60,
+      63
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 67,
+    "action_token": "pour",
+    "argument_indices": [
+      68,
+      71
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 79,
+    "action_token": "boil",
+    "argument_indices": [
+      84
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 82,
+    "action_token": "cook",
+    "argument_indices": [
+      84
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 89,
+    "action_token": "Set",
+    "argument_indices": [
+      94
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 100,
+    "action_token": "Thread",
+    "argument_indices": [
+      101,
+      104
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 114,
+    "action_token": "Cook",
+    "argument_indices": [
+      115,
+      118
+    ],
+    "argument_first_tokens": [
+      "the",
+      "two"
+    ]
+  },
+  {
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "action_index": 143,
+    "action_token": "Baste",
+    "argument_indices": [
+      146
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "325",
+      "165"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 17,
+    "action_token": "grease",
+    "argument_indices": [
+      18
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 25,
+    "action_token": "Cut",
+    "argument_indices": [
+      26,
+      29
+    ],
+    "argument_first_tokens": [
+      "a",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 35,
+    "action_token": "Remove",
+    "argument_indices": [
+      38,
+      40
+    ],
+    "argument_first_tokens": [
+      "seeds",
+      "pulp"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 37,
+    "action_token": "discard",
+    "argument_indices": [
+      38,
+      40
+    ],
+    "argument_first_tokens": [
+      "seeds",
+      "pulp"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 49,
+    "action_token": "mix",
+    "argument_indices": [
+      50,
+      52,
+      55,
+      58
+    ],
+    "argument_first_tokens": [
+      "sausage",
+      "baking",
+      "Cheddar",
+      "crushed"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 68,
+    "action_token": "Stuff",
+    "argument_indices": [
+      69,
+      71
+    ],
+    "argument_first_tokens": [
+      "jalapenos",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 79,
+    "action_token": "Shape",
+    "argument_indices": [
+      80,
+      83
+    ],
+    "argument_first_tokens": [
+      "sausage",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 91,
+    "action_token": "Arrange",
+    "argument_indices": [
+      92,
+      95
+    ],
+    "argument_first_tokens": [
+      "jalapeno",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "183_Armadillo_Eggs",
+    "action_index": 102,
+    "action_token": "Bake",
+    "argument_indices": [
+      103,
+      106
+    ],
+    "argument_first_tokens": [
+      "25",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3
+    ],
+    "argument_first_tokens": [
+      "your"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 14,
+    "action_token": "stir",
+    "argument_indices": [
+      16,
+      19,
+      21,
+      23
+    ],
+    "argument_first_tokens": [
+      "the",
+      "tomato",
+      "celery",
+      "bell"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 35,
+    "action_token": "Arrange",
+    "argument_indices": [
+      36,
+      38,
+      40
+    ],
+    "argument_first_tokens": [
+      "slices",
+      "bread",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 49,
+    "action_token": "Top",
+    "argument_indices": [
+      50,
+      53
+    ],
+    "argument_first_tokens": [
+      "each",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 60,
+    "action_token": "spreading",
+    "argument_indices": [
+      63
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 68,
+    "action_token": "Broil",
+    "argument_indices": [
+      70
+    ],
+    "argument_first_tokens": [
+      "4"
+    ]
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 82,
+    "action_token": "Watch",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "184_Crunchy_Cheese_Sandwiches",
+    "action_index": 90,
+    "action_token": "Serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 10,
+    "action_token": "brown",
+    "argument_indices": [
+      11,
+      13,
+      15,
+      17
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "potatoes",
+      "oil",
+      "10-15"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 22,
+    "action_token": "Remove",
+    "argument_indices": [
+      23,
+      25
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "potatoes"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 27,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 32,
+    "action_token": "Discard",
+    "argument_indices": [
+      33,
+      35
+    ],
+    "argument_first_tokens": [
+      "all",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 44,
+    "action_token": "add",
+    "argument_indices": [
+      45,
+      47,
+      49
+    ],
+    "argument_first_tokens": [
+      "cream",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 51,
+    "action_token": "stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 57,
+    "action_token": "Return",
+    "argument_indices": [
+      58,
+      60,
+      62
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "potatoes",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 66,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      68,
+      70
+    ],
+    "argument_first_tokens": [
+      "onions",
+      "dill"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 74,
+    "action_token": "Cover",
+    "argument_indices": [
+      78
+    ],
+    "argument_first_tokens": [
+      "50-60"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 76,
+    "action_token": "simmer",
+    "argument_indices": [
+      78
+    ],
+    "argument_first_tokens": [
+      "50-60"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 98,
+    "action_token": "remove",
+    "argument_indices": [
+      99,
+      101,
+      103
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "potatoes",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 107,
+    "action_token": "keep",
+    "argument_indices": [
+      108
+    ],
+    "argument_first_tokens": [
+      "warm"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 112,
+    "action_token": "Add",
+    "argument_indices": [
+      113,
+      116
+    ],
+    "argument_first_tokens": [
+      "sour",
+      "pan"
+    ]
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 118,
+    "action_token": "stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 122,
+    "action_token": "heat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "185_Dilly_Chicken_and_Potatoes",
+    "action_index": 127,
+    "action_token": "Serve",
+    "argument_indices": [
+      129
+    ],
+    "argument_first_tokens": [
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 16,
+    "action_token": "Beat",
+    "argument_indices": [
+      17,
+      20,
+      22
+    ],
+    "argument_first_tokens": [
+      "the",
+      "margarine",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 34,
+    "action_token": "Blend",
+    "argument_indices": [
+      36
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 39,
+    "action_token": "mixing",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 44,
+    "action_token": "Mix",
+    "argument_indices": [
+      46,
+      49,
+      52
+    ],
+    "argument_first_tokens": [
+      "the",
+      "baking",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 60,
+    "action_token": "Reserve",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 76,
+    "action_token": "Stir",
+    "argument_indices": [
+      77,
+      81
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 87,
+    "action_token": "Spread",
+    "argument_indices": [
+      88,
+      91
+    ],
+    "argument_first_tokens": [
+      "the",
+      "one"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 99,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      100,
+      104
+    ],
+    "argument_first_tokens": [
+      "the",
+      "top"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 108,
+    "action_token": "Bake",
+    "argument_indices": [
+      110,
+      114
+    ],
+    "argument_first_tokens": [
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 130,
+    "action_token": "Cool",
+    "argument_indices": [
+      132,
+      134
+    ],
+    "argument_first_tokens": [
+      "pan",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "186_Candy_Bar_Squares",
+    "action_index": 138,
+    "action_token": "cut",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 2,
+    "action_token": "Peel",
+    "argument_indices": [
+      5,
+      12
+    ],
+    "argument_first_tokens": [
+      "apples",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 4,
+    "action_token": "dice",
+    "argument_indices": [
+      5,
+      10,
+      12
+    ],
+    "argument_first_tokens": [
+      "apples",
+      "sugar",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 9,
+    "action_token": "Add",
+    "argument_indices": [
+      10,
+      12
+    ],
+    "argument_first_tokens": [
+      "sugar",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 16,
+    "action_token": "Cook",
+    "argument_indices": [
+      18,
+      21
+    ],
+    "argument_first_tokens": [
+      "a",
+      "low"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 26,
+    "action_token": "Cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 31,
+    "action_token": "mash",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "fork"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 42,
+    "action_token": "Sift",
+    "argument_indices": [
+      43,
+      45
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 50,
+    "action_token": "Cut",
+    "argument_indices": [
+      52
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 57,
+    "action_token": "Add",
+    "argument_indices": [
+      58,
+      62
+    ],
+    "argument_first_tokens": [
+      "water",
+      "fork"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 60,
+    "action_token": "mix",
+    "argument_indices": [
+      62
+    ],
+    "argument_first_tokens": [
+      "fork"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 66,
+    "action_token": "Roll",
+    "argument_indices": [
+      70
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 82,
+    "action_token": "Cut",
+    "argument_indices": [
+      84
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 101,
+    "action_token": "place",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 109,
+    "action_token": "Moisten",
+    "argument_indices": [
+      110,
+      112
+    ],
+    "argument_first_tokens": [
+      "edges",
+      "cold"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 115,
+    "action_token": "fold",
+    "argument_indices": [
+      120
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 117,
+    "action_token": "press",
+    "argument_indices": [
+      118,
+      120
+    ],
+    "argument_first_tokens": [
+      "edge",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 125,
+    "action_token": "Heat",
+    "argument_indices": [
+      126,
+      128,
+      132
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "a",
+      "medium-high"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 137,
+    "action_token": "Fry",
+    "argument_indices": [
+      138,
+      140
+    ],
+    "argument_first_tokens": [
+      "pies",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 154,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 161,
+    "action_token": "Drain",
+    "argument_indices": [
+      163
+    ],
+    "argument_first_tokens": [
+      "paper"
+    ]
+  },
+  {
+    "doc_id": "187_Fried_Apple_Pies",
+    "action_index": 168,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      170
+    ],
+    "argument_first_tokens": [
+      "confectioners"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 10,
+    "action_token": "combine",
+    "argument_indices": [
+      11,
+      14,
+      16,
+      19
+    ],
+    "argument_first_tokens": [
+      "the",
+      "rice",
+      "Italian",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 24,
+    "action_token": "Cover",
+    "argument_indices": [
+      28
+    ],
+    "argument_first_tokens": [
+      "375"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 26,
+    "action_token": "bake",
+    "argument_indices": [
+      28,
+      32
+    ],
+    "argument_first_tokens": [
+      "375",
+      "10"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 37,
+    "action_token": "Add",
+    "argument_indices": [
+      38,
+      41,
+      44
+    ],
+    "argument_first_tokens": [
+      "the",
+      "Parmesan",
+      "half"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 51,
+    "action_token": "Top",
+    "argument_indices": [
+      53
+    ],
+    "argument_first_tokens": [
+      "fish"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 56,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      58
+    ],
+    "argument_first_tokens": [
+      "paprika"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 62,
+    "action_token": "Cover",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "20-25"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 64,
+    "action_token": "bake",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "20-25"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 80,
+    "action_token": "Uncover",
+    "argument_indices": [
+      84,
+      87
+    ],
+    "argument_first_tokens": [
+      "cheddar",
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 82,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      84,
+      87
+    ],
+    "argument_first_tokens": [
+      "cheddar",
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "188_Baked_Fish_and_Rice_2",
+    "action_index": 92,
+    "action_token": "Return",
+    "argument_indices": [
+      94,
+      97
+    ],
+    "argument_first_tokens": [
+      "the",
+      "3"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 16,
+    "action_token": "Grease",
+    "argument_indices": [
+      19
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 18,
+    "action_token": "flour",
+    "argument_indices": [
+      19
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 26,
+    "action_token": "Sift",
+    "argument_indices": [
+      28,
+      31,
+      34,
+      36
+    ],
+    "argument_first_tokens": [
+      "the",
+      "baking",
+      "cinnamon",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 40,
+    "action_token": "Combine",
+    "argument_indices": [
+      41,
+      44
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 48,
+    "action_token": "set",
+    "argument_indices": [
+      54
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 58,
+    "action_token": "mix",
+    "argument_indices": [
+      60,
+      64,
+      66,
+      68
+    ],
+    "argument_first_tokens": [
+      "the",
+      "oil",
+      "eggs",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 72,
+    "action_token": "Stir",
+    "argument_indices": [
+      74
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 85,
+    "action_token": "Fold",
+    "argument_indices": [
+      87
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 92,
+    "action_token": "Pour",
+    "argument_indices": [
+      93,
+      95
+    ],
+    "argument_first_tokens": [
+      "batter",
+      "prepared"
+    ]
+  },
+  {
+    "doc_id": "189_Fresh_Apple_Walnut_Cake",
+    "action_index": 100,
+    "action_token": "Bake",
+    "argument_indices": [
+      102,
+      106
+    ],
+    "argument_first_tokens": [
+      "the",
+      "45"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 16,
+    "action_token": "Slice",
+    "argument_indices": [
+      17,
+      21
+    ],
+    "argument_first_tokens": [
+      "the",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 24,
+    "action_token": "saving",
+    "argument_indices": [
+      25
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 30,
+    "action_token": "Hollow",
+    "argument_indices": [
+      32
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 35,
+    "action_token": "leaving",
+    "argument_indices": [
+      36
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 64,
+    "action_token": "Spoon",
+    "argument_indices": [
+      65,
+      67
+    ],
+    "argument_first_tokens": [
+      "mixture",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 70,
+    "action_token": "packing",
+    "argument_indices": [
+      71,
+      76
+    ],
+    "argument_first_tokens": [
+      "it",
+      "bun"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 74,
+    "action_token": "cap",
+    "argument_indices": [
+      76
+    ],
+    "argument_first_tokens": [
+      "bun"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 81,
+    "action_token": "Wrap",
+    "argument_indices": [
+      82,
+      86
+    ],
+    "argument_first_tokens": [
+      "each",
+      "foil"
+    ]
+  },
+  {
+    "doc_id": "190_Chicken_Stuffed_Buns",
+    "action_index": 90,
+    "action_token": "Bake",
+    "argument_indices": [
+      92,
+      95
+    ],
+    "argument_first_tokens": [
+      "preheated",
+      "20"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 8,
+    "action_token": "dissolve",
+    "argument_indices": [
+      9,
+      11
+    ],
+    "argument_first_tokens": [
+      "yeast",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 20,
+    "action_token": "Add",
+    "argument_indices": [
+      21,
+      23,
+      25,
+      27,
+      29
+    ],
+    "argument_first_tokens": [
+      "sugar",
+      "oil",
+      "salt",
+      "rye",
+      "whole"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 42,
+    "action_token": "beat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 48,
+    "action_token": "Add",
+    "argument_indices": [
+      49
+    ],
+    "argument_first_tokens": [
+      "enough"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 61,
+    "action_token": "Turn",
+    "argument_indices": [
+      63
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 67,
+    "action_token": "knead",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 79,
+    "action_token": "Place",
+    "argument_indices": [
+      81
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 85,
+    "action_token": "turning",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 93,
+    "action_token": "Cover",
+    "argument_indices": [
+      98
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 96,
+    "action_token": "rise",
+    "argument_indices": [
+      98
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 110,
+    "action_token": "Punch",
+    "argument_indices": [
+      111
+    ],
+    "argument_first_tokens": [
+      "dough"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 116,
+    "action_token": "Divide",
+    "argument_indices": [
+      118
+    ],
+    "argument_first_tokens": [
+      "half"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 128,
+    "action_token": "flatten",
+    "argument_indices": [
+      129
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 136,
+    "action_token": "Pierce",
+    "argument_indices": [
+      137,
+      142
+    ],
+    "argument_first_tokens": [
+      "each",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 147,
+    "action_token": "Cover",
+    "argument_indices": [
+      152
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 150,
+    "action_token": "rise",
+    "argument_indices": [
+      152
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "191_Dads_Flat_Bread",
+    "action_index": 165,
+    "action_token": "Bake",
+    "argument_indices": [
+      167,
+      171
+    ],
+    "argument_first_tokens": [
+      "375",
+      "25-30"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 2,
+    "action_token": "Butter",
+    "argument_indices": [
+      3
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 11,
+    "action_token": "Arrange",
+    "argument_indices": [
+      12,
+      15,
+      17
+    ],
+    "argument_first_tokens": [
+      "the",
+      "bread",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 27,
+    "action_token": "beat",
+    "argument_indices": [
+      29,
+      31,
+      33,
+      35,
+      37
+    ],
+    "argument_first_tokens": [
+      "eggs",
+      "milk",
+      "cream",
+      "vanilla",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 41,
+    "action_token": "Pour",
+    "argument_indices": [
+      43
+    ],
+    "argument_first_tokens": [
+      "bread"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 46,
+    "action_token": "cover",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 49,
+    "action_token": "refrigerate",
+    "argument_indices": [
+      50
+    ],
+    "argument_first_tokens": [
+      "overnight"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 58,
+    "action_token": "preheat",
+    "argument_indices": [
+      59,
+      61,
+      65
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 77,
+    "action_token": "combine",
+    "argument_indices": [
+      78,
+      80,
+      83
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "brown",
+      "corn"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 86,
+    "action_token": "heat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 92,
+    "action_token": "Pour",
+    "argument_indices": [
+      94,
+      96
+    ],
+    "argument_first_tokens": [
+      "bread",
+      "egg"
+    ]
+  },
+  {
+    "doc_id": "192_Baked_French_Toast_2",
+    "action_index": 101,
+    "action_token": "Bake",
+    "argument_indices": [
+      103
+    ],
+    "argument_first_tokens": [
+      "preheated"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 2,
+    "action_token": "Warm",
+    "argument_indices": [
+      3,
+      8
+    ],
+    "argument_first_tokens": [
+      "1",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 17,
+    "action_token": "Season",
+    "argument_indices": [
+      18,
+      23
+    ],
+    "argument_first_tokens": [
+      "both",
+      "Cajun"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 27,
+    "action_token": "place",
+    "argument_indices": [
+      29
+    ],
+    "argument_first_tokens": [
+      "hot"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 34,
+    "action_token": "Stir",
+    "argument_indices": [
+      36,
+      37
+    ],
+    "argument_first_tokens": [
+      "crushed",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 41,
+    "action_token": "Cook",
+    "argument_indices": [
+      42,
+      43,
+      46
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "5",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 57,
+    "action_token": "Remove",
+    "argument_indices": [
+      58,
+      60
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 62,
+    "action_token": "drain",
+    "argument_indices": [
+      64
+    ],
+    "argument_first_tokens": [
+      "paper"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 67,
+    "action_token": "cool",
+    "argument_indices": [
+      71,
+      76
+    ],
+    "argument_first_tokens": [
+      "dice",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 73,
+    "action_token": "discard",
+    "argument_indices": [
+      74,
+      76
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 85,
+    "action_token": "mix",
+    "argument_indices": [
+      86,
+      90,
+      93,
+      95
+    ],
+    "argument_first_tokens": [
+      "remaining",
+      "balsamic",
+      "mustard",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 108,
+    "action_token": "toss",
+    "argument_indices": [
+      109,
+      112,
+      117
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the",
+      "arugula"
+    ]
+  },
+  {
+    "doc_id": "193_Fab_Summer_Blackened_Chicken_Salad",
+    "action_index": 129,
+    "action_token": "Top",
+    "argument_indices": [
+      131
+    ],
+    "argument_first_tokens": [
+      "diced"
+    ]
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 9,
+    "action_token": "combine",
+    "argument_indices": [
+      10,
+      13,
+      15,
+      17,
+      19
+    ],
+    "argument_first_tokens": [
+      "the",
+      "potatoes",
+      "onion",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 23,
+    "action_token": "Pour",
+    "argument_indices": [
+      24,
+      26
+    ],
+    "argument_first_tokens": [
+      "broth",
+      "all"
+    ]
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 30,
+    "action_token": "Place",
+    "argument_indices": [
+      31,
+      33
+    ],
+    "argument_first_tokens": [
+      "sausage",
+      "top"
+    ]
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 44,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 50,
+    "action_token": "Cover",
+    "argument_indices": [
+      54,
+      56
+    ],
+    "argument_first_tokens": [
+      "low",
+      "8-9"
+    ]
+  },
+  {
+    "doc_id": "194_Cabbage_Kielbasa_Supper",
+    "action_index": 52,
+    "action_token": "cook",
+    "argument_indices": [
+      54,
+      56
+    ],
+    "argument_first_tokens": [
+      "low",
+      "8-9"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 2,
+    "action_token": "Crush",
+    "argument_indices": [
+      3
+    ],
+    "argument_first_tokens": [
+      "half"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 16,
+    "action_token": "Combine",
+    "argument_indices": [
+      17,
+      19
+    ],
+    "argument_first_tokens": [
+      "crumbs",
+      "melted"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 37,
+    "action_token": "Stand",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 47,
+    "action_token": "Spread",
+    "argument_indices": [
+      48
+    ],
+    "argument_first_tokens": [
+      "3"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 59,
+    "action_token": "Freeze",
+    "argument_indices": [
+      60
+    ],
+    "argument_first_tokens": [
+      "15"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 67,
+    "action_token": "soften",
+    "argument_indices": [
+      68,
+      74
+    ],
+    "argument_first_tokens": [
+      "1",
+      "microwave"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 86,
+    "action_token": "spread",
+    "argument_indices": [
+      87,
+      91
+    ],
+    "argument_first_tokens": [
+      "softened",
+      "fudge"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 96,
+    "action_token": "Freeze",
+    "argument_indices": [
+      97
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 102,
+    "action_token": "Scoop",
+    "argument_indices": [
+      103
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 111,
+    "action_token": "arrange",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 120,
+    "action_token": "Freeze",
+    "argument_indices": [
+      124
+    ],
+    "argument_first_tokens": [
+      "4"
+    ]
+  },
+  {
+    "doc_id": "195_Chocolate_Chip_Cookie_Ice_Cream_Cake",
+    "action_index": 134,
+    "action_token": "garnish",
+    "argument_indices": [
+      136
+    ],
+    "argument_first_tokens": [
+      "remainder"
+    ]
+  },
+  {
+    "doc_id": "196_Absolutely_Awesome_BBQ_Sauce",
+    "action_index": 9,
+    "action_token": "mix",
+    "argument_indices": [
+      10,
+      14,
+      17,
+      19
+    ],
+    "argument_first_tokens": [
+      "the",
+      "chile",
+      "rum",
+      "soy"
+    ]
+  },
+  {
+    "doc_id": "196_Absolutely_Awesome_BBQ_Sauce",
+    "action_index": 37,
+    "action_token": "Simmer",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "196_Absolutely_Awesome_BBQ_Sauce",
+    "action_index": 41,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "196_Absolutely_Awesome_BBQ_Sauce",
+    "action_index": 46,
+    "action_token": "Cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "196_Absolutely_Awesome_BBQ_Sauce",
+    "action_index": 49,
+    "action_token": "refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 7,
+    "action_token": "stir",
+    "argument_indices": [
+      3,
+      9,
+      12,
+      15,
+      18
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the",
+      "lime",
+      "orange",
+      "pineapple"
+    ]
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 29,
+    "action_token": "Mix",
+    "argument_indices": [
+      31
+    ],
+    "argument_first_tokens": [
+      "hot"
+    ]
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 39,
+    "action_token": "Place",
+    "argument_indices": [
+      40,
+      42,
+      46
+    ],
+    "argument_first_tokens": [
+      "one",
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 50,
+    "action_token": "keep",
+    "argument_indices": [
+      51
+    ],
+    "argument_first_tokens": [
+      "it"
+    ]
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 56,
+    "action_token": "Serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "197_Citrus_Infused_Guacamole",
+    "action_index": 60,
+    "action_token": "refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 2,
+    "action_token": "Measure",
+    "argument_indices": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "sugar",
+      "baking",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 22,
+    "action_token": "Mix",
+    "argument_indices": [
+      23
+    ],
+    "argument_first_tokens": [
+      "thoroughly"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 26,
+    "action_token": "make",
+    "argument_indices": [
+      27,
+      30
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 35,
+    "action_token": "Beat",
+    "argument_indices": [
+      36,
+      39
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 47,
+    "action_token": "Mix",
+    "argument_indices": [
+      49,
+      52,
+      55
+    ],
+    "argument_first_tokens": [
+      "cooking",
+      "milk",
+      "bananas"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 59,
+    "action_token": "Pour",
+    "argument_indices": [
+      60,
+      62
+    ],
+    "argument_first_tokens": [
+      "mixture",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 67,
+    "action_token": "Stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 74,
+    "action_token": "Fill",
+    "argument_indices": [
+      75
+    ],
+    "argument_first_tokens": [
+      "greased"
+    ]
+  },
+  {
+    "doc_id": "198_Banana_Chip_Muffins_I",
+    "action_index": 85,
+    "action_token": "Bake",
+    "argument_indices": [
+      87,
+      91
+    ],
+    "argument_first_tokens": [
+      "400",
+      "205"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 2,
+    "action_token": "Melt",
+    "argument_indices": [
+      3,
+      6,
+      10
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 15,
+    "action_token": "Stir",
+    "argument_indices": [
+      17,
+      20
+    ],
+    "argument_first_tokens": [
+      "the",
+      "onion"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 23,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 29,
+    "action_token": "Pour",
+    "argument_indices": [
+      30,
+      32
+    ],
+    "argument_first_tokens": [
+      "water",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 37,
+    "action_token": "Mix",
+    "argument_indices": [
+      39,
+      41,
+      43,
+      46
+    ],
+    "argument_first_tokens": [
+      "potatoes",
+      "carrots",
+      "asparagus",
+      "rice"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 50,
+    "action_token": "Season",
+    "argument_indices": [
+      52
+    ],
+    "argument_first_tokens": [
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 59,
+    "action_token": "boil",
+    "argument_indices": [
+      62
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 61,
+    "action_token": "reduce",
+    "argument_indices": [
+      62,
+      66
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "30"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 65,
+    "action_token": "simmer",
+    "argument_indices": [
+      66,
+      72
+    ],
+    "argument_first_tokens": [
+      "30",
+      "rice"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 78,
+    "action_token": "Stir",
+    "argument_indices": [
+      79,
+      81,
+      84
+    ],
+    "argument_first_tokens": [
+      "spinach",
+      "heavy",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "199_French_Spring_Soup",
+    "action_index": 90,
+    "action_token": "cooking",
+    "argument_indices": [
+      92
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "375",
+      "190"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 16,
+    "action_token": "Spray",
+    "argument_indices": [
+      17,
+      21
+    ],
+    "argument_first_tokens": [
+      "9x13",
+      "cooking"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 26,
+    "action_token": "Dump",
+    "argument_indices": [
+      27
+    ],
+    "argument_first_tokens": [
+      "cherry"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 33,
+    "action_token": "spread",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 38,
+    "action_token": "Repeat",
+    "argument_indices": [
+      40
+    ],
+    "argument_first_tokens": [
+      "cherries"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 47,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      48,
+      51
+    ],
+    "argument_first_tokens": [
+      "cake",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 60,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      62
+    ],
+    "argument_first_tokens": [
+      "chopped"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 67,
+    "action_token": "Distribute",
+    "argument_indices": [
+      68,
+      72
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "200_Black_Forest_Dump_Cake_II",
+    "action_index": 77,
+    "action_token": "Bake",
+    "argument_indices": [
+      79,
+      83
+    ],
+    "argument_first_tokens": [
+      "the",
+      "45"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 2,
+    "action_token": "Set",
+    "argument_indices": [
+      3,
+      6
+    ],
+    "argument_first_tokens": [
+      "asparagus",
+      "paper"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 20,
+    "action_token": "mix",
+    "argument_indices": [
+      22,
+      25,
+      27
+    ],
+    "argument_first_tokens": [
+      "the",
+      "onion",
+      "seasoning"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 32,
+    "action_token": "Remove",
+    "argument_indices": [
+      33,
+      35
+    ],
+    "argument_first_tokens": [
+      "crusts",
+      "bread"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 39,
+    "action_token": "spread",
+    "argument_indices": [
+      40,
+      44
+    ],
+    "argument_first_tokens": [
+      "mayonnaise",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 49,
+    "action_token": "Place",
+    "argument_indices": [
+      50,
+      53
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 56,
+    "action_token": "roll",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 61,
+    "action_token": "Cut",
+    "argument_indices": [
+      62,
+      65
+    ],
+    "argument_first_tokens": [
+      "each",
+      "half"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 68,
+    "action_token": "arrange",
+    "argument_indices": [
+      70
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 76,
+    "action_token": "Cover",
+    "argument_indices": [
+      78
+    ],
+    "argument_first_tokens": [
+      "plastic"
+    ]
+  },
+  {
+    "doc_id": "201_Asparagus_Sandwiches",
+    "action_index": 82,
+    "action_token": "refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      3,
+      8,
+      11,
+      13,
+      16,
+      19
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the",
+      "garlic",
+      "lemon",
+      "sour",
+      "cucumber"
+    ]
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 23,
+    "action_token": "Mash",
+    "argument_indices": [
+      25
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 32,
+    "action_token": "Season",
+    "argument_indices": [
+      34,
+      38,
+      40,
+      42
+    ],
+    "argument_first_tokens": [
+      "red",
+      "cilantro",
+      "mint",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 47,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 52,
+    "action_token": "Cover",
+    "argument_indices": [
+      56
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "202_Avocado_Tzatziki",
+    "action_index": 54,
+    "action_token": "refrigerate",
+    "argument_indices": [
+      56
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "400",
+      "200"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 16,
+    "action_token": "Slice",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 31,
+    "action_token": "expose",
+    "argument_indices": [
+      32,
+      35
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 40,
+    "action_token": "Drizzle",
+    "argument_indices": [
+      42
+    ],
+    "argument_first_tokens": [
+      "olive"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 45,
+    "action_token": "roast",
+    "argument_indices": [
+      47
+    ],
+    "argument_first_tokens": [
+      "preheated"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 64,
+    "action_token": "Roast",
+    "argument_indices": [
+      66
+    ],
+    "argument_first_tokens": [
+      "20"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 74,
+    "action_token": "slip",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 82,
+    "action_token": "Change",
+    "argument_indices": [
+      83,
+      88
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "375"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 109,
+    "action_token": "place",
+    "argument_indices": [
+      111
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 117,
+    "action_token": "splash",
+    "argument_indices": [
+      118,
+      121
+    ],
+    "argument_first_tokens": [
+      "both",
+      "white"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 126,
+    "action_token": "Broil",
+    "argument_indices": [
+      128
+    ],
+    "argument_first_tokens": [
+      "25"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 145,
+    "action_token": "place",
+    "argument_indices": [
+      146,
+      148,
+      150,
+      152
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "margarine",
+      "milk",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 156,
+    "action_token": "heat",
+    "argument_indices": [
+      158
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 165,
+    "action_token": "Stir",
+    "argument_indices": [
+      167,
+      170
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cheese"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 174,
+    "action_token": "Stir",
+    "argument_indices": [
+      176
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 186,
+    "action_token": "Slip",
+    "argument_indices": [
+      187,
+      188,
+      191
+    ],
+    "argument_first_tokens": [
+      "cooled",
+      "garlic",
+      "skin"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 193,
+    "action_token": "add",
+    "argument_indices": [
+      195
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 201,
+    "action_token": "mince",
+    "argument_indices": [
+      208
+    ],
+    "argument_first_tokens": [
+      "chopped"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 207,
+    "action_token": "Add",
+    "argument_indices": [
+      208
+    ],
+    "argument_first_tokens": [
+      "chopped"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 217,
+    "action_token": "boil",
+    "argument_indices": [
+      220
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 219,
+    "action_token": "reduce",
+    "argument_indices": [
+      220
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 222,
+    "action_token": "stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 232,
+    "action_token": "pour",
+    "argument_indices": [
+      233,
+      235,
+      238
+    ],
+    "argument_first_tokens": [
+      "sauce",
+      "cooked",
+      "pasta"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 240,
+    "action_token": "top",
+    "argument_indices": [
+      242
+    ],
+    "argument_first_tokens": [
+      "broiled"
+    ]
+  },
+  {
+    "doc_id": "203_Broiled_Chicken_with_Roasted_Garlic_Sauce",
+    "action_index": 247,
+    "action_token": "Enjoy",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "204_Flax_and_Sunflower_Seed_Bread",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      7
+    ],
+    "argument_first_tokens": [
+      "all",
+      "sunflower"
+    ]
+  },
+  {
+    "doc_id": "204_Flax_and_Sunflower_Seed_Bread",
+    "action_index": 27,
+    "action_token": "Select",
+    "argument_indices": [
+      28
+    ],
+    "argument_first_tokens": [
+      "basic"
+    ]
+  },
+  {
+    "doc_id": "204_Flax_and_Sunflower_Seed_Bread",
+    "action_index": 32,
+    "action_token": "press",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "204_Flax_and_Sunflower_Seed_Bread",
+    "action_index": 33,
+    "action_token": "start",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "204_Flax_and_Sunflower_Seed_Bread",
+    "action_index": 37,
+    "action_token": "Add",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "205_Argentine_Chimichurri_Bread",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      5
+    ],
+    "argument_first_tokens": [
+      "ingredients",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "205_Argentine_Chimichurri_Bread",
+    "action_index": 21,
+    "action_token": "Select",
+    "argument_indices": [
+      22
+    ],
+    "argument_first_tokens": [
+      "Basic"
+    ]
+  },
+  {
+    "doc_id": "205_Argentine_Chimichurri_Bread",
+    "action_index": 24,
+    "action_token": "White",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "205_Argentine_Chimichurri_Bread",
+    "action_index": 27,
+    "action_token": "press",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "205_Argentine_Chimichurri_Bread",
+    "action_index": 28,
+    "action_token": "Start",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      6
+    ],
+    "argument_first_tokens": [
+      "frozen",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 12,
+    "action_token": "set",
+    "argument_indices": [
+      18
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 21,
+    "action_token": "melt",
+    "argument_indices": [
+      22
+    ],
+    "argument_first_tokens": [
+      "butter"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 26,
+    "action_token": "Stir",
+    "argument_indices": [
+      28
+    ],
+    "argument_first_tokens": [
+      "flour"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 33,
+    "action_token": "stir",
+    "argument_indices": [
+      35
+    ],
+    "argument_first_tokens": [
+      "water"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 42,
+    "action_token": "boil",
+    "argument_indices": [
+      48
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 44,
+    "action_token": "cook",
+    "argument_indices": [
+      48
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 46,
+    "action_token": "stir",
+    "argument_indices": [
+      48
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 56,
+    "action_token": "Add",
+    "argument_indices": [
+      57,
+      61,
+      64,
+      66
+    ],
+    "argument_first_tokens": [
+      "the",
+      "chili",
+      "bouillon",
+      "cumin"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 72,
+    "action_token": "Simmer",
+    "argument_indices": [
+      77
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 85,
+    "action_token": "Pour",
+    "argument_indices": [
+      87
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 92,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      94,
+      96
+    ],
+    "argument_first_tokens": [
+      "cheese",
+      "olives"
+    ]
+  },
+  {
+    "doc_id": "206_Enchilada_Style_Burritos",
+    "action_index": 104,
+    "action_token": "Bake",
+    "argument_indices": [
+      109
+    ],
+    "argument_first_tokens": [
+      "350"
+    ]
+  },
+  {
+    "doc_id": "207_Fresh_Apple_Salsa",
+    "action_index": 7,
+    "action_token": "stir",
+    "argument_indices": [
+      9,
+      11
+    ],
+    "argument_first_tokens": [
+      "apples",
+      "lime"
+    ]
+  },
+  {
+    "doc_id": "207_Fresh_Apple_Salsa",
+    "action_index": 16,
+    "action_token": "Stir",
+    "argument_indices": [
+      18,
+      20
+    ],
+    "argument_first_tokens": [
+      "jalapeno",
+      "Anaheim"
+    ]
+  },
+  {
+    "doc_id": "207_Fresh_Apple_Salsa",
+    "action_index": 26,
+    "action_token": "Stir",
+    "argument_indices": [
+      28,
+      30,
+      32,
+      34
+    ],
+    "argument_first_tokens": [
+      "onion",
+      "cilantro",
+      "walnuts",
+      "ginger"
+    ]
+  },
+  {
+    "doc_id": "207_Fresh_Apple_Salsa",
+    "action_index": 41,
+    "action_token": "Mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 2,
+    "action_token": "Melt",
+    "argument_indices": [
+      3,
+      10
+    ],
+    "argument_first_tokens": [
+      "1",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 19,
+    "action_token": "Saute",
+    "argument_indices": [
+      20,
+      23
+    ],
+    "argument_first_tokens": [
+      "green",
+      "butter"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 29,
+    "action_token": "Remove",
+    "argument_indices": [
+      31
+    ],
+    "argument_first_tokens": [
+      "pan"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 34,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 44,
+    "action_token": "melt",
+    "argument_indices": [
+      45
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 53,
+    "action_token": "saute",
+    "argument_indices": [
+      54,
+      57
+    ],
+    "argument_first_tokens": [
+      "the",
+      "5"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 60,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 73,
+    "action_token": "combine",
+    "argument_indices": [
+      74,
+      77,
+      80
+    ],
+    "argument_first_tokens": [
+      "potato",
+      "mushroom",
+      "corn"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 88,
+    "action_token": "Mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 96,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 100,
+    "action_token": "Stir",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "half-and-half"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 113,
+    "action_token": "Season",
+    "argument_indices": [
+      115
+    ],
+    "argument_first_tokens": [
+      "cayenne"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 124,
+    "action_token": "boil",
+    "argument_indices": [
+      128
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "208_Crawfish_Chowder",
+    "action_index": 127,
+    "action_token": "simmer",
+    "argument_indices": [
+      128
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 2,
+    "action_token": "Slice",
+    "argument_indices": [
+      3,
+      6
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "thirds"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 18,
+    "action_token": "pound",
+    "argument_indices": [
+      19
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 24,
+    "action_token": "Place",
+    "argument_indices": [
+      26
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 30,
+    "action_token": "pour",
+    "argument_indices": [
+      31,
+      33
+    ],
+    "argument_first_tokens": [
+      "milk",
+      "them"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 37,
+    "action_token": "Soak",
+    "argument_indices": [
+      39
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 49,
+    "action_token": "stir",
+    "argument_indices": [
+      51,
+      55,
+      58
+    ],
+    "argument_first_tokens": [
+      "the",
+      "Parmesan",
+      "parsley"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 62,
+    "action_token": "Set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 67,
+    "action_token": "Heat",
+    "argument_indices": [
+      68,
+      71,
+      76
+    ],
+    "argument_first_tokens": [
+      "olive",
+      "a",
+      "medium-high"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 81,
+    "action_token": "Dredge",
+    "argument_indices": [
+      82,
+      85
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 91,
+    "action_token": "place",
+    "argument_indices": [
+      93
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 100,
+    "action_token": "brown",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "both"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 106,
+    "action_token": "remove",
+    "argument_indices": [
+      108
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 121,
+    "action_token": "Season",
+    "argument_indices": [
+      123,
+      125
+    ],
+    "argument_first_tokens": [
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 131,
+    "action_token": "Place",
+    "argument_indices": [
+      132,
+      135
+    ],
+    "argument_first_tokens": [
+      "orange",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 143,
+    "action_token": "Preheat",
+    "argument_indices": [
+      144,
+      147,
+      151
+    ],
+    "argument_first_tokens": [
+      "the",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 158,
+    "action_token": "Drain",
+    "argument_indices": [
+      159,
+      162
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 165,
+    "action_token": "reserving",
+    "argument_indices": [
+      166
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 173,
+    "action_token": "Heat",
+    "argument_indices": [
+      174,
+      178,
+      181
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 192,
+    "action_token": "Add",
+    "argument_indices": [
+      193,
+      195
+    ],
+    "argument_first_tokens": [
+      "broth",
+      "orange"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 199,
+    "action_token": "reduce",
+    "argument_indices": [
+      201
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 208,
+    "action_token": "Pour",
+    "argument_indices": [
+      209,
+      212
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 216,
+    "action_token": "drizzle",
+    "argument_indices": [
+      218
+    ],
+    "argument_first_tokens": [
+      "Grand"
+    ]
+  },
+  {
+    "doc_id": "209_Grand_Marnier_Chicken",
+    "action_index": 223,
+    "action_token": "Bake",
+    "argument_indices": [
+      225
+    ],
+    "argument_first_tokens": [
+      "20"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      5,
+      7
+    ],
+    "argument_first_tokens": [
+      "mushrooms",
+      "chicken",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 13,
+    "action_token": "Add",
+    "argument_indices": [
+      14,
+      17,
+      19,
+      21,
+      23
+    ],
+    "argument_first_tokens": [
+      "the",
+      "zucchini",
+      "carrots",
+      "onion",
+      "tomato"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 36,
+    "action_token": "Cover",
+    "argument_indices": [
+      40,
+      42
+    ],
+    "argument_first_tokens": [
+      "low",
+      "5"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 38,
+    "action_token": "cook",
+    "argument_indices": [
+      40,
+      42
+    ],
+    "argument_first_tokens": [
+      "low",
+      "5"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 53,
+    "action_token": "Remove",
+    "argument_indices": [
+      54,
+      56
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "vegetables"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 58,
+    "action_token": "keep",
+    "argument_indices": [
+      59
+    ],
+    "argument_first_tokens": [
+      "warm"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 63,
+    "action_token": "Transfer",
+    "argument_indices": [
+      64,
+      67
+    ],
+    "argument_first_tokens": [
+      "cooking",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 70,
+    "action_token": "skim",
+    "argument_indices": [
+      71
+    ],
+    "argument_first_tokens": [
+      "fat"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 75,
+    "action_token": "Combine",
+    "argument_indices": [
+      76,
+      79
+    ],
+    "argument_first_tokens": [
+      "the",
+      "water"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 83,
+    "action_token": "add",
+    "argument_indices": [
+      85
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 93,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 95,
+    "action_token": "cook",
+    "argument_indices": [
+      99
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 97,
+    "action_token": "stir",
+    "argument_indices": [
+      99
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 107,
+    "action_token": "Pour",
+    "argument_indices": [
+      109,
+      111
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "vegetables"
+    ]
+  },
+  {
+    "doc_id": "210_Chicken_with_Vegetables",
+    "action_index": 113,
+    "action_token": "serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 14,
+    "action_token": "Spray",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "one"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 16,
+    "action_token": "grease",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "one"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 24,
+    "action_token": "Prepare",
+    "argument_indices": [
+      25,
+      34
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 28,
+    "action_token": "mixing",
+    "argument_indices": [
+      30,
+      34,
+      36,
+      38
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cinnamon",
+      "nutmeg",
+      "chopped"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 43,
+    "action_token": "Sift",
+    "argument_indices": [
+      45,
+      48,
+      51,
+      54
+    ],
+    "argument_first_tokens": [
+      "the",
+      "baking",
+      "baking",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 58,
+    "action_token": "Blend",
+    "argument_indices": [
+      60,
+      62
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 64,
+    "action_token": "add",
+    "argument_indices": [
+      65,
+      74
+    ],
+    "argument_first_tokens": [
+      "eggs",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 67,
+    "action_token": "beat",
+    "argument_indices": [
+      71,
+      74,
+      76
+    ],
+    "argument_first_tokens": [
+      "apple",
+      "vanilla",
+      "wheat"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 70,
+    "action_token": "Add",
+    "argument_indices": [
+      71,
+      74,
+      76,
+      79
+    ],
+    "argument_first_tokens": [
+      "apple",
+      "vanilla",
+      "wheat",
+      "bran"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 82,
+    "action_token": "Add",
+    "argument_indices": [
+      83,
+      88
+    ],
+    "argument_first_tokens": [
+      "sifted",
+      "sour"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 91,
+    "action_token": "mix",
+    "argument_indices": [
+      94
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 99,
+    "action_token": "Bake",
+    "argument_indices": [
+      101
+    ],
+    "argument_first_tokens": [
+      "40"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 106,
+    "action_token": "Pour",
+    "argument_indices": [
+      107
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 114,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      115
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 123,
+    "action_token": "Pour",
+    "argument_indices": [
+      124
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "211_apple_butter_spice_cake",
+    "action_index": 127,
+    "action_token": "top",
+    "argument_indices": [
+      129
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 6,
+    "action_token": "melt",
+    "argument_indices": [
+      7,
+      12
+    ],
+    "argument_first_tokens": [
+      "butterscotch",
+      "10"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 10,
+    "action_token": "cool",
+    "argument_indices": [
+      12
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 22,
+    "action_token": "cream",
+    "argument_indices": [
+      23,
+      25
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "sugars"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 29,
+    "action_token": "Add",
+    "argument_indices": [
+      30,
+      32,
+      34
+    ],
+    "argument_first_tokens": [
+      "egg",
+      "milk",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 36,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 41,
+    "action_token": "Beat",
+    "argument_indices": [
+      43
+    ],
+    "argument_first_tokens": [
+      "melted"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 49,
+    "action_token": "add",
+    "argument_indices": [
+      50
+    ],
+    "argument_first_tokens": [
+      "flour"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 52,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 57,
+    "action_token": "Cover",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 59,
+    "action_token": "refrigerate",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 71,
+    "action_token": "roll",
+    "argument_indices": [
+      73,
+      75
+    ],
+    "argument_first_tokens": [
+      "dough",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 83,
+    "action_token": "Cut",
+    "argument_indices": [
+      85
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 104,
+    "action_token": "Place",
+    "argument_indices": [
+      105,
+      110
+    ],
+    "argument_first_tokens": [
+      "2",
+      "greased"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 116,
+    "action_token": "Bake",
+    "argument_indices": [
+      118,
+      122
+    ],
+    "argument_first_tokens": [
+      "375",
+      "5-8"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 133,
+    "action_token": "Cool",
+    "argument_indices": [
+      135
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 138,
+    "action_token": "remove",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 151,
+    "action_token": "combine",
+    "argument_indices": [
+      152,
+      154,
+      156,
+      158
+    ],
+    "argument_first_tokens": [
+      "shortening",
+      "water",
+      "flour",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 164,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 170,
+    "action_token": "beat",
+    "argument_indices": [
+      172
+    ],
+    "argument_first_tokens": [
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 176,
+    "action_token": "Place",
+    "argument_indices": [
+      177,
+      181
+    ],
+    "argument_first_tokens": [
+      "1",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 185,
+    "action_token": "cut",
+    "argument_indices": [
+      186
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 196,
+    "action_token": "Pipe",
+    "argument_indices": [
+      197,
+      199
+    ],
+    "argument_first_tokens": [
+      "shirt",
+      "shorts"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 205,
+    "action_token": "Fill",
+    "argument_indices": [
+      207
+    ],
+    "argument_first_tokens": [
+      "outline"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 209,
+    "action_token": "smooth",
+    "argument_indices": [
+      211
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 217,
+    "action_token": "Tint",
+    "argument_indices": [
+      218
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 225,
+    "action_token": "place",
+    "argument_indices": [
+      227
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 233,
+    "action_token": "Pipe",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 242,
+    "action_token": "pipe",
+    "argument_indices": [
+      243,
+      245
+    ],
+    "argument_first_tokens": [
+      "hair",
+      "eyes"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 253,
+    "action_token": "Tint",
+    "argument_indices": [
+      254
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 261,
+    "action_token": "pipe",
+    "argument_indices": [
+      262,
+      265
+    ],
+    "argument_first_tokens": [
+      "a",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 270,
+    "action_token": "Tint",
+    "argument_indices": [
+      271
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 281,
+    "action_token": "pipe",
+    "argument_indices": [
+      283,
+      285
+    ],
+    "argument_first_tokens": [
+      "shirts",
+      "shorts"
+    ]
+  },
+  {
+    "doc_id": "212_Butterscotch_Basketball_Cookies",
+    "action_index": 287,
+    "action_token": "add",
+    "argument_indices": [
+      288
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "213_Curried_Winter_Squash",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      8,
+      9
+    ],
+    "argument_first_tokens": [
+      "first",
+      "six"
+    ]
+  },
+  {
+    "doc_id": "213_Curried_Winter_Squash",
+    "action_index": 14,
+    "action_token": "Microwave",
+    "argument_indices": [
+      16
+    ],
+    "argument_first_tokens": [
+      "high"
+    ]
+  },
+  {
+    "doc_id": "213_Curried_Winter_Squash",
+    "action_index": 27,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      29
+    ],
+    "argument_first_tokens": [
+      "coconut"
+    ]
+  },
+  {
+    "doc_id": "213_Curried_Winter_Squash",
+    "action_index": 36,
+    "action_token": "Serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "214_Chicken_Salad_With_Thai_Flavored_Dressing",
+    "action_index": 7,
+    "action_token": "mix",
+    "argument_indices": [
+      3,
+      8,
+      10,
+      12,
+      15
+    ],
+    "argument_first_tokens": [
+      "a",
+      "chicken",
+      "celery",
+      "green",
+      "peanuts"
+    ]
+  },
+  {
+    "doc_id": "214_Chicken_Salad_With_Thai_Flavored_Dressing",
+    "action_index": 24,
+    "action_token": "whisk",
+    "argument_indices": [
+      25,
+      28,
+      31,
+      33,
+      35
+    ],
+    "argument_first_tokens": [
+      "lime",
+      "fish",
+      "ginger",
+      "sugar",
+      "red"
+    ]
+  },
+  {
+    "doc_id": "214_Chicken_Salad_With_Thai_Flavored_Dressing",
+    "action_index": 50,
+    "action_token": "Toss",
+    "argument_indices": [
+      51,
+      53
+    ],
+    "argument_first_tokens": [
+      "dressing",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "214_Chicken_Salad_With_Thai_Flavored_Dressing",
+    "action_index": 56,
+    "action_token": "serve",
+    "argument_indices": [
+      58
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 2,
+    "action_token": "Heat",
+    "argument_indices": [
+      3,
+      6,
+      11
+    ],
+    "argument_first_tokens": [
+      "olive",
+      "a",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 16,
+    "action_token": "Sprinkle",
+    "argument_indices": [
+      17,
+      19
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 23,
+    "action_token": "brown",
+    "argument_indices": [
+      25
+    ],
+    "argument_first_tokens": [
+      "both"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 30,
+    "action_token": "Remove",
+    "argument_indices": [
+      31,
+      33
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "paper"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 38,
+    "action_token": "Spoon",
+    "argument_indices": [
+      40
+    ],
+    "argument_first_tokens": [
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 44,
+    "action_token": "return",
+    "argument_indices": [
+      45,
+      47
+    ],
+    "argument_first_tokens": [
+      "pan",
+      "stove"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 51,
+    "action_token": "Stir",
+    "argument_indices": [
+      53,
+      55
+    ],
+    "argument_first_tokens": [
+      "mushrooms",
+      "onions"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 57,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 59,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 69,
+    "action_token": "Remove",
+    "argument_indices": [
+      71
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 82,
+    "action_token": "mix",
+    "argument_indices": [
+      84,
+      86,
+      88,
+      91
+    ],
+    "argument_first_tokens": [
+      "basil",
+      "oregano",
+      "rosemary",
+      "thyme"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 95,
+    "action_token": "Season",
+    "argument_indices": [
+      97,
+      100
+    ],
+    "argument_first_tokens": [
+      "garlic",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 108,
+    "action_token": "Stir",
+    "argument_indices": [
+      110
+    ],
+    "argument_first_tokens": [
+      "wine"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 113,
+    "action_token": "add",
+    "argument_indices": [
+      115,
+      117
+    ],
+    "argument_first_tokens": [
+      "onion",
+      "mushrooms"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 121,
+    "action_token": "Return",
+    "argument_indices": [
+      122,
+      124
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "Dutch"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 129,
+    "action_token": "Pour",
+    "argument_indices": [
+      130,
+      133,
+      135
+    ],
+    "argument_first_tokens": [
+      "mushroom",
+      "broth",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 137,
+    "action_token": "cover",
+    "argument_indices": [
+      142
+    ],
+    "argument_first_tokens": [
+      "low"
+    ]
+  },
+  {
+    "doc_id": "215_Chicken_and_Herbs_in_White_Wine",
+    "action_index": 140,
+    "action_token": "cook",
+    "argument_indices": [
+      142
+    ],
+    "argument_first_tokens": [
+      "low"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 2,
+    "action_token": "Combine",
+    "argument_indices": [
+      3,
+      6,
+      9,
+      11,
+      13
+    ],
+    "argument_first_tokens": [
+      "the",
+      "soy",
+      "vinegar",
+      "garlic",
+      "ginger"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 29,
+    "action_token": "boil",
+    "argument_indices": [
+      31
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 40,
+    "action_token": "reduce",
+    "argument_indices": [
+      41,
+      43
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 44,
+    "action_token": "simmer",
+    "argument_indices": [
+      43,
+      49
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 48,
+    "action_token": "Cover",
+    "argument_indices": [
+      49,
+      54
+    ],
+    "argument_first_tokens": [
+      "the",
+      "30"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 52,
+    "action_token": "simmer",
+    "argument_indices": [
+      54
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 57,
+    "action_token": "basting",
+    "argument_indices": [
+      58
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 68,
+    "action_token": "remove",
+    "argument_indices": [
+      69
+    ],
+    "argument_first_tokens": [
+      "lid"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 71,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 81,
+    "action_token": "Remove",
+    "argument_indices": [
+      82,
+      84
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 93,
+    "action_token": "Strain",
+    "argument_indices": [
+      94,
+      97
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 107,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 112,
+    "action_token": "Serve",
+    "argument_indices": [
+      113,
+      116
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "steamed"
+    ]
+  },
+  {
+    "doc_id": "216_Adobo_Chicken_with_Ginger",
+    "action_index": 119,
+    "action_token": "drizzle",
+    "argument_indices": [
+      121
+    ],
+    "argument_first_tokens": [
+      "reserved"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 8,
+    "action_token": "cream",
+    "argument_indices": [
+      9,
+      12
+    ],
+    "argument_first_tokens": [
+      "the",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 16,
+    "action_token": "Beat",
+    "argument_indices": [
+      18,
+      21
+    ],
+    "argument_first_tokens": [
+      "the",
+      "molasses"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 25,
+    "action_token": "Combine",
+    "argument_indices": [
+      26,
+      28,
+      31,
+      33,
+      35
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "baking",
+      "ginger",
+      "cinnamon",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 38,
+    "action_token": "add",
+    "argument_indices": [
+      40
+    ],
+    "argument_first_tokens": [
+      "creamed"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 45,
+    "action_token": "Roll",
+    "argument_indices": [
+      46,
+      48,
+      50
+    ],
+    "argument_first_tokens": [
+      "teaspoonfuls",
+      "dough",
+      "balls"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 54,
+    "action_token": "Dip",
+    "argument_indices": [
+      55,
+      61
+    ],
+    "argument_first_tokens": [
+      "one",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 63,
+    "action_token": "place",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "217_Cookie_Jar_Gingersnaps",
+    "action_index": 76,
+    "action_token": "Bake",
+    "argument_indices": [
+      78,
+      82
+    ],
+    "argument_first_tokens": [
+      "350",
+      "12-15"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      3,
+      8,
+      11,
+      13,
+      15
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the",
+      "milk",
+      "butter",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 22,
+    "action_token": "boil",
+    "argument_indices": [
+      24
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 27,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 32,
+    "action_token": "Remove",
+    "argument_indices": [
+      34
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 37,
+    "action_token": "stir",
+    "argument_indices": [
+      39
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 44,
+    "action_token": "Drop",
+    "argument_indices": [
+      46,
+      48
+    ],
+    "argument_first_tokens": [
+      "tablespoonfuls",
+      "waxed"
+    ]
+  },
+  {
+    "doc_id": "218_Fudge_Drops",
+    "action_index": 56,
+    "action_token": "stand",
+    "argument_indices": [
+      58
+    ],
+    "argument_first_tokens": [
+      "room"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 16,
+    "action_token": "Grease",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 18,
+    "action_token": "flour",
+    "argument_indices": [
+      19
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 26,
+    "action_token": "Mix",
+    "argument_indices": [
+      27,
+      29,
+      32,
+      35,
+      37
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "baking",
+      "baking",
+      "salt",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 41,
+    "action_token": "Make",
+    "argument_indices": [
+      42,
+      45
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 48,
+    "action_token": "add",
+    "argument_indices": [
+      49,
+      51,
+      53,
+      55
+    ],
+    "argument_first_tokens": [
+      "sugar",
+      "oil",
+      "eggs",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 59,
+    "action_token": "Mix",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "wooden"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 68,
+    "action_token": "Stir",
+    "argument_indices": [
+      70,
+      72,
+      74,
+      76
+    ],
+    "argument_first_tokens": [
+      "carrots",
+      "coconut",
+      "walnuts",
+      "pineapple"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 80,
+    "action_token": "Pour",
+    "argument_indices": [
+      82
+    ],
+    "argument_first_tokens": [
+      "9x13"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 88,
+    "action_token": "Bake",
+    "argument_indices": [
+      90
+    ],
+    "argument_first_tokens": [
+      "350"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 99,
+    "action_token": "Don't",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 105,
+    "action_token": "sink",
+    "argument_indices": [
+      106
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 113,
+    "action_token": "cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 122,
+    "action_token": "Cream",
+    "argument_indices": [
+      123,
+      126
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cream"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 133,
+    "action_token": "Add",
+    "argument_indices": [
+      134
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "219_Carrot_Pineapple_Cake_I",
+    "action_index": 138,
+    "action_token": "beat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "425",
+      "220"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 16,
+    "action_token": "Roll",
+    "argument_indices": [
+      18
+    ],
+    "argument_first_tokens": [
+      "pastry"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 29,
+    "action_token": "Line",
+    "argument_indices": [
+      30
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 63,
+    "action_token": "Stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 68,
+    "action_token": "spread",
+    "argument_indices": [
+      70
+    ],
+    "argument_first_tokens": [
+      "pastry"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 81,
+    "action_token": "combine",
+    "argument_indices": [
+      76,
+      77,
+      82,
+      84,
+      86,
+      89
+    ],
+    "argument_first_tokens": [
+      "In",
+      "a",
+      "egg",
+      "sugar",
+      "lemon",
+      "cream"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 98,
+    "action_token": "Beat",
+    "argument_indices": [
+      100
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 107,
+    "action_token": "Spread",
+    "argument_indices": [
+      108,
+      111
+    ],
+    "argument_first_tokens": [
+      "cheese",
+      "apple"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 115,
+    "action_token": "place",
+    "argument_indices": [
+      116,
+      119
+    ],
+    "argument_first_tokens": [
+      "top",
+      "filling"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 123,
+    "action_token": "Seal",
+    "argument_indices": [
+      127,
+      131
+    ],
+    "argument_first_tokens": [
+      "some",
+      "top"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 126,
+    "action_token": "cut",
+    "argument_indices": [
+      127,
+      131
+    ],
+    "argument_first_tokens": [
+      "some",
+      "top"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 135,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      136,
+      138
+    ],
+    "argument_first_tokens": [
+      "top",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 142,
+    "action_token": "Bake",
+    "argument_indices": [
+      144,
+      147
+    ],
+    "argument_first_tokens": [
+      "preheated",
+      "25"
+    ]
+  },
+  {
+    "doc_id": "220_French_Apple_Cream_Pie",
+    "action_index": 158,
+    "action_token": "Cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 2,
+    "action_token": "Quarter",
+    "argument_indices": [
+      3,
+      11
+    ],
+    "argument_first_tokens": [
+      "onion",
+      "carrot"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 7,
+    "action_token": "Chop",
+    "argument_indices": [
+      9,
+      11,
+      13
+    ],
+    "argument_first_tokens": [
+      "celery",
+      "carrot",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 19,
+    "action_token": "Place",
+    "argument_indices": [
+      20,
+      23,
+      25,
+      27,
+      29
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "onion",
+      "celery",
+      "carrot",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 43,
+    "action_token": "Add",
+    "argument_indices": [
+      44
+    ],
+    "argument_first_tokens": [
+      "6"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 53,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 57,
+    "action_token": "Reduce",
+    "argument_indices": [
+      58
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 60,
+    "action_token": "cover",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 63,
+    "action_token": "simmer",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 70,
+    "action_token": "Remove",
+    "argument_indices": [
+      71,
+      73
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "vegetables"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 77,
+    "action_token": "Strain",
+    "argument_indices": [
+      78
+    ],
+    "argument_first_tokens": [
+      "stock"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 82,
+    "action_token": "Skim",
+    "argument_indices": [
+      83,
+      85
+    ],
+    "argument_first_tokens": [
+      "fat",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 90,
+    "action_token": "Separate",
+    "argument_indices": [
+      91,
+      95
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 100,
+    "action_token": "reserve",
+    "argument_indices": [
+      101
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 111,
+    "action_token": "combine",
+    "argument_indices": [
+      112,
+      119
+    ],
+    "argument_first_tokens": [
+      "1",
+      "egg"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 128,
+    "action_token": "Add",
+    "argument_indices": [
+      130
+    ],
+    "argument_first_tokens": [
+      "strained"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 137,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 141,
+    "action_token": "Remove",
+    "argument_indices": [
+      143
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 147,
+    "action_token": "stand",
+    "argument_indices": [
+      148
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "221_Basic_Chicken_Stock",
+    "action_index": 153,
+    "action_token": "Strain",
+    "argument_indices": [
+      156
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 8,
+    "action_token": "beat",
+    "argument_indices": [
+      9,
+      17
+    ],
+    "argument_first_tokens": [
+      "cream",
+      "egg"
+    ]
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 14,
+    "action_token": "Add",
+    "argument_indices": [
+      15,
+      17,
+      20
+    ],
+    "argument_first_tokens": [
+      "milk",
+      "egg",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 22,
+    "action_token": "beat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 28,
+    "action_token": "Stir",
+    "argument_indices": [
+      30
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 35,
+    "action_token": "quiche",
+    "argument_indices": [
+      39
+    ],
+    "argument_first_tokens": [
+      "nonstick"
+    ]
+  },
+  {
+    "doc_id": "222_Crustless_Spinach_Quiche_2",
+    "action_index": 45,
+    "action_token": "Bake",
+    "argument_indices": [
+      47,
+      51
+    ],
+    "argument_first_tokens": [
+      "350",
+      "45-50"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 16,
+    "action_token": "Turn",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 28,
+    "action_token": "cover",
+    "argument_indices": [
+      29,
+      32
+    ],
+    "argument_first_tokens": [
+      "the",
+      "foil"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 36,
+    "action_token": "Place",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 44,
+    "action_token": "Stir",
+    "argument_indices": [
+      46,
+      49,
+      51,
+      53
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cocoa",
+      "salt",
+      "almonds"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 55,
+    "action_token": "set",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 65,
+    "action_token": "cream",
+    "argument_indices": [
+      67,
+      70
+    ],
+    "argument_first_tokens": [
+      "the",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 76,
+    "action_token": "Beat",
+    "argument_indices": [
+      78,
+      81
+    ],
+    "argument_first_tokens": [
+      "the",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 86,
+    "action_token": "stir",
+    "argument_indices": [
+      88
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 106,
+    "action_token": "roll",
+    "argument_indices": [
+      107,
+      111
+    ],
+    "argument_first_tokens": [
+      "the",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 120,
+    "action_token": "Cut",
+    "argument_indices": [
+      124
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 132,
+    "action_token": "Starting",
+    "argument_indices": [
+      134
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 145,
+    "action_token": "arrange",
+    "argument_indices": [
+      146
+    ],
+    "argument_first_tokens": [
+      "cookies"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 154,
+    "action_token": "Work",
+    "argument_indices": [
+      156
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 173,
+    "action_token": "press",
+    "argument_indices": [
+      174
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 188,
+    "action_token": "Bake",
+    "argument_indices": [
+      190
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 206,
+    "action_token": "Cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 212,
+    "action_token": "turn",
+    "argument_indices": [
+      213
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 217,
+    "action_token": "remove",
+    "argument_indices": [
+      218,
+      221
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 226,
+    "action_token": "remove",
+    "argument_indices": [
+      227
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "223_Cookie_Bowl",
+    "action_index": 237,
+    "action_token": "Fill",
+    "argument_indices": [
+      239
+    ],
+    "argument_first_tokens": [
+      "cookie"
+    ]
+  },
+  {
+    "doc_id": "224_Garden_Party_Salad",
+    "action_index": 7,
+    "action_token": "whisk",
+    "argument_indices": [
+      8
+    ],
+    "argument_first_tokens": [
+      "first"
+    ]
+  },
+  {
+    "doc_id": "224_Garden_Party_Salad",
+    "action_index": 14,
+    "action_token": "chill",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "224_Garden_Party_Salad",
+    "action_index": 22,
+    "action_token": "combine",
+    "argument_indices": [
+      23,
+      25,
+      27,
+      29
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "raisins",
+      "almonds",
+      "parsley"
+    ]
+  },
+  {
+    "doc_id": "224_Garden_Party_Salad",
+    "action_index": 35,
+    "action_token": "add",
+    "argument_indices": [
+      36
+    ],
+    "argument_first_tokens": [
+      "dressing"
+    ]
+  },
+  {
+    "doc_id": "224_Garden_Party_Salad",
+    "action_index": 38,
+    "action_token": "toss",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      6,
+      9
+    ],
+    "argument_first_tokens": [
+      "the",
+      "chipotle",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 14,
+    "action_token": "process",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 21,
+    "action_token": "Add",
+    "argument_indices": [
+      22
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 44,
+    "action_token": "Transfer",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 51,
+    "action_token": "stir",
+    "argument_indices": [
+      53
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "225_Chipotle_Mayo_Relish",
+    "action_index": 63,
+    "action_token": "Chill",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3
+    ],
+    "argument_first_tokens": [
+      "broiler"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 7,
+    "action_token": "Cover",
+    "argument_indices": [
+      8,
+      14
+    ],
+    "argument_first_tokens": [
+      "a",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 23,
+    "action_token": "Brush",
+    "argument_indices": [
+      24,
+      27
+    ],
+    "argument_first_tokens": [
+      "the",
+      "olive"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 32,
+    "action_token": "Dice",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 43,
+    "action_token": "combine",
+    "argument_indices": [
+      44,
+      47,
+      50
+    ],
+    "argument_first_tokens": [
+      "the",
+      "olive",
+      "basil"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 54,
+    "action_token": "Mix",
+    "argument_indices": [
+      56
+    ],
+    "argument_first_tokens": [
+      "two"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 61,
+    "action_token": "Place",
+    "argument_indices": [
+      62,
+      64
+    ],
+    "argument_first_tokens": [
+      "bread",
+      "broiler"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 71,
+    "action_token": "Remove",
+    "argument_indices": [
+      73
+    ],
+    "argument_first_tokens": [
+      "broiler"
+    ]
+  },
+  {
+    "doc_id": "226_Bruschetta_II_2",
+    "action_index": 75,
+    "action_token": "top",
+    "argument_indices": [
+      77
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      8,
+      11,
+      13,
+      16
+    ],
+    "argument_first_tokens": [
+      "the",
+      "sugars",
+      "baking",
+      "salt"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 20,
+    "action_token": "Set",
+    "argument_indices": [
+      22
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 35,
+    "action_token": "beat",
+    "argument_indices": [
+      36,
+      39,
+      41
+    ],
+    "argument_first_tokens": [
+      "the",
+      "milk",
+      "oil"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 51,
+    "action_token": "Stir",
+    "argument_indices": [
+      53
+    ],
+    "argument_first_tokens": [
+      "dry"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 61,
+    "action_token": "Fold",
+    "argument_indices": [
+      63,
+      65
+    ],
+    "argument_first_tokens": [
+      "almonds",
+      "apricots"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 69,
+    "action_token": "Pour",
+    "argument_indices": [
+      71
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 79,
+    "action_token": "Bake",
+    "argument_indices": [
+      81,
+      85
+    ],
+    "argument_first_tokens": [
+      "350",
+      "55-65"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 97,
+    "action_token": "Cool",
+    "argument_indices": [
+      99
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 116,
+    "action_token": "combine",
+    "argument_indices": [
+      117,
+      120,
+      122,
+      124
+    ],
+    "argument_first_tokens": [
+      "the",
+      "sugar",
+      "milk",
+      "extract"
+    ]
+  },
+  {
+    "doc_id": "227_Almond_Apricot_Bread",
+    "action_index": 134,
+    "action_token": "Drizzle",
+    "argument_indices": [
+      136
+    ],
+    "argument_first_tokens": [
+      "cooled"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      6,
+      10
+    ],
+    "argument_first_tokens": [
+      "the",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 22,
+    "action_token": "cream",
+    "argument_indices": [
+      24,
+      27,
+      29
+    ],
+    "argument_first_tokens": [
+      "the",
+      "oil",
+      "brown"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 40,
+    "action_token": "Beat",
+    "argument_indices": [
+      42,
+      45
+    ],
+    "argument_first_tokens": [
+      "the",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 49,
+    "action_token": "Combine",
+    "argument_indices": [
+      50,
+      53,
+      56,
+      58
+    ],
+    "argument_first_tokens": [
+      "the",
+      "baking",
+      "cream",
+      "tartar"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 63,
+    "action_token": "stir",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 71,
+    "action_token": "Mix",
+    "argument_indices": [
+      73,
+      77
+    ],
+    "argument_first_tokens": [
+      "the",
+      "walnuts"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 81,
+    "action_token": "Drop",
+    "argument_indices": [
+      82,
+      84,
+      87
+    ],
+    "argument_first_tokens": [
+      "dough",
+      "rounded",
+      "ungreased"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 93,
+    "action_token": "Bake",
+    "argument_indices": [
+      95
+    ],
+    "argument_first_tokens": [
+      "12"
+    ]
+  },
+  {
+    "doc_id": "228_Best_Chocolate_Chippers",
+    "action_index": 111,
+    "action_token": "Allow",
+    "argument_indices": [
+      112,
+      116
+    ],
+    "argument_first_tokens": [
+      "cookies",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      6,
+      9
+    ],
+    "argument_first_tokens": [
+      "the",
+      "sweet",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 23,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 27,
+    "action_token": "Remove",
+    "argument_indices": [
+      29
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 32,
+    "action_token": "drain",
+    "argument_indices": [
+      37
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 36,
+    "action_token": "Preheat",
+    "argument_indices": [
+      37
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 48,
+    "action_token": "mash",
+    "argument_indices": [
+      49
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 55,
+    "action_token": "mix",
+    "argument_indices": [
+      57,
+      59,
+      62
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "heavy",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 73,
+    "action_token": "Transfer",
+    "argument_indices": [
+      74,
+      77
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 83,
+    "action_token": "top",
+    "argument_indices": [
+      85
+    ],
+    "argument_first_tokens": [
+      "Monterey"
+    ]
+  },
+  {
+    "doc_id": "229_Cheesy_Sweet_and_Savory_Spuds",
+    "action_index": 91,
+    "action_token": "Broil",
+    "argument_indices": [
+      94
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 2,
+    "action_token": "Sift",
+    "argument_indices": [
+      4,
+      6,
+      7,
+      10,
+      13
+    ],
+    "argument_first_tokens": [
+      "creamer",
+      "hot",
+      "chocolate",
+      "instant",
+      "cinnamon"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 19,
+    "action_token": "Pour",
+    "argument_indices": [
+      21
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 24,
+    "action_token": "seal",
+    "argument_indices": [
+      26
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 32,
+    "action_token": "prepare",
+    "argument_indices": [
+      35
+    ],
+    "argument_first_tokens": [
+      "3"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 34,
+    "action_token": "Stir",
+    "argument_indices": [
+      35,
+      38,
+      40
+    ],
+    "argument_first_tokens": [
+      "3",
+      "mixture",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "230_Fire_Side_Coffee",
+    "action_index": 48,
+    "action_token": "Adjust",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "231_Easy_Alfredo_Sauce_I",
+    "action_index": 21,
+    "action_token": "Cook",
+    "argument_indices": [
+      23
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "231_Easy_Alfredo_Sauce_I",
+    "action_index": 31,
+    "action_token": "Remove",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "231_Easy_Alfredo_Sauce_I",
+    "action_index": 37,
+    "action_token": "Sauce",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "231_Easy_Alfredo_Sauce_I",
+    "action_index": 39,
+    "action_token": "thicken",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "232_Double_Fudge_Brownie_Mix",
+    "action_index": 11,
+    "action_token": "layer",
+    "argument_indices": [
+      12,
+      15
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "232_Double_Fudge_Brownie_Mix",
+    "action_index": 21,
+    "action_token": "Attach",
+    "argument_indices": [
+      22,
+      25
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "232_Double_Fudge_Brownie_Mix",
+    "action_index": 29,
+    "action_token": "Preheat",
+    "argument_indices": [
+      30,
+      33,
+      37
+    ],
+    "argument_first_tokens": [
+      "the",
+      "325",
+      "165"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 17,
+    "action_token": "grease",
+    "argument_indices": [
+      18
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 31,
+    "action_token": "mix",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 52,
+    "action_token": "Press",
+    "argument_indices": [
+      54
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 75,
+    "action_token": "Bake",
+    "argument_indices": [
+      77,
+      81
+    ],
+    "argument_first_tokens": [
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 97,
+    "action_token": "Reduce",
+    "argument_indices": [
+      98,
+      101,
+      105
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "325",
+      "165"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 121,
+    "action_token": "heat",
+    "argument_indices": [
+      122,
+      129
+    ],
+    "argument_first_tokens": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 136,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 152,
+    "action_token": "beat",
+    "argument_indices": [
+      153,
+      154,
+      156
+    ],
+    "argument_first_tokens": [
+      "cream",
+      "cheese",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 165,
+    "action_token": "Add",
+    "argument_indices": [
+      166
+    ],
+    "argument_first_tokens": [
+      "cocoa"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 168,
+    "action_token": "beat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 173,
+    "action_token": "Add",
+    "argument_indices": [
+      174
+    ],
+    "argument_first_tokens": [
+      "eggs"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 176,
+    "action_token": "beat",
+    "argument_indices": [
+      178
+    ],
+    "argument_first_tokens": [
+      "low"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 185,
+    "action_token": "Stir",
+    "argument_indices": [
+      187
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 199,
+    "action_token": "Pour",
+    "argument_indices": [
+      201
+    ],
+    "argument_first_tokens": [
+      "crust"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 205,
+    "action_token": "Bake",
+    "argument_indices": [
+      207,
+      211
+    ],
+    "argument_first_tokens": [
+      "325",
+      "165"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 238,
+    "action_token": "heat",
+    "argument_indices": [
+      239,
+      246
+    ],
+    "argument_first_tokens": [
+      "1",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 256,
+    "action_token": "Stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 263,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 268,
+    "action_token": "Have",
+    "argument_indices": [
+      269
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 284,
+    "action_token": "Pour",
+    "argument_indices": [
+      286
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 290,
+    "action_token": "stir",
+    "argument_indices": [
+      292
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 299,
+    "action_token": "Spread",
+    "argument_indices": [
+      301
+    ],
+    "argument_first_tokens": [
+      "baked"
+    ]
+  },
+  {
+    "doc_id": "233_Chocolate_Cheesecake_II",
+    "action_index": 304,
+    "action_token": "refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 2,
+    "action_token": "Heat",
+    "argument_indices": [
+      3,
+      6,
+      9
+    ],
+    "argument_first_tokens": [
+      "2",
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 18,
+    "action_token": "Add",
+    "argument_indices": [
+      19,
+      21
+    ],
+    "argument_first_tokens": [
+      "half",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 25,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 33,
+    "action_token": "Drain",
+    "argument_indices": [
+      35
+    ],
+    "argument_first_tokens": [
+      "paper"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 40,
+    "action_token": "Repeat",
+    "argument_indices": [
+      42
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 54,
+    "action_token": "set",
+    "argument_indices": [
+      63,
+      65
+    ],
+    "argument_first_tokens": [
+      "cumin",
+      "chili"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 59,
+    "action_token": "Add",
+    "argument_indices": [
+      60,
+      63,
+      65,
+      68
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cumin",
+      "chili",
+      "oregano"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 75,
+    "action_token": "Raise",
+    "argument_indices": [
+      76,
+      78
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "high"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 83,
+    "action_token": "boil",
+    "argument_indices": [
+      91,
+      93
+    ],
+    "argument_first_tokens": [
+      "corn",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 87,
+    "action_token": "Add",
+    "argument_indices": [
+      88,
+      91,
+      93,
+      95
+    ],
+    "argument_first_tokens": [
+      "the",
+      "corn",
+      "chicken",
+      "salsa"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 99,
+    "action_token": "Reduce",
+    "argument_indices": [
+      100,
+      102
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "low"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 104,
+    "action_token": "stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 106,
+    "action_token": "simmer",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 126,
+    "action_token": "Add",
+    "argument_indices": [
+      127,
+      130
+    ],
+    "argument_first_tokens": [
+      "the",
+      "half"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 139,
+    "action_token": "Ladle",
+    "argument_indices": [
+      141
+    ],
+    "argument_first_tokens": [
+      "individual"
+    ]
+  },
+  {
+    "doc_id": "234_Chicken_Tortilla_Soup_IV",
+    "action_index": 144,
+    "action_token": "garnish",
+    "argument_indices": [
+      145,
+      148
+    ],
+    "argument_first_tokens": [
+      "each",
+      "some"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "450",
+      "230"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 15,
+    "action_token": "grease",
+    "argument_indices": [
+      16
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 23,
+    "action_token": "Heat",
+    "argument_indices": [
+      24,
+      27,
+      31
+    ],
+    "argument_first_tokens": [
+      "olive",
+      "a",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 34,
+    "action_token": "stir",
+    "argument_indices": [
+      36,
+      38,
+      41
+    ],
+    "argument_first_tokens": [
+      "zucchini",
+      "onion",
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 43,
+    "action_token": "Cook",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 45,
+    "action_token": "stir",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 54,
+    "action_token": "Remove",
+    "argument_indices": [
+      55,
+      57,
+      63
+    ],
+    "argument_first_tokens": [
+      "saucepan",
+      "heat",
+      "basil"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 59,
+    "action_token": "mix",
+    "argument_indices": [
+      61,
+      63,
+      65,
+      68
+    ],
+    "argument_first_tokens": [
+      "tomatoes",
+      "basil",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 72,
+    "action_token": "Arrange",
+    "argument_indices": [
+      73,
+      76
+    ],
+    "argument_first_tokens": [
+      "halibut",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 87,
+    "action_token": "Spoon",
+    "argument_indices": [
+      88,
+      91
+    ],
+    "argument_first_tokens": [
+      "equal",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 100,
+    "action_token": "Top",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "feta"
+    ]
+  },
+  {
+    "doc_id": "235_Baked_Halibut_Steaks",
+    "action_index": 107,
+    "action_token": "Bake",
+    "argument_indices": [
+      108,
+      111
+    ],
+    "argument_first_tokens": [
+      "15",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "236_Cranberry_Brandy_Slush",
+    "action_index": 7,
+    "action_token": "mix",
+    "argument_indices": [
+      9,
+      12,
+      16
+    ],
+    "argument_first_tokens": [
+      "cherry",
+      "orange",
+      "lemonade"
+    ]
+  },
+  {
+    "doc_id": "236_Cranberry_Brandy_Slush",
+    "action_index": 25,
+    "action_token": "Freeze",
+    "argument_indices": [
+      26
+    ],
+    "argument_first_tokens": [
+      "overnight"
+    ]
+  },
+  {
+    "doc_id": "236_Cranberry_Brandy_Slush",
+    "action_index": 33,
+    "action_token": "scoop",
+    "argument_indices": [
+      34,
+      37,
+      40
+    ],
+    "argument_first_tokens": [
+      "desired",
+      "frozen",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "236_Cranberry_Brandy_Slush",
+    "action_index": 44,
+    "action_token": "fill",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "lemon-lime"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 16,
+    "action_token": "Rinse",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "pork"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 20,
+    "action_token": "pat",
+    "argument_indices": [
+      21
+    ],
+    "argument_first_tokens": [
+      "dry"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 24,
+    "action_token": "season",
+    "argument_indices": [
+      26
+    ],
+    "argument_first_tokens": [
+      "garlic"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 36,
+    "action_token": "Place",
+    "argument_indices": [
+      37,
+      41
+    ],
+    "argument_first_tokens": [
+      "the",
+      "egg"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 51,
+    "action_token": "Dredge",
+    "argument_indices": [
+      52,
+      57
+    ],
+    "argument_first_tokens": [
+      "the",
+      "flour"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 59,
+    "action_token": "dip",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 65,
+    "action_token": "coat",
+    "argument_indices": [
+      68
+    ],
+    "argument_first_tokens": [
+      "bread"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 73,
+    "action_token": "Heat",
+    "argument_indices": [
+      74,
+      78,
+      82
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a",
+      "medium-high"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 87,
+    "action_token": "Place",
+    "argument_indices": [
+      88,
+      92
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 95,
+    "action_token": "coat",
+    "argument_indices": [
+      96,
+      99
+    ],
+    "argument_first_tokens": [
+      "the",
+      "canola"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 105,
+    "action_token": "Fry",
+    "argument_indices": [
+      106,
+      109
+    ],
+    "argument_first_tokens": [
+      "the",
+      "5"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 124,
+    "action_token": "Transfer",
+    "argument_indices": [
+      125,
+      128
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 135,
+    "action_token": "cover",
+    "argument_indices": [
+      137
+    ],
+    "argument_first_tokens": [
+      "foil"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 141,
+    "action_token": "Bake",
+    "argument_indices": [
+      143,
+      147
+    ],
+    "argument_first_tokens": [
+      "the",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 155,
+    "action_token": "combine",
+    "argument_indices": [
+      156,
+      159,
+      162
+    ],
+    "argument_first_tokens": [
+      "the",
+      "mushroom",
+      "milk"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 184,
+    "action_token": "cover",
+    "argument_indices": [
+      185,
+      187
+    ],
+    "argument_first_tokens": [
+      "them",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 193,
+    "action_token": "Replace",
+    "argument_indices": [
+      194
+    ],
+    "argument_first_tokens": [
+      "foil"
+    ]
+  },
+  {
+    "doc_id": "237_Baked_Pork_Chops_Low_Fat_Version",
+    "action_index": 197,
+    "action_token": "bake",
+    "argument_indices": [
+      199
+    ],
+    "argument_first_tokens": [
+      "another"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "400",
+      "200"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 16,
+    "action_token": "Drain",
+    "argument_indices": [
+      17,
+      21
+    ],
+    "argument_first_tokens": [
+      "escargots",
+      "cold"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 19,
+    "action_token": "rinse",
+    "argument_indices": [
+      21
+    ],
+    "argument_first_tokens": [
+      "cold"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 24,
+    "action_token": "drain",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 34,
+    "action_token": "combine",
+    "argument_indices": [
+      35,
+      38,
+      40,
+      43,
+      45
+    ],
+    "argument_first_tokens": [
+      "the",
+      "garlic",
+      "green",
+      "parsley",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 53,
+    "action_token": "Mix",
+    "argument_indices": [
+      54
+    ],
+    "argument_first_tokens": [
+      "thoroughly"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 58,
+    "action_token": "Place",
+    "argument_indices": [
+      59,
+      62,
+      65
+    ],
+    "argument_first_tokens": [
+      "1",
+      "butter",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 71,
+    "action_token": "Top",
+    "argument_indices": [
+      72,
+      74
+    ],
+    "argument_first_tokens": [
+      "each",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 77,
+    "action_token": "cover",
+    "argument_indices": [
+      79
+    ],
+    "argument_first_tokens": [
+      "another"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 85,
+    "action_token": "place",
+    "argument_indices": [
+      86,
+      89
+    ],
+    "argument_first_tokens": [
+      "mushroom",
+      "top"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 93,
+    "action_token": "Arrange",
+    "argument_indices": [
+      94,
+      97
+    ],
+    "argument_first_tokens": [
+      "pastry",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "238_Escargots_Vol_au_Vent",
+    "action_index": 105,
+    "action_token": "Bake",
+    "argument_indices": [
+      107,
+      111
+    ],
+    "argument_first_tokens": [
+      "a",
+      "8"
+    ]
+  },
+  {
+    "doc_id": "239_Bahama_Mama_II",
+    "action_index": 22,
+    "action_token": "Stir",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "239_Bahama_Mama_II",
+    "action_index": 26,
+    "action_token": "serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 2,
+    "action_token": "Mix",
+    "argument_indices": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "argument_first_tokens": [
+      "oats",
+      "flour",
+      "sugar",
+      "coconut"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 22,
+    "action_token": "melt",
+    "argument_indices": [
+      23,
+      26
+    ],
+    "argument_first_tokens": [
+      "the",
+      "butter"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 31,
+    "action_token": "Mix",
+    "argument_indices": [
+      32,
+      35
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 39,
+    "action_token": "add",
+    "argument_indices": [
+      41,
+      45
+    ],
+    "argument_first_tokens": [
+      "the",
+      "syrup"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 49,
+    "action_token": "Add",
+    "argument_indices": [
+      50,
+      53
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 59,
+    "action_token": "Drop",
+    "argument_indices": [
+      63
+    ],
+    "argument_first_tokens": [
+      "greased"
+    ]
+  },
+  {
+    "doc_id": "240_Anzac_Biscuits_I",
+    "action_index": 74,
+    "action_token": "Bake",
+    "argument_indices": [
+      76,
+      80
+    ],
+    "argument_first_tokens": [
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 2,
+    "action_token": "Melt",
+    "argument_indices": [
+      3,
+      7
+    ],
+    "argument_first_tokens": [
+      "chocolate",
+      "double"
+    ]
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 5,
+    "action_token": "cream",
+    "argument_indices": [
+      7,
+      10
+    ],
+    "argument_first_tokens": [
+      "double",
+      "low"
+    ]
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 13,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 18,
+    "action_token": "Dip",
+    "argument_indices": [
+      19
+    ],
+    "argument_first_tokens": [
+      "pretzels"
+    ]
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 36,
+    "action_token": "Place",
+    "argument_indices": [
+      37,
+      39
+    ],
+    "argument_first_tokens": [
+      "pretzels",
+      "wax"
+    ]
+  },
+  {
+    "doc_id": "241_Chocolate_Covered_Pretzels",
+    "action_index": 44,
+    "action_token": "cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      8
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 19,
+    "action_token": "combine",
+    "argument_indices": [
+      20,
+      22,
+      24,
+      26
+    ],
+    "argument_first_tokens": [
+      "water",
+      "oil",
+      "butter",
+      "cocoa"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 31,
+    "action_token": "boil",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 38,
+    "action_token": "pour",
+    "argument_indices": [
+      40
+    ],
+    "argument_first_tokens": [
+      "dry"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 43,
+    "action_token": "mix",
+    "argument_indices": [
+      51,
+      53
+    ],
+    "argument_first_tokens": [
+      "buttermilk",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 48,
+    "action_token": "Add",
+    "argument_indices": [
+      49,
+      51,
+      53,
+      55
+    ],
+    "argument_first_tokens": [
+      "eggs",
+      "buttermilk",
+      "vanilla",
+      "baking"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 58,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 63,
+    "action_token": "Pour",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 74,
+    "action_token": "Bake",
+    "argument_indices": [
+      76,
+      80
+    ],
+    "argument_first_tokens": [
+      "375",
+      "15-20"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 101,
+    "action_token": "combine",
+    "argument_indices": [
+      102,
+      105,
+      107,
+      109,
+      111
+    ],
+    "argument_first_tokens": [
+      "the",
+      "cream",
+      "cocoa",
+      "cinnamon",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 116,
+    "action_token": "Cook",
+    "argument_indices": [
+      120
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 118,
+    "action_token": "stir",
+    "argument_indices": [
+      120
+    ],
+    "argument_first_tokens": [
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 134,
+    "action_token": "Remove",
+    "argument_indices": [
+      136
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 139,
+    "action_token": "beat",
+    "argument_indices": [
+      141,
+      143
+    ],
+    "argument_first_tokens": [
+      "sugar",
+      "vanilla"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 149,
+    "action_token": "Stir",
+    "argument_indices": [
+      151
+    ],
+    "argument_first_tokens": [
+      "walnuts"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 156,
+    "action_token": "spread",
+    "argument_indices": [
+      158
+    ],
+    "argument_first_tokens": [
+      "hot"
+    ]
+  },
+  {
+    "doc_id": "242_Cinnamon_Chocolate_Cake_2",
+    "action_index": 163,
+    "action_token": "Cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 7,
+    "action_token": "dissolve",
+    "argument_indices": [
+      8,
+      10
+    ],
+    "argument_first_tokens": [
+      "cornstarch",
+      "pineapple"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 15,
+    "action_token": "Add",
+    "argument_indices": [
+      16,
+      19,
+      21,
+      23
+    ],
+    "argument_first_tokens": [
+      "soy",
+      "vinegar",
+      "garlic",
+      "ginger"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 27,
+    "action_token": "Simmer",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 39,
+    "action_token": "cool",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "pineapple"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 43,
+    "action_token": "Add",
+    "argument_indices": [
+      44,
+      46,
+      48
+    ],
+    "argument_first_tokens": [
+      "fish",
+      "pineapple",
+      "sauce"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 50,
+    "action_token": "marinate",
+    "argument_indices": [
+      52,
+      55
+    ],
+    "argument_first_tokens": [
+      "the",
+      "30"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 60,
+    "action_token": "Thread",
+    "argument_indices": [
+      61,
+      63,
+      65,
+      67
+    ],
+    "argument_first_tokens": [
+      "fish",
+      "pineapple",
+      "onion",
+      "skewers"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 71,
+    "action_token": "Place",
+    "argument_indices": [
+      73
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "243_Gingery_Fish_Kabobs",
+    "action_index": 92,
+    "action_token": "Serve",
+    "argument_indices": [
+      94
+    ],
+    "argument_first_tokens": [
+      "rice"
+    ]
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 2,
+    "action_token": "Combine",
+    "argument_indices": [
+      3,
+      6,
+      8
+    ],
+    "argument_first_tokens": [
+      "all",
+      "parsley",
+      "Quaker"
+    ]
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 20,
+    "action_token": "Pulse",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 26,
+    "action_token": "Transfer",
+    "argument_indices": [
+      28
+    ],
+    "argument_first_tokens": [
+      "serving"
+    ]
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 33,
+    "action_token": "Cover",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 35,
+    "action_token": "refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 43,
+    "action_token": "Stir",
+    "argument_indices": [
+      45
+    ],
+    "argument_first_tokens": [
+      "parsley"
+    ]
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 49,
+    "action_token": "Dip",
+    "argument_indices": [
+      52
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "244_Artichoke_Hummus",
+    "action_index": 51,
+    "action_token": "spread",
+    "argument_indices": [
+      52
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "245_Gingered_Mango_Salsa",
+    "action_index": 6,
+    "action_token": "combine",
+    "argument_indices": [
+      7
+    ],
+    "argument_first_tokens": [
+      "all"
+    ]
+  },
+  {
+    "doc_id": "245_Gingered_Mango_Salsa",
+    "action_index": 13,
+    "action_token": "stand",
+    "argument_indices": [
+      15
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 2,
+    "action_token": "Line",
+    "argument_indices": [
+      3,
+      8
+    ],
+    "argument_first_tokens": [
+      "a",
+      "foil"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 10,
+    "action_token": "coat",
+    "argument_indices": [
+      13
+    ],
+    "argument_first_tokens": [
+      "nonstick"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 23,
+    "action_token": "combine",
+    "argument_indices": [
+      24,
+      28,
+      30,
+      33,
+      35
+    ],
+    "argument_first_tokens": [
+      "the",
+      "garlic",
+      "Parmesan",
+      "parsley",
+      "thyme"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 45,
+    "action_token": "Add",
+    "argument_indices": [
+      46
+    ],
+    "argument_first_tokens": [
+      "butter"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 48,
+    "action_token": "toss",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 55,
+    "action_token": "Place",
+    "argument_indices": [
+      56,
+      58
+    ],
+    "argument_first_tokens": [
+      "salmon",
+      "prepared"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 63,
+    "action_token": "Spray",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "nonstick"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 69,
+    "action_token": "pat",
+    "argument_indices": [
+      71
+    ],
+    "argument_first_tokens": [
+      "bread"
+    ]
+  },
+  {
+    "doc_id": "246_Baked_Salmon_with_Herbs",
+    "action_index": 77,
+    "action_token": "Bake",
+    "argument_indices": [
+      82,
+      86
+    ],
+    "argument_first_tokens": [
+      "350",
+      "35-40"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 2,
+    "action_token": "Cut",
+    "argument_indices": [
+      3,
+      6
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 12,
+    "action_token": "Place",
+    "argument_indices": [
+      14,
+      18
+    ],
+    "argument_first_tokens": [
+      "a",
+      "desired"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 22,
+    "action_token": "marinate",
+    "argument_indices": [
+      24
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 34,
+    "action_token": "Preheat",
+    "argument_indices": [
+      35,
+      37,
+      41
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 48,
+    "action_token": "Heat",
+    "argument_indices": [
+      49,
+      51,
+      55
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "a",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 60,
+    "action_token": "Saute",
+    "argument_indices": [
+      61,
+      63
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "onions"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 72,
+    "action_token": "Stir",
+    "argument_indices": [
+      74,
+      77,
+      81
+    ],
+    "argument_first_tokens": [
+      "diced",
+      "green",
+      "stewed"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 97,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 101,
+    "action_token": "Reduce",
+    "argument_indices": [
+      102,
+      105
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 104,
+    "action_token": "cover",
+    "argument_indices": [
+      105,
+      110
+    ],
+    "argument_first_tokens": [
+      "skillet",
+      "20"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 108,
+    "action_token": "simmer",
+    "argument_indices": [
+      110
+    ],
+    "argument_first_tokens": [
+      "20"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 129,
+    "action_token": "Remove",
+    "argument_indices": [
+      130,
+      132
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 135,
+    "action_token": "shred",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 146,
+    "action_token": "allow",
+    "argument_indices": [
+      147
+    ],
+    "argument_first_tokens": [
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 150,
+    "action_token": "simmer",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 152,
+    "action_token": "reduce",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 168,
+    "action_token": "combine",
+    "argument_indices": [
+      169,
+      172,
+      173
+    ],
+    "argument_first_tokens": [
+      "shredded",
+      "about",
+      "1"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 192,
+    "action_token": "Mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 203,
+    "action_token": "Pour",
+    "argument_indices": [
+      204,
+      211
+    ],
+    "argument_first_tokens": [
+      "remaining",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 224,
+    "action_token": "heat",
+    "argument_indices": [
+      227
+    ],
+    "argument_first_tokens": [
+      "low"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 234,
+    "action_token": "boil",
+    "argument_indices": [
+      241
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 238,
+    "action_token": "Dip",
+    "argument_indices": [
+      239,
+      241
+    ],
+    "argument_first_tokens": [
+      "tortillas",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 247,
+    "action_token": "coat",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 251,
+    "action_token": "Spoon",
+    "argument_indices": [
+      253
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 265,
+    "action_token": "Top",
+    "argument_indices": [
+      266
+    ],
+    "argument_first_tokens": [
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 275,
+    "action_token": "roll",
+    "argument_indices": [
+      277
+    ],
+    "argument_first_tokens": [
+      "tortillas"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 281,
+    "action_token": "Place",
+    "argument_indices": [
+      282,
+      285
+    ],
+    "argument_first_tokens": [
+      "rolled",
+      "baking"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 293,
+    "action_token": "drizzle",
+    "argument_indices": [
+      295
+    ],
+    "argument_first_tokens": [
+      "enchilada"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 300,
+    "action_token": "Cover",
+    "argument_indices": [
+      302
+    ],
+    "argument_first_tokens": [
+      "remaining"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 307,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      308,
+      313
+    ],
+    "argument_first_tokens": [
+      "remaining",
+      "cheese"
+    ]
+  },
+  {
+    "doc_id": "247_Gerrys_Chicken_Enchiladas",
+    "action_index": 317,
+    "action_token": "Bake",
+    "argument_indices": [
+      320,
+      323
+    ],
+    "argument_first_tokens": [
+      "preheated",
+      "25"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      6
+    ],
+    "argument_first_tokens": [
+      "a",
+      "high"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 16,
+    "action_token": "mix",
+    "argument_indices": [
+      18,
+      22,
+      25
+    ],
+    "argument_first_tokens": [
+      "the",
+      "Parmesan",
+      "onion"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 40,
+    "action_token": "Crumble",
+    "argument_indices": [
+      42
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 47,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 54,
+    "action_token": "Form",
+    "argument_indices": [
+      56
+    ],
+    "argument_first_tokens": [
+      "6"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 60,
+    "action_token": "wrap",
+    "argument_indices": [
+      61,
+      64,
+      66
+    ],
+    "argument_first_tokens": [
+      "a",
+      "bacon",
+      "each"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 71,
+    "action_token": "Secure",
+    "argument_indices": [
+      72,
+      74
+    ],
+    "argument_first_tokens": [
+      "bacon",
+      "toothpicks"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 78,
+    "action_token": "Place",
+    "argument_indices": [
+      79,
+      81
+    ],
+    "argument_first_tokens": [
+      "patties",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 85,
+    "action_token": "cook",
+    "argument_indices": [
+      87
+    ],
+    "argument_first_tokens": [
+      "5"
+    ]
+  },
+  {
+    "doc_id": "248_Bacon_Wrapped_Hamburgers",
+    "action_index": 99,
+    "action_token": "Remove",
+    "argument_indices": [
+      100,
+      104
+    ],
+    "argument_first_tokens": [
+      "toothpicks",
+      "hamburger"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 10,
+    "action_token": "cook",
+    "argument_indices": [
+      11,
+      14
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "oil"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 23,
+    "action_token": "Stir",
+    "argument_indices": [
+      25
+    ],
+    "argument_first_tokens": [
+      "onion"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 27,
+    "action_token": "cook",
+    "argument_indices": [
+      28
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 34,
+    "action_token": "Pour",
+    "argument_indices": [
+      36,
+      38
+    ],
+    "argument_first_tokens": [
+      "water",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 44,
+    "action_token": "boil",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 48,
+    "action_token": "Reduce",
+    "argument_indices": [
+      49,
+      52
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "45"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 51,
+    "action_token": "simmer",
+    "argument_indices": [
+      52
+    ],
+    "argument_first_tokens": [
+      "45"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 57,
+    "action_token": "Stir",
+    "argument_indices": [
+      59,
+      61,
+      63,
+      65,
+      67
+    ],
+    "argument_first_tokens": [
+      "celery",
+      "carrots",
+      "garlic",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 71,
+    "action_token": "Simmer",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 80,
+    "action_token": "Remove",
+    "argument_indices": [
+      81,
+      88
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 84,
+    "action_token": "pull",
+    "argument_indices": [
+      85,
+      88
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 93,
+    "action_token": "Stir",
+    "argument_indices": [
+      94,
+      97
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 100,
+    "action_token": "cook",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "249_A_1_Chicken_Soup",
+    "action_index": 109,
+    "action_token": "Return",
+    "argument_indices": [
+      110,
+      113
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "pot"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 2,
+    "action_token": "Microwave",
+    "argument_indices": [
+      3,
+      5
+    ],
+    "argument_first_tokens": [
+      "chocolate",
+      "2"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 30,
+    "action_token": "stirring",
+    "argument_indices": [
+      33
+    ],
+    "argument_first_tokens": [
+      "heating"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 38,
+    "action_token": "Beat",
+    "argument_indices": [
+      40,
+      43
+    ],
+    "argument_first_tokens": [
+      "cream",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 56,
+    "action_token": "Refrigerate",
+    "argument_indices": [
+      57
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 63,
+    "action_token": "fold",
+    "argument_indices": [
+      65
+    ],
+    "argument_first_tokens": [
+      "3"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 81,
+    "action_token": "Spoon",
+    "argument_indices": [
+      83
+    ],
+    "argument_first_tokens": [
+      "crust"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 87,
+    "action_token": "Freeze",
+    "argument_indices": [
+      88,
+      89
+    ],
+    "argument_first_tokens": [
+      "pie",
+      "4"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 99,
+    "action_token": "stand",
+    "argument_indices": [
+      101
+    ],
+    "argument_first_tokens": [
+      "room"
+    ]
+  },
+  {
+    "doc_id": "250_German_Sweet_Chocolate_Pie",
+    "action_index": 108,
+    "action_token": "Serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 10,
+    "action_token": "fry",
+    "argument_indices": [
+      11,
+      14
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "oil"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 24,
+    "action_token": "Remove",
+    "argument_indices": [
+      25,
+      27,
+      29
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "oil",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 31,
+    "action_token": "drain",
+    "argument_indices": [
+      32,
+      35
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 34,
+    "action_token": "reserve",
+    "argument_indices": [
+      35,
+      42
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "skillet"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 39,
+    "action_token": "Melt",
+    "argument_indices": [
+      40,
+      42,
+      48
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "skillet",
+      "hot"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 45,
+    "action_token": "add",
+    "argument_indices": [
+      46,
+      48
+    ],
+    "argument_first_tokens": [
+      "vinegar",
+      "hot"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 53,
+    "action_token": "Season",
+    "argument_indices": [
+      55,
+      57
+    ],
+    "argument_first_tokens": [
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 63,
+    "action_token": "Add",
+    "argument_indices": [
+      64,
+      67
+    ],
+    "argument_first_tokens": [
+      "cooked",
+      "sauce"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 69,
+    "action_token": "stir",
+    "argument_indices": [
+      71
+    ],
+    "argument_first_tokens": [
+      "low"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 82,
+    "action_token": "simmer",
+    "argument_indices": [
+      84
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "251_Buffalo_Chicken_Wings_I",
+    "action_index": 95,
+    "action_token": "Serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "252_Corned_Beef_Hash",
+    "action_index": 12,
+    "action_token": "combine",
+    "argument_indices": [
+      13,
+      16,
+      19
+    ],
+    "argument_first_tokens": [
+      "the",
+      "corned",
+      "onion"
+    ]
+  },
+  {
+    "doc_id": "252_Corned_Beef_Hash",
+    "action_index": 27,
+    "action_token": "Cover",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "252_Corned_Beef_Hash",
+    "action_index": 29,
+    "action_token": "simmer",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "252_Corned_Beef_Hash",
+    "action_index": 46,
+    "action_token": "Mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "252_Corned_Beef_Hash",
+    "action_index": 50,
+    "action_token": "serve",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 2,
+    "action_token": "Heat",
+    "argument_indices": [
+      3,
+      5
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 10,
+    "action_token": "spray",
+    "argument_indices": [
+      11,
+      16
+    ],
+    "argument_first_tokens": [
+      "a",
+      "cooking"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 21,
+    "action_token": "Saute",
+    "argument_indices": [
+      22
+    ],
+    "argument_first_tokens": [
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 34,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 39,
+    "action_token": "Preheat",
+    "argument_indices": [
+      40,
+      42,
+      46
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "375",
+      "190"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 53,
+    "action_token": "Unroll",
+    "argument_indices": [
+      54
+    ],
+    "argument_first_tokens": [
+      "4"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 61,
+    "action_token": "Layer",
+    "argument_indices": [
+      62,
+      64
+    ],
+    "argument_first_tokens": [
+      "each",
+      "3"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 79,
+    "action_token": "Place",
+    "argument_indices": [
+      80,
+      83
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 90,
+    "action_token": "Wrap",
+    "argument_indices": [
+      95
+    ],
+    "argument_first_tokens": [
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 92,
+    "action_token": "tuck",
+    "argument_indices": [
+      93,
+      95
+    ],
+    "argument_first_tokens": [
+      "dough",
+      "chicken"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 102,
+    "action_token": "Place",
+    "argument_indices": [
+      103,
+      107
+    ],
+    "argument_first_tokens": [
+      "seam",
+      "baking"
+    ]
+  },
+  {
+    "doc_id": "253_Bs_Cordon_Bleu_Bundles",
+    "action_index": 112,
+    "action_token": "Bake",
+    "argument_indices": [
+      114,
+      117
+    ],
+    "argument_first_tokens": [
+      "preheated",
+      "10"
+    ]
+  },
+  {
+    "doc_id": "254_Coconut_Ambrosia_Salad",
+    "action_index": 7,
+    "action_token": "combine",
+    "argument_indices": [
+      8,
+      11,
+      13,
+      16,
+      18
+    ],
+    "argument_first_tokens": [
+      "the",
+      "pineapple",
+      "whipped",
+      "coconut",
+      "marshmallows"
+    ]
+  },
+  {
+    "doc_id": "254_Coconut_Ambrosia_Salad",
+    "action_index": 24,
+    "action_token": "Mix",
+    "argument_indices": [
+      26
+    ],
+    "argument_first_tokens": [
+      "well"
+    ]
+  },
+  {
+    "doc_id": "254_Coconut_Ambrosia_Salad",
+    "action_index": 28,
+    "action_token": "chill",
+    "argument_indices": [
+      29
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "254_Coconut_Ambrosia_Salad",
+    "action_index": 36,
+    "action_token": "Garnish",
+    "argument_indices": [
+      38
+    ],
+    "argument_first_tokens": [
+      "cherries"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 2,
+    "action_token": "Beat",
+    "argument_indices": [
+      4,
+      7
+    ],
+    "argument_first_tokens": [
+      "cream",
+      "margarine"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 14,
+    "action_token": "Add",
+    "argument_indices": [
+      15
+    ],
+    "argument_first_tokens": [
+      "flour"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 17,
+    "action_token": "mixing",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 22,
+    "action_token": "Shape",
+    "argument_indices": [
+      24
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 27,
+    "action_token": "cover",
+    "argument_indices": [
+      31
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 29,
+    "action_token": "chill",
+    "argument_indices": [
+      31
+    ],
+    "argument_first_tokens": [
+      "2"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 42,
+    "action_token": "cook",
+    "argument_indices": [
+      43,
+      45
+    ],
+    "argument_first_tokens": [
+      "sugar",
+      "milk"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 47,
+    "action_token": "stirring",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 59,
+    "action_token": "Add",
+    "argument_indices": [
+      60
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 66,
+    "action_token": "Remove",
+    "argument_indices": [
+      68
+    ],
+    "argument_first_tokens": [
+      "heat"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 71,
+    "action_token": "cool",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 81,
+    "action_token": "Roll",
+    "argument_indices": [
+      83,
+      86
+    ],
+    "argument_first_tokens": [
+      "chilled",
+      "lightly"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 100,
+    "action_token": "Cut",
+    "argument_indices": [
+      102
+    ],
+    "argument_first_tokens": [
+      "half"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 107,
+    "action_token": "Spread",
+    "argument_indices": [
+      108,
+      111
+    ],
+    "argument_first_tokens": [
+      "each",
+      "milk"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 116,
+    "action_token": "roll",
+    "argument_indices": [
+      119
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 130,
+    "action_token": "Cut",
+    "argument_indices": [
+      131
+    ],
+    "argument_first_tokens": [
+      "each"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 138,
+    "action_token": "Place",
+    "argument_indices": [
+      139,
+      143
+    ],
+    "argument_first_tokens": [
+      "seam",
+      "ungreased"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 156,
+    "action_token": "Leaving",
+    "argument_indices": [
+      157
+    ],
+    "argument_first_tokens": [
+      "roll's"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 161,
+    "action_token": "cut",
+    "argument_indices": [
+      163
+    ],
+    "argument_first_tokens": [
+      "slices"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 179,
+    "action_token": "Bake",
+    "argument_indices": [
+      181,
+      185
+    ],
+    "argument_first_tokens": [
+      "350",
+      "175"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 200,
+    "action_token": "Remove",
+    "argument_indices": [
+      202
+    ],
+    "argument_first_tokens": [
+      "sheet"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 204,
+    "action_token": "sprinkle",
+    "argument_indices": [
+      206
+    ],
+    "argument_first_tokens": [
+      "confectioners"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 212,
+    "action_token": "Cool",
+    "argument_indices": [
+      214
+    ],
+    "argument_first_tokens": [
+      "racks"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 218,
+    "action_token": "Cut",
+    "argument_indices": [
+      219,
+      221
+    ],
+    "argument_first_tokens": [
+      "cookies",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 227,
+    "action_token": "Refrigerate",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 229,
+    "action_token": "freeze",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "255_Aunt_Mamies",
+    "action_index": 233,
+    "action_token": "Resprinkle",
+    "argument_indices": [
+      235,
+      237
+    ],
+    "argument_first_tokens": [
+      "confectioners",
+      "sugar"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 2,
+    "action_token": "Place",
+    "argument_indices": [
+      3,
+      5
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 11,
+    "action_token": "Place",
+    "argument_indices": [
+      12,
+      14
+    ],
+    "argument_first_tokens": [
+      "breadcrumbs",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 20,
+    "action_token": "mix",
+    "argument_indices": [
+      22,
+      26
+    ],
+    "argument_first_tokens": [
+      "ground",
+      "cayenne"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 31,
+    "action_token": "Place",
+    "argument_indices": [
+      32,
+      34,
+      36
+    ],
+    "argument_first_tokens": [
+      "eggs",
+      "water",
+      "a"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 48,
+    "action_token": "coat",
+    "argument_indices": [
+      49,
+      52,
+      55
+    ],
+    "argument_first_tokens": [
+      "the",
+      "the",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 63,
+    "action_token": "set",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 68,
+    "action_token": "Heat",
+    "argument_indices": [
+      69,
+      71,
+      75
+    ],
+    "argument_first_tokens": [
+      "oil",
+      "a",
+      "375"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 90,
+    "action_token": "fry",
+    "argument_indices": [
+      91,
+      92,
+      94
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "doc_id": "256_Fried_Chicken_Tenders",
+    "action_index": 110,
+    "action_token": "combine",
+    "argument_indices": [
+      111,
+      114,
+      116,
+      119
+    ],
+    "argument_first_tokens": [
+      "the",
+      "horseradish",
+      "sour",
+      "Worcestershire"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 6,
+    "action_token": "combine",
+    "argument_indices": [
+      3,
+      7,
+      10,
+      12,
+      14
+    ],
+    "argument_first_tokens": [
+      "a",
+      "the",
+      "crackers",
+      "celery",
+      "pimientos"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 22,
+    "action_token": "combine",
+    "argument_indices": [
+      23,
+      26,
+      28,
+      30,
+      33
+    ],
+    "argument_first_tokens": [
+      "the",
+      "milk",
+      "salt",
+      "garlic",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 35,
+    "action_token": "mix",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 40,
+    "action_token": "Stir",
+    "argument_indices": [
+      42
+    ],
+    "argument_first_tokens": [
+      "the"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 48,
+    "action_token": "Spoon",
+    "argument_indices": [
+      50
+    ],
+    "argument_first_tokens": [
+      "1"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 59,
+    "action_token": "place",
+    "argument_indices": [
+      61
+    ],
+    "argument_first_tokens": [
+      "an"
+    ]
+  },
+  {
+    "doc_id": "257_Broiled_Egg_Salad_Sandwiches",
+    "action_index": 68,
+    "action_token": "Broil",
+    "argument_indices": [
+      70
+    ],
+    "argument_first_tokens": [
+      "3-4"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 2,
+    "action_token": "Preheat",
+    "argument_indices": [
+      3,
+      5,
+      9
+    ],
+    "argument_first_tokens": [
+      "oven",
+      "375",
+      "190"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 16,
+    "action_token": "Grease",
+    "argument_indices": [
+      17
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 35,
+    "action_token": "cream",
+    "argument_indices": [
+      36,
+      38
+    ],
+    "argument_first_tokens": [
+      "butter",
+      "brown"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 46,
+    "action_token": "Add",
+    "argument_indices": [
+      47,
+      49,
+      51,
+      53
+    ],
+    "argument_first_tokens": [
+      "bananas",
+      "milk",
+      "vanilla",
+      "eggs"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 55,
+    "action_token": "mix",
+    "argument_indices": [
+      64
+    ],
+    "argument_first_tokens": [
+      "bran"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 60,
+    "action_token": "Stir",
+    "argument_indices": [
+      62,
+      64,
+      66,
+      69
+    ],
+    "argument_first_tokens": [
+      "flour",
+      "bran",
+      "baking",
+      "soda"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 73,
+    "action_token": "blend",
+    "argument_indices": [],
+    "argument_first_tokens": []
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 80,
+    "action_token": "Stir",
+    "argument_indices": [
+      82
+    ],
+    "argument_first_tokens": [
+      "walnuts"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 86,
+    "action_token": "Pour",
+    "argument_indices": [
+      87,
+      89
+    ],
+    "argument_first_tokens": [
+      "batter",
+      "prepared"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 95,
+    "action_token": "Bake",
+    "argument_indices": [
+      97,
+      101
+    ],
+    "argument_first_tokens": [
+      "375",
+      "190"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 127,
+    "action_token": "Cool",
+    "argument_indices": [
+      129,
+      132
+    ],
+    "argument_first_tokens": [
+      "the",
+      "5"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 136,
+    "action_token": "remove",
+    "argument_indices": [
+      137
+    ],
+    "argument_first_tokens": [
+      "muffins"
+    ]
+  },
+  {
+    "doc_id": "258_Banana_Bran_Muffins",
+    "action_index": 139,
+    "action_token": "place",
+    "argument_indices": [
+      141
+    ],
+    "argument_first_tokens": [
+      "a"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 2,
+    "action_token": "Heat",
+    "argument_indices": [
+      3,
+      6,
+      10
+    ],
+    "argument_first_tokens": [
+      "the",
+      "a",
+      "medium"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 15,
+    "action_token": "Place",
+    "argument_indices": [
+      16,
+      18
+    ],
+    "argument_first_tokens": [
+      "chicken",
+      "the"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 21,
+    "action_token": "brown",
+    "argument_indices": [
+      23
+    ],
+    "argument_first_tokens": [
+      "all"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 28,
+    "action_token": "Season",
+    "argument_indices": [
+      30,
+      33,
+      36
+    ],
+    "argument_first_tokens": [
+      "sea",
+      "chili",
+      "cumin"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 50,
+    "action_token": "Mix",
+    "argument_indices": [
+      52,
+      54,
+      56
+    ],
+    "argument_first_tokens": [
+      "onion",
+      "green",
+      "pepper"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 65,
+    "action_token": "Pour",
+    "argument_indices": [
+      67
+    ],
+    "argument_first_tokens": [
+      "about"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 74,
+    "action_token": "cooking",
+    "argument_indices": [
+      75
+    ],
+    "argument_first_tokens": [
+      "10"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 90,
+    "action_token": "Mix",
+    "argument_indices": [
+      91,
+      95,
+      99
+    ],
+    "argument_first_tokens": [
+      "the",
+      "black",
+      "corn"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 106,
+    "action_token": "Season",
+    "argument_indices": [
+      108
+    ],
+    "argument_first_tokens": [
+      "green"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 114,
+    "action_token": "Reduce",
+    "argument_indices": [
+      115,
+      117
+    ],
+    "argument_first_tokens": [
+      "heat",
+      "low"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 120,
+    "action_token": "mix",
+    "argument_indices": [
+      122,
+      127
+    ],
+    "argument_first_tokens": [
+      "remaining",
+      "tomato"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 132,
+    "action_token": "Simmer",
+    "argument_indices": [
+      136
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 134,
+    "action_token": "stirring",
+    "argument_indices": [
+      136
+    ],
+    "argument_first_tokens": [
+      "30"
+    ]
+  },
+  {
+    "doc_id": "259_Chicken_and_Black_Bean_Chili",
+    "action_index": 145,
+    "action_token": "Top",
+    "argument_indices": [
+      147
+    ],
+    "argument_first_tokens": [
+      "cilantro"
+    ]
+  }
+]

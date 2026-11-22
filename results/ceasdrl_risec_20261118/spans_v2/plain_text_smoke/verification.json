@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "input": "Unannotated upstream .txt only",
+  "doc_id": "182_BBQ_Chuck_Roast",
+  "actions": 14,
+  "arguments": 30,
+  "batch_and_plain_text_outputs_identical": true,
+  "checkpoint_sha256": {
+    "act": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2",
+    "arg": "43a5294336df9be178714d37cecac7315c155fad7e464af38acac120f01ca28c"
+  }
+}

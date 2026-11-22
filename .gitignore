@@ -49,8 +49,14 @@ logs/
 *.log
 
 # temporary files
+.pytest_cache/
+/results/gpt3_to_plan/*/evaluation_mismatch_diagnostics.csv
+/results/nl2p_1/*/evaluation_mismatch_diagnostics.csv
+/results/nl2p_1_ablation/*/evaluation_mismatch_diagnostics.csv
+/results/nl2p_1_coref/*/evaluation_mismatch_diagnostics.csv
 /results/archive/
 /results/batch/
+/results/hpc/
 
 # sif
 *.sif

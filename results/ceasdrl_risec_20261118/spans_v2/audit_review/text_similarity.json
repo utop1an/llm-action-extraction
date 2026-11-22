@@ -1,0 +1,57 @@
+{
+  "method": "difflib.SequenceMatcher token sequence ratio, lowercase, autojunk=False; pairs with length-based upper bound <0.5 omitted",
+  "scope": "test versus train",
+  "top_pairs": [
+    {
+      "test": "228_Best_Chocolate_Chippers",
+      "train": "055_Grandmas_Gingersnaps",
+      "token_sequence_similarity": 0.6891385767790262
+    },
+    {
+      "test": "189_Fresh_Apple_Walnut_Cake",
+      "train": "103_Grandmas_Carrot_Cake",
+      "token_sequence_similarity": 0.6116207951070336
+    },
+    {
+      "test": "228_Best_Chocolate_Chippers",
+      "train": "038_Beths_Spicy_Oatmeal_Raisin_Cookies",
+      "token_sequence_similarity": 0.5846153846153846
+    },
+    {
+      "test": "217_Cookie_Jar_Gingersnaps",
+      "train": "028_Cinnamon_Crackle_Cookies",
+      "token_sequence_similarity": 0.546583850931677
+    },
+    {
+      "test": "227_Almond_Apricot_Bread",
+      "train": "031_Caraway_Rye_Muffins",
+      "token_sequence_similarity": 0.5316455696202531
+    },
+    {
+      "test": "222_Crustless_Spinach_Quiche_2",
+      "train": "028_Cinnamon_Crackle_Cookies",
+      "token_sequence_similarity": 0.5185185185185185
+    },
+    {
+      "test": "239_Bahama_Mama_II",
+      "train": "034_A_Very_Intense_Fruit_Smoothie",
+      "token_sequence_similarity": 0.5098039215686274
+    },
+    {
+      "test": "258_Banana_Bran_Muffins",
+      "train": "117_Applesauce_Bread_I",
+      "token_sequence_similarity": 0.5062240663900415
+    },
+    {
+      "test": "257_Broiled_Egg_Salad_Sandwiches",
+      "train": "028_Cinnamon_Crackle_Cookies",
+      "token_sequence_similarity": 0.5034013605442177
+    },
+    {
+      "test": "245_Gingered_Mango_Salsa",
+      "train": "034_A_Very_Intense_Fruit_Smoothie",
+      "token_sequence_similarity": 0.4878048780487805
+    }
+  ],
+  "note": "Similarity screening is not semantic deduplication or proof against every form of overlap."
+}

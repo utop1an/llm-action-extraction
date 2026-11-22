@@ -1,0 +1,23 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,olive oil,pork tenderloin,salt,pepper,parsley,onion,apple,Riesling wine,balsamic vinegar,oven,baking dish,large skillet,bowl,instant-read thermometer,stove,Notes,,Action_start,Action_end,Sentence_Id
+Preheat,Preheat an oven to 350 degrees F (175 degrees C).,,,,,,,,,,1,,,,,,,,0,7,0
+Grease,Grease a baking dish large enough to hold the tenderloin without folding it.,1,,,,,,,,,,1,,,,,,,50,56,1
+Heat,"Heat the olive oil in a large skillet over medium-high heat, and brown the pork tenderloin on all sides.",1,,,,,,,,,,,1,,,,,,127,131,2
+brown,"Heat the olive oil in a large skillet over medium-high heat, and brown the pork tenderloin on all sides.",1,1,,,,,,,,,,1,,,,,,192,197,2
+Remove,Remove the browned tenderloin to the prepared baking dish.,1,1,,,,,,,,,1,,,,,,,232,238,3
+Sprinkle,"Sprinkle all sides of the meat with salt, pepper, and parsley.",1,1,1,1,1,,,,,,1,,,,,,,291,299,4
+Cook,"Cook and stir the onion and apple in the same skillet over medium heat until the onion becomes soft, about 5 minutes, and pour in the Riesling wine.",1,,,,,1,1,,,,,1,,,1,,,354,358,5
+stir,"Cook and stir the onion and apple in the same skillet over medium heat until the onion becomes soft, about 5 minutes, and pour in the Riesling wine.",1,,,,,1,1,,,,,1,,,1,,,363,367,5
+pour,"Cook and stir the onion and apple in the same skillet over medium heat until the onion becomes soft, about 5 minutes, and pour in the Riesling wine.",1,,,,,1,1,1,,,,1,,,1,,,476,480,5
+Scrape,Scrape all the browned flavor bits off the bottom of the skillet and stir to help dissolve them into the wine.,1,,,,,1,1,1,,,,1,,,1,,,503,509,6
+stir,Scrape all the browned flavor bits off the bottom of the skillet and stir to help dissolve them into the wine.,1,,,,,1,1,1,,,,1,,,1,,,572,576,6
+pour,"Bring to a boil, and pour the onion, apple, and wine mixture over the tenderloin.",1,,,,,1,1,1,,,1,,,,,,,635,639,7
+Mix,Mix together the apple jelly and balsamic vinegar in a bowl until the mixture is smooth and without lumps.,,,,,,1,1,1,1,,,,1,,,,,696,699,8
+Spread,Spread the jelly mixture all over the pork.,1,1,1,1,1,1,1,1,1,,1,,,,,,,803,809,9
+Bake,"Bake loin in the preheated oven until an instant-read thermometer inserted into the center reads 145 degrees F (63 degrees C), 30 to 45 minutes.",1,1,1,1,1,1,1,1,1,1,1,,,,,,,847,851,10
+reads,"Bake loin in the preheated oven until an instant-read thermometer inserted into the center reads 145 degrees F (63 degrees C), 30 to 45 minutes.",1,1,1,1,1,1,1,1,1,1,1,,,1,,,,938,943,10
+Allow,"Allow the tenderloin to rest for 10 minutes before slicing, and serve each slice with a spoonful of the apple-onion mixture.",1,1,1,1,1,1,1,1,1,,1,,,,,,,992,997,11
+slicing,"Allow the tenderloin to rest for 10 minutes before slicing, and serve each slice with a spoonful of the apple-onion mixture.",1,1,1,1,1,1,1,1,1,,1,,,,,,,1043,1050,11
+serve,"Allow the tenderloin to rest for 10 minutes before slicing, and serve each slice with a spoonful of the apple-onion mixture.",1,1,1,1,1,1,1,1,1,,,,,,,,,1056,1061,11
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,1,,,,,

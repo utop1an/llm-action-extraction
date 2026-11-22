@@ -1,0 +1,64 @@
+{
+  "policy": "Published annotation version determines task targets. Raw-only spans are not reintroduced. No document is dropped from the published 156.",
+  "raw_spans_absent_from_published": [
+    {
+      "doc_id": "4recipe818",
+      "source_type": "TOOL",
+      "char_span": [
+        1424,
+        1438
+      ],
+      "text": "large saucepan"
+    },
+    {
+      "doc_id": "1recipe1179",
+      "source_type": "PAR_TOOL",
+      "char_span": [
+        173,
+        179
+      ],
+      "text": "bottom"
+    },
+    {
+      "doc_id": "1recipe1179",
+      "source_type": "PAR_TOOL",
+      "char_span": [
+        184,
+        189
+      ],
+      "text": "sides"
+    },
+    {
+      "doc_id": "1recipe1179",
+      "source_type": "TOOL",
+      "char_span": [
+        195,
+        216
+      ],
+      "text": "9x13 inch baking dish"
+    },
+    {
+      "doc_id": "4recipe406",
+      "source_type": "TOOL",
+      "char_span": [
+        1013,
+        1023
+      ],
+      "text": "containers"
+    },
+    {
+      "doc_id": "4recipe433",
+      "source_type": "ACTION",
+      "char_span": [
+        379,
+        387
+      ],
+      "text": "absorbed"
+    }
+  ],
+  "counts": {
+    "TOOL": 3,
+    "PAR_TOOL": 2,
+    "ACTION": 1
+  }
+}

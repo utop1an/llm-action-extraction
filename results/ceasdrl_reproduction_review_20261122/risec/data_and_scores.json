@@ -1,0 +1,256 @@
+{
+  "status": "running",
+  "no_training_performed": true,
+  "started_at_utc": "2026-11-22T04:59:48.540525+00:00",
+  "dataset_source": {
+    "repository": "YiweiJiang2015/RISeC",
+    "revision": "70b9a0b4c4eb656375a83bc1c0ca47c29ec2da2c"
+  },
+  "source_files_verified": 523,
+  "split_counts": {
+    "train": {
+      "documents": 126,
+      "actions": 1487,
+      "legacy_links": 2692,
+      "defined_noncondition_links": 2663
+    },
+    "dev": {
+      "documents": 56,
+      "actions": 694,
+      "legacy_links": 1212,
+      "defined_noncondition_links": 1206
+    },
+    "test": {
+      "documents": 78,
+      "actions": 880,
+      "legacy_links": 1616,
+      "defined_noncondition_links": 1606
+    }
+  },
+  "relation_taxonomy": {
+    "train": {
+      "defined_explicit_noncondition": 2663,
+      "suffix_X_or_Z": 750,
+      "condition_clause": 232,
+      "temporal_action_relation": 64,
+      "other_action_target": 25,
+      "included_TODO": 29,
+      "non_action_source": 29
+    },
+    "dev": {
+      "defined_explicit_noncondition": 1206,
+      "suffix_X_or_Z": 337,
+      "condition_clause": 108,
+      "other_action_target": 18,
+      "temporal_action_relation": 26,
+      "non_action_source": 31,
+      "included_TODO": 6
+    },
+    "test": {
+      "defined_explicit_noncondition": 1606,
+      "suffix_X_or_Z": 441,
+      "included_TODO": 10,
+      "temporal_action_relation": 21,
+      "condition_clause": 134,
+      "other_action_target": 13,
+      "non_action_source": 21
+    }
+  },
+  "orphan_annotations": [
+    "data\\train\\165_Coq_au_Vin_alla_Italiana.ann"
+  ],
+  "split_overlap": {
+    "train_dev": {
+      "document_ids": 0,
+      "normalized_full_texts": 0
+    },
+    "train_test": {
+      "document_ids": 0,
+      "normalized_full_texts": 0
+    },
+    "dev_test": {
+      "document_ids": 0,
+      "normalized_full_texts": 0
+    }
+  },
+  "independent_character_span_metrics": {
+    "legacy": {
+      "action": {
+        "tp": 862,
+        "fp": 40,
+        "fn": 18,
+        "predicted": 902,
+        "gold": 880,
+        "precision": 0.9556541019955654,
+        "recall": 0.9795454545454545,
+        "f1": 0.9674523007856342
+      },
+      "linked_argument": {
+        "tp": 1447,
+        "fp": 474,
+        "fn": 169,
+        "predicted": 1921,
+        "gold": 1616,
+        "precision": 0.7532535137948985,
+        "recall": 0.8954207920792079,
+        "f1": 0.8182075204975968
+      }
+    },
+    "defined_noncondition": {
+      "action": {
+        "tp": 862,
+        "fp": 40,
+        "fn": 18,
+        "predicted": 902,
+        "gold": 880,
+        "precision": 0.9556541019955654,
+        "recall": 0.9795454545454545,
+        "f1": 0.9674523007856342
+      },
+      "linked_argument": {
+        "tp": 1441,
+        "fp": 480,
+        "fn": 165,
+        "predicted": 1921,
+        "gold": 1606,
+        "precision": 0.7501301405517959,
+        "recall": 0.8972602739726028,
+        "f1": 0.8171250354408846
+      }
+    },
+    "defined_with_conditions": {
+      "action": {
+        "tp": 862,
+        "fp": 40,
+        "fn": 18,
+        "predicted": 902,
+        "gold": 880,
+        "precision": 0.9556541019955654,
+        "recall": 0.9795454545454545,
+        "f1": 0.9674523007856342
+      },
+      "linked_argument": {
+        "tp": 1441,
+        "fp": 480,
+        "fn": 299,
+        "predicted": 1921,
+        "gold": 1740,
+        "precision": 0.7501301405517959,
+        "recall": 0.8281609195402299,
+        "f1": 0.7872166074842939
+      }
+    }
+  },
+  "current_scope_score_reproduced": true,
+  "policy_sensitivity_note": "Same frozen model/predictions, changed reference scope only; not a clean retraining or a replacement benchmark.",
+  "test_TODO_links": {
+    "total": 10,
+    "predicted_correctly": 6,
+    "examples": [
+      [
+        "182_BBQ_Chuck_Roast",
+        202,
+        209,
+        "preheat",
+        231,
+        244,
+        "indirect heat"
+      ],
+      [
+        "184_Crunchy_Cheese_Sandwiches",
+        241,
+        254,
+        "spreading out",
+        258,
+        267,
+        "the edges"
+      ],
+      [
+        "185_Dilly_Chicken_and_Potatoes",
+        40,
+        45,
+        "brown",
+        70,
+        73,
+        "oil"
+      ],
+      [
+        "185_Dilly_Chicken_and_Potatoes",
+        436,
+        442,
+        "remove",
+        419,
+        434,
+        "a slotted spoon"
+      ],
+      [
+        "187_Fried_Apple_Pies",
+        112,
+        116,
+        "mash",
+        122,
+        126,
+        "fork"
+      ],
+      [
+        "193_Fab_Summer_Blackened_Chicken_Salad",
+        174,
+        178,
+        "cook",
+        200,
+        209,
+        "each side"
+      ],
+      [
+        "211_apple_butter_spice_cake",
+        111,
+        117,
+        "mixing",
+        88,
+        107,
+        "prepare the topping"
+      ],
+      [
+        "227_Almond_Apricot_Bread",
+        481,
+        488,
+        "combine",
+        470,
+        479,
+        "for glaze"
+      ],
+      [
+        "230_Fire_Side_Coffee",
+        137,
+        141,
+        "stir",
+        125,
+        135,
+        "to prepare"
+      ],
+      [
+        "242_Cinnamon_Chocolate_Cake_2",
+        427,
+        434,
+        "combine",
+        417,
+        425,
+        "frosting"
+      ]
+    ]
+  },
+  "prediction_errors": {
+    "self_arguments": 33,
+    "action_fp": 40,
+    "action_fn": 18,
+    "argument_fp": 474,
+    "argument_fn": 169
+  },
+  "artifact_sha256": {
+    "act_balanced_seed0/best.pt": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2",
+    "arg_balanced_seed0/best.pt": "43a5294336df9be178714d37cecac7315c155fad7e464af38acac120f01ca28c",
+    "pipeline_seed0/predictions.json": "7c1ff9e7143676ea2f219417840e69b161994f54da9e5e2b7b973edbd1db5bf4",
+    "pipeline_seed0/receipt.json": "555ed648d890ff51f07532351b161c773b5ad697631389435c261bdce1371088",
+    "selection.json": "cabef3b079e3eeffe3721acef12273e3f0045c16cf39b109e4ee86e841f58fd0"
+  }
+}

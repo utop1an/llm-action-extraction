@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "reviewed_on": "2026-11-22",
+  "repository": "https://github.com/FilipposVentirozos/RiCoRecA",
+  "commit": "af80d0c3fdaa5a375625bb9f006ce536770068f2",
+  "commit_date": "2024-05-19T20:29:17Z",
+  "paper": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1550604/full",
+  "paper_publication_date": "2026-01-12",
+  "dataset_page": "https://figshare.com/articles/dataset/RiCoRecA_i_Ri_i_ch_i_Co_i_oking_i_Rec_i_ipe_i_A_i_nnotation_Schema_Dataset_/22317796",
+  "paper_reported_counts": {
+    "recipes": 156,
+    "actions": 2290,
+    "member_relations": 4762,
+    "locally_verified": false,
+    "verification_note": "Raw Annotator_P has 163 documents and 2290 ACTION spans. Released CSV corpus has 156 documents and 2176 ACTION spans. Paper counts and experimental targets have different scopes."
+  },
+  "github_data_files": [
+    {
+      "path": "data/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    }
+  ],
+  "reviewed_source_files": [
+    {
+      "path": "recipe-transformation-evaluation/evaluation.py",
+      "sha": "d61141811d217a29576ea7e8d38982d1dd0270bb",
+      "url": "https://github.com/FilipposVentirozos/RiCoRecA/blob/af80d0c3fdaa5a375625bb9f006ce536770068f2/recipe-transformation-evaluation/evaluation.py"
+    },
+    {
+      "path": "recipe-transformation-evaluation/process.py",
+      "sha": "c5e3d81fba7e95b2dcd48995480da9ecf16d25ab",
+      "url": "https://github.com/FilipposVentirozos/RiCoRecA/blob/af80d0c3fdaa5a375625bb9f006ce536770068f2/recipe-transformation-evaluation/process.py"
+    },
+    {
+      "path": "recipe-transformation-evaluation/action_set.py",
+      "sha": "b52647d08d54e037770e95f58ae70ba657332cc9",
+      "url": "https://github.com/FilipposVentirozos/RiCoRecA/blob/af80d0c3fdaa5a375625bb9f006ce536770068f2/recipe-transformation-evaluation/action_set.py"
+    },
+    {
+      "path": "recipe-transformation-evaluation/ne.py",
+      "sha": "3bf6087b230f84edfeb3c7d29c3a11fb4d984a69",
+      "url": "https://github.com/FilipposVentirozos/RiCoRecA/blob/af80d0c3fdaa5a375625bb9f006ce536770068f2/recipe-transformation-evaluation/ne.py"
+    },
+    {
+      "path": "preprocessing-annotation/recipe.py",
+      "sha": "d2f6b3dbdc76557b963791bfce2c0fd5746575fa",
+      "url": "https://github.com/FilipposVentirozos/RiCoRecA/blob/af80d0c3fdaa5a375625bb9f006ce536770068f2/preprocessing-annotation/recipe.py"
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "method": "web",
+      "url": "https://figshare.com/articles/dataset/RiCoRecA_i_Ri_i_ch_i_Co_i_oking_i_Rec_i_ipe_i_A_i_nnotation_Schema_Dataset_/22317796",
+      "error": "403 Forbidden"
+    },
+    {
+      "method": "local urllib",
+      "url": "https://api.figshare.com/v2/articles/22317796",
+      "error": "URLError: getaddrinfo failed, Errno 11001"
+    }
+  ],
+  "training_started": true,
+  "conversion_validated_on_real_data": true,
+  "test_scores": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "notes": [
+    "The user supplied data/data.zip; its SHA256 and each extracted file are recorded in archive_receipt.json. No Figshare version number is inferred from a local filename.",
+    "Paper's Member counts include predicate membership; they are not action-argument training counts.",
+    "Author code uses five KFold heldout blocks, then splits each heldout block into validation/test with test_size=0.66.",
+    "Evaluation reads historical split filenames containing seed 3245, but current generation invokes seed 432.",
+    "get_recipes catches preprocessing exceptions and skips recipes; count and record any failures instead of silently accepting a reduced corpus.",
+    "Membership can be derived through graph traversal and entity tracking; direct Member edges alone are an incomplete projection.",
+    "User fixed 64/16/20 document holdout: train99/dev25/test32, split seed1; actual IDs frozen in converted/split.json. Original author folds are not reused."
+  ],
+  "local_archive_received": true,
+  "archive_receipt": "archive_receipt.json",
+  "data_acquisition_status": "local_archive_extracted_and_validated",
+  "current_experiment": "experiment_64_16_20.json",
+  "locally_verified_counts": {
+    "raw_primary_documents": 163,
+    "published_documents": 156,
+    "published_actions": 2176,
+    "projected_linked_arguments": 4290
+  },
+  "result_report": "results/ceasdrl_ricoreca_64_16_20_seed0/REPORT.md"
+}

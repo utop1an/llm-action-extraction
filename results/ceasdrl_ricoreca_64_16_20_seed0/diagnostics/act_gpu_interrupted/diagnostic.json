@@ -1,0 +1,11 @@
+{
+  "status": "interrupted_no_result",
+  "updates": 14,
+  "completed_epochs": 0,
+  "test_evaluated": false,
+  "cpu_benchmark_seconds_per_update": {
+    "act": 0.4044,
+    "arg": 0.0814
+  },
+  "separate_gpu_real_data_benchmark_steady_seconds_per_update": 0.036
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "real_validation_contexts": 4,
+  "mode": "arg",
+  "num_q_outputs": 3,
+  "max_absolute_q_error": 0.00018310546875,
+  "weights": "best.keras.weights.h5",
+  "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with the CPU implementation of the same trained checkpoint.",
+  "adaptation": "num_actions=3 for BIO, not the original two-class task"
+}
