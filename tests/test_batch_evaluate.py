@@ -1,5 +1,9 @@
-import pytest
+import json
+from pathlib import Path
+import sys
 import tempfile
+
+import pytest
 
 from scripts import batch_evaluate
 
@@ -104,3 +108,35 @@ def test_main_dry_run_uses_requested_matrix(tmp_path, capsys):
     assert "Prepared 2 evaluation job(s)" in out
     assert f"python evaluation.py -d {tmp_path / 'nl2p_1' / 'gpt-5.4'} --diagnostics" in out
     assert f"python evaluation.py -d {tmp_path / 'nl2p_1_coref' / 'gpt-5.4'} --diagnostics" in out
+
+
+def test_hpc_serial_preserves_order_flags_and_failure_status(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setenv("PREFIX", "fixture with spaces")
+    monkeypatch.setenv("SOLVERS", "second first")
+    monkeypatch.setenv("MODELS", "missing model")
+    monkeypatch.setenv("PYTHON", sys.executable)
+    monkeypatch.setenv("DIAGNOSTICS", "--debug --diagnostics")
+    for solver in ("first", "second"):
+        (tmp_path / "fixture with spaces" / solver / "model").mkdir(parents=True)
+    (tmp_path / "evaluation.py").write_text(
+        "import json, sys\n"
+        "from pathlib import Path\n"
+        "with open('calls.jsonl', 'a') as out: print(json.dumps(sys.argv[1:]), file=out)\n"
+        "if Path('stop').exists(): sys.exit(7)\n",
+        encoding="utf-8",
+    )
+
+    def calls():
+        return [json.loads(line) for line in (tmp_path / "calls.jsonl").read_text().splitlines()]
+
+    assert batch_evaluate.main(["--hpc-serial"]) == 0
+    expected = [
+        ["-d", str(Path("fixture with spaces") / solver / "model"), "--debug", "--diagnostics"]
+        for solver in ("second", "first")
+    ]
+    assert calls() == expected
+
+    (tmp_path / "stop").touch()
+    assert batch_evaluate.main(["--hpc-serial"]) == 7
+    assert calls() == [*expected, expected[0]]

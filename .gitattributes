@@ -10,3 +10,8 @@ results/nl2p_four_conditions_20261122/** -text
 results/gpt3toplan_trainpool_20261122/** -text
 results/nl2p_repeats_20261027_v1/runs/** -text
 results/rebuttal_20261027/random_two_shot/** -text
+
+hpc/evaluation.sh text eol=lf
+
+# Preserve the original annotation export, including its CRLF bytes.
+analysis/annotations/samples/sampled_A.csv -text

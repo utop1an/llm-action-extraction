@@ -4,7 +4,7 @@ Date: 2026-06-27
 
 ## Context
 
-This work focused on interpreting `results/experiment/nl2p_1/gpt-4o/evaluation_mismatch_diagnostics.csv` against manual samples in `annotation_analysis/samples/sampled_A.csv` and `annotation_analysis/samples/sampled_B.csv`.
+This work focused on interpreting `results/experiment/nl2p_1/gpt-4o/evaluation_mismatch_diagnostics.csv` against manual samples in `analysis/annotations/samples/sampled_A.csv` and `analysis/annotations/samples/sampled_B.csv`.
 
 The goal was to distinguish likely LLM errors from likely dataset annotation issues, especially argument-level issues that make strict evaluation understate model behavior.
 
@@ -22,7 +22,7 @@ The goal was to distinguish likely LLM errors from likely dataset annotation iss
   - non-entity, adjectival, verbal, and not-in-text negative cases
   - preposition-object priority
   - gold split/head-word boundary cases
-- Added `src/examples/diagnostics_overview.ipynb` to summarize diagnostics CSV characteristics:
+- Added `analysis/diagnostics/diagnostics_overview.ipynb` to summarize diagnostics CSV characteristics:
   - mismatch type distribution
   - dataset-side and LLM-side issue counts
   - domain-specific coverage for gold split and preposition object issues
@@ -339,7 +339,7 @@ At the time this note was written, relevant edited or new files included:
 - `src/solvers/nl2p_1.py`
 - `tests/test_evaluation.py`
 - `tests/test_prompts.py`
-- `src/examples/diagnostics_overview.ipynb`
+- `analysis/diagnostics/diagnostics_overview.ipynb`
 
 ## 2026-06-28 Batch/Prompt Validation
 

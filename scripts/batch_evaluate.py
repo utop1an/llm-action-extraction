@@ -16,20 +16,22 @@ import tempfile
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import BinaryIO
+from typing import BinaryIO, Iterator
 
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from src.result_paths import run_directory
 DEFAULT_SOLVERS = ("nl2p_1", "nl2p_1_ablation", "nl2p_1_coref", "gpt3_to_plan")
-DEFAULT_MODELS = (
+HPC_MODELS = (
     "gpt-5.4",
     "gpt-5.4-mini",
     "gemma3-12b",
     "gemma3-27b",
+    "llama3-3b",
     "llama3-70b",
 )
+DEFAULT_MODELS = tuple(model for model in HPC_MODELS if model != "llama3-3b")
 
 
 @dataclass(frozen=True)
@@ -59,16 +61,20 @@ class RunningJob:
     started_at: float
 
 
+def matrix_jobs(prefix: Path, solvers: list[str], models: list[str]) -> Iterator[EvaluationJob]:
+    for solver in solvers:
+        for model in models:
+            yield EvaluationJob(solver, model, run_directory(prefix, solver) / model)
+
+
 def build_jobs(prefix: Path, solvers: list[str], models: list[str], strict: bool = False) -> tuple[list[EvaluationJob], list[Path]]:
     jobs = []
     missing = []
-    for solver in solvers:
-        for model in models:
-            result_dir = run_directory(prefix, solver) / model
-            if result_dir.is_dir():
-                jobs.append(EvaluationJob(solver=solver, model=model, result_dir=result_dir))
-            else:
-                missing.append(result_dir)
+    for job in matrix_jobs(prefix, solvers, models):
+        if job.result_dir.is_dir():
+            jobs.append(job)
+        else:
+            missing.append(job.result_dir)
 
     if strict and missing:
         missing_text = "\n".join(str(path) for path in missing)
@@ -236,12 +242,38 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--no-diagnostics", action="store_true", help="Do not pass --diagnostics to evaluation.py.")
     parser.add_argument("--strict", action="store_true", help="Fail if any requested solver/model directory is missing.")
     parser.add_argument("--dry-run", action="store_true", help="Print commands without running them.")
+    parser.add_argument("--hpc-serial", action="store_true", help="Use the HPC shell environment and stop at the first failed evaluation.")
     return parser
+
+
+def run_hpc_serial() -> int:
+    """Run the historical shell matrix serially with inherited evaluator output."""
+    solver_order = sorted(DEFAULT_SOLVERS, key=lambda solver: solver != "gpt3_to_plan")
+    solvers = (os.environ.get("SOLVERS") or " ".join(solver_order)).split()
+    # Older result trees can include the 3B run alongside the five benchmark models.
+    models = (os.environ.get("MODELS") or " ".join(HPC_MODELS)).split()
+    prefix = Path(os.environ.get("PREFIX") or "./results")
+    python = os.environ.get("PYTHON") or sys.executable
+    flags = (os.environ.get("DIAGNOSTICS") or "--diagnostics").split()
+    for job in matrix_jobs(prefix, solvers, models):
+        if not job.result_dir.is_dir():
+            print(f"Skipping missing results dir: {job.result_dir}", flush=True)
+            continue
+        print(f"Evaluating solver: {job.solver} with model: {job.model}", flush=True)
+        command = evaluation_command(python, Path("evaluation.py"), job, diagnostics=False)
+        status = subprocess.run([*command, *flags]).returncode
+        if status:
+            return status if status > 0 else 128 - status
+        print(f"Completed evaluation for solver: {job.solver} with model: {job.model}", flush=True)
+    return 0
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+
+    if args.hpc_serial:
+        return run_hpc_serial()
 
     prefix = Path(args.prefix)
     evaluator = Path(args.evaluator)
