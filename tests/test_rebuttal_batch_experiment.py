@@ -53,14 +53,18 @@ def test_random_requires_seed_and_preserves_original_ranked_selection():
 def test_minimal_is_exact_deletion_preserving_output_contract_and_input():
     paragraph = "Definition: is part of this input. Move the box."
     full = generate_prompt("nl2p_1", {"nl": paragraph})
-    start = full.index("            Definition:")
-    end = full.index("            - Output valid JSON only.", start)
-    minimal = generate_prompt("nl2p_minimal", {"nl": paragraph})
-    assert minimal == full[:start] + full[end:]
-    assert "Rules:" not in minimal
-    assert "directly affected" not in minimal
-    assert "Resolve pronouns" not in minimal
-    assert minimal.endswith(full[full.index("            Paragraph:"):])
+    definitions = full.index("Definitions:")
+    rules = full.index("Rules:", definitions)
+    output = full.index("Output:", rules)
+    expected = {
+        "nl2p_1": full,
+        "nl2p_ablation_definitions": full[:definitions] + full[rules:],
+        "nl2p_ablation_rules": full[:rules] + full[output:],
+        "nl2p_minimal": full[:definitions] + full[output:],
+    }
+    for name, prompt in expected.items():
+        solver = batch.build_solver(name, "unused")
+        assert batch.build_prompt(solver, paragraph, "cooking") == prompt
     assert NL2P_Minimal("unused").parse_json('[{"verb":"Move","arguments":["box"]}]') == [{"verb": "Move", "arguments": ["box"]}]
 
 

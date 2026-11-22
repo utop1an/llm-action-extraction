@@ -52,3 +52,13 @@ class NL2P_Minimal(NL2P_1):
     prompt_name = "nl2p_minimal"
     log_prefix = "nl2p_minimal"
     
+
+
+class NL2P_WithoutDefinitions(NL2P_1):
+    prompt_name = "nl2p_ablation_definitions"
+    log_prefix = prompt_name
+
+
+class NL2P_WithoutRules(NL2P_1):
+    prompt_name = "nl2p_ablation_rules"
+    log_prefix = prompt_name

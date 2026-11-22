@@ -44,6 +44,7 @@ from experiment import (  # noqa: E402
 )
 from src.llm import MODELS, generate_prompt  # noqa: E402
 from src.solvers import GPT3ToPlan, NL2P_1, NL2P_1_Ablation, NL2P_Minimal  # noqa: E402
+from src.solvers.nl2p_1 import NL2P_WithoutDefinitions, NL2P_WithoutRules
 
 
 BATCH_ROOT = ROOT / "results" / "batch"
@@ -52,6 +53,8 @@ SUPPORTED_SOLVERS = {
     "gpt3_to_plan_random": GPT3ToPlan,
     "nl2p_1": NL2P_1,
     "nl2p_minimal": NL2P_Minimal,
+    NL2P_WithoutDefinitions.prompt_name: NL2P_WithoutDefinitions,
+    NL2P_WithoutRules.prompt_name: NL2P_WithoutRules,
     "nl2p_1_ablation": NL2P_1_Ablation,
 }
 
@@ -190,7 +193,30 @@ def prepare(args: argparse.Namespace) -> None:
         ds_name: read_from_labeled_dataset(DATASETS[ds_name], limit=args.l)
         for ds_name in target_datasets
     }
-    solver = build_solver(args.s, args.m, datasets=datasets, selection_seed=selection_seed)
+    split_path = getattr(args, "example_train_split", None)
+    if split_path:
+        if args.s not in {"gpt3_to_plan", "gpt3_to_plan_random"} or args.l is not None:
+            raise ValueError("Train-pool selection requires a two-shot solver and full domain data")
+        split = load_manifest(Path(split_path))["domains"]
+        train_ids = {}
+        for domain, data in datasets.items():
+            spec = split[domain]
+            if hashlib.sha256(Path(dataset_path(DATASETS[domain])).read_bytes()).hexdigest() != spec["sha256"]:
+                raise ValueError(f"{domain}: source dataset differs from demonstration split")
+            groups = spec["doc_ids"]
+            all_ids = groups["train"] + groups["val"] + groups["test"]
+            if sorted(all_ids) != list(range(len(data))) or len(groups["train"]) < 3:
+                raise ValueError(f"{domain}: invalid split or fewer than three training examples")
+            train_ids[domain] = sorted(groups["train"])
+        train_data = {d: [datasets[d][i] for i in ids] for d, ids in train_ids.items()}
+        solver = build_solver(args.s, args.m, datasets=train_data, selection_seed=selection_seed)
+        # Map training-local positions back to the original IDs used by query exclusion.
+        solver.ranked_example_indices = {
+            d: [train_ids[d][i] for i in indices] for d, indices in solver.ranked_example_indices.items()
+        }
+        solver.datasets = datasets
+    else:
+        solver = build_solver(args.s, args.m, datasets=datasets, selection_seed=selection_seed)
     if isinstance(solver, GPT3ToPlan) and any(len(ds) < 3 for ds in datasets.values()):
         raise ValueError("Two demonstrations with query exclusion require at least three documents per dataset")
 
@@ -250,6 +276,9 @@ def prepare(args: argparse.Namespace) -> None:
         "request_count": len(requests),
         "created_at": datetime.now().isoformat(timespec="seconds"),
     }
+    if split_path:
+        manifest["example_train_split_sha256"] = hashlib.sha256(Path(split_path).read_bytes()).hexdigest()
+        manifest["example_train_split"] = str(Path(split_path).resolve())
     manifest["result_solver"] = result_solver_name(manifest, getattr(args, "result_solver", None))
     write_jsonl(out_dir / "input.jsonl", requests)
     manifest["input_sha256"] = hashlib.sha256((out_dir / "input.jsonl").read_bytes()).hexdigest()
@@ -450,6 +479,7 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_parser.add_argument("--coref", choices=["none", "llm", "nlp"], default="none", help="Use precomputed coreference-resolved input text")
     prepare_parser.add_argument("--coref-dir", help="Directory containing *_llm_coref.jsonl or *_coref.json files")
     prepare_parser.add_argument("--run-id", help="Stable run id; defaults to timestamp")
+    prepare_parser.add_argument("--example-train-split", type=Path, help="Restrict demonstration ranking or sampling to the named training partition")
     prepare_parser.add_argument("--selection-seed", type=int, help="Required fixed demonstration seed for gpt3_to_plan_random")
     prepare_parser.add_argument("--api-model", help="Exact API model snapshot; retains the model key for configuration and output paths")
     prepare_parser.add_argument("--result-solver", help="Separate result namespace to use when collecting this run")
