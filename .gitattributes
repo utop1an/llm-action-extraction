@@ -1,0 +1,6 @@
+# BRAT annotations use character offsets into LF-encoded source text.
+data/procedural/risec/**/*.txt text eol=lf
+data/procedural/risec/**/*.ann text eol=lf
+data/procedural/risec_smoke/**/*.txt text eol=lf
+data/procedural/risec_smoke/**/*.ann text eol=lf
+results/source-variants-20261123/** -text

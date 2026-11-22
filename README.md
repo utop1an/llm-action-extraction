@@ -1,122 +1,48 @@
-# LLM-based Action (State) Extraction
+# LLM action and argument extraction
+
+Given procedural text such as *Pick up the apple and place it in the basket*, the extraction target is an ordered sequence such as `pickup(apple)`, `place(apple, basket)`. The repository contains the extraction methods, saved predictions and offline evaluation code.
+
+## Start with the results
 
 [Supplementary experiments: NL2P prompt ablation and random two-shot comparisons](results/rebuttal_20261027/README.md)
 
-# Input
-A natural language description of a sequence of actions (possibly no state descriptions)
+| Experiment | Where to start | What it contains |
+| --- | --- | --- |
+| Main EASDRL benchmark | [Frozen results](supplement/expected_metrics.csv) | 4 methods × 5 models × 3 domains. Each row gives action F1, strict argument F1, adjusted argument F1 and match counts. |
+| Random two-shot examples and minimal prompt | [Comparison](results/rebuttal_20261027/gpt-5.4-mini/comparison.json) · [Random-seed adjusted scores](results/rebuttal_20261027/gpt-5.4-mini/rand2_adjusted_20261028.json) | Fixed versus random demonstrations and the effect of shortening the extraction prompt. |
+| Repeated full and minimal prompts | [GPT-5.4-mini](results/nl2p_repeats_20261027_v1/gpt-5.4-mini/comparison_adjusted.json) · [GPT-5.4 completed runs](results/nl2p_repeats_20261027_v1/repaired/gpt-5.4/comparison_adjusted.json) | Run-level results, including the repaired GPT-5.4 runs. The original partial runs have separate directories. |
+| cEASDRL adaptation to RISeC | [Training and selection](results/ceasdrl_risec_20261118/spans_v2/SUMMARY.md) · [Audit](results/ceasdrl_risec_20261118/spans_v2/audit_review/AUDIT.md) | End-to-end extraction of full action names and linked argument spans. The audit records the split, scoring scope and limitations. |
+| Short-story extraction | [Saved outputs](results/short_stories/) · [PDDL comparison script](scripts/compare_short_story_pddl.py) | Ordered event mentions and their correspondence with hand-authored domain actions. |
 
-# Methodologies
+For the main benchmark, the methods are GPT3-to-Plan, NL2P-1, prompt ablation and coreference-resolved NL2P-1. The domains are Cooking, WikiHow and Win2K. Per-document JSON predictions and per-model CSV scores live in `results/<method>/<model>/`. The main evaluator scores arguments on matched actions. The RISeC experiment uses its own linked-span metric.
 
-## Baseline approach
-One prompt (zero or few shots) to get a structured output
+## Reproduce the main benchmark
 
+Use Python 3.12. From the repository root, install the evaluation dependencies and the English spaCy model, then verify one saved result.
 
-## Advanced approach
-Break the extraction into smaller steps, to ask the LLM to do different small tasks, roughly
-
-- identify and merge objects and object types
-- identify and merge action names, determine action arity
-- infer predicate names, determine predicate arity
-- identify and infer missing vals
-- identify and correct noisy vals
-- ...
-- integration and get the final output
-
-
-## Self-validation
-Using input + output to ask LLM to validate and improve its answer for each step.
-
-## Constraint/Rules/Expert knowledge
-Adding constraint or rules or other expert knowledge in the prompt...
-
-## Zero shot / One shot / Few shots
-
-# Output
- 
-- Object: obj_name?obj_type
-    - noun?noun
-- Action Signature: action_name(obj, obj...)
-    - verb(noun, noun...)
-- Predicate: predicate_name(obj, obj...)
-    -  noun/adj(noun, noun...)
-
-## Pure action extraction
-Extract only actions, expected output:
-```
-Input: Pick up object A, place it on top of B to form a stack, separate C from D (if stacked), and then put down object C.
-
-Output: pickup(A) stack(A, B) unstack(C,D) putdown(C)
+```sh
+python -m pip install -r supplement/requirements.txt
+python -m spacy download en_core_web_sm
+python scripts/build_code_data_supplement.py --force
+python dist/code_data_supplement/scripts/reproduce_supplement.py --quick --clean
 ```
 
-## Action and State extraction
-Extract actions and possible intermediate states,  expected output:
-```
-Input: Pick up object A, place it on top of B to form a stack, separate C from D (if stacked), and then put down object C.
+The builder compares all 60 saved CSV rows with the frozen table and creates `dist/code_and_data_supplement.zip`. To recompute all 60 rows from saved predictions, omit `--quick`. Both commands run offline after dependency installation. The [paper supplement guide](supplement/README.md) also covers fresh inference and detailed diagnostics.
 
-Output: 
-s0: **None**, handempty(), on(C, D)
-s1: **pickup(A)**, holding(A), on(C, D)
-s2: **stack(A, B)**, on(A, B), on(C, D)
-s3:  **unstack(C,D)**, holding(C) 
-s4: **putdown(C)**, handempty()
+To regenerate the mismatch report for one condition in the working tree, run:
+
+```sh
+python evaluation.py -d results/nl2p_1/gpt-5.4-mini --diagnostics
 ```
 
-## Models
+## Work on the project
 
-### chatgpt
+- [experiment.py](experiment.py) runs synchronous inference. [openai_batch_experiment.py](scripts/openai_batch_experiment.py) prepares, submits and collects batch jobs. Keep new inference outputs separate from the frozen benchmark.
+- [src/solvers](src/solvers/) contains extraction methods. [src/llm](src/llm/) contains prompt templates and model adapters. [evaluation.py](evaluation.py) and [evaluation_helpers.py](src/evaluation_helpers.py) implement the main metrics.
+- [RISeC instructions](docs/dev-notes/2026-11-18-risec-spans-v2.md) cover the PyTorch models, checkpoint selection and the separate legacy GloVe/ELMo environment. Historical training receipts record the paths used on the original machine.
+- [annotation_analysis](annotation_analysis/) and [diagnosis](diagnosis/) contain manual samples and analysis notebooks. Some notebooks read the detailed mismatch CSVs generated by the evaluator.
+- Additional experiment scripts are under [scripts](scripts/) and cluster job definitions under [hpc](hpc/). The October campaign scripts use original batch receipts, source snapshots and local paths for historical integrity checks. Use the saved comparisons above to inspect those results on another machine.
 
-#### gpt-4
+## Historical files
 
-### deepseek
-locally deployed via [ollama](https://ollama.com/)
-
-```shell
-ollama run deepseek-r1:8b
-```
- 
-ollama python library ([github](https://github.com/ollama/ollama-python))
-
-#### r1:8b
-
-
-# Experiment settings
-
-## MEMO
-
-### GPT3-TO-PLAN
-Replication of the gpt3-to-plan paper, with 2-shot prompting (which has overall good performance with less tokens, the default setting in the paper?), using examples with the highest propotion of OP and EX actions (as mentioned in the paper).
-
-### NL2P
-3 step extraction:
-1. extract verbs and args
-2. remove non-eventive verbs
-3. label verb types (ES, EX, OP)
-
-### NL2P-1
-1 step extraction of eventive verbs and their args (with simple explanation of eventive verbs)
-
-### VerbArgs
-1 step extraction of verbs and args only 
-
-
-### Possible Improvements
-- Traditional NLP/LLM based POS first
-- Extract verbs only (no args)
-- Better definition of eventive verbs
-- Experiment on different Temperature settings
-
-# Report
-
-## Possible problems
-
-### GT Labelled actions?
-- Some are not really an action, or a step? "after mixed", "until well grinded", ... (and sometimes they are not extracted, labelled as JJ in the the dataset)
-
-### GT Labelled args?
-- No comma, when multiple args... (also for verbs, "add something... top with something...")
-- Some are not labelled, "mix a b and c (in a bowl)", "do something (with something)"
-- it should be an arg, but labelled as a verb, "using the opener to open the can"
-
-
-### Predicated actions
-- do something before doing something, "doing something" should be a step after, often be omitted
+The earlier IJCAI results, the raw GPT3-to-Plan pilot and the GOOSE planning corpus were archived at their original relative paths in the local `results/archive/historical-experiments.zip`. The same tracked files can be retrieved from Git revision `d7e5b95`. The original main diagnostics and the mixed coref directory's pre-cleanup records are in `results/archive/main-diagnostics-before-cleanup.zip`. Extract individual entries when needed. Local drafts, raw batch workspaces, caches and private environment files are excluded from the collaboration package.

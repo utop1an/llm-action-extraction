@@ -1,0 +1,32 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,pie crust,butter,onion,celery,carrots,parsley,oregano,salt,pepper,bouillon,water,potatoes,turkey,flour,milk,oven,10 inch pie pan,large skillet,medium saucepan,stove,Notes,,Action_start,Action_end,Sentence_Id
+Preheat,Preheat oven to 425 degrees F (220 degrees C).,,,,,,,,,,,,,,,,1,,,,,,,0,7,0
+Roll,"Roll out bottom pie crust, press into a 10 inch pie pan, and set aside.",1,,,,,,,,,,,,,,,,,,,,,,47,51,1
+press,"Roll out bottom pie crust, press into a 10 inch pie pan, and set aside.",1,,,,,,,,,,,,,,,,1,,,,,,74,79,1
+set,"Roll out bottom pie crust, press into a 10 inch pie pan, and set aside.",1,,,,,,,,,,,,,,,,1,,,,,,108,111,1
+Melt,"Melt 2 tablespoons butter in a large skillet over medium heat; add the onion, celery, carrots, parsley, oregano, and salt and pepper.",,1,,,,,,,,,,,,,,,,1,,1,,,119,123,2
+add,"Melt 2 tablespoons butter in a large skillet over medium heat; add the onion, celery, carrots, parsley, oregano, and salt and pepper.",,1,1,1,1,1,1,1,1,,,,,,,,,1,,1,,,182,185,2
+Cook,Cook and stir until the vegetables are soft.,,1,1,1,1,1,1,1,1,,,,,,,,,1,,1,,,253,257,3
+stir,Cook and stir until the vegetables are soft.,,1,1,1,1,1,1,1,1,,,,,,,,,1,,1,,,262,266,3
+Stir,Stir in the bouillon and water.,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,,1,,,298,302,4
+Bring,Bring mixture to a boil.,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,,1,,,330,335,5
+Stir,"Stir in the potatoes, and cook until tender but still firm.",,1,1,1,1,1,1,1,1,1,1,1,,,,,,1,,1,,,355,359,6
+cook,"Stir in the potatoes, and cook until tender but still firm.",,1,1,1,1,1,1,1,1,1,1,1,,,,,,1,,1,,,381,385,6
+melt,"In a medium saucepan, melt the remaining 2 tablespoons butter.",,1,,,,,,,,,,,,,,,,,1,1,,,437,441,7
+Stir,Stir in the turkey and flour.,,1,,,,,,,,,,,1,1,,,,,1,1,,,478,482,8
+Add,"Add the milk, and heat through.",,1,,,,,,,,,,,1,1,1,,,,1,1,,,508,511,9
+heat,"Add the milk, and heat through.",,1,,,,,,,,,,,1,1,1,,,,1,1,,,526,530,9
+Stir,"Stir the turkey mixture into the vegetable mixture, and cook until thickened.",,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,1,,1,,,540,544,10
+cook,"Stir the turkey mixture into the vegetable mixture, and cook until thickened.",,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,1,,1,,,596,600,10
+Cool,"Cool slightly, then pour mixture into the unbaked pie shell.",,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,1,,1,,,618,622,11
+pour,"Cool slightly, then pour mixture into the unbaked pie shell.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,,,,,638,642,11
+Roll,"Roll out the top crust, and place on top of filling.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,,,,,679,683,12
+place,"Roll out the top crust, and place on top of filling.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,,,,,707,712,12
+Flute,"Flute edges, and make 4 slits in the top crust to let out steam.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,,,,,732,737,13
+make,"Flute edges, and make 4 slits in the top crust to let out steam.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,,,,,749,753,13
+Bake,Bake in the preheated oven for 15 minutes.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,797,801,14
+Reduce,"Reduce oven temperature to 350 degrees F (175 degrees C), and continue baking for 20 minutes, or until crust is golden brown.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,840,846,15
+continue,"Reduce oven temperature to 350 degrees F (175 degrees C), and continue baking for 20 minutes, or until crust is golden brown.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,902,910,15
+baking,"Reduce oven temperature to 350 degrees F (175 degrees C), and continue baking for 20 minutes, or until crust is golden brown.",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,911,917,15
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,,,,,,1,,,,,

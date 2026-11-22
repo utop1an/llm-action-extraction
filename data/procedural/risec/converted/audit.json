@@ -1,0 +1,20 @@
+{
+  "documents": 260,
+  "split_documents": {
+    "train": 126,
+    "dev": 56,
+    "test": 78
+  },
+  "actions": 3061,
+  "multi_token_actions": 294,
+  "explicit_argument_links": 5520,
+  "implicit_argument_links": 1695,
+  "max_document_tokens": 545,
+  "es_op_ex_available": false,
+  "source_documents": 260,
+  "annotation_scopes": [
+    "Annotated action spans"
+  ],
+  "projection": "First annotated token of each action/explicit argument span. All annotations retained.",
+  "warning": "Observed action occurrences are extraction targets, not planning-essential labels."
+}

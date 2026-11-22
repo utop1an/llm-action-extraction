@@ -1,0 +1,30 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL			Metadata	Metadata	Metadata
+Actions	Sentences	hard bread	cool water	salt cod	running cool water	cold water	salt	fresh water	fatback	pot	refrigerator	frying pan	stove	Notes		Action_start	Action_end	Sentence_Id
+Place	Place hard bread into a pot.	1								1						0	5	0
+Cover	"Cover bread with several inches of cool water, place a lid on the pot, and soak 8 hours to overnight."	1	1							1						29	34	1
+place	"Cover bread with several inches of cool water, place a lid on the pot, and soak 8 hours to overnight."	1	1							1						76	81	1
+soak	"Cover bread with several inches of cool water, place a lid on the pot, and soak 8 hours to overnight."	1	1							1						104	108	1
+Rinse	Rinse salt cod under running cool water; place into a pot.			1	1											131	136	2
+place	Rinse salt cod under running cool water; place into a pot.			1	1					1						172	177	2
+Cover	"Cover fish with several inches of cold water, place a lid on the pot, and soak in the refrigerator 8 hours to overnight."			1		1				1						190	195	3
+place	"Cover fish with several inches of cold water, place a lid on the pot, and soak in the refrigerator 8 hours to overnight."			1		1				1						236	241	3
+soak	"Cover fish with several inches of cold water, place a lid on the pot, and soak in the refrigerator 8 hours to overnight."			1		1				1	1					264	268	3
+Add	Add salt to soaked bread and bring just to a simmer over medium-low heat and simmer for 2 minutes.	1	1				1			1						311	314	4
+bring	Add salt to soaked bread and bring just to a simmer over medium-low heat and simmer for 2 minutes.	1	1				1			1			1			340	345	4
+simmer	Add salt to soaked bread and bring just to a simmer over medium-low heat and simmer for 2 minutes.	1	1				1			1			1			388	394	4
+Drain	Drain immediately; cover to keep warm.	1	1				1			1						410	415	5
+cover	Drain immediately; cover to keep warm.	1					1			1						429	434	5
+Drain	Drain fish and cover with fresh water; bring to a boil.			1		1				1						449	454	6
+cover	Drain fish and cover with fresh water; bring to a boil.			1				1		1						464	469	6
+bring	Drain fish and cover with fresh water; bring to a boil.			1				1		1			1			488	493	6
+Cook	"Cook until fish is opaque and flakes easily with a fork, about 20 minutes."			1				1		1			1			505	509	7
+Drain	Drain fish; remove any bones.			1				1		1						580	585	8
+remove	Drain fish; remove any bones.			1												592	598	8
+Stir	Stir fish into prepared hard bread.	1		1						1						610	614	9
+Cook	"Cook and stir fatback in a frying pan over medium heat until golden brown, about 10 minutes."								1			1	1			646	650	10
+stir	"Cook and stir fatback in a frying pan over medium heat until golden brown, about 10 minutes."								1			1	1			655	659	10
+Pour	Pour fatback and drippings over fish and bread mixture.	1		1					1	1		1				739	743	11
+Stir	Stir gently just to combine; serve immediately.	1		1					1	1						795	799	12
+serve	Stir gently just to combine; serve immediately.	1		1					1	1						824	829	12
+Duplicate of: 																		
+Annotator added: 													1					

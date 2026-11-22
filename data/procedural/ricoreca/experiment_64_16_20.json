@@ -1,0 +1,74 @@
+{
+  "status": "completed",
+  "configured_on": "2026-11-22",
+  "dataset": "RiCoRecA",
+  "annotation_set": "Annotator_P",
+  "protocol": "document_holdout_64_16_20",
+  "cross_validation": false,
+  "split_seed": 1,
+  "split_rule": "Sort document IDs; reserve 20% test, then 20% of remaining documents for dev; sklearn random_state=1 for both splits.",
+  "expected_counts_if_156_valid_unique_documents": {
+    "train": 99,
+    "dev": 25,
+    "test": 32
+  },
+  "split_manifest": "converted/split.json",
+  "training_seed": 0,
+  "model": "cEASDRL CNN/DQN BIO adaptation",
+  "embeddings": "frozen GloVe-100 + ELMo-small-768",
+  "initialization": "from scratch for both extraction networks; no RISeC checkpoint initialization",
+  "training": {
+    "maximum_epochs_per_stage": 10,
+    "early_stopping_patience": 3,
+    "learning_rate": 0.001,
+    "span_replay": "balanced",
+    "span_rate": "mentions",
+    "checkpoint_selection": "dev exact-span micro F1",
+    "test_policy": "defer all model test evaluation until both checkpoints and configuration are frozen"
+  },
+  "output_metrics": [
+    "complete_action_name_micro_f1",
+    "complete_linked_argument_name_micro_f1"
+  ],
+  "es_ex_op": false,
+  "training_started": true,
+  "scores": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "remaining_prerequisites": [],
+  "conversion_audit": "converted/conversion_audit.json",
+  "actual_counts": {
+    "train": 99,
+    "dev": 25,
+    "test": 32
+  },
+  "features": "features_train_dev/manifest.json",
+  "result_directory": "results/ceasdrl_ricoreca_64_16_20_seed0",
+  "training_devices": {
+    "act": "cpu",
+    "arg": "cuda"
+  },
+  "runtime_note": "Sustained CUDA throughput for the 600-token action network was anomalous. Formal action run uses the identical PyTorch CNN/DQN on CPU; argument network uses CUDA. Aborted diagnostics are not reported as experiments.",
+  "result_report": "results/ceasdrl_ricoreca_64_16_20_seed0/REPORT.md",
+  "verification": {
+    "regression_tests_passed": 32,
+    "original_keras_forward_compatible": true,
+    "independent_char_scores_match": true,
+    "plain_text_prediction_matches_batch": true
+  }
+}

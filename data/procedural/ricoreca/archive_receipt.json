@@ -1,0 +1,1649 @@
+{
+  "status": "materialized",
+  "archive": "data\\data.zip",
+  "archive_sha256": "921f22602f1af88d21bb40038204f9e0bf52214c866ac5a889a277901f12ba2c",
+  "archive_bytes": 10057954,
+  "files": [
+    {
+      "path": "data/Raw/foodbase/BioC.dtd",
+      "bytes": 910,
+      "sha256": "58b26c69a0fb97f2c0299b7b751455f01fff04473e58bbad5e7decf7c81efa9f"
+    },
+    {
+      "path": "data/Raw/foodbase/FoodBase.key",
+      "bytes": 900,
+      "sha256": "2d4ffc14b73d4f008c18edd4016525f28f8fbd32ca81a964a1eb675c69360662"
+    },
+    {
+      "path": "data/Raw/foodbase/FoodBase_curated.xml",
+      "bytes": 3019036,
+      "sha256": "048ec97e335202ee3b6317859c68b09fc59ed24112ef3aace8afba0b247cea1f"
+    },
+    {
+      "path": "data/Raw/foodbase/FoodBase_parsing_tips.txt",
+      "bytes": 181,
+      "sha256": "3fefa6749df05570dc7dbcdf45c9b046109c3f80ec6108317fad13e0d551f369"
+    },
+    {
+      "path": "data/Raw/foodbase/FoodBase_uncurated.xml",
+      "bytes": 65543743,
+      "sha256": "1c9f88d0f88ff28e13aef9a87c1ca46994b1d70cc8419364e58254ff78d8cf2c"
+    },
+    {
+      "path": "data/Raw/foodbase/FoodBase_curated_corrected.xml",
+      "bytes": 3019036,
+      "sha256": "4c65572066d69fde5b3d9600a3929f52967cb3a712f92861e68612d615a253f8"
+    },
+    {
+      "path": "data/Processed/Cross_Val/test_2023_2_22_3245_f0.csv",
+      "bytes": 93701,
+      "sha256": "f37c3c0598b575e517539b01afab6e0fe481e83f7c149b8efb756c83a59dbf3b"
+    },
+    {
+      "path": "data/Processed/Cross_Val/test_2023_2_22_3245_f1.csv",
+      "bytes": 70333,
+      "sha256": "b5826d89107eb28320024556be94282c39c16e46759d16619c5cfb9b72a67c4b"
+    },
+    {
+      "path": "data/Processed/Cross_Val/test_2023_2_22_3245_f2.csv",
+      "bytes": 71787,
+      "sha256": "8b151c3e5be0856cdec201d2e229510e5327e159b0efe983a2906feba6cd5c27"
+    },
+    {
+      "path": "data/Processed/Cross_Val/test_2023_2_22_3245_f3.csv",
+      "bytes": 83092,
+      "sha256": "639cb83604a07fe402edd8de092d6a6336bf54faee8f4990ea0558d3d37a5bc7"
+    },
+    {
+      "path": "data/Processed/Cross_Val/test_2023_2_22_3245_f4.csv",
+      "bytes": 64036,
+      "sha256": "7e6fd4e84fd9e77f108ae752e2fc686f40805b7f90d7bcff125002fbcc5ad519"
+    },
+    {
+      "path": "data/Processed/Cross_Val/train_2023_2_22_3245_f0.csv",
+      "bytes": 432758,
+      "sha256": "a3ee752a1e4b34e9d0d0d5b4fea1f82841dcc6c27bf25b1624bff58201b9ebd0"
+    },
+    {
+      "path": "data/Processed/Cross_Val/train_2023_2_22_3245_f1.csv",
+      "bytes": 452942,
+      "sha256": "bea3ce33ea2ecae18104bc55195714f7774ef5e327f9f5b71fe33a0c153ba30c"
+    },
+    {
+      "path": "data/Processed/Cross_Val/train_2023_2_22_3245_f2.csv",
+      "bytes": 450580,
+      "sha256": "b22e245e55abe0de3217c4d3ca24a0cb5cb1615efe84f98ace62541d6812c7eb"
+    },
+    {
+      "path": "data/Processed/Cross_Val/train_2023_2_22_3245_f3.csv",
+      "bytes": 439806,
+      "sha256": "e528f5f5d26000948c96ef414555995e3a04a3ea47ac7cd2c3e185a4bc149fa2"
+    },
+    {
+      "path": "data/Processed/Cross_Val/train_2023_2_22_3245_f4.csv",
+      "bytes": 464188,
+      "sha256": "7086e50de045b1ada18dfb3e86c191b96b6469ac454b0e40445d5e7ddaac40ee"
+    },
+    {
+      "path": "data/Processed/Cross_Val/validation_2023_2_22_3245_f0.csv",
+      "bytes": 33634,
+      "sha256": "2c3cb0ea3a10ceebe73e0ff8e622b42975eeb3cbdbc9de35414519ca0d9bddbe"
+    },
+    {
+      "path": "data/Processed/Cross_Val/validation_2023_2_22_3245_f1.csv",
+      "bytes": 36818,
+      "sha256": "68e3cbc9fc00bc53e53b3ac9c33a60ff7074feed430df8121001a74a8080edfb"
+    },
+    {
+      "path": "data/Processed/Cross_Val/validation_2023_2_22_3245_f2.csv",
+      "bytes": 37726,
+      "sha256": "44c5aa02413ea23458f2561221b090efb0759d0095e998fd8d4352b1e5fd0541"
+    },
+    {
+      "path": "data/Processed/Cross_Val/validation_2023_2_22_3245_f3.csv",
+      "bytes": 37195,
+      "sha256": "d69916ac50921746a33aa6496ffaac42967c8ef591dfa38808c3b9a10c3413ad"
+    },
+    {
+      "path": "data/Processed/Cross_Val/validation_2023_2_22_3245_f4.csv",
+      "bytes": 31869,
+      "sha256": "4bf4fd74474ea357e2a91f17a7f3c55253523613d4530a671c080f57c358e7e4"
+    },
+    {
+      "path": "data/Processed/Cross_Val/.~lock.train_2023_2_22_3245_f1.csv#",
+      "bytes": 74,
+      "sha256": "2de48e179464e6068efab0e9e4bdea7e2fbc5382fa604f1ebc7793e225ee1d88"
+    },
+    {
+      "path": "data/Processed/Annotator_H/prodigy_dinner.json",
+      "bytes": 3395038,
+      "sha256": "1146c6635bc9e2e11fc0145aebf5944de72dfeb5c607b369ff42eb3c78ad2c29"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe6.csv",
+      "bytes": 1531,
+      "sha256": "e28b4753a831f33113f5d1f4d3784ac48f2e082485dadc3dc27bc535554f1c95"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe27.csv",
+      "bytes": 2448,
+      "sha256": "22d6809ab7e7ecfaaa5cdaadea8bacefebd26f5cd163fa30c5e80eb17a7345e3"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe45.csv",
+      "bytes": 2381,
+      "sha256": "9da1681b5d1364fa93093ac250799f4f6d4bf2530c24d51c7025ace9d1f3443e"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe53.csv",
+      "bytes": 4068,
+      "sha256": "e483a59c8a24e18703eb5365baf1b6420aacb440685a3767772fa9aa5c260bad"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe59.csv",
+      "bytes": 1429,
+      "sha256": "e91c38271488313224745aa38396995bad39cb2b56f51a3bdbd74ab5eca89af1"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe62.csv",
+      "bytes": 881,
+      "sha256": "1378a2800ae3099118bf1004fc2820123bc2bc9afbd4568effc83c64325f25b0"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe68.csv",
+      "bytes": 1241,
+      "sha256": "04999b4f9ef261912a5f7a5913171bcd857e5bb57a048af6359f4538d691588c"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe82.csv",
+      "bytes": 1095,
+      "sha256": "a8ef68efb4dd5a4ac24c7e5a536144a336a830ecbb7f5a2766327b604f733327"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe94.csv",
+      "bytes": 2425,
+      "sha256": "768191e23dee55c15fa8ac1d63f83609c940c0f565d53464052e24bcffea9817"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe100.csv",
+      "bytes": 1743,
+      "sha256": "55348843e9698433f5a6023dcbe604b87e68e8a3f7386f00cea9360fd6ac3cb3"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe108.csv",
+      "bytes": 2482,
+      "sha256": "6c363b3fbf2355bc82268360b2ddec253b96daff2b79fb57f0fe92690c2b1a81"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe126.csv",
+      "bytes": 2432,
+      "sha256": "b45e0275b963ae8f2248ae86828ba739e247e907444507c6e8eb39eebcc84480"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe129.csv",
+      "bytes": 3676,
+      "sha256": "dee844434a514e402363db721a0d38a8e4b9a065a1559bda37da9283d1cf744a"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe133.csv",
+      "bytes": 1508,
+      "sha256": "62c02b28b9f4e03eab6ded7ba39a43d3415783f88b9cae57976199b2fbd30442"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe147.csv",
+      "bytes": 1558,
+      "sha256": "d1cc72fa1dea785f8bb4492529aae1807d363c6724fafd10c7035b7ffd119532"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe153.csv",
+      "bytes": 3762,
+      "sha256": "c5c29033072f40d6ac9d948a88b0d8ce6a224a49e32c5d590265f0f670aab052"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe161.csv",
+      "bytes": 3193,
+      "sha256": "65a3a4c13386b1124c05bac3075eff46c966393e1953ef983dcd610e0523bfca"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe168.csv",
+      "bytes": 1829,
+      "sha256": "48513335e0f5ba03a99b7f3179777851b37d024e76580e80d7f4138c1d70b450"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe174.csv",
+      "bytes": 1690,
+      "sha256": "dab87e30790d1c5fe02531e3b3063cf9ec16f8045dabe2f825e24e82e13b189d"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe186.csv",
+      "bytes": 2240,
+      "sha256": "57bc8f6c5fd8951f0628d3c7d7a1a37a189fded41cf478124bd0f2d23d14e1fe"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe200.csv",
+      "bytes": 1519,
+      "sha256": "200f0ab47a05173caff82bc0618f29bbe5583f6f2ba865323b1b035e1b72dc76"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe226.csv",
+      "bytes": 1072,
+      "sha256": "1a616b6276862c2d00deb833cca45068a4b408fcc6231d9b0d8ece3e9fe69bae"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe232.csv",
+      "bytes": 1789,
+      "sha256": "059468f2aa2e712b3761a52414dad0a33cb16de1366c8ddef00266049f13c7c5"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe239.csv",
+      "bytes": 2178,
+      "sha256": "ebc86cd63a79726afbd55030528faa86c80ffe3c01479d078d807b4aca945dc8"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe247.csv",
+      "bytes": 1553,
+      "sha256": "62f37fe4e0d9613822b928d2dd741f3a9049643c04fd81e675dd8d446e830d5e"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe274.csv",
+      "bytes": 2593,
+      "sha256": "9453256f3e29a9588571fc96a655c42e87cd4a61320bc9798c77d302670ec3cc"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe285.csv",
+      "bytes": 1403,
+      "sha256": "c2677fb96f5f0160a29f20feec594200c2d1c517342458dfca5cc210c5e26f56"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe306.csv",
+      "bytes": 1559,
+      "sha256": "20b0c5a3785f12f9378e8872cca9dee7cbaaca33e18176e0bb0183e9ccc39cda"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe309.csv",
+      "bytes": 2501,
+      "sha256": "0811f00bfdffbeb8d26a617c2b50dc49618c87d4ad4eefda8b37132167565ac1"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe315.csv",
+      "bytes": 2296,
+      "sha256": "ec6a16183e739d64786bf48c2696be551a48d31eb3108dd6e93172652ed797ed"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe318.csv",
+      "bytes": 2526,
+      "sha256": "7e1ae5ae3a4ecb7b11ae674a29988583ccb6593f277395b9a3cc1f4830b75657"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe345.csv",
+      "bytes": 1507,
+      "sha256": "9c191218303d70047bbfa4d5a4cd974813e365b5a4b6ceedd70650f6332ae196"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe376.csv",
+      "bytes": 2031,
+      "sha256": "d4309a85d02f3859fbf21d8d8a492743177ac22844341fc8560858b4fa8c55c5"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe397.csv",
+      "bytes": 2148,
+      "sha256": "0b10a0592a4438c2e1df2be12315ad4bb8747f39fba2870e48aa0c023bf05e6b"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe400.csv",
+      "bytes": 4056,
+      "sha256": "f070044d60671ded3cc3e08b3ef52cdfc0c3404a9dafa52f55eca943f1df2af1"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe433.csv",
+      "bytes": 2326,
+      "sha256": "62b05b9372c48f0b817ca434536eed4bf9d77ba71f9398717714f85b8b73c785"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe453.csv",
+      "bytes": 1306,
+      "sha256": "c50b9b980519b62d78f05710410735e2836541e2134fde9872d959c33db7cc40"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe465.csv",
+      "bytes": 820,
+      "sha256": "59cbc1fdb1f17f2e4a7d35f8e24bdd075ccfafcba4b7c037c6c62c176988adfe"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe470.csv",
+      "bytes": 1373,
+      "sha256": "d265bf9a11f93315b8a34ff46d40791c2389d7fbb760e1a2945787d794364746"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe521.csv",
+      "bytes": 1010,
+      "sha256": "4a639ac28de2ce429dd75d9b3a815e71c70b1408b1f6b0d6a9d21b4413f0d7db"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe532.csv",
+      "bytes": 3219,
+      "sha256": "837f205b298851016795542a58720a729adc04267cf86ab1b5db5e44bd804613"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe583.csv",
+      "bytes": 1766,
+      "sha256": "8595169ff6379c4389857f787f8d8316560c91e37a8a76ce55d33c8a3ebb560b"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe620.csv",
+      "bytes": 1749,
+      "sha256": "8e9e87fcc20a21861dc08a05abd4bdc5cc2bcd3a958fdbfc5a6ff819a3468c13"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe629.csv",
+      "bytes": 2000,
+      "sha256": "b0e643c607d510d2604586d896a883fb9ddeb97332b3fedf24eccacd9e3787c4"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe641.csv",
+      "bytes": 2196,
+      "sha256": "fb385e5a8ad5a7cd92153bfffd093b425d7703ddb2663acd7ba76a634bc8af37"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe664.csv",
+      "bytes": 1259,
+      "sha256": "7b042fe42760722f7336bb8aff306cc3e2832e404db9d67556094ea5aa2106fb"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe709.csv",
+      "bytes": 2505,
+      "sha256": "d7a17df2aa083fbb7c66deb8b470b8a04e391632a61cc617c18e323321b287e5"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe770.csv",
+      "bytes": 1890,
+      "sha256": "7985078f2460a0b838a8cb5541408d1b409ea4888ac2a00bc49b6181e6472660"
+    },
+    {
+      "path": "data/Processed/Annotator_H/PSV_H/4recipe800.csv",
+      "bytes": 1280,
+      "sha256": "d3e599e5e5057f8efa162f86136c12e000a268a91f0697a1e518df982500a256"
+    },
+    {
+      "path": "data/Processed/Annotator_M/prodigy_dinner.json",
+      "bytes": 3572449,
+      "sha256": "dc2a3f7705a5d00fba2d0082d6223bbf84b31fdd149321c67bb280511ae03486"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe545.psv",
+      "bytes": 1481,
+      "sha256": "a086b0482c40147376a03c11c19ade3f4e0ec3472f11e65a62062a8824300474"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe562.psv",
+      "bytes": 2165,
+      "sha256": "c7d30c3228799c4a52e321f693966e95b37045e547f688546c8edf1402f4009f"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe491.psv",
+      "bytes": 1437,
+      "sha256": "dc478babf8bc2e57c77f1a13c63d07141ef06763d3c06049ad36cab8783b6852"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe459.psv",
+      "bytes": 2784,
+      "sha256": "4f490a058954e3e958b4b1314ffa3ad5ed20b2562934499564ca11f54b4500de"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe468.psv",
+      "bytes": 1667,
+      "sha256": "7dfa82e66256fff058983e7c3df379d78a3aea3f87eb6c5b97ad798f35ba0fe1"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe353.psv",
+      "bytes": 1881,
+      "sha256": "c998126d5594c923b113072e8223465f252a0a8ce149ee966dc32b61508f3002"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe64.psv",
+      "bytes": 2084,
+      "sha256": "4b76983d1cd396dcd70a872ae723d508f8a2092b5c6891b6fcb8e8cc51bbc9e8"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe479.psv",
+      "bytes": 3842,
+      "sha256": "ec94e9a6ef3c99e53cee113f725579396e9c210482dff5488e6f9f34a3f2503b"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe438.psv",
+      "bytes": 2121,
+      "sha256": "c324cabc9993a459a9300ab3977af285d90b113c3d3aef942915e5c96eee979e"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe676.psv",
+      "bytes": 1936,
+      "sha256": "3b409363a1b5d8a9c1b712fb1f90cf3713e6f5de2410faa4060b0f9e0e523de1"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe497.psv",
+      "bytes": 1129,
+      "sha256": "e014c57a4242dbe830797ff2e556f54670eebe971786209fe756c932ca8ba730"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe636.psv",
+      "bytes": 815,
+      "sha256": "41c74ca33d276a3e5827d872b7f4dffde7304cbfffb7d634e0363b108b0396f0"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe359.psv",
+      "bytes": 1413,
+      "sha256": "6252dc1798af90c6376234faaf8e57ac0ea305d2a1d8d48467339fa2fe3a7469"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe338.psv",
+      "bytes": 6112,
+      "sha256": "f3eab1fb8a27cba17c08eba4ab35cc799c93f21750e09d3eeb9ae657ddfffcf5"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe241.psv",
+      "bytes": 1420,
+      "sha256": "d930530736ecd1186a96171da758bbffd79217b2b388daf408557556c847aade"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe362.psv",
+      "bytes": 1818,
+      "sha256": "884705a06e3c6adb74159cb471a4dae21a61a840a4c9f549fb074e23243276e0"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe230.psv",
+      "bytes": 1883,
+      "sha256": "1ca37d2016ffb86eefa2f654ffb9b4e951b83ff3b11019e79bc717f4b78d4b4a"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe530.psv",
+      "bytes": 2969,
+      "sha256": "c5d95df9d77c4a9e2db90b36c0b517bfd82b67eedecf43bbca96c4397976f477"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe735.psv",
+      "bytes": 1222,
+      "sha256": "5a1d9a8687c1394197a63aea1eb21f5b0932fc8422f2e372e08d1ea2ad0a6674"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe223.psv",
+      "bytes": 1133,
+      "sha256": "88d386ecfaba512ecf0e2fc3ed43095f1b5c6af65f36e24fcc4ebcf7d9287b59"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe73.psv",
+      "bytes": 3010,
+      "sha256": "6954908dee24a2ce822260e90e0e14c5aeafee721a893f5e31da94e8fea5024c"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe350.psv",
+      "bytes": 1865,
+      "sha256": "764baf80db264da5df3a814c16f857d5b719177383873362640766304c1a9110"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe212.psv",
+      "bytes": 2116,
+      "sha256": "e7b18a0e5b6fb4eba3d25af5ebfb0b509a99cac96cbc2c7a8e314153bf4dbb69"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe329.psv",
+      "bytes": 1506,
+      "sha256": "6892537641c5346b73522fa1cc3f7295c250a6e4236263641cd66a9b93f1fb06"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe150.psv",
+      "bytes": 3531,
+      "sha256": "0827ab216c5140c3708dfa60da3b2e10a83bbc1ffd7b32cff5729476b1ddcd8a"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe165.psv",
+      "bytes": 3840,
+      "sha256": "6f98ba92e01c791c2f2d071273c335aec05d2b47614e006b5c731d290029873b"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe797.psv",
+      "bytes": 1651,
+      "sha256": "ad67a3dc6c19caf24288f6a9acf768d2012b13924819c55af9edc5fe0e98d415"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe574.psv",
+      "bytes": 2077,
+      "sha256": "94e55125f2f0d37e796eb421f793da6da506148b4130310024357a7cef078f9c"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe685.psv",
+      "bytes": 1509,
+      "sha256": "87905418750d349361f0c330b8778c35ea035dab7f38a8296c11fb93a1b2e8f3"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe18.psv",
+      "bytes": 1854,
+      "sha256": "7caedf9087faf96ddd01025088ccd98885354afdb54f0a055d14fc13951b524a"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe406.psv",
+      "bytes": 3907,
+      "sha256": "a439442981658a909be5bb71030c398819c446085157947aacca9dafa50c1260"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe726.psv",
+      "bytes": 1171,
+      "sha256": "72ba15a93499fe900339fbde08add25bd34859824033c752373ec2e59beb7707"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe774.psv",
+      "bytes": 1844,
+      "sha256": "63a37966019dc68eb37a626ea31c602e2282e393b06b7dcd4c295b613b468f59"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe394.psv",
+      "bytes": 1377,
+      "sha256": "d6130e2b53f0c772d31585963891dc98cda467e09986f13573ab5023e10d949e"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe32.psv",
+      "bytes": 1816,
+      "sha256": "b9d1317b1a8f194e29ae50b11adb423060f36e2398bc6679e639cdfce051907a"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe247.psv",
+      "bytes": 1598,
+      "sha256": "1ee8962b55554699d8f5901edd70e3658ca061410e7c98c7d6b4140dcfefa66f"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe161.psv",
+      "bytes": 3148,
+      "sha256": "2cc20a56c200ba73e7937221c14b7c96f6a5f8b2957c4e04cfa0918b244711e0"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe512.psv",
+      "bytes": 1860,
+      "sha256": "173390cf6d2a0d9eb42392000b3f89af3e7791ead668a6114c847529592edba2"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe526.psv",
+      "bytes": 1611,
+      "sha256": "f92d68c2ee74ab4e6f8c2d38badda29d20b73e6e82f2dae46c6c34ecb98fce13"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe565.psv",
+      "bytes": 3677,
+      "sha256": "44ed261ecd000509bf299aedb6d948803c9c85e098e516a0ecc5ac2bc4faa01c"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe611.psv",
+      "bytes": 1093,
+      "sha256": "8ed78b6ce5ef74391ac593312613de8bc59ab624e7eb48e6ff7fdb74fcabb2c7"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe303.psv",
+      "bytes": 4834,
+      "sha256": "bbfd5998dcb54b59628488b754e3eba5db04f0008836540e49b7814a54913e27"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe170.psv",
+      "bytes": 1413,
+      "sha256": "b8aefc29669bb7944f7e6c72b59273defe5fff1f92ef8dd54ba8c1c34208db30"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe594.psv",
+      "bytes": 1435,
+      "sha256": "17b95e54c0018c80d2937898890e70de835b38164e363ae8212983bb897420cb"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe717.psv",
+      "bytes": 1256,
+      "sha256": "14b00caae1c3aaa4b17c24d25dfb8dfddb2e0369fa1f220d67788a4d572043db"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe682.psv",
+      "bytes": 3564,
+      "sha256": "bfa8fa5348ba8262c649c6a9566e06376d17a75bebfe0346f86777d40ed0332d"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe391.psv",
+      "bytes": 1459,
+      "sha256": "768e5083aa1779353313a8f46fa0fec60891082f8e37afa4f232d390bc0a7cf2"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe435.psv",
+      "bytes": 2807,
+      "sha256": "d3b2a82d12c7f6b1062c891b41f456795a0e4c50cf1aea6df0e019a1632fa1ba"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe389.psv",
+      "bytes": 2541,
+      "sha256": "3c1cdab8383d4076a5feddf173c8cda994c796ce501ab4517b7645a76591e64d"
+    },
+    {
+      "path": "data/Processed/Annotator_M/PSV_M/4recipe279.psv",
+      "bytes": 1510,
+      "sha256": "1b7940c15f8ea04ae0c96f8e98dcd29f746c75128d1c4c9745d1b95a7a57b83e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/prodigy_dinner.json",
+      "bytes": 9254563,
+      "sha256": "99c32c51ea4bc5b1cdcd5dfe41058b54ec2c72b143abf6c760cba87c1ee1aab9"
+    },
+    {
+      "path": "data/Processed/Annotator_P/prodigy_lunch.json",
+      "bytes": 1755909,
+      "sha256": "91252a470c185226982d6696c7626e213ea27f04dd708ec703b9f03e7fff7eb6"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2277.psv",
+      "bytes": 1518,
+      "sha256": "b57db539dc69d2eabd3ee63a5cd171cec246de502dae215ab13c66c67e1d748d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1045.psv",
+      "bytes": 1098,
+      "sha256": "f96a94d34f32a8a285067ae1bc84c6ae4d7cf2c97b870ac183068faaed939664"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe618.psv",
+      "bytes": 4847,
+      "sha256": "0df0cdae626cdebc55b0ab9b6ec84abf6fcdcdcac3cf34398df158482104b47a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe710.psv",
+      "bytes": 1116,
+      "sha256": "ce4dc2779d61699052484c2456e6c6fd6eccf993c1322af57091cab811a3978c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe735.psv",
+      "bytes": 1257,
+      "sha256": "705075a2cd0c2f5b8eaec616b572541c2a55025b69eadb1a7f6d268d763edb5e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe611.psv",
+      "bytes": 1077,
+      "sha256": "73cca39cb9ac46e445f27adf82220865b77faf46b70c3037ef38b6aada46d7c1"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe405.psv",
+      "bytes": 597,
+      "sha256": "3ac4510de36fe968efa90681d6a70a77b97c17a621132a8399142979d2b4a14a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2490.psv",
+      "bytes": 739,
+      "sha256": "c902df4db2cb9c0d7cee07d52214eac6b15a478cc37b96cc60511d364e5de757"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe15.psv",
+      "bytes": 1652,
+      "sha256": "714301d18957ed0ebea7795eb77276cd2c7a619e55a674df7290ec29f16e67c3"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe382.psv",
+      "bytes": 3325,
+      "sha256": "0b74388056e32879c9d0d5e45a058f413e91847667e2ee669000ecf7ee56d610"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe73.psv",
+      "bytes": 2948,
+      "sha256": "ca190dd9ced49188a086533ec6454a7bc2fa4118547cc35d60e61f29bddd8015"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe676.psv",
+      "bytes": 1763,
+      "sha256": "0edff57d4618072c45291a375d182399688b1e9b6813f7af27290021e06c43e1"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe694.psv",
+      "bytes": 998,
+      "sha256": "13fd7d0b6808016900d0355cdcf4e847016998891c416ebc0daae2494a75b79c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe495.psv",
+      "bytes": 2525,
+      "sha256": "8a509badd07790b79710c41fb1b6b0c3aa4a20278aa693d907c713d8db77bfac"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe223.psv",
+      "bytes": 1118,
+      "sha256": "83b63e02706ed8b878ba6a47b5ea08ed2bcbec4827f7adfb30f22cfdedcd4a3a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe347.psv",
+      "bytes": 898,
+      "sha256": "ca300bf97e325518d30223a006a42a5bdb009461480c1b5603ca038212dd7c7f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe818.psv",
+      "bytes": 5591,
+      "sha256": "79670c48c3de0bf301200fe65bf83be6595545f698e295fc8d8777df0c80a1e7"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe456.psv",
+      "bytes": 1416,
+      "sha256": "a9a7085996132883e198a60e440bcb7626f6e09096aa179720f3f06628ef876e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe588.psv",
+      "bytes": 2495,
+      "sha256": "c2abbf077a239fe5686edce39682c3d74243974092b1d77d8af3dd26f9f976a0"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe461.psv",
+      "bytes": 4006,
+      "sha256": "f7be2aa5070fdbe23f92363ae6bac1c03e61fe634fb73a37ae7ad82d3f268b28"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe565.psv",
+      "bytes": 3736,
+      "sha256": "de331211a3d0c11e23bb2f36d45a0a05f5735e91498df84dde321f08c4568a32"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe214.psv",
+      "bytes": 2104,
+      "sha256": "17133ae873897f0397088aac867d2afc170350cd785e33ade07d36bd7ba294c3"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1430.psv",
+      "bytes": 1232,
+      "sha256": "f8bff08c43525d894f9dd8e7affc5fadc888215ee4a8aca739e5cbdeb7fc375f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2284.psv",
+      "bytes": 670,
+      "sha256": "543a180447fef5291155f9ab05a1a739ce4075f5b20cf3d624246ea4d40fdb7c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe32.psv",
+      "bytes": 1803,
+      "sha256": "3a3ae0dd67bedc527a7982bc9a803e3d7c2fd002ce13a66d2933cdd9aa20039d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe147.psv",
+      "bytes": 1555,
+      "sha256": "cff9e39262ea8044cbd37a7a75ef885045df36ad8857f353504a9e3c373097e1"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe203.psv",
+      "bytes": 1518,
+      "sha256": "87aa8fdd84757fca2921962f65a19613c0aac25c28b062328bdc3818f2207d10"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe239.psv",
+      "bytes": 2207,
+      "sha256": "6f94cb41accbc9341c93905e763e5c3be9879cd932fd8bec171b7729663394aa"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe59.psv",
+      "bytes": 1588,
+      "sha256": "f11465b527fcfcc6a956e66cf2b03396e8beeb96339806c9cc9e9c42e970dbe4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe226.psv",
+      "bytes": 1050,
+      "sha256": "6e6746548615c5596ccf8203cdf7276a7869d68af8f721e6ec574c2060e0dcfd"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe153.psv",
+      "bytes": 3577,
+      "sha256": "1287455fb1be88f4c135748a403291539a9a804340e2d141c9f42114389869df"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe168.psv",
+      "bytes": 1611,
+      "sha256": "431e42ed859e979b931159c02f1f2f2ad20dd7656475bd2789a45b95699fcb80"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe133.psv",
+      "bytes": 1485,
+      "sha256": "12dea47a8b1621959b1b14c4ceb3709c3174d3445658c1b1083c6b465bc230b5"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe126.psv",
+      "bytes": 2421,
+      "sha256": "0b70fb8909cffb093c2f9dcc9d1f349526bd0d8e4a9b8ec4de25a46427f25c1d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe465.psv",
+      "bytes": 807,
+      "sha256": "6257f4a14aa19483c6e1f4cf3b74ced6d2b432c55cfd618436a2b924d9275555"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe94.psv",
+      "bytes": 2326,
+      "sha256": "91806cdefd4d060f35de512896b027d994a5a28c637df6ff2012b84a2ccf6b8a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe453.psv",
+      "bytes": 1307,
+      "sha256": "763d9ea17dcc421483cbcf2aae1402973d0e3f9524ba4597a9f7ce35e17dd905"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe274.psv",
+      "bytes": 2608,
+      "sha256": "89608506f2b54a65a67b47858383377162b68276bb68ed0e1d1342e5cd6ba1c4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe45.psv",
+      "bytes": 2330,
+      "sha256": "b3094e075e70382fbde195ae0646ac96459a73334181f697d99670c98c0b6e1a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe800.psv",
+      "bytes": 1269,
+      "sha256": "66c9ff049dd75e86bb7d871a26416ddcf8589a591616f987b744145f2cebe8c9"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe770.psv",
+      "bytes": 1837,
+      "sha256": "6d34c480158e191b930b2c8997dd3cc3467b1fd01e55edaaf07b50b23782a889"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe100.psv",
+      "bytes": 1713,
+      "sha256": "d9b08f894b32b0ae98889b6e7374e557ab12dfd7cc63bb016868f9f367498230"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe470.psv",
+      "bytes": 1299,
+      "sha256": "ea68870d09f86a148ca31193fed1d786b54bbc64ea411e69124ce2b02dd5e394"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe68.psv",
+      "bytes": 1195,
+      "sha256": "6d643b02f8703be3d2f4101edc06517c3f5fb8fb7cce42c4f153ce985f621e0a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe62.psv",
+      "bytes": 902,
+      "sha256": "f21574fae35f072b72642db0f7f099f7ab225d80c398361381175245b5a35949"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe583.psv",
+      "bytes": 1748,
+      "sha256": "fcc9ae4d44ae8db2c8b3bdcc696e18528229c0e790935a3ca0f5aa3f12fddb12"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe318.psv",
+      "bytes": 2512,
+      "sha256": "76d9a245043a30e5eaeec7809ea91668d4860e2ce8ad9948dd22a36465d11ed8"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe306.psv",
+      "bytes": 1558,
+      "sha256": "f2c864f0bf537c0d55f916be8bfa0ff36afc9be2360ff7d4a84a8e7b5a358839"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe186.psv",
+      "bytes": 2255,
+      "sha256": "bae9cb02e3c624cdb2f4c836b655042d9d81b816d190214ba11947bcf74b06e4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe232.psv",
+      "bytes": 1791,
+      "sha256": "9ae6717de8f765672e732f1ebc8bec912c435d229fdfd8d9f6ff8dee55c70575"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe345.psv",
+      "bytes": 1506,
+      "sha256": "d28b148590467422bc5cb66527c4d8264d476cecfddd07c43d5877f4dfc35ed7"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe285.psv",
+      "bytes": 1531,
+      "sha256": "fc1fb4bd664bb138ce286663d390caf832265dd84686e440ead859049e4d3b5b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe376.psv",
+      "bytes": 2039,
+      "sha256": "61f0f78b1274a7a87568ecf9d1f3b4c3f5f78d6869810abe4e349e6eed08eb72"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe200.psv",
+      "bytes": 1483,
+      "sha256": "a7105f39af4b9fd90a008bc755f1c29f1c21c833c9f7f501c7522317aca9103a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe400.psv",
+      "bytes": 3934,
+      "sha256": "6598a7374c5d894cc5aa991dbf3d7d364dac47f480aa9479a3c4fda0062c96dd"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe709.psv",
+      "bytes": 2401,
+      "sha256": "adb59be11a68fb8126feda0050ec213a8db2ee600cdcf790884503b02166a4b4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe82.psv",
+      "bytes": 1047,
+      "sha256": "07ae9177e3651c4348150cd4205ddf869e3a7826c864f45e47131103be8f283a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe532.psv",
+      "bytes": 3357,
+      "sha256": "ee266176f58d4faef849799364e12a55c8e31424eb3974ffef3134f009f7cf8c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe53.psv",
+      "bytes": 3706,
+      "sha256": "0eb2cf8b90782e607eebe790bab1f4fb7d0dbfcacc5eaef6a16e43684719f9ad"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe315.psv",
+      "bytes": 2319,
+      "sha256": "a31f5a42fb74252ff2427de0c62fde519b17c74f999091bcad83b622967c20c7"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe108.psv",
+      "bytes": 2318,
+      "sha256": "21873ba79ea0ef218f5cbefd871cdbc7a651d44ee68a8ad6fc7a8cc40813581f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe174.psv",
+      "bytes": 1814,
+      "sha256": "1269e5c24b3fb7e5c382e54aab584a104a799ac65737083a66733f9ec9e7abb9"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe6.psv",
+      "bytes": 1525,
+      "sha256": "060bcd76d983fd5866882a6836845af9d8834514ed208255e2c092df3eabc4aa"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe309.psv",
+      "bytes": 2414,
+      "sha256": "24a13fc91818b55410ef009730a40c576791ade4e7a693a8ee654dcde7790a1e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe433.psv",
+      "bytes": 2566,
+      "sha256": "339d2630e2f61204e731fe0b61019e4ebe28c42b627e239bb683cc3c1af0ad03"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe129.psv",
+      "bytes": 3587,
+      "sha256": "1c63a39de7319e4b949d3b2e3d4349d5c5edcb609c7394a1d1e7ba89522a7d29"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe629.psv",
+      "bytes": 2091,
+      "sha256": "e737190ec87f3bf7b771b6a1f7db443ab310ef4c7a573e5b09bf97380391ff42"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe27.psv",
+      "bytes": 2473,
+      "sha256": "cbe8cfd573fc9dd0af6cc6baa9e3d4b7863a40bcd3d8111a0d522ae81da5417c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe397.psv",
+      "bytes": 2131,
+      "sha256": "c3a6d285ce83ef222a1092a2ca056ed7ef56ecc6fa76e240bde067a3c2d340b4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe165.psv",
+      "bytes": 3995,
+      "sha256": "06d4335c63dcd6cf77a08a8b57efed5a48adcbc3a86edac605d114f43879ee4d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe774.psv",
+      "bytes": 1830,
+      "sha256": "540c0acc720039926984c722fec6f3b7c0ee653cbf8cd826ddc06bef57a4e64b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe18.psv",
+      "bytes": 1832,
+      "sha256": "0c64a7aac11da5b7f2b345c0a2b60b9ce4e615b3f8e08e1ca1d090f92f1038cc"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe685.psv",
+      "bytes": 1542,
+      "sha256": "85c22a98aebf5cfc85d5142adf873e1fb184a184a26a4faf4438718c4dcdc87d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe150.psv",
+      "bytes": 3023,
+      "sha256": "346a8de3c56720278e98155cadd09ba0f5ccfeb0281a9180d6b19e05fd4d9d95"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe512.psv",
+      "bytes": 1746,
+      "sha256": "2ad2826aa05d15c14c4d31a3707eabfd11d7843ffc2efa95d391a97c912dc629"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe161.psv",
+      "bytes": 3159,
+      "sha256": "f868f810533b25c43618fc0076af7d2ad6c7d5f9d6dbd8a68ce32bd48b4b01fa"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe247.psv",
+      "bytes": 1574,
+      "sha256": "e47c83dc3f5fe7ac8816c971df310f9d91837dcd227699a29e7394cfadb696d6"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe406.psv",
+      "bytes": 3886,
+      "sha256": "8decc6ed94c633938fb4bd280d465a58fd384da583ee0e5e494642677c57728d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe726.psv",
+      "bytes": 1173,
+      "sha256": "48608471a175d8cca0401f3d296b3a825314b1b216b073c0fb84a4e2058cfcff"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe574.psv",
+      "bytes": 1998,
+      "sha256": "dfaf6a44672a76bc5755804fa1a090c5386724a448f499068d9bf9f87f5b60d6"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe797.psv",
+      "bytes": 1543,
+      "sha256": "c77c860fb4cfbc3499317fa3ec8247ada9ad598b73f782fc7a618216d2bfe82f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe170.psv",
+      "bytes": 1350,
+      "sha256": "ea8e7e7958678ce715ae10eb85358a5c29b8243240551483b416b80796d218c4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe664.psv",
+      "bytes": 1266,
+      "sha256": "ed8672a8aa0517fc414daf7e29a4ab6137614c8c585c2376d2c183bd4f01d4bb"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe303.psv",
+      "bytes": 5331,
+      "sha256": "4f3a242b82b9b9592b0901f5c6816085bf8784dd9b0d76696e10aeb2d958757e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe350.psv",
+      "bytes": 1835,
+      "sha256": "f27f695b8980887ef0cffaa838359ad5dd0e8387954751cddaccd1ee944eb351"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe64.psv",
+      "bytes": 2105,
+      "sha256": "220500e7130a97bb0b5f5d516c2a89fb3497f1b7638dbe6b1bcd5bc6fd95adb4"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe526.psv",
+      "bytes": 1569,
+      "sha256": "13c5877ad559f346affd8b819b0f71116de9b9f6731cf38b84d7f5e13a7a1ca1"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe545.psv",
+      "bytes": 1428,
+      "sha256": "85ff5fea3c8bfa9f42fedc0317724a471dfe436865641ab61b8a6dbdb51ecf6f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe230.psv",
+      "bytes": 1711,
+      "sha256": "f6025c9b7b266088e07ff367349c831df0595d3ddf5024c2bb1dd41e770a13bd"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe338.psv",
+      "bytes": 6095,
+      "sha256": "7ce89c6cea48edd85978e21b8a1375398b1f68030be13172256fe8bf717fd126"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe362.psv",
+      "bytes": 1519,
+      "sha256": "5485583d02b12b80a78a4ae13324cf225e99dade3ca94290430e83018470b269"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe241.psv",
+      "bytes": 1368,
+      "sha256": "378f568e6eb9de2dc646e803170efdfbbe5ed164952ddc980cee5c11bd1afabe"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe530.psv",
+      "bytes": 2949,
+      "sha256": "21a3cba36721fe3291dd8cd011a84eb5a5c8384b95e1e3e0f5880dc12b4d828b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe521.psv",
+      "bytes": 1024,
+      "sha256": "0c215a3b23f66c4865c13aea95c7401c8183702dfd223e75678a553ee945adfc"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe50.psv",
+      "bytes": 1709,
+      "sha256": "c0c5782f00a14cb5807399181f734e9e62fde475d87eb485c2c2b21a3f6b8dda"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe394.psv",
+      "bytes": 1587,
+      "sha256": "2d35b7a28775f56ae11bd741cd3f27fa7c5283abbe774c13f915e8ca291d7b70"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe359.psv",
+      "bytes": 1405,
+      "sha256": "16b0fe901c0e4af84fbf46cfc268031966853cbd8b020136a3ffd1ddd6e68362"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe435.psv",
+      "bytes": 2755,
+      "sha256": "3bda8760b26d951b8d78ac2d82ba8f6c800e2ab7e75fc50b34819bd63f595700"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe497.psv",
+      "bytes": 1064,
+      "sha256": "2f6190ff8be84a00f71009ed9bd465a033b78e09cb08a3f34e06bb4936738179"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe717.psv",
+      "bytes": 1226,
+      "sha256": "bb3456909b6e7b17ae32a5373980111c3e3bd16d92abd97a0d5b3bdbb0f7b926"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe459.psv",
+      "bytes": 2800,
+      "sha256": "60a6953b1e07733968744a058e3316910812e011d9595701a9e57baa8f159b0c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe438.psv",
+      "bytes": 2060,
+      "sha256": "38e53d905944f6ef384c90dedf31c5424670315473b7da051a9c350a7d1b0f67"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe479.psv",
+      "bytes": 3944,
+      "sha256": "83b17eb923c557fc4ebfa035adba976719fde3ef4cd9fd4129d8b2b74e2e3cab"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe594.psv",
+      "bytes": 1760,
+      "sha256": "bb1abcc25c5a4031bfacf024607c99466fa915ef2a8b80d87e594acb958f05ff"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe391.psv",
+      "bytes": 1562,
+      "sha256": "89c2f64212df73ca7c2f129b6c94a451b4336324ead1697e12d2acdb87d12283"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe468.psv",
+      "bytes": 1675,
+      "sha256": "89ca6eea2214328465e92d723980c2a8354ac05174952269f28a995a30d2dd28"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe353.psv",
+      "bytes": 1724,
+      "sha256": "bcf45d1b8c12809c7a3d2d89745c7a30a2ecd5f51df8fc2f6ae9505de053d84c"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe562.psv",
+      "bytes": 2108,
+      "sha256": "2c24d297a796422dc68969958372a233f7175f698a64945aa6821a87868f7ccb"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe491.psv",
+      "bytes": 1493,
+      "sha256": "242728f47fae526f95d50d122920ed02fcb61e65ee87918fb8fa19fd29796f71"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe682.psv",
+      "bytes": 3605,
+      "sha256": "853085c5e68fc43f424471a8843763f4fb79746e1f21b1c0b7de6f12e071d510"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe329.psv",
+      "bytes": 1438,
+      "sha256": "d14275aa259e94216eb91e8605bdf8847b7e629f71924f3d078f040d55f0027b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe636.psv",
+      "bytes": 796,
+      "sha256": "ff784c975e648802f078e232d5452fd5c43ee4e98210158045d083371ba49bca"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe935.psv",
+      "bytes": 1718,
+      "sha256": "eb0c3097f74114651b016ce4269b511b39a4af3dbdd5c8e1ffb9d24b4b316736"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe81.psv",
+      "bytes": 518,
+      "sha256": "429f99c5ac45d70596f98b2f82e25c0dc093e7fee94a56446d7a561193c062f5"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe245.psv",
+      "bytes": 721,
+      "sha256": "263eca55face2d2f13d91db4575a3d03ed5521eb4e362455fa77c6b4c23013c5"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1838.psv",
+      "bytes": 1737,
+      "sha256": "47aa482c77d444c9ec6949c4ebd27c28d9f31ddd554fe01cd695ff91c1241f1b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1453.psv",
+      "bytes": 2026,
+      "sha256": "76905c2685e6e4b75b4dadc2c7d6bd92c08fe809ce62dbea38843b1a0fc4ffa6"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1472.psv",
+      "bytes": 1115,
+      "sha256": "37f722f997951b9a6c29da66b8e6dabf49b1b395041822360e8bd261471f286e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe215.psv",
+      "bytes": 1967,
+      "sha256": "8ce0b155c7a548c924f966a9c1e035b1fa8586aa11137015dd65478ef47a8552"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2063.psv",
+      "bytes": 3114,
+      "sha256": "c267215eaae06b7b1a3ed27b57bbf7030627d563e89b1d4b6683ca16f5c2c7f2"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2132.psv",
+      "bytes": 1300,
+      "sha256": "5b24fdfb4e8345c5d37e6a8a21d2ed42b0b3f568a1da8822d7f68501c205b6ec"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1697.psv",
+      "bytes": 1505,
+      "sha256": "ded852a069ddd97853293f98439527068a677605a137b017a986993f0053ebea"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1179.psv",
+      "bytes": 1837,
+      "sha256": "636349f54d270c40d4e51097ae86ba895646fccfe1550112a94741d51913b4aa"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe279.psv",
+      "bytes": 1526,
+      "sha256": "31cc5b5d72aa22ebd86ed076f7e2af7663fdd8db9e3c82c9ee1f71e966cb7279"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe740.psv",
+      "bytes": 2025,
+      "sha256": "847482906d060e53494a7bd97778b14b3878c507712e14eb0a8c3607b3c4f7a9"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2193.psv",
+      "bytes": 2316,
+      "sha256": "0139641b689f32ea66a1bfcbb9cf7d7ecf9bf12e14d2ad81f6bd27481502615a"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe389.psv",
+      "bytes": 2466,
+      "sha256": "7356d596da6578aeb0f3aab057b8dc77f7a93bb8ff0827fa6dc09020775c4a8f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2468.psv",
+      "bytes": 3957,
+      "sha256": "b94b2ef499a92cdde85a919dc8de563964ada9bd732722faf11914562371da93"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe182.psv",
+      "bytes": 4446,
+      "sha256": "098e3b7adf35e14369bf056c3d90cc774bc5d9fa487eb8ecfbbc4ff0f524c45d"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe100.psv",
+      "bytes": 1761,
+      "sha256": "1cd61118259dcdbd50807e355799896adeabee68353b4c54aaa84c19775917bc"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1911.psv",
+      "bytes": 1466,
+      "sha256": "5bb6ca9c8b47f831c4aecaa7c51262050a6d0f0b71bc5192d624a38de1dd0be8"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe571.psv",
+      "bytes": 1508,
+      "sha256": "25b5ab50da35cb92d88b5b316785d37aa8f25ad1105dc9c21e8b7a94fb801a84"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1186.psv",
+      "bytes": 2350,
+      "sha256": "09376dfc151f2254c2ba084841ea514c1fb7813309c3d373cb8e0deda9d38437"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe222.psv",
+      "bytes": 1644,
+      "sha256": "c5aaf825698cecafa4314e402b3eb8565ffa2d2198f1ccd6d6e8392248aa82c6"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe638.psv",
+      "bytes": 1329,
+      "sha256": "590a94f64ead6364ed89a90347a3df491008d7e380da8827b406d39e46cb64d0"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe311.psv",
+      "bytes": 1759,
+      "sha256": "4aece3aad18417ff884610956ebf2d00a447494f862540d728ed13ed462f3b33"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe253.psv",
+      "bytes": 1741,
+      "sha256": "c540b301b7cdcf266600c509ee04d8f354d04f97a525d70dc957ce6d5a40d80e"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe212.psv",
+      "bytes": 2132,
+      "sha256": "65468efa451a7d7714b1c5034444f3253d72e962436dadb1253633ce9f6bf3ec"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe156.psv",
+      "bytes": 2593,
+      "sha256": "abcfa0cfc914649d4fbf38da534fc7b72aa3f2afafe439e88d40f66d0c64403b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe641.psv",
+      "bytes": 2188,
+      "sha256": "ed75b16131010a2d85cd36165f304da5f1d3b71b57e809b4d00a4d057ab42452"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe408.psv",
+      "bytes": 1474,
+      "sha256": "7492cf32d5a59a0a65c3e2cb0ee2643e375252bcc54eb52033fc27d7ffd4a251"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe482.psv",
+      "bytes": 1210,
+      "sha256": "144ae446a3f23d0f2bcccf9fb60ae284b343b072a500b69f6fb07dff2f48ca05"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe218.psv",
+      "bytes": 2385,
+      "sha256": "2bfb159b20fda968876b38fd8993d0b5013fc0b337bd9f39920f991381a87382"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe142.psv",
+      "bytes": 1178,
+      "sha256": "1558bbf1212d269805cf6d13ee1cd67a4ab680466792c0c3e9a9335af264dcc0"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe645.psv",
+      "bytes": 2392,
+      "sha256": "0589b0acdff77f8bbb3f9bd1e66820b6d9b45aa974d7dbd99b7bc05e1bd54680"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe823.psv",
+      "bytes": 1743,
+      "sha256": "8280a5b4821fb3c2e071105de17bd602da25879f0612a82645185ba4dba0f58b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe592.psv",
+      "bytes": 810,
+      "sha256": "cacab589b5f1f0d6b5211671820a9536d4e0449719f3a253e110fdc6c912e84f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2418.psv",
+      "bytes": 1653,
+      "sha256": "e3b1329b05408e6ab0db5e5c896dbaea85695cee28a4e6449dd81ee385770387"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe142.psv",
+      "bytes": 2649,
+      "sha256": "e3f8fcd9cfb7c39fab0206f4c54655b0f647907b3205d299decf19afa3d7ba7b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe597.psv",
+      "bytes": 2855,
+      "sha256": "4bb73e7b234375aa94c71e9c739887dcd43a42aae953afa1ac3e9ed586d94462"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe627.psv",
+      "bytes": 2661,
+      "sha256": "4cff15bebb72356ffb3b2538c8aaafd4cd5f68fc920badc8a1e17f11ecb6aa93"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe188.psv",
+      "bytes": 1417,
+      "sha256": "5b99e2be08e93767d831b2b030a8be2a594b5174faeb087937181a677b383838"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe624.psv",
+      "bytes": 1937,
+      "sha256": "ba59b86803777ed1dab17d5cfc31d010500dd7bf09551c0cc8c94a3376e6d714"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe721.psv",
+      "bytes": 668,
+      "sha256": "97186c12792e68fa4476183d45b4d850a7111c6812e63c4279675656c7297c07"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe41.psv",
+      "bytes": 1422,
+      "sha256": "856420cafa98536be49d9e8bb2e5438243b325885e465f74068e4212528640ae"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe712.psv",
+      "bytes": 1882,
+      "sha256": "8268cd027c57dd879cc6986b1a49b84ede60ec02db38b0bc5bb9c1ed03260c83"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/4recipe421.psv",
+      "bytes": 2623,
+      "sha256": "68269d876555323c056c4857a610f21eab83274417040f603e7268c34cfede88"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe2826.psv",
+      "bytes": 393,
+      "sha256": "f0045e1f53de5332fa281f48731f3fcbd0209f3690d81fb513f0fbaa0168bd7b"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe660.psv",
+      "bytes": 474,
+      "sha256": "5da84593d0569ffd2e51af7b1c4ed1f1606658eb42732e7a350a493bd21f8000"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe893.psv",
+      "bytes": 1724,
+      "sha256": "1099441314fb9a4fba4c018b74f81c528dce7332c105a39ba96db7b30e7c5668"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1167.psv",
+      "bytes": 821,
+      "sha256": "2b4948ef5dcba0c6db70ce432ded269f4fcb7c65b3dae27a77488661f0d1dc2f"
+    },
+    {
+      "path": "data/Processed/Annotator_P/PSV_P/1recipe1789.psv",
+      "bytes": 2173,
+      "sha256": "c1744622d3ca6880ff94d36811dc0a09b774a49952a7dcb7c1127d40478ec2fa"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_pegasus/generated_predictions.txt",
+      "bytes": 73541,
+      "sha256": "94f9b6ca3be07277dc3b19265ed152716677188d4c6db2f1e7c77c746e77c2f7"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_pegasus/predict_results.json",
+      "bytes": 352,
+      "sha256": "b17941dcd3e4db15d35b6b560b10afa1e662c6e9f7f42aa2fe2a94f90ce33280"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_pegasus/all_results.json",
+      "bytes": 352,
+      "sha256": "b17941dcd3e4db15d35b6b560b10afa1e662c6e9f7f42aa2fe2a94f90ce33280"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_pegasus/README.md",
+      "bytes": 991,
+      "sha256": "baac89971dbd0f2c33ec52e488cff1bf2775f7bffa577ca8e4aa19c0293587ca"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_t5/generated_predictions.txt",
+      "bytes": 239644,
+      "sha256": "463750c2a617aae3e97ba0ba64491552feba03ba288a2f7ffecd9b6ffb4cce05"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_t5/predict_results.json",
+      "bytes": 350,
+      "sha256": "6a6f9e1e775315364ccfd1fc0ffa796e2ca4fc28effcfb0535ffde23a66967ea"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_t5/all_results.json",
+      "bytes": 350,
+      "sha256": "6a6f9e1e775315364ccfd1fc0ffa796e2ca4fc28effcfb0535ffde23a66967ea"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold0_t5/README.md",
+      "bytes": 971,
+      "sha256": "9b964a1e60c14f41adeb69a4f3181f969559323d77130e4051f30170288d849b"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_pegasus/generated_predictions.txt",
+      "bytes": 57734,
+      "sha256": "adae4d2874eda367c0d08e71d0e4a23ef58b7e48b6371bdfc9fdf58f5829db8d"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_pegasus/predict_results.json",
+      "bytes": 352,
+      "sha256": "e62e58a12d8a407f125729ab9f073301699d9b7dede9346810283fe03890121d"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_pegasus/all_results.json",
+      "bytes": 352,
+      "sha256": "e62e58a12d8a407f125729ab9f073301699d9b7dede9346810283fe03890121d"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_pegasus/README.md",
+      "bytes": 991,
+      "sha256": "4ee065e71458976f11fe8932bc865888bca3fe3b73463ef60cefbd15527d780f"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_t5/generated_predictions.txt",
+      "bytes": 180639,
+      "sha256": "511d880a1d4d74c028e1fb625dc1ee2f3f2db078219c1046fd07f321f86f9a6a"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_t5/predict_results.json",
+      "bytes": 339,
+      "sha256": "fe4318b444d1630f21aed7d9e356ec615d18f879462d6a54fb31d346e578ce9f"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_t5/all_results.json",
+      "bytes": 339,
+      "sha256": "fe4318b444d1630f21aed7d9e356ec615d18f879462d6a54fb31d346e578ce9f"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold1_t5/README.md",
+      "bytes": 971,
+      "sha256": "74996e9b3b50aea2d17e890439d4240d791da7e2055dc24e3e14af63ff3af06a"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_pegasus/generated_predictions.txt",
+      "bytes": 56783,
+      "sha256": "7009955f0d9e166c35413e502491ae6f783e6db66469ffc7bdddbac7f268dc86"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_pegasus/predict_results.json",
+      "bytes": 351,
+      "sha256": "fe365785e23f20db8874f85efe4750516f3697cb3f2382e3fb4ac4d26a99f40a"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_pegasus/all_results.json",
+      "bytes": 351,
+      "sha256": "fe365785e23f20db8874f85efe4750516f3697cb3f2382e3fb4ac4d26a99f40a"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_pegasus/README.md",
+      "bytes": 991,
+      "sha256": "53f2cfa06b81dc88cf72eadbcbccd4eb085f04997faa9a0482b95428531a7e03"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_t5/generated_predictions.txt",
+      "bytes": 167811,
+      "sha256": "04a3e11dd93efd51d08d718d547c204d230936e2ed3182a6592b40792eb91e3b"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_t5/predict_results.json",
+      "bytes": 350,
+      "sha256": "75548ea97a4722f5569023976ceebdfe06cd44bd332620d64f1e2c524c236eaa"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_t5/all_results.json",
+      "bytes": 350,
+      "sha256": "75548ea97a4722f5569023976ceebdfe06cd44bd332620d64f1e2c524c236eaa"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold2_t5/README.md",
+      "bytes": 971,
+      "sha256": "77c8cb338b5685ae9e806ebe1440bc1b6c888259ac1f7ac9d57876919a4afcc6"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_pegasus/generated_predictions.txt",
+      "bytes": 63061,
+      "sha256": "80929494ddb76ffac58a8f5f33f71f6bf64057fb64c60ce2ea955c3deed04d5a"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_pegasus/predict_results.json",
+      "bytes": 350,
+      "sha256": "7082b6cf95cab0365724f82700f98d463e9e102e5a48345628a8d77bb59c3d28"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_pegasus/all_results.json",
+      "bytes": 350,
+      "sha256": "7082b6cf95cab0365724f82700f98d463e9e102e5a48345628a8d77bb59c3d28"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_pegasus/README.md",
+      "bytes": 991,
+      "sha256": "ceffe3d071f8fccbb28ce84d1d3319bfd2d1cc121199fd9d80b7db02dce644b3"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_t5/generated_predictions.txt",
+      "bytes": 203685,
+      "sha256": "0a1761bda3457f6f62cd8d0b3bce43c9182955baf344af2ca6f0e89fbc7d7be2"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_t5/predict_results.json",
+      "bytes": 352,
+      "sha256": "0c85bad8aead6c04a5279aae9bc8fb4584ca9535b058ea77885ff94eddb39be7"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_t5/all_results.json",
+      "bytes": 352,
+      "sha256": "0c85bad8aead6c04a5279aae9bc8fb4584ca9535b058ea77885ff94eddb39be7"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold3_t5/README.md",
+      "bytes": 971,
+      "sha256": "ee720df17b165204c360f53b0ed7a26671f2c0f5ee6de337d816e7968a3016e9"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_pegasus/generated_predictions.txt",
+      "bytes": 51134,
+      "sha256": "135595d079c3b6c6c5fa7f40c870d5943de20618e6c7c2ec3d8af47f5206ae39"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_pegasus/predict_results.json",
+      "bytes": 349,
+      "sha256": "b3317e9fe6e31583f1b54b70391698dcdf3053ff386161e9d052683c86d12d6c"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_pegasus/all_results.json",
+      "bytes": 349,
+      "sha256": "b3317e9fe6e31583f1b54b70391698dcdf3053ff386161e9d052683c86d12d6c"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_pegasus/README.md",
+      "bytes": 991,
+      "sha256": "b96f37028e3d72d5ac2df9188ae7f92c2a457605877da678971526db5bed7f34"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_t5/generated_predictions.txt",
+      "bytes": 186347,
+      "sha256": "5ba3c5e5bdc47a92445eef20de154700258cd97929d0cfaaf08f7fb27c172604"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_t5/predict_results.json",
+      "bytes": 352,
+      "sha256": "f5991c7f4389b9b88aad1da70f8fb303bdaed28902e77feba686328e392422a6"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_t5/all_results.json",
+      "bytes": 352,
+      "sha256": "f5991c7f4389b9b88aad1da70f8fb303bdaed28902e77feba686328e392422a6"
+    },
+    {
+      "path": "data/Predictions/CrossVal/fold4_t5/README.md",
+      "bytes": 971,
+      "sha256": "ab2227e374cb7837c71ee90dd5b390a84bacadb023f21363bcfef3d964338af5"
+    },
+    {
+      "path": "data/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source": "User supplied official RiCoRecA data archive; online version metadata unavailable."
+}

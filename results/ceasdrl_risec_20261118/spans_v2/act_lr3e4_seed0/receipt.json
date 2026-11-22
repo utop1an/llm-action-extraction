@@ -1,0 +1,368 @@
+{
+  "status": "completed",
+  "claim": "Adapted cEASDRL BIO span extraction training, not original paper reproduction.",
+  "configuration": {
+    "features": "data\\procedural\\risec\\features_spans_v2",
+    "output": "results\\ceasdrl_risec_20261118\\spans_v2\\act_lr3e4_seed0",
+    "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+    "mode": "act",
+    "epochs": 10,
+    "patience": 3,
+    "seed": 0,
+    "env_batch": 16,
+    "batch_size": 32,
+    "train_frequency": 4,
+    "target_updates": 100,
+    "learning_rate": 0.0003,
+    "max_vector_steps": 0,
+    "span_labels": true,
+    "resume": false,
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gamma": 0.9,
+    "epsilon_decay_steps": 15285,
+    "num_words": 600,
+    "initialization": "from scratch",
+    "task": "Complete BIO span extraction; no ES/OP/EX",
+    "selection_metric": "Dev exact span micro F1",
+    "argument_task": null
+  },
+  "initial_dev": {
+    "precision": 0.009708737864077669,
+    "recall": 0.001440922190201729,
+    "f1": 0.002509410288582183,
+    "right": 1,
+    "predicted": 103,
+    "gold": 694
+  },
+  "best_epoch": 10,
+  "epochs_completed": 10,
+  "history": [
+    {
+      "epoch": 1,
+      "complete": true,
+      "training_steps": 15285,
+      "optimizer_updates": 557,
+      "mean_loss": 374.6350615388401,
+      "dev": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "right": 0,
+        "predicted": 0,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "right": 0,
+        "predicted": 0,
+        "gold": 468
+      },
+      "seconds": 49.86564660072327
+    },
+    {
+      "epoch": 2,
+      "complete": true,
+      "training_steps": 30570,
+      "optimizer_updates": 1131,
+      "mean_loss": 321.1609171541726,
+      "dev": {
+        "precision": 0.4666666666666667,
+        "recall": 0.010086455331412104,
+        "f1": 0.019746121297602257,
+        "right": 7,
+        "predicted": 15,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.3333333333333333,
+        "recall": 0.00641025641025641,
+        "f1": 0.012578616352201259,
+        "right": 3,
+        "predicted": 9,
+        "gold": 468
+      },
+      "seconds": 43.52616095542908
+    },
+    {
+      "epoch": 3,
+      "complete": true,
+      "training_steps": 45855,
+      "optimizer_updates": 1717,
+      "mean_loss": 282.44210990541217,
+      "dev": {
+        "precision": 0.5393053016453382,
+        "recall": 0.8501440922190202,
+        "f1": 0.6599552572706935,
+        "right": 590,
+        "predicted": 1094,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.5766526019690577,
+        "recall": 0.8760683760683761,
+        "f1": 0.6955046649703138,
+        "right": 410,
+        "predicted": 711,
+        "gold": 468
+      },
+      "seconds": 46.47639060020447
+    },
+    {
+      "epoch": 4,
+      "complete": true,
+      "training_steps": 61140,
+      "optimizer_updates": 2269,
+      "mean_loss": 223.65197087716365,
+      "dev": {
+        "precision": 0.7328519855595668,
+        "recall": 0.877521613832853,
+        "f1": 0.7986885245901639,
+        "right": 609,
+        "predicted": 831,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.7219343696027634,
+        "recall": 0.8931623931623932,
+        "f1": 0.7984718242597899,
+        "right": 418,
+        "predicted": 579,
+        "gold": 468
+      },
+      "seconds": 43.0369074344635
+    },
+    {
+      "epoch": 5,
+      "complete": true,
+      "training_steps": 76425,
+      "optimizer_updates": 2829,
+      "mean_loss": 200.69927165167672,
+      "dev": {
+        "precision": 0.712778429073857,
+        "recall": 0.8760806916426513,
+        "f1": 0.7860374919198448,
+        "right": 608,
+        "predicted": 853,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.7244367417677643,
+        "recall": 0.8931623931623932,
+        "f1": 0.8,
+        "right": 418,
+        "predicted": 577,
+        "gold": 468
+      },
+      "seconds": 41.52862095832825
+    },
+    {
+      "epoch": 6,
+      "complete": true,
+      "training_steps": 91710,
+      "optimizer_updates": 3394,
+      "mean_loss": 186.918999923436,
+      "dev": {
+        "precision": 0.7295673076923077,
+        "recall": 0.8746397694524496,
+        "f1": 0.7955439056356488,
+        "right": 607,
+        "predicted": 832,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.7491039426523297,
+        "recall": 0.8931623931623932,
+        "f1": 0.8148148148148148,
+        "right": 418,
+        "predicted": 558,
+        "gold": 468
+      },
+      "seconds": 42.02824354171753
+    },
+    {
+      "epoch": 7,
+      "complete": true,
+      "training_steps": 106995,
+      "optimizer_updates": 3954,
+      "mean_loss": 169.459415776389,
+      "dev": {
+        "precision": 0.8228021978021978,
+        "recall": 0.8631123919308358,
+        "f1": 0.8424753867791842,
+        "right": 599,
+        "predicted": 728,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.832,
+        "recall": 0.8888888888888888,
+        "f1": 0.859504132231405,
+        "right": 416,
+        "predicted": 500,
+        "gold": 468
+      },
+      "seconds": 41.63992786407471
+    },
+    {
+      "epoch": 8,
+      "complete": true,
+      "training_steps": 122280,
+      "optimizer_updates": 4521,
+      "mean_loss": 147.10725334880632,
+      "dev": {
+        "precision": 0.7918848167539267,
+        "recall": 0.8717579250720461,
+        "f1": 0.8299039780521262,
+        "right": 605,
+        "predicted": 764,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.7927756653992395,
+        "recall": 0.8910256410256411,
+        "f1": 0.8390342052313883,
+        "right": 417,
+        "predicted": 526,
+        "gold": 468
+      },
+      "seconds": 42.57023859024048
+    },
+    {
+      "epoch": 9,
+      "complete": true,
+      "training_steps": 137565,
+      "optimizer_updates": 5072,
+      "mean_loss": 127.97545553162396,
+      "dev": {
+        "precision": 0.8497854077253219,
+        "recall": 0.8559077809798271,
+        "f1": 0.8528356066044508,
+        "right": 594,
+        "predicted": 699,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.8694736842105263,
+        "recall": 0.8824786324786325,
+        "f1": 0.8759278897136797,
+        "right": 413,
+        "predicted": 475,
+        "gold": 468
+      },
+      "seconds": 42.850826025009155
+    },
+    {
+      "epoch": 10,
+      "complete": true,
+      "training_steps": 152850,
+      "optimizer_updates": 5646,
+      "mean_loss": 115.50753961955213,
+      "dev": {
+        "precision": 0.8721804511278195,
+        "recall": 0.8357348703170029,
+        "f1": 0.8535688005886681,
+        "right": 580,
+        "predicted": 665,
+        "gold": 694
+      },
+      "train_probe": {
+        "precision": 0.8876889848812095,
+        "recall": 0.8782051282051282,
+        "f1": 0.882921589688507,
+        "right": 411,
+        "predicted": 463,
+        "gold": 468
+      },
+      "seconds": 42.954487323760986
+    }
+  ],
+  "training_steps": 152850,
+  "optimizer_updates": 5646,
+  "unique_train_examples_visited": 126,
+  "examples": {
+    "train": 126,
+    "dev": 56,
+    "test": 78
+  },
+  "dataset_sha256": {
+    "train": "cc3ff7ceb846255d84834558c774ca72921adb880d4b119d9d4b28d1961043ed",
+    "dev": "75a83dbced99912183d82f9151f60ab31e31b5d46a4f7b89f1e6d6f0d30cf317",
+    "test": "1885e90a3df0ac550186b5f2f529f08fee5475ecee2f831f1bf4e433caa985e6"
+  },
+  "feature_manifest_sha256": "9a8183376bc1f12ab45235a75b098038a40ac67b219147e6613ff80ef7b77817",
+  "source_sha256": {
+    "scripts/ceasdrl_torch.py": "937a90d27576935dce70bbd06f0df2b4216d209d2bc1944e04af062422806f7a",
+    "scripts/train_ceasdrl_risec.py": "747961b4200e54681af617acbc6dcc5bdb57585d4a872ab9bf0aad62c8f8835b",
+    "scripts/prepare_procedural_data.py": "1c04734420b21c02535aa7c3ab4b66667db26285cd1f2c8d5d4995a941b31807",
+    "scripts/export_ceasdrl_features.py": "669229eee5c8f17a11d63e380bbba483b607641e0e8eabb01de91a85f2c79ebd",
+    "scripts/ceasdrl_spans.py": "7cb6b87767201fd3e41dd526bae19c4aac5eaaad4c3d493f213062a5fcefb140",
+    "scripts/risec_spans.py": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab",
+    "scripts/prepare_ceasdrl_spans.py": "49c56a5edbdf2d4d4f9f8f58c23c2e51b28a7fc3d8de0d5e838005c6b0c40248"
+  },
+  "parity": {
+    "device": "NVIDIA GeForce RTX 4070",
+    "modes": {
+      "act": {
+        "max_absolute_q_error": 7.62939453125e-05,
+        "relative_loss_error": 8.47889619694373e-08,
+        "max_relative_gradient_l2_error": 1.2750925861837459e-06,
+        "passed": true
+      },
+      "arg": {
+        "max_absolute_q_error": 0.0001068115234375,
+        "relative_loss_error": 1.0625699635910402e-07,
+        "max_relative_gradient_l2_error": 6.258178473217413e-07,
+        "passed": true
+      }
+    },
+    "passed": true,
+    "reward_cases": 48,
+    "max_reward_error": 3.390842010730921e-06
+  },
+  "skipped_examples": {
+    "train": [],
+    "dev": [],
+    "test": []
+  },
+  "train": {
+    "precision": 0.8906144496961512,
+    "recall": 0.887020847343645,
+    "f1": 0.8888140161725068,
+    "right": 1319,
+    "predicted": 1481,
+    "gold": 1487
+  },
+  "dev": {
+    "precision": 0.8721804511278195,
+    "recall": 0.8357348703170029,
+    "f1": 0.8535688005886681,
+    "right": 580,
+    "predicted": 665,
+    "gold": 694
+  },
+  "test": {
+    "precision": 0.8861047835990888,
+    "recall": 0.884090909090909,
+    "f1": 0.8850967007963595,
+    "right": 778,
+    "predicted": 878,
+    "gold": 880
+  },
+  "train_only_lexical_baseline_test": null,
+  "weights_changed": true,
+  "checkpoint_reload_predictions_equal": true,
+  "losses_and_gradients_finite": true,
+  "total_seconds": 459.31534361839294,
+  "limitations": [
+    "Single seed; independent target network.",
+    "BIO boundary decisions extend the original binary output/reward; core binary parity is not a BIO benchmark reproduction.",
+    "Explicit argument links only; implicit links excluded.",
+    "Argument-stage test uses gold actions; report separate predicted-action pipeline results as the main metric.",
+    "No ES/OP/EX classification; no semantic-role classification.",
+    "Vectorized episodes, recorded hyperparameters and action window 600.",
+    "No NL2P comparison in this run."
+  ]
+}

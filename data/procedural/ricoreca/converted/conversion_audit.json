@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": {
+      "documents": 99,
+      "actions": 1313,
+      "linked_arguments": 2616
+    },
+    "dev": {
+      "documents": 25,
+      "actions": 378,
+      "linked_arguments": 738
+    },
+    "test": {
+      "documents": 32,
+      "actions": 485,
+      "linked_arguments": 936
+    }
+  },
+  "dataset_sha256": {
+    "train": "12c5e133b57963d3d6b98445c0ee34942b02a5327396ce6d8bcf1d60f0ed60d7",
+    "dev": "d4e68d5d11cd6cb6aee27e1e05679cb9596a6a2e9ffe87891753e1bd9de88a16",
+    "test": "5829799da957a2ca8f6db80a696af68e45ae773aa493d723a9871876c6011d39"
+  },
+  "raw_primary_documents": 163,
+  "published_documents": 156,
+  "max_document_tokens": 400,
+  "action_capacity": 600,
+  "argument_capacity": 100,
+  "unresolved_memberships": 0,
+  "ambiguous_action_occurrences": 0,
+  "truncated_spans": 0,
+  "all_BIO_roundtrips_exact": true,
+  "source_text_reconstruction_exact": true,
+  "excluded_control_member_mentions": 662,
+  "invalid_raw_relations_ignored": 1,
+  "argument_types": {
+    "TOOL": 658,
+    "SETT": 325,
+    "INGR": 1779,
+    "COR_INGR": 553,
+    "COR_TOOL": 189,
+    "STT_INGR": 106,
+    "MSR": 276,
+    "PAR_INGR": 246,
+    "PAR_TOOL": 47,
+    "WHY": 91,
+    "STT_TOOL": 20
+  },
+  "gold_scope": "Published ACTION spans and their explicit textual member spans, including states/measures/settings/why; source types are not predicted. IF/UNTIL/REPEAT and their exclusive members are outside this action extraction task. No implicit/antecedent imputation.",
+  "association": "Published membership names plus original Prodigy Member/Or/Modifier paths, stopping at predicate boundaries, with Join sharing; Dependency never traversed; ambiguous occurrences cause failure.",
+  "source_sha256": {
+    "prepare_ricoreca_data.py": "4241755cc0d30a62e9434d705c058dce3de079dee000c0e6ac9ef2ae76cc0373",
+    "prepare_ricoreca_split.py": "f5a9aab684a30244ce0442df04834115e9bcafac16a7e3b8224ec98a5834250a",
+    "prepare_procedural_data.py": "1c04734420b21c02535aa7c3ab4b66667db26285cd1f2c8d5d4995a941b31807",
+    "risec_spans.py": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab"
+  }
+}

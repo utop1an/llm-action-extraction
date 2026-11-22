@@ -1,0 +1,108 @@
+{
+  "review_date_client": "2026-11-22",
+  "timezone_client": "Australia/Sydney",
+  "recorded_at_utc": "2026-11-22T05:07:33.159078+00:00",
+  "status": "verified_with_method_and_RISeC_protocol_findings",
+  "no_training_or_historical_artifact_modification": true,
+  "strict_original_cEASDRL_reproduction": false,
+  "datasets": {
+    "RISeC": {
+      "audit": "risec/audit.json",
+      "status": "passed_with_scope_findings",
+      "metrics": {
+        "action": {
+          "tp": 862,
+          "fp": 40,
+          "fn": 18,
+          "predicted": 902,
+          "gold": 880,
+          "precision": 0.9556541019955654,
+          "recall": 0.9795454545454545,
+          "f1": 0.9674523007856342
+        },
+        "linked_argument": {
+          "tp": 1447,
+          "fp": 474,
+          "fn": 169,
+          "predicted": 1921,
+          "gold": 1616,
+          "precision": 0.7532535137948985,
+          "recall": 0.8954207920792079,
+          "f1": 0.8182075204975968
+        }
+      },
+      "inference": {
+        "documents": 78,
+        "predicted_actions": 902,
+        "batch_size": 7,
+        "original_batch_size": 32,
+        "annotations_stripped": true,
+        "fresh_all_document_predictions_identical": true
+      }
+    },
+    "RiCoRecA": {
+      "audit": "ricoreca/audit.json",
+      "status": "passed",
+      "metrics": {
+        "action_name": {
+          "precision": 0.954,
+          "recall": 0.9835051546391752,
+          "f1": 0.9685279187817258,
+          "right": 477,
+          "predicted": 500,
+          "gold": 485
+        },
+        "linked_argument_name": {
+          "precision": 0.5208791208791209,
+          "recall": 0.7596153846153846,
+          "f1": 0.6179921773142112,
+          "right": 711,
+          "predicted": 1365,
+          "gold": 936
+        }
+      },
+      "inference": {
+        "documents": 32,
+        "predicted_actions": 500,
+        "annotations_stripped": true,
+        "batch_size": 7,
+        "original_batch_size": 32,
+        "fresh_all_document_predictions_identical": true
+      }
+    }
+  },
+  "saved_replay_transitions_checked": 200000,
+  "fresh_test_documents": 110,
+  "archive_sha256_reverified": "921f22602f1af88d21bb40038204f9e0bf52214c866ac5a889a277901f12ba2c",
+  "pytest": {
+    "command": "python -m pytest -q -p no:cacheprovider --basetemp tmp/ceasdrl_review_20261122_pytest tests/test_ceasdrl_holdout.py tests/test_ceasdrl_holdout_scoring.py tests/test_ricoreca_projection.py tests/test_ricoreca_split.py tests/test_ceasdrl_spans.py tests/test_ceasdrl_torch.py",
+    "exit_code": 0,
+    "passed": 32,
+    "duration_seconds": 6.12,
+    "warnings": 1,
+    "warning": "Installed SciPy expects NumPy <2.3.0, installed NumPy is 2.5.2; split recreation and tests passed.",
+    "source_sha256": {
+      "tests/test_ceasdrl_holdout.py": "4f142d6abe09824e927efbbb7fbea1e4d12b4defe953d84a23fc13cd36e918e1",
+      "tests/test_ceasdrl_holdout_scoring.py": "6e71e96e40ec22b2c4cb6823460eaa27f925657e9a2a86246da66a2737106d98",
+      "tests/test_ricoreca_projection.py": "e39b72ec65b45d1010eda19fe101494273d46b8d9d96e056da40a1b13ea7577c",
+      "tests/test_ricoreca_split.py": "45458c741efa721515302947f719a8460fdbc399f3abb52092543119ba464299",
+      "tests/test_ceasdrl_spans.py": "0350a0c45b620275d599812c7b606e3a364732ae2a9eb38612711378bb1715cb",
+      "tests/test_ceasdrl_torch.py": "cce73cac1f8bf750f8b92a1047b5622bd3a59d408ffcc7b2645add6cb3cde0c5"
+    }
+  },
+  "findings": [
+    "BIO output, balanced replay, mention-rate shaping, independent target and changed optimization schedule are methodological adaptations.",
+    "RISeC retains official 126/56/78 rather than a 64/16/20 split.",
+    "RISeC current gold retains 45 TODO relations (29 train, 6 dev, 10 test).",
+    "RISeC historical trainers automatically evaluated test after candidate training, before cross-candidate selection; dev ranking alone does not establish sealed testing.",
+    "RiCoRecA fixed split is seed1, 99/25/32 documents; training seed0.",
+    "Both results are single-seed and use different corpora and target scopes."
+  ],
+  "audit_file_sha256": {
+    "risec/audit.json": "075fbbc05d43778d817cf3a1e2113d658608675e9dabd2650e525320eda6a596",
+    "risec/fresh_predictions.json": "7c1ff9e7143676ea2f219417840e69b161994f54da9e5e2b7b973edbd1db5bf4",
+    "ricoreca/audit.json": "7310620b321a5b64bb3e753ce031b7212f7b021980937d4619c58cd4736dfa73",
+    "ricoreca/fresh_predictions.json": "78600b238089c3020ee3dd81c35af5f258442fc334d0e622c6296526bafd0399",
+    "REVIEW.md": "f102f9a6bb68ee825da27e3e3c9b4b922a49ad8f3773a045bd0990c0bf980b9d"
+  }
+}

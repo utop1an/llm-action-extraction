@@ -1,0 +1,19 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,TOOL,TOOL,TOOL,,,Metadata,Metadata,Metadata
+Actions,Sentences,yogurt,cucumber,dill,salt,pepper,mayonnaise,chickpeas,onion,parsley,garlic,egg,cumin,coriander,cayenne,lemon juice,baking powder,olive oil,bread crumbs,oil,pita,chopped tomatoes,small bowl,large bowl,blender,large skillet,stove,Notes,,Action_start,Action_end,Sentence_Id
+combine,"In a small bowl combine yogurt, cucumber, dill, salt, pepper and mayonnaise and mix well.",1,1,1,1,1,1,,,,,,,,,,,,,,,,1,,,,,,,16,23,0
+mix,"In a small bowl combine yogurt, cucumber, dill, salt, pepper and mayonnaise and mix well.",1,1,1,1,1,1,,,,,,,,,,,,,,,,1,,,,,,,80,83,0
+Chill,Chill for at least 30 minutes.,1,1,1,1,1,1,,,,,,,,,,,,,,,,1,,,,,,,90,95,1
+mash,"In a large bowl mash chickpeas until thick and pasty; don't use a blender, as the consistency will be too thin.",,,,,,,1,,,,,,,,,,,,,,,,1,,,,,,137,141,2
+process,"In a blender, process onion, parsley and garlic until smooth.",,,,,,,,1,1,1,,,,,,,,,,,,,,1,,,,,247,254,3
+Stir,Stir into mashed chickpeas.,,,,,,,1,1,1,1,,,,,,,,,,,,,1,,,,,,295,299,4
+combine,"In a small bowl combine egg, cumin, coriander, salt, pepper, cayenne, lemon juice and baking powder.",,,,1,1,,,,,,1,1,1,1,1,1,,,,,,1,,,,,,,339,346,5
+Stir,Stir into chickpea mixture along with olive oil.,,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,,,,,,1,,,,,,424,428,6
+add,"Slowly add bread crumbs until mixture is not sticky but will hold together; add more or less bread crumbs, as needed.",,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,,,,,1,,,,,,480,483,7
+add,"Slowly add bread crumbs until mixture is not sticky but will hold together; add more or less bread crumbs, as needed.",,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,,,,,1,,,,,,549,552,7
+Form,Form 8 balls and then flatten into patties.,,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,591,595,8
+flatten,Form 8 balls and then flatten into patties.,,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,613,620,8
+Heat,Heat 1 inch of oil in a large skillet over medium-high heat.,,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,1,1,,,635,639,9
+Fry,Fry patties in hot oil until brown on both sides.,,,,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,1,1,,,696,699,10
+Serve,Serve two falafels in each pita half topped with chopped tomatoes and cucumber sauce.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,746,751,11
+Duplicate of: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,

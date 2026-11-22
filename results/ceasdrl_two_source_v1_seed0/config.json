@@ -1,0 +1,23 @@
+{
+  "protocol": "ceasdrl_two_source_v1",
+  "split_sha256": "d53052d085ff2420d47dc31ad2f850d7bf0775a389c86ff6e6c61ef7e2077b01",
+  "seed": 0,
+  "epochs": 5,
+  "patience": 3,
+  "device": "NVIDIA GeForce RTX 4070",
+  "width": {
+    "act": 1000,
+    "arg": 200
+  },
+  "source_val_metric": {
+    "act": "pooled source Action F1",
+    "arg": "pooled source gold-action-conditioned Argument F1"
+  },
+  "source_hashes": {
+    "train_ceasdrl_two_source.py": "2708988e5525c4ac47b6c51d813497633e5af2c4439fa673c2ad9613255752c9",
+    "prepare_ceasdrl_ood_embeddings.py": "c33a02fa0fcb363702bdb73e9afa19ed9e746349dde564c20c23df2d4145eda1",
+    "ceasdrl_torch.py": "937a90d27576935dce70bbd06f0df2b4216d209d2bc1944e04af062422806f7a",
+    "evaluation.py": "501a291863d8715ac8d5890b7cacabcd2f1d0f7b80e25eb2b5c2c57b4084e6a6",
+    "evaluation_helpers.py": "388f4bf52f30af7e9f544a9e07946144bdcb84c7740671296ad204a1ca836c44"
+  }
+}

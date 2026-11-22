@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "split_reproduced": true,
+  "all_converted_records_reproduced_from_raw": true,
+  "all_training_embedding_hashes_valid": true,
+  "train_dev_test_disjoint": true,
+  "all_train_examples_completed_each_epoch": true,
+  "dev_only_checkpoint_selection": true,
+  "test_absent_from_training_features": true,
+  "label_free_test_decoding": true,
+  "source_and_checkpoint_hashes_match": true,
+  "independent_scores_match": true,
+  "upstream_keras_forward_compatible": true,
+  "keras_compatibility": {
+    "act": {
+      "passed": true,
+      "real_validation_contexts": 4,
+      "mode": "act",
+      "num_q_outputs": 3,
+      "max_absolute_q_error": 0.00018310546875,
+      "weights": "best.keras.weights.h5",
+      "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with the CPU implementation of the same trained checkpoint.",
+      "adaptation": "num_actions=3 for BIO, not the original two-class task"
+    },
+    "arg": {
+      "passed": true,
+      "real_validation_contexts": 4,
+      "mode": "arg",
+      "num_q_outputs": 3,
+      "max_absolute_q_error": 0.00018310546875,
+      "weights": "best.keras.weights.h5",
+      "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with the CPU implementation of the same trained checkpoint.",
+      "adaptation": "num_actions=3 for BIO, not the original two-class task"
+    }
+  },
+  "metrics": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "audit_script_sha256": "75ebd362b970cee198ce19186d25311e48cc4d473e229a12a98c9f95bf61fde1"
+}

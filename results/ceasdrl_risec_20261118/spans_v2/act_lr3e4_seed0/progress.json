@@ -1,0 +1,13 @@
+{
+  "phase": "completed",
+  "best_epoch": 10,
+  "test": {
+    "precision": 0.8861047835990888,
+    "recall": 0.884090909090909,
+    "f1": 0.8850967007963595,
+    "right": 778,
+    "predicted": 878,
+    "gold": 880
+  },
+  "elapsed_seconds": 459.3173439502716
+}

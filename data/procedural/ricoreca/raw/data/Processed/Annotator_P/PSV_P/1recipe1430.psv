@@ -1,0 +1,16 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL			Metadata	Metadata	Metadata
+Actions	Sentences	oil	zucchini	onion	bell pepper	eggs	tomato sauce	large skillet	stove	Notes		Action_start	Action_end	Sentence_Id
+Heat	Heat the oil in a large skillet over medium-high heat.	1						1	1			0	4	0
+Add	Add zucchini; cook and stir until soft.	1	1					1				55	58	1
+cook	Add zucchini; cook and stir until soft.	1	1					1	1			69	73	1
+stir	Add zucchini; cook and stir until soft.	1	1					1	1			78	82	1
+Add	"Add the onion and bell pepper, and cook until tender, about 5 minutes."	1	1	1	1			1				95	98	2
+cook	"Add the onion and bell pepper, and cook until tender, about 5 minutes."	1	1	1	1			1	1			130	134	2
+Make	Make a clearing in the center of the skillet and pour in the eggs.	1	1	1	1			1				166	170	3
+pour	Make a clearing in the center of the skillet and pour in the eggs.	1	1	1	1	1		1				215	219	3
+Cook	Cook and stir to scramble.	1	1	1	1	1		1	1			233	237	4
+stir	Cook and stir to scramble.	1	1	1	1	1		1	1			242	246	4
+stir	"When the eggs are cooked, stir in the tomato sauce until everything is coated."	1	1	1	1	1	1	1	1			286	290	5
+Serve	Serve warm.	1	1	1	1	1	1					339	344	6
+Duplicate of: 														
+Annotator added: 									1					

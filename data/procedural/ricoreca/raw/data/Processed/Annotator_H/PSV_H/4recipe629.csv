@@ -1,0 +1,19 @@
+,,INGR,INGR,INGR,INGR,INGR,INGR,INGR,TOOL,TOOL,,,,Metadata,Metadata,Metadata
+Actions,Sentences,oil,onion,garlic,lentils,taco seasoning,chicken broth,taco shell,skillet,medium heat,,Notes,,Action_start,Action_end,Sentence_Id
+Heat,"Heat oil in a skillet over medium heat; cook and stir onion and garlic until tender, about 5 minutes.",1,,,,,,,1,1,,,,0,4,0
+cook,"Heat oil in a skillet over medium heat; cook and stir onion and garlic until tender, about 5 minutes.",1,1,1,,,,,1,1,,,,40,44,0
+stir,"Heat oil in a skillet over medium heat; cook and stir onion and garlic until tender, about 5 minutes.",1,1,1,,,,,1,1,,,,49,53,0
+Mix,Mix lentils and taco seasoning into onion mixture; cook and stir for 1 minute.,1,1,1,1,1,,,1,1,,,,102,105,1
+cook,Mix lentils and taco seasoning into onion mixture; cook and stir for 1 minute.,1,1,1,1,1,,,1,1,,,,153,157,1
+stir,Mix lentils and taco seasoning into onion mixture; cook and stir for 1 minute.,1,1,1,1,1,,,1,1,,,,162,166,1
+Pour,Pour chicken broth into skillet and bring to a boil.,1,1,1,1,1,1,,1,1,,,,181,185,2
+Reduce,"Reduce heat to low, cover the skillet, and simmer until lentils are tender, 25 to 30 minutes.",1,1,1,1,1,1,,1,1,,,,234,240,3
+cover,"Reduce heat to low, cover the skillet, and simmer until lentils are tender, 25 to 30 minutes.",1,1,1,1,1,1,,1,1,,,,254,259,3
+simmer,"Reduce heat to low, cover the skillet, and simmer until lentils are tender, 25 to 30 minutes.",1,1,1,1,1,1,,1,1,,,,277,283,3
+Uncover,"Uncover the skillet and cook until mixture is slightly thickened, 6 to 8 minutes.",1,1,1,1,1,1,,1,1,,,,328,335,4
+cook,"Uncover the skillet and cook until mixture is slightly thickened, 6 to 8 minutes.",1,1,1,1,1,1,,1,1,,,,352,356,4
+Mash,Mash lentils slightly; stir in salsa.,,,,1,,,,,,,,,410,414,5
+stir,Mash lentils slightly; stir in salsa.,1,1,1,1,1,1,,1,1,,,,433,437,5
+Serve,Serve about 0.250 cup lentil mixture in each taco shell.,1,1,1,1,1,1,1,,,,,,448,453,6
+Duplicate of: ,,,,,,,,,,,,,,,,
+Annotator added: ,,,,,,,,,,,,,,,,

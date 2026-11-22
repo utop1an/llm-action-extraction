@@ -1,0 +1,14 @@
+{
+  "phase": "interrupted",
+  "epoch": 1,
+  "training_steps": 882,
+  "optimizer_updates": 14,
+  "epoch_examples_completed": 3,
+  "epoch_examples_total": 99,
+  "epsilon": 0.9366258812089782,
+  "recent_loss_mean": 1167.1305193219866,
+  "elapsed_seconds": 176.2988622188568,
+  "best_dev_f1": -1.0,
+  "reason": "Unexpected GPU throughput; aborted before first complete epoch; not an experimental result.",
+  "test_evaluated": false
+}

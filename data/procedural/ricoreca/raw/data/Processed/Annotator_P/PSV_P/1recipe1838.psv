@@ -1,0 +1,19 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	milk	water	butter	salt	semolina flour	sugar	saucepan	stove		Notes		Action_start	Action_end	Sentence_Id
+Combine	"Combine milk, water, butter, and salt in a saucepan over medium-high heat."	1	1	1	1			1	1				0	7	0
+Bring	"Bring to a boil, stirring gently."	1	1	1	1			1	1				75	80	1
+stirring	"Bring to a boil, stirring gently."	1	1	1	1			1	1				92	100	1
+Remove	Remove from heat.	1	1	1	1			1	1				109	115	2
+Pour	"Pour in semolina flour in a steady stream, whisking constantly to prevent lumps."	1	1	1	1	1		1					127	131	3
+whisking	"Pour in semolina flour in a steady stream, whisking constantly to prevent lumps."	1	1	1	1	1		1					170	178	3
+Place	"Place saucepan back over medium heat; whisk until porridge comes to a boil, about 2 minutes."	1	1	1	1	1		1	1				208	213	4
+whisk	"Place saucepan back over medium heat; whisk until porridge comes to a boil, about 2 minutes."	1	1	1	1	1		1	1				246	251	4
+Reduce	"Reduce heat to low and cover; cook until porridge thickens, about 20 minutes."	1	1	1	1	1		1	1				301	307	5
+cover	"Reduce heat to low and cover; cook until porridge thickens, about 20 minutes."	1	1	1	1	1		1	1				324	329	5
+cook	"Reduce heat to low and cover; cook until porridge thickens, about 20 minutes."	1	1	1	1	1		1	1				331	335	5
+Remove	Remove saucepan from heat; stir in sugar.	1	1	1	1	1		1	1				379	385	6
+stir	Remove saucepan from heat; stir in sugar.	1	1	1	1	1	1	1					406	410	6
+stand	Let porridge stand for 3 to 5 minutes before serving.	1	1	1	1	1	1	1					434	439	7
+serving	Let porridge stand for 3 to 5 minutes before serving.	1	1	1	1	1	1						466	473	7
+Duplicate of: 															
+Annotator added: 									1						

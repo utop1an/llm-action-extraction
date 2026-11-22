@@ -1,0 +1,20 @@
+{
+  "device": "NVIDIA GeForce RTX 4070",
+  "modes": {
+    "act": {
+      "max_absolute_q_error": 7.62939453125e-05,
+      "relative_loss_error": 8.47889619694373e-08,
+      "max_relative_gradient_l2_error": 1.2750925861837459e-06,
+      "passed": true
+    },
+    "arg": {
+      "max_absolute_q_error": 0.0001068115234375,
+      "relative_loss_error": 1.0625699635910402e-07,
+      "max_relative_gradient_l2_error": 6.258178473217413e-07,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "reward_cases": 48,
+  "max_reward_error": 3.390842010730921e-06
+}

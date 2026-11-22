@@ -1,0 +1,12 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	ground beef	onion	excess grease	vinegar	brown sugar	mustard	ketchup	salt	pepper	buns	large skillet	stove	plate		Notes		Action_start	Action_end	Sentence_Id
+Crumble	Crumble the ground beef in a large skillet over medium-high heat.	1										1	1					0	7	0
+Add	Add onion; cook and stir until meat is no longer pink.	1	1										1					66	69	1
+cook	Add onion; cook and stir until meat is no longer pink.	1	1										1					77	81	1
+stir	Add onion; cook and stir until meat is no longer pink.	1	1										1					86	90	1
+Drain	"Drain excess grease, and stir in the vinegar, brown sugar, mustard, ketchup, salt and pepper."		1	1	1	1	1	1	1	1								121	126	2
+stir	"Drain excess grease, and stir in the vinegar, brown sugar, mustard, ketchup, salt and pepper."		1	1	1	1	1	1	1	1								146	150	2
+Simmer	Simmer over medium heat for about 15 minutes.	1	1		1	1	1	1	1	1								215	221	3
+Serve	Serve on buns.	1	1		1	1	1	1	1	1	1			1				261	266	4
+Duplicate of: 																				
+Annotator added: 													1	1						

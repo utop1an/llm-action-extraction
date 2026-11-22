@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "inference_uses_gold_labels": false,
+  "input_sha256": "880cd0b1df5c3c18d944ace64b9b9cd35351d51270918333ceeccd52658340f0",
+  "checkpoint_sha256": {
+    "act": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2",
+    "arg": "43a5294336df9be178714d37cecac7315c155fad7e464af38acac120f01ca28c"
+  },
+  "token_count": 153,
+  "device": "cuda"
+}

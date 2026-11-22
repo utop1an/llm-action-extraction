@@ -1,0 +1,29 @@
+{
+  "checkpoint_epoch": 2,
+  "dev_contexts": 64,
+  "metrics": {
+    "precision": 0.14423076923076922,
+    "recall": 0.13274336283185842,
+    "f1": 0.1382488479262673,
+    "right": 15,
+    "predicted": 104,
+    "gold": 113
+  },
+  "confusion_rows_gold_columns_pred_O_B_I": [
+    [
+      5709,
+      32,
+      20
+    ],
+    [
+      53,
+      48,
+      12
+    ],
+    [
+      81,
+      23,
+      17
+    ]
+  ]
+}

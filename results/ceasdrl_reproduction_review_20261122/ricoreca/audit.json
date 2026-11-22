@@ -1,0 +1,173 @@
+{
+  "status": "passed",
+  "no_training_performed": true,
+  "started_at_utc": "2026-11-22T05:02:15.682979+00:00",
+  "split_counts": {
+    "train": 99,
+    "dev": 25,
+    "test": 32
+  },
+  "split_seed": 1,
+  "split_reproduced": true,
+  "duplicate_ids_and_normalized_texts": 0,
+  "source_files_checked": 17,
+  "all_converted_records_reproduced_from_raw": true,
+  "training": {
+    "act": {
+      "best_epoch": 10,
+      "epochs_completed": 10,
+      "training_steps": 123410,
+      "optimizer_updates": 4668,
+      "dev_f1": 0.9476372924648787,
+      "replay": {
+        "rows_checked": 50000,
+        "all_samples_from_train": true,
+        "state_transitions_valid": true,
+        "gold_labels_and_terminal_flags_match": true,
+        "maximum_reward_error": 3.390842010730921e-06,
+        "replay_pool_counts": [
+          3750,
+          41278,
+          4930,
+          42
+        ],
+        "positive_quota_for_batch32": 28,
+        "positive_fraction": 0.875
+      },
+      "configuration": {
+        "features": "data\\procedural\\ricoreca\\features_train_dev",
+        "output": "results\\ceasdrl_ricoreca_64_16_20_seed0\\act",
+        "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+        "mode": "act",
+        "device": "cpu",
+        "epochs": 10,
+        "patience": 3,
+        "seed": 0,
+        "env_batch": 16,
+        "batch_size": 32,
+        "train_frequency": 4,
+        "target_updates": 100,
+        "learning_rate": 0.001,
+        "max_vector_steps": 0,
+        "span_labels": true,
+        "span_replay": "balanced",
+        "span_rate": "mentions",
+        "resume": false,
+        "torch": "2.8.0+cu128",
+        "gpu": null,
+        "gamma": 0.9,
+        "epsilon_decay_steps": 12341,
+        "num_words": 600,
+        "initialization": "from scratch",
+        "task": "Complete BIO span extraction; no ES/OP/EX",
+        "selection_metric": "Dev exact span micro F1",
+        "argument_task": null
+      },
+      "prior_keras_compatibility_receipt": {
+        "passed": true,
+        "real_validation_contexts": 4,
+        "mode": "act",
+        "num_q_outputs": 3,
+        "max_absolute_q_error": 0.00018310546875,
+        "weights": "best.keras.weights.h5",
+        "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with the CPU implementation of the same trained checkpoint.",
+        "adaptation": "num_actions=3 for BIO, not the original two-class task"
+      }
+    },
+    "arg": {
+      "best_epoch": 9,
+      "epochs_completed": 10,
+      "training_steps": 1241000,
+      "optimizer_updates": 20745,
+      "dev_f1": 0.608,
+      "replay": {
+        "rows_checked": 50000,
+        "all_samples_from_train": true,
+        "state_transitions_valid": true,
+        "gold_labels_and_terminal_flags_match": true,
+        "maximum_reward_error": 1.5258789076710855e-06,
+        "replay_pool_counts": [
+          4666,
+          43671,
+          948,
+          715
+        ],
+        "positive_quota_for_batch32": 28,
+        "positive_fraction": 0.875
+      },
+      "configuration": {
+        "features": "data\\procedural\\ricoreca\\features_train_dev",
+        "output": "results\\ceasdrl_ricoreca_64_16_20_seed0\\arg",
+        "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+        "mode": "arg",
+        "device": "cuda",
+        "epochs": 10,
+        "patience": 3,
+        "seed": 0,
+        "env_batch": 16,
+        "batch_size": 32,
+        "train_frequency": 4,
+        "target_updates": 100,
+        "learning_rate": 0.001,
+        "max_vector_steps": 0,
+        "span_labels": true,
+        "span_replay": "balanced",
+        "span_rate": "mentions",
+        "resume": false,
+        "torch": "2.8.0+cu128",
+        "gpu": "NVIDIA GeForce RTX 4070",
+        "gamma": 0.9,
+        "epsilon_decay_steps": 124100,
+        "num_words": 100,
+        "initialization": "from scratch",
+        "task": "Complete BIO span extraction; no ES/OP/EX",
+        "selection_metric": "Dev exact span micro F1",
+        "argument_task": "Gold-action-conditioned explicit argument full spans, role agnostic"
+      },
+      "prior_keras_compatibility_receipt": {
+        "passed": true,
+        "real_validation_contexts": 4,
+        "mode": "arg",
+        "num_q_outputs": 3,
+        "max_absolute_q_error": 0.00018310546875,
+        "weights": "best.keras.weights.h5",
+        "validation": "Newly trained weights loaded by original Keras DeepQLearner; outputs compared with the CPU implementation of the same trained checkpoint.",
+        "adaptation": "num_actions=3 for BIO, not the original two-class task"
+      }
+    }
+  },
+  "inference_cache_hashes": {
+    "act": 32,
+    "arg": 186
+  },
+  "metrics": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "source_and_checkpoint_hashes_match": true,
+  "test_absent_from_training_features": true,
+  "inference": {
+    "documents": 32,
+    "predicted_actions": 500,
+    "annotations_stripped": true,
+    "batch_size": 7,
+    "original_batch_size": 32,
+    "fresh_all_document_predictions_identical": true
+  },
+  "completed_at_utc": "2026-11-22T05:02:49.191068+00:00",
+  "review_script_sha256": "e0159c968b29c2ebf8fefdd2a86879627bfc742ea9b1ccfbe0b09e0557ad8c9b"
+}

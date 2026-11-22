@@ -1,0 +1,14 @@
+{
+  "repository": "YiweiJiang2015/RISeC",
+  "revision": "70b9a0b4c4eb656375a83bc1c0ca47c29ec2da2c",
+  "files_verified": 523,
+  "git_blob_hashes_match": true,
+  "orphan_annotations_excluded": [
+    "data/train/165_Coq_au_Vin_alla_Italiana.ann"
+  ],
+  "split_documents": {
+    "train": 126,
+    "dev": 56,
+    "test": 78
+  }
+}

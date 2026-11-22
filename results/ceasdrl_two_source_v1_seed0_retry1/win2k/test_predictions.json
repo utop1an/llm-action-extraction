@@ -1,0 +1,2119 @@
+[
+  {
+    "dataset": "win2k",
+    "doc_id": 1,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "click",
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "regional",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "japanese",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "japanese",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "japanese"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 5,
+    "prediction": [
+      {
+        "verb": "Start",
+        "arguments": [
+          "explorer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "clear",
+        "arguments": []
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 16,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "programs",
+          "accessories"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "magnifier"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "mouse",
+          "cursor",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "follow",
+        "arguments": [
+          "mouse",
+          "cursor",
+          "check",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "exit"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 18,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "users",
+          "passwords"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 19,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "users",
+          "passwords"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "users"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "users"
+        ]
+      },
+      {
+        "verb": "enter",
+        "arguments": [
+          "user",
+          "name",
+          "password"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "computer",
+          "check",
+          "box"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 27,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control"
+        ]
+      },
+      {
+        "verb": "panel",
+        "arguments": []
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "event",
+          "viewer"
+        ]
+      },
+      {
+        "verb": "Right-Click",
+        "arguments": [
+          "system",
+          "log",
+          "file"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "overwrite",
+        "arguments": []
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 40,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "services"
+        ]
+      },
+      {
+        "verb": "Right-Click",
+        "arguments": [
+          "internet",
+          "connection",
+          "sharing"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Under",
+        "arguments": [
+          "service",
+          "status",
+          "click"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 49,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "network",
+          "dial-up"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "network",
+          "and",
+          "dial-up",
+          "connection"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "internet",
+          "protocol",
+          "(tcp/ip)"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "advanced"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "wins",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "netbios"
+        ]
+      },
+      {
+        "verb": "enable",
+        "arguments": [
+          "netbios"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "disregard",
+        "arguments": [
+          "empty",
+          "primary",
+          "wins",
+          "address"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 53,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "security",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "internet"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "web",
+          "content",
+          "zone"
+        ]
+      },
+      {
+        "verb": "specify",
+        "arguments": [
+          "security",
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "custom",
+          "level"
+        ]
+      },
+      {
+        "verb": "disable",
+        "arguments": [
+          "plugins"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 57,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "explorer",
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "languages"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "english",
+          "states][en-us]"
+        ]
+      },
+      {
+        "verb": "[united",
+        "arguments": [
+          "states][en-us]"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "close",
+        "arguments": [
+          "language",
+          "preference",
+          "dialog",
+          "box"
+        ]
+      },
+      {
+        "verb": "close",
+        "arguments": [
+          "internet",
+          "options",
+          "dialog",
+          "box"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 58,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "explorer",
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "advanced"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "override",
+          "automatic",
+          "cookie",
+          "handling"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "override",
+          "automatic",
+          "cookie",
+          "handling"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "prompt"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 59,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "panel",
+          "display"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "display"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 63,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "system"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "network",
+          "id"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "next"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "computer"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "users"
+        ]
+      },
+      {
+        "verb": "enter",
+        "arguments": [
+          "user",
+          "name",
+          "password"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "next"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "finish"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 82,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "search",
+        "arguments": [
+          "files",
+          "folders"
+        ]
+      },
+      {
+        "verb": "then",
+        "arguments": [
+          "files",
+          "folders"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "files",
+          "folders"
+        ]
+      },
+      {
+        "verb": "named",
+        "arguments": [
+          "box",
+          "type",
+          "riched20.dll"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "search"
+        ]
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "riched20.dll"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 89,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "power",
+          "options"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "power",
+          "schemes",
+          "tab"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 91,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "start",
+        "arguments": [
+          "control"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "click",
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "system"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "hardware",
+          "tab"
+        ]
+      },
+      {
+        "verb": "then",
+        "arguments": [
+          "device",
+          "manager"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "device",
+          "manager"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "modems",
+          "branch"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": []
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "56000",
+          "bps",
+          "v90",
+          "modem",
+          "click",
+          "properties"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "modem",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Change",
+        "arguments": [
+          "maximum",
+          "port",
+          "speed"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 92,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "start",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "run",
+        "arguments": []
+      },
+      {
+        "verb": "type",
+        "arguments": [
+          "regsvr32",
+          "/u",
+          "inseng.dll"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "receive",
+        "arguments": [
+          "message"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "start",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "run",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "receive",
+        "arguments": [
+          "message"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 94,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "click",
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "control",
+          "panel",
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "expand",
+        "arguments": [
+          "storage",
+          "branch"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "open",
+        "arguments": [
+          "disk",
+          "management",
+          "folder"
+        ]
+      },
+      {
+        "verb": "restore",
+        "arguments": [
+          "disk",
+          "configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 95,
+    "prediction": [
+      {
+        "verb": "Right-Click",
+        "arguments": [
+          "network",
+          "places"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "optional",
+          "networking",
+          "components"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "networking",
+          "services",
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "details"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "rip",
+          "listener",
+          "box"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "rip",
+          "listener",
+          "box"
+        ]
+      },
+      {
+        "verb": "check",
+        "arguments": [
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "Insert",
+        "arguments": [
+          "operating",
+          "system",
+          "installation",
+          "disc"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok",
+          "dns"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 100,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "device",
+          "manager"
+        ]
+      },
+      {
+        "verb": "Expand",
+        "arguments": [
+          "modem",
+          "branch",
+          "modem"
+        ]
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "modem"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "advanced",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "default",
+          "preferences"
+        ]
+      },
+      {
+        "verb": "change",
+        "arguments": [
+          "default",
+          "preferences"
+        ]
+      },
+      {
+        "verb": "Configure",
+        "arguments": [
+          "modem",
+          "settings"
+        ]
+      },
+      {
+        "verb": "use",
+        "arguments": [
+          "click"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 101,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "display"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "scrollbar"
+        ]
+      },
+      {
+        "verb": "decrease",
+        "arguments": [
+          "size"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 108,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "start",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "phone",
+          "modem",
+          "options"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "modems",
+          "tab"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "modem"
+        ]
+      },
+      {
+        "verb": "remove",
+        "arguments": [
+          "modem"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "remove"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "remove",
+        "arguments": [
+          "selected",
+          "modem(s)"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 110,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "system"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "user",
+          "profiles"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "administrator"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "copy"
+        ]
+      },
+      {
+        "verb": "type",
+        "arguments": [
+          "following",
+          "line",
+          "%systemroot%\\profiles\\default",
+          "user"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "change"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "name"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "everyone"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 112,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": []
+      },
+      {
+        "verb": "settings",
+        "arguments": []
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "control"
+        ]
+      },
+      {
+        "verb": "panel",
+        "arguments": []
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "administrative",
+          "tools"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "services"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "disabled"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 119,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "programs"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "computer",
+          "management"
+        ]
+      },
+      {
+        "verb": "Double-Click",
+        "arguments": [
+          "local",
+          "users",
+          "groups"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "users"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "user"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "local",
+          "administrator",
+          "group"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "member",
+          "tab"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "administrators",
+          "power",
+          "users"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "administrators",
+          "power",
+          "users"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "add",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 126,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "control"
+        ]
+      },
+      {
+        "verb": "start",
+        "arguments": []
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "click",
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "internet",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "disable",
+        "arguments": [
+          "content",
+          "advisor"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 135,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "start",
+        "arguments": [
+          "control"
+        ]
+      },
+      {
+        "verb": "point",
+        "arguments": [
+          "click",
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "settings",
+        "arguments": [
+          "control",
+          "panel"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "scheduled",
+          "tasks"
+        ]
+      },
+      {
+        "verb": "Right-Click",
+        "arguments": [
+          "task"
+        ]
+      },
+      {
+        "verb": "disable",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "task"
+        ]
+      },
+      {
+        "verb": "runs",
+        "arguments": [
+          "box"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 139,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "panel",
+          "system",
+          "hardware"
+        ]
+      },
+      {
+        "verb": "double-click",
+        "arguments": [
+          "system",
+          "hardware"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "hardware"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "device",
+          "manager"
+        ]
+      },
+      {
+        "verb": "Expand",
+        "arguments": [
+          "ide",
+          "ata/atapi",
+          "controllers",
+          "pci",
+          "bus"
+        ]
+      },
+      {
+        "verb": "right-click",
+        "arguments": [
+          "pci",
+          "bus",
+          "ide",
+          "controller"
+        ]
+      },
+      {
+        "verb": "master",
+        "arguments": [
+          "ide",
+          "controller"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "driver"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "update",
+          "driver"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "list"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "list"
+        ]
+      },
+      {
+        "verb": "display",
+        "arguments": [
+          "list",
+          "known",
+          "drivers"
+        ]
+      },
+      {
+        "verb": "choose",
+        "arguments": [
+          "specific",
+          "driver"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": []
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "show",
+          "hardware"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "standard",
+          "ide",
+          "ata/atapi",
+          "controllers"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "standard",
+          "ide/esdi",
+          "hard",
+          "disk",
+          "controllers"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 141,
+    "prediction": [
+      {
+        "verb": "Click",
+        "arguments": [
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "security",
+          "tab"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "internet"
+        ]
+      },
+      {
+        "verb": "select",
+        "arguments": [
+          "web",
+          "content",
+          "zone"
+        ]
+      },
+      {
+        "verb": "specify",
+        "arguments": [
+          "security",
+          "settings"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "custom",
+          "level"
+        ]
+      },
+      {
+        "verb": "disable",
+        "arguments": [
+          "plugins"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 143,
+    "prediction": [
+      {
+        "verb": "In",
+        "arguments": [
+          "explorer",
+          "folder",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "folder",
+          "options"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "show",
+          "hidden",
+          "files",
+          "folders"
+        ]
+      },
+      {
+        "verb": "Click",
+        "arguments": [
+          "hide",
+          "operating"
+        ]
+      },
+      {
+        "verb": "clear",
+        "arguments": [
+          "hide",
+          "protected",
+          "operating",
+          "system",
+          "files"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "win2k",
+    "doc_id": 145,
+    "prediction": [
+      {
+        "verb": "Right-Click",
+        "arguments": [
+          "network",
+          "places"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Select",
+        "arguments": [
+          "internal",
+          "adapter"
+        ]
+      },
+      {
+        "verb": "contains",
+        "arguments": [
+          "sap",
+          "agent"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "properties"
+        ]
+      },
+      {
+        "verb": "Select",
+        "arguments": [
+          "sap",
+          "agent"
+        ]
+      },
+      {
+        "verb": "click",
+        "arguments": [
+          "uninstall"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "splits": {
+    "train": {
+      "documents": 126,
+      "tokens": 15285,
+      "action_spans": 1487,
+      "explicit_links": 2692,
+      "implicit_links_excluded": 839,
+      "condition_links_excluded": 232,
+      "action_multiword": 141,
+      "action_discontinuous": 0,
+      "action_adjacent_pairs": 1,
+      "action_overlap_pairs": 0,
+      "argument_multiword": 1761,
+      "argument_discontinuous": 0,
+      "argument_adjacent_pairs": 58,
+      "argument_overlap_pairs": 0,
+      "sha256": "cc3ff7ceb846255d84834558c774ca72921adb880d4b119d9d4b28d1961043ed"
+    },
+    "dev": {
+      "documents": 56,
+      "tokens": 7081,
+      "action_spans": 694,
+      "explicit_links": 1212,
+      "implicit_links_excluded": 381,
+      "condition_links_excluded": 108,
+      "action_multiword": 76,
+      "action_discontinuous": 0,
+      "action_adjacent_pairs": 0,
+      "action_overlap_pairs": 0,
+      "argument_multiword": 822,
+      "argument_discontinuous": 0,
+      "argument_adjacent_pairs": 24,
+      "argument_overlap_pairs": 0,
+      "sha256": "75a83dbced99912183d82f9151f60ab31e31b5d46a4f7b89f1e6d6f0d30cf317"
+    },
+    "test": {
+      "documents": 78,
+      "tokens": 9061,
+      "action_spans": 880,
+      "explicit_links": 1616,
+      "implicit_links_excluded": 475,
+      "condition_links_excluded": 134,
+      "action_multiword": 77,
+      "action_discontinuous": 0,
+      "action_adjacent_pairs": 0,
+      "action_overlap_pairs": 0,
+      "argument_multiword": 1058,
+      "argument_discontinuous": 0,
+      "argument_adjacent_pairs": 28,
+      "argument_overlap_pairs": 0,
+      "sha256": "1885e90a3df0ac550186b5f2f529f08fee5475ecee2f831f1bf4e433caa985e6"
+    }
+  },
+  "target_scheme": "BIO full spans",
+  "scope": "Explicit non-condition arguments; no roles or ES/EX/OP"
+}

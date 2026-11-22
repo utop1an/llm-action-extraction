@@ -1,0 +1,364 @@
+{
+  "status": "verified_with_scope_findings",
+  "metrics": {
+    "action_name": {
+      "precision": 0.9556541019955654,
+      "recall": 0.9795454545454545,
+      "f1": 0.9674523007856342,
+      "right": 862,
+      "predicted": 902,
+      "gold": 880
+    },
+    "linked_argument_name": {
+      "precision": 0.7532535137948985,
+      "recall": 0.8954207920792079,
+      "f1": 0.8182075204975968,
+      "right": 1447,
+      "predicted": 1921,
+      "gold": 1616
+    }
+  },
+  "previous_metrics_same_evaluator": {
+    "action_name": {
+      "precision": 0.8850056369785795,
+      "recall": 0.8920454545454546,
+      "f1": 0.8885116015846066,
+      "right": 785,
+      "predicted": 887,
+      "gold": 880
+    },
+    "linked_argument_name": {
+      "precision": 0.28210526315789475,
+      "recall": 0.24876237623762376,
+      "f1": 0.26438671489641563,
+      "right": 402,
+      "predicted": 1425,
+      "gold": 1616
+    }
+  },
+  "selection": {
+    "action_run": "act_balanced_seed0",
+    "argument_run": "arg_balanced_seed0",
+    "action_candidates": [
+      {
+        "run": "act_seed0",
+        "dev_f1": 0.8673835125448028,
+        "best_epoch": 10,
+        "epochs_completed": 10,
+        "configuration": {
+          "features": "data\\procedural\\risec\\features_spans_v2",
+          "output": "results\\ceasdrl_risec_20261118\\spans_v2\\act_seed0",
+          "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+          "mode": "act",
+          "epochs": 10,
+          "patience": 3,
+          "seed": 0,
+          "env_batch": 16,
+          "batch_size": 32,
+          "train_frequency": 4,
+          "target_updates": 100,
+          "learning_rate": 0.001,
+          "max_vector_steps": 0,
+          "span_labels": true,
+          "resume": false,
+          "torch": "2.8.0+cu128",
+          "gpu": "NVIDIA GeForce RTX 4070",
+          "gamma": 0.9,
+          "epsilon_decay_steps": 15285,
+          "num_words": 600,
+          "initialization": "from scratch",
+          "task": "Complete BIO span extraction; no ES/OP/EX",
+          "selection_metric": "Dev exact span micro F1",
+          "argument_task": null
+        }
+      },
+      {
+        "run": "act_lr3e4_seed0",
+        "dev_f1": 0.8535688005886681,
+        "best_epoch": 10,
+        "epochs_completed": 10,
+        "configuration": {
+          "features": "data\\procedural\\risec\\features_spans_v2",
+          "output": "results\\ceasdrl_risec_20261118\\spans_v2\\act_lr3e4_seed0",
+          "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+          "mode": "act",
+          "epochs": 10,
+          "patience": 3,
+          "seed": 0,
+          "env_batch": 16,
+          "batch_size": 32,
+          "train_frequency": 4,
+          "target_updates": 100,
+          "learning_rate": 0.0003,
+          "max_vector_steps": 0,
+          "span_labels": true,
+          "resume": false,
+          "torch": "2.8.0+cu128",
+          "gpu": "NVIDIA GeForce RTX 4070",
+          "gamma": 0.9,
+          "epsilon_decay_steps": 15285,
+          "num_words": 600,
+          "initialization": "from scratch",
+          "task": "Complete BIO span extraction; no ES/OP/EX",
+          "selection_metric": "Dev exact span micro F1",
+          "argument_task": null
+        }
+      },
+      {
+        "run": "act_balanced_seed0",
+        "dev_f1": 0.9588447653429603,
+        "best_epoch": 8,
+        "epochs_completed": 10,
+        "configuration": {
+          "features": "data\\procedural\\risec\\features_spans_v2",
+          "output": "results\\ceasdrl_risec_20261118\\spans_v2\\act_balanced_seed0",
+          "parity_report": "results\\ceasdrl_risec_20261118\\parity\\parity_report.json",
+          "mode": "act",
+          "epochs": 10,
+          "patience": 3,
+          "seed": 0,
+          "env_batch": 16,
+          "batch_size": 32,
+          "train_frequency": 4,
+          "target_updates": 100,
+          "learning_rate": 0.001,
+          "max_vector_steps": 0,
+          "span_labels": true,
+          "span_replay": "balanced",
+          "span_rate": "mentions",
+          "resume": false,
+          "torch": "2.8.0+cu128",
+          "gpu": "NVIDIA GeForce RTX 4070",
+          "gamma": 0.9,
+          "epsilon_decay_steps": 15285,
+          "num_words": 600,
+          "initialization": "from scratch",
+          "task": "Complete BIO span extraction; no ES/OP/EX",
+          "selection_metric": "Dev exact span micro F1",
+          "argument_task": null
+        }
+      }
+    ],
+    "criterion": "Highest dev exact-span micro F1; ties retain the first listed candidate.",
+    "test_scores_used_for_selection": false,
+    "frozen_at_utc": "2026-11-18T04:00:28.528908+00:00",
+    "action_checkpoint_sha256": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2"
+  },
+  "tests_passed": 28,
+  "training_source_checks": [
+    {
+      "stage": "act",
+      "source": "scripts/ceasdrl_torch.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\ceasdrl_torch.py",
+      "sha256": "937a90d27576935dce70bbd06f0df2b4216d209d2bc1944e04af062422806f7a"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/train_ceasdrl_risec.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\train_ceasdrl_risec.py",
+      "sha256": "dc7a711c7ee4d2ccabaa69a06ad812f558fbe3eaaf5a22465aee8f38b5d5ddf6"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/prepare_procedural_data.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\prepare_procedural_data.py",
+      "sha256": "1c04734420b21c02535aa7c3ab4b66667db26285cd1f2c8d5d4995a941b31807"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/export_ceasdrl_features.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\export_ceasdrl_features.py",
+      "sha256": "669229eee5c8f17a11d63e380bbba483b607641e0e8eabb01de91a85f2c79ebd"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/ceasdrl_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\ceasdrl_spans.py",
+      "sha256": "0715817ec185a6ac45fc58e7a5e88a33a639301b71cb791b1d030f7e280a9e25"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/risec_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\risec_spans.py",
+      "sha256": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab"
+    },
+    {
+      "stage": "act",
+      "source": "scripts/prepare_ceasdrl_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\prepare_ceasdrl_spans.py",
+      "sha256": "49c56a5edbdf2d4d4f9f8f58c23c2e51b28a7fc3d8de0d5e838005c6b0c40248"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/ceasdrl_torch.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\ceasdrl_torch.py",
+      "sha256": "937a90d27576935dce70bbd06f0df2b4216d209d2bc1944e04af062422806f7a"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/train_ceasdrl_risec.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\train_ceasdrl_risec.py",
+      "sha256": "dc7a711c7ee4d2ccabaa69a06ad812f558fbe3eaaf5a22465aee8f38b5d5ddf6"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/prepare_procedural_data.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\prepare_procedural_data.py",
+      "sha256": "1c04734420b21c02535aa7c3ab4b66667db26285cd1f2c8d5d4995a941b31807"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/export_ceasdrl_features.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\export_ceasdrl_features.py",
+      "sha256": "669229eee5c8f17a11d63e380bbba483b607641e0e8eabb01de91a85f2c79ebd"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/ceasdrl_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\ceasdrl_spans.py",
+      "sha256": "0715817ec185a6ac45fc58e7a5e88a33a639301b71cb791b1d030f7e280a9e25"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/risec_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\risec_spans.py",
+      "sha256": "508632ecf4ab44f96eaed835dcd0af045534546552301c584abccd966cfc08ab"
+    },
+    {
+      "stage": "arg",
+      "source": "scripts/prepare_ceasdrl_spans.py",
+      "matching_file": "C:\\anu\\llm-action-extraction\\scripts\\prepare_ceasdrl_spans.py",
+      "sha256": "49c56a5edbdf2d4d4f9f8f58c23c2e51b28a7fc3d8de0d5e838005c6b0c40248"
+    }
+  ],
+  "plain_text_inference_check": {
+    "passed": true,
+    "input": "Unannotated upstream .txt only",
+    "doc_id": "182_BBQ_Chuck_Roast",
+    "actions": 14,
+    "arguments": 30,
+    "batch_and_plain_text_outputs_identical": true,
+    "checkpoint_sha256": {
+      "act": "6a8d01173931d9fb1be7e3534373fdaaa18350e11c193030396e294a354ca7e2",
+      "arg": "43a5294336df9be178714d37cecac7315c155fad7e464af38acac120f01ca28c"
+    }
+  },
+  "stages": {
+    "act": {
+      "best_epoch": 8,
+      "epochs_completed": 10,
+      "dev_f1": 0.9588447653429603,
+      "training_steps": 152850,
+      "optimizer_updates": 5600
+    },
+    "arg": {
+      "best_epoch": 10,
+      "epochs_completed": 10,
+      "dev_f1": 0.8066666666666666,
+      "training_steps": 1391140,
+      "optimizer_updates": 23250
+    }
+  },
+  "limitations": [
+    "Adapted CNN/DQN with BIO; not original paper reproduction.",
+    "One random seed, official 126/56/78 document split.",
+    "Frozen legacy relation policy: non-action, non-condition targets, including 45 TODO relations (10 in test); roles are not predicted.",
+    "The legacy implicit_arguments field also contains temporal and other action-to-action relations; 1695 is not a pure implicit-argument count.",
+    "Candidate selection reads dev only, but the training harness precomputes candidate test scores before cross-candidate selection; not a fully sealed holdout.",
+    "Earlier first-token argument training only completed three epochs; before/after is not a budget-controlled ablation.",
+    "No LLM/NL2P comparison was run."
+  ],
+  "independent_audit": {
+    "path": "results\\ceasdrl_risec_20261118\\spans_v2\\audit_review\\final\\audit.json",
+    "sha256": "4615efcb8ed4ab17468e72090e710d4aaecd859e8dd354dfa62fae81a6ca81da",
+    "metrics_by_reference_policy": {
+      "legacy": {
+        "action": {
+          "tp": 862,
+          "fp": 40,
+          "fn": 18,
+          "predicted": 902,
+          "gold": 880,
+          "precision": 0.9556541019955654,
+          "recall": 0.9795454545454545,
+          "f1": 0.9674523007856342
+        },
+        "linked_argument": {
+          "tp": 1447,
+          "fp": 474,
+          "fn": 169,
+          "predicted": 1921,
+          "gold": 1616,
+          "precision": 0.7532535137948985,
+          "recall": 0.8954207920792079,
+          "f1": 0.8182075204975968
+        }
+      },
+      "defined_noncondition": {
+        "action": {
+          "tp": 862,
+          "fp": 40,
+          "fn": 18,
+          "predicted": 902,
+          "gold": 880,
+          "precision": 0.9556541019955654,
+          "recall": 0.9795454545454545,
+          "f1": 0.9674523007856342
+        },
+        "linked_argument": {
+          "tp": 1441,
+          "fp": 480,
+          "fn": 165,
+          "predicted": 1921,
+          "gold": 1606,
+          "precision": 0.7501301405517959,
+          "recall": 0.8972602739726028,
+          "f1": 0.8171250354408846
+        }
+      },
+      "defined_with_conditions": {
+        "action": {
+          "tp": 862,
+          "fp": 40,
+          "fn": 18,
+          "predicted": 902,
+          "gold": 880,
+          "precision": 0.9556541019955654,
+          "recall": 0.9795454545454545,
+          "f1": 0.9674523007856342
+        },
+        "linked_argument": {
+          "tp": 1441,
+          "fp": 480,
+          "fn": 299,
+          "predicted": 1921,
+          "gold": 1740,
+          "precision": 0.7501301405517959,
+          "recall": 0.8281609195402299,
+          "f1": 0.7872166074842939
+        }
+      }
+    },
+    "split_counts": {
+      "train": {
+        "documents": 126,
+        "actions": 1487,
+        "legacy_links": 2692,
+        "defined_noncondition_links": 2663
+      },
+      "dev": {
+        "documents": 56,
+        "actions": 694,
+        "legacy_links": 1212,
+        "defined_noncondition_links": 1206
+      },
+      "test": {
+        "documents": 78,
+        "actions": 880,
+        "legacy_links": 1616,
+        "defined_noncondition_links": 1606
+      }
+    },
+    "no_retraining": true
+  }
+}

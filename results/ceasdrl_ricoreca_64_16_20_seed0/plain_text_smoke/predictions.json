@@ -1,0 +1,564 @@
+[
+  {
+    "doc_id": "1recipe142",
+    "text": "In a large bowl, combine butter, egg, milk and apple. In a separate bowl, sift together flour, baking powder, cinnamon and sugar. Stir flour mixture into apple mixture, just until combined. Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 0.250 cup for each pancake. Brown on both sides and serve hot.",
+    "actions": [
+      {
+        "name": "combine",
+        "token_span": [
+          5,
+          6
+        ],
+        "char_span": [
+          17,
+          24
+        ],
+        "arguments": [
+          {
+            "name": "In",
+            "token_span": [
+              0,
+              1
+            ],
+            "char_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "name": "a",
+            "token_span": [
+              1,
+              2
+            ],
+            "char_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "name": "large bowl",
+            "token_span": [
+              2,
+              4
+            ],
+            "char_span": [
+              5,
+              15
+            ]
+          },
+          {
+            "name": "butter",
+            "token_span": [
+              6,
+              7
+            ],
+            "char_span": [
+              25,
+              31
+            ]
+          },
+          {
+            "name": "egg",
+            "token_span": [
+              8,
+              9
+            ],
+            "char_span": [
+              33,
+              36
+            ]
+          },
+          {
+            "name": "milk and",
+            "token_span": [
+              10,
+              12
+            ],
+            "char_span": [
+              38,
+              46
+            ]
+          },
+          {
+            "name": "apple",
+            "token_span": [
+              12,
+              13
+            ],
+            "char_span": [
+              47,
+              52
+            ]
+          },
+          {
+            "name": "separate bowl",
+            "token_span": [
+              16,
+              18
+            ],
+            "char_span": [
+              59,
+              72
+            ]
+          },
+          {
+            "name": "baking",
+            "token_span": [
+              23,
+              24
+            ],
+            "char_span": [
+              95,
+              101
+            ]
+          }
+        ]
+      },
+      {
+        "name": "sift",
+        "token_span": [
+          19,
+          20
+        ],
+        "char_span": [
+          74,
+          78
+        ],
+        "arguments": [
+          {
+            "name": "In",
+            "token_span": [
+              14,
+              15
+            ],
+            "char_span": [
+              54,
+              56
+            ]
+          },
+          {
+            "name": "a",
+            "token_span": [
+              15,
+              16
+            ],
+            "char_span": [
+              57,
+              58
+            ]
+          },
+          {
+            "name": "separate bowl",
+            "token_span": [
+              16,
+              18
+            ],
+            "char_span": [
+              59,
+              72
+            ]
+          },
+          {
+            "name": "flour",
+            "token_span": [
+              21,
+              22
+            ],
+            "char_span": [
+              88,
+              93
+            ]
+          },
+          {
+            "name": "baking powder,",
+            "token_span": [
+              23,
+              26
+            ],
+            "char_span": [
+              95,
+              109
+            ]
+          },
+          {
+            "name": "cinnamon and",
+            "token_span": [
+              26,
+              28
+            ],
+            "char_span": [
+              110,
+              122
+            ]
+          },
+          {
+            "name": "sugar",
+            "token_span": [
+              28,
+              29
+            ],
+            "char_span": [
+              123,
+              128
+            ]
+          },
+          {
+            "name": "flour",
+            "token_span": [
+              31,
+              32
+            ],
+            "char_span": [
+              135,
+              140
+            ]
+          },
+          {
+            "name": "apple mixture",
+            "token_span": [
+              34,
+              36
+            ],
+            "char_span": [
+              154,
+              167
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stir",
+        "token_span": [
+          30,
+          31
+        ],
+        "char_span": [
+          130,
+          134
+        ],
+        "arguments": [
+          {
+            "name": "flour mixture",
+            "token_span": [
+              31,
+              33
+            ],
+            "char_span": [
+              135,
+              148
+            ]
+          },
+          {
+            "name": "into",
+            "token_span": [
+              33,
+              34
+            ],
+            "char_span": [
+              149,
+              153
+            ]
+          },
+          {
+            "name": "apple mixture",
+            "token_span": [
+              34,
+              36
+            ],
+            "char_span": [
+              154,
+              167
+            ]
+          },
+          {
+            "name": "lightly oiled griddle",
+            "token_span": [
+              43,
+              46
+            ],
+            "char_span": [
+              197,
+              218
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heat",
+        "token_span": [
+          41,
+          42
+        ],
+        "char_span": [
+          190,
+          194
+        ],
+        "arguments": [
+          {
+            "name": "lightly oiled griddle or",
+            "token_span": [
+              43,
+              47
+            ],
+            "char_span": [
+              197,
+              221
+            ]
+          },
+          {
+            "name": "frying pan",
+            "token_span": [
+              47,
+              49
+            ],
+            "char_span": [
+              222,
+              232
+            ]
+          },
+          {
+            "name": "medium high heat",
+            "token_span": [
+              50,
+              53
+            ],
+            "char_span": [
+              238,
+              254
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pour",
+        "token_span": [
+          54,
+          55
+        ],
+        "char_span": [
+          256,
+          260
+        ],
+        "arguments": [
+          {
+            "name": "scoop the",
+            "token_span": [
+              56,
+              58
+            ],
+            "char_span": [
+              264,
+              273
+            ]
+          },
+          {
+            "name": "batter",
+            "token_span": [
+              58,
+              59
+            ],
+            "char_span": [
+              274,
+              280
+            ]
+          },
+          {
+            "name": "griddle",
+            "token_span": [
+              61,
+              62
+            ],
+            "char_span": [
+              290,
+              297
+            ]
+          }
+        ]
+      },
+      {
+        "name": "scoop",
+        "token_span": [
+          56,
+          57
+        ],
+        "char_span": [
+          264,
+          269
+        ],
+        "arguments": [
+          {
+            "name": "batter",
+            "token_span": [
+              58,
+              59
+            ],
+            "char_span": [
+              274,
+              280
+            ]
+          },
+          {
+            "name": "the",
+            "token_span": [
+              60,
+              61
+            ],
+            "char_span": [
+              286,
+              289
+            ]
+          },
+          {
+            "name": "griddle",
+            "token_span": [
+              61,
+              62
+            ],
+            "char_span": [
+              290,
+              297
+            ]
+          },
+          {
+            "name": "approximately 0.250 cup",
+            "token_span": [
+              64,
+              69
+            ],
+            "char_span": [
+              305,
+              328
+            ]
+          }
+        ]
+      },
+      {
+        "name": "using",
+        "token_span": [
+          63,
+          64
+        ],
+        "char_span": [
+          299,
+          304
+        ],
+        "arguments": [
+          {
+            "name": "griddle",
+            "token_span": [
+              61,
+              62
+            ],
+            "char_span": [
+              290,
+              297
+            ]
+          },
+          {
+            "name": "approximately",
+            "token_span": [
+              64,
+              65
+            ],
+            "char_span": [
+              305,
+              318
+            ]
+          },
+          {
+            "name": "0.250 cup",
+            "token_span": [
+              65,
+              69
+            ],
+            "char_span": [
+              319,
+              328
+            ]
+          },
+          {
+            "name": "for",
+            "token_span": [
+              69,
+              70
+            ],
+            "char_span": [
+              329,
+              332
+            ]
+          },
+          {
+            "name": "each",
+            "token_span": [
+              70,
+              71
+            ],
+            "char_span": [
+              333,
+              337
+            ]
+          },
+          {
+            "name": "pancake",
+            "token_span": [
+              71,
+              72
+            ],
+            "char_span": [
+              338,
+              345
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brown",
+        "token_span": [
+          73,
+          74
+        ],
+        "char_span": [
+          347,
+          352
+        ],
+        "arguments": [
+          {
+            "name": "both",
+            "token_span": [
+              75,
+              76
+            ],
+            "char_span": [
+              356,
+              360
+            ]
+          },
+          {
+            "name": "sides",
+            "token_span": [
+              76,
+              77
+            ],
+            "char_span": [
+              361,
+              366
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serve",
+        "token_span": [
+          78,
+          79
+        ],
+        "char_span": [
+          371,
+          376
+        ],
+        "arguments": []
+      }
+    ]
+  }
+]

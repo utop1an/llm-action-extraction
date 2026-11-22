@@ -1,0 +1,16 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	red pepper	zucchini	yellow squash	onion	mushrooms	olive oil	cooking spray	tortilla	cheese	vegetable mixture	large nonstick pan	pan	pizza cutter	stove	plate		Notes		Action_start	Action_end	Sentence_Id
+cook	"In a large nonstick pan, cook red pepper, zucchini, yellow squash, onion, and mushrooms in olive oil over medium to medium-high heat for about 7 minutes, or until just tender."	1	1	1	1	1	1					1			1					25	29	0
+Remove	Remove vegetables from pan.	1	1	1	1	1	1						1							176	182	1
+Coat	"Coat the same pan with cooking spray, and place one tortilla in pan."							1					1							204	208	2
+place	"Coat the same pan with cooking spray, and place one tortilla in pan."								1				1							246	251	2
+Sprinkle	"Sprinkle 0.250 cup of cheese evenly over tortilla, and layer 0.750 cup of the vegetable mixture over the cheese."								1	1			1							273	281	3
+layer	"Sprinkle 0.250 cup of cheese evenly over tortilla, and layer 0.750 cup of the vegetable mixture over the cheese."	1	1	1	1	1	1		1	1	1		1							328	333	3
+Sprinkle	"Sprinkle another 0.125 cup of cheese on the vegetables, and top with a second tortilla."	1	1	1	1	1	1		1	1			1							386	394	4
+top	"Sprinkle another 0.125 cup of cheese on the vegetables, and top with a second tortilla."								1	1			1							446	449	4
+Cook	"Cook until golden on both sides, for approximately 2 to 3 minutes per side."	1	1	1	1	1	1		1	1			1		1					474	478	5
+Remove	"Remove quesadilla from pan, and repeat with remaining ingredients."	1	1	1	1	1	1		1	1			1							550	556	6
+Cut	Cut each quesadilla into 8 triangles with a pizza cutter.	1	1	1	1	1	1		1	1			1	1						617	620	7
+Serve	Serve hot.	1	1	1	1	1	1		1	1						1				675	680	8
+Duplicate of: 																						
+Annotator added: 															1	1						

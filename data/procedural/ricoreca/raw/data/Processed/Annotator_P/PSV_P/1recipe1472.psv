@@ -1,0 +1,12 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	water	salt	quinoa	chopped prunes	peanut butter	almond milk	cinnamon	nutmeg	saucepan	stove		Notes		Action_start	Action_end	Sentence_Id
+Boil	Boil water and salt in a saucepan.	1	1							1	1				0	4	0
+Stir	"Stir in quinoa; cover, reduce heat to low, and simmer until tender, about 10 minutes."	1	1	1						1	1				35	39	1
+cover	"Stir in quinoa; cover, reduce heat to low, and simmer until tender, about 10 minutes."	1	1	1						1	1				51	56	1
+reduce	"Stir in quinoa; cover, reduce heat to low, and simmer until tender, about 10 minutes."	1	1	1						1	1				58	64	1
+simmer	"Stir in quinoa; cover, reduce heat to low, and simmer until tender, about 10 minutes."	1	1	1						1	1				82	88	1
+Stir	"Stir in chopped prunes, peanut butter, almond milk, cinnamon, and nutmeg."	1	1	1	1	1	1	1	1	1					121	125	2
+Cover	Cover and simmer 5 more minutes.	1	1	1	1	1	1	1	1	1					195	200	3
+simmer	Cover and simmer 5 more minutes.	1	1	1	1	1	1	1	1	1	1				205	211	3
+Duplicate of: 																	
+Annotator added: 											1						

@@ -1,0 +1,16 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL				Metadata	Metadata	Metadata
+Actions	Sentences	manicotti	boiling water	cold water	ricotta	mozzarella	Parmesan	eggs	parsley	salt	pepper	oven	large bowl	11x17 inch baking dish		Notes		Action_start	Action_end	Sentence_Id
+Cook	Cook manicotti in boiling water until done.	1	1															0	4	0
+Drain	"Drain, and rinse with cold water."																	44	49	1
+rinse	"Drain, and rinse with cold water."			1														55	60	1
+Preheat	Preheat oven to 350 degrees F (175 degrees C).											1						78	85	2
+combine	"In a large bowl, combine ricotta, mozzarella, and 0.500 cup Parmesan, eggs, parsley, and salt and pepper."				1	1	1	1	1	1	1		1					142	149	3
+Mix	Mix well.																	231	234	4
+Pour	Pour 0.500 cup sauce into an 11x17 inch baking dish.													1				241	245	5
+Fill	"Fill each manicotti shell with 3 tablespoons cheese mixture, and arrange over sauce ."	1			1	1	1	1	1	1	1			1				294	298	6
+arrange	"Fill each manicotti shell with 3 tablespoons cheese mixture, and arrange over sauce ."	1			1	1	1	1	1	1	1			1				359	366	6
+Pour	"Pour remaining sauce over top, and sprinkle with remaining Parmesan cheese."	1			1	1	1	1	1	1	1			1				380	384	7
+sprinkle	"Pour remaining sauce over top, and sprinkle with remaining Parmesan cheese."	1			1	1	1	1	1	1	1			1				415	423	7
+Bake	"Bake 45 minutes, or until bubbly."	1			1	1	1	1	1	1	1	1		1				456	460	8
+Duplicate of: 																				
+Annotator added: 																				

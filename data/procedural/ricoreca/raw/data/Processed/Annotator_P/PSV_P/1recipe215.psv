@@ -1,0 +1,20 @@
+		INGR	INGR	INGR	INGR	INGR	INGR	TOOL	TOOL	TOOL	TOOL	TOOL	TOOL	TOOL			Metadata	Metadata	Metadata
+Actions	Sentences	bacon	eggs	milk	hash browns	green onions	shredded Cheddar cheese	"large, deep skillet"	aside	oven	7x11 inch baking dish	large bowl	knife	stove	Notes		Action_start	Action_end	Sentence_Id
+Place	"Place bacon in a large, deep skillet."	1						1									0	5	0
+Cook	Cook over medium high heat until evenly brown.	1						1						1			38	42	1
+Drain	"Drain, crumble, and set aside."	1						1									85	90	2
+crumble	"Drain, crumble, and set aside."	1						1									92	99	2
+set	"Drain, crumble, and set aside."	1															105	108	2
+Preheat	Preheat oven to 350 degrees F (175 degrees C).									1							116	123	3
+grease	Lightly grease a 7x11 inch baking dish.										1						171	177	4
+beat	"In a large bowl, beat together the eggs and milk."		1	1								1					220	224	5
+Stir	"Stir in the bacon, hash browns, green onions, and 1 cup shredded Cheddar cheese."	1	1	1	1	1	1					1					253	257	6
+Pour	Pour into the prepared baking dish.	1	1	1	1	1	1				1	1					334	338	7
+Bake	"Bake in the preheated oven 25 to 35 minutes, or until a knife inserted in the center comes out clean."	1	1	1	1	1	1			1	1						370	374	8
+comes	"Bake in the preheated oven 25 to 35 minutes, or until a knife inserted in the center comes out clean."	1	1	1	1	1	1				1		1				455	460	8
+Sprinkle	"Sprinkle the remaining Cheddar cheese on top, and continue baking for 3 to 4 minutes, or until the cheese is melted."	1	1	1	1	1	1				1						472	480	9
+baking	"Sprinkle the remaining Cheddar cheese on top, and continue baking for 3 to 4 minutes, or until the cheese is melted."	1	1	1	1	1	1			1	1						531	537	9
+Remove	"Remove from oven, and let sit 5 minutes before serving."	1	1	1	1	1	1			1	1						589	595	10
+let sit	"Remove from oven, and let sit 5 minutes before serving."	1	1	1	1	1	1				1						611	618	10
+Duplicate of: 																			
+Annotator added: 														1					

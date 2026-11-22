@@ -1,0 +1,89 @@
+{
+  "status": "completed",
+  "dataset": "RiCoRecA",
+  "claim": "cEASDRL CNN/DQN BIO adaptation trained from scratch; not an original-paper score reproduction.",
+  "protocol": "document_holdout_64_16_20",
+  "cross_validation": false,
+  "split_documents": {
+    "train": 99,
+    "dev": 25,
+    "test": 32
+  },
+  "split_seed": 1,
+  "training_seed": 0,
+  "metrics": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "independent_character_scoring": {
+    "action_name": {
+      "precision": 0.954,
+      "recall": 0.9835051546391752,
+      "f1": 0.9685279187817258,
+      "right": 477,
+      "predicted": 500,
+      "gold": 485
+    },
+    "linked_argument_name": {
+      "precision": 0.5208791208791209,
+      "recall": 0.7596153846153846,
+      "f1": 0.6179921773142112,
+      "right": 711,
+      "predicted": 1365,
+      "gold": 936
+    }
+  },
+  "gold_scope": "Published ACTION spans and their explicit textual member spans, including states/measures/settings/why; source types are not predicted. IF/UNTIL/REPEAT and their exclusive members are outside this action extraction task. No implicit/antecedent imputation.",
+  "matching": "Micro F1 of exact complete spans/names at document occurrences.",
+  "argument_matching": "The complete action occurrence and its linked complete argument occurrence must both match. Missed actions leave their arguments as false negatives.",
+  "inference_uses_gold_labels": false,
+  "test_evaluated_during_training": false,
+  "selection": "Each stage independently selected by dev exact-span F1 before any test inference.",
+  "best_epochs": {
+    "act": 10,
+    "arg": 9
+  },
+  "epochs_completed": {
+    "act": 10,
+    "arg": 10
+  },
+  "training_and_inference_devices": {
+    "act": "cpu",
+    "arg": "cuda"
+  },
+  "dataset_sha256": {
+    "train": "12c5e133b57963d3d6b98445c0ee34942b02a5327396ce6d8bcf1d60f0ed60d7",
+    "dev": "d4e68d5d11cd6cb6aee27e1e05679cb9596a6a2e9ffe87891753e1bd9de88a16",
+    "test": "5829799da957a2ca8f6db80a696af68e45ae773aa493d723a9871876c6011d39"
+  },
+  "checkpoint_sha256": {
+    "act": "92cea7d67742782de90a76dfe22a1e23ec8e9ad0adea93c399e855c8501f9a50",
+    "arg": "283c842534b3f1aee4e7f699f4be2fc5e29d088b69e3d9e78204c69d6b81baf1"
+  },
+  "inference_feature_manifest_sha256": {
+    "act": "afe5e073fd6bf74799004469125ffb1d537aacf0b5fead08c2dd247b30226692",
+    "arg": "360ef2d462326b3dece3d56eea5f58f5c2df366423eb92260f8eef2deec45bd0"
+  },
+  "freeze_sha256": "a0d954abea1adef6013553fad130e2adb42029eb24ae5de72f585c04e73a6841",
+  "completed_at_utc": "2026-11-21T19:33:53.837706+00:00",
+  "limitations": [
+    "Single fixed split and training seed; no cross-validation mean or standard deviation.",
+    "Task projection excludes control predicates, their exclusive members, and implicit entities.",
+    "BIO boundaries and balanced replay adapt the original binary cEASDRL method.",
+    "Scores across RISeC and RiCoRecA are not a controlled dataset-quality comparison."
+  ]
+}
