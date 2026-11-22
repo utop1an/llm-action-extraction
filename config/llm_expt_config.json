@@ -1,0 +1,30 @@
+{
+    "ablation": {
+        "nl2p_1": {
+            "base": "nl2p"
+        },
+        "nl2p_minimal": {
+            "base": "nl2p",
+            "include_sections": ["context", "task", "output", "input"]
+        },
+        "nl2p_ablation_definitions": {
+            "base": "nl2p",
+            "include_sections": ["context", "task", "rules", "output", "input"]
+        },
+        "nl2p_ablation_rules": {
+            "base": "nl2p",
+            "include_sections": ["context", "task", "definitions", "output", "input"]
+        }
+    },
+    "refine": {
+        "nl2p_1_ablation": {
+            "base": "nl2p_refined"
+        }
+    },
+    "minimal": {
+        "minimal": { 
+            "base": "minimal", 
+            "include_sections": ["context", "output", "input"]
+        }
+    }
+}

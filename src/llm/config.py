@@ -1,8 +1,12 @@
+import json
 import os
 from dotenv import load_dotenv
 from dataclasses import dataclass
 from typing import List, Dict, Any
 from string import Template
+from textwrap import indent
+
+from src.utils.helpers import find_project_root
 
 load_dotenv()
 
@@ -127,208 +131,208 @@ PROMPTS = {
         """),
         "parameters": ["nl", "egs"]
     },
-    "nl2p_1": {
-        "template": Template("""
-            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
+    # "nl2p_1": {
+    #     "template": Template("""
+    #         You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
 
-            Your task is to extract the executable actions explicitly described in the paragraph.
+    #         Your task is to extract the executable actions explicitly described in the paragraph.
             
-            Definition:
-            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
-            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
-            - An argument is a noun phrase denoting an entity directly affected by the action.
+    #         Definition:
+    #         - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
+    #         - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
+    #         - An argument is a noun phrase denoting an entity directly affected by the action.
                                
-            Rules:
-            - Use only actions explicitly supported by the paragraph.
-            - Preserve action order.
-            - Do not invent actions, arguments, object types, or hidden preconditions.
-            - Extract concrete eventive actions, not modal, auxiliary, linking, reporting, advisory, or purely descriptive verbs.
-            - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity.
-            - Do not include agents such as "you" as arguments.
-            - Arguments are core affected entities only. Do not include time, duration, purpose, manner, or instrument phrases unless the phrase denotes an entity whose state is directly changed.
-            - Resolve pronouns such as it, them, this, these, those, and everything to the nearest unambiguous entity or entity set in the preceding context.
-            - Keep a complete noun phrase as one argument when it denotes one object.
-            - Keep coordinated entities as separate arguments when they are separate objects.
-            - Use concise surface forms from the text for arguments.
-            - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
-            - Output valid JSON only.
+    #         Rules:
+    #         - Use only actions explicitly supported by the paragraph.
+    #         - Preserve action order.
+    #         - Do not invent actions, arguments, object types, or hidden preconditions.
+    #         - Extract concrete eventive actions, not modal, auxiliary, linking, reporting, advisory, or purely descriptive verbs.
+    #         - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity.
+    #         - Do not include agents such as "you" as arguments.
+    #         - Arguments are core affected entities only. Do not include time, duration, purpose, manner, or instrument phrases unless the phrase denotes an entity whose state is directly changed.
+    #         - Resolve pronouns such as it, them, this, these, those, and everything to the nearest unambiguous entity or entity set in the preceding context.
+    #         - Keep a complete noun phrase as one argument when it denotes one object.
+    #         - Keep coordinated entities as separate arguments when they are separate objects.
+    #         - Use concise surface forms from the text for arguments.
+    #         - When an action has no explicit object, infer its argument from the immediately preceding local context only if the action clearly applies to the current affected entity or working set. Otherwise, use an empty list.
+    #         - Output valid JSON only.
 
-            Return a JSON array. Each item must have exactly this form:
-            [
-                {
-                    "verb": "trigger verb or verb phrase",
-                    "arguments": ["argument 1", "argument 2" ...]
-                }
-            ]
+    #         Return a JSON array. Each item must have exactly this form:
+    #         [
+    #             {
+    #                 "verb": "trigger verb or verb phrase",
+    #                 "arguments": ["argument 1", "argument 2" ...]
+    #             }
+    #         ]
 
-            Paragraph:
-            $nl
-            """),
-        "parameters": ["nl"]
-    },
-    "nl2p_1_ablation": {
-        "template": Template("""
-            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content.
+    #         Paragraph:
+    #         $nl
+    #         """),
+    #     "parameters": ["nl"]
+    # },
+    # "nl2p_1_ablation": {
+    #     "template": Template("""
+    #         You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content.
 
-            Your task is to extract all and only the actions that the paragraph presents as steps or events in the procedure.
+    #         Your task is to extract all and only the actions that the paragraph presents as steps or events in the procedure.
 
-            Definition:
-            - An action is a distinct event that is explicitly presented as occurring, required, or performed as part of the procedure.
-            - A trigger is the verb or verb phrase in the text that denotes the event.
-            - An argument is a noun phrase denoting an entity that participates in the event.
+    #         Definition:
+    #         - An action is a distinct event that is explicitly presented as occurring, required, or performed as part of the procedure.
+    #         - A trigger is the verb or verb phrase in the text that denotes the event.
+    #         - An argument is a noun phrase denoting an entity that participates in the event.
 
-            General extraction rules:
-            - Process the paragraph sentence by sentence and preserve the textual order of actions.
-            - Use only events explicitly supported by the paragraph; do not infer unstated steps.
-            - Decide whether an event belongs to the procedure from its role in context, not merely from the presence of a verb.
-            - Do not invent actions, arguments, object types, or hidden preconditions.
-            - Do not include agents such as "you" as arguments.
-            - Output must be valid JSON only.
+    #         General extraction rules:
+    #         - Process the paragraph sentence by sentence and preserve the textual order of actions.
+    #         - Use only events explicitly supported by the paragraph; do not infer unstated steps.
+    #         - Decide whether an event belongs to the procedure from its role in context, not merely from the presence of a verb.
+    #         - Do not invent actions, arguments, object types, or hidden preconditions.
+    #         - Do not include agents such as "you" as arguments.
+    #         - Output must be valid JSON only.
 
-            Action coverage rules:
-            - Extract each distinct event that the paragraph presents as a step in the procedure, including events that do not directly change an entity.
-            - Include events expressed in main, subordinate, passive, participial, or conditional constructions when they function as procedural steps rather than explanations or hypothetical background.
-            - In aspectual or control constructions such as "start to X" or "continue X-ing", treat the embedded event X as an action candidate. Keep the outer expression separately only when it also denotes a distinct procedural step.
-            - When multiple procedural events occur in one clause, extract them separately rather than merging them.
-            - Exclude verbs used only for modality, description, explanation, discourse organization, or other non-procedural functions.
-            - Use the action trigger stated in the paragraph. Do not replace it with a synonym or an inferred action label.
+    #         Action coverage rules:
+    #         - Extract each distinct event that the paragraph presents as a step in the procedure, including events that do not directly change an entity.
+    #         - Include events expressed in main, subordinate, passive, participial, or conditional constructions when they function as procedural steps rather than explanations or hypothetical background.
+    #         - In aspectual or control constructions such as "start to X" or "continue X-ing", treat the embedded event X as an action candidate. Keep the outer expression separately only when it also denotes a distinct procedural step.
+    #         - When multiple procedural events occur in one clause, extract them separately rather than merging them.
+    #         - Exclude verbs used only for modality, description, explanation, discourse organization, or other non-procedural functions.
+    #         - Use the action trigger stated in the paragraph. Do not replace it with a synonym or an inferred action label.
                              
-            Argument rules:
-            - Arguments should be core participating entities that are explicitly connected to the action in its local context.
-            - Do not include time, duration, temperature, condition, purpose, manner, location, source, destination, container, or instrument phrases unless they identify a core participant in that event.
-            - Do not include prepositions inside arguments. Prefer the core noun phrase over the full prepositional phrase.
-            - Resolve pronouns such as "it", "them", "this", "these", "those", and "everything" to the most specific preceding entity or entity set when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
-            - Keep a complete noun phrase as one argument when it denotes one object.
-            - Keep coordinated entities as separate arguments only when they are separate affected objects.
-            - Use concise surface forms from the text for arguments.
-            - Do not borrow an argument from another sentence unless an unambiguous pronoun or ellipsis requires it. If no reliable argument is available, use an empty list.
+    #         Argument rules:
+    #         - Arguments should be core participating entities that are explicitly connected to the action in its local context.
+    #         - Do not include time, duration, temperature, condition, purpose, manner, location, source, destination, container, or instrument phrases unless they identify a core participant in that event.
+    #         - Do not include prepositions inside arguments. Prefer the core noun phrase over the full prepositional phrase.
+    #         - Resolve pronouns such as "it", "them", "this", "these", "those", and "everything" to the most specific preceding entity or entity set when the antecedent is unambiguous. If ambiguous, keep the original pronoun text.
+    #         - Keep a complete noun phrase as one argument when it denotes one object.
+    #         - Keep coordinated entities as separate arguments only when they are separate affected objects.
+    #         - Use concise surface forms from the text for arguments.
+    #         - Do not borrow an argument from another sentence unless an unambiguous pronoun or ellipsis requires it. If no reliable argument is available, use an empty list.
 
-            Coverage check:
-            - Before returning the answer, verify sentence by sentence that every included item is a distinct event in the procedure and that no such explicit event was omitted.
+    #         Coverage check:
+    #         - Before returning the answer, verify sentence by sentence that every included item is a distinct event in the procedure and that no such explicit event was omitted.
 
-            Return a JSON array. Each item must have exactly this form:
-            [
-                {
-                    "verb": "trigger verb or verb phrase",
-                    "arguments": ["argument 1", "argument 2" ...]
-                }
-            ]
+    #         Return a JSON array. Each item must have exactly this form:
+    #         [
+    #             {
+    #                 "verb": "trigger verb or verb phrase",
+    #                 "arguments": ["argument 1", "argument 2" ...]
+    #             }
+    #         ]
 
-            Paragraph:
-            $nl
-            """),
-        "parameters": ["nl"]
-    },
-    "verbs": {
-        "template": """
-            You are given a natural language paragraph describing a sequence of actions.
-            Your task is to extract all candidate action verbs.  
+    #         Paragraph:
+    #         $nl
+    #         """),
+    #     "parameters": ["nl"]
+    # },
+    # "verbs": {
+    #     "template": """
+    #         You are given a natural language paragraph describing a sequence of actions.
+    #         Your task is to extract all candidate action verbs.  
             
-            Definition:
-            - An action verb (or verb phrase) is an eventive verb that denotes a state transition in the underlying system.
+    #         Definition:
+    #         - An action verb (or verb phrase) is an eventive verb that denotes a state transition in the underlying system.
             
-            Rules:
-            - Maintain the order of verbs as they appear in the text.
-            - Do NOT add explanations or extra text.
+    #         Rules:
+    #         - Maintain the order of verbs as they appear in the text.
+    #         - Do NOT add explanations or extra text.
             
-            Return the result in a STRICT JSON array: ["verb1", "verb2", ...]
+    #         Return the result in a STRICT JSON array: ["verb1", "verb2", ...]
 
-            NL: {nl}
-            """,
-        "parameters": ["nl"]
-    },
-    "args": {
-        "template": Template("""
-            You are given a natural language paragraph describing a sequence of actions.
+    #         NL: {nl}
+    #         """,
+    #     "parameters": ["nl"]
+    # },
+    # "args": {
+    #     "template": Template("""
+    #         You are given a natural language paragraph describing a sequence of actions.
 
-            Your task is to extract all candidate arguments of actions from the paragraph.
+    #         Your task is to extract all candidate arguments of actions from the paragraph.
 
-            Definition:
-            - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
-            - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
+    #         Definition:
+    #         - An action is an event executable by an agent that causes a state transition in the underlying system; it consists of a trigger verb and its arguments (zero or more).
+    #         - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
 
-            Rules:
-            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
-            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
-            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
-            - Preserve the order in which the noun phrases appear in the paragraph.
-            - If no candidate arguments are present, return an empty list.
-            - Do NOT add explanations or extra text.
+    #         Rules:
+    #         - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+    #         - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+    #         - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
+    #         - Preserve the order in which the noun phrases appear in the paragraph.
+    #         - If no candidate arguments are present, return an empty list.
+    #         - Do NOT add explanations or extra text.
 
-            Return the result STRICTLY as a JSON array of strings: ["arg1", "arg2", ...].
+    #         Return the result STRICTLY as a JSON array of strings: ["arg1", "arg2", ...].
 
-            NL: $nl
+    #         NL: $nl
 
-            """),
-        "parameters": ["nl"]
-    },
-    "nl2p_2_verb_args": {
-        "template": Template("""
-            You are given:
-            (1) a natural language paragraph describing a sequence of actions
-            (2) a list of action verbs extracted from the paragraph
+    #         """),
+    #     "parameters": ["nl"]
+    # },
+    # "nl2p_2_verb_args": {
+    #     "template": Template("""
+    #         You are given:
+    #         (1) a natural language paragraph describing a sequence of actions
+    #         (2) a list of action verbs extracted from the paragraph
 
-            Your task is to assign arguments to each verb.
+    #         Your task is to assign arguments to each verb.
             
-            Definition:
-                - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
+    #         Definition:
+    #             - Arguments are noun phrases denoting entities whose state is directly affected by executing the action.
 
-            Rules:
-            - Use ONLY the verbs provided in the list.
-            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
-            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
-            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
-            - Maintain the order of verbs and arguments as they appear in the text.             
-            - If a verb has no explicit arguments, return an empty list of arguments.
-            - Do NOT add explanations or extra text.
+    #         Rules:
+    #         - Use ONLY the verbs provided in the list.
+    #         - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+    #         - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+    #         - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
+    #         - Maintain the order of verbs and arguments as they appear in the text.             
+    #         - If a verb has no explicit arguments, return an empty list of arguments.
+    #         - Do NOT add explanations or extra text.
                              
-            Return the result STRICTLY as a JSON array, where each item has the form:
-            {
-                "verb": "verb",
-                "arguments": ["arg1", "arg2", ...]
-            }
+    #         Return the result STRICTLY as a JSON array, where each item has the form:
+    #         {
+    #             "verb": "verb",
+    #             "arguments": ["arg1", "arg2", ...]
+    #         }
 
-            NL: $nl
+    #         NL: $nl
             
-            Verbs: $verbs
-            """),
-        "parameters": ["nl", "verbs"]
-    },
+    #         Verbs: $verbs
+    #         """),
+    #     "parameters": ["nl", "verbs"]
+    # },
 
-    "nl2p_3_verb_args": {
-        "template": Template("""
-            You are given:
-            (1) a natural language paragraph describing a sequence of actions
-            (2) a list of action verbs extracted from the paragraph
-            (3) a list of argument candidates extracted from the paragraph
+    # "nl2p_3_verb_args": {
+    #     "template": Template("""
+    #         You are given:
+    #         (1) a natural language paragraph describing a sequence of actions
+    #         (2) a list of action verbs extracted from the paragraph
+    #         (3) a list of argument candidates extracted from the paragraph
 
-            Your task is to assign arguments to each verb.
+    #         Your task is to assign arguments to each verb.
 
-            Rules:
-            - Use ONLY the verbs and arguments provided in the list.
-            - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
-            - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
-            - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
-            - Do NOT merge multiple candidates into one argument.
-            - Maintain the order of verbs and arguments as they appear in the text.             
-            - If a verb has no explicit arguments, return an empty list of arguments.
-            - Do NOT infer or assume missing arguments.
-            - Do NOT add explanations or extra text.
+    #         Rules:
+    #         - Use ONLY the verbs and arguments provided in the list.
+    #         - Do NOT include agents, instruments, locations, manners, or temporal expressions as arguments unless their own state is directly changed by the action.
+    #         - If an argument is a pronoun, replace it with the nearest preceding noun phrase it refers to.
+    #         - Do NOT merge multiple different entities into one argument unless they are explicitly stated as exclusive; plurals are allowed if explicitly stated in the text.
+    #         - Do NOT merge multiple candidates into one argument.
+    #         - Maintain the order of verbs and arguments as they appear in the text.             
+    #         - If a verb has no explicit arguments, return an empty list of arguments.
+    #         - Do NOT infer or assume missing arguments.
+    #         - Do NOT add explanations or extra text.
 
-            Return the result STRICTLY as a JSON array, where each item has the form:
-            {
-                "verb": "verb",
-                "arguments": ["arg1", "arg2", ...]
-            }
+    #         Return the result STRICTLY as a JSON array, where each item has the form:
+    #         {
+    #             "verb": "verb",
+    #             "arguments": ["arg1", "arg2", ...]
+    #         }
 
-            NL: $nl
+    #         NL: $nl
             
-            Verbs: $verbs
+    #         Verbs: $verbs
                              
-            Arguments: $args
-            """),
-        "parameters": ["nl", "verbs", "args"]
-    },
+    #         Arguments: $args
+    #         """),
+    #     "parameters": ["nl", "verbs", "args"]
+    # },
     "llm_coref_resolution": {
         "template": Template("""
             You are given an instructional text from a procedural dataset.
@@ -360,58 +364,58 @@ PROMPTS = {
         """),
         "parameters": ["nl"]
     },
-    "nl2p_unfiltered": {
-        "template": Template("""
-            You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
+    # "nl2p_unfiltered": {
+    #     "template": Template("""
+    #         You are given a natural language paragraph that may contain procedural actions as well as background, explanation, and other non-procedural content
 
-            Your task is to extract the executable actions explicitly described in the paragraph.
+    #         Your task is to extract the executable actions explicitly described in the paragraph.
             
-            Definition:
-            - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
-            - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
-            - An argument is a noun phrase denoting an entity directly affected by the action. Consider up to these three roles, in this order. An entity fills at most one slot; DOER wins.
-                1. DOER. Who performs it. ("the technician tightened the bolt" -> the technician)
-                2. CHANGED. Whose property the text says is different afterward ("the technician tightened the bolt" -> the bolt)
-                3. NEW VALUE. What the changed property becomes. ("moved the crate to the loading bay" -> the loading bay)
+    #         Definition:
+    #         - An action is a concrete, executable event that changes the state, location, configuration, possession, or availability of an entity.
+    #         - A trigger verb is the verb or verb phrase in the text that denotes that executable action.
+    #         - An argument is a noun phrase denoting an entity directly affected by the action. Consider up to these three roles, in this order. An entity fills at most one slot; DOER wins.
+    #             1. DOER. Who performs it. ("the technician tightened the bolt" -> the technician)
+    #             2. CHANGED. Whose property the text says is different afterward ("the technician tightened the bolt" -> the bolt)
+    #             3. NEW VALUE. What the changed property becomes. ("moved the crate to the loading bay" -> the loading bay)
 
-            Rules:
-            - Use only actions explicitly supported by the paragraph.
-            - Preserve action order.
-            - Do not invent actions, arguments, object types, or hidden preconditions.
-            - Extract concrete eventive verbs (e.g., "open", "cut", "install"), not modal (e.g., "can"), auxiliary (e.g., "has"), linking (e.g., "is"), reporting (e.g., "said"), advisory (e.g., "should"), or purely descriptive (e.g., "seems") verbs.
-            - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity. ("began removing the panel" -> removing.)
-            - Resolve pronouns (e.g., it, them, this, these, those, he, she, they, one, everything) to the nearest unambiguous entity or entity set in the preceding context.
-            - Keep a complete noun phrase as one argument when it denotes one object.
-            - Keep coordinated entities fill the same role as separate arguments when they are separate objects. 
-            - When coordinated verbs express separate actions, create a separate record for each action. ("washed and dried the beakers" -> two items, each with "the beakers".)
-            - Use concise surface forms from the text for arguments unless it is a pronoun.
-            - Output valid JSON only.
+    #         Rules:
+    #         - Use only actions explicitly supported by the paragraph.
+    #         - Preserve action order.
+    #         - Do not invent actions, arguments, object types, or hidden preconditions.
+    #         - Extract concrete eventive verbs (e.g., "open", "cut", "install"), not modal (e.g., "can"), auxiliary (e.g., "has"), linking (e.g., "is"), reporting (e.g., "said"), advisory (e.g., "should"), or purely descriptive (e.g., "seems") verbs.
+    #         - When a phrase contains both a framing verb and a concrete event, use the concrete event as the action trigger. Avoid using verbs whose main role is to frame another event unless that verb itself changes an entity. ("began removing the panel" -> removing.)
+    #         - Resolve pronouns (e.g., it, them, this, these, those, he, she, they, one, everything) to the nearest unambiguous entity or entity set in the preceding context.
+    #         - Keep a complete noun phrase as one argument when it denotes one object.
+    #         - Keep coordinated entities fill the same role as separate arguments when they are separate objects. 
+    #         - When coordinated verbs express separate actions, create a separate record for each action. ("washed and dried the beakers" -> two items, each with "the beakers".)
+    #         - Use concise surface forms from the text for arguments unless it is a pronoun.
+    #         - Output valid JSON only.
 
-            Return a JSON array. Each item must have exactly this form:
-            [
-                {
-                    "verb": "trigger verb or verb phrase",
-                    "arguments": ["argument 1", "argument 2" ...]
-                }
-            ]
+    #         Return a JSON array. Each item must have exactly this form:
+    #         [
+    #             {
+    #                 "verb": "trigger verb or verb phrase",
+    #                 "arguments": ["argument 1", "argument 2" ...]
+    #             }
+    #         ]
 
-            Paragraph:
-            $nl
-            """),
-        "parameters": ["nl"]
-        }
+    #         Paragraph:
+    #         $nl
+    #         """),
+    #     "parameters": ["nl"]
+    #     }
 }
 
-# Minimal zero-shot is a deletion-only ablation of the original NL2P prompt.
-# Keep its task statement and output contract byte-for-byte, including the
-# JSON-only requirement; remove the definitions and semantic extraction rules.
-_nl2p_template = PROMPTS['nl2p_1']['template'].template
-_definition_start = _nl2p_template.index('            Definition:')
-_output_start = _nl2p_template.index('            - Output valid JSON only.', _definition_start)
-PROMPTS['nl2p_minimal'] = {
-    'template': Template(_nl2p_template[:_definition_start] + _nl2p_template[_output_start:]),
-    'parameters': ['nl'],
-}
+# # Minimal zero-shot is a deletion-only ablation of the original NL2P prompt.
+# # Keep its task statement and output contract byte-for-byte, including the
+# # JSON-only requirement; remove the definitions and semantic extraction rules.
+# _nl2p_template = PROMPTS['nl2p_1']['template'].template
+# _definition_start = _nl2p_template.index('            Definition:')
+# _output_start = _nl2p_template.index('            - Output valid JSON only.', _definition_start)
+# PROMPTS['nl2p_minimal'] = {
+#     'template': Template(_nl2p_template[:_definition_start] + _nl2p_template[_output_start:]),
+#     'parameters': ['nl'],
+# }
 
 DOMAINS = {
     "transport": {
@@ -436,3 +440,53 @@ def generate_prompt(prompt_name: str, prompt_args: Dict[str, Any] = {}) -> str:
     else:
         prompt = PROMPTS[prompt_name]["template"].format(**prompt_args)
     return prompt
+
+
+def _load_experiment_prompts():
+    config_dir = find_project_root() / "config"
+    prompt_file = config_dir / "prompt_configs.json"
+    experiment_file = config_dir / "llm_expt_config.json"
+    prompt_configs = json.loads(prompt_file.read_text(encoding="utf-8"))
+    expt_configs = json.loads(experiment_file.read_text(encoding="utf-8"))
+
+    def resolve_prompt(sections):
+        blocks = []
+        for section in sections:
+            section_id = section["id"]
+            content = "\n".join(section["content"])
+            if section_id not in {"context", "task", "input"}:
+                content = indent(content, "  ")
+                content = f"{section_id.capitalize()}:\n{content}"
+            blocks.append(content)
+            blocks.append("")  # Add a blank line between sections
+        return "\n".join(blocks).strip("\n")
+
+    entries = {}
+    for _, expts in expt_configs.items():
+        for prompt_name, experiment in expts.items():
+            # get the experiment setup
+            base_name = experiment.get("base")
+            include = experiment.get("include_sections")
+
+            # get the base prompt
+            base = prompt_configs[base_name]
+            sections = base["sections"]
+
+            if include is not None:
+                included_ids = set(include)
+                unknown = included_ids - {section["id"] for section in sections}
+                if unknown:
+                    raise ValueError(f"Unknown sections for {prompt_name}: {sorted(unknown)}")
+                sections = [section for section in sections if section["id"] in included_ids]
+
+            entries[prompt_name] = {
+                "template": Template(resolve_prompt(sections)),
+                "parameters": base["parameters"],
+            }
+    return entries
+
+
+PROMPTS.update(_load_experiment_prompts())
+
+if __name__ == "__main__":
+    print(PROMPTS["nl2p_1_ablation"]["template"].template, end="")
