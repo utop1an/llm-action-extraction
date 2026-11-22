@@ -41,14 +41,16 @@ To regenerate the mismatch report for one condition in the working tree, run:
 python evaluation.py -d results/nl2p_1/gpt-5.4-mini --diagnostics
 ```
 
-## Analysis notebooks
+## Analysis notebooks and adapters
 
 | Purpose | Entry point | Inputs and outputs |
 | --- | --- | --- |
-| Benchmark diagnostics (11 notebooks) | [Model comparisons](analysis/diagnostics/all_models_comparison.ipynb) ¡¤ [Mismatch overview](analysis/diagnostics/diagnostics_overview.ipynb) | Saved evaluation and mismatch CSVs in `results/`. |
+| Benchmark diagnostics (11 notebooks) | [Model comparisons](analysis/diagnostics/all_models_comparison.ipynb) Â· [Mismatch overview](analysis/diagnostics/diagnostics_overview.ipynb) | Saved evaluation and mismatch CSVs in `results/`. |
 | Manual annotations (2) | [Read annotated samples](analysis/annotations/read_sample_results.ipynb) | The two [sample CSVs](analysis/annotations/samples/) accompany the notebooks. |
-| Short stories (3) | [PDDL comparison](analysis/short_stories/short_story_pddl_comparison.ipynb) ¡¤ [Export comparisons](analysis/short_stories/read_short_story_results_into_csv.ipynb) | Saved story predictions in `results/short_stories/` and [comparison CSVs](analysis/short_stories/output/). |
+| Short stories (3) | [PDDL comparison](analysis/short_stories/short_story_pddl_comparison.ipynb) Â· [Export comparisons](analysis/short_stories/read_short_story_results_into_csv.ipynb) | Saved story predictions in `results/short_stories/` and [comparison CSVs](analysis/short_stories/output/). |
 | Earlier examples (7) | [Examples and accompanying files](analysis/examples/) | Includes a transport text fixture and the action/argument F1 workbook. Some examples require historical data files or a configured model. |
+
+The [Naruto evaluator](analysis/naruto/evaluation_naruto.py) aligns prediction CSVs with the [saved labels](analysis/naruto/extracted_labels.csv). Read the [saved scores](results/naruto/output/evaluation_result.csv) or see the [development notes index](docs/dev-notes/README.md) for rerun inputs.
 
 Launch Jupyter inside the repository and open the desired notebook. The Codex short-story notebook and several early examples run inference. Start with the comparison notebooks to inspect existing results.
 

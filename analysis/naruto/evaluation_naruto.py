@@ -3,7 +3,6 @@ Adapt Naruto CSV predictions for the format of the shared action evaluator.
 """
 
 import ast
-from fileinput import filename
 import os
 import sys
 from collections.abc import Mapping
@@ -11,12 +10,12 @@ from pathlib import Path
 
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from evaluation import evaluation, write_results
+from evaluation import evaluation, read_from_predicted_dataset, write_results
 from src.evaluation_helpers import write_diagnostics
-from extract_naruto_data import extraction, split_miglani, contains_csv
+from analysis.naruto.extract_naruto_data import extraction, split_miglani, contains_csv
 
 
 CURRENT_DIR = Path(__file__).resolve().parent
@@ -208,7 +207,7 @@ def run_evaluation(predicts, gt_df, collect_diagnostics=False):
 
 def main():
     if not GROUND_TRUTH_PATH.is_file():
-        extraction(DATA_DIR, GROUND_TRUTH_PATH)
+        extraction(read_from_predicted_dataset(DATA_DIR), GROUND_TRUTH_PATH.parent)
     if not contains_csv(PREDICTIONS_DIR):
         if not MIGLANI_PATH.is_file():
             raise FileNotFoundError(f"The Miglani dataset file {MIGLANI_PATH} does not exist.")
